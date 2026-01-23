@@ -85,7 +85,7 @@ Every AI response is classified using three indicators:
 
 - **Dual-layer classification**: LLM-level (system prompt instructs indicator use) + Classifier-level (rule-based validation and tagging)
 - **Confidence thresholds**: High (≥0.85) → FACTUAL eligible; Medium → INTERPRETIVE; Low → flag for review
-- **Belt-and-suspenders**: Classifier validates LLM-added tags and adds missing ones
+- **Redundant validation (dual-layer check)**: Classifier validates LLM-added tags and adds missing ones
 
 ### Alignment with Personalist Values
 

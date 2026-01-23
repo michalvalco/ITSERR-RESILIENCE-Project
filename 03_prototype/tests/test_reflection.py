@@ -5,7 +5,6 @@ while preserving the essential narrative of the research journey.
 """
 
 from datetime import datetime, timezone
-from typing import Any
 from unittest.mock import MagicMock
 
 import pytest
@@ -275,8 +274,9 @@ class TestReflectionEdgeCases:
         # Should truncate and add ellipsis for long questions
         assert summary is not None
         if "Research Questions" in summary:
-            # If questions are included, they should be truncated
-            assert "..." in summary or len(summary) < len(long_question) + 500
+            # Questions longer than 200 chars should be truncated with "..."
+            # The long question is ~510 chars, so it must be truncated
+            assert "..." in summary, "Long questions should be truncated with ellipsis"
 
     @pytest.mark.asyncio
     async def test_reflection_handles_malformed_exchange(
@@ -343,11 +343,11 @@ class TestReflectionIntegrationWithAgent:
         )
 
         # Reflection should be retrievable via context query
-        context = await memory.retrieve_context(
+        retrieved_context = await memory.retrieve_context(
             query="interpretation meaning themes",
             session_id="retrieval-test",
         )
 
-        # Context retrieval should work (actual content depends on mock)
-        # The key is that no errors occur
-        assert True  # If we get here, retrieval didn't crash
+        # Context retrieval should work - verify it returns expected type
+        # With mocked ChromaDB, context may be None or a string
+        assert retrieved_context is None or isinstance(retrieved_context, str)

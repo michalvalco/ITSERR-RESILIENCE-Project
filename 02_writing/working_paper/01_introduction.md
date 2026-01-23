@@ -17,7 +17,7 @@ Religious and theological texts operate on multiple registers simultaneously:
 
 | Register | Example | Appropriate AI Role |
 |----------|---------|---------------------|
-| **Historical-factual** | "Luther posted the 95 Theses in 1517" | Verification, citation |
+| **Historical-factual** | "The 95 Theses were written in 1517" | Verification, citation |
 | **Textual-linguistic** | "The Hebrew term *hesed* appears 248 times in the OT" | Pattern identification |
 | **Interpretive-synthetic** | "This passage echoes Wisdom literature themes" | Suggesting connections (flagged) |
 | **Theological-normative** | "This text teaches that God is love" | Deferral to human judgment |
