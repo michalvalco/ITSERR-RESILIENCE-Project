@@ -8,9 +8,15 @@ Each stream has distinct characteristics for retention and retrieval:
 """
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
+from functools import partial
 from typing import Any
+
+
+def _utc_now() -> datetime:
+    """Return current UTC time as timezone-aware datetime."""
+    return datetime.now(timezone.utc)
 
 
 class StreamType(str, Enum):
@@ -23,18 +29,22 @@ class StreamType(str, Enum):
 
 @dataclass
 class MemoryItem:
-    """A single item in a memory stream."""
+    """A single item in a memory stream.
+
+    Note: All timestamps use UTC timezone for consistency across sessions
+    and to avoid timezone-related issues in age calculations.
+    """
 
     content: str
     stream_type: StreamType
-    timestamp: datetime = field(default_factory=datetime.now)
+    timestamp: datetime = field(default_factory=_utc_now)
     session_id: str = "default"
     metadata: dict[str, Any] = field(default_factory=dict)
 
     @property
     def age_hours(self) -> float:
         """Calculate the age of this memory item in hours."""
-        delta = datetime.now() - self.timestamp
+        delta = datetime.now(timezone.utc) - self.timestamp
         return delta.total_seconds() / 3600
 
     def to_dict(self) -> dict[str, Any]:

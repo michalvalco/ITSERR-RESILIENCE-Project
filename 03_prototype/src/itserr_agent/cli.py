@@ -75,6 +75,9 @@ async def _chat_loop(session_id: str, model: str | None) -> None:
     if model:
         config.llm_model = model
 
+    # Initialize agent to None for proper cleanup in finally block
+    agent: ITSERRAgent | None = None
+
     try:
         agent = ITSERRAgent(config)
         console.print(f"\n[dim]Session: {session_id}[/dim]\n")
@@ -106,7 +109,7 @@ async def _chat_loop(session_id: str, model: str | None) -> None:
         raise typer.Exit(1)
 
     finally:
-        if "agent" in locals():
+        if agent is not None:
             await agent.close()
 
     console.print("\n[dim]Session ended. Memory has been preserved.[/dim]")
