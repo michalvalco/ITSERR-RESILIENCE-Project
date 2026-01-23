@@ -209,6 +209,7 @@ class NarrativeMemorySystem:
                 stream_type="conversation",
                 doc_id=doc_id,
                 error=str(exc),
+                exc_info=True,
             )
             # Continue without storing - memory is non-critical for agent operation
             return
@@ -260,6 +261,7 @@ class NarrativeMemorySystem:
                 stream_type="research",
                 doc_id=doc_id,
                 error=str(exc),
+                exc_info=True,
             )
             return
 
@@ -307,6 +309,7 @@ class NarrativeMemorySystem:
                 stream_type="decision",
                 doc_id=doc_id,
                 error=str(exc),
+                exc_info=True,
             )
             return
 
