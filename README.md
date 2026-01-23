@@ -113,6 +113,7 @@ Ensuring the researcher maintains agency and control throughout AI-assisted inqu
 
 **Prof. Michal Valčo**  
 Comenius University Bratislava, Evangelical Lutheran Theological Faculty
+- with substantial help from **Claude Code** who helped me organize my ideas and write code
 
 ## Acknowledgments
 
