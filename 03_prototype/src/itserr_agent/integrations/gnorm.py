@@ -42,15 +42,18 @@ class GNORMAnnotation:
     confidence: float
     metadata: dict[str, Any] | None = None
 
-    @property
-    def epistemic_indicator(self) -> IndicatorType:
+    def get_epistemic_indicator(self, high_confidence_threshold: float = 0.85) -> IndicatorType:
         """
         Map confidence to epistemic indicator.
 
-        High confidence (≥0.85) → FACTUAL
-        Medium confidence → INTERPRETIVE
+        Args:
+            high_confidence_threshold: Threshold for FACTUAL classification.
+                Should be obtained from AgentConfig.high_confidence_threshold.
+
+        Returns:
+            FACTUAL if confidence >= threshold, otherwise INTERPRETIVE
         """
-        if self.confidence >= 0.85:
+        if self.confidence >= high_confidence_threshold:
             return IndicatorType.FACTUAL
         else:
             return IndicatorType.INTERPRETIVE
@@ -74,6 +77,14 @@ class GNORMClient:
     the results with appropriate epistemic indicators.
 
     Note: API details are placeholders pending technical briefing.
+
+    Usage:
+        Recommended to use as async context manager to ensure proper cleanup:
+
+        ```python
+        async with GNORMClient(config) as client:
+            response = await client.annotate(text)
+        ```
     """
 
     def __init__(self, config: AgentConfig) -> None:
@@ -85,6 +96,14 @@ class GNORMClient:
         """
         self.config = config
         self._client: httpx.AsyncClient | None = None
+
+    async def __aenter__(self) -> "GNORMClient":
+        """Enter async context manager."""
+        return self
+
+    async def __aexit__(self, exc_type: Any, exc_val: Any, exc_tb: Any) -> None:
+        """Exit async context manager, ensuring client cleanup."""
+        await self.close()
 
     async def _get_client(self) -> httpx.AsyncClient:
         """Get or create the HTTP client."""
@@ -190,36 +209,56 @@ class GNORMTool(BaseTool):
     Implements the external tool pattern with confirmation + first-time gate.
     """
 
-    name = "gnorm_annotate"
-    description = "Annotate text with GNORM CRF-based named entity recognition"
-    category = ToolCategory.EXTERNAL
-
     def __init__(self, client: GNORMClient) -> None:
         """Initialize the tool with a GNORM client."""
         super().__init__()
-        self._client = client
+        self._gnorm_client = client
 
-    async def execute(
-        self,
-        text: str,
-        entity_types: list[str] | None = None,
-        **kwargs: Any,
-    ) -> ToolResult:
+    @property
+    def name(self) -> str:
+        """Tool name."""
+        return "gnorm_annotate"
+
+    @property
+    def description(self) -> str:
+        """Tool description."""
+        return "Annotate text with GNORM CRF-based named entity recognition"
+
+    @property
+    def category(self) -> ToolCategory:
+        """Tool category."""
+        return ToolCategory.EXTERNAL
+
+    async def execute(self, **kwargs: Any) -> ToolResult:
         """
         Execute GNORM annotation.
 
         Args:
-            text: Text to annotate
-            entity_types: Optional filter for entity types
+            **kwargs: Must include 'text', optionally 'entity_types'
 
         Returns:
             ToolResult containing annotations
         """
+        text = kwargs.get("text", "")
+        entity_types = kwargs.get("entity_types")
+
+        if not text:
+            return ToolResult(
+                success=False,
+                data=None,
+                tool_name=self.name,
+                category=self.category,
+                error_message="No text provided for annotation",
+            )
+
         try:
-            response = await self._client.annotate(
+            response = await self._gnorm_client.annotate(
                 text=text,
                 entity_types=entity_types,
             )
+
+            # Use configurable threshold from client config
+            threshold = self._gnorm_client.config.high_confidence_threshold
 
             return ToolResult(
                 success=True,
@@ -229,7 +268,7 @@ class GNORMTool(BaseTool):
                             "text": a.entity_text,
                             "type": a.entity_type,
                             "confidence": a.confidence,
-                            "indicator": a.epistemic_indicator.value,
+                            "indicator": a.get_epistemic_indicator(threshold).value,
                         }
                         for a in response.annotations
                     ],

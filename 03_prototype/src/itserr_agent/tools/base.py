@@ -106,15 +106,31 @@ class BaseTool(ABC):
     1. Pre-execution disclosure
     2. Confirmation for sensitive operations
     3. Transparent result presentation
-    """
 
-    name: str
-    description: str
-    category: ToolCategory
+    Subclasses must implement the name, description, and category properties.
+    """
 
     def __init__(self) -> None:
         """Initialize the tool."""
         self._first_use_confirmed = False
+
+    @property
+    @abstractmethod
+    def name(self) -> str:
+        """Human-readable tool name. Must be unique within the registry."""
+        raise NotImplementedError
+
+    @property
+    @abstractmethod
+    def description(self) -> str:
+        """Short description of what the tool does."""
+        raise NotImplementedError
+
+    @property
+    @abstractmethod
+    def category(self) -> ToolCategory:
+        """Tool category controlling confirmation behavior."""
+        raise NotImplementedError
 
     @property
     def requires_confirmation(self) -> bool:

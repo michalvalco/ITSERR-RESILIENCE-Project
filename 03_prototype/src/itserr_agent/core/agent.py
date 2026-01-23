@@ -110,6 +110,12 @@ class ITSERRAgent:
         response = await self._llm.ainvoke(messages)
 
         # Step 4: Classify and tag with epistemic indicators
+        # Note: We use a "belt-and-suspenders" approach here:
+        # - The system prompt instructs the LLM to add epistemic indicators
+        # - The classifier then validates/adds tags if the LLM missed any
+        # The classifier preserves LLM-added tags (detected via regex) and only
+        # adds classification to untagged sentences. This ensures consistent
+        # indicator presence even when the LLM's instruction-following varies.
         tagged_response = self._classifier.classify_and_tag(response.content)
 
         # Step 5: Update memory

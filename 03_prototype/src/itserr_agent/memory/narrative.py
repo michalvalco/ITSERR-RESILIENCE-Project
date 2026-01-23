@@ -5,7 +5,8 @@ The narrative memory preserves the researcher's hermeneutical journey through
 three distinct streams, each with different retention and retrieval characteristics.
 """
 
-from datetime import datetime
+import uuid
+from datetime import datetime, timezone
 from typing import Any
 
 import structlog
@@ -52,12 +53,12 @@ class NarrativeMemorySystem:
         import chromadb
         from chromadb.config import Settings
 
-        # Initialize ChromaDB with persistence
-        self._client = chromadb.Client(
-            Settings(
-                persist_directory=str(self.config.memory_persist_path),
+        # Initialize ChromaDB with persistence using PersistentClient (ChromaDB 0.4+)
+        self._client = chromadb.PersistentClient(
+            path=str(self.config.memory_persist_path),
+            settings=Settings(
                 anonymized_telemetry=False,
-            )
+            ),
         )
 
         # Get or create collection
@@ -173,7 +174,7 @@ class NarrativeMemorySystem:
             agent_response: The agent's response
             session_id: Optional session identifier
         """
-        timestamp = datetime.now().isoformat()
+        timestamp = datetime.now(timezone.utc).isoformat()
 
         # Create document combining both sides of exchange
         doc = f"User: {user_input}\n\nAssistant: {agent_response}"
@@ -184,23 +185,33 @@ class NarrativeMemorySystem:
         else:
             embedding = self._embeddings.encode(doc).tolist()
 
-        # Store in ChromaDB
-        doc_id = f"conv_{timestamp}_{hash(doc) % 10000}"
+        # Store in ChromaDB using UUID for unique document IDs
+        doc_id = f"conv_{uuid.uuid4().hex}"
 
-        self._collection.add(
-            ids=[doc_id],
-            embeddings=[embedding],
-            documents=[doc],
-            metadatas=[
-                {
-                    "stream_type": "conversation",
-                    "timestamp": timestamp,
-                    "session_id": session_id or "default",
-                    "user_input_length": len(user_input),
-                    "response_length": len(agent_response),
-                }
-            ],
-        )
+        try:
+            self._collection.add(
+                ids=[doc_id],
+                embeddings=[embedding],
+                documents=[doc],
+                metadatas=[
+                    {
+                        "stream_type": "conversation",
+                        "timestamp": timestamp,
+                        "session_id": session_id or "default",
+                        "user_input_length": len(user_input),
+                        "response_length": len(agent_response),
+                    }
+                ],
+            )
+        except Exception as exc:
+            logger.error(
+                "memory_store_failed",
+                stream_type="conversation",
+                doc_id=doc_id,
+                error=str(exc),
+            )
+            # Continue without storing - memory is non-critical for agent operation
+            return
 
         # Update exchange count and check for reflection trigger
         self._exchange_count += 1
@@ -220,28 +231,37 @@ class NarrativeMemorySystem:
         session_id: str | None = None,
     ) -> None:
         """Store a research note (source consulted, annotation created)."""
-        timestamp = datetime.now().isoformat()
+        timestamp = datetime.now(timezone.utc).isoformat()
 
         if hasattr(self._embeddings, "embed_query"):
             embedding = self._embeddings.embed_query(content)
         else:
             embedding = self._embeddings.encode(content).tolist()
 
-        doc_id = f"research_{timestamp}_{hash(content) % 10000}"
+        doc_id = f"research_{uuid.uuid4().hex}"
 
-        self._collection.add(
-            ids=[doc_id],
-            embeddings=[embedding],
-            documents=[content],
-            metadatas=[
-                {
-                    "stream_type": "research",
-                    "timestamp": timestamp,
-                    "session_id": session_id or "default",
-                    "source": source or "unknown",
-                }
-            ],
-        )
+        try:
+            self._collection.add(
+                ids=[doc_id],
+                embeddings=[embedding],
+                documents=[content],
+                metadatas=[
+                    {
+                        "stream_type": "research",
+                        "timestamp": timestamp,
+                        "session_id": session_id or "default",
+                        "source": source or "unknown",
+                    }
+                ],
+            )
+        except Exception as exc:
+            logger.error(
+                "memory_store_failed",
+                stream_type="research",
+                doc_id=doc_id,
+                error=str(exc),
+            )
+            return
 
         logger.debug("research_note_stored", doc_id=doc_id)
 
@@ -253,7 +273,7 @@ class NarrativeMemorySystem:
         session_id: str | None = None,
     ) -> None:
         """Store a decision made during research."""
-        timestamp = datetime.now().isoformat()
+        timestamp = datetime.now(timezone.utc).isoformat()
 
         doc = f"Decision: {decision}"
         if rationale:
@@ -266,20 +286,29 @@ class NarrativeMemorySystem:
         else:
             embedding = self._embeddings.encode(doc).tolist()
 
-        doc_id = f"decision_{timestamp}_{hash(doc) % 10000}"
+        doc_id = f"decision_{uuid.uuid4().hex}"
 
-        self._collection.add(
-            ids=[doc_id],
-            embeddings=[embedding],
-            documents=[doc],
-            metadatas=[
-                {
-                    "stream_type": "decision",
-                    "timestamp": timestamp,
-                    "session_id": session_id or "default",
-                }
-            ],
-        )
+        try:
+            self._collection.add(
+                ids=[doc_id],
+                embeddings=[embedding],
+                documents=[doc],
+                metadatas=[
+                    {
+                        "stream_type": "decision",
+                        "timestamp": timestamp,
+                        "session_id": session_id or "default",
+                    }
+                ],
+            )
+        except Exception as exc:
+            logger.error(
+                "memory_store_failed",
+                stream_type="decision",
+                doc_id=doc_id,
+                error=str(exc),
+            )
+            return
 
         logger.debug("decision_stored", doc_id=doc_id)
 

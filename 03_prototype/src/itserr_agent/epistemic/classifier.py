@@ -172,8 +172,22 @@ class EpistemicClassifier:
         return False
 
     def _split_sentences(self, text: str) -> list[str]:
-        """Split text into sentences, preserving structure."""
-        # Simple sentence splitting - could be improved with nltk/spacy
+        """
+        Split text into sentences, preserving structure.
+
+        Note: This uses a simple regex-based approach that may incorrectly split on:
+        - Abbreviations (e.g., "Dr.", "St.", "etc.", "cf.")
+        - Scripture references (e.g., "Gen. 1:1", "Mt. 5:3")
+        - Page references (e.g., "pp. 23-45")
+        - Decimal numbers
+
+        For production use with academic/theological texts, consider using:
+        - NLTK's sent_tokenize with custom abbreviations
+        - spaCy's sentence segmentation
+        - A custom tokenizer trained on religious studies texts
+
+        TODO: Upgrade to more robust sentence tokenization before fellowship ends.
+        """
         sentences = re.split(r"(?<=[.!?])\s+", text)
         return sentences
 

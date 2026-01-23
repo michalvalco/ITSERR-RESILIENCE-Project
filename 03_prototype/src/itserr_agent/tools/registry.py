@@ -4,6 +4,7 @@ Tool Registry - Central management of available tools.
 Handles tool registration, lookup, and MCP protocol integration.
 """
 
+import time
 from typing import Any
 
 import structlog
@@ -125,8 +126,6 @@ class ToolRegistry:
             tool.confirm_first_use()
 
         # Execute the tool
-        import time
-
         start_time = time.perf_counter()
 
         try:
