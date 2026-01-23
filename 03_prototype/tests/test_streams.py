@@ -1,8 +1,6 @@
 """Tests for the memory streams module, focusing on timestamp handling."""
 
-from datetime import datetime, timezone, timedelta
-
-import pytest
+from datetime import datetime, timedelta, timezone
 
 from itserr_agent.memory.streams import (
     MemoryItem,
