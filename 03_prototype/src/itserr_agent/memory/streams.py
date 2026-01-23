@@ -10,7 +10,6 @@ Each stream has distinct characteristics for retention and retrieval:
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from enum import Enum
-from functools import partial
 from typing import Any
 
 
@@ -60,10 +59,16 @@ class MemoryItem:
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "MemoryItem":
         """Create from dictionary."""
+        # Parse timestamp and normalize to UTC if naive (for backwards compatibility
+        # with previously persisted data that may lack timezone info)
+        timestamp = datetime.fromisoformat(data["timestamp"])
+        if timestamp.tzinfo is None:
+            timestamp = timestamp.replace(tzinfo=timezone.utc)
+
         return cls(
             content=data["content"],
             stream_type=StreamType(data["stream_type"]),
-            timestamp=datetime.fromisoformat(data["timestamp"]),
+            timestamp=timestamp,
             session_id=data.get("session_id", "default"),
             metadata=data.get("metadata", {}),
         )

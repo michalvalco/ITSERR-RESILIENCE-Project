@@ -186,7 +186,7 @@ class EpistemicClassifier:
         - spaCy's sentence segmentation
         - A custom tokenizer trained on religious studies texts
 
-        TODO: Upgrade to more robust sentence tokenization before fellowship ends.
+        TODO: Replace regex splitter with NLTK or spaCy sentence segmentation for production use.
         """
         sentences = re.split(r"(?<=[.!?])\s+", text)
         return sentences
