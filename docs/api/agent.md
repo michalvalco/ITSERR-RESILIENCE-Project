@@ -98,6 +98,30 @@ Clear the current conversation history (memory is preserved).
 agent.clear_conversation()
 ```
 
+#### get_session_summary
+
+```python
+async def get_session_summary(session_id: str) -> str | None
+```
+
+Get a summary of a research session, including memory statistics and reflection summaries.
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `session_id` | `str` | The session identifier to summarize |
+
+**Returns:** Formatted summary string, or `None` if session not found
+
+**Example:**
+
+```python
+summary = await agent.get_session_summary("hermeneutics-study")
+if summary:
+    print(summary)
+```
+
 ### Properties
 
 #### conversation_history
