@@ -199,3 +199,19 @@ Use this context to inform your response, but mark any references to it appropri
         """Clear the current conversation history (memory is preserved)."""
         self._conversation_history.clear()
         logger.info("conversation_cleared")
+
+    async def get_session_summary(self, session_id: str) -> str | None:
+        """
+        Get a summary of a research session.
+
+        This provides a public interface to retrieve session summaries,
+        including memory statistics and any reflection summaries generated
+        during the session.
+
+        Args:
+            session_id: The session identifier to summarize
+
+        Returns:
+            A formatted summary string, or None if session not found
+        """
+        return await self._memory.get_session_summary(session_id)

@@ -12,7 +12,6 @@ Or via CLI: itserr-agent demo
 
 import asyncio
 from dataclasses import dataclass
-from typing import Any
 
 from rich.console import Console
 from rich.markdown import Markdown
@@ -245,7 +244,7 @@ async def run_live_scenario(scenario: DemoScenario) -> None:
 
         # Show session summary
         console.print("\n[bold]Session Summary:[/bold]")
-        summary = await agent._memory.get_session_summary(session_id)
+        summary = await agent.get_session_summary(session_id)
         if summary:
             console.print(Panel(Markdown(summary), border_style="dim"))
 
@@ -350,7 +349,7 @@ async def run_live_custom_session() -> None:
                 break
 
             if user_input.lower() == "summary":
-                summary = await agent._memory.get_session_summary(session_id)
+                summary = await agent.get_session_summary(session_id)
                 if summary:
                     console.print(Panel(Markdown(summary), title="[bold]Session Summary[/bold]"))
                 else:
@@ -581,24 +580,21 @@ async def run_demo(live_mode: bool = False) -> None:
 
 
 def main() -> None:
-    """CLI entry point for the demo."""
-    import typer
+    """CLI entry point for the demo when run as a module."""
+    import argparse
 
-    app = typer.Typer()
+    parser = argparse.ArgumentParser(
+        description="Run the ITSERR Agent demonstration.",
+    )
+    parser.add_argument(
+        "--live",
+        "-l",
+        action="store_true",
+        help="Use live API calls (requires API key)",
+    )
+    args = parser.parse_args()
 
-    @app.command()
-    def demo(
-        live: bool = typer.Option(
-            False,
-            "--live",
-            "-l",
-            help="Use live API calls (requires API key)",
-        ),
-    ) -> None:
-        """Run the ITSERR Agent demonstration."""
-        asyncio.run(run_demo(live_mode=live))
-
-    app()
+    asyncio.run(run_demo(live_mode=args.live))
 
 
 if __name__ == "__main__":
