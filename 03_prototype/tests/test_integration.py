@@ -8,7 +8,7 @@ These tests verify that all components work together correctly:
 """
 
 from typing import Any
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
@@ -438,14 +438,16 @@ class TestEndToEndScenarios:
         assert len(agent.conversation_history) == 0
 
         # Memory should still be accessible (exchanges were stored)
-        context = await agent._memory.retrieve_context(
+        # Verify ChromaDB was used for storage
+        assert mock_chromadb.PersistentClient.called
+
+        # Verify context retrieval still works
+        retrieved_context = await agent._memory.retrieve_context(
             query="Gadamer hermeneutics",
             session_id=session_id,
         )
-
-        # Context retrieval should still work
-        # (The actual content depends on mock behavior)
-        assert mock_chromadb.PersistentClient.called
+        # Context may be None or contain data depending on mock, but should not raise
+        assert retrieved_context is None or isinstance(retrieved_context, str)
 
 
 class TestErrorHandling:
@@ -487,6 +489,9 @@ class TestErrorHandling:
         collection = mock_chromadb.PersistentClient.return_value.get_or_create_collection.return_value
         collection.add = MagicMock(side_effect=Exception("Storage error"))
 
+        # Store initial exchange count
+        initial_count = memory._exchange_count
+
         # Should not raise, just log error
         await memory.store_exchange(
             user_input="Test",
@@ -495,4 +500,4 @@ class TestErrorHandling:
         )
 
         # Exchange count should not increment on failure
-        # (This depends on implementation - testing the behavior)
+        assert memory._exchange_count == initial_count

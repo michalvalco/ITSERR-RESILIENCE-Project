@@ -20,7 +20,7 @@ Wojtyla, Karol. *Person and Community: Selected Essays*. Translated by Theresa S
 
 ### Hermeneutical Theory
 
-Gadamer, Hans-Georg. *Truth and Method*. 2nd rev. ed. Translated by Joel Weinsheimer and Donald G. Marshall. London: Continuum, 2004.
+Gadamer, Hans-Georg. *Truth and Method*. 2nd rev. ed. Translated by Joel Weinsheimer and Donald G. Marshall. London: Continuum, 2004. Originally published as *Wahrheit und Methode* (Tübingen: Mohr, 1960).
 
 Gadamer, Hans-Georg. *Philosophical Hermeneutics*. Translated by David E. Linge. Berkeley: University of California Press, 1976.
 

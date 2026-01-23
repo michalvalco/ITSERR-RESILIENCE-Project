@@ -417,27 +417,27 @@ class NarrativeMemorySystem:
         - Methodological decisions made
         - Emerging patterns in the inquiry
         """
-        # Format exchanges for summarization
-        exchange_text = "\n\n---\n\n".join(
-            f"[{ex['timestamp']}]\n{ex['content']}" for ex in exchanges
-        )
-
         # Generate summary using pattern-based extraction
         # This provides a fallback when LLM is not available
         summary_parts = []
-
-        # Extract key themes by analyzing content
-        all_content = " ".join(ex["content"] for ex in exchanges)
 
         # Identify questions (simple heuristic)
         questions = []
         for ex in exchanges:
             content = ex["content"]
             # Look for question marks in user portions
+            # Use index-based parsing to more robustly extract the user segment
             if "User:" in content:
-                user_part = content.split("User:")[1].split("Assistant:")[0] if "Assistant:" in content else content.split("User:")[1]
-                if "?" in user_part:
-                    questions.append(user_part.strip())
+                user_start = content.rfind("User:")
+                user_segment = content[user_start + len("User:"):] if user_start != -1 else ""
+                if user_segment:
+                    assistant_index = user_segment.find("Assistant:")
+                    if assistant_index != -1:
+                        user_part = user_segment[:assistant_index]
+                    else:
+                        user_part = user_segment
+                    if "?" in user_part:
+                        questions.append(user_part.strip())
 
         if questions:
             summary_parts.append(
