@@ -16,64 +16,81 @@ The tool pattern system ensures appropriate human oversight for each level.
 
 ```mermaid
 graph LR
-    subgraph Internal["Internal (Autonomous)"]
+    subgraph ReadOnly["Read-Only (Auto-execute)"]
         A[Memory Retrieval]
-        B[Text Processing]
+        B[Database Search]
     end
 
-    subgraph Query["Query (Logged)"]
-        C[Database Search]
-        D[Reference Lookup]
+    subgraph NoteTaking["Note-Taking (Optional Confirmation)"]
+        C[Create Notes]
+        D[Add Annotations]
     end
 
-    subgraph External["External (Confirmation)"]
-        E[GNORM API]
-        F[External Services]
+    subgraph Modification["Modification (Approval Required)"]
+        E[File Writing]
+        F[Data Updates]
     end
 
-    subgraph Modification["Modification (Approval)"]
-        G[File Writing]
-        H[Data Updates]
+    subgraph External["External (Confirmation + First-time Gate)"]
+        G[GNORM API]
+        H[External Services]
     end
 ```
 
-### Internal Tools
+### Read-Only Tools
 
-**Behavior:** Autonomous execution, no user interaction required.
+**Behavior:** Autonomous execution, auto-execute without confirmation.
 
-**Rationale:** These operations have no external effects and support the agent's core function.
+**Rationale:** These operations have no side effects and support the agent's core function.
 
 **Examples:**
 
 - Memory context retrieval
-- Text embedding generation
-- Internal state management
+- Searching the memory store
+- Looking up bibliographic references
 
 ```python
 class ToolCategory(str, Enum):
-    INTERNAL = "internal"  # Autonomous
+    READ_ONLY = "read_only"  # Auto-execute
 ```
 
-### Query Tools
+### Note-Taking Tools
 
-**Behavior:** Transparent execution with logging.
+**Behavior:** Transparent execution with optional confirmation.
 
-**Rationale:** Read-only operations that the user should be aware of but don't require approval.
+**Rationale:** Creating notes and annotations is low-risk but users may want awareness.
 
 **Examples:**
 
-- Searching the memory store
-- Looking up bibliographic references
-- Querying local databases
+- Creating research notes
+- Adding annotations to texts
+- Recording decisions
 
 ```python
 class ToolCategory(str, Enum):
-    QUERY = "query"  # Logged, transparent
+    NOTE_TAKING = "note_taking"  # Optional confirmation
+```
+
+### Modification Tools
+
+**Behavior:** Requires explicit user approval with preview.
+
+**Rationale:** Actions that change state must be fully authorized by the researcher.
+
+**Examples:**
+
+- Editing existing files
+- Updating citations
+- Exporting annotations
+
+```python
+class ToolCategory(str, Enum):
+    MODIFICATION = "modification"  # Explicit approval
 ```
 
 ### External Tools
 
-**Behavior:** Requires user confirmation before execution.
+**Behavior:** Requires user confirmation before execution, plus first-time gate.
 
 **Rationale:** Interactions with external systems should be explicitly authorized.
 
@@ -85,24 +102,7 @@ class ToolCategory(str, Enum):
 
 ```python
 class ToolCategory(str, Enum):
-    EXTERNAL = "external"  # Confirmation required
-```
-
-### Modification Tools
-
-**Behavior:** Requires explicit user approval with preview.
-
-**Rationale:** Actions that change state must be fully authorized by the researcher.
-
-**Examples:**
-
-- Writing research notes to files
-- Updating bibliographic databases
-- Exporting annotations
-
-```python
-class ToolCategory(str, Enum):
-    MODIFICATION = "modification"  # Explicit approval
+    EXTERNAL = "external"  # Confirmation + first-time gate
 ```
 
 ## Tool Architecture

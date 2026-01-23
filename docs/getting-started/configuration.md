@@ -10,37 +10,37 @@ Create a `.env` file in the `03_prototype` directory:
 # 03_prototype/.env
 
 # === LLM Provider Settings ===
-LLM_PROVIDER=openai          # openai or anthropic
-LLM_MODEL=gpt-4-turbo-preview
-LLM_TEMPERATURE=0.7
+ITSERR_LLM_PROVIDER=anthropic  # openai or anthropic (default: anthropic)
+ITSERR_LLM_MODEL=claude-sonnet-4-20250514
+ITSERR_LLM_TEMPERATURE=0.7
 
 # === API Keys ===
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
+ITSERR_OPENAI_API_KEY=sk-...
+ITSERR_ANTHROPIC_API_KEY=sk-ant-...
 
 # === Embedding Settings ===
-EMBEDDING_PROVIDER=openai    # openai or local
-EMBEDDING_MODEL=text-embedding-3-small
+ITSERR_EMBEDDING_PROVIDER=local  # openai or local (default: local)
+ITSERR_EMBEDDING_MODEL=all-MiniLM-L6-v2
 
 # === Memory Settings ===
-MEMORY_PERSIST_PATH=./data/memory
-MEMORY_COLLECTION_NAME=itserr_memory
-MEMORY_TOP_K=5
-REFLECTION_TRIGGER_COUNT=10
+ITSERR_MEMORY_PERSIST_PATH=./data/memory
+ITSERR_MEMORY_COLLECTION_NAME=itserr_memory
+ITSERR_MEMORY_TOP_K=5
+ITSERR_REFLECTION_TRIGGER_COUNT=10
 
 # === Epistemic Classification ===
-EPISTEMIC_DEFAULT=interpretive
-HIGH_CONFIDENCE_THRESHOLD=0.85
-LOW_CONFIDENCE_THRESHOLD=0.5
+ITSERR_EPISTEMIC_DEFAULT=INTERPRETIVE
+ITSERR_HIGH_CONFIDENCE_THRESHOLD=0.85
+ITSERR_LOW_CONFIDENCE_THRESHOLD=0.5
 
 # === GNORM Integration (Optional) ===
-GNORM_API_URL=http://localhost:8000
-GNORM_API_KEY=
-GNORM_TIMEOUT=30.0
+ITSERR_GNORM_API_URL=http://localhost:8000
+ITSERR_GNORM_API_KEY=
+ITSERR_GNORM_TIMEOUT=30
 
 # === Logging ===
-LOG_LEVEL=INFO
-LOG_FORMAT=json
+ITSERR_LOG_LEVEL=INFO
+ITSERR_LOG_STRUCTURED=true
 ```
 
 ## Configuration Options
@@ -49,9 +49,9 @@ LOG_FORMAT=json
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `LLM_PROVIDER` | LLM provider (`openai` or `anthropic`) | `openai` |
-| `LLM_MODEL` | Model identifier | `gpt-4-turbo-preview` |
-| `LLM_TEMPERATURE` | Response creativity (0.0-1.0) | `0.7` |
+| `ITSERR_LLM_PROVIDER` | LLM provider (`openai` or `anthropic`) | `anthropic` |
+| `ITSERR_LLM_MODEL` | Model identifier | `claude-sonnet-4-20250514` |
+| `ITSERR_LLM_TEMPERATURE` | Response creativity (0.0-2.0) | `0.7` |
 
 **Recommended Models:**
 
@@ -71,42 +71,42 @@ LOG_FORMAT=json
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `EMBEDDING_PROVIDER` | Embedding source (`openai` or `local`) | `openai` |
-| `EMBEDDING_MODEL` | Model for embeddings | `text-embedding-3-small` |
+| `ITSERR_EMBEDDING_PROVIDER` | Embedding source (`openai` or `local`) | `local` |
+| `ITSERR_EMBEDDING_MODEL` | Model for embeddings | `all-MiniLM-L6-v2` |
 
-**Local Embedding Models:**
+**Local Embedding Models (default):**
 
 ```bash
-EMBEDDING_PROVIDER=local
-EMBEDDING_MODEL=all-MiniLM-L6-v2  # Fast, good quality
+ITSERR_EMBEDDING_PROVIDER=local
+ITSERR_EMBEDDING_MODEL=all-MiniLM-L6-v2  # Fast, good quality (default)
 # or
-EMBEDDING_MODEL=all-mpnet-base-v2  # Higher quality, slower
+ITSERR_EMBEDDING_MODEL=all-mpnet-base-v2  # Higher quality, slower
 ```
 
 ### Memory Settings
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `MEMORY_PERSIST_PATH` | ChromaDB storage location | `./data/memory` |
-| `MEMORY_COLLECTION_NAME` | Collection name | `itserr_memory` |
-| `MEMORY_TOP_K` | Items to retrieve | `5` |
-| `REFLECTION_TRIGGER_COUNT` | Exchanges before summarization | `10` |
+| `ITSERR_MEMORY_PERSIST_PATH` | ChromaDB storage location | `./data/memory` |
+| `ITSERR_MEMORY_COLLECTION_NAME` | Collection name | `itserr_memory` |
+| `ITSERR_MEMORY_TOP_K` | Items to retrieve | `5` |
+| `ITSERR_REFLECTION_TRIGGER_COUNT` | Exchanges before summarization | `10` |
 
 ### Epistemic Classification
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `EPISTEMIC_DEFAULT` | Default indicator for ambiguous content | `interpretive` |
-| `HIGH_CONFIDENCE_THRESHOLD` | Threshold for FACTUAL classification | `0.85` |
-| `LOW_CONFIDENCE_THRESHOLD` | Threshold below which to flag for review | `0.5` |
+| `ITSERR_EPISTEMIC_DEFAULT` | Default indicator for ambiguous content | `INTERPRETIVE` |
+| `ITSERR_HIGH_CONFIDENCE_THRESHOLD` | Threshold for FACTUAL classification | `0.85` |
+| `ITSERR_LOW_CONFIDENCE_THRESHOLD` | Threshold below which to flag for review | `0.5` |
 
 ### GNORM Integration
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `GNORM_API_URL` | GNORM API endpoint | `http://localhost:8000` |
-| `GNORM_API_KEY` | API authentication key | (none) |
-| `GNORM_TIMEOUT` | Request timeout in seconds | `30.0` |
+| `ITSERR_GNORM_API_URL` | GNORM API endpoint | (none) |
+| `ITSERR_GNORM_API_KEY` | API authentication key | (none) |
+| `ITSERR_GNORM_TIMEOUT` | Request timeout in seconds | `30` |
 
 ## Programmatic Configuration
 
@@ -132,17 +132,17 @@ agent = ITSERRAgent(config)
 ### Development
 
 ```bash
-LOG_LEVEL=DEBUG
-LLM_MODEL=gpt-3.5-turbo  # Cheaper for testing
+ITSERR_LOG_LEVEL=DEBUG
+ITSERR_LLM_MODEL=claude-3-5-haiku-20241022  # Faster for testing
 ```
 
 ### Production
 
 ```bash
-LOG_LEVEL=INFO
-LOG_FORMAT=json
-LLM_MODEL=gpt-4-turbo-preview
-HIGH_CONFIDENCE_THRESHOLD=0.9
+ITSERR_LOG_LEVEL=INFO
+ITSERR_LOG_STRUCTURED=true
+ITSERR_LLM_MODEL=claude-sonnet-4-20250514
+ITSERR_HIGH_CONFIDENCE_THRESHOLD=0.9
 ```
 
 ## Validation

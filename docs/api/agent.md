@@ -123,23 +123,23 @@ from itserr_agent.core.config import AgentConfig, LLMProvider, EmbeddingProvider
 
 | Field | Type | Default | Description |
 |-------|------|---------|-------------|
-| `llm_provider` | `LLMProvider` | `OPENAI` | LLM provider |
-| `llm_model` | `str` | `"gpt-4-turbo-preview"` | Model identifier |
+| `llm_provider` | `LLMProvider` | `ANTHROPIC` | LLM provider |
+| `llm_model` | `str` | `"claude-sonnet-4-20250514"` | Model identifier |
 | `llm_temperature` | `float` | `0.7` | Response temperature |
-| `openai_api_key` | `str \| None` | None | OpenAI API key |
-| `anthropic_api_key` | `str \| None` | None | Anthropic API key |
-| `embedding_provider` | `EmbeddingProvider` | `OPENAI` | Embedding provider |
-| `embedding_model` | `str` | `"text-embedding-3-small"` | Embedding model |
+| `openai_api_key` | `str \| None` | `None` | OpenAI API key |
+| `anthropic_api_key` | `str \| None` | `None` | Anthropic API key |
+| `embedding_provider` | `EmbeddingProvider` | `LOCAL` | Embedding provider |
+| `embedding_model` | `str` | `"all-MiniLM-L6-v2"` | Embedding model |
 | `memory_persist_path` | `Path` | `"./data/memory"` | ChromaDB path |
 | `memory_collection_name` | `str` | `"itserr_memory"` | Collection name |
 | `memory_top_k` | `int` | `5` | Items to retrieve |
 | `reflection_trigger_count` | `int` | `10` | Exchanges before reflection |
-| `epistemic_default` | `str` | `"interpretive"` | Default indicator |
+| `epistemic_default` | `str` | `"INTERPRETIVE"` | Default indicator |
 | `high_confidence_threshold` | `float` | `0.85` | FACTUAL threshold |
 | `low_confidence_threshold` | `float` | `0.5` | Review flag threshold |
-| `gnorm_api_url` | `str \| None` | None | GNORM API endpoint |
-| `gnorm_api_key` | `str \| None` | None | GNORM API key |
-| `gnorm_timeout` | `float` | `30.0` | GNORM timeout (seconds) |
+| `gnorm_api_url` | `str \| None` | `None` | GNORM API endpoint |
+| `gnorm_api_key` | `str \| None` | `None` | GNORM API key |
+| `gnorm_timeout` | `int` | `30` | GNORM timeout (seconds) |
 
 ### Methods
 
