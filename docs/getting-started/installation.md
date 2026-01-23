@@ -58,22 +58,25 @@ The development install includes:
 Create a `.env` file in the `03_prototype` directory:
 
 ```bash
-# LLM Provider (openai or anthropic)
-LLM_PROVIDER=openai
-LLM_MODEL=gpt-4-turbo-preview
-LLM_TEMPERATURE=0.7
+# LLM Provider (default: anthropic)
+# ITSERR_LLM_PROVIDER=anthropic
+# ITSERR_LLM_MODEL=claude-sonnet-4-20250514
 
-# API Keys (set at least one)
-OPENAI_API_KEY=your-openai-key
-ANTHROPIC_API_KEY=your-anthropic-key
+# API Keys - set the key for your chosen provider
+# Default provider is Anthropic, so set this key:
+ITSERR_ANTHROPIC_API_KEY=your-anthropic-key
 
-# Memory Settings
-MEMORY_PERSIST_PATH=./data/memory
-MEMORY_COLLECTION_NAME=itserr_memory
+# Or, to use OpenAI instead:
+# ITSERR_LLM_PROVIDER=openai
+# ITSERR_OPENAI_API_KEY=your-openai-key
+
+# Memory Settings (defaults shown)
+# ITSERR_MEMORY_PERSIST_PATH=./data/memory
+# ITSERR_MEMORY_COLLECTION_NAME=itserr_memory
 
 # Optional: GNORM Integration
-GNORM_API_URL=http://localhost:8000
-GNORM_API_KEY=your-gnorm-key
+# ITSERR_GNORM_API_URL=http://localhost:8000
+# ITSERR_GNORM_API_KEY=your-gnorm-key
 ```
 
 !!! warning "API Key Security"
@@ -92,18 +95,23 @@ itserr-agent --help
 pytest
 ```
 
-## Optional: Local Embeddings
+## Embeddings
 
-By default, the agent can use OpenAI embeddings. For local embeddings (no API calls for memory):
+By default, the agent uses **local embeddings** via SentenceTransformers (no API calls required for memory operations). The first run will download the embedding model (~80MB).
 
 ```bash
-# Embeddings are included in dependencies
-# Configure in .env:
-EMBEDDING_PROVIDER=local
-EMBEDDING_MODEL=all-MiniLM-L6-v2
+# Default configuration (local embeddings):
+# ITSERR_EMBEDDING_PROVIDER=local
+# ITSERR_EMBEDDING_MODEL=all-MiniLM-L6-v2
 ```
 
-The first run will download the embedding model (~80MB).
+To use OpenAI embeddings instead:
+
+```bash
+ITSERR_EMBEDDING_PROVIDER=openai
+ITSERR_EMBEDDING_MODEL=text-embedding-3-small
+ITSERR_OPENAI_API_KEY=your-openai-key
+```
 
 ## Troubleshooting
 

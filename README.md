@@ -79,10 +79,12 @@ The `03_prototype/` directory contains a working AI agent implementation with th
 cd 03_prototype
 pip install -e ".[dev]"
 
-# Set your API keys
-export OPENAI_API_KEY="your-key"
-# or
-export ANTHROPIC_API_KEY="your-key"
+# Configure API key for the default Anthropic provider
+export ITSERR_ANTHROPIC_API_KEY="your-anthropic-key"
+
+# Or, to use OpenAI instead:
+# export ITSERR_LLM_PROVIDER="openai"
+# export ITSERR_OPENAI_API_KEY="your-openai-key"
 
 # Run the agent
 itserr-agent chat
@@ -126,10 +128,10 @@ Ensuring the researcher maintains agency and control throughout AI-assisted inqu
 
 | Category | Behavior | Example |
 |----------|----------|---------|
-| **Internal** | Autonomous execution | Memory retrieval |
-| **Query** | Transparent, logged | Database searches |
-| **External** | Requires confirmation | GNORM API calls |
+| **Read-Only** | Auto-execute | Memory retrieval, searches |
+| **Note-Taking** | Optional confirmation | Creating notes, annotations |
 | **Modification** | Requires explicit approval | File operations |
+| **External** | Confirmation + first-time gate | GNORM API calls |
 
 ## Levels of AI Engagement in Religious Studies Research
 

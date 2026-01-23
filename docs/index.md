@@ -72,8 +72,12 @@ cd ITSERR-RESILIENCE-Project/03_prototype
 # Install dependencies
 pip install -e ".[dev]"
 
-# Configure API keys
-export OPENAI_API_KEY="your-key"
+# Configure API key for the default Anthropic provider
+export ITSERR_ANTHROPIC_API_KEY="your-anthropic-key"
+
+# Or, to use OpenAI instead:
+# export ITSERR_LLM_PROVIDER="openai"
+# export ITSERR_OPENAI_API_KEY="your-openai-key"
 
 # Start the agent
 itserr-agent chat

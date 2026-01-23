@@ -59,11 +59,14 @@ class MemoryItem:
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "MemoryItem":
         """Create from dictionary."""
-        # Parse timestamp and normalize to UTC if naive (for backwards compatibility
-        # with previously persisted data that may lack timezone info)
+        # Parse timestamp and normalize to UTC.
+        # For backwards compatibility with previously persisted data that may lack
+        # timezone info, treat naive timestamps as already being in UTC.
         timestamp = datetime.fromisoformat(data["timestamp"])
         if timestamp.tzinfo is None:
             timestamp = timestamp.replace(tzinfo=timezone.utc)
+        # Ensure all timestamps are normalized to UTC for consistent age calculations.
+        timestamp = timestamp.astimezone(timezone.utc)
 
         return cls(
             content=data["content"],
