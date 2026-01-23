@@ -121,12 +121,13 @@ The `demo` command provides an interactive demonstration of all three core innov
 itserr-agent demo
 ```
 
-This launches a guided tour with predefined scenarios:
+This launches a guided tour with three predefined scenarios:
 
 1. **Theological Research Session** - Explore epistemic indicators in action
 2. **Hermeneutical Exploration** - See factual vs. interpretive classification
 3. **Memory Continuity Demo** - Observe narrative memory across exchanges
-4. **Custom Session** - Interactive freeform mode
+
+You can also choose **Custom Session** for interactive freeform exploration.
 
 Use `--live` to enable actual LLM calls (requires configured API key).
 
