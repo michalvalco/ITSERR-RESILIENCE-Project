@@ -4,8 +4,8 @@
 
 This bibliography supports the ITSERR/RESILIENCE fellowship research on ethically-grounded AI agents for religious studies. Sources are organized thematically with annotations indicating relevance to the project.
 
-**Total Sources:** 20
-**Last Updated:** [Date]
+**Total Sources:** 24
+**Last Updated:** January 2026
 
 ---
 
