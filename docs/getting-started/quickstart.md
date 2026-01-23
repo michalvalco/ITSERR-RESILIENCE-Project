@@ -97,12 +97,38 @@ itserr-agent chat
 # Chat with specific session
 itserr-agent chat --session "my-research"
 
+# Run interactive demo (no API key required)
+itserr-agent demo
+
+# Run demo with live API calls
+itserr-agent demo --live
+
+# Show current configuration
+itserr-agent config
+
 # Show version
-itserr-agent --version
+itserr-agent version
 
 # Get help
 itserr-agent --help
 ```
+
+## Interactive Demo
+
+The `demo` command provides an interactive demonstration of all three core innovations without requiring an API key:
+
+```bash
+itserr-agent demo
+```
+
+This launches a guided tour with predefined scenarios:
+
+1. **Theological Research Session** - Explore epistemic indicators in action
+2. **Hermeneutical Exploration** - See factual vs. interpretive classification
+3. **Memory Continuity Demo** - Observe narrative memory across exchanges
+4. **Custom Session** - Interactive freeform mode
+
+Use `--live` to enable actual LLM calls (requires configured API key).
 
 ## Programmatic Usage
 
