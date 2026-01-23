@@ -130,6 +130,31 @@ def config() -> None:
     console.print(f"  GNORM URL: {cfg.gnorm_api_url or 'Not configured'}")
 
 
+@app.command()
+def demo(
+    live: bool = typer.Option(
+        False,
+        "--live",
+        "-l",
+        help="Use live API calls (requires configured API key)",
+    ),
+) -> None:
+    """
+    Run an interactive demonstration of the ITSERR Agent.
+
+    The demo showcases the three core innovations:
+    - Narrative Memory System
+    - Epistemic Modesty Indicators
+    - Human-Centered Tool Patterns
+
+    By default, runs in mock mode (no API key needed).
+    Use --live to enable actual LLM calls.
+    """
+    from itserr_agent.demo import run_demo
+
+    asyncio.run(run_demo(live_mode=live))
+
+
 def main() -> None:
     """Entry point for the CLI."""
     app()
