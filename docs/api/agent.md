@@ -137,7 +137,7 @@ from itserr_agent.core.config import AgentConfig, LLMProvider, EmbeddingProvider
 | `epistemic_default` | `str` | `"INTERPRETIVE"` | Default indicator |
 | `high_confidence_threshold` | `float` | `0.85` | FACTUAL threshold |
 | `low_confidence_threshold` | `float` | `0.5` | Review flag threshold |
-| `gnorm_api_url` | `str \| None` | `None` | GNORM API endpoint |
+| `gnorm_api_url` | `str \| None` | `None` (falls back to `http://localhost:8000`) | GNORM API endpoint |
 | `gnorm_api_key` | `str \| None` | `None` | GNORM API key |
 | `gnorm_timeout` | `int` | `30` | GNORM timeout (seconds) |
 
