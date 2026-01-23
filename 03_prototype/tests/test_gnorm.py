@@ -170,7 +170,7 @@ class TestGNORMTool:
     def test_tool_description(self, tool: GNORMTool) -> None:
         """Tool should have meaningful description."""
         assert "GNORM" in tool.description
-        assert "annotation" in tool.description.lower()
+        assert "annotate" in tool.description.lower()
 
     def test_tool_category_is_external(self, tool: GNORMTool) -> None:
         """Tool should be categorized as EXTERNAL."""
