@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![License: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Documentation](https://img.shields.io/badge/docs-MkDocs-blue.svg)](https://michalvalco.github.io/ITSERR-RESILIENCE-Project/)
 
 ## Project Overview
 
@@ -46,18 +47,89 @@ This project bridges twenty years of theological hermeneutics with AI agent deve
 - **Python 3.11+**
 - **LangChain / LangGraph** — Agent orchestration
 - **Model Context Protocol (MCP)** — Tool integration
-- **Vector Database** — Semantic memory (ChromaDB or similar)
+- **ChromaDB** — Vector database for semantic memory
+- **Sentence Transformers** — Local embeddings (with OpenAI option)
+
+## Prototype Implementation
+
+The `03_prototype/` directory contains a working AI agent implementation with the following module structure:
+
+```
+03_prototype/src/itserr_agent/
+├── core/
+│   ├── agent.py      # ITSERRAgent - main orchestration class
+│   └── config.py     # Pydantic settings with environment loading
+├── memory/
+│   ├── narrative.py  # ChromaDB-backed persistent memory
+│   └── streams.py    # Conversation, Research, Decision streams
+├── epistemic/
+│   ├── indicators.py # FACTUAL/INTERPRETIVE/DEFERRED types
+│   └── classifier.py # Rule-based sentence classification
+├── integrations/
+│   └── gnorm.py      # GNORM CRF annotation client (WP3)
+├── tools/
+│   ├── base.py       # BaseTool abstract class
+│   └── registry.py   # Tool registration and execution
+└── cli.py            # Typer-based command-line interface
+```
+
+### Quick Start
+
+```bash
+cd 03_prototype
+pip install -e ".[dev]"
+
+# Set your API keys
+export OPENAI_API_KEY="your-key"
+# or
+export ANTHROPIC_API_KEY="your-key"
+
+# Run the agent
+itserr-agent chat
+```
 
 ## Core Innovations
 
 ### 1. Narrative Memory System
+
 Contextual continuity across research sessions, preserving the hermeneutical journey.
 
+**Implementation:** Three distinct memory streams with different retention characteristics:
+
+| Stream | Purpose | Retention |
+|--------|---------|-----------|
+| **Conversation** | Recent exchanges and clarifications | High recency weight, summarized periodically |
+| **Research** | Sources consulted and notes created | Long-term, high relevance weight |
+| **Decision** | Methodological and interpretive choices | Preserved indefinitely |
+
+Memory is persisted via ChromaDB with semantic retrieval, enabling the agent to surface relevant prior context for new queries.
+
 ### 2. Epistemic Modesty Indicators
+
 Clear differentiation between factual, interpretive, and deferred-to-human responses.
 
+**Implementation:** A dual-layer classification system:
+1. **LLM-level:** System prompt instructs the model to tag its outputs
+2. **Classifier-level:** Rule-based validation ensures consistent tagging
+
+| Indicator | Meaning | Examples |
+|-----------|---------|----------|
+| `[FACTUAL]` | Verifiable information | Dates, citations, definitions |
+| `[INTERPRETIVE]` | AI-assisted analysis | Patterns, connections, themes |
+| `[DEFERRED]` | Requires human judgment | Theological claims, value judgments |
+
 ### 3. Human-Centered Tool-Calling Patterns
+
 Ensuring the researcher maintains agency and control throughout AI-assisted inquiry.
+
+**Implementation:** Tools are categorized by autonomy level:
+
+| Category | Behavior | Example |
+|----------|----------|---------|
+| **Internal** | Autonomous execution | Memory retrieval |
+| **Query** | Transparent, logged | Database searches |
+| **External** | Requires confirmation | GNORM API calls |
+| **Modification** | Requires explicit approval | File operations |
 
 ## Levels of AI Engagement in Religious Studies Research
 
@@ -98,6 +170,15 @@ Ensuring the researcher maintains agency and control throughout AI-assisted inqu
 - Implement core innovations
 - Create technical documentation with philosophical annotations
 - Prepare final presentation
+
+## GNORM Integration
+
+The agent integrates with the **GNORM** (WP3) CRF-based annotation system for named entity recognition in religious/theological texts. Annotations are automatically tagged with epistemic indicators based on confidence scores:
+
+- **High confidence (≥85%):** Marked as `[FACTUAL]`
+- **Lower confidence:** Marked as `[INTERPRETIVE]`
+
+This ensures researchers understand the reliability of automated annotations.
 
 ## Related Projects
 
