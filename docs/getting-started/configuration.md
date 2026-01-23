@@ -104,7 +104,7 @@ ITSERR_EMBEDDING_MODEL=all-mpnet-base-v2  # Higher quality, slower
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `ITSERR_GNORM_API_URL` | GNORM API endpoint | `http://localhost:8000` (fallback when unset) |
+| `ITSERR_GNORM_API_URL` | GNORM API endpoint (falls back to `http://localhost:8000` when unset) | (none) |
 | `ITSERR_GNORM_API_KEY` | API authentication key | (none) |
 | `ITSERR_GNORM_TIMEOUT` | Request timeout in seconds | `30` |
 
