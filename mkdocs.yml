@@ -1,0 +1,122 @@
+site_name: ITSERR/RESILIENCE AI Agent
+site_description: Ethically-Grounded AI Agents for Religious Studies Research
+site_author: Prof. Michal Valco
+site_url: https://michalvalco.github.io/ITSERR-RESILIENCE-Project/
+
+repo_name: michalvalco/ITSERR-RESILIENCE-Project
+repo_url: https://github.com/michalvalco/ITSERR-RESILIENCE-Project
+
+copyright: |
+  Code: MIT License | Documentation: CC BY 4.0<br>
+  &copy; 2026 ITSERR/RESILIENCE Project
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/michalvalco/ITSERR-RESILIENCE-Project
+  generator: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Configuration: getting-started/configuration.md
+  - Core Concepts:
+    - Overview: concepts/overview.md
+    - Epistemic Indicators: concepts/epistemic-indicators.md
+    - Narrative Memory: concepts/narrative-memory.md
+    - Tool Patterns: concepts/tool-patterns.md
+  - Architecture:
+    - System Design: architecture/system-design.md
+    - Memory Architecture: architecture/memory-architecture.md
+    - GNORM Integration: architecture/gnorm-integration.md
+  - Research:
+    - Philosophical Foundations: research/foundations.md
+    - Epistemic Modesty Framework: research/epistemic-modesty.md
+  - API Reference:
+    - Agent: api/agent.md
+    - Memory: api/memory.md
+    - Epistemic: api/epistemic.md
+  - About:
+    - Project Context: about/context.md
+    - Fellowship: about/fellowship.md
+    - Acknowledgments: about/acknowledgments.md
