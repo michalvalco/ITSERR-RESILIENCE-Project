@@ -30,7 +30,7 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Milestone | Target Date | Status | Notes |
 |-----------|-------------|--------|-------|
 | Clone GNORM repo & run test annotation | Feb 2 | ☑ Complete | Jan 25: Pipeline analyzed, WebAnno TSV format verified |
-| Download Zenodo dataset & examine structure | Feb 2 | ☑ Complete | Jan 25: 186 docs, 18,425 annotations, 462 unique refs |
+| Download Zenodo dataset & examine structure | Feb 2 | ☑ Complete | Jan 25: 186 docs total (39 expert-annotated with 18,425 tokens, 462 unique refs) |
 | Select 2-3 Stöckel texts for pilot | Feb 4 | ☐ Pending | High citation density chapters |
 | Create cleaned digital versions | Feb 6 | ☐ Pending | UTF-8 plain text, normalized |
 | Begin manual annotation (100+ refs) | Feb 9 | ☐ Pending | Using INCEpTION |
