@@ -295,7 +295,7 @@ The paper notes that allegationes in canon law glosses function not just as refe
 
 ## Questions About GNORM's Roadmap
 
-### 17. Future Development
+### 10. Future Development
 
 - [ ] **What's the timeline for the Talmud extension?** (Marco Papasidero's work)
 - [ ] **Are there plans for a public API** beyond the research consortium?

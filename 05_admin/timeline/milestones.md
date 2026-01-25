@@ -20,7 +20,7 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Draft working paper outline (Sections 0-6) | Feb 7 | ☐ Pending | Skeletal structure acceptable |
 | Review GNORM codebase | Feb 9 | ☑ Complete | Jan 25: Full analysis in stockel_annotation/scripts/ |
 | Set up dev environment | Feb 9 | ☑ Complete | Jan 25: GNORM deps installed (cassis, crfsuite) |
-| Prepare questions for WP3 team | Feb 9 | ☑ Complete | Jan 25: gnorm_briefing_questions.md (17 sections, 6 Stöckel-specific) |
+| Prepare questions for WP3 team | Feb 9 | ☑ Complete | Jan 25: gnorm_briefing_questions.md (16 sections, 6 Stöckel-specific) |
 | Read ITSERR WP documentation | Feb 9 | ☐ Pending | Surface familiarity WP4-8 |
 
 ### 1B. Stöckel Corpus Preparation (Pilot Study)
