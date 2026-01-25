@@ -10,11 +10,11 @@
 
 | Category | Progress | Deadline |
 |----------|----------|----------|
-| GNORM Environment | 0/4 tasks | Feb 9 |
+| GNORM Environment | 2/4 tasks | Feb 9 |
 | Text Selection & Preparation | 0/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
-| Documentation & Communication | 0/4 tasks | Feb 9 |
-| **Overall** | **0/18 tasks** | **Feb 9** |
+| Documentation & Communication | 1/4 tasks | Feb 9 |
+| **Overall** | **3/18 tasks** | **Feb 9** |
 
 ---
 
@@ -22,44 +22,46 @@
 
 ### 1.1 Clone and Explore GNORM Repository
 
-- [ ] **Clone repository**
+- [x] **Clone repository**
   ```bash
   git clone https://github.com/aesuli/CIC_annotation.git
   ```
-  - Date completed: ___
-  - Notes: ___
+  - Date completed: Jan 25, 2026
+  - Notes: Cloned to `gnorm_repo/` subdirectory
 
-- [ ] **Review code structure**
-  - [ ] Examine CRF training pipeline
-  - [ ] Understand BILOU schema implementation
-  - [ ] Review preprocessing scripts for *Liber Extra*
-  - [ ] Examine evaluation code (token-and-blank model)
-  - Date completed: ___
-  - Notes: ___
+- [x] **Review code structure**
+  - [x] Examine CRF training pipeline (`train_crfsuite.py`)
+  - [x] Understand BIOES schema implementation (`cas_to_bioes.py`)
+  - [x] Review preprocessing scripts for *Liber Extra*
+  - [x] Examine evaluation code (`statistics.py`, `annotate_by_crfsuite.py`)
+  - Date completed: Jan 25, 2026
+  - Notes: Full analysis documented in `scripts/GNORM_PIPELINE_ANALYSIS.md`
 
 - [ ] **Run test annotation on sample data**
-  - [ ] Follow installation instructions
-  - [ ] Run pipeline on provided test data
+  - [x] Follow installation instructions (dependencies installed)
+  - [ ] Run pipeline on provided test data (requires Zenodo dataset)
   - [ ] Document any setup issues
   - Date completed: ___
-  - Notes: ___
+  - Notes: Blocked on Zenodo dataset download
 
 ### 1.2 Download and Examine Zenodo Dataset
 
 - [ ] **Download dataset**
   - DOI: 10.5281/zenodo.14381709
-  - [ ] Download complete dataset
+  - [ ] Download complete dataset (manual download required)
   - [ ] Verify file integrity
   - Date completed: ___
   - Size: ___ MB
+  - **ACTION REQUIRED:** Visit https://zenodo.org/records/14381709 and download manually
+  - Instructions: See `data/raw/ZENODO_DOWNLOAD_INSTRUCTIONS.md`
 
 - [ ] **Examine dataset structure**
-  - [ ] Document file formats
-  - [ ] Understand annotation schema
-  - [ ] Note: 41,784 annotated legal references
+  - [x] Document expected file formats (from code analysis)
+  - [x] Understand annotation schema (BIOES tagging, UIMA CAS XMI)
+  - [ ] Note: 41,784 annotated legal references (verify after download)
   - [ ] Study linkages to lemmas, chapters, titles, book parts
   - Date completed: ___
-  - Notes: ___
+  - Notes: Expected format documented in `scripts/GNORM_PIPELINE_ANALYSIS.md`
 
 ---
 
@@ -172,14 +174,14 @@
 
 ### 4.3 Development Environment
 
-- [ ] **Set up local development environment**
-  - [ ] Python 3.11+ installed
-  - [ ] Create virtual environment
-  - [ ] Install GNORM dependencies
-  - [ ] Install CRFsuite
-  - [ ] Verify environment matches GNORM requirements
-  - Date completed: ___
-  - Notes: ___
+- [x] **Set up local development environment**
+  - [x] Python 3.11+ installed
+  - [ ] Create virtual environment (recommended for isolation)
+  - [x] Install GNORM dependencies (dkpro-cassis, scikit-learn, sklearn-crfsuite, python-docx)
+  - [x] Install CRFsuite (via sklearn-crfsuite)
+  - [x] Verify environment matches GNORM requirements
+  - Date completed: Jan 25, 2026
+  - Notes: Dependencies installed globally; recommend venv for production use
 
 ### 4.4 Initial Results Documentation
 
@@ -237,8 +239,12 @@ Use this section to record important decisions, insights, and issues encountered
 | Date | Topic | Decision/Note |
 |------|-------|---------------|
 | Jan 25, 2026 | Project initialization | Created tracking structure and directory layout |
-| | | |
-| | | |
+| Jan 25, 2026 | GNORM cloned | Repository cloned to `gnorm_repo/` successfully |
+| Jan 25, 2026 | Pipeline analysis | Full analysis documented in `scripts/GNORM_PIPELINE_ANALYSIS.md` |
+| Jan 25, 2026 | BIOES vs BILOU | GNORM uses BIOES scheme (B/I/E/S/O), not BILOU |
+| Jan 25, 2026 | Zenodo access | API not accessible; manual download required |
+| Jan 25, 2026 | Dependencies | Installed: dkpro-cassis, scikit-learn, sklearn-crfsuite, python-docx |
+| Jan 25, 2026 | Entity types | GNORM supports: AN (allegation), LEMMA, CHAPTER, TITLE |
 
 ---
 
