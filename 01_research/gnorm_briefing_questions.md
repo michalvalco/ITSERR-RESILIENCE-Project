@@ -1,9 +1,20 @@
 # GNORM Technical Briefing Questions
 
-**Briefing Dates:** February 11-12, 2026  
-**Purpose:** Understand GNORM capabilities for integration with ethically-grounded AI agent prototype  
-**Primary Contact:** Dr. Arianna Maria Pavone (WP3 Coordinator, University of Palermo)  
+**Prepared by:** Michal Valčo
+**Briefing Dates:** February 11-12, 2026
+**Purpose:** Understand GNORM capabilities for integration with ethically-grounded AI agent prototype
+**Primary Contact:** Dr. Arianna Maria Pavone (WP3 Coordinator, University of Palermo)
 **Additional Contacts:** Andrea Esuli (ISTI-CNR, CRF annotation lead), Vincenzo Roberto Imperia, Andrea Ravasco
+
+---
+
+## Related Documentation
+
+This document should be read alongside the existing implementation:
+
+- **Architecture:** [`docs/architecture/gnorm-integration.md`](../docs/architecture/gnorm-integration.md) — System design and component overview
+- **Implementation:** [`03_prototype/src/itserr_agent/integrations/gnorm.py`](../03_prototype/src/itserr_agent/integrations/gnorm.py) — Working client code
+- **Configuration:** [`03_prototype/.env.example`](../03_prototype/.env.example) — GNORM environment variables
 
 ---
 
@@ -22,8 +33,64 @@ Before the briefing, it's worth noting what the published paper has already reve
 - GitHub: `github.com/aesuli/CIC_annotation` (annotation pipeline)
 - Zenodo: Dataset with training data and annotations
 
-**Current focus:** Medieval canon law (Liber Extra, Decretales Gregorii IX)  
+**Current focus:** Medieval canon law (Liber Extra, Decretales Gregorii IX)
 **Expanding to:** Babylonian Talmud (Marco Papasidero's work)
+
+---
+
+## What We've Already Implemented (Prototype Status)
+
+The prototype already has a working GNORM integration framework. During the briefing, we need to **validate these assumptions** and fill in the placeholders:
+
+### GNORMClient (`integrations/gnorm.py`)
+
+**Implemented:**
+- Async HTTP client using `httpx.AsyncClient`
+- Context manager pattern for proper resource cleanup
+- Configurable base URL, timeout, and API key via environment variables
+- Bearer token authentication (header format assumed)
+- Request payload: `{"text": str, "language": str, "entity_types": list[str]?}`
+- Response parsing into `GNORMAnnotation` dataclass
+
+**Needs Confirmation:**
+- [ ] API endpoint path (currently assumes `/annotate`)
+- [ ] Exact request/response JSON schema
+- [ ] Authentication mechanism (Bearer token correct?)
+- [ ] Confidence score scale (assumed 0.0–1.0)
+
+### GNORMAnnotation Dataclass
+
+**Current fields:**
+```python
+entity_text: str      # The annotated text span
+entity_type: str      # Entity category
+start_offset: int     # Character position (start)
+end_offset: int       # Character position (end)
+confidence: float     # 0.0–1.0 (assumed)
+metadata: dict | None # Additional data
+```
+
+**Epistemic mapping implemented:**
+- `confidence ≥ 0.85` → `[FACTUAL]`
+- `confidence < 0.85` → `[INTERPRETIVE]`
+- Threshold is configurable via `ITSERR_HIGH_CONFIDENCE_THRESHOLD`
+
+### GNORMTool (Human-Centered Pattern)
+
+**Implemented:**
+- Category: `EXTERNAL` (requires user confirmation + first-time gate)
+- Formatted output with epistemic indicators
+- Error handling with graceful degradation
+
+### Configuration Options
+
+```bash
+# Current .env settings
+ITSERR_GNORM_API_URL=http://localhost:8000  # Placeholder
+ITSERR_GNORM_TIMEOUT=30.0
+ITSERR_GNORM_API_KEY=                        # To be obtained
+ITSERR_HIGH_CONFIDENCE_THRESHOLD=0.85
+```
 
 ---
 

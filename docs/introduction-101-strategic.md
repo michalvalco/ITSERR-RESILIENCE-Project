@@ -1,3 +1,10 @@
+# Strategic Guide: Pre-Fellowship Preparation
+
+**Author:** Michal Valčo
+**Purpose:** Maximize the value of your ITSERR Transnational Access Fellowship by completing groundwork before arriving in Palermo.
+**Related:** [Introduction 101](introduction-101.md) | [GNORM Integration](architecture/gnorm-integration.md)
+
+---
 
 ## Repository Development: Pre-Fellowship Actions
 
@@ -281,8 +288,8 @@ Create teaching materials showing:
 - Bibliographic databases for primary sources
 
 **Training Events:**
-- ITSERR Summer School (September 2025): summerschoolitserr2025@itserr.it
-- "AI for Religious Studies" workshop at University of Palermo
+- ITSERR Summer School (September 2025 — past event, materials may be available)
+- "AI for Religious Studies" workshop at University of Palermo (check ITSERR website for upcoming dates)
 
 ---
 
