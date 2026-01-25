@@ -294,8 +294,8 @@ Week 2: "How does this relate to Kierkegaard?"
 
 **How it works:**
 1. The AI is instructed to tag its own responses
-2. A rule-based classifier double-checks every sentence
-3. Final output includes clear labels
+2. A rule-based classifier reviews the response to detect and tag any unlabelled sentences
+3. Final output includes clear labels on all content
 
 **The three indicators:**
 
