@@ -132,7 +132,38 @@ de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence
 webanno.custom.Glossa  <!-- Used for legal reference annotations -->
 ```
 
-### BIOES File Format
+### WebAnno TSV 3.3 Format (Actual Zenodo Export)
+
+**Verified from Zenodo dataset analysis (Jan 25, 2026):**
+
+```tsv
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+#Text=Quoniam omne quod non est ex fide, peccatum est, 28. q. 1 § quod autem
+4-1    79-86     Quoniam    _
+4-2    87-91     omne       _
+...
+4-12   128-130   28         Allegazione normativa[1]
+4-13   130-131   .          Allegazione normativa[1]
+4-14   132-133   q          Allegazione normativa[1]
+4-15   133-134   .          Allegazione normativa[1]
+4-16   135-136   1          Allegazione normativa[1]
+4-17   137-138   §          Allegazione normativa[1]
+4-18   139-143   quod       Allegazione normativa[1]
+4-19   144-149   autem      Allegazione normativa[1]
+4-20   149-150   ;          _
+```
+
+**Columns:**
+1. Token ID (sentence-token format: `4-12`)
+2. Character offsets (`128-130`)
+3. Token text (`28`)
+4. Annotation label (`_` for none, `Allegazione normativa[N]` for legal reference)
+
+**Key observation:** The `[N]` suffix groups tokens belonging to the same reference span.
+
+### BIOES File Format (Pipeline Output)
 
 ```
 # sentence 1
@@ -145,6 +176,37 @@ c. 12 14 I-AN
 # sentence 2 (empty line separates sentences)
 ...
 ```
+
+---
+
+## Zenodo Dataset Statistics (Verified)
+
+**DOI:** 10.5281/zenodo.14381709
+
+| Dataset | Documents | Annotations |
+|---------|-----------|-------------|
+| Complete corpus | 186 | All formats available |
+| Expert annotations | 39 | 18,425 tokens, 462 unique refs |
+
+### Available Export Formats
+
+| Format | Directory | Use Case |
+|--------|-----------|----------|
+| `conll/` | CoNLL | Standard NER format |
+| `conllu/` | CoNLL-U | Universal Dependencies |
+| `nif/` | NLP Interchange Format | Linked data |
+| `tei/` | TEI XML | Digital humanities |
+| `txt/` | Plain text | Source documents |
+| `uima_cas/` | UIMA CAS XMI | INCEpTION native |
+| `webanno/` | WebAnno TSV 3.3 | Human-readable annotations |
+
+### Top Documents by Annotation Density
+
+| Document | Annotations |
+|----------|-------------|
+| `2.02 DE FORO COMPETENTI` | 3,943 |
+| `1.02 DE CONSTITUTIONIBUS` | 3,080 |
+| `1.33 DE MAIORITATE ET OBEDIENTIA` | 2,784 |
 
 ---
 

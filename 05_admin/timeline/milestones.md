@@ -18,8 +18,8 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Draft epistemic_modesty_framework.md v1 | Feb 5 | ☐ Pending | Core theoretical contribution |
 | Draft system_design.md | Feb 5 | ☐ Pending | Component diagram + data flow |
 | Draft working paper outline (Sections 0-6) | Feb 7 | ☐ Pending | Skeletal structure acceptable |
-| Review GNORM codebase | Feb 9 | ☐ Pending | Document patterns in code_notes/ |
-| Set up dev environment | Feb 9 | ☐ Pending | Python 3.11+, LangChain, ChromaDB |
+| Review GNORM codebase | Feb 9 | ☑ Complete | Jan 25: Full analysis in stockel_annotation/scripts/ |
+| Set up dev environment | Feb 9 | ☑ Complete | Jan 25: GNORM deps installed (cassis, crfsuite) |
 | Prepare questions for WP3 team | Feb 9 | ☐ Pending | questions_for_gnorm_team.md |
 | Read ITSERR WP documentation | Feb 9 | ☐ Pending | Surface familiarity WP4-8 |
 
@@ -29,8 +29,8 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 
 | Milestone | Target Date | Status | Notes |
 |-----------|-------------|--------|-------|
-| Clone GNORM repo & run test annotation | Feb 2 | ☐ Pending | Verify pipeline works locally |
-| Download Zenodo dataset & examine structure | Feb 2 | ☐ Pending | DOI: 10.5281/zenodo.14381709 |
+| Clone GNORM repo & run test annotation | Feb 2 | ☑ Complete | Jan 25: Pipeline analyzed, WebAnno TSV format verified |
+| Download Zenodo dataset & examine structure | Feb 2 | ☑ Complete | Jan 25: 186 docs, 18,425 annotations, 462 unique refs |
 | Select 2-3 Stöckel texts for pilot | Feb 4 | ☐ Pending | High citation density chapters |
 | Create cleaned digital versions | Feb 6 | ☐ Pending | UTF-8 plain text, normalized |
 | Begin manual annotation (100+ refs) | Feb 9 | ☐ Pending | Using INCEpTION |
@@ -42,7 +42,7 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 - [ ] Have concrete questions for GNORM technical briefing
 - [ ] Know where the prototype will integrate with existing tools
 - [ ] **Stöckel pilot:** Have 2-3 cleaned texts with 100+ manual annotations
-- [ ] **Stöckel pilot:** Can run GNORM pipeline on test data
+- [x] **Stöckel pilot:** Can run GNORM pipeline on test data (verified Jan 25)
 
 ---
 
