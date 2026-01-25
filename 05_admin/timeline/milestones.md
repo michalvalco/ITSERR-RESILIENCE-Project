@@ -10,6 +10,8 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 
 **Goal:** Arrive at Palermo with sufficient preparation to maximize fellowship time.
 
+### 1A. Core Preparation
+
 | Milestone | Target Date | Status | Notes |
 |-----------|-------------|--------|-------|
 | Complete bibliography (15-20 sources) | Feb 2 | ☐ Pending | Annotated, organized by theme |
@@ -21,10 +23,26 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Prepare questions for WP3 team | Feb 9 | ☐ Pending | questions_for_gnorm_team.md |
 | Read ITSERR WP documentation | Feb 9 | ☐ Pending | Surface familiarity WP4-8 |
 
+### 1B. Stöckel Corpus Preparation (Pilot Study)
+
+**Detailed tracking:** See `03_prototype/stockel_annotation/PROGRESS.md`
+
+| Milestone | Target Date | Status | Notes |
+|-----------|-------------|--------|-------|
+| Clone GNORM repo & run test annotation | Feb 2 | ☐ Pending | Verify pipeline works locally |
+| Download Zenodo dataset & examine structure | Feb 2 | ☐ Pending | DOI: 10.5281/zenodo.14381709 |
+| Select 2-3 Stöckel texts for pilot | Feb 4 | ☐ Pending | High citation density chapters |
+| Create cleaned digital versions | Feb 6 | ☐ Pending | UTF-8 plain text, normalized |
+| Begin manual annotation (100+ refs) | Feb 9 | ☐ Pending | Using INCEpTION |
+| Document annotation schema decisions | Feb 9 | ☐ Pending | Adaptation from GNORM schema |
+| Draft email to Arianna (pilot proposal) | Feb 7 | ☐ Pending | Outline collaboration potential |
+
 ### Phase 1 Success Criteria
 - [ ] Can articulate the epistemic modesty framework in 5 minutes
 - [ ] Have concrete questions for GNORM technical briefing
 - [ ] Know where the prototype will integrate with existing tools
+- [ ] **Stöckel pilot:** Have 2-3 cleaned texts with 100+ manual annotations
+- [ ] **Stöckel pilot:** Can run GNORM pipeline on test data
 
 ---
 

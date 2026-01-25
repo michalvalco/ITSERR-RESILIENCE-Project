@@ -6,8 +6,9 @@ AI agent prototype development for the ITSERR/RESILIENCE project.
 
 ```
 03_prototype/
-├── architecture/      # Design documents
-└── code_notes/        # Technical decisions log
+├── architecture/         # Design documents
+├── code_notes/           # Technical decisions log
+└── stockel_annotation/   # Stöckel corpus pilot study (GNORM adaptation)
 ```
 
 ## Core Innovations
@@ -35,12 +36,31 @@ Ensuring researcher maintains agency and control:
 - Confirmation for significant actions
 - Easy override/correction mechanisms
 
+## Stöckel Annotation Pilot Study
+
+Testing GNORM's CRF-based annotation approach on 16th-century Reformation theological texts.
+
+**Directory:** `stockel_annotation/`
+
+| Component | Purpose |
+|-----------|---------|
+| `data/raw/` | Original OCR output from Stöckel texts |
+| `data/cleaned/` | Preprocessed, normalized plain text |
+| `data/annotations/` | INCEpTION exports (manual annotations) |
+| `models/` | GNORM baseline + domain-adapted CRF |
+| `results/experiments.md` | Documented findings |
+
+**Progress Tracking:** See `stockel_annotation/PROGRESS.md`
+
+---
+
 ## Technical Stack
 
 - **Python 3.11+**
 - **LangChain / LangGraph** — Agent orchestration
 - **Model Context Protocol (MCP)** — Tool integration
 - **ChromaDB** — Vector database for semantic memory
+- **CRFsuite** — Sequence labeling for Stöckel annotation
 
 ## Architecture Documents (`architecture/`)
 
@@ -71,5 +91,7 @@ Technical decision log documenting:
 ## Related Resources
 
 - [GNORM Annotation Code](https://github.com/aesuli/CIC_annotation)
+- [GNORM Zenodo Dataset](https://doi.org/10.5281/zenodo.14381709)
+- [INCEpTION Annotation Tool](https://inception-project.github.io/)
 - [LangChain Documentation](https://python.langchain.com/)
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)

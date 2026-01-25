@@ -87,7 +87,7 @@ metadata: dict | None # Additional data
 ```bash
 # Current .env settings
 ITSERR_GNORM_API_URL=http://localhost:8000  # Placeholder
-ITSERR_GNORM_TIMEOUT=30.0
+ITSERR_GNORM_TIMEOUT=30
 ITSERR_GNORM_API_KEY=                        # To be obtained
 ITSERR_HIGH_CONFIDENCE_THRESHOLD=0.85
 ```
