@@ -97,6 +97,7 @@ extra:
 nav:
   - Home: index.md
   - Introduction (101 Guide): introduction-101.md
+  - Strategic Pre-Fellowship Guide: introduction-101-strategic.md
   - Getting Started:
     - Installation: getting-started/installation.md
     - Quick Start: getting-started/quickstart.md
