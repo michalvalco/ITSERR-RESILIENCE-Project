@@ -1,0 +1,709 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 1.13 DE ORDINATIS AB EPISCOPO QUI RENUNCIAVIT EPISCOPATUI\r
+#Text=\r
+#Text=X 1.13.01 Requisivit a nobis\r
+#Text=\r
+#Text= Usque\r
+#Text=Exclusive, ut probant sequentia.
+1-1	0-1	X	_	
+1-2	2-6	1.13	Titolo[1]	
+1-3	7-9	DE	Titolo[1]	
+1-4	10-19	ORDINATIS	Titolo[1]	
+1-5	20-22	AB	Titolo[1]	
+1-6	23-31	EPISCOPO	Titolo[1]	
+1-7	32-35	QUI	Titolo[1]	
+1-8	36-47	RENUNCIAVIT	Titolo[1]	
+1-9	48-59	EPISCOPATUI	Titolo[1]	
+1-10	63-64	X	_	
+1-11	65-72	1.13.01	Capitolo[2]	
+1-12	73-83	Requisivit	Capitolo[2]	
+1-13	84-85	a	Capitolo[2]	
+1-14	86-91	nobis	Capitolo[2]	
+1-15	96-101	Usque	Lemma glossato	
+1-16	103-112	Exclusive	_	
+1-17	112-113	,	_	
+1-18	114-116	ut	_	
+1-19	117-124	probant	_	
+1-20	125-134	sequentia	_	
+1-21	134-135	.	_	
+
+#Text=Sic ponitur ff. de his qui not. infam., quod ait praetor.
+2-1	137-140	Sic	_	
+2-2	141-148	ponitur	_	
+2-3	149-151	ff	Allegazione normativa[3]	
+2-4	151-152	.	Allegazione normativa[3]	
+2-5	153-155	de	Allegazione normativa[3]	
+2-6	156-159	his	Allegazione normativa[3]	
+2-7	160-163	qui	Allegazione normativa[3]	
+2-8	164-167	not	Allegazione normativa[3]	
+2-9	167-168	.	Allegazione normativa[3]	
+2-10	169-174	infam	Allegazione normativa[3]	
+2-11	174-175	.	Allegazione normativa[3]	
+2-12	175-176	,	Allegazione normativa[3]	
+2-13	177-181	quod	Allegazione normativa[3]	
+2-14	182-185	ait	Allegazione normativa[3]	
+2-15	186-193	praetor	Allegazione normativa[3]	
+2-16	193-194	.	_	
+
+#Text=Quandoque ponitur inclusive, 93. dist., a subdiacono; ff. de senat., nuptae § senatores.
+3-1	196-205	Quandoque	_	
+3-2	206-213	ponitur	_	
+3-3	214-223	inclusive	_	
+3-4	223-224	,	_	
+3-5	225-227	93	Allegazione normativa[4]	
+3-6	227-228	.	Allegazione normativa[4]	
+3-7	229-233	dist	Allegazione normativa[4]	
+3-8	233-234	.	Allegazione normativa[4]	
+3-9	234-235	,	Allegazione normativa[4]	
+3-10	236-237	a	Allegazione normativa[4]	
+3-11	238-248	subdiacono	Allegazione normativa[4]	
+3-12	248-249	;	_	
+3-13	250-252	ff	Allegazione normativa[5]	
+3-14	252-253	.	Allegazione normativa[5]	
+3-15	254-256	de	Allegazione normativa[5]	
+3-16	257-262	senat	Allegazione normativa[5]	
+3-17	262-263	.	Allegazione normativa[5]	
+3-18	263-264	,	Allegazione normativa[5]	
+3-19	265-271	nuptae	Allegazione normativa[5]	
+3-20	272-273	§	Allegazione normativa[5]	
+3-21	274-283	senatores	Allegazione normativa[5]	
+3-22	283-284	.	_	
+
+#Text=A non episcopis\r
+#Text=Id est, abbatibus, 69. dist., quoniam; et infra, de aetat. et qualit., cum contingat.
+4-1	289-290	A	Lemma glossato[6]	
+4-2	291-294	non	Lemma glossato[6]	
+4-3	295-304	episcopis	Lemma glossato[6]	
+4-4	306-308	Id	_	
+4-5	309-312	est	_	
+4-6	312-313	,	_	
+4-7	314-323	abbatibus	_	
+4-8	323-324	,	_	
+4-9	325-327	69	Allegazione normativa[7]	
+4-10	327-328	.	Allegazione normativa[7]	
+4-11	329-333	dist	Allegazione normativa[7]	
+4-12	333-334	.	Allegazione normativa[7]	
+4-13	334-335	,	Allegazione normativa[7]	
+4-14	336-343	quoniam	Allegazione normativa[7]	
+4-15	343-344	;	_	
+4-16	345-347	et	_	
+4-17	348-353	infra	_	
+4-18	353-354	,	_	
+4-19	355-357	de	Allegazione normativa[8]	
+4-20	358-363	aetat	Allegazione normativa[8]	
+4-21	363-364	.	Allegazione normativa[8]	
+4-22	365-367	et	Allegazione normativa[8]	
+4-23	368-374	qualit	Allegazione normativa[8]	
+4-24	374-375	.	Allegazione normativa[8]	
+4-25	375-376	,	Allegazione normativa[8]	
+4-26	377-380	cum	Allegazione normativa[8]	
+4-27	381-390	contingat	Allegazione normativa[8]	
+4-28	390-391	.	_	
+
+#Text=Executionem\r
+#Text=Ergo suspensus est qui a suspenso recipit ordines, 1. q. 1, statuimus.
+5-1	396-407	Executionem	Lemma glossato	
+5-2	409-413	Ergo	_	
+5-3	414-423	suspensus	_	
+5-4	424-427	est	_	
+5-5	428-431	qui	_	
+5-6	432-433	a	_	
+5-7	434-442	suspenso	_	
+5-8	443-450	recipit	_	
+5-9	451-458	ordines	_	
+5-10	458-459	,	_	
+5-11	460-461	1	Allegazione normativa[9]	
+5-12	461-462	.	Allegazione normativa[9]	
+5-13	463-464	q	Allegazione normativa[9]	
+5-14	464-465	.	Allegazione normativa[9]	
+5-15	466-467	1	Allegazione normativa[9]	
+5-16	467-468	,	Allegazione normativa[9]	
+5-17	469-478	statuimus	Allegazione normativa[9]	
+5-18	478-479	.	_	
+
+#Text=Et resignatio non abstulit illi ordinem, sed executionem.
+6-1	481-483	Et	_	
+6-2	484-494	resignatio	_	
+6-3	495-498	non	_	
+6-4	499-507	abstulit	_	
+6-5	508-512	illi	_	
+6-6	513-520	ordinem	_	
+6-7	520-521	,	_	
+6-8	522-525	sed	_	
+6-9	526-537	executionem	_	
+6-10	537-538	.	_	
+
+#Text=Crassa\r
+#Text=Tunc dicitur crassa et supina ignorantia, quando aliquid publice fit vel coram populo, et haec non excusat, ff. de ver. sig., lata culpa.
+7-1	543-549	Crassa	Lemma glossato	
+7-2	551-555	Tunc	_	
+7-3	556-563	dicitur	_	
+7-4	564-570	crassa	_	
+7-5	571-573	et	_	
+7-6	574-580	supina	_	
+7-7	581-591	ignorantia	_	
+7-8	591-592	,	_	
+7-9	593-599	quando	_	
+7-10	600-607	aliquid	_	
+7-11	608-615	publice	_	
+7-12	616-619	fit	_	
+7-13	620-623	vel	_	
+7-14	624-629	coram	_	
+7-15	630-636	populo	_	
+7-16	636-637	,	_	
+7-17	638-640	et	_	
+7-18	641-645	haec	_	
+7-19	646-649	non	_	
+7-20	650-657	excusat	_	
+7-21	657-658	,	_	
+7-22	659-661	ff	Allegazione normativa[10]	
+7-23	661-662	.	Allegazione normativa[10]	
+7-24	663-665	de	Allegazione normativa[10]	
+7-25	666-669	ver	Allegazione normativa[10]	
+7-26	669-670	.	Allegazione normativa[10]	
+7-27	671-674	sig	Allegazione normativa[10]	
+7-28	674-675	.	Allegazione normativa[10]	
+7-29	675-676	,	Allegazione normativa[10]	
+7-30	677-681	lata	Allegazione normativa[10]	
+7-31	682-687	culpa	Allegazione normativa[10]	
+7-32	687-688	.	_	
+
+#Text=Ignorantia\r
+#Text=Simile infra, de cleri. excom., Apostolicae.
+8-1	693-703	Ignorantia	Lemma glossato	
+8-2	705-711	Simile	_	
+8-3	712-717	infra	_	
+8-4	717-718	,	_	
+8-5	719-721	de	Allegazione normativa[11]	
+8-6	722-727	cleri	Allegazione normativa[11]	
+8-7	727-728	.	Allegazione normativa[11]	
+8-8	729-734	excom	Allegazione normativa[11]	
+8-9	734-735	.	Allegazione normativa[11]	
+8-10	735-736	,	Allegazione normativa[11]	
+8-11	737-748	Apostolicae	Allegazione normativa[11]	
+8-12	748-749	.	_	
+
+#Text=Et ita si probabilis fuerit ignorantia, cum eo poterit per episcopum dispensarim infra, de ordin. ab ep. qui ren. epi., cum clericis.
+9-1	751-753	Et	_	
+9-2	754-757	ita	_	
+9-3	758-760	si	_	
+9-4	761-771	probabilis	_	
+9-5	772-778	fuerit	_	
+9-6	779-789	ignorantia	_	
+9-7	789-790	,	_	
+9-8	791-794	cum	_	
+9-9	795-797	eo	_	
+9-10	798-805	poterit	_	
+9-11	806-809	per	_	
+9-12	810-819	episcopum	_	
+9-13	820-831	dispensarim	_	
+9-14	832-837	infra	_	
+9-15	837-838	,	_	
+9-16	839-841	de	Allegazione normativa[12]	
+9-17	842-847	ordin	Allegazione normativa[12]	
+9-18	847-848	.	Allegazione normativa[12]	
+9-19	849-851	ab	Allegazione normativa[12]	
+9-20	852-854	ep	Allegazione normativa[12]	
+9-21	854-855	.	Allegazione normativa[12]	
+9-22	856-859	qui	Allegazione normativa[12]	
+9-23	860-863	ren	Allegazione normativa[12]	
+9-24	863-864	.	Allegazione normativa[12]	
+9-25	865-868	epi	Allegazione normativa[12]	
+9-26	868-869	.	Allegazione normativa[12]	
+9-27	869-870	,	Allegazione normativa[12]	
+9-28	871-874	cum	Allegazione normativa[12]	
+9-29	875-883	clericis	Allegazione normativa[12]	
+9-30	883-884	.	_	
+
+#Text=Sed contra, probabilis facti ignorantia quemlibet ignorantem excusat ex toto, ff. de iuris et fact. ignor., error facti; et ff. de iuris et fact. ignor., regula.
+10-1	886-889	Sed	_	
+10-2	890-896	contra	_	
+10-3	896-897	,	_	
+10-4	898-908	probabilis	_	
+10-5	909-914	facti	_	
+10-6	915-925	ignorantia	_	
+10-7	926-935	quemlibet	_	
+10-8	936-946	ignorantem	_	
+10-9	947-954	excusat	_	
+10-10	955-957	ex	_	
+10-11	958-962	toto	_	
+10-12	962-963	,	_	
+10-13	964-966	ff	Allegazione normativa[13]	
+10-14	966-967	.	Allegazione normativa[13]	
+10-15	968-970	de	Allegazione normativa[13]	
+10-16	971-976	iuris	Allegazione normativa[13]	
+10-17	977-979	et	Allegazione normativa[13]	
+10-18	980-984	fact	Allegazione normativa[13]	
+10-19	984-985	.	Allegazione normativa[13]	
+10-20	986-991	ignor	Allegazione normativa[13]	
+10-21	991-992	.	Allegazione normativa[13]	
+10-22	992-993	,	Allegazione normativa[13]	
+10-23	994-999	error	Allegazione normativa[13]	
+10-24	1000-1005	facti	Allegazione normativa[13]	
+10-25	1005-1006	;	_	
+10-26	1007-1009	et	_	
+10-27	1010-1012	ff	Allegazione normativa[14]	
+10-28	1012-1013	.	Allegazione normativa[14]	
+10-29	1014-1016	de	Allegazione normativa[14]	
+10-30	1017-1022	iuris	Allegazione normativa[14]	
+10-31	1023-1025	et	Allegazione normativa[14]	
+10-32	1026-1030	fact	Allegazione normativa[14]	
+10-33	1030-1031	.	Allegazione normativa[14]	
+10-34	1032-1037	ignor	Allegazione normativa[14]	
+10-35	1037-1038	.	Allegazione normativa[14]	
+10-36	1038-1039	,	Allegazione normativa[14]	
+10-37	1040-1046	regula	Allegazione normativa[14]	
+10-38	1046-1047	.	_	
+
+#Text=Ergo secundum hoc nulla dispenastio est necessaria?
+11-1	1049-1053	Ergo	_	
+11-2	1054-1062	secundum	_	
+11-3	1063-1066	hoc	_	
+11-4	1067-1072	nulla	_	
+11-5	1073-1084	dispenastio	_	
+11-6	1085-1088	est	_	
+11-7	1089-1099	necessaria	_	
+11-8	1099-1100	?	_	
+
+#Text=Resp.: in culpa fuit recipiendo ordines ab episcopo non suo, 9. q. 2, Lugdunensis.
+12-1	1102-1106	Resp	_	
+12-2	1106-1107	.	_	
+12-3	1107-1108	:	_	
+12-4	1109-1111	in	_	
+12-5	1112-1117	culpa	_	
+12-6	1118-1122	fuit	_	
+12-7	1123-1133	recipiendo	_	
+12-8	1134-1141	ordines	_	
+12-9	1142-1144	ab	_	
+12-10	1145-1153	episcopo	_	
+12-11	1154-1157	non	_	
+12-12	1158-1161	suo	_	
+12-13	1161-1162	,	_	
+12-14	1163-1164	9	Allegazione normativa[15]	
+12-15	1164-1165	.	Allegazione normativa[15]	
+12-16	1166-1167	q	Allegazione normativa[15]	
+12-17	1167-1168	.	Allegazione normativa[15]	
+12-18	1169-1170	2	Allegazione normativa[15]	
+12-19	1170-1171	,	Allegazione normativa[15]	
+12-20	1172-1183	Lugdunensis	Allegazione normativa[15]	
+12-21	1183-1184	.	_	
+
+#Text=Et ideo necessaria est dispensatio.
+13-1	1186-1188	Et	_	
+13-2	1189-1193	ideo	_	
+13-3	1194-1204	necessaria	_	
+13-4	1205-1208	est	_	
+13-5	1209-1220	dispensatio	_	
+13-6	1220-1221	.	_	
+
+#Text=Vel melius dicas quod licet probabilis sit ignorantia, necessaria tamen est dispensatio, quia cum in talibus ordinator non haberet executionem sui officii, eam alii conferre non potuit, ut 1. q. 1, statuimus; quia quod non habet, dare non potest, 1. q. 7, Daibertum.
+14-1	1223-1226	Vel	_	
+14-2	1227-1233	melius	_	
+14-3	1234-1239	dicas	_	
+14-4	1240-1244	quod	_	
+14-5	1245-1250	licet	_	
+14-6	1251-1261	probabilis	_	
+14-7	1262-1265	sit	_	
+14-8	1266-1276	ignorantia	_	
+14-9	1276-1277	,	_	
+14-10	1278-1288	necessaria	_	
+14-11	1289-1294	tamen	_	
+14-12	1295-1298	est	_	
+14-13	1299-1310	dispensatio	_	
+14-14	1310-1311	,	_	
+14-15	1312-1316	quia	_	
+14-16	1317-1320	cum	_	
+14-17	1321-1323	in	_	
+14-18	1324-1331	talibus	_	
+14-19	1332-1341	ordinator	_	
+14-20	1342-1345	non	_	
+14-21	1346-1353	haberet	_	
+14-22	1354-1365	executionem	_	
+14-23	1366-1369	sui	_	
+14-24	1370-1377	officii	_	
+14-25	1377-1378	,	_	
+14-26	1379-1382	eam	_	
+14-27	1383-1387	alii	_	
+14-28	1388-1396	conferre	_	
+14-29	1397-1400	non	_	
+14-30	1401-1407	potuit	_	
+14-31	1407-1408	,	_	
+14-32	1409-1411	ut	_	
+14-33	1412-1413	1	Allegazione normativa[16]	
+14-34	1413-1414	.	Allegazione normativa[16]	
+14-35	1415-1416	q	Allegazione normativa[16]	
+14-36	1416-1417	.	Allegazione normativa[16]	
+14-37	1418-1419	1	Allegazione normativa[16]	
+14-38	1419-1420	,	Allegazione normativa[16]	
+14-39	1421-1430	statuimus	Allegazione normativa[16]	
+14-40	1430-1431	;	_	
+14-41	1432-1436	quia	_	
+14-42	1437-1441	quod	_	
+14-43	1442-1445	non	_	
+14-44	1446-1451	habet	_	
+14-45	1451-1452	,	_	
+14-46	1453-1457	dare	_	
+14-47	1458-1461	non	_	
+14-48	1462-1468	potest	_	
+14-49	1468-1469	,	_	
+14-50	1470-1471	1	Allegazione normativa[17]	
+14-51	1471-1472	.	Allegazione normativa[17]	
+14-52	1473-1474	q	Allegazione normativa[17]	
+14-53	1474-1475	.	Allegazione normativa[17]	
+14-54	1476-1477	7	Allegazione normativa[17]	
+14-55	1477-1478	,	Allegazione normativa[17]	
+14-56	1479-1488	Daibertum	Allegazione normativa[17]	
+14-57	1488-1489	.	_	
+
+#Text=Et pro non dato habetur, quod ab illo datur qui de iure dare non potest, infra, de iure patron., quod autem, in fi.
+15-1	1491-1493	Et	_	
+15-2	1494-1497	pro	_	
+15-3	1498-1501	non	_	
+15-4	1502-1506	dato	_	
+15-5	1507-1514	habetur	_	
+15-6	1514-1515	,	_	
+15-7	1516-1520	quod	_	
+15-8	1521-1523	ab	_	
+15-9	1524-1528	illo	_	
+15-10	1529-1534	datur	_	
+15-11	1535-1538	qui	_	
+15-12	1539-1541	de	_	
+15-13	1542-1546	iure	_	
+15-14	1547-1551	dare	_	
+15-15	1552-1555	non	_	
+15-16	1556-1562	potest	_	
+15-17	1562-1563	,	_	
+15-18	1564-1569	infra	_	
+15-19	1569-1570	,	_	
+15-20	1571-1573	de	Allegazione normativa[18]	
+15-21	1574-1578	iure	Allegazione normativa[18]	
+15-22	1579-1585	patron	Allegazione normativa[18]	
+15-23	1585-1586	.	Allegazione normativa[18]	
+15-24	1586-1587	,	Allegazione normativa[18]	
+15-25	1588-1592	quod	Allegazione normativa[18]	
+15-26	1593-1598	autem	Allegazione normativa[18]	
+15-27	1598-1599	,	Allegazione normativa[18]	
+15-28	1600-1602	in	Allegazione normativa[18]	
+15-29	1603-1605	fi	Allegazione normativa[18]	
+15-30	1605-1606	.	Allegazione normativa[18]	
+
+#Text=Ergo necessaria est dispensatio ad hoc ut habeat executionem ordinis.
+16-1	1608-1612	Ergo	_	
+16-2	1613-1623	necessaria	_	
+16-3	1624-1627	est	_	
+16-4	1628-1639	dispensatio	_	
+16-5	1640-1642	ad	_	
+16-6	1643-1646	hoc	_	
+16-7	1647-1649	ut	_	
+16-8	1650-1656	habeat	_	
+16-9	1657-1668	executionem	_	
+16-10	1669-1676	ordinis	_	
+16-11	1676-1677	.	_	
+
+#Text=X 1.13.02 Cum clericis\r
+#Text=\r
+#Text= Excommunicato\r
+#Text=Sic patet quod excommunicatus confert ordinem, licet extra ecclesiam, et haeretici etiam conferunt ordinem, 9. q. 1, ab excommunicatis; et 9. q. 1, ordinationes.
+17-1	1681-1682	X	_	
+17-2	1683-1690	1.13.02	Capitolo[19]	
+17-3	1691-1694	Cum	Capitolo[19]	
+17-4	1695-1703	clericis	Capitolo[19]	
+17-5	1708-1721	Excommunicato	Lemma glossato	
+17-6	1723-1726	Sic	_	
+17-7	1727-1732	patet	_	
+17-8	1733-1737	quod	_	
+17-9	1738-1752	excommunicatus	_	
+17-10	1753-1760	confert	_	
+17-11	1761-1768	ordinem	_	
+17-12	1768-1769	,	_	
+17-13	1770-1775	licet	_	
+17-14	1776-1781	extra	_	
+17-15	1782-1791	ecclesiam	_	
+17-16	1791-1792	,	_	
+17-17	1793-1795	et	_	
+17-18	1796-1805	haeretici	_	
+17-19	1806-1811	etiam	_	
+17-20	1812-1821	conferunt	_	
+17-21	1822-1829	ordinem	_	
+17-22	1829-1830	,	_	
+17-23	1831-1832	9	Allegazione normativa[20]	
+17-24	1832-1833	.	Allegazione normativa[20]	
+17-25	1834-1835	q	Allegazione normativa[20]	
+17-26	1835-1836	.	Allegazione normativa[20]	
+17-27	1837-1838	1	Allegazione normativa[20]	
+17-28	1838-1839	,	Allegazione normativa[20]	
+17-29	1840-1842	ab	Allegazione normativa[20]	
+17-30	1843-1857	excommunicatis	Allegazione normativa[20]	
+17-31	1857-1858	;	_	
+17-32	1859-1861	et	_	
+17-33	1862-1863	9	Allegazione normativa[21]	
+17-34	1863-1864	.	Allegazione normativa[21]	
+17-35	1865-1866	q	Allegazione normativa[21]	
+17-36	1866-1867	.	Allegazione normativa[21]	
+17-37	1868-1869	1	Allegazione normativa[21]	
+17-38	1869-1870	,	Allegazione normativa[21]	
+17-39	1871-1883	ordinationes	Allegazione normativa[21]	
+17-40	1883-1884	.	_	
+
+#Text=Sed contra, 9. q. 1, nos consecrationem, ubi dicit quod nullo modo dicitur consecratio quae ab excommunicatis est celebrata.
+18-1	1886-1889	Sed	_	
+18-2	1890-1896	contra	_	
+18-3	1896-1897	,	_	
+18-4	1898-1899	9	Allegazione normativa[22]	
+18-5	1899-1900	.	Allegazione normativa[22]	
+18-6	1901-1902	q	Allegazione normativa[22]	
+18-7	1902-1903	.	Allegazione normativa[22]	
+18-8	1904-1905	1	Allegazione normativa[22]	
+18-9	1905-1906	,	Allegazione normativa[22]	
+18-10	1907-1910	nos	Allegazione normativa[22]	
+18-11	1911-1925	consecrationem	Allegazione normativa[22]	
+18-12	1925-1926	,	_	
+18-13	1927-1930	ubi	_	
+18-14	1931-1936	dicit	_	
+18-15	1937-1941	quod	_	
+18-16	1942-1947	nullo	_	
+18-17	1948-1952	modo	_	
+18-18	1953-1960	dicitur	_	
+18-19	1961-1972	consecratio	_	
+18-20	1973-1977	quae	_	
+18-21	1978-1980	ab	_	
+18-22	1981-1995	excommunicatis	_	
+18-23	1996-1999	est	_	
+18-24	2000-2009	celebrata	_	
+18-25	2009-2010	.	_	
+
+#Text=Dic quod ibi non fuit servata forma ecclsiae.
+19-1	2012-2015	Dic	_	
+19-2	2016-2020	quod	_	
+19-3	2021-2024	ibi	_	
+19-4	2025-2028	non	_	
+19-5	2029-2033	fuit	_	
+19-6	2034-2041	servata	_	
+19-7	2042-2047	forma	_	
+19-8	2048-2056	ecclsiae	_	
+19-9	2056-2057	.	_	
+
+#Text=Vel dicas, non dicitur consecratio, verum est quantum ad executionem, quia quod non habent, dare non possunt, ut 1. q. 1, perfectionem; et 1. q. 1, ventum est; et 1. q. 1, gratia; et de conse. dist. 4, quomodo.
+20-1	2059-2062	Vel	_	
+20-2	2063-2068	dicas	_	
+20-3	2068-2069	,	_	
+20-4	2070-2073	non	_	
+20-5	2074-2081	dicitur	_	
+20-6	2082-2093	consecratio	_	
+20-7	2093-2094	,	_	
+20-8	2095-2100	verum	_	
+20-9	2101-2104	est	_	
+20-10	2105-2112	quantum	_	
+20-11	2113-2115	ad	_	
+20-12	2116-2127	executionem	_	
+20-13	2127-2128	,	_	
+20-14	2129-2133	quia	_	
+20-15	2134-2138	quod	_	
+20-16	2139-2142	non	_	
+20-17	2143-2149	habent	_	
+20-18	2149-2150	,	_	
+20-19	2151-2155	dare	_	
+20-20	2156-2159	non	_	
+20-21	2160-2167	possunt	_	
+20-22	2167-2168	,	_	
+20-23	2169-2171	ut	_	
+20-24	2172-2173	1	Allegazione normativa[23]	
+20-25	2173-2174	.	Allegazione normativa[23]	
+20-26	2175-2176	q	Allegazione normativa[23]	
+20-27	2176-2177	.	Allegazione normativa[23]	
+20-28	2178-2179	1	Allegazione normativa[23]	
+20-29	2179-2180	,	Allegazione normativa[23]	
+20-30	2181-2193	perfectionem	Allegazione normativa[23]	
+20-31	2193-2194	;	_	
+20-32	2195-2197	et	_	
+20-33	2198-2199	1	Allegazione normativa[24]	
+20-34	2199-2200	.	Allegazione normativa[24]	
+20-35	2201-2202	q	Allegazione normativa[24]	
+20-36	2202-2203	.	Allegazione normativa[24]	
+20-37	2204-2205	1	Allegazione normativa[24]	
+20-38	2205-2206	,	Allegazione normativa[24]	
+20-39	2207-2213	ventum	Allegazione normativa[24]	
+20-40	2214-2217	est	Allegazione normativa[24]	
+20-41	2217-2218	;	_	
+20-42	2219-2221	et	_	
+20-43	2222-2223	1	Allegazione normativa[25]	
+20-44	2223-2224	.	Allegazione normativa[25]	
+20-45	2225-2226	q	Allegazione normativa[25]	
+20-46	2226-2227	.	Allegazione normativa[25]	
+20-47	2228-2229	1	Allegazione normativa[25]	
+20-48	2229-2230	,	Allegazione normativa[25]	
+20-49	2231-2237	gratia	Allegazione normativa[25]	
+20-50	2237-2238	;	_	
+20-51	2239-2241	et	_	
+20-52	2242-2244	de	_	
+20-53	2245-2250	conse	Allegazione normativa[26]	
+20-54	2250-2251	.	Allegazione normativa[26]	
+20-55	2252-2256	dist	Allegazione normativa[26]	
+20-56	2256-2257	.	Allegazione normativa[26]	
+20-57	2258-2259	4	Allegazione normativa[26]	
+20-58	2259-2260	,	Allegazione normativa[26]	
+20-59	2261-2268	quomodo	Allegazione normativa[26]	
+20-60	2268-2269	.	_	
+
+#Text=Sed numquid potest alios excommunicare?
+21-1	2271-2274	Sed	_	
+21-2	2275-2282	numquid	_	
+21-3	2283-2289	potest	_	
+21-4	2290-2295	alios	_	
+21-5	2296-2309	excommunicare	_	
+21-6	2309-2310	?	_	
+
+#Text=Videtur quod sic, quia confert ordines, quod plus est, ut videtur, ergo potest alium excommunicare.
+22-1	2312-2319	Videtur	_	
+22-2	2320-2324	quod	_	
+22-3	2325-2328	sic	_	
+22-4	2328-2329	,	_	
+22-5	2330-2334	quia	_	
+22-6	2335-2342	confert	_	
+22-7	2343-2350	ordines	_	
+22-8	2350-2351	,	_	
+22-9	2352-2356	quod	_	
+22-10	2357-2361	plus	_	
+22-11	2362-2365	est	_	
+22-12	2365-2366	,	_	
+22-13	2367-2369	ut	_	
+22-14	2370-2377	videtur	_	
+22-15	2377-2378	,	_	
+22-16	2379-2383	ergo	_	
+22-17	2384-2390	potest	_	
+22-18	2391-2396	alium	_	
+22-19	2397-2410	excommunicare	_	
+22-20	2410-2411	.	_	
+
+#Text=Sed non est ita, cum enim sit extra ecclesiam, alium eiicere extra ecclesiam non potest, 24. q. 1, audivimus.
+23-1	2413-2416	Sed	_	
+23-2	2417-2420	non	_	
+23-3	2421-2424	est	_	
+23-4	2425-2428	ita	_	
+23-5	2428-2429	,	_	
+23-6	2430-2433	cum	_	
+23-7	2434-2438	enim	_	
+23-8	2439-2442	sit	_	
+23-9	2443-2448	extra	_	
+23-10	2449-2458	ecclesiam	_	
+23-11	2458-2459	,	_	
+23-12	2460-2465	alium	_	
+23-13	2466-2473	eiicere	_	
+23-14	2474-2479	extra	_	
+23-15	2480-2489	ecclesiam	_	
+23-16	2490-2493	non	_	
+23-17	2494-2500	potest	_	
+23-18	2500-2501	,	_	
+23-19	2502-2504	24	Allegazione normativa[27]	
+23-20	2504-2505	.	Allegazione normativa[27]	
+23-21	2506-2507	q	Allegazione normativa[27]	
+23-22	2507-2508	.	Allegazione normativa[27]	
+23-23	2509-2510	1	Allegazione normativa[27]	
+23-24	2510-2511	,	Allegazione normativa[27]	
+23-25	2512-2521	audivimus	Allegazione normativa[27]	
+23-26	2521-2522	.	_	
+
+#Text=Secus in ordine, quia licet sit extra ecclesiam, charactarem tamen retinet, et illum potest conferre, si ecclesiae forma servetur.
+24-1	2524-2529	Secus	_	
+24-2	2530-2532	in	_	
+24-3	2533-2539	ordine	_	
+24-4	2539-2540	,	_	
+24-5	2541-2545	quia	_	
+24-6	2546-2551	licet	_	
+24-7	2552-2555	sit	_	
+24-8	2556-2561	extra	_	
+24-9	2562-2571	ecclesiam	_	
+24-10	2571-2572	,	_	
+24-11	2573-2584	charactarem	_	
+24-12	2585-2590	tamen	_	
+24-13	2591-2598	retinet	_	
+24-14	2598-2599	,	_	
+24-15	2600-2602	et	_	
+24-16	2603-2608	illum	_	
+24-17	2609-2615	potest	_	
+24-18	2616-2624	conferre	_	
+24-19	2624-2625	,	_	
+24-20	2626-2628	si	_	
+24-21	2629-2638	ecclesiae	_	
+24-22	2639-2644	forma	_	
+24-23	2645-2653	servetur	_	
+24-24	2653-2654	.	_	
+
+#Text=Episcopos\r
+#Text=Et sic episcopi dispensant hic, sic 9. q. 1, ab excommunicatis; et 9. q. 1, ordinationes; quia ignorantia eos excusat.
+25-1	2659-2668	Episcopos	Lemma glossato	
+25-2	2670-2672	Et	_	
+25-3	2673-2676	sic	_	
+25-4	2677-2685	episcopi	_	
+25-5	2686-2696	dispensant	_	
+25-6	2697-2700	hic	_	
+25-7	2700-2701	,	_	
+25-8	2702-2705	sic	_	
+25-9	2706-2707	9	Allegazione normativa[28]	
+25-10	2707-2708	.	Allegazione normativa[28]	
+25-11	2709-2710	q	Allegazione normativa[28]	
+25-12	2710-2711	.	Allegazione normativa[28]	
+25-13	2712-2713	1	Allegazione normativa[28]	
+25-14	2713-2714	,	Allegazione normativa[28]	
+25-15	2715-2717	ab	Allegazione normativa[28]	
+25-16	2718-2732	excommunicatis	Allegazione normativa[28]	
+25-17	2732-2733	;	_	
+25-18	2734-2736	et	_	
+25-19	2737-2738	9	Allegazione normativa[29]	
+25-20	2738-2739	.	Allegazione normativa[29]	
+25-21	2740-2741	q	Allegazione normativa[29]	
+25-22	2741-2742	.	Allegazione normativa[29]	
+25-23	2743-2744	1	Allegazione normativa[29]	
+25-24	2744-2745	,	Allegazione normativa[29]	
+25-25	2746-2758	ordinationes	Allegazione normativa[29]	
+25-26	2758-2759	;	_	
+25-27	2760-2764	quia	_	
+25-28	2765-2775	ignorantia	_	
+25-29	2776-2779	eos	_	
+25-30	2780-2787	excusat	_	
+25-31	2787-2788	.	_	
+
+#Text=Si vero scienter ordines recepissent, non dispensaretur cum eis, ut 9. q. 1, ordinationes; sic supra, de ordin. ab ep. qui ren. epi., requisivit, in fi.
+26-1	2790-2792	Si	_	
+26-2	2793-2797	vero	_	
+26-3	2798-2806	scienter	_	
+26-4	2807-2814	ordines	_	
+26-5	2815-2826	recepissent	_	
+26-6	2826-2827	,	_	
+26-7	2828-2831	non	_	
+26-8	2832-2845	dispensaretur	_	
+26-9	2846-2849	cum	_	
+26-10	2850-2853	eis	_	
+26-11	2853-2854	,	_	
+26-12	2855-2857	ut	_	
+26-13	2858-2859	9	Allegazione normativa[30]	
+26-14	2859-2860	.	Allegazione normativa[30]	
+26-15	2861-2862	q	Allegazione normativa[30]	
+26-16	2862-2863	.	Allegazione normativa[30]	
+26-17	2864-2865	1	Allegazione normativa[30]	
+26-18	2865-2866	,	Allegazione normativa[30]	
+26-19	2867-2879	ordinationes	Allegazione normativa[30]	
+26-20	2879-2880	;	_	
+26-21	2881-2884	sic	_	
+26-22	2885-2890	supra	_	
+26-23	2890-2891	,	_	
+26-24	2892-2894	de	Allegazione normativa[31]	
+26-25	2895-2900	ordin	Allegazione normativa[31]	
+26-26	2900-2901	.	Allegazione normativa[31]	
+26-27	2902-2904	ab	Allegazione normativa[31]	
+26-28	2905-2907	ep	Allegazione normativa[31]	
+26-29	2907-2908	.	Allegazione normativa[31]	
+26-30	2909-2912	qui	Allegazione normativa[31]	
+26-31	2913-2916	ren	Allegazione normativa[31]	
+26-32	2916-2917	.	Allegazione normativa[31]	
+26-33	2918-2921	epi	Allegazione normativa[31]	
+26-34	2921-2922	.	Allegazione normativa[31]	
+26-35	2922-2923	,	Allegazione normativa[31]	
+26-36	2924-2934	requisivit	Allegazione normativa[31]	
+26-37	2934-2935	,	Allegazione normativa[31]	
+26-38	2936-2938	in	Allegazione normativa[31]	
+26-39	2939-2941	fi	Allegazione normativa[31]	
+26-40	2941-2942	.	Allegazione normativa[31]	

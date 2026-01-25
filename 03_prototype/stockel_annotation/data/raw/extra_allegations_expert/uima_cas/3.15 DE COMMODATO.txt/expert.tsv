@@ -1,0 +1,992 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 3.15 DE COMMODATO
+1-1	0-1	X	_	
+1-2	2-6	3.15	_	
+1-3	7-9	DE	_	
+1-4	10-19	COMMODATO	_	
+
+#Text=X 3.15.01 Cum gratia
+2-1	23-24	X	_	
+2-2	25-32	3.15.01	_	
+2-3	33-36	Cum	_	
+2-4	37-43	gratia	_	
+
+#Text=Commodatum
+3-1	48-58	Commodatum	_	
+
+#Text=Est autem commodatum alicuius rei ad aliquem specialiem usum gratuito facta concessio et non translatio.  Et ideo dicitur facta concessio et non translatio, quia is qui commodat, dominium retinet et possessionem, ff. commodat., rei commodatae.  Et dicitur commodatum quasi utentis commodo datum.  Et ideo dicitur gratuito, quia si interveniat merces, transit in locationem vel in contractum innominatum: do ut des, facio ut facias, Inst. de mandat. § ulti.  Ad aliquem usum ideo dixi ut notetur differentia inter precarium et commodatum.  Precarium enim conceditur sine praefinitione certi usus.  Unde quandoque potest revocari precarium, ff. de preca., cum precario; et supra, de precar., precarium.  Sicut et depositum, infra, de deposit., bona fides.  Commodatum autem ad certum ususm conceditur, quia statim subiicitur usus ad quem res commodatur, ut si commodem equum tibi ut ad villam duceres, et tu duxisti ad bellum, teneberis, quia ad alium usum duxisti quam dixisti, ff. commodat., si ut certo § sed interdum.  Et consistit commodatum in rebus mobilibus et se moventibus et immobilibus et incorporalibus, puta servitute habitandi, ff. commodat., ait praetor.  Quia ibi dicit commodari rem mobilem et etiam soli.  Et adiecit Iulianus etiam habitationem posse commodari, et in eisdem rebus consistit precarium, ut dixi supra, de precar., precarium.  Sed quod usu consumitur, non commodatur nisi ad pompam, ut ditior appareat, ff. commodat., sed mihi § ulti.; et ff. commodat., saepe.  Et quod potest obligare, potest commodare et ei commodari.  Unde pupillus non est obligatus, sed alius ei obligatur, ff. de act. emp. et vend., Iulianus § antepenulti.  Ber.
+4-1	60-63	Est	_	
+4-2	64-69	autem	_	
+4-3	70-80	commodatum	_	
+4-4	81-89	alicuius	_	
+4-5	90-93	rei	_	
+4-6	94-96	ad	_	
+4-7	97-104	aliquem	_	
+4-8	105-115	specialiem	_	
+4-9	116-120	usum	_	
+4-10	121-129	gratuito	_	
+4-11	130-135	facta	_	
+4-12	136-145	concessio	_	
+4-13	146-148	et	_	
+4-14	149-152	non	_	
+4-15	153-163	translatio	_	
+4-16	163-164	.	_	
+4-17	166-168	Et	_	
+4-18	169-173	ideo	_	
+4-19	174-181	dicitur	_	
+4-20	182-187	facta	_	
+4-21	188-197	concessio	_	
+4-22	198-200	et	_	
+4-23	201-204	non	_	
+4-24	205-215	translatio	_	
+4-25	215-216	,	_	
+4-26	217-221	quia	_	
+4-27	222-224	is	_	
+4-28	225-228	qui	_	
+4-29	229-237	commodat	_	
+4-30	237-238	,	_	
+4-31	239-247	dominium	_	
+4-32	248-255	retinet	_	
+4-33	256-258	et	_	
+4-34	259-271	possessionem	_	
+4-35	271-272	,	_	
+4-36	273-275	ff	Allegazione normativa[1]	
+4-37	275-276	.	Allegazione normativa[1]	
+4-38	277-285	commodat	Allegazione normativa[1]	
+4-39	285-286	.	Allegazione normativa[1]	
+4-40	286-287	,	Allegazione normativa[1]	
+4-41	288-291	rei	Allegazione normativa[1]	
+4-42	292-302	commodatae	Allegazione normativa[1]	
+4-43	302-303	.	_	
+4-44	305-307	Et	_	
+4-45	308-315	dicitur	_	
+4-46	316-326	commodatum	_	
+4-47	327-332	quasi	_	
+4-48	333-340	utentis	_	
+4-49	341-348	commodo	_	
+4-50	349-354	datum	_	
+4-51	354-355	.	_	
+4-52	357-359	Et	_	
+4-53	360-364	ideo	_	
+4-54	365-372	dicitur	_	
+4-55	373-381	gratuito	_	
+4-56	381-382	,	_	
+4-57	383-387	quia	_	
+4-58	388-390	si	_	
+4-59	391-402	interveniat	_	
+4-60	403-409	merces	_	
+4-61	409-410	,	_	
+4-62	411-418	transit	_	
+4-63	419-421	in	_	
+4-64	422-432	locationem	_	
+4-65	433-436	vel	_	
+4-66	437-439	in	_	
+4-67	440-450	contractum	_	
+4-68	451-462	innominatum	_	
+4-69	462-463	:	_	
+4-70	464-466	do	_	
+4-71	467-469	ut	_	
+4-72	470-473	des	_	
+4-73	473-474	,	_	
+4-74	475-480	facio	_	
+4-75	481-483	ut	_	
+4-76	484-490	facias	_	
+4-77	490-491	,	_	
+4-78	492-496	Inst	Allegazione normativa[2]	
+4-79	496-497	.	Allegazione normativa[2]	
+4-80	498-500	de	Allegazione normativa[2]	
+4-81	501-507	mandat	Allegazione normativa[2]	
+4-82	507-508	.	Allegazione normativa[2]	
+4-83	509-510	§	Allegazione normativa[2]	
+4-84	511-515	ulti	Allegazione normativa[2]	
+4-85	515-516	.	Allegazione normativa[2]	
+4-86	518-520	Ad	_	
+4-87	521-528	aliquem	_	
+4-88	529-533	usum	_	
+4-89	534-538	ideo	_	
+4-90	539-543	dixi	_	
+4-91	544-546	ut	_	
+4-92	547-554	notetur	_	
+4-93	555-566	differentia	_	
+4-94	567-572	inter	_	
+4-95	573-582	precarium	_	
+4-96	583-585	et	_	
+4-97	586-596	commodatum	_	
+4-98	596-597	.	_	
+4-99	599-608	Precarium	_	
+4-100	609-613	enim	_	
+4-101	614-624	conceditur	_	
+4-102	625-629	sine	_	
+4-103	630-643	praefinitione	_	
+4-104	644-649	certi	_	
+4-105	650-654	usus	_	
+4-106	654-655	.	_	
+4-107	657-661	Unde	_	
+4-108	662-671	quandoque	_	
+4-109	672-678	potest	_	
+4-110	679-687	revocari	_	
+4-111	688-697	precarium	_	
+4-112	697-698	,	_	
+4-113	699-701	ff	Allegazione normativa[3]	
+4-114	701-702	.	Allegazione normativa[3]	
+4-115	703-705	de	Allegazione normativa[3]	
+4-116	706-711	preca	Allegazione normativa[3]	
+4-117	711-712	.	Allegazione normativa[3]	
+4-118	712-713	,	Allegazione normativa[3]	
+4-119	714-717	cum	Allegazione normativa[3]	
+4-120	718-726	precario	Allegazione normativa[3]	
+4-121	726-727	;	_	
+4-122	728-730	et	_	
+4-123	731-736	supra	_	
+4-124	736-737	,	_	
+4-125	738-740	de	Allegazione normativa[4]	
+4-126	741-747	precar	Allegazione normativa[4]	
+4-127	747-748	.	Allegazione normativa[4]	
+4-128	748-749	,	Allegazione normativa[4]	
+4-129	750-759	precarium	Allegazione normativa[4]	
+4-130	759-760	.	_	
+4-131	762-767	Sicut	_	
+4-132	768-770	et	_	
+4-133	771-780	depositum	_	
+4-134	780-781	,	_	
+4-135	782-787	infra	_	
+4-136	787-788	,	_	
+4-137	789-791	de	Allegazione normativa[5]	
+4-138	792-799	deposit	Allegazione normativa[5]	
+4-139	799-800	.	Allegazione normativa[5]	
+4-140	800-801	,	Allegazione normativa[5]	
+4-141	802-806	bona	Allegazione normativa[5]	
+4-142	807-812	fides	Allegazione normativa[5]	
+4-143	812-813	.	_	
+4-144	815-825	Commodatum	_	
+4-145	826-831	autem	_	
+4-146	832-834	ad	_	
+4-147	835-841	certum	_	
+4-148	842-847	ususm	_	
+4-149	848-858	conceditur	_	
+4-150	858-859	,	_	
+4-151	860-864	quia	_	
+4-152	865-871	statim	_	
+4-153	872-882	subiicitur	_	
+4-154	883-887	usus	_	
+4-155	888-890	ad	_	
+4-156	891-895	quem	_	
+4-157	896-899	res	_	
+4-158	900-910	commodatur	_	
+4-159	910-911	,	_	
+4-160	912-914	ut	_	
+4-161	915-917	si	_	
+4-162	918-926	commodem	_	
+4-163	927-932	equum	_	
+4-164	933-937	tibi	_	
+4-165	938-940	ut	_	
+4-166	941-943	ad	_	
+4-167	944-950	villam	_	
+4-168	951-958	duceres	_	
+4-169	958-959	,	_	
+4-170	960-962	et	_	
+4-171	963-965	tu	_	
+4-172	966-973	duxisti	_	
+4-173	974-976	ad	_	
+4-174	977-983	bellum	_	
+4-175	983-984	,	_	
+4-176	985-994	teneberis	_	
+4-177	994-995	,	_	
+4-178	996-1000	quia	_	
+4-179	1001-1003	ad	_	
+4-180	1004-1009	alium	_	
+4-181	1010-1014	usum	_	
+4-182	1015-1022	duxisti	_	
+4-183	1023-1027	quam	_	
+4-184	1028-1035	dixisti	_	
+4-185	1035-1036	,	_	
+4-186	1037-1039	ff	Allegazione normativa[6]	
+4-187	1039-1040	.	Allegazione normativa[6]	
+4-188	1041-1049	commodat	Allegazione normativa[6]	
+4-189	1049-1050	.	Allegazione normativa[6]	
+4-190	1050-1051	,	Allegazione normativa[6]	
+4-191	1052-1054	si	Allegazione normativa[6]	
+4-192	1055-1057	ut	Allegazione normativa[6]	
+4-193	1058-1063	certo	Allegazione normativa[6]	
+4-194	1064-1065	§	Allegazione normativa[6]	
+4-195	1066-1069	sed	Allegazione normativa[6]	
+4-196	1070-1078	interdum	Allegazione normativa[6]	
+4-197	1078-1079	.	_	
+4-198	1081-1083	Et	_	
+4-199	1084-1093	consistit	_	
+4-200	1094-1104	commodatum	_	
+4-201	1105-1107	in	_	
+4-202	1108-1113	rebus	_	
+4-203	1114-1123	mobilibus	_	
+4-204	1124-1126	et	_	
+4-205	1127-1129	se	_	
+4-206	1130-1140	moventibus	_	
+4-207	1141-1143	et	_	
+4-208	1144-1155	immobilibus	_	
+4-209	1156-1158	et	_	
+4-210	1159-1173	incorporalibus	_	
+4-211	1173-1174	,	_	
+4-212	1175-1179	puta	_	
+4-213	1180-1189	servitute	_	
+4-214	1190-1199	habitandi	_	
+4-215	1199-1200	,	_	
+4-216	1201-1203	ff	Allegazione normativa[7]	
+4-217	1203-1204	.	Allegazione normativa[7]	
+4-218	1205-1213	commodat	Allegazione normativa[7]	
+4-219	1213-1214	.	Allegazione normativa[7]	
+4-220	1214-1215	,	Allegazione normativa[7]	
+4-221	1216-1219	ait	Allegazione normativa[7]	
+4-222	1220-1227	praetor	Allegazione normativa[7]	
+4-223	1227-1228	.	_	
+4-224	1230-1234	Quia	_	
+4-225	1235-1238	ibi	_	
+4-226	1239-1244	dicit	_	
+4-227	1245-1254	commodari	_	
+4-228	1255-1258	rem	_	
+4-229	1259-1266	mobilem	_	
+4-230	1267-1269	et	_	
+4-231	1270-1275	etiam	_	
+4-232	1276-1280	soli	_	
+4-233	1280-1281	.	_	
+4-234	1283-1285	Et	_	
+4-235	1286-1293	adiecit	_	
+4-236	1294-1302	Iulianus	_	
+4-237	1303-1308	etiam	_	
+4-238	1309-1321	habitationem	_	
+4-239	1322-1327	posse	_	
+4-240	1328-1337	commodari	_	
+4-241	1337-1338	,	_	
+4-242	1339-1341	et	_	
+4-243	1342-1344	in	_	
+4-244	1345-1351	eisdem	_	
+4-245	1352-1357	rebus	_	
+4-246	1358-1367	consistit	_	
+4-247	1368-1377	precarium	_	
+4-248	1377-1378	,	_	
+4-249	1379-1381	ut	_	
+4-250	1382-1386	dixi	_	
+4-251	1387-1392	supra	_	
+4-252	1392-1393	,	_	
+4-253	1394-1396	de	Allegazione normativa[8]	
+4-254	1397-1403	precar	Allegazione normativa[8]	
+4-255	1403-1404	.	Allegazione normativa[8]	
+4-256	1404-1405	,	Allegazione normativa[8]	
+4-257	1406-1415	precarium	Allegazione normativa[8]	
+4-258	1415-1416	.	_	
+4-259	1418-1421	Sed	_	
+4-260	1422-1426	quod	_	
+4-261	1427-1430	usu	_	
+4-262	1431-1441	consumitur	_	
+4-263	1441-1442	,	_	
+4-264	1443-1446	non	_	
+4-265	1447-1457	commodatur	_	
+4-266	1458-1462	nisi	_	
+4-267	1463-1465	ad	_	
+4-268	1466-1472	pompam	_	
+4-269	1472-1473	,	_	
+4-270	1474-1476	ut	_	
+4-271	1477-1483	ditior	_	
+4-272	1484-1492	appareat	_	
+4-273	1492-1493	,	_	
+4-274	1494-1496	ff	Allegazione normativa[9]	
+4-275	1496-1497	.	Allegazione normativa[9]	
+4-276	1498-1506	commodat	Allegazione normativa[9]	
+4-277	1506-1507	.	Allegazione normativa[9]	
+4-278	1507-1508	,	Allegazione normativa[9]	
+4-279	1509-1512	sed	Allegazione normativa[9]	
+4-280	1513-1517	mihi	Allegazione normativa[9]	
+4-281	1518-1519	§	Allegazione normativa[9]	
+4-282	1520-1524	ulti	Allegazione normativa[9]	
+4-283	1524-1525	.	Allegazione normativa[9]	
+4-284	1525-1526	;	_	
+4-285	1527-1529	et	_	
+4-286	1530-1532	ff	Allegazione normativa[10]	
+4-287	1532-1533	.	Allegazione normativa[10]	
+4-288	1534-1542	commodat	Allegazione normativa[10]	
+4-289	1542-1543	.	Allegazione normativa[10]	
+4-290	1543-1544	,	Allegazione normativa[10]	
+4-291	1545-1550	saepe	Allegazione normativa[10]	
+4-292	1550-1551	.	_	
+4-293	1553-1555	Et	_	
+4-294	1556-1560	quod	_	
+4-295	1561-1567	potest	_	
+4-296	1568-1576	obligare	_	
+4-297	1576-1577	,	_	
+4-298	1578-1584	potest	_	
+4-299	1585-1594	commodare	_	
+4-300	1595-1597	et	_	
+4-301	1598-1600	ei	_	
+4-302	1601-1610	commodari	_	
+4-303	1610-1611	.	_	
+4-304	1613-1617	Unde	_	
+4-305	1618-1626	pupillus	_	
+4-306	1627-1630	non	_	
+4-307	1631-1634	est	_	
+4-308	1635-1644	obligatus	_	
+4-309	1644-1645	,	_	
+4-310	1646-1649	sed	_	
+4-311	1650-1655	alius	_	
+4-312	1656-1658	ei	_	
+4-313	1659-1668	obligatur	_	
+4-314	1668-1669	,	_	
+4-315	1670-1672	ff	Allegazione normativa[11]	
+4-316	1672-1673	.	Allegazione normativa[11]	
+4-317	1674-1676	de	Allegazione normativa[11]	
+4-318	1677-1680	act	Allegazione normativa[11]	
+4-319	1680-1681	.	Allegazione normativa[11]	
+4-320	1682-1685	emp	Allegazione normativa[11]	
+4-321	1685-1686	.	Allegazione normativa[11]	
+4-322	1687-1689	et	Allegazione normativa[11]	
+4-323	1690-1694	vend	Allegazione normativa[11]	
+4-324	1694-1695	.	Allegazione normativa[11]	
+4-325	1695-1696	,	Allegazione normativa[11]	
+4-326	1697-1705	Iulianus	Allegazione normativa[11]	
+4-327	1706-1707	§	Allegazione normativa[11]	
+4-328	1708-1719	antepenulti	Allegazione normativa[11]	
+4-329	1719-1720	.	Allegazione normativa[11]	
+4-330	1722-1725	Ber	_	
+4-331	1725-1726	.	_	
+
+#Text=De levissima
+5-1	1731-1733	De	_	
+5-2	1734-1743	levissima	_	
+
+#Text=Cum enim gratia sui tantum quis commodatum accepit, tenetur de dolo, et lata culpa levi et levissima, ut hic dicit.  Quia exactam diligentiam qualem in rebus suis adhibere debet, ff. commodat., in rebus.  Immo non sufficit talem adhibere qualem in suis rebus, si tamen alius diligentior custodire potuit, ff. de act. et oblig., obligationes aut ex contractu § is quoque cui.  Et dolum et culpam, ff. commodat., si ut certo § commodatum.  Si vero gratia dantis tantum commodatum detur, tunc venit dolus et lata culpa, ff. commodat., si ut certo § interdum; et ff. commodat., si mei causa; ff. de act. et oblig., obligationes aut ex contractu § is quoque apud quem.  Si vero gratia utriusque, tunc praestat dolum et latam culpam, ff. commodat., in rebus, 1. resp., ad fi.; et ff. commodat., si ut certo § nunc videndum, ad fi.  Casus vero fortuiti qui praevideri non possunt, non veniunt, C. commodat., ea quidem; et ff. commodat., in rebus; et ff. de act. et oblig., obligationes aut ex contractu § is quoque cui; infra, de homic., Ioannes; et infra, de homic., quidam.  Nisi ista tria aliud inducant: culpa, pactum vel mora, ut in praedicta lege ff. de act. et oblig., obligationes aut ex contractu § is quoque cui; et ff. commodat., in rebus; et ff. de regul. iur., contractus; et hic, et infra, de deposit., bona fides; et C. commodat., ea quidem.  Culpa potest imputari si rem sibi commodatam remiserit mihi per non idoneam personam, ff. commodat., qui non tam.  Secus si per idoneam personam, licet contrarium evenerit, ff. commodat., argentum; et infra, de pignor., significante.  Item ex pacto praestantur casus fortuiti, ut hic dicit, et C. commodat., ea quidem.  Ita quod casus fortuiti connumerentur specialiter, ut ff. si quis caut., sed et si § quaesitum.  Et mora imputatur, puta si moram fecit in restituendo, infra, de deposit., bona fides.  Et intelligendum est etiam si apud commodantem res fuisset eodem modo peritura, ff. de leg. 1, cum res § ulti.; et in Auth. de dep. et denunc. inq., 1. resp., ad fi., coll. 6.  Et commodatum restitui debet ad pristinam causam, ff. de commodat., sed mihi § 1.  Alias quanti interest eius condemnatur, ut ibi dicitur.  Ber.
+6-1	1745-1748	Cum	_	
+6-2	1749-1753	enim	_	
+6-3	1754-1760	gratia	_	
+6-4	1761-1764	sui	_	
+6-5	1765-1771	tantum	_	
+6-6	1772-1776	quis	_	
+6-7	1777-1787	commodatum	_	
+6-8	1788-1795	accepit	_	
+6-9	1795-1796	,	_	
+6-10	1797-1804	tenetur	_	
+6-11	1805-1807	de	_	
+6-12	1808-1812	dolo	_	
+6-13	1812-1813	,	_	
+6-14	1814-1816	et	_	
+6-15	1817-1821	lata	_	
+6-16	1822-1827	culpa	_	
+6-17	1828-1832	levi	_	
+6-18	1833-1835	et	_	
+6-19	1836-1845	levissima	_	
+6-20	1845-1846	,	_	
+6-21	1847-1849	ut	_	
+6-22	1850-1853	hic	_	
+6-23	1854-1859	dicit	_	
+6-24	1859-1860	.	_	
+6-25	1862-1866	Quia	_	
+6-26	1867-1874	exactam	_	
+6-27	1875-1886	diligentiam	_	
+6-28	1887-1893	qualem	_	
+6-29	1894-1896	in	_	
+6-30	1897-1902	rebus	_	
+6-31	1903-1907	suis	_	
+6-32	1908-1916	adhibere	_	
+6-33	1917-1922	debet	_	
+6-34	1922-1923	,	_	
+6-35	1924-1926	ff	Allegazione normativa[12]	
+6-36	1926-1927	.	Allegazione normativa[12]	
+6-37	1928-1936	commodat	Allegazione normativa[12]	
+6-38	1936-1937	.	Allegazione normativa[12]	
+6-39	1937-1938	,	Allegazione normativa[12]	
+6-40	1939-1941	in	Allegazione normativa[12]	
+6-41	1942-1947	rebus	Allegazione normativa[12]	
+6-42	1947-1948	.	_	
+6-43	1950-1954	Immo	_	
+6-44	1955-1958	non	_	
+6-45	1959-1967	sufficit	_	
+6-46	1968-1973	talem	_	
+6-47	1974-1982	adhibere	_	
+6-48	1983-1989	qualem	_	
+6-49	1990-1992	in	_	
+6-50	1993-1997	suis	_	
+6-51	1998-2003	rebus	_	
+6-52	2003-2004	,	_	
+6-53	2005-2007	si	_	
+6-54	2008-2013	tamen	_	
+6-55	2014-2019	alius	_	
+6-56	2020-2031	diligentior	_	
+6-57	2032-2041	custodire	_	
+6-58	2042-2048	potuit	_	
+6-59	2048-2049	,	_	
+6-60	2050-2052	ff	Allegazione normativa[13]	
+6-61	2052-2053	.	Allegazione normativa[13]	
+6-62	2054-2056	de	Allegazione normativa[13]	
+6-63	2057-2060	act	Allegazione normativa[13]	
+6-64	2060-2061	.	Allegazione normativa[13]	
+6-65	2062-2064	et	Allegazione normativa[13]	
+6-66	2065-2070	oblig	Allegazione normativa[13]	
+6-67	2070-2071	.	Allegazione normativa[13]	
+6-68	2071-2072	,	Allegazione normativa[13]	
+6-69	2073-2085	obligationes	Allegazione normativa[13]	
+6-70	2086-2089	aut	Allegazione normativa[13]	
+6-71	2090-2092	ex	Allegazione normativa[13]	
+6-72	2093-2102	contractu	Allegazione normativa[13]	
+6-73	2103-2104	§	Allegazione normativa[13]	
+6-74	2105-2107	is	Allegazione normativa[13]	
+6-75	2108-2114	quoque	Allegazione normativa[13]	
+6-76	2115-2118	cui	Allegazione normativa[13]	
+6-77	2118-2119	.	_	
+6-78	2121-2123	Et	_	
+6-79	2124-2129	dolum	_	
+6-80	2130-2132	et	_	
+6-81	2133-2139	culpam	_	
+6-82	2139-2140	,	_	
+6-83	2141-2143	ff	Allegazione normativa[14]	
+6-84	2143-2144	.	Allegazione normativa[14]	
+6-85	2145-2153	commodat	Allegazione normativa[14]	
+6-86	2153-2154	.	Allegazione normativa[14]	
+6-87	2154-2155	,	Allegazione normativa[14]	
+6-88	2156-2158	si	Allegazione normativa[14]	
+6-89	2159-2161	ut	Allegazione normativa[14]	
+6-90	2162-2167	certo	Allegazione normativa[14]	
+6-91	2168-2169	§	Allegazione normativa[14]	
+6-92	2170-2180	commodatum	Allegazione normativa[14]	
+6-93	2180-2181	.	_	
+6-94	2183-2185	Si	_	
+6-95	2186-2190	vero	_	
+6-96	2191-2197	gratia	_	
+6-97	2198-2204	dantis	_	
+6-98	2205-2211	tantum	_	
+6-99	2212-2222	commodatum	_	
+6-100	2223-2228	detur	_	
+6-101	2228-2229	,	_	
+6-102	2230-2234	tunc	_	
+6-103	2235-2240	venit	_	
+6-104	2241-2246	dolus	_	
+6-105	2247-2249	et	_	
+6-106	2250-2254	lata	_	
+6-107	2255-2260	culpa	_	
+6-108	2260-2261	,	_	
+6-109	2262-2264	ff	Allegazione normativa[15]	
+6-110	2264-2265	.	Allegazione normativa[15]	
+6-111	2266-2274	commodat	Allegazione normativa[15]	
+6-112	2274-2275	.	Allegazione normativa[15]	
+6-113	2275-2276	,	Allegazione normativa[15]	
+6-114	2277-2279	si	Allegazione normativa[15]	
+6-115	2280-2282	ut	Allegazione normativa[15]	
+6-116	2283-2288	certo	Allegazione normativa[15]	
+6-117	2289-2290	§	Allegazione normativa[15]	
+6-118	2291-2299	interdum	Allegazione normativa[15]	
+6-119	2299-2300	;	_	
+6-120	2301-2303	et	_	
+6-121	2304-2306	ff	Allegazione normativa[16]	
+6-122	2306-2307	.	Allegazione normativa[16]	
+6-123	2308-2316	commodat	Allegazione normativa[16]	
+6-124	2316-2317	.	Allegazione normativa[16]	
+6-125	2317-2318	,	Allegazione normativa[16]	
+6-126	2319-2321	si	Allegazione normativa[16]	
+6-127	2322-2325	mei	Allegazione normativa[16]	
+6-128	2326-2331	causa	Allegazione normativa[16]	
+6-129	2331-2332	;	_	
+6-130	2333-2335	ff	Allegazione normativa[17]	
+6-131	2335-2336	.	Allegazione normativa[17]	
+6-132	2337-2339	de	Allegazione normativa[17]	
+6-133	2340-2343	act	Allegazione normativa[17]	
+6-134	2343-2344	.	Allegazione normativa[17]	
+6-135	2345-2347	et	Allegazione normativa[17]	
+6-136	2348-2353	oblig	Allegazione normativa[17]	
+6-137	2353-2354	.	Allegazione normativa[17]	
+6-138	2354-2355	,	Allegazione normativa[17]	
+6-139	2356-2368	obligationes	Allegazione normativa[17]	
+6-140	2369-2372	aut	Allegazione normativa[17]	
+6-141	2373-2375	ex	Allegazione normativa[17]	
+6-142	2376-2385	contractu	Allegazione normativa[17]	
+6-143	2386-2387	§	Allegazione normativa[17]	
+6-144	2388-2390	is	Allegazione normativa[17]	
+6-145	2391-2397	quoque	Allegazione normativa[17]	
+6-146	2398-2402	apud	Allegazione normativa[17]	
+6-147	2403-2407	quem	Allegazione normativa[17]	
+6-148	2407-2408	.	_	
+6-149	2410-2412	Si	_	
+6-150	2413-2417	vero	_	
+6-151	2418-2424	gratia	_	
+6-152	2425-2434	utriusque	_	
+6-153	2434-2435	,	_	
+6-154	2436-2440	tunc	_	
+6-155	2441-2449	praestat	_	
+6-156	2450-2455	dolum	_	
+6-157	2456-2458	et	_	
+6-158	2459-2464	latam	_	
+6-159	2465-2471	culpam	_	
+6-160	2471-2472	,	_	
+6-161	2473-2475	ff	Allegazione normativa[18]	
+6-162	2475-2476	.	Allegazione normativa[18]	
+6-163	2477-2485	commodat	Allegazione normativa[18]	
+6-164	2485-2486	.	Allegazione normativa[18]	
+6-165	2486-2487	,	Allegazione normativa[18]	
+6-166	2488-2490	in	Allegazione normativa[18]	
+6-167	2491-2496	rebus	Allegazione normativa[18]	
+6-168	2496-2497	,	Allegazione normativa[18]	
+6-169	2498-2499	1	Allegazione normativa[18]	
+6-170	2499-2500	.	Allegazione normativa[18]	
+6-171	2501-2505	resp	Allegazione normativa[18]	
+6-172	2505-2506	.	Allegazione normativa[18]	
+6-173	2506-2507	,	Allegazione normativa[18]	
+6-174	2508-2510	ad	Allegazione normativa[18]	
+6-175	2511-2513	fi	Allegazione normativa[18]	
+6-176	2513-2514	.	Allegazione normativa[18]	
+6-177	2514-2515	;	_	
+6-178	2516-2518	et	_	
+6-179	2519-2521	ff	Allegazione normativa[19]	
+6-180	2521-2522	.	Allegazione normativa[19]	
+6-181	2523-2531	commodat	Allegazione normativa[19]	
+6-182	2531-2532	.	Allegazione normativa[19]	
+6-183	2532-2533	,	Allegazione normativa[19]	
+6-184	2534-2536	si	Allegazione normativa[19]	
+6-185	2537-2539	ut	Allegazione normativa[19]	
+6-186	2540-2545	certo	Allegazione normativa[19]	
+6-187	2546-2547	§	Allegazione normativa[19]	
+6-188	2548-2552	nunc	Allegazione normativa[19]	
+6-189	2553-2561	videndum	Allegazione normativa[19]	
+6-190	2561-2562	,	Allegazione normativa[19]	
+6-191	2563-2565	ad	Allegazione normativa[19]	
+6-192	2566-2568	fi	Allegazione normativa[19]	
+6-193	2568-2569	.	Allegazione normativa[19]	
+6-194	2571-2576	Casus	_	
+6-195	2577-2581	vero	_	
+6-196	2582-2590	fortuiti	_	
+6-197	2591-2594	qui	_	
+6-198	2595-2605	praevideri	_	
+6-199	2606-2609	non	_	
+6-200	2610-2617	possunt	_	
+6-201	2617-2618	,	_	
+6-202	2619-2622	non	_	
+6-203	2623-2630	veniunt	_	
+6-204	2630-2631	,	_	
+6-205	2632-2633	C	Allegazione normativa[20]	
+6-206	2633-2634	.	Allegazione normativa[20]	
+6-207	2635-2643	commodat	Allegazione normativa[20]	
+6-208	2643-2644	.	Allegazione normativa[20]	
+6-209	2644-2645	,	Allegazione normativa[20]	
+6-210	2646-2648	ea	Allegazione normativa[20]	
+6-211	2649-2655	quidem	Allegazione normativa[20]	
+6-212	2655-2656	;	_	
+6-213	2657-2659	et	_	
+6-214	2660-2662	ff	Allegazione normativa[21]	
+6-215	2662-2663	.	Allegazione normativa[21]	
+6-216	2664-2672	commodat	Allegazione normativa[21]	
+6-217	2672-2673	.	Allegazione normativa[21]	
+6-218	2673-2674	,	Allegazione normativa[21]	
+6-219	2675-2677	in	Allegazione normativa[21]	
+6-220	2678-2683	rebus	Allegazione normativa[21]	
+6-221	2683-2684	;	_	
+6-222	2685-2687	et	_	
+6-223	2688-2690	ff	Allegazione normativa[22]	
+6-224	2690-2691	.	Allegazione normativa[22]	
+6-225	2692-2694	de	Allegazione normativa[22]	
+6-226	2695-2698	act	Allegazione normativa[22]	
+6-227	2698-2699	.	Allegazione normativa[22]	
+6-228	2700-2702	et	Allegazione normativa[22]	
+6-229	2703-2708	oblig	Allegazione normativa[22]	
+6-230	2708-2709	.	Allegazione normativa[22]	
+6-231	2709-2710	,	Allegazione normativa[22]	
+6-232	2711-2723	obligationes	Allegazione normativa[22]	
+6-233	2724-2727	aut	Allegazione normativa[22]	
+6-234	2728-2730	ex	Allegazione normativa[22]	
+6-235	2731-2740	contractu	Allegazione normativa[22]	
+6-236	2741-2742	§	Allegazione normativa[22]	
+6-237	2743-2745	is	Allegazione normativa[22]	
+6-238	2746-2752	quoque	Allegazione normativa[22]	
+6-239	2753-2756	cui	Allegazione normativa[22]	
+6-240	2756-2757	;	_	
+6-241	2758-2763	infra	_	
+6-242	2763-2764	,	_	
+6-243	2765-2767	de	Allegazione normativa[23]	
+6-244	2768-2773	homic	Allegazione normativa[23]	
+6-245	2773-2774	.	Allegazione normativa[23]	
+6-246	2774-2775	,	Allegazione normativa[23]	
+6-247	2776-2783	Ioannes	Allegazione normativa[23]	
+6-248	2783-2784	;	_	
+6-249	2785-2787	et	_	
+6-250	2788-2793	infra	_	
+6-251	2793-2794	,	_	
+6-252	2795-2797	de	Allegazione normativa[24]	
+6-253	2798-2803	homic	Allegazione normativa[24]	
+6-254	2803-2804	.	Allegazione normativa[24]	
+6-255	2804-2805	,	Allegazione normativa[24]	
+6-256	2806-2812	quidam	Allegazione normativa[24]	
+6-257	2812-2813	.	_	
+6-258	2815-2819	Nisi	_	
+6-259	2820-2824	ista	_	
+6-260	2825-2829	tria	_	
+6-261	2830-2835	aliud	_	
+6-262	2836-2844	inducant	_	
+6-263	2844-2845	:	_	
+6-264	2846-2851	culpa	_	
+6-265	2851-2852	,	_	
+6-266	2853-2859	pactum	_	
+6-267	2860-2863	vel	_	
+6-268	2864-2868	mora	_	
+6-269	2868-2869	,	_	
+6-270	2870-2872	ut	_	
+6-271	2873-2875	in	_	
+6-272	2876-2885	praedicta	_	
+6-273	2886-2890	lege	_	
+6-274	2891-2893	ff	Allegazione normativa[25]	
+6-275	2893-2894	.	Allegazione normativa[25]	
+6-276	2895-2897	de	Allegazione normativa[25]	
+6-277	2898-2901	act	Allegazione normativa[25]	
+6-278	2901-2902	.	Allegazione normativa[25]	
+6-279	2903-2905	et	Allegazione normativa[25]	
+6-280	2906-2911	oblig	Allegazione normativa[25]	
+6-281	2911-2912	.	Allegazione normativa[25]	
+6-282	2912-2913	,	Allegazione normativa[25]	
+6-283	2914-2926	obligationes	Allegazione normativa[25]	
+6-284	2927-2930	aut	Allegazione normativa[25]	
+6-285	2931-2933	ex	Allegazione normativa[25]	
+6-286	2934-2943	contractu	Allegazione normativa[25]	
+6-287	2944-2945	§	Allegazione normativa[25]	
+6-288	2946-2948	is	Allegazione normativa[25]	
+6-289	2949-2955	quoque	Allegazione normativa[25]	
+6-290	2956-2959	cui	Allegazione normativa[25]	
+6-291	2959-2960	;	_	
+6-292	2961-2963	et	_	
+6-293	2964-2966	ff	Allegazione normativa[26]	
+6-294	2966-2967	.	Allegazione normativa[26]	
+6-295	2968-2976	commodat	Allegazione normativa[26]	
+6-296	2976-2977	.	Allegazione normativa[26]	
+6-297	2977-2978	,	Allegazione normativa[26]	
+6-298	2979-2981	in	Allegazione normativa[26]	
+6-299	2982-2987	rebus	Allegazione normativa[26]	
+6-300	2987-2988	;	_	
+6-301	2989-2991	et	_	
+6-302	2992-2994	ff	Allegazione normativa[27]	
+6-303	2994-2995	.	Allegazione normativa[27]	
+6-304	2996-2998	de	Allegazione normativa[27]	
+6-305	2999-3004	regul	Allegazione normativa[27]	
+6-306	3004-3005	.	Allegazione normativa[27]	
+6-307	3006-3009	iur	Allegazione normativa[27]	
+6-308	3009-3010	.	Allegazione normativa[27]	
+6-309	3010-3011	,	Allegazione normativa[27]	
+6-310	3012-3022	contractus	Allegazione normativa[27]	
+6-311	3022-3023	;	_	
+6-312	3024-3026	et	_	
+6-313	3027-3030	hic	_	
+6-314	3030-3031	,	_	
+6-315	3032-3034	et	_	
+6-316	3035-3040	infra	_	
+6-317	3040-3041	,	_	
+6-318	3042-3044	de	Allegazione normativa[28]	
+6-319	3045-3052	deposit	Allegazione normativa[28]	
+6-320	3052-3053	.	Allegazione normativa[28]	
+6-321	3053-3054	,	Allegazione normativa[28]	
+6-322	3055-3059	bona	Allegazione normativa[28]	
+6-323	3060-3065	fides	Allegazione normativa[28]	
+6-324	3065-3066	;	_	
+6-325	3067-3069	et	_	
+6-326	3070-3071	C	Allegazione normativa[29]	
+6-327	3071-3072	.	Allegazione normativa[29]	
+6-328	3073-3081	commodat	Allegazione normativa[29]	
+6-329	3081-3082	.	Allegazione normativa[29]	
+6-330	3082-3083	,	Allegazione normativa[29]	
+6-331	3084-3086	ea	Allegazione normativa[29]	
+6-332	3087-3093	quidem	Allegazione normativa[29]	
+6-333	3093-3094	.	_	
+6-334	3096-3101	Culpa	_	
+6-335	3102-3108	potest	_	
+6-336	3109-3117	imputari	_	
+6-337	3118-3120	si	_	
+6-338	3121-3124	rem	_	
+6-339	3125-3129	sibi	_	
+6-340	3130-3140	commodatam	_	
+6-341	3141-3150	remiserit	_	
+6-342	3151-3155	mihi	_	
+6-343	3156-3159	per	_	
+6-344	3160-3163	non	_	
+6-345	3164-3171	idoneam	_	
+6-346	3172-3180	personam	_	
+6-347	3180-3181	,	_	
+6-348	3182-3184	ff	Allegazione normativa[30]	
+6-349	3184-3185	.	Allegazione normativa[30]	
+6-350	3186-3194	commodat	Allegazione normativa[30]	
+6-351	3194-3195	.	Allegazione normativa[30]	
+6-352	3195-3196	,	Allegazione normativa[30]	
+6-353	3197-3200	qui	Allegazione normativa[30]	
+6-354	3201-3204	non	Allegazione normativa[30]	
+6-355	3205-3208	tam	Allegazione normativa[30]	
+6-356	3208-3209	.	_	
+6-357	3211-3216	Secus	_	
+6-358	3217-3219	si	_	
+6-359	3220-3223	per	_	
+6-360	3224-3231	idoneam	_	
+6-361	3232-3240	personam	_	
+6-362	3240-3241	,	_	
+6-363	3242-3247	licet	_	
+6-364	3248-3258	contrarium	_	
+6-365	3259-3267	evenerit	_	
+6-366	3267-3268	,	_	
+6-367	3269-3271	ff	Allegazione normativa[31]	
+6-368	3271-3272	.	Allegazione normativa[31]	
+6-369	3273-3281	commodat	Allegazione normativa[31]	
+6-370	3281-3282	.	Allegazione normativa[31]	
+6-371	3282-3283	,	Allegazione normativa[31]	
+6-372	3284-3292	argentum	Allegazione normativa[31]	
+6-373	3292-3293	;	_	
+6-374	3294-3296	et	_	
+6-375	3297-3302	infra	_	
+6-376	3302-3303	,	_	
+6-377	3304-3306	de	Allegazione normativa[32]	
+6-378	3307-3313	pignor	Allegazione normativa[32]	
+6-379	3313-3314	.	Allegazione normativa[32]	
+6-380	3314-3315	,	Allegazione normativa[32]	
+6-381	3316-3328	significante	Allegazione normativa[32]	
+6-382	3328-3329	.	_	
+6-383	3331-3335	Item	_	
+6-384	3336-3338	ex	_	
+6-385	3339-3344	pacto	_	
+6-386	3345-3356	praestantur	_	
+6-387	3357-3362	casus	_	
+6-388	3363-3371	fortuiti	_	
+6-389	3371-3372	,	_	
+6-390	3373-3375	ut	_	
+6-391	3376-3379	hic	_	
+6-392	3380-3385	dicit	_	
+6-393	3385-3386	,	_	
+6-394	3387-3389	et	_	
+6-395	3390-3391	C	Allegazione normativa[33]	
+6-396	3391-3392	.	Allegazione normativa[33]	
+6-397	3393-3401	commodat	Allegazione normativa[33]	
+6-398	3401-3402	.	Allegazione normativa[33]	
+6-399	3402-3403	,	Allegazione normativa[33]	
+6-400	3404-3406	ea	Allegazione normativa[33]	
+6-401	3407-3413	quidem	Allegazione normativa[33]	
+6-402	3413-3414	.	_	
+6-403	3416-3419	Ita	_	
+6-404	3420-3424	quod	_	
+6-405	3425-3430	casus	_	
+6-406	3431-3439	fortuiti	_	
+6-407	3440-3453	connumerentur	_	
+6-408	3454-3465	specialiter	_	
+6-409	3465-3466	,	_	
+6-410	3467-3469	ut	_	
+6-411	3470-3472	ff	Allegazione normativa[34]	
+6-412	3472-3473	.	Allegazione normativa[34]	
+6-413	3474-3476	si	Allegazione normativa[34]	
+6-414	3477-3481	quis	Allegazione normativa[34]	
+6-415	3482-3486	caut	Allegazione normativa[34]	
+6-416	3486-3487	.	Allegazione normativa[34]	
+6-417	3487-3488	,	Allegazione normativa[34]	
+6-418	3489-3492	sed	Allegazione normativa[34]	
+6-419	3493-3495	et	Allegazione normativa[34]	
+6-420	3496-3498	si	Allegazione normativa[34]	
+6-421	3499-3500	§	Allegazione normativa[34]	
+6-422	3501-3510	quaesitum	Allegazione normativa[34]	
+6-423	3510-3511	.	_	
+6-424	3513-3515	Et	_	
+6-425	3516-3520	mora	_	
+6-426	3521-3530	imputatur	_	
+6-427	3530-3531	,	_	
+6-428	3532-3536	puta	_	
+6-429	3537-3539	si	_	
+6-430	3540-3545	moram	_	
+6-431	3546-3551	fecit	_	
+6-432	3552-3554	in	_	
+6-433	3555-3566	restituendo	_	
+6-434	3566-3567	,	_	
+6-435	3568-3573	infra	_	
+6-436	3573-3574	,	_	
+6-437	3575-3577	de	Allegazione normativa[35]	
+6-438	3578-3585	deposit	Allegazione normativa[35]	
+6-439	3585-3586	.	Allegazione normativa[35]	
+6-440	3586-3587	,	Allegazione normativa[35]	
+6-441	3588-3592	bona	Allegazione normativa[35]	
+6-442	3593-3598	fides	Allegazione normativa[35]	
+6-443	3598-3599	.	_	
+6-444	3601-3603	Et	_	
+6-445	3604-3617	intelligendum	_	
+6-446	3618-3621	est	_	
+6-447	3622-3627	etiam	_	
+6-448	3628-3630	si	_	
+6-449	3631-3635	apud	_	
+6-450	3636-3647	commodantem	_	
+6-451	3648-3651	res	_	
+6-452	3652-3659	fuisset	_	
+6-453	3660-3665	eodem	_	
+6-454	3666-3670	modo	_	
+6-455	3671-3679	peritura	_	
+6-456	3679-3680	,	_	
+6-457	3681-3683	ff	Allegazione normativa[36]	
+6-458	3683-3684	.	Allegazione normativa[36]	
+6-459	3685-3687	de	Allegazione normativa[36]	
+6-460	3688-3691	leg	Allegazione normativa[36]	
+6-461	3691-3692	.	Allegazione normativa[36]	
+6-462	3693-3694	1	Allegazione normativa[36]	
+6-463	3694-3695	,	Allegazione normativa[36]	
+6-464	3696-3699	cum	Allegazione normativa[36]	
+6-465	3700-3703	res	Allegazione normativa[36]	
+6-466	3704-3705	§	Allegazione normativa[36]	
+6-467	3706-3710	ulti	Allegazione normativa[36]	
+6-468	3710-3711	.	Allegazione normativa[36]	
+6-469	3711-3712	;	_	
+6-470	3713-3715	et	_	
+6-471	3716-3718	in	_	
+6-472	3719-3723	Auth	Allegazione normativa[37]	
+6-473	3723-3724	.	Allegazione normativa[37]	
+6-474	3725-3727	de	Allegazione normativa[37]	
+6-475	3728-3731	dep	Allegazione normativa[37]	
+6-476	3731-3732	.	Allegazione normativa[37]	
+6-477	3733-3735	et	Allegazione normativa[37]	
+6-478	3736-3742	denunc	Allegazione normativa[37]	
+6-479	3742-3743	.	Allegazione normativa[37]	
+6-480	3744-3747	inq	Allegazione normativa[37]	
+6-481	3747-3748	.	Allegazione normativa[37]	
+6-482	3748-3749	,	Allegazione normativa[37]	
+6-483	3750-3751	1	Allegazione normativa[37]	
+6-484	3751-3752	.	Allegazione normativa[37]	
+6-485	3753-3757	resp	Allegazione normativa[37]	
+6-486	3757-3758	.	Allegazione normativa[37]	
+6-487	3758-3759	,	Allegazione normativa[37]	
+6-488	3760-3762	ad	Allegazione normativa[37]	
+6-489	3763-3765	fi	Allegazione normativa[37]	
+6-490	3765-3766	.	Allegazione normativa[37]	
+6-491	3766-3767	,	Allegazione normativa[37]	
+6-492	3768-3772	coll	Allegazione normativa[37]	
+6-493	3772-3773	.	Allegazione normativa[37]	
+6-494	3774-3775	6	Allegazione normativa[37]	
+6-495	3775-3776	.	_	
+6-496	3778-3780	Et	_	
+6-497	3781-3791	commodatum	_	
+6-498	3792-3800	restitui	_	
+6-499	3801-3806	debet	_	
+6-500	3807-3809	ad	_	
+6-501	3810-3819	pristinam	_	
+6-502	3820-3826	causam	_	
+6-503	3826-3827	,	_	
+6-504	3828-3830	ff	Allegazione normativa[38]	
+6-505	3830-3831	.	Allegazione normativa[38]	
+6-506	3832-3834	de	Allegazione normativa[38]	
+6-507	3835-3843	commodat	Allegazione normativa[38]	
+6-508	3843-3844	.	Allegazione normativa[38]	
+6-509	3844-3845	,	Allegazione normativa[38]	
+6-510	3846-3849	sed	Allegazione normativa[38]	
+6-511	3850-3854	mihi	Allegazione normativa[38]	
+6-512	3855-3856	§	Allegazione normativa[38]	
+6-513	3857-3858	1	Allegazione normativa[38]	
+6-514	3858-3859	.	_	
+6-515	3861-3866	Alias	_	
+6-516	3867-3873	quanti	_	
+6-517	3874-3882	interest	_	
+6-518	3883-3887	eius	_	
+6-519	3888-3899	condemnatur	_	
+6-520	3899-3900	,	_	
+6-521	3901-3903	ut	_	
+6-522	3904-3907	ibi	_	
+6-523	3908-3915	dicitur	_	
+6-524	3915-3916	.	_	
+6-525	3918-3921	Ber	_	
+6-526	3921-3922	.	_	
+
+#Text=Post usum
+7-1	3927-3931	Post	_	
+7-2	3932-3936	usum	_	
+
+#Text=ff. commodat., in commodato § sicut.  Sed in precario contrarium est, supra, de precar., precarium; et ff. de preca., cum precario.  Item qui commodavit vasa vitiosa, tenetur contraria actione pro vino effuso.  Ignorans tamen excusatur, ff. commodat., in rebus § possunt; et ff. commodat., in rebus § item qui sciens; et ff. commodat., si servus.  Ber.
+8-1	3938-3940	ff	Allegazione normativa[39]	
+8-2	3940-3941	.	Allegazione normativa[39]	
+8-3	3942-3950	commodat	Allegazione normativa[39]	
+8-4	3950-3951	.	Allegazione normativa[39]	
+8-5	3951-3952	,	Allegazione normativa[39]	
+8-6	3953-3955	in	Allegazione normativa[39]	
+8-7	3956-3965	commodato	Allegazione normativa[39]	
+8-8	3966-3967	§	Allegazione normativa[39]	
+8-9	3968-3973	sicut	Allegazione normativa[39]	
+8-10	3973-3974	.	_	
+8-11	3976-3979	Sed	_	
+8-12	3980-3982	in	_	
+8-13	3983-3991	precario	_	
+8-14	3992-4002	contrarium	_	
+8-15	4003-4006	est	_	
+8-16	4006-4007	,	_	
+8-17	4008-4013	supra	_	
+8-18	4013-4014	,	_	
+8-19	4015-4017	de	Allegazione normativa[40]	
+8-20	4018-4024	precar	Allegazione normativa[40]	
+8-21	4024-4025	.	Allegazione normativa[40]	
+8-22	4025-4026	,	Allegazione normativa[40]	
+8-23	4027-4036	precarium	Allegazione normativa[40]	
+8-24	4036-4037	;	_	
+8-25	4038-4040	et	_	
+8-26	4041-4043	ff	Allegazione normativa[41]	
+8-27	4043-4044	.	Allegazione normativa[41]	
+8-28	4045-4047	de	Allegazione normativa[41]	
+8-29	4048-4053	preca	Allegazione normativa[41]	
+8-30	4053-4054	.	Allegazione normativa[41]	
+8-31	4054-4055	,	Allegazione normativa[41]	
+8-32	4056-4059	cum	Allegazione normativa[41]	
+8-33	4060-4068	precario	Allegazione normativa[41]	
+8-34	4068-4069	.	_	
+8-35	4071-4075	Item	_	
+8-36	4076-4079	qui	_	
+8-37	4080-4090	commodavit	_	
+8-38	4091-4095	vasa	_	
+8-39	4096-4103	vitiosa	_	
+8-40	4103-4104	,	_	
+8-41	4105-4112	tenetur	_	
+8-42	4113-4122	contraria	_	
+8-43	4123-4130	actione	_	
+8-44	4131-4134	pro	_	
+8-45	4135-4139	vino	_	
+8-46	4140-4146	effuso	_	
+8-47	4146-4147	.	_	
+8-48	4149-4157	Ignorans	_	
+8-49	4158-4163	tamen	_	
+8-50	4164-4173	excusatur	_	
+8-51	4173-4174	,	_	
+8-52	4175-4177	ff	Allegazione normativa[42]	
+8-53	4177-4178	.	Allegazione normativa[42]	
+8-54	4179-4187	commodat	Allegazione normativa[42]	
+8-55	4187-4188	.	Allegazione normativa[42]	
+8-56	4188-4189	,	Allegazione normativa[42]	
+8-57	4190-4192	in	Allegazione normativa[42]	
+8-58	4193-4198	rebus	Allegazione normativa[42]	
+8-59	4199-4200	§	Allegazione normativa[42]	
+8-60	4201-4208	possunt	Allegazione normativa[42]	
+8-61	4208-4209	;	_	
+8-62	4210-4212	et	_	
+8-63	4213-4215	ff	Allegazione normativa[43]	
+8-64	4215-4216	.	Allegazione normativa[43]	
+8-65	4217-4225	commodat	Allegazione normativa[43]	
+8-66	4225-4226	.	Allegazione normativa[43]	
+8-67	4226-4227	,	Allegazione normativa[43]	
+8-68	4228-4230	in	Allegazione normativa[43]	
+8-69	4231-4236	rebus	Allegazione normativa[43]	
+8-70	4237-4238	§	Allegazione normativa[43]	
+8-71	4239-4243	item	Allegazione normativa[43]	
+8-72	4244-4247	qui	Allegazione normativa[43]	
+8-73	4248-4254	sciens	Allegazione normativa[43]	
+8-74	4254-4255	;	_	
+8-75	4256-4258	et	_	
+8-76	4259-4261	ff	Allegazione normativa[44]	
+8-77	4261-4262	.	Allegazione normativa[44]	
+8-78	4263-4271	commodat	Allegazione normativa[44]	
+8-79	4271-4272	.	Allegazione normativa[44]	
+8-80	4272-4273	,	Allegazione normativa[44]	
+8-81	4274-4276	si	Allegazione normativa[44]	
+8-82	4277-4283	servus	Allegazione normativa[44]	
+8-83	4283-4284	.	_	
+8-84	4286-4289	Ber	_	
+8-85	4289-4290	.	_	
+
+#Text=Decipi
+9-1	4295-4301	Decipi	_	
+
+#Text=ff. commodat., in commodato § sicut, in fi.
+10-1	4303-4305	ff	Allegazione normativa[45]	
+10-2	4305-4306	.	Allegazione normativa[45]	
+10-3	4307-4315	commodat	Allegazione normativa[45]	
+10-4	4315-4316	.	Allegazione normativa[45]	
+10-5	4316-4317	,	Allegazione normativa[45]	
+10-6	4318-4320	in	Allegazione normativa[45]	
+10-7	4321-4330	commodato	Allegazione normativa[45]	
+10-8	4331-4332	§	Allegazione normativa[45]	
+10-9	4333-4338	sicut	Allegazione normativa[45]	
+10-10	4338-4339	,	Allegazione normativa[45]	
+10-11	4340-4342	in	Allegazione normativa[45]	
+10-12	4343-4345	fi	Allegazione normativa[45]	
+10-13	4345-4346	.	Allegazione normativa[45]	

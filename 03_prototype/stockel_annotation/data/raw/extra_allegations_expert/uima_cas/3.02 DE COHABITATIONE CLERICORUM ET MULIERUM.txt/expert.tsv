@@ -1,0 +1,3217 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 3.02 DE COHABITATIONE CLERICORUM ET MULIERUM
+1-1	0-1	X	_	
+1-2	2-6	3.02	_	
+1-3	7-9	DE	_	
+1-4	10-23	COHABITATIONE	_	
+1-5	24-34	CLERICORUM	_	
+1-6	35-37	ET	_	
+1-7	38-46	MULIERUM	_	
+
+#Text=X 3.02.01 Inhibendum est
+2-1	50-51	X	_	
+2-2	52-59	3.02.01	_	
+2-3	60-70	Inhibendum	_	
+2-4	71-74	est	_	
+
+#Text=Retineat
+3-1	79-87	Retineat	_	
+
+#Text=Ut 32. dist., interdixit; et 32. dist., nullus; et 32. dist., praeter; et 81. dist., cum omnibus.
+4-1	89-91	Ut	_	
+4-2	92-94	32	Allegazione normativa[1]	
+4-3	94-95	.	Allegazione normativa[1]	
+4-4	96-100	dist	Allegazione normativa[1]	
+4-5	100-101	.	Allegazione normativa[1]	
+4-6	101-102	,	Allegazione normativa[1]	
+4-7	103-113	interdixit	Allegazione normativa[1]	
+4-8	113-114	;	_	
+4-9	115-117	et	_	
+4-10	118-120	32	Allegazione normativa[2]	
+4-11	120-121	.	Allegazione normativa[2]	
+4-12	122-126	dist	Allegazione normativa[2]	
+4-13	126-127	.	Allegazione normativa[2]	
+4-14	127-128	,	Allegazione normativa[2]	
+4-15	129-135	nullus	Allegazione normativa[2]	
+4-16	135-136	;	_	
+4-17	137-139	et	_	
+4-18	140-142	32	Allegazione normativa[3]	
+4-19	142-143	.	Allegazione normativa[3]	
+4-20	144-148	dist	Allegazione normativa[3]	
+4-21	148-149	.	Allegazione normativa[3]	
+4-22	149-150	,	Allegazione normativa[3]	
+4-23	151-158	praeter	Allegazione normativa[3]	
+4-24	158-159	;	_	
+4-25	160-162	et	_	
+4-26	163-165	81	Allegazione normativa[4]	
+4-27	165-166	.	Allegazione normativa[4]	
+4-28	167-171	dist	Allegazione normativa[4]	
+4-29	171-172	.	Allegazione normativa[4]	
+4-30	172-173	,	Allegazione normativa[4]	
+4-31	174-177	cum	Allegazione normativa[4]	
+4-32	178-185	omnibus	Allegazione normativa[4]	
+4-33	185-186	.	_	
+
+#Text=Canones
+5-1	191-198	Canones	_	
+
+#Text=32. dist., interdixit; 81. dist., cum omnibus.  Videtur quod canon iste corrigat omnes illos canones, cum illi permittant huiusmodi mulieres cum clericis habitare matrem, sororem et amitam.  Et idem permittit Innocentius infra, de cohab. cler. et mul., a nobis, concordans prioribus canonibus.  Sic solve hanc contrarietatem quod dicitur hic, intellige de suspectis clericis et iuvenibus et de mulieribus suspectis, quia si suspectae sunt, non debent secum manere, 34. dist., quorundam.  Contraria loquunter de illis mulieribus de quibus nulla est suspicio mali, quia in talibus naturale foedus nihil saevi criminis suspicari permittit, infra, de cohab. cler. et mul., a nobis; et C. de episc. et cler., eum qui; et supra, de praesump., cum in iuventute.  Item in linea transversali usque ad secundum gradum possunt habere clerici consanguineas, ut 81. dist., cum omnibus.  In descendentibus vel ascendentibus videtur quod usque ad quartum gradum ibi, amplius potest extendi permisso quam in collaterali.
+6-1	200-202	32	Allegazione normativa[5]	
+6-2	202-203	.	Allegazione normativa[5]	
+6-3	204-208	dist	Allegazione normativa[5]	
+6-4	208-209	.	Allegazione normativa[5]	
+6-5	209-210	,	Allegazione normativa[5]	
+6-6	211-221	interdixit	Allegazione normativa[5]	
+6-7	221-222	;	_	
+6-8	223-225	81	Allegazione normativa[6]	
+6-9	225-226	.	Allegazione normativa[6]	
+6-10	227-231	dist	Allegazione normativa[6]	
+6-11	231-232	.	Allegazione normativa[6]	
+6-12	232-233	,	Allegazione normativa[6]	
+6-13	234-237	cum	Allegazione normativa[6]	
+6-14	238-245	omnibus	Allegazione normativa[6]	
+6-15	245-246	.	_	
+6-16	248-255	Videtur	_	
+6-17	256-260	quod	_	
+6-18	261-266	canon	_	
+6-19	267-271	iste	_	
+6-20	272-280	corrigat	_	
+6-21	281-286	omnes	_	
+6-22	287-292	illos	_	
+6-23	293-300	canones	_	
+6-24	300-301	,	_	
+6-25	302-305	cum	_	
+6-26	306-310	illi	_	
+6-27	311-321	permittant	_	
+6-28	322-331	huiusmodi	_	
+6-29	332-340	mulieres	_	
+6-30	341-344	cum	_	
+6-31	345-353	clericis	_	
+6-32	354-362	habitare	_	
+6-33	363-369	matrem	_	
+6-34	369-370	,	_	
+6-35	371-378	sororem	_	
+6-36	379-381	et	_	
+6-37	382-388	amitam	_	
+6-38	388-389	.	_	
+6-39	391-393	Et	_	
+6-40	394-398	idem	_	
+6-41	399-408	permittit	_	
+6-42	409-420	Innocentius	_	
+6-43	421-426	infra	_	
+6-44	426-427	,	_	
+6-45	428-430	de	Allegazione normativa[7]	
+6-46	431-436	cohab	Allegazione normativa[7]	
+6-47	436-437	.	Allegazione normativa[7]	
+6-48	438-442	cler	Allegazione normativa[7]	
+6-49	442-443	.	Allegazione normativa[7]	
+6-50	444-446	et	Allegazione normativa[7]	
+6-51	447-450	mul	Allegazione normativa[7]	
+6-52	450-451	.	Allegazione normativa[7]	
+6-53	451-452	,	Allegazione normativa[7]	
+6-54	453-454	a	Allegazione normativa[7]	
+6-55	455-460	nobis	Allegazione normativa[7]	
+6-56	460-461	,	_	
+6-57	462-472	concordans	_	
+6-58	473-482	prioribus	_	
+6-59	483-492	canonibus	_	
+6-60	492-493	.	_	
+6-61	495-498	Sic	_	
+6-62	499-504	solve	_	
+6-63	505-509	hanc	_	
+6-64	510-524	contrarietatem	_	
+6-65	525-529	quod	_	
+6-66	530-537	dicitur	_	
+6-67	538-541	hic	_	
+6-68	541-542	,	_	
+6-69	543-552	intellige	_	
+6-70	553-555	de	_	
+6-71	556-565	suspectis	_	
+6-72	566-574	clericis	_	
+6-73	575-577	et	_	
+6-74	578-587	iuvenibus	_	
+6-75	588-590	et	_	
+6-76	591-593	de	_	
+6-77	594-604	mulieribus	_	
+6-78	605-614	suspectis	_	
+6-79	614-615	,	_	
+6-80	616-620	quia	_	
+6-81	621-623	si	_	
+6-82	624-633	suspectae	_	
+6-83	634-638	sunt	_	
+6-84	638-639	,	_	
+6-85	640-643	non	_	
+6-86	644-650	debent	_	
+6-87	651-656	secum	_	
+6-88	657-663	manere	_	
+6-89	663-664	,	_	
+6-90	665-667	34	Allegazione normativa[8]	
+6-91	667-668	.	Allegazione normativa[8]	
+6-92	669-673	dist	Allegazione normativa[8]	
+6-93	673-674	.	Allegazione normativa[8]	
+6-94	674-675	,	Allegazione normativa[8]	
+6-95	676-685	quorundam	Allegazione normativa[8]	
+6-96	685-686	.	_	
+6-97	688-697	Contraria	_	
+6-98	698-707	loquunter	_	
+6-99	708-710	de	_	
+6-100	711-716	illis	_	
+6-101	717-727	mulieribus	_	
+6-102	728-730	de	_	
+6-103	731-737	quibus	_	
+6-104	738-743	nulla	_	
+6-105	744-747	est	_	
+6-106	748-756	suspicio	_	
+6-107	757-761	mali	_	
+6-108	761-762	,	_	
+6-109	763-767	quia	_	
+6-110	768-770	in	_	
+6-111	771-778	talibus	_	
+6-112	779-787	naturale	_	
+6-113	788-794	foedus	_	
+6-114	795-800	nihil	_	
+6-115	801-806	saevi	_	
+6-116	807-815	criminis	_	
+6-117	816-825	suspicari	_	
+6-118	826-835	permittit	_	
+6-119	835-836	,	_	
+6-120	837-842	infra	_	
+6-121	842-843	,	_	
+6-122	844-846	de	Allegazione normativa[9]	
+6-123	847-852	cohab	Allegazione normativa[9]	
+6-124	852-853	.	Allegazione normativa[9]	
+6-125	854-858	cler	Allegazione normativa[9]	
+6-126	858-859	.	Allegazione normativa[9]	
+6-127	860-862	et	Allegazione normativa[9]	
+6-128	863-866	mul	Allegazione normativa[9]	
+6-129	866-867	.	Allegazione normativa[9]	
+6-130	867-868	,	Allegazione normativa[9]	
+6-131	869-870	a	Allegazione normativa[9]	
+6-132	871-876	nobis	Allegazione normativa[9]	
+6-133	876-877	;	_	
+6-134	878-880	et	_	
+6-135	881-882	C	Allegazione normativa[10]	
+6-136	882-883	.	Allegazione normativa[10]	
+6-137	884-886	de	Allegazione normativa[10]	
+6-138	887-892	episc	Allegazione normativa[10]	
+6-139	892-893	.	Allegazione normativa[10]	
+6-140	894-896	et	Allegazione normativa[10]	
+6-141	897-901	cler	Allegazione normativa[10]	
+6-142	901-902	.	Allegazione normativa[10]	
+6-143	902-903	,	Allegazione normativa[10]	
+6-144	904-907	eum	Allegazione normativa[10]	
+6-145	908-911	qui	Allegazione normativa[10]	
+6-146	911-912	;	_	
+6-147	913-915	et	_	
+6-148	916-921	supra	_	
+6-149	921-922	,	_	
+6-150	923-925	de	Allegazione normativa[11]	
+6-151	926-934	praesump	Allegazione normativa[11]	
+6-152	934-935	.	Allegazione normativa[11]	
+6-153	935-936	,	Allegazione normativa[11]	
+6-154	937-940	cum	Allegazione normativa[11]	
+6-155	941-943	in	Allegazione normativa[11]	
+6-156	944-953	iuventute	Allegazione normativa[11]	
+6-157	953-954	.	_	
+6-158	956-960	Item	_	
+6-159	961-963	in	_	
+6-160	964-969	linea	_	
+6-161	970-982	transversali	_	
+6-162	983-988	usque	_	
+6-163	989-991	ad	_	
+6-164	992-1000	secundum	_	
+6-165	1001-1007	gradum	_	
+6-166	1008-1015	possunt	_	
+6-167	1016-1022	habere	_	
+6-168	1023-1030	clerici	_	
+6-169	1031-1044	consanguineas	_	
+6-170	1044-1045	,	_	
+6-171	1046-1048	ut	_	
+6-172	1049-1051	81	Allegazione normativa[12]	
+6-173	1051-1052	.	Allegazione normativa[12]	
+6-174	1053-1057	dist	Allegazione normativa[12]	
+6-175	1057-1058	.	Allegazione normativa[12]	
+6-176	1058-1059	,	Allegazione normativa[12]	
+6-177	1060-1063	cum	Allegazione normativa[12]	
+6-178	1064-1071	omnibus	Allegazione normativa[12]	
+6-179	1071-1072	.	_	
+6-180	1074-1076	In	_	
+6-181	1077-1091	descendentibus	_	
+6-182	1092-1095	vel	_	
+6-183	1096-1109	ascendentibus	_	
+6-184	1110-1117	videtur	_	
+6-185	1118-1122	quod	_	
+6-186	1123-1128	usque	_	
+6-187	1129-1131	ad	_	
+6-188	1132-1139	quartum	_	
+6-189	1140-1146	gradum	_	
+6-190	1147-1150	ibi	_	
+6-191	1150-1151	,	_	
+6-192	1152-1159	amplius	_	
+6-193	1160-1166	potest	_	
+6-194	1167-1174	extendi	_	
+6-195	1175-1183	permisso	_	
+6-196	1184-1188	quam	_	
+6-197	1189-1191	in	_	
+6-198	1192-1203	collaterali	_	
+6-199	1203-1204	.	_	
+
+#Text=In illis
+7-1	1209-1211	In	_	
+7-2	1212-1217	illis	_	
+
+#Text=Id est, occasione illarum quandoque aliae commorantur cum illis vel veniunt ad illas.  Unde dicit Augustinus: non omnes quae cum mea sorore sunt, sorores meae sunt, 81. dist., legitur.  Vel intellige proprie ut littera dicit.  Et hoc vult littera sequens aut in pedissequis illarum.
+8-1	1219-1221	Id	_	
+8-2	1222-1225	est	_	
+8-3	1225-1226	,	_	
+8-4	1227-1236	occasione	_	
+8-5	1237-1244	illarum	_	
+8-6	1245-1254	quandoque	_	
+8-7	1255-1260	aliae	_	
+8-8	1261-1272	commorantur	_	
+8-9	1273-1276	cum	_	
+8-10	1277-1282	illis	_	
+8-11	1283-1286	vel	_	
+8-12	1287-1294	veniunt	_	
+8-13	1295-1297	ad	_	
+8-14	1298-1303	illas	_	
+8-15	1303-1304	.	_	
+8-16	1306-1310	Unde	_	
+8-17	1311-1316	dicit	_	
+8-18	1317-1327	Augustinus	_	
+8-19	1327-1328	:	_	
+8-20	1329-1332	non	_	
+8-21	1333-1338	omnes	_	
+8-22	1339-1343	quae	_	
+8-23	1344-1347	cum	_	
+8-24	1348-1351	mea	_	
+8-25	1352-1358	sorore	_	
+8-26	1359-1363	sunt	_	
+8-27	1363-1364	,	_	
+8-28	1365-1372	sorores	_	
+8-29	1373-1377	meae	_	
+8-30	1378-1382	sunt	_	
+8-31	1382-1383	,	_	
+8-32	1384-1386	81	Allegazione normativa[13]	
+8-33	1386-1387	.	Allegazione normativa[13]	
+8-34	1388-1392	dist	Allegazione normativa[13]	
+8-35	1392-1393	.	Allegazione normativa[13]	
+8-36	1393-1394	,	Allegazione normativa[13]	
+8-37	1395-1402	legitur	Allegazione normativa[13]	
+8-38	1402-1403	.	_	
+8-39	1405-1408	Vel	_	
+8-40	1409-1418	intellige	_	
+8-41	1419-1426	proprie	_	
+8-42	1427-1429	ut	_	
+8-43	1430-1437	littera	_	
+8-44	1438-1443	dicit	_	
+8-45	1443-1444	.	_	
+8-46	1446-1448	Et	_	
+8-47	1449-1452	hoc	_	
+8-48	1453-1457	vult	_	
+8-49	1458-1465	littera	_	
+8-50	1466-1473	sequens	_	
+8-51	1474-1477	aut	_	
+8-52	1478-1480	in	_	
+8-53	1481-1492	pedissequis	_	
+8-54	1493-1500	illarum	_	
+8-55	1500-1501	.	_	
+
+#Text=Subministrent
+9-1	1506-1519	Subministrent	_	
+
+#Text=Et sic patet quod clerici possunt sustentare consanguineos pauperes de quibus capitulum hoc intelligitur, quibus potius quam extraneis tenentur, 86. dist., non satis.  Alias non, si divites sunt vel ut divites eos faciant, ut eodem capitulo et 12. q. 2, quisquis; ad idem 31. dist., omnino.
+10-1	1521-1523	Et	_	
+10-2	1524-1527	sic	_	
+10-3	1528-1533	patet	_	
+10-4	1534-1538	quod	_	
+10-5	1539-1546	clerici	_	
+10-6	1547-1554	possunt	_	
+10-7	1555-1565	sustentare	_	
+10-8	1566-1579	consanguineos	_	
+10-9	1580-1588	pauperes	_	
+10-10	1589-1591	de	_	
+10-11	1592-1598	quibus	_	
+10-12	1599-1608	capitulum	_	
+10-13	1609-1612	hoc	_	
+10-14	1613-1625	intelligitur	_	
+10-15	1625-1626	,	_	
+10-16	1627-1633	quibus	_	
+10-17	1634-1640	potius	_	
+10-18	1641-1645	quam	_	
+10-19	1646-1655	extraneis	_	
+10-20	1656-1664	tenentur	_	
+10-21	1664-1665	,	_	
+10-22	1666-1668	86	Allegazione normativa[14]	
+10-23	1668-1669	.	Allegazione normativa[14]	
+10-24	1670-1674	dist	Allegazione normativa[14]	
+10-25	1674-1675	.	Allegazione normativa[14]	
+10-26	1675-1676	,	Allegazione normativa[14]	
+10-27	1677-1680	non	Allegazione normativa[14]	
+10-28	1681-1686	satis	Allegazione normativa[14]	
+10-29	1686-1687	.	_	
+10-30	1689-1694	Alias	_	
+10-31	1695-1698	non	_	
+10-32	1698-1699	,	_	
+10-33	1700-1702	si	_	
+10-34	1703-1710	divites	_	
+10-35	1711-1715	sunt	_	
+10-36	1716-1719	vel	_	
+10-37	1720-1722	ut	_	
+10-38	1723-1730	divites	_	
+10-39	1731-1734	eos	_	
+10-40	1735-1742	faciant	_	
+10-41	1742-1743	,	_	
+10-42	1744-1746	ut	_	
+10-43	1747-1752	eodem	_	
+10-44	1753-1761	capitulo	_	
+10-45	1762-1764	et	_	
+10-46	1765-1767	12	*[15]	
+10-47	1767-1768	.	*[15]	
+10-48	1769-1770	q	*[15]	
+10-49	1770-1771	.	*[15]	
+10-50	1772-1773	2	*[15]	
+10-51	1773-1774	,	*[15]	
+10-52	1775-1783	quisquis	*[15]	
+10-53	1783-1784	;	_	
+10-54	1785-1787	ad	_	
+10-55	1788-1792	idem	_	
+10-56	1793-1795	31	Allegazione normativa[16]	
+10-57	1795-1796	.	Allegazione normativa[16]	
+10-58	1797-1801	dist	Allegazione normativa[16]	
+10-59	1801-1802	.	Allegazione normativa[16]	
+10-60	1802-1803	,	Allegazione normativa[16]	
+10-61	1804-1810	omnino	Allegazione normativa[16]	
+10-62	1810-1811	.	_	
+
+#Text=Ad altare
+11-1	1816-1818	Ad	_	
+11-2	1819-1825	altare	_	
+
+#Text=Ut 23. dist., sacratas; et de conse. dist. 1, in sancta.
+12-1	1827-1829	Ut	_	
+12-2	1830-1832	23	Allegazione normativa[17]	
+12-3	1832-1833	.	Allegazione normativa[17]	
+12-4	1834-1838	dist	Allegazione normativa[17]	
+12-5	1838-1839	.	Allegazione normativa[17]	
+12-6	1839-1840	,	Allegazione normativa[17]	
+12-7	1841-1849	sacratas	Allegazione normativa[17]	
+12-8	1849-1850	;	_	
+12-9	1851-1853	et	_	
+12-10	1854-1856	de	Allegazione normativa[18]	
+12-11	1857-1862	conse	Allegazione normativa[18]	
+12-12	1862-1863	.	Allegazione normativa[18]	
+12-13	1864-1868	dist	Allegazione normativa[18]	
+12-14	1868-1869	.	Allegazione normativa[18]	
+12-15	1870-1871	1	Allegazione normativa[18]	
+12-16	1871-1872	,	Allegazione normativa[18]	
+12-17	1873-1875	in	Allegazione normativa[18]	
+12-18	1876-1882	sancta	Allegazione normativa[18]	
+12-19	1882-1883	.	_	
+
+#Text=X 3.02.02 Si quisquam sacerdotum
+13-1	1887-1888	X	_	
+13-2	1889-1896	3.02.02	_	
+13-3	1897-1899	Si	_	
+13-4	1900-1908	quisquam	_	
+13-5	1909-1919	sacerdotum	_	
+
+#Text=Sacerdotum
+14-1	1924-1934	Sacerdotum	_	
+
+#Text=Nomine sacerdotis intelliguntur inferiores ut patet hic, quia inferiora intelliguntur in superioribus, ut 93. dist., legimus, in fi.; et 14. q. 5, poenale; et ff. de regul. iur., in toto.  Simile 52. dist., sollicitudo.  Et econverso appellatione clericorum superiores vel maiores intelliguntur, 11. q. 1, de persona, ad fi.
+15-1	1936-1942	Nomine	_	
+15-2	1943-1953	sacerdotis	_	
+15-3	1954-1967	intelliguntur	_	
+15-4	1968-1978	inferiores	_	
+15-5	1979-1981	ut	_	
+15-6	1982-1987	patet	_	
+15-7	1988-1991	hic	_	
+15-8	1991-1992	,	_	
+15-9	1993-1997	quia	_	
+15-10	1998-2007	inferiora	_	
+15-11	2008-2021	intelliguntur	_	
+15-12	2022-2024	in	_	
+15-13	2025-2037	superioribus	_	
+15-14	2037-2038	,	_	
+15-15	2039-2041	ut	_	
+15-16	2042-2044	93	Allegazione normativa[19]	
+15-17	2044-2045	.	Allegazione normativa[19]	
+15-18	2046-2050	dist	Allegazione normativa[19]	
+15-19	2050-2051	.	Allegazione normativa[19]	
+15-20	2051-2052	,	Allegazione normativa[19]	
+15-21	2053-2060	legimus	Allegazione normativa[19]	
+15-22	2060-2061	,	Allegazione normativa[19]	
+15-23	2062-2064	in	Allegazione normativa[19]	
+15-24	2065-2067	fi	Allegazione normativa[19]	
+15-25	2067-2068	.	Allegazione normativa[19]	
+15-26	2068-2069	;	_	
+15-27	2070-2072	et	_	
+15-28	2073-2075	14	Allegazione normativa[20]	
+15-29	2075-2076	.	Allegazione normativa[20]	
+15-30	2077-2078	q	Allegazione normativa[20]	
+15-31	2078-2079	.	Allegazione normativa[20]	
+15-32	2080-2081	5	Allegazione normativa[20]	
+15-33	2081-2082	,	Allegazione normativa[20]	
+15-34	2083-2090	poenale	Allegazione normativa[20]	
+15-35	2090-2091	;	_	
+15-36	2092-2094	et	_	
+15-37	2095-2097	ff	Allegazione normativa[21]	
+15-38	2097-2098	.	Allegazione normativa[21]	
+15-39	2099-2101	de	Allegazione normativa[21]	
+15-40	2102-2107	regul	Allegazione normativa[21]	
+15-41	2107-2108	.	Allegazione normativa[21]	
+15-42	2109-2112	iur	Allegazione normativa[21]	
+15-43	2112-2113	.	Allegazione normativa[21]	
+15-44	2113-2114	,	Allegazione normativa[21]	
+15-45	2115-2117	in	Allegazione normativa[21]	
+15-46	2118-2122	toto	Allegazione normativa[21]	
+15-47	2122-2123	.	_	
+15-48	2125-2131	Simile	_	
+15-49	2132-2134	52	Allegazione normativa[22]	
+15-50	2134-2135	.	Allegazione normativa[22]	
+15-51	2136-2140	dist	Allegazione normativa[22]	
+15-52	2140-2141	.	Allegazione normativa[22]	
+15-53	2141-2142	,	Allegazione normativa[22]	
+15-54	2143-2154	sollicitudo	Allegazione normativa[22]	
+15-55	2154-2155	.	_	
+15-56	2157-2159	Et	_	
+15-57	2160-2169	econverso	_	
+15-58	2170-2182	appellatione	_	
+15-59	2183-2193	clericorum	_	
+15-60	2194-2204	superiores	_	
+15-61	2205-2208	vel	_	
+15-62	2209-2216	maiores	_	
+15-63	2217-2230	intelliguntur	_	
+15-64	2230-2231	,	_	
+15-65	2232-2234	11	Allegazione normativa[23]	
+15-66	2234-2235	.	Allegazione normativa[23]	
+15-67	2236-2237	q	Allegazione normativa[23]	
+15-68	2237-2238	.	Allegazione normativa[23]	
+15-69	2239-2240	1	Allegazione normativa[23]	
+15-70	2240-2241	,	Allegazione normativa[23]	
+15-71	2242-2244	de	Allegazione normativa[23]	
+15-72	2245-2252	persona	Allegazione normativa[23]	
+15-73	2252-2253	,	Allegazione normativa[23]	
+15-74	2254-2256	ad	Allegazione normativa[23]	
+15-75	2257-2259	fi	Allegazione normativa[23]	
+15-76	2259-2260	.	Allegazione normativa[23]	
+
+#Text=Admonitionem
+16-1	2265-2277	Admonitionem	_	
+
+#Text=Sic in Auth. ut liceat mat. et avi. § penulti., coll. 8; et in Auth. ut liceat mat. et avi. § ulti., coll. 8; et infra, de sent. excom., in audientia; et infra, de sent. excom., contingit 2; et supra, de vit. et honest. cler., ex litteris.
+17-1	2279-2282	Sic	_	
+17-2	2283-2285	in	_	
+17-3	2286-2290	Auth	Allegazione normativa[24]	
+17-4	2290-2291	.	Allegazione normativa[24]	
+17-5	2292-2294	ut	Allegazione normativa[24]	
+17-6	2295-2301	liceat	Allegazione normativa[24]	
+17-7	2302-2305	mat	Allegazione normativa[24]	
+17-8	2305-2306	.	Allegazione normativa[24]	
+17-9	2307-2309	et	Allegazione normativa[24]	
+17-10	2310-2313	avi	Allegazione normativa[24]	
+17-11	2313-2314	.	Allegazione normativa[24]	
+17-12	2315-2316	§	Allegazione normativa[24]	
+17-13	2317-2324	penulti	Allegazione normativa[24]	
+17-14	2324-2325	.	Allegazione normativa[24]	
+17-15	2325-2326	,	Allegazione normativa[24]	
+17-16	2327-2331	coll	Allegazione normativa[24]	
+17-17	2331-2332	.	Allegazione normativa[24]	
+17-18	2333-2334	8	Allegazione normativa[24]	
+17-19	2334-2335	;	_	
+17-20	2336-2338	et	_	
+17-21	2339-2341	in	_	
+17-22	2342-2346	Auth	Allegazione normativa[25]	
+17-23	2346-2347	.	Allegazione normativa[25]	
+17-24	2348-2350	ut	Allegazione normativa[25]	
+17-25	2351-2357	liceat	Allegazione normativa[25]	
+17-26	2358-2361	mat	Allegazione normativa[25]	
+17-27	2361-2362	.	Allegazione normativa[25]	
+17-28	2363-2365	et	Allegazione normativa[25]	
+17-29	2366-2369	avi	Allegazione normativa[25]	
+17-30	2369-2370	.	Allegazione normativa[25]	
+17-31	2371-2372	§	Allegazione normativa[25]	
+17-32	2373-2377	ulti	Allegazione normativa[25]	
+17-33	2377-2378	.	Allegazione normativa[25]	
+17-34	2378-2379	,	Allegazione normativa[25]	
+17-35	2380-2384	coll	Allegazione normativa[25]	
+17-36	2384-2385	.	Allegazione normativa[25]	
+17-37	2386-2387	8	Allegazione normativa[25]	
+17-38	2387-2388	;	_	
+17-39	2389-2391	et	_	
+17-40	2392-2397	infra	_	
+17-41	2397-2398	,	_	
+17-42	2399-2401	de	_	
+17-43	2402-2406	sent	Allegazione normativa[26]	
+17-44	2406-2407	.	Allegazione normativa[26]	
+17-45	2408-2413	excom	Allegazione normativa[26]	
+17-46	2413-2414	.	Allegazione normativa[26]	
+17-47	2414-2415	,	Allegazione normativa[26]	
+17-48	2416-2418	in	Allegazione normativa[26]	
+17-49	2419-2428	audientia	Allegazione normativa[26]	
+17-50	2428-2429	;	_	
+17-51	2430-2432	et	_	
+17-52	2433-2438	infra	_	
+17-53	2438-2439	,	_	
+17-54	2440-2442	de	Allegazione normativa[27]	
+17-55	2443-2447	sent	Allegazione normativa[27]	
+17-56	2447-2448	.	Allegazione normativa[27]	
+17-57	2449-2454	excom	Allegazione normativa[27]	
+17-58	2454-2455	.	Allegazione normativa[27]	
+17-59	2455-2456	,	Allegazione normativa[27]	
+17-60	2457-2466	contingit	Allegazione normativa[27]	
+17-61	2467-2468	2	_	
+17-62	2468-2469	;	_	
+17-63	2470-2472	et	_	
+17-64	2473-2478	supra	_	
+17-65	2478-2479	,	_	
+17-66	2480-2482	de	Allegazione normativa[28]	
+17-67	2483-2486	vit	Allegazione normativa[28]	
+17-68	2486-2487	.	Allegazione normativa[28]	
+17-69	2488-2490	et	Allegazione normativa[28]	
+17-70	2491-2497	honest	Allegazione normativa[28]	
+17-71	2497-2498	.	Allegazione normativa[28]	
+17-72	2499-2503	cler	Allegazione normativa[28]	
+17-73	2503-2504	.	Allegazione normativa[28]	
+17-74	2504-2505	,	Allegazione normativa[28]	
+17-75	2506-2508	ex	Allegazione normativa[28]	
+17-76	2509-2517	litteris	Allegazione normativa[28]	
+17-77	2517-2518	.	_	
+
+#Text=Canonice
+18-1	2523-2531	Canonice	_	
+
+#Text=Id est, in monasterio ponatur, 33. dist., fraternitatis.  Alii exponunt id est, in servitutem redigatur, ut 32. dist., eos.  Immo et ipsa concubina si hoc publicum est, debet excommunicari, infra, de sent. excom., si concubinae.  Ber.
+19-1	2533-2535	Id	_	
+19-2	2536-2539	est	_	
+19-3	2539-2540	,	_	
+19-4	2541-2543	in	_	
+19-5	2544-2554	monasterio	_	
+19-6	2555-2562	ponatur	_	
+19-7	2562-2563	,	_	
+19-8	2564-2566	33	Allegazione normativa[29]	
+19-9	2566-2567	.	Allegazione normativa[29]	
+19-10	2568-2572	dist	Allegazione normativa[29]	
+19-11	2572-2573	.	Allegazione normativa[29]	
+19-12	2573-2574	,	Allegazione normativa[29]	
+19-13	2575-2588	fraternitatis	Allegazione normativa[29]	
+19-14	2588-2589	.	_	
+19-15	2591-2595	Alii	_	
+19-16	2596-2604	exponunt	_	
+19-17	2605-2607	id	_	
+19-18	2608-2611	est	_	
+19-19	2611-2612	,	_	
+19-20	2613-2615	in	_	
+19-21	2616-2626	servitutem	_	
+19-22	2627-2636	redigatur	_	
+19-23	2636-2637	,	_	
+19-24	2638-2640	ut	_	
+19-25	2641-2643	32	Allegazione normativa[30]	
+19-26	2643-2644	.	Allegazione normativa[30]	
+19-27	2645-2649	dist	Allegazione normativa[30]	
+19-28	2649-2650	.	Allegazione normativa[30]	
+19-29	2650-2651	,	Allegazione normativa[30]	
+19-30	2652-2655	eos	Allegazione normativa[30]	
+19-31	2655-2656	.	_	
+19-32	2658-2662	Immo	_	
+19-33	2663-2665	et	_	
+19-34	2666-2670	ipsa	_	
+19-35	2671-2680	concubina	_	
+19-36	2681-2683	si	_	
+19-37	2684-2687	hoc	_	
+19-38	2688-2696	publicum	_	
+19-39	2697-2700	est	_	
+19-40	2700-2701	,	_	
+19-41	2702-2707	debet	_	
+19-42	2708-2721	excommunicari	_	
+19-43	2721-2722	,	_	
+19-44	2723-2728	infra	_	
+19-45	2728-2729	,	_	
+19-46	2730-2732	de	Allegazione normativa[31]	
+19-47	2733-2737	sent	Allegazione normativa[31]	
+19-48	2737-2738	.	Allegazione normativa[31]	
+19-49	2739-2744	excom	Allegazione normativa[31]	
+19-50	2744-2745	.	Allegazione normativa[31]	
+19-51	2745-2746	,	Allegazione normativa[31]	
+19-52	2747-2749	si	Allegazione normativa[31]	
+19-53	2750-2760	concubinae	Allegazione normativa[31]	
+19-54	2760-2761	.	_	
+19-55	2763-2766	Ber	_	
+19-56	2766-2767	.	_	
+
+#Text=X 3.02.03 Clericos in sacris
+20-1	2771-2772	X	_	
+20-2	2773-2780	3.02.03	_	
+20-3	2781-2789	Clericos	_	
+20-4	2790-2792	in	_	
+20-5	2793-2799	sacris	_	
+
+#Text=Publice
+21-1	2804-2811	Publice	_	
+
+#Text=Quae sunt excommunicandae ex quo publicum est, infra, de sent. excom., si concubinae.
+22-1	2813-2817	Quae	_	
+22-2	2818-2822	sunt	_	
+22-3	2823-2838	excommunicandae	_	
+22-4	2839-2841	ex	_	
+22-5	2842-2845	quo	_	
+22-6	2846-2854	publicum	_	
+22-7	2855-2858	est	_	
+22-8	2858-2859	,	_	
+22-9	2860-2865	infra	_	
+22-10	2865-2866	,	_	
+22-11	2867-2869	de	Allegazione normativa[32]	
+22-12	2870-2874	sent	Allegazione normativa[32]	
+22-13	2874-2875	.	Allegazione normativa[32]	
+22-14	2876-2881	excom	Allegazione normativa[32]	
+22-15	2881-2882	.	Allegazione normativa[32]	
+22-16	2882-2883	,	Allegazione normativa[32]	
+22-17	2884-2886	si	Allegazione normativa[32]	
+22-18	2887-2897	concubinae	Allegazione normativa[32]	
+22-19	2897-2898	.	_	
+
+#Text=Abiurandas
+23-1	2903-2913	Abiurandas	_	
+
+#Text=Ne contempto iuramento revertantur ad eas propter praesumptionem, ut sequitur.  Arg. contra infra, qui cler. vel vov. matr. contr. poss., ex litterarum, ibi: abiurare.  Sed ibi contraxerat matrimonium cum ea, licet de facto tunc esset subdiaconus.  Et quando quis ab uxore separatur, sic debet iurare, 35. q. 6, ab isto die.  Vel hoc intellige de suspectis.  Et illud capitulum infra, qui cler. vel vov. matr. contr. poss., ex litterarum, de non suspectis de quibus versimile est quod debeant iuramentum servare.
+24-1	2915-2917	Ne	_	
+24-2	2918-2927	contempto	_	
+24-3	2928-2937	iuramento	_	
+24-4	2938-2949	revertantur	_	
+24-5	2950-2952	ad	_	
+24-6	2953-2956	eas	_	
+24-7	2957-2964	propter	_	
+24-8	2965-2979	praesumptionem	_	
+24-9	2979-2980	,	_	
+24-10	2981-2983	ut	_	
+24-11	2984-2992	sequitur	_	
+24-12	2992-2993	.	_	
+24-13	2995-2998	Arg	_	
+24-14	2998-2999	.	_	
+24-15	3000-3006	contra	_	
+24-16	3007-3012	infra	_	
+24-17	3012-3013	,	_	
+24-18	3014-3017	qui	Allegazione normativa[33]	
+24-19	3018-3022	cler	Allegazione normativa[33]	
+24-20	3022-3023	.	Allegazione normativa[33]	
+24-21	3024-3027	vel	Allegazione normativa[33]	
+24-22	3028-3031	vov	Allegazione normativa[33]	
+24-23	3031-3032	.	Allegazione normativa[33]	
+24-24	3033-3037	matr	Allegazione normativa[33]	
+24-25	3037-3038	.	Allegazione normativa[33]	
+24-26	3039-3044	contr	Allegazione normativa[33]	
+24-27	3044-3045	.	Allegazione normativa[33]	
+24-28	3046-3050	poss	Allegazione normativa[33]	
+24-29	3050-3051	.	Allegazione normativa[33]	
+24-30	3051-3052	,	Allegazione normativa[33]	
+24-31	3053-3055	ex	Allegazione normativa[33]	
+24-32	3056-3066	litterarum	Allegazione normativa[33]	
+24-33	3066-3067	,	_	
+24-34	3068-3071	ibi	_	
+24-35	3071-3072	:	_	
+24-36	3073-3081	abiurare	_	
+24-37	3081-3082	.	_	
+24-38	3084-3087	Sed	_	
+24-39	3088-3091	ibi	_	
+24-40	3092-3103	contraxerat	_	
+24-41	3104-3115	matrimonium	_	
+24-42	3116-3119	cum	_	
+24-43	3120-3122	ea	_	
+24-44	3122-3123	,	_	
+24-45	3124-3129	licet	_	
+24-46	3130-3132	de	_	
+24-47	3133-3138	facto	_	
+24-48	3139-3143	tunc	_	
+24-49	3144-3149	esset	_	
+24-50	3150-3161	subdiaconus	_	
+24-51	3161-3162	.	_	
+24-52	3164-3166	Et	_	
+24-53	3167-3173	quando	_	
+24-54	3174-3178	quis	_	
+24-55	3179-3181	ab	_	
+24-56	3182-3187	uxore	_	
+24-57	3188-3197	separatur	_	
+24-58	3197-3198	,	_	
+24-59	3199-3202	sic	_	
+24-60	3203-3208	debet	_	
+24-61	3209-3215	iurare	_	
+24-62	3215-3216	,	_	
+24-63	3217-3219	35	Allegazione normativa[34]	
+24-64	3219-3220	.	Allegazione normativa[34]	
+24-65	3221-3222	q	Allegazione normativa[34]	
+24-66	3222-3223	.	Allegazione normativa[34]	
+24-67	3224-3225	6	Allegazione normativa[34]	
+24-68	3225-3226	,	Allegazione normativa[34]	
+24-69	3227-3229	ab	Allegazione normativa[34]	
+24-70	3230-3234	isto	Allegazione normativa[34]	
+24-71	3235-3238	die	Allegazione normativa[34]	
+24-72	3238-3239	.	_	
+24-73	3241-3244	Vel	_	
+24-74	3245-3248	hoc	_	
+24-75	3249-3258	intellige	_	
+24-76	3259-3261	de	_	
+24-77	3262-3271	suspectis	_	
+24-78	3271-3272	.	_	
+24-79	3274-3276	Et	_	
+24-80	3277-3282	illud	_	
+24-81	3283-3292	capitulum	_	
+24-82	3293-3298	infra	_	
+24-83	3298-3299	,	_	
+24-84	3300-3303	qui	Allegazione normativa[35]	
+24-85	3304-3308	cler	Allegazione normativa[35]	
+24-86	3308-3309	.	Allegazione normativa[35]	
+24-87	3310-3313	vel	Allegazione normativa[35]	
+24-88	3314-3317	vov	Allegazione normativa[35]	
+24-89	3317-3318	.	Allegazione normativa[35]	
+24-90	3319-3323	matr	Allegazione normativa[35]	
+24-91	3323-3324	.	Allegazione normativa[35]	
+24-92	3325-3330	contr	Allegazione normativa[35]	
+24-93	3330-3331	.	Allegazione normativa[35]	
+24-94	3332-3336	poss	Allegazione normativa[35]	
+24-95	3336-3337	.	Allegazione normativa[35]	
+24-96	3337-3338	,	Allegazione normativa[35]	
+24-97	3339-3341	ex	Allegazione normativa[35]	
+24-98	3342-3352	litterarum	Allegazione normativa[35]	
+24-99	3352-3353	,	_	
+24-100	3354-3356	de	_	
+24-101	3357-3360	non	_	
+24-102	3361-3370	suspectis	_	
+24-103	3371-3373	de	_	
+24-104	3374-3380	quibus	_	
+24-105	3381-3390	versimile	_	
+24-106	3391-3394	est	_	
+24-107	3395-3399	quod	_	
+24-108	3400-3407	debeant	_	
+24-109	3408-3418	iuramentum	_	
+24-110	3419-3426	servare	_	
+24-111	3426-3427	.	_	
+
+#Text=Redeuntes
+25-1	3432-3441	Redeuntes	_	
+
+#Text=Arg. colligitur ex hac littera quod non est iniungendum alicui per iuramentum, quod versimile sit quod non debeat illud observare, arg. 22. q. 1, ita ergo; et 22. q. 1, non est contra; et infra, de sent. excom., ex tenore; et supra, de praesump., litteras; et C. de indict. vid., ambiguitates.  Et haec ratio est etiam quare iuvenibus non iniungatur solemnis poenitentia, 50. dist., poenitentes.  Ber.
+26-1	3443-3446	Arg	_	
+26-2	3446-3447	.	_	
+26-3	3448-3458	colligitur	_	
+26-4	3459-3461	ex	_	
+26-5	3462-3465	hac	_	
+26-6	3466-3473	littera	_	
+26-7	3474-3478	quod	_	
+26-8	3479-3482	non	_	
+26-9	3483-3486	est	_	
+26-10	3487-3498	iniungendum	_	
+26-11	3499-3505	alicui	_	
+26-12	3506-3509	per	_	
+26-13	3510-3520	iuramentum	_	
+26-14	3520-3521	,	_	
+26-15	3522-3526	quod	_	
+26-16	3527-3536	versimile	_	
+26-17	3537-3540	sit	_	
+26-18	3541-3545	quod	_	
+26-19	3546-3549	non	_	
+26-20	3550-3556	debeat	_	
+26-21	3557-3562	illud	_	
+26-22	3563-3572	observare	_	
+26-23	3572-3573	,	_	
+26-24	3574-3577	arg	_	
+26-25	3577-3578	.	_	
+26-26	3579-3581	22	Allegazione normativa[36]	
+26-27	3581-3582	.	Allegazione normativa[36]	
+26-28	3583-3584	q	Allegazione normativa[36]	
+26-29	3584-3585	.	Allegazione normativa[36]	
+26-30	3586-3587	1	Allegazione normativa[36]	
+26-31	3587-3588	,	Allegazione normativa[36]	
+26-32	3589-3592	ita	Allegazione normativa[36]	
+26-33	3593-3597	ergo	Allegazione normativa[36]	
+26-34	3597-3598	;	_	
+26-35	3599-3601	et	_	
+26-36	3602-3604	22	Allegazione normativa[37]	
+26-37	3604-3605	.	Allegazione normativa[37]	
+26-38	3606-3607	q	Allegazione normativa[37]	
+26-39	3607-3608	.	Allegazione normativa[37]	
+26-40	3609-3610	1	Allegazione normativa[37]	
+26-41	3610-3611	,	Allegazione normativa[37]	
+26-42	3612-3615	non	Allegazione normativa[37]	
+26-43	3616-3619	est	Allegazione normativa[37]	
+26-44	3620-3626	contra	Allegazione normativa[37]	
+26-45	3626-3627	;	_	
+26-46	3628-3630	et	_	
+26-47	3631-3636	infra	_	
+26-48	3636-3637	,	_	
+26-49	3638-3640	de	Allegazione normativa[38]	
+26-50	3641-3645	sent	Allegazione normativa[38]	
+26-51	3645-3646	.	Allegazione normativa[38]	
+26-52	3647-3652	excom	Allegazione normativa[38]	
+26-53	3652-3653	.	Allegazione normativa[38]	
+26-54	3653-3654	,	Allegazione normativa[38]	
+26-55	3655-3657	ex	Allegazione normativa[38]	
+26-56	3658-3664	tenore	Allegazione normativa[38]	
+26-57	3664-3665	;	_	
+26-58	3666-3668	et	_	
+26-59	3669-3674	supra	_	
+26-60	3674-3675	,	_	
+26-61	3676-3678	de	Allegazione normativa[39]	
+26-62	3679-3687	praesump	Allegazione normativa[39]	
+26-63	3687-3688	.	Allegazione normativa[39]	
+26-64	3688-3689	,	Allegazione normativa[39]	
+26-65	3690-3698	litteras	Allegazione normativa[39]	
+26-66	3698-3699	;	_	
+26-67	3700-3702	et	_	
+26-68	3703-3704	C	Allegazione normativa[40]	
+26-69	3704-3705	.	Allegazione normativa[40]	
+26-70	3706-3708	de	Allegazione normativa[40]	
+26-71	3709-3715	indict	Allegazione normativa[40]	
+26-72	3715-3716	.	Allegazione normativa[40]	
+26-73	3717-3720	vid	Allegazione normativa[40]	
+26-74	3720-3721	.	Allegazione normativa[40]	
+26-75	3721-3722	,	Allegazione normativa[40]	
+26-76	3723-3735	ambiguitates	Allegazione normativa[40]	
+26-77	3735-3736	.	_	
+26-78	3738-3740	Et	_	
+26-79	3741-3745	haec	_	
+26-80	3746-3751	ratio	_	
+26-81	3752-3755	est	_	
+26-82	3756-3761	etiam	_	
+26-83	3762-3767	quare	_	
+26-84	3768-3777	iuvenibus	_	
+26-85	3778-3781	non	_	
+26-86	3782-3792	iniungatur	_	
+26-87	3793-3801	solemnis	_	
+26-88	3802-3813	poenitentia	_	
+26-89	3813-3814	,	_	
+26-90	3815-3817	50	Allegazione normativa[41]	
+26-91	3817-3818	.	Allegazione normativa[41]	
+26-92	3819-3823	dist	Allegazione normativa[41]	
+26-93	3823-3824	.	Allegazione normativa[41]	
+26-94	3824-3825	,	Allegazione normativa[41]	
+26-95	3826-3837	poenitentes	Allegazione normativa[41]	
+26-96	3837-3838	.	_	
+26-97	3840-3843	Ber	_	
+26-98	3843-3844	.	_	
+
+#Text=Perpetuam
+27-1	3849-3858	Perpetuam	_	
+
+#Text=Id est, donec resipiscant.  Sic Inst. locat. et conduct. § adeo; et ff. de peculi., id vestimentum; et infra, de matr. contrac. con. int., de muliere.  Simile 10. q. 1, quia sacerdotes; ut caeteri timeant, ut ibi dicitur.
+28-1	3860-3862	Id	_	
+28-2	3863-3866	est	_	
+28-3	3866-3867	,	_	
+28-4	3868-3873	donec	_	
+28-5	3874-3885	resipiscant	_	
+28-6	3885-3886	.	_	
+28-7	3888-3891	Sic	_	
+28-8	3892-3896	Inst	Allegazione normativa[42]	
+28-9	3896-3897	.	Allegazione normativa[42]	
+28-10	3898-3903	locat	Allegazione normativa[42]	
+28-11	3903-3904	.	Allegazione normativa[42]	
+28-12	3905-3907	et	Allegazione normativa[42]	
+28-13	3908-3915	conduct	Allegazione normativa[42]	
+28-14	3915-3916	.	Allegazione normativa[42]	
+28-15	3917-3918	§	Allegazione normativa[42]	
+28-16	3919-3923	adeo	Allegazione normativa[42]	
+28-17	3923-3924	;	_	
+28-18	3925-3927	et	_	
+28-19	3928-3930	ff	Allegazione normativa[43]	
+28-20	3930-3931	.	Allegazione normativa[43]	
+28-21	3932-3934	de	Allegazione normativa[43]	
+28-22	3935-3941	peculi	Allegazione normativa[43]	
+28-23	3941-3942	.	Allegazione normativa[43]	
+28-24	3942-3943	,	Allegazione normativa[43]	
+28-25	3944-3946	id	Allegazione normativa[43]	
+28-26	3947-3958	vestimentum	Allegazione normativa[43]	
+28-27	3958-3959	;	_	
+28-28	3960-3962	et	_	
+28-29	3963-3968	infra	_	
+28-30	3968-3969	,	_	
+28-31	3970-3972	de	Allegazione normativa[44]	
+28-32	3973-3977	matr	Allegazione normativa[44]	
+28-33	3977-3978	.	Allegazione normativa[44]	
+28-34	3979-3986	contrac	Allegazione normativa[44]	
+28-35	3986-3987	.	Allegazione normativa[44]	
+28-36	3988-3991	con	Allegazione normativa[44]	
+28-37	3991-3992	.	Allegazione normativa[44]	
+28-38	3993-3996	int	Allegazione normativa[44]	
+28-39	3996-3997	.	Allegazione normativa[44]	
+28-40	3997-3998	,	Allegazione normativa[44]	
+28-41	3999-4001	de	Allegazione normativa[44]	
+28-42	4002-4009	muliere	Allegazione normativa[44]	
+28-43	4009-4010	.	_	
+28-44	4012-4018	Simile	_	
+28-45	4019-4021	10	Allegazione normativa[45]	
+28-46	4021-4022	.	Allegazione normativa[45]	
+28-47	4023-4024	q	Allegazione normativa[45]	
+28-48	4024-4025	.	Allegazione normativa[45]	
+28-49	4026-4027	1	Allegazione normativa[45]	
+28-50	4027-4028	,	Allegazione normativa[45]	
+28-51	4029-4033	quia	Allegazione normativa[45]	
+28-52	4034-4044	sacerdotes	Allegazione normativa[45]	
+28-53	4044-4045	;	_	
+28-54	4046-4048	ut	_	
+28-55	4049-4056	caeteri	_	
+28-56	4057-4064	timeant	_	
+28-57	4064-4065	,	_	
+28-58	4066-4068	ut	_	
+28-59	4069-4072	ibi	_	
+28-60	4073-4080	dicitur	_	
+28-61	4080-4081	.	_	
+
+#Text=Exemplo
+29-1	4086-4093	Exemplo	_	
+
+#Text=Poena unius debet esse metus alterius, ut ff. de poe., capitalium § famosos; 45. dist., sed illud; et 2. q. 7, quapropter; et infra, de excess. praelat., tanta; et 10. q. 1, quia sacerdotes, in fi.
+30-1	4095-4100	Poena	_	
+30-2	4101-4106	unius	_	
+30-3	4107-4112	debet	_	
+30-4	4113-4117	esse	_	
+30-5	4118-4123	metus	_	
+30-6	4124-4132	alterius	_	
+30-7	4132-4133	,	_	
+30-8	4134-4136	ut	_	
+30-9	4137-4139	ff	Allegazione normativa[46]	
+30-10	4139-4140	.	Allegazione normativa[46]	
+30-11	4141-4143	de	Allegazione normativa[46]	
+30-12	4144-4147	poe	Allegazione normativa[46]	
+30-13	4147-4148	.	Allegazione normativa[46]	
+30-14	4148-4149	,	Allegazione normativa[46]	
+30-15	4150-4160	capitalium	Allegazione normativa[46]	
+30-16	4161-4162	§	Allegazione normativa[46]	
+30-17	4163-4170	famosos	Allegazione normativa[46]	
+30-18	4170-4171	;	_	
+30-19	4172-4174	45	Allegazione normativa[47]	
+30-20	4174-4175	.	Allegazione normativa[47]	
+30-21	4176-4180	dist	Allegazione normativa[47]	
+30-22	4180-4181	.	Allegazione normativa[47]	
+30-23	4181-4182	,	Allegazione normativa[47]	
+30-24	4183-4186	sed	Allegazione normativa[47]	
+30-25	4187-4192	illud	Allegazione normativa[47]	
+30-26	4192-4193	;	_	
+30-27	4194-4196	et	_	
+30-28	4197-4198	2	Allegazione normativa[48]	
+30-29	4198-4199	.	Allegazione normativa[48]	
+30-30	4200-4201	q	Allegazione normativa[48]	
+30-31	4201-4202	.	Allegazione normativa[48]	
+30-32	4203-4204	7	Allegazione normativa[48]	
+30-33	4204-4205	,	Allegazione normativa[48]	
+30-34	4206-4216	quapropter	Allegazione normativa[48]	
+30-35	4216-4217	;	_	
+30-36	4218-4220	et	_	
+30-37	4221-4226	infra	_	
+30-38	4226-4227	,	_	
+30-39	4228-4230	de	Allegazione normativa[49]	
+30-40	4231-4237	excess	Allegazione normativa[49]	
+30-41	4237-4238	.	Allegazione normativa[49]	
+30-42	4239-4246	praelat	Allegazione normativa[49]	
+30-43	4246-4247	.	Allegazione normativa[49]	
+30-44	4247-4248	,	Allegazione normativa[49]	
+30-45	4249-4254	tanta	Allegazione normativa[49]	
+30-46	4254-4255	;	_	
+30-47	4256-4258	et	_	
+30-48	4259-4261	10	Allegazione normativa[50]	
+30-49	4261-4262	.	Allegazione normativa[50]	
+30-50	4263-4264	q	Allegazione normativa[50]	
+30-51	4264-4265	.	Allegazione normativa[50]	
+30-52	4266-4267	1	Allegazione normativa[50]	
+30-53	4267-4268	,	Allegazione normativa[50]	
+30-54	4269-4273	quia	Allegazione normativa[50]	
+30-55	4274-4284	sacerdotes	Allegazione normativa[50]	
+30-56	4284-4285	,	Allegazione normativa[50]	
+30-57	4286-4288	in	Allegazione normativa[50]	
+30-58	4289-4291	fi	Allegazione normativa[50]	
+30-59	4291-4292	.	Allegazione normativa[50]	
+
+#Text=X 3.02.04 Sicut ad extirpanda
+31-1	4296-4297	X	_	
+31-2	4298-4305	3.02.04	_	
+31-3	4306-4311	Sicut	_	
+31-4	4312-4314	ad	_	
+31-5	4315-4325	extirpanda	_	
+
+#Text=Et supra
+32-1	4330-4332	Et	_	
+32-2	4333-4338	supra	_	
+
+#Text=Alii nihilominus sunt compellendi, sed non cum tanto rigore ut vel contineant vel beneficia dimittant, infra, de cohab. cler. et mul., si autem; et 32. dist., lectores.
+33-1	4340-4344	Alii	_	
+33-2	4345-4356	nihilominus	_	
+33-3	4357-4361	sunt	_	
+33-4	4362-4373	compellendi	_	
+33-5	4373-4374	,	_	
+33-6	4375-4378	sed	_	
+33-7	4379-4382	non	_	
+33-8	4383-4386	cum	_	
+33-9	4387-4392	tanto	_	
+33-10	4393-4399	rigore	_	
+33-11	4400-4402	ut	_	
+33-12	4403-4406	vel	_	
+33-13	4407-4417	contineant	_	
+33-14	4418-4421	vel	_	
+33-15	4422-4431	beneficia	_	
+33-16	4432-4441	dimittant	_	
+33-17	4441-4442	,	_	
+33-18	4443-4448	infra	_	
+33-19	4448-4449	,	_	
+33-20	4450-4452	de	Allegazione normativa[51]	
+33-21	4453-4458	cohab	Allegazione normativa[51]	
+33-22	4458-4459	.	Allegazione normativa[51]	
+33-23	4460-4464	cler	Allegazione normativa[51]	
+33-24	4464-4465	.	Allegazione normativa[51]	
+33-25	4466-4468	et	Allegazione normativa[51]	
+33-26	4469-4472	mul	Allegazione normativa[51]	
+33-27	4472-4473	.	Allegazione normativa[51]	
+33-28	4473-4474	,	Allegazione normativa[51]	
+33-29	4475-4477	si	Allegazione normativa[51]	
+33-30	4478-4483	autem	Allegazione normativa[51]	
+33-31	4483-4484	;	_	
+33-32	4485-4487	et	_	
+33-33	4488-4490	32	Allegazione normativa[52]	
+33-34	4490-4491	.	Allegazione normativa[52]	
+33-35	4492-4496	dist	Allegazione normativa[52]	
+33-36	4496-4497	.	Allegazione normativa[52]	
+33-37	4497-4498	,	Allegazione normativa[52]	
+33-38	4499-4507	lectores	Allegazione normativa[52]	
+33-39	4507-4508	.	_	
+
+#Text=Suspendatis
+34-1	4513-4524	Suspendatis	_	
+
+#Text=Ita isti non sunt suspensi ipso iure.  Videtur contra 32. dist., nullus; et 32. dist., praeter.  Solutio: quod dicitur hic, et infra, de cohab. cler. et mul., si autem, intelligitur de his qui adhuc tolerantur ab ecclesia, quia illi ipso iure non sunt suspensi.  Quod dicitur in contrariis locum habet quando factum est notorium vel quando sunt condemnati per sententiam.  Alias quantumcumque sit aliquis criminosus non est vitandus, infra, de cohab. cler. et mul., vestra; et 28. dist., consulendum; et infra, de cohab. cler. et mul., quaesitum.
+35-1	4526-4529	Ita	_	
+35-2	4530-4534	isti	_	
+35-3	4535-4538	non	_	
+35-4	4539-4543	sunt	_	
+35-5	4544-4552	suspensi	_	
+35-6	4553-4557	ipso	_	
+35-7	4558-4562	iure	_	
+35-8	4562-4563	.	_	
+35-9	4565-4572	Videtur	_	
+35-10	4573-4579	contra	_	
+35-11	4580-4582	32	Allegazione normativa[53]	
+35-12	4582-4583	.	Allegazione normativa[53]	
+35-13	4584-4588	dist	Allegazione normativa[53]	
+35-14	4588-4589	.	Allegazione normativa[53]	
+35-15	4589-4590	,	Allegazione normativa[53]	
+35-16	4591-4597	nullus	Allegazione normativa[53]	
+35-17	4597-4598	;	_	
+35-18	4599-4601	et	_	
+35-19	4602-4604	32	Allegazione normativa[54]	
+35-20	4604-4605	.	Allegazione normativa[54]	
+35-21	4606-4610	dist	Allegazione normativa[54]	
+35-22	4610-4611	.	Allegazione normativa[54]	
+35-23	4611-4612	,	Allegazione normativa[54]	
+35-24	4613-4620	praeter	Allegazione normativa[54]	
+35-25	4620-4621	.	_	
+35-26	4623-4630	Solutio	_	
+35-27	4630-4631	:	_	
+35-28	4632-4636	quod	_	
+35-29	4637-4644	dicitur	_	
+35-30	4645-4648	hic	_	
+35-31	4648-4649	,	_	
+35-32	4650-4652	et	_	
+35-33	4653-4658	infra	_	
+35-34	4658-4659	,	_	
+35-35	4660-4662	de	Allegazione normativa[55]	
+35-36	4663-4668	cohab	Allegazione normativa[55]	
+35-37	4668-4669	.	Allegazione normativa[55]	
+35-38	4670-4674	cler	Allegazione normativa[55]	
+35-39	4674-4675	.	Allegazione normativa[55]	
+35-40	4676-4678	et	Allegazione normativa[55]	
+35-41	4679-4682	mul	Allegazione normativa[55]	
+35-42	4682-4683	.	Allegazione normativa[55]	
+35-43	4683-4684	,	Allegazione normativa[55]	
+35-44	4685-4687	si	Allegazione normativa[55]	
+35-45	4688-4693	autem	Allegazione normativa[55]	
+35-46	4693-4694	,	_	
+35-47	4695-4707	intelligitur	_	
+35-48	4708-4710	de	_	
+35-49	4711-4714	his	_	
+35-50	4715-4718	qui	_	
+35-51	4719-4724	adhuc	_	
+35-52	4725-4735	tolerantur	_	
+35-53	4736-4738	ab	_	
+35-54	4739-4747	ecclesia	_	
+35-55	4747-4748	,	_	
+35-56	4749-4753	quia	_	
+35-57	4754-4758	illi	_	
+35-58	4759-4763	ipso	_	
+35-59	4764-4768	iure	_	
+35-60	4769-4772	non	_	
+35-61	4773-4777	sunt	_	
+35-62	4778-4786	suspensi	_	
+35-63	4786-4787	.	_	
+35-64	4789-4793	Quod	_	
+35-65	4794-4801	dicitur	_	
+35-66	4802-4804	in	_	
+35-67	4805-4815	contrariis	_	
+35-68	4816-4821	locum	_	
+35-69	4822-4827	habet	_	
+35-70	4828-4834	quando	_	
+35-71	4835-4841	factum	_	
+35-72	4842-4845	est	_	
+35-73	4846-4854	notorium	_	
+35-74	4855-4858	vel	_	
+35-75	4859-4865	quando	_	
+35-76	4866-4870	sunt	_	
+35-77	4871-4881	condemnati	_	
+35-78	4882-4885	per	_	
+35-79	4886-4896	sententiam	_	
+35-80	4896-4897	.	_	
+35-81	4899-4904	Alias	_	
+35-82	4905-4918	quantumcumque	_	
+35-83	4919-4922	sit	_	
+35-84	4923-4930	aliquis	_	
+35-85	4931-4941	criminosus	_	
+35-86	4942-4945	non	_	
+35-87	4946-4949	est	_	
+35-88	4950-4958	vitandus	_	
+35-89	4958-4959	,	_	
+35-90	4960-4965	infra	_	
+35-91	4965-4966	,	_	
+35-92	4967-4969	de	Allegazione normativa[56]	
+35-93	4970-4975	cohab	Allegazione normativa[56]	
+35-94	4975-4976	.	Allegazione normativa[56]	
+35-95	4977-4981	cler	Allegazione normativa[56]	
+35-96	4981-4982	.	Allegazione normativa[56]	
+35-97	4983-4985	et	Allegazione normativa[56]	
+35-98	4986-4989	mul	Allegazione normativa[56]	
+35-99	4989-4990	.	Allegazione normativa[56]	
+35-100	4990-4991	,	Allegazione normativa[56]	
+35-101	4992-4998	vestra	Allegazione normativa[56]	
+35-102	4998-4999	;	_	
+35-103	5000-5002	et	_	
+35-104	5003-5005	28	Allegazione normativa[57]	
+35-105	5005-5006	.	Allegazione normativa[57]	
+35-106	5007-5011	dist	Allegazione normativa[57]	
+35-107	5011-5012	.	Allegazione normativa[57]	
+35-108	5012-5013	,	Allegazione normativa[57]	
+35-109	5014-5025	consulendum	Allegazione normativa[57]	
+35-110	5025-5026	;	_	
+35-111	5027-5029	et	_	
+35-112	5030-5035	infra	_	
+35-113	5035-5036	,	_	
+35-114	5037-5039	de	Allegazione normativa[58]	
+35-115	5040-5045	cohab	Allegazione normativa[58]	
+35-116	5045-5046	.	Allegazione normativa[58]	
+35-117	5047-5051	cler	Allegazione normativa[58]	
+35-118	5051-5052	.	Allegazione normativa[58]	
+35-119	5053-5055	et	Allegazione normativa[58]	
+35-120	5056-5059	mul	Allegazione normativa[58]	
+35-121	5059-5060	.	Allegazione normativa[58]	
+35-122	5060-5061	,	Allegazione normativa[58]	
+35-123	5062-5071	quaesitum	Allegazione normativa[58]	
+35-124	5071-5072	.	_	
+
+#Text=Curetis
+36-1	5077-5084	Curetis	_	
+
+#Text=Quia crescente contumacia crescere debet et poena, supra, ut lite non cont., quoniam, in fi.; et ff. de poe., relegati.
+37-1	5086-5090	Quia	_	
+37-2	5091-5100	crescente	_	
+37-3	5101-5111	contumacia	_	
+37-4	5112-5120	crescere	_	
+37-5	5121-5126	debet	_	
+37-6	5127-5129	et	_	
+37-7	5130-5135	poena	_	
+37-8	5135-5136	,	_	
+37-9	5137-5142	supra	_	
+37-10	5142-5143	,	_	
+37-11	5144-5146	ut	Allegazione normativa[59]	
+37-12	5147-5151	lite	Allegazione normativa[59]	
+37-13	5152-5155	non	Allegazione normativa[59]	
+37-14	5156-5160	cont	Allegazione normativa[59]	
+37-15	5160-5161	.	Allegazione normativa[59]	
+37-16	5161-5162	,	Allegazione normativa[59]	
+37-17	5163-5170	quoniam	Allegazione normativa[59]	
+37-18	5170-5171	,	Allegazione normativa[59]	
+37-19	5172-5174	in	Allegazione normativa[59]	
+37-20	5175-5177	fi	Allegazione normativa[59]	
+37-21	5177-5178	.	Allegazione normativa[59]	
+37-22	5178-5179	;	_	
+37-23	5180-5182	et	_	
+37-24	5183-5185	ff	Allegazione normativa[60]	
+37-25	5185-5186	.	Allegazione normativa[60]	
+37-26	5187-5189	de	Allegazione normativa[60]	
+37-27	5190-5193	poe	Allegazione normativa[60]	
+37-28	5193-5194	.	Allegazione normativa[60]	
+37-29	5194-5195	,	Allegazione normativa[60]	
+37-30	5196-5204	relegati	Allegazione normativa[60]	
+37-31	5204-5205	.	_	
+
+#Text=X 3.02.05 Super eo vero
+38-1	5209-5210	X	_	
+38-2	5211-5218	3.02.05	_	
+38-3	5219-5224	Super	_	
+38-4	5225-5227	eo	_	
+38-5	5228-5232	vero	_	
+
+#Text=Suspensum
+39-1	5237-5246	Suspensum	_	
+
+#Text=Ab episcopo suo.
+40-1	5248-5250	Ab	_	
+40-2	5251-5259	episcopo	_	
+40-3	5260-5263	suo	_	
+40-4	5263-5264	.	_	
+
+#Text=Seriem
+41-1	5269-5275	Seriem	_	
+
+#Text=Scilicet quare fuit excommunicatus vel suspensus pro focaria.  Vel si ex alia causa, ut exprimat omnes causas excommunicationis et suspensionis, alias non habetur pro absoluto, infra, de sent. excom., cum pro causa; et supra, de offi. ord., ex parte.  Alias litterae essent impetratae tacita veritate, unde non valerent, supra, de rescript., super litteris; et supra, de rescript., dilectus filius 1.
+42-1	5277-5285	Scilicet	_	
+42-2	5286-5291	quare	_	
+42-3	5292-5296	fuit	_	
+42-4	5297-5311	excommunicatus	_	
+42-5	5312-5315	vel	_	
+42-6	5316-5325	suspensus	_	
+42-7	5326-5329	pro	_	
+42-8	5330-5337	focaria	_	
+42-9	5337-5338	.	_	
+42-10	5340-5343	Vel	_	
+42-11	5344-5346	si	_	
+42-12	5347-5349	ex	_	
+42-13	5350-5354	alia	_	
+42-14	5355-5360	causa	_	
+42-15	5360-5361	,	_	
+42-16	5362-5364	ut	_	
+42-17	5365-5373	exprimat	_	
+42-18	5374-5379	omnes	_	
+42-19	5380-5386	causas	_	
+42-20	5387-5404	excommunicationis	_	
+42-21	5405-5407	et	_	
+42-22	5408-5420	suspensionis	_	
+42-23	5420-5421	,	_	
+42-24	5422-5427	alias	_	
+42-25	5428-5431	non	_	
+42-26	5432-5439	habetur	_	
+42-27	5440-5443	pro	_	
+42-28	5444-5452	absoluto	_	
+42-29	5452-5453	,	_	
+42-30	5454-5459	infra	_	
+42-31	5459-5460	,	_	
+42-32	5461-5463	de	Allegazione normativa[61]	
+42-33	5464-5468	sent	Allegazione normativa[61]	
+42-34	5468-5469	.	Allegazione normativa[61]	
+42-35	5470-5475	excom	Allegazione normativa[61]	
+42-36	5475-5476	.	Allegazione normativa[61]	
+42-37	5476-5477	,	Allegazione normativa[61]	
+42-38	5478-5481	cum	Allegazione normativa[61]	
+42-39	5482-5485	pro	Allegazione normativa[61]	
+42-40	5486-5491	causa	Allegazione normativa[61]	
+42-41	5491-5492	;	_	
+42-42	5493-5495	et	_	
+42-43	5496-5501	supra	_	
+42-44	5501-5502	,	_	
+42-45	5503-5505	de	Allegazione normativa[62]	
+42-46	5506-5510	offi	Allegazione normativa[62]	
+42-47	5510-5511	.	Allegazione normativa[62]	
+42-48	5512-5515	ord	Allegazione normativa[62]	
+42-49	5515-5516	.	Allegazione normativa[62]	
+42-50	5516-5517	,	Allegazione normativa[62]	
+42-51	5518-5520	ex	Allegazione normativa[62]	
+42-52	5521-5526	parte	Allegazione normativa[62]	
+42-53	5526-5527	.	_	
+42-54	5529-5534	Alias	_	
+42-55	5535-5543	litterae	_	
+42-56	5544-5550	essent	_	
+42-57	5551-5561	impetratae	_	
+42-58	5562-5568	tacita	_	
+42-59	5569-5577	veritate	_	
+42-60	5577-5578	,	_	
+42-61	5579-5583	unde	_	
+42-62	5584-5587	non	_	
+42-63	5588-5596	valerent	_	
+42-64	5596-5597	,	_	
+42-65	5598-5603	supra	_	
+42-66	5603-5604	,	_	
+42-67	5605-5607	de	Allegazione normativa[63]	
+42-68	5608-5616	rescript	Allegazione normativa[63]	
+42-69	5616-5617	.	Allegazione normativa[63]	
+42-70	5617-5618	,	Allegazione normativa[63]	
+42-71	5619-5624	super	Allegazione normativa[63]	
+42-72	5625-5633	litteris	Allegazione normativa[63]	
+42-73	5633-5634	;	_	
+42-74	5635-5637	et	_	
+42-75	5638-5643	supra	_	
+42-76	5643-5644	,	_	
+42-77	5645-5647	de	Allegazione normativa[64]	
+42-78	5648-5656	rescript	Allegazione normativa[64]	
+42-79	5656-5657	.	Allegazione normativa[64]	
+42-80	5657-5658	,	Allegazione normativa[64]	
+42-81	5659-5667	dilectus	Allegazione normativa[64]	
+42-82	5668-5674	filius	Allegazione normativa[64]	
+42-83	5675-5676	1	_	
+42-84	5676-5677	.	_	
+
+#Text=X 3.02.06 Si autem clerici
+43-1	5681-5682	X	_	
+43-2	5683-5690	3.02.06	_	
+43-3	5691-5693	Si	_	
+43-4	5694-5699	autem	_	
+43-5	5700-5707	clerici	_	
+
+#Text=Portionibus
+44-1	5712-5723	Portionibus	_	
+
+#Text=Cum habeant partem in ecclesia praebendata.
+45-1	5725-5728	Cum	_	
+45-2	5729-5736	habeant	_	
+45-3	5737-5743	partem	_	
+45-4	5744-5746	in	_	
+45-5	5747-5755	ecclesia	_	
+45-6	5756-5767	praebendata	_	
+45-7	5767-5768	.	_	
+
+#Text=Spoliare
+46-1	5773-5781	Spoliare	_	
+
+#Text=Quae spoliatio perpetua intelligitur, ex quo sine temporis praefinitione hic dicitur, C. de poe., servus.  Sed contra videtur supra, de cohab. cler. et mul., sicut, ubi post admonitionem suspenduntur antequam priventur ecclesiis, et hic statim post admonitionem spoliantur.  Solutio: hoc intellige secundum illud, ut primo suspendantur.  Et si se non corrigunt post trinam admonitionem, recte possunt spoliari beneficio.  Et quod ibi suspenduntur, intelligo quod fiat ex gratia, ut sic expectentur adhuc.  Ber.
+47-1	5783-5787	Quae	_	
+47-2	5788-5797	spoliatio	_	
+47-3	5798-5806	perpetua	_	
+47-4	5807-5819	intelligitur	_	
+47-5	5819-5820	,	_	
+47-6	5821-5823	ex	_	
+47-7	5824-5827	quo	_	
+47-8	5828-5832	sine	_	
+47-9	5833-5841	temporis	_	
+47-10	5842-5855	praefinitione	_	
+47-11	5856-5859	hic	_	
+47-12	5860-5867	dicitur	_	
+47-13	5867-5868	,	_	
+47-14	5869-5870	C	Allegazione normativa[65]	
+47-15	5870-5871	.	Allegazione normativa[65]	
+47-16	5872-5874	de	Allegazione normativa[65]	
+47-17	5875-5878	poe	Allegazione normativa[65]	
+47-18	5878-5879	.	Allegazione normativa[65]	
+47-19	5879-5880	,	Allegazione normativa[65]	
+47-20	5881-5887	servus	Allegazione normativa[65]	
+47-21	5887-5888	.	_	
+47-22	5890-5893	Sed	_	
+47-23	5894-5900	contra	_	
+47-24	5901-5908	videtur	_	
+47-25	5909-5914	supra	_	
+47-26	5914-5915	,	_	
+47-27	5916-5918	de	Allegazione normativa[66]	
+47-28	5919-5924	cohab	Allegazione normativa[66]	
+47-29	5924-5925	.	Allegazione normativa[66]	
+47-30	5926-5930	cler	Allegazione normativa[66]	
+47-31	5930-5931	.	Allegazione normativa[66]	
+47-32	5932-5934	et	Allegazione normativa[66]	
+47-33	5935-5938	mul	Allegazione normativa[66]	
+47-34	5938-5939	.	Allegazione normativa[66]	
+47-35	5939-5940	,	Allegazione normativa[66]	
+47-36	5941-5946	sicut	Allegazione normativa[66]	
+47-37	5946-5947	,	_	
+47-38	5948-5951	ubi	_	
+47-39	5952-5956	post	_	
+47-40	5957-5969	admonitionem	_	
+47-41	5970-5982	suspenduntur	_	
+47-42	5983-5991	antequam	_	
+47-43	5992-6001	priventur	_	
+47-44	6002-6011	ecclesiis	_	
+47-45	6011-6012	,	_	
+47-46	6013-6015	et	_	
+47-47	6016-6019	hic	_	
+47-48	6020-6026	statim	_	
+47-49	6027-6031	post	_	
+47-50	6032-6044	admonitionem	_	
+47-51	6045-6055	spoliantur	_	
+47-52	6055-6056	.	_	
+47-53	6058-6065	Solutio	_	
+47-54	6065-6066	:	_	
+47-55	6067-6070	hoc	_	
+47-56	6071-6080	intellige	_	
+47-57	6081-6089	secundum	_	
+47-58	6090-6095	illud	_	
+47-59	6095-6096	,	_	
+47-60	6097-6099	ut	_	
+47-61	6100-6105	primo	_	
+47-62	6106-6118	suspendantur	_	
+47-63	6118-6119	.	_	
+47-64	6121-6123	Et	_	
+47-65	6124-6126	si	_	
+47-66	6127-6129	se	_	
+47-67	6130-6133	non	_	
+47-68	6134-6143	corrigunt	_	
+47-69	6144-6148	post	_	
+47-70	6149-6155	trinam	_	
+47-71	6156-6168	admonitionem	_	
+47-72	6168-6169	,	_	
+47-73	6170-6175	recte	_	
+47-74	6176-6183	possunt	_	
+47-75	6184-6192	spoliari	_	
+47-76	6193-6202	beneficio	_	
+47-77	6202-6203	.	_	
+47-78	6205-6207	Et	_	
+47-79	6208-6212	quod	_	
+47-80	6213-6216	ibi	_	
+47-81	6217-6229	suspenduntur	_	
+47-82	6229-6230	,	_	
+47-83	6231-6240	intelligo	_	
+47-84	6241-6245	quod	_	
+47-85	6246-6250	fiat	_	
+47-86	6251-6253	ex	_	
+47-87	6254-6260	gratia	_	
+47-88	6260-6261	,	_	
+47-89	6262-6264	ut	_	
+47-90	6265-6268	sic	_	
+47-91	6269-6280	expectentur	_	
+47-92	6281-6286	adhuc	_	
+47-93	6286-6287	.	_	
+47-94	6289-6292	Ber	_	
+47-95	6292-6293	.	_	
+
+#Text=X 3.02.07 Vestra duxit devotio
+48-1	6297-6298	X	_	
+48-2	6299-6306	3.02.07	_	
+48-3	6307-6313	Vestra	_	
+48-4	6314-6319	duxit	_	
+48-5	6320-6327	devotio	_	
+
+#Text=Nullus audiat
+49-1	6332-6338	Nullus	_	
+49-2	6339-6345	audiat	_	
+
+#Text=32. dist., nullus; et 32. dist., praeter.
+50-1	6347-6349	32	Allegazione normativa[67]	
+50-2	6349-6350	.	Allegazione normativa[67]	
+50-3	6351-6355	dist	Allegazione normativa[67]	
+50-4	6355-6356	.	Allegazione normativa[67]	
+50-5	6356-6357	,	Allegazione normativa[67]	
+50-6	6358-6364	nullus	Allegazione normativa[67]	
+50-7	6364-6365	;	_	
+50-8	6366-6368	et	_	
+50-9	6369-6371	32	Allegazione normativa[68]	
+50-10	6371-6372	.	Allegazione normativa[68]	
+50-11	6373-6377	dist	Allegazione normativa[68]	
+50-12	6377-6378	.	Allegazione normativa[68]	
+50-13	6378-6379	,	Allegazione normativa[68]	
+50-14	6380-6387	praeter	Allegazione normativa[68]	
+50-15	6387-6388	.	_	
+
+#Text=Quantumcumque
+51-1	6393-6406	Quantumcumque	_	
+
+#Text=Ut 15. q. 8, sciscitantibus, usque ibi: caeterum.
+52-1	6408-6410	Ut	_	
+52-2	6411-6413	15	Allegazione normativa[69]	
+52-3	6413-6414	.	Allegazione normativa[69]	
+52-4	6415-6416	q	Allegazione normativa[69]	
+52-5	6416-6417	.	Allegazione normativa[69]	
+52-6	6418-6419	8	Allegazione normativa[69]	
+52-7	6419-6420	,	Allegazione normativa[69]	
+52-8	6421-6435	sciscitantibus	Allegazione normativa[69]	
+52-9	6435-6436	,	_	
+52-10	6437-6442	usque	_	
+52-11	6443-6446	ibi	_	
+52-12	6446-6447	:	_	
+52-13	6448-6456	caeterum	_	
+52-14	6456-6457	.	_	
+
+#Text=In Christi fide
+53-1	6462-6464	In	_	
+53-2	6465-6472	Christi	_	
+53-3	6473-6477	fide	_	
+
+#Text=Id est, per fidem Christi.  Hucusque sunt verba capituli quod inducit.  Tanc.
+54-1	6479-6481	Id	_	
+54-2	6482-6485	est	_	
+54-3	6485-6486	,	_	
+54-4	6487-6490	per	_	
+54-5	6491-6496	fidem	_	
+54-6	6497-6504	Christi	_	
+54-7	6504-6505	.	_	
+54-8	6507-6515	Hucusque	_	
+54-9	6516-6520	sunt	_	
+54-10	6521-6526	verba	_	
+54-11	6527-6535	capituli	_	
+54-12	6536-6540	quod	_	
+54-13	6541-6548	inducit	_	
+54-14	6548-6549	.	_	
+54-15	6551-6555	Tanc	_	
+54-16	6555-6556	.	_	
+
+#Text=Caeterum
+55-1	6561-6569	Caeterum	_	
+
+#Text=Hic incipit respondere distinguendo inter crimen notorium et occultum.
+56-1	6571-6574	Hic	_	
+56-2	6575-6582	incipit	_	
+56-3	6583-6593	respondere	_	
+56-4	6594-6606	distinguendo	_	
+56-5	6607-6612	inter	_	
+56-6	6613-6619	crimen	_	
+56-7	6620-6628	notorium	_	
+56-8	6629-6631	et	_	
+56-9	6632-6640	occultum	_	
+56-10	6640-6641	.	_	
+
+#Text=Notorium
+57-1	6646-6654	Notorium	_	
+
+#Text=Ad intelligentiam eorum quae hic dicuntur, nota quod aliud est fama aliud manifestum et aliud notorium.  Fama sic consuevit describi: fama est illaesae dignitatis status, vita et moribus comprobatus et in nullo diminutus, ff. de var. et extraord. cog., cognitionum § existimatio.  Et qui talem famam negligit, crudelis est, 12. q. 1, nolo.  Fama vero quandoque ex scientia quandoque ex suspicione procedit, quandoque ex certo auctore quandoque ex incerto, de conse. dist. 4, sanctum est.  Manifestum dicitur quod ex scientia et certo auctore procedit et quod potest probari, ff. qui testam. fac. pot., heredes palam; et 11. q. 3, eorum qui.  Item etiam quandoque dicitur occultum quod potest probari, C. de appellat., eos § si quis autem.  Sed et manifestum dicitur quandoque de quo constat per confessionem vel probationem vel per evidentiam facti, infra, de verb. sign., cum olim.  Sed tale manifestum potius dicitur notorium, infra, de cohab. cler. et mul., quaesitum.  Circa notorium distingue: aliud est notorium facti, aliud iuris, aliud praesumptionis.  Notorium facti est quod ita exhibet se conspectui hominum, quod nulla potest tergiversatione celari, infra, de cohab. cler. et mul., tua; et infra, de cohab. cler. et mul., quaesitum.  Et de tali hic intellige: in quo nullus auditur appellans, supra, de appell., cum sit Romana, in fi.; et supra, de appell., pervenit 1.  Et in tali notorio creditur simplici officiali, 4. q. 4, nullus § aliquando.  Nec requiritur scientia omnium sed plurimum, ut quando omnes admissum scelus proclamant, ut 2. q. 1, scelus; et 2. q. 1, de manifesta.  Notorium iuris est de quo aliquis condemnatur vel est in iure confessus, ut hic, et ff. de statu hom., eum qui.  Et in hoc notorio quandoque requiritur probatio si negetur, supra, de re iudic., sicut.  Notorium praesumptum est, ut paternitas, filiatio, ff. de in ius voc., semper; et supra, de fil. presbyt., conquerente.  Et consanguinitas dicitur notoria praesumpta, infra, de divort., porro § 1.  Quod aliquis sit filius alterius non posset vere probari, ff. de condi. et demon., Lucius.
+58-1	6656-6658	Ad	_	
+58-2	6659-6673	intelligentiam	_	
+58-3	6674-6679	eorum	_	
+58-4	6680-6684	quae	_	
+58-5	6685-6688	hic	_	
+58-6	6689-6697	dicuntur	_	
+58-7	6697-6698	,	_	
+58-8	6699-6703	nota	_	
+58-9	6704-6708	quod	_	
+58-10	6709-6714	aliud	_	
+58-11	6715-6718	est	_	
+58-12	6719-6723	fama	_	
+58-13	6724-6729	aliud	_	
+58-14	6730-6740	manifestum	_	
+58-15	6741-6743	et	_	
+58-16	6744-6749	aliud	_	
+58-17	6750-6758	notorium	_	
+58-18	6758-6759	.	_	
+58-19	6761-6765	Fama	_	
+58-20	6766-6769	sic	_	
+58-21	6770-6779	consuevit	_	
+58-22	6780-6788	describi	_	
+58-23	6788-6789	:	_	
+58-24	6790-6794	fama	_	
+58-25	6795-6798	est	_	
+58-26	6799-6807	illaesae	_	
+58-27	6808-6818	dignitatis	_	
+58-28	6819-6825	status	_	
+58-29	6825-6826	,	_	
+58-30	6827-6831	vita	_	
+58-31	6832-6834	et	_	
+58-32	6835-6842	moribus	_	
+58-33	6843-6854	comprobatus	_	
+58-34	6855-6857	et	_	
+58-35	6858-6860	in	_	
+58-36	6861-6866	nullo	_	
+58-37	6867-6876	diminutus	_	
+58-38	6876-6877	,	_	
+58-39	6878-6880	ff	Allegazione normativa[70]	
+58-40	6880-6881	.	Allegazione normativa[70]	
+58-41	6882-6884	de	Allegazione normativa[70]	
+58-42	6885-6888	var	Allegazione normativa[70]	
+58-43	6888-6889	.	Allegazione normativa[70]	
+58-44	6890-6892	et	Allegazione normativa[70]	
+58-45	6893-6901	extraord	Allegazione normativa[70]	
+58-46	6901-6902	.	Allegazione normativa[70]	
+58-47	6903-6906	cog	Allegazione normativa[70]	
+58-48	6906-6907	.	Allegazione normativa[70]	
+58-49	6907-6908	,	Allegazione normativa[70]	
+58-50	6909-6920	cognitionum	Allegazione normativa[70]	
+58-51	6921-6922	§	Allegazione normativa[70]	
+58-52	6923-6934	existimatio	Allegazione normativa[70]	
+58-53	6934-6935	.	_	
+58-54	6937-6939	Et	_	
+58-55	6940-6943	qui	_	
+58-56	6944-6949	talem	_	
+58-57	6950-6955	famam	_	
+58-58	6956-6964	negligit	_	
+58-59	6964-6965	,	_	
+58-60	6966-6974	crudelis	_	
+58-61	6975-6978	est	_	
+58-62	6978-6979	,	_	
+58-63	6980-6982	12	Allegazione normativa[71]	
+58-64	6982-6983	.	Allegazione normativa[71]	
+58-65	6984-6985	q	Allegazione normativa[71]	
+58-66	6985-6986	.	Allegazione normativa[71]	
+58-67	6987-6988	1	Allegazione normativa[71]	
+58-68	6988-6989	,	Allegazione normativa[71]	
+58-69	6990-6994	nolo	Allegazione normativa[71]	
+58-70	6994-6995	.	_	
+58-71	6997-7001	Fama	_	
+58-72	7002-7006	vero	_	
+58-73	7007-7016	quandoque	_	
+58-74	7017-7019	ex	_	
+58-75	7020-7028	scientia	_	
+58-76	7029-7038	quandoque	_	
+58-77	7039-7041	ex	_	
+58-78	7042-7052	suspicione	_	
+58-79	7053-7061	procedit	_	
+58-80	7061-7062	,	_	
+58-81	7063-7072	quandoque	_	
+58-82	7073-7075	ex	_	
+58-83	7076-7081	certo	_	
+58-84	7082-7089	auctore	_	
+58-85	7090-7099	quandoque	_	
+58-86	7100-7102	ex	_	
+58-87	7103-7110	incerto	_	
+58-88	7110-7111	,	_	
+58-89	7112-7114	de	Allegazione normativa[72]	
+58-90	7115-7120	conse	Allegazione normativa[72]	
+58-91	7120-7121	.	Allegazione normativa[72]	
+58-92	7122-7126	dist	Allegazione normativa[72]	
+58-93	7126-7127	.	Allegazione normativa[72]	
+58-94	7128-7129	4	Allegazione normativa[72]	
+58-95	7129-7130	,	Allegazione normativa[72]	
+58-96	7131-7138	sanctum	Allegazione normativa[72]	
+58-97	7139-7142	est	Allegazione normativa[72]	
+58-98	7142-7143	.	_	
+58-99	7145-7155	Manifestum	_	
+58-100	7156-7163	dicitur	_	
+58-101	7164-7168	quod	_	
+58-102	7169-7171	ex	_	
+58-103	7172-7180	scientia	_	
+58-104	7181-7183	et	_	
+58-105	7184-7189	certo	_	
+58-106	7190-7197	auctore	_	
+58-107	7198-7206	procedit	_	
+58-108	7207-7209	et	_	
+58-109	7210-7214	quod	_	
+58-110	7215-7221	potest	_	
+58-111	7222-7229	probari	_	
+58-112	7229-7230	,	_	
+58-113	7231-7233	ff	Allegazione normativa[73]	
+58-114	7233-7234	.	Allegazione normativa[73]	
+58-115	7235-7238	qui	Allegazione normativa[73]	
+58-116	7239-7245	testam	Allegazione normativa[73]	
+58-117	7245-7246	.	Allegazione normativa[73]	
+58-118	7247-7250	fac	Allegazione normativa[73]	
+58-119	7250-7251	.	Allegazione normativa[73]	
+58-120	7252-7255	pot	Allegazione normativa[73]	
+58-121	7255-7256	.	Allegazione normativa[73]	
+58-122	7256-7257	,	Allegazione normativa[73]	
+58-123	7258-7265	heredes	Allegazione normativa[73]	
+58-124	7266-7271	palam	Allegazione normativa[73]	
+58-125	7271-7272	;	_	
+58-126	7273-7275	et	_	
+58-127	7276-7278	11	Allegazione normativa[74]	
+58-128	7278-7279	.	Allegazione normativa[74]	
+58-129	7280-7281	q	Allegazione normativa[74]	
+58-130	7281-7282	.	Allegazione normativa[74]	
+58-131	7283-7284	3	Allegazione normativa[74]	
+58-132	7284-7285	,	Allegazione normativa[74]	
+58-133	7286-7291	eorum	Allegazione normativa[74]	
+58-134	7292-7295	qui	Allegazione normativa[74]	
+58-135	7295-7296	.	_	
+58-136	7298-7302	Item	_	
+58-137	7303-7308	etiam	_	
+58-138	7309-7318	quandoque	_	
+58-139	7319-7326	dicitur	_	
+58-140	7327-7335	occultum	_	
+58-141	7336-7340	quod	_	
+58-142	7341-7347	potest	_	
+58-143	7348-7355	probari	_	
+58-144	7355-7356	,	_	
+58-145	7357-7358	C	Allegazione normativa[75]	
+58-146	7358-7359	.	Allegazione normativa[75]	
+58-147	7360-7362	de	Allegazione normativa[75]	
+58-148	7363-7371	appellat	Allegazione normativa[75]	
+58-149	7371-7372	.	Allegazione normativa[75]	
+58-150	7372-7373	,	Allegazione normativa[75]	
+58-151	7374-7377	eos	Allegazione normativa[75]	
+58-152	7378-7379	§	Allegazione normativa[75]	
+58-153	7380-7382	si	Allegazione normativa[75]	
+58-154	7383-7387	quis	Allegazione normativa[75]	
+58-155	7388-7393	autem	Allegazione normativa[75]	
+58-156	7393-7394	.	_	
+58-157	7396-7399	Sed	_	
+58-158	7400-7402	et	_	
+58-159	7403-7413	manifestum	_	
+58-160	7414-7421	dicitur	_	
+58-161	7422-7431	quandoque	_	
+58-162	7432-7434	de	_	
+58-163	7435-7438	quo	_	
+58-164	7439-7446	constat	_	
+58-165	7447-7450	per	_	
+58-166	7451-7463	confessionem	_	
+58-167	7464-7467	vel	_	
+58-168	7468-7479	probationem	_	
+58-169	7480-7483	vel	_	
+58-170	7484-7487	per	_	
+58-171	7488-7498	evidentiam	_	
+58-172	7499-7504	facti	_	
+58-173	7504-7505	,	_	
+58-174	7506-7511	infra	_	
+58-175	7511-7512	,	_	
+58-176	7513-7515	de	Allegazione normativa[76]	
+58-177	7516-7520	verb	Allegazione normativa[76]	
+58-178	7520-7521	.	Allegazione normativa[76]	
+58-179	7522-7526	sign	Allegazione normativa[76]	
+58-180	7526-7527	.	Allegazione normativa[76]	
+58-181	7527-7528	,	Allegazione normativa[76]	
+58-182	7529-7532	cum	Allegazione normativa[76]	
+58-183	7533-7537	olim	Allegazione normativa[76]	
+58-184	7537-7538	.	_	
+58-185	7540-7543	Sed	_	
+58-186	7544-7548	tale	_	
+58-187	7549-7559	manifestum	_	
+58-188	7560-7566	potius	_	
+58-189	7567-7574	dicitur	_	
+58-190	7575-7583	notorium	_	
+58-191	7583-7584	,	_	
+58-192	7585-7590	infra	_	
+58-193	7590-7591	,	_	
+58-194	7592-7594	de	Allegazione normativa[77]	
+58-195	7595-7600	cohab	Allegazione normativa[77]	
+58-196	7600-7601	.	Allegazione normativa[77]	
+58-197	7602-7606	cler	Allegazione normativa[77]	
+58-198	7606-7607	.	Allegazione normativa[77]	
+58-199	7608-7610	et	Allegazione normativa[77]	
+58-200	7611-7614	mul	Allegazione normativa[77]	
+58-201	7614-7615	.	Allegazione normativa[77]	
+58-202	7615-7616	,	Allegazione normativa[77]	
+58-203	7617-7626	quaesitum	Allegazione normativa[77]	
+58-204	7626-7627	.	_	
+58-205	7629-7634	Circa	_	
+58-206	7635-7643	notorium	_	
+58-207	7644-7653	distingue	_	
+58-208	7653-7654	:	_	
+58-209	7655-7660	aliud	_	
+58-210	7661-7664	est	_	
+58-211	7665-7673	notorium	_	
+58-212	7674-7679	facti	_	
+58-213	7679-7680	,	_	
+58-214	7681-7686	aliud	_	
+58-215	7687-7692	iuris	_	
+58-216	7692-7693	,	_	
+58-217	7694-7699	aliud	_	
+58-218	7700-7714	praesumptionis	_	
+58-219	7714-7715	.	_	
+58-220	7717-7725	Notorium	_	
+58-221	7726-7731	facti	_	
+58-222	7732-7735	est	_	
+58-223	7736-7740	quod	_	
+58-224	7741-7744	ita	_	
+58-225	7745-7752	exhibet	_	
+58-226	7753-7755	se	_	
+58-227	7756-7766	conspectui	_	
+58-228	7767-7774	hominum	_	
+58-229	7774-7775	,	_	
+58-230	7776-7780	quod	_	
+58-231	7781-7786	nulla	_	
+58-232	7787-7793	potest	_	
+58-233	7794-7809	tergiversatione	_	
+58-234	7810-7816	celari	_	
+58-235	7816-7817	,	_	
+58-236	7818-7823	infra	_	
+58-237	7823-7824	,	_	
+58-238	7825-7827	de	Allegazione normativa[78]	
+58-239	7828-7833	cohab	Allegazione normativa[78]	
+58-240	7833-7834	.	Allegazione normativa[78]	
+58-241	7835-7839	cler	Allegazione normativa[78]	
+58-242	7839-7840	.	Allegazione normativa[78]	
+58-243	7841-7843	et	Allegazione normativa[78]	
+58-244	7844-7847	mul	Allegazione normativa[78]	
+58-245	7847-7848	.	Allegazione normativa[78]	
+58-246	7848-7849	,	Allegazione normativa[78]	
+58-247	7850-7853	tua	Allegazione normativa[78]	
+58-248	7853-7854	;	_	
+58-249	7855-7857	et	_	
+58-250	7858-7863	infra	_	
+58-251	7863-7864	,	_	
+58-252	7865-7867	de	Allegazione normativa[79]	
+58-253	7868-7873	cohab	Allegazione normativa[79]	
+58-254	7873-7874	.	Allegazione normativa[79]	
+58-255	7875-7879	cler	Allegazione normativa[79]	
+58-256	7879-7880	.	Allegazione normativa[79]	
+58-257	7881-7883	et	Allegazione normativa[79]	
+58-258	7884-7887	mul	Allegazione normativa[79]	
+58-259	7887-7888	.	Allegazione normativa[79]	
+58-260	7888-7889	,	Allegazione normativa[79]	
+58-261	7890-7899	quaesitum	Allegazione normativa[79]	
+58-262	7899-7900	.	_	
+58-263	7902-7904	Et	_	
+58-264	7905-7907	de	_	
+58-265	7908-7912	tali	_	
+58-266	7913-7916	hic	_	
+58-267	7917-7926	intellige	_	
+58-268	7926-7927	:	_	
+58-269	7928-7930	in	_	
+58-270	7931-7934	quo	_	
+58-271	7935-7941	nullus	_	
+58-272	7942-7949	auditur	_	
+58-273	7950-7959	appellans	_	
+58-274	7959-7960	,	_	
+58-275	7961-7966	supra	_	
+58-276	7966-7967	,	_	
+58-277	7968-7970	de	Allegazione normativa[80]	
+58-278	7971-7977	appell	Allegazione normativa[80]	
+58-279	7977-7978	.	Allegazione normativa[80]	
+58-280	7978-7979	,	Allegazione normativa[80]	
+58-281	7980-7983	cum	Allegazione normativa[80]	
+58-282	7984-7987	sit	Allegazione normativa[80]	
+58-283	7988-7994	Romana	Allegazione normativa[80]	
+58-284	7994-7995	,	Allegazione normativa[80]	
+58-285	7996-7998	in	Allegazione normativa[80]	
+58-286	7999-8001	fi	Allegazione normativa[80]	
+58-287	8001-8002	.	Allegazione normativa[80]	
+58-288	8002-8003	;	_	
+58-289	8004-8006	et	_	
+58-290	8007-8012	supra	_	
+58-291	8012-8013	,	_	
+58-292	8014-8016	de	Allegazione normativa[81]	
+58-293	8017-8023	appell	Allegazione normativa[81]	
+58-294	8023-8024	.	Allegazione normativa[81]	
+58-295	8024-8025	,	Allegazione normativa[81]	
+58-296	8026-8034	pervenit	Allegazione normativa[81]	
+58-297	8035-8036	1	_	
+58-298	8036-8037	.	_	
+58-299	8039-8041	Et	_	
+58-300	8042-8044	in	_	
+58-301	8045-8049	tali	_	
+58-302	8050-8057	notorio	_	
+58-303	8058-8066	creditur	_	
+58-304	8067-8075	simplici	_	
+58-305	8076-8085	officiali	_	
+58-306	8085-8086	,	_	
+58-307	8087-8088	4	Allegazione normativa[82]	
+58-308	8088-8089	.	Allegazione normativa[82]	
+58-309	8090-8091	q	Allegazione normativa[82]	
+58-310	8091-8092	.	Allegazione normativa[82]	
+58-311	8093-8094	4	Allegazione normativa[82]	
+58-312	8094-8095	,	Allegazione normativa[82]	
+58-313	8096-8102	nullus	Allegazione normativa[82]	
+58-314	8103-8104	§	Allegazione normativa[82]	
+58-315	8105-8114	aliquando	Allegazione normativa[82]	
+58-316	8114-8115	.	_	
+58-317	8117-8120	Nec	_	
+58-318	8121-8131	requiritur	_	
+58-319	8132-8140	scientia	_	
+58-320	8141-8147	omnium	_	
+58-321	8148-8151	sed	_	
+58-322	8152-8160	plurimum	_	
+58-323	8160-8161	,	_	
+58-324	8162-8164	ut	_	
+58-325	8165-8171	quando	_	
+58-326	8172-8177	omnes	_	
+58-327	8178-8186	admissum	_	
+58-328	8187-8193	scelus	_	
+58-329	8194-8204	proclamant	_	
+58-330	8204-8205	,	_	
+58-331	8206-8208	ut	_	
+58-332	8209-8210	2	Allegazione normativa[83]	
+58-333	8210-8211	.	Allegazione normativa[83]	
+58-334	8212-8213	q	Allegazione normativa[83]	
+58-335	8213-8214	.	Allegazione normativa[83]	
+58-336	8215-8216	1	Allegazione normativa[83]	
+58-337	8216-8217	,	Allegazione normativa[83]	
+58-338	8218-8224	scelus	Allegazione normativa[83]	
+58-339	8224-8225	;	_	
+58-340	8226-8228	et	_	
+58-341	8229-8230	2	Allegazione normativa[84]	
+58-342	8230-8231	.	Allegazione normativa[84]	
+58-343	8232-8233	q	Allegazione normativa[84]	
+58-344	8233-8234	.	Allegazione normativa[84]	
+58-345	8235-8236	1	Allegazione normativa[84]	
+58-346	8236-8237	,	Allegazione normativa[84]	
+58-347	8238-8240	de	Allegazione normativa[84]	
+58-348	8241-8250	manifesta	Allegazione normativa[84]	
+58-349	8250-8251	.	_	
+58-350	8253-8261	Notorium	_	
+58-351	8262-8267	iuris	_	
+58-352	8268-8271	est	_	
+58-353	8272-8274	de	_	
+58-354	8275-8278	quo	_	
+58-355	8279-8286	aliquis	_	
+58-356	8287-8298	condemnatur	_	
+58-357	8299-8302	vel	_	
+58-358	8303-8306	est	_	
+58-359	8307-8309	in	_	
+58-360	8310-8314	iure	_	
+58-361	8315-8324	confessus	_	
+58-362	8324-8325	,	_	
+58-363	8326-8328	ut	_	
+58-364	8329-8332	hic	_	
+58-365	8332-8333	,	_	
+58-366	8334-8336	et	_	
+58-367	8337-8339	ff	Allegazione normativa[85]	
+58-368	8339-8340	.	Allegazione normativa[85]	
+58-369	8341-8343	de	Allegazione normativa[85]	
+58-370	8344-8349	statu	Allegazione normativa[85]	
+58-371	8350-8353	hom	Allegazione normativa[85]	
+58-372	8353-8354	.	Allegazione normativa[85]	
+58-373	8354-8355	,	Allegazione normativa[85]	
+58-374	8356-8359	eum	Allegazione normativa[85]	
+58-375	8360-8363	qui	Allegazione normativa[85]	
+58-376	8363-8364	.	_	
+58-377	8366-8368	Et	_	
+58-378	8369-8371	in	_	
+58-379	8372-8375	hoc	_	
+58-380	8376-8383	notorio	_	
+58-381	8384-8393	quandoque	_	
+58-382	8394-8404	requiritur	_	
+58-383	8405-8413	probatio	_	
+58-384	8414-8416	si	_	
+58-385	8417-8424	negetur	_	
+58-386	8424-8425	,	_	
+58-387	8426-8431	supra	_	
+58-388	8431-8432	,	_	
+58-389	8433-8435	de	Allegazione normativa[86]	
+58-390	8436-8438	re	Allegazione normativa[86]	
+58-391	8439-8444	iudic	Allegazione normativa[86]	
+58-392	8444-8445	.	Allegazione normativa[86]	
+58-393	8445-8446	,	Allegazione normativa[86]	
+58-394	8447-8452	sicut	Allegazione normativa[86]	
+58-395	8452-8453	.	_	
+58-396	8455-8463	Notorium	_	
+58-397	8464-8475	praesumptum	_	
+58-398	8476-8479	est	_	
+58-399	8479-8480	,	_	
+58-400	8481-8483	ut	_	
+58-401	8484-8494	paternitas	_	
+58-402	8494-8495	,	_	
+58-403	8496-8504	filiatio	_	
+58-404	8504-8505	,	_	
+58-405	8506-8508	ff	Allegazione normativa[87]	
+58-406	8508-8509	.	Allegazione normativa[87]	
+58-407	8510-8512	de	Allegazione normativa[87]	
+58-408	8513-8515	in	Allegazione normativa[87]	
+58-409	8516-8519	ius	Allegazione normativa[87]	
+58-410	8520-8523	voc	Allegazione normativa[87]	
+58-411	8523-8524	.	Allegazione normativa[87]	
+58-412	8524-8525	,	Allegazione normativa[87]	
+58-413	8526-8532	semper	Allegazione normativa[87]	
+58-414	8532-8533	;	_	
+58-415	8534-8536	et	_	
+58-416	8537-8542	supra	_	
+58-417	8542-8543	,	_	
+58-418	8544-8546	de	Allegazione normativa[88]	
+58-419	8547-8550	fil	Allegazione normativa[88]	
+58-420	8550-8551	.	Allegazione normativa[88]	
+58-421	8552-8559	presbyt	Allegazione normativa[88]	
+58-422	8559-8560	.	Allegazione normativa[88]	
+58-423	8560-8561	,	Allegazione normativa[88]	
+58-424	8562-8573	conquerente	Allegazione normativa[88]	
+58-425	8573-8574	.	_	
+58-426	8576-8578	Et	_	
+58-427	8579-8593	consanguinitas	_	
+58-428	8594-8601	dicitur	_	
+58-429	8602-8609	notoria	_	
+58-430	8610-8620	praesumpta	_	
+58-431	8620-8621	,	_	
+58-432	8622-8627	infra	_	
+58-433	8627-8628	,	_	
+58-434	8629-8631	de	Allegazione normativa[89]	
+58-435	8632-8638	divort	Allegazione normativa[89]	
+58-436	8638-8639	.	Allegazione normativa[89]	
+58-437	8639-8640	,	Allegazione normativa[89]	
+58-438	8641-8646	porro	Allegazione normativa[89]	
+58-439	8647-8648	§	Allegazione normativa[89]	
+58-440	8649-8650	1	Allegazione normativa[89]	
+58-441	8650-8651	.	_	
+58-442	8653-8657	Quod	_	
+58-443	8658-8665	aliquis	_	
+58-444	8666-8669	sit	_	
+58-445	8670-8676	filius	_	
+58-446	8677-8685	alterius	_	
+58-447	8686-8689	non	_	
+58-448	8690-8696	posset	_	
+58-449	8697-8701	vere	_	
+58-450	8702-8709	probari	_	
+58-451	8709-8710	,	_	
+58-452	8711-8713	ff	Allegazione normativa[90]	
+58-453	8713-8714	.	Allegazione normativa[90]	
+58-454	8715-8717	de	Allegazione normativa[90]	
+58-455	8718-8723	condi	Allegazione normativa[90]	
+58-456	8723-8724	.	Allegazione normativa[90]	
+58-457	8725-8727	et	Allegazione normativa[90]	
+58-458	8728-8733	demon	Allegazione normativa[90]	
+58-459	8733-8734	.	Allegazione normativa[90]	
+58-460	8734-8735	,	Allegazione normativa[90]	
+58-461	8736-8742	Lucius	Allegazione normativa[90]	
+58-462	8742-8743	.	_	
+
+#Text=Condemnatur
+59-1	8748-8759	Condemnatur	_	
+
+#Text=Hoc est notorium iuris.
+60-1	8761-8764	Hoc	_	
+60-2	8765-8768	est	_	
+60-3	8769-8777	notorium	_	
+60-4	8778-8783	iuris	_	
+60-5	8783-8784	.	_	
+
+#Text=Occultum
+61-1	8789-8797	Occultum	_	
+
+#Text=Quod non habet vindictam, quia latentia peccata vindictam non habent, 32. q. 5, Christiana.  Et tamdiu reputatur occultum, licet plures sciant, quamdiu ab ecclesia toleratur, ut hic dicitur, et 15. q. 8, sciscitantibus.
+62-1	8799-8803	Quod	_	
+62-2	8804-8807	non	_	
+62-3	8808-8813	habet	_	
+62-4	8814-8823	vindictam	_	
+62-5	8823-8824	,	_	
+62-6	8825-8829	quia	_	
+62-7	8830-8838	latentia	_	
+62-8	8839-8846	peccata	_	
+62-9	8847-8856	vindictam	_	
+62-10	8857-8860	non	_	
+62-11	8861-8867	habent	_	
+62-12	8867-8868	,	_	
+62-13	8869-8871	32	Allegazione normativa[91]	
+62-14	8871-8872	.	Allegazione normativa[91]	
+62-15	8873-8874	q	Allegazione normativa[91]	
+62-16	8874-8875	.	Allegazione normativa[91]	
+62-17	8876-8877	5	Allegazione normativa[91]	
+62-18	8877-8878	,	Allegazione normativa[91]	
+62-19	8879-8889	Christiana	Allegazione normativa[91]	
+62-20	8889-8890	.	_	
+62-21	8892-8894	Et	_	
+62-22	8895-8901	tamdiu	_	
+62-23	8902-8911	reputatur	_	
+62-24	8912-8920	occultum	_	
+62-25	8920-8921	,	_	
+62-26	8922-8927	licet	_	
+62-27	8928-8934	plures	_	
+62-28	8935-8941	sciant	_	
+62-29	8941-8942	,	_	
+62-30	8943-8950	quamdiu	_	
+62-31	8951-8953	ab	_	
+62-32	8954-8962	ecclesia	_	
+62-33	8963-8972	toleratur	_	
+62-34	8972-8973	,	_	
+62-35	8974-8976	ut	_	
+62-36	8977-8980	hic	_	
+62-37	8981-8988	dicitur	_	
+62-38	8988-8989	,	_	
+62-39	8990-8992	et	_	
+62-40	8993-8995	15	Allegazione normativa[92]	
+62-41	8995-8996	.	Allegazione normativa[92]	
+62-42	8997-8998	q	Allegazione normativa[92]	
+62-43	8998-8999	.	Allegazione normativa[92]	
+62-44	9000-9001	8	Allegazione normativa[92]	
+62-45	9001-9002	,	Allegazione normativa[92]	
+62-46	9003-9017	sciscitantibus	Allegazione normativa[92]	
+62-47	9017-9018	.	_	
+
+#Text=Non diffitetur
+63-1	9023-9026	Non	_	
+63-2	9027-9037	diffitetur	_	
+
+#Text=Immo confitetur in iure, et sic notorium iuris.  Et sic duobus modis dicitur notorium iuris per confessionem et per sententian, infra, de cohab. cler. et mul., quaesitum, ut dicitur in notula: ad intelligentiam, et hic.  Ber.
+64-1	9039-9043	Immo	_	
+64-2	9044-9054	confitetur	_	
+64-3	9055-9057	in	_	
+64-4	9058-9062	iure	_	
+64-5	9062-9063	,	_	
+64-6	9064-9066	et	_	
+64-7	9067-9070	sic	_	
+64-8	9071-9079	notorium	_	
+64-9	9080-9085	iuris	_	
+64-10	9085-9086	.	_	
+64-11	9088-9090	Et	_	
+64-12	9091-9094	sic	_	
+64-13	9095-9101	duobus	_	
+64-14	9102-9107	modis	_	
+64-15	9108-9115	dicitur	_	
+64-16	9116-9124	notorium	_	
+64-17	9125-9130	iuris	_	
+64-18	9131-9134	per	_	
+64-19	9135-9147	confessionem	_	
+64-20	9148-9150	et	_	
+64-21	9151-9154	per	_	
+64-22	9155-9165	sententian	_	
+64-23	9165-9166	,	_	
+64-24	9167-9172	infra	_	
+64-25	9172-9173	,	_	
+64-26	9174-9176	de	Allegazione normativa[93]	
+64-27	9177-9182	cohab	Allegazione normativa[93]	
+64-28	9182-9183	.	Allegazione normativa[93]	
+64-29	9184-9188	cler	Allegazione normativa[93]	
+64-30	9188-9189	.	Allegazione normativa[93]	
+64-31	9190-9192	et	Allegazione normativa[93]	
+64-32	9193-9196	mul	Allegazione normativa[93]	
+64-33	9196-9197	.	Allegazione normativa[93]	
+64-34	9197-9198	,	Allegazione normativa[93]	
+64-35	9199-9208	quaesitum	Allegazione normativa[93]	
+64-36	9208-9209	,	_	
+64-37	9210-9212	ut	_	
+64-38	9213-9220	dicitur	_	
+64-39	9221-9223	in	_	
+64-40	9224-9230	notula	_	
+64-41	9230-9231	:	_	
+64-42	9232-9234	ad	_	
+64-43	9235-9249	intelligentiam	_	
+64-44	9249-9250	,	_	
+64-45	9251-9253	et	_	
+64-46	9254-9257	hic	_	
+64-47	9257-9258	.	_	
+64-48	9260-9263	Ber	_	
+64-49	9263-9264	.	_	
+
+#Text=Canonice condemnatus
+65-1	9269-9277	Canonice	_	
+65-2	9278-9289	condemnatus	_	
+
+#Text=In quo casu nullus debet audire officium illius, quo etiam casu loquitur prima auctoritas, nullus audiat etc.  Ber.
+66-1	9291-9293	In	_	
+66-2	9294-9297	quo	_	
+66-3	9298-9302	casu	_	
+66-4	9303-9309	nullus	_	
+66-5	9310-9315	debet	_	
+66-6	9316-9322	audire	_	
+66-7	9323-9331	officium	_	
+66-8	9332-9338	illius	_	
+66-9	9338-9339	,	_	
+66-10	9340-9343	quo	_	
+66-11	9344-9349	etiam	_	
+66-12	9350-9354	casu	_	
+66-13	9355-9363	loquitur	_	
+66-14	9364-9369	prima	_	
+66-15	9370-9380	auctoritas	_	
+66-16	9380-9381	,	_	
+66-17	9382-9388	nullus	_	
+66-18	9389-9395	audiat	_	
+66-19	9396-9399	etc	_	
+66-20	9399-9400	.	_	
+66-21	9402-9405	Ber	_	
+66-22	9405-9406	.	_	
+
+#Text=Occultum
+67-1	9411-9419	Occultum	_	
+
+#Text=Hic distinguitur prout sequitur.
+68-1	9421-9424	Hic	_	
+68-2	9425-9437	distinguitur	_	
+68-3	9438-9443	prout	_	
+68-4	9444-9452	sequitur	_	
+68-5	9452-9453	.	_	
+
+#Text=Talium
+69-1	9458-9464	Talium	_	
+
+#Text=Scilicet qui pene occulti sunt seu ab ecclesia tolerati ab officiis talium abstinere bono zelo, ut per hoc ad poenitentiam revertantur, permittitur, sed ex contemptu abstinendum non est, quia licet in fornicatione iaceant, non sunt contemnendi, ut sequitur.  Aliud est si tamquam tacentium etc., quia illud non licet.
+70-1	9466-9474	Scilicet	_	
+70-2	9475-9478	qui	_	
+70-3	9479-9483	pene	_	
+70-4	9484-9491	occulti	_	
+70-5	9492-9496	sunt	_	
+70-6	9497-9500	seu	_	
+70-7	9501-9503	ab	_	
+70-8	9504-9512	ecclesia	_	
+70-9	9513-9521	tolerati	_	
+70-10	9522-9524	ab	_	
+70-11	9525-9533	officiis	_	
+70-12	9534-9540	talium	_	
+70-13	9541-9550	abstinere	_	
+70-14	9551-9555	bono	_	
+70-15	9556-9560	zelo	_	
+70-16	9560-9561	,	_	
+70-17	9562-9564	ut	_	
+70-18	9565-9568	per	_	
+70-19	9569-9572	hoc	_	
+70-20	9573-9575	ad	_	
+70-21	9576-9588	poenitentiam	_	
+70-22	9589-9600	revertantur	_	
+70-23	9600-9601	,	_	
+70-24	9602-9613	permittitur	_	
+70-25	9613-9614	,	_	
+70-26	9615-9618	sed	_	
+70-27	9619-9621	ex	_	
+70-28	9622-9631	contemptu	_	
+70-29	9632-9643	abstinendum	_	
+70-30	9644-9647	non	_	
+70-31	9648-9651	est	_	
+70-32	9651-9652	,	_	
+70-33	9653-9657	quia	_	
+70-34	9658-9663	licet	_	
+70-35	9664-9666	in	_	
+70-36	9667-9679	fornicatione	_	
+70-37	9680-9687	iaceant	_	
+70-38	9687-9688	,	_	
+70-39	9689-9692	non	_	
+70-40	9693-9697	sunt	_	
+70-41	9698-9709	contemnendi	_	
+70-42	9709-9710	,	_	
+70-43	9711-9713	ut	_	
+70-44	9714-9722	sequitur	_	
+70-45	9722-9723	.	_	
+70-46	9725-9730	Aliud	_	
+70-47	9731-9734	est	_	
+70-48	9735-9737	si	_	
+70-49	9738-9745	tamquam	_	
+70-50	9746-9755	tacentium	_	
+70-51	9756-9759	etc	_	
+70-52	9759-9760	.	_	
+70-53	9760-9761	,	_	
+70-54	9762-9766	quia	_	
+70-55	9767-9772	illud	_	
+70-56	9773-9776	non	_	
+70-57	9777-9782	licet	_	
+70-58	9782-9783	.	_	
+
+#Text=Tolerantur
+71-1	9788-9798	Tolerantur	_	
+
+#Text=In quo casu loquitur secunda auctoritas, non potest aliquis etc.  Ber.
+72-1	9800-9802	In	_	
+72-2	9803-9806	quo	_	
+72-3	9807-9811	casu	_	
+72-4	9812-9820	loquitur	_	
+72-5	9821-9828	secunda	_	
+72-6	9829-9839	auctoritas	_	
+72-7	9839-9840	,	_	
+72-8	9841-9844	non	_	
+72-9	9845-9851	potest	_	
+72-10	9852-9859	aliquis	_	
+72-11	9860-9863	etc	_	
+72-12	9863-9864	.	_	
+72-13	9866-9869	Ber	_	
+72-14	9869-9870	.	_	
+
+#Text=Operis evidentiam
+73-1	9875-9881	Operis	_	
+73-2	9882-9892	evidentiam	_	
+
+#Text=Hic explicat notorium facti, in quo casu et duobus praemissis, scilicet cum sunt condemnati vel confessi in iure, officia ipsorum sunt respuenda, infra, de cohab. cler. et mul., quaesitum.
+74-1	9894-9897	Hic	_	
+74-2	9898-9906	explicat	_	
+74-3	9907-9915	notorium	_	
+74-4	9916-9921	facti	_	
+74-5	9921-9922	,	_	
+74-6	9923-9925	in	_	
+74-7	9926-9929	quo	_	
+74-8	9930-9934	casu	_	
+74-9	9935-9937	et	_	
+74-10	9938-9944	duobus	_	
+74-11	9945-9955	praemissis	_	
+74-12	9955-9956	,	_	
+74-13	9957-9965	scilicet	_	
+74-14	9966-9969	cum	_	
+74-15	9970-9974	sunt	_	
+74-16	9975-9985	condemnati	_	
+74-17	9986-9989	vel	_	
+74-18	9990-9998	confessi	_	
+74-19	9999-10001	in	_	
+74-20	10002-10006	iure	_	
+74-21	10006-10007	,	_	
+74-22	10008-10015	officia	_	
+74-23	10016-10023	ipsorum	_	
+74-24	10024-10028	sunt	_	
+74-25	10029-10038	respuenda	_	
+74-26	10038-10039	,	_	
+74-27	10040-10045	infra	_	
+74-28	10045-10046	,	_	
+74-29	10047-10049	de	Allegazione normativa[94]	
+74-30	10050-10055	cohab	Allegazione normativa[94]	
+74-31	10055-10056	.	Allegazione normativa[94]	
+74-32	10057-10061	cler	Allegazione normativa[94]	
+74-33	10061-10062	.	Allegazione normativa[94]	
+74-34	10063-10065	et	Allegazione normativa[94]	
+74-35	10066-10069	mul	Allegazione normativa[94]	
+74-36	10069-10070	.	Allegazione normativa[94]	
+74-37	10070-10071	,	Allegazione normativa[94]	
+74-38	10072-10081	quaesitum	Allegazione normativa[94]	
+74-39	10081-10082	.	_	
+
+#Text=X 3.02.08 Tua nos
+75-1	10086-10087	X	_	
+75-2	10088-10095	3.02.08	_	
+75-3	10096-10099	Tua	_	
+75-4	10100-10103	nos	_	
+
+#Text=Conveniuntur
+76-1	10108-10120	Conveniuntur	_	
+
+#Text=Id est, interrogantur.
+77-1	10122-10124	Id	_	
+77-2	10125-10128	est	_	
+77-3	10128-10129	,	_	
+77-4	10130-10143	interrogantur	_	
+77-5	10143-10144	.	_	
+
+#Text=Testimonio
+78-1	10149-10159	Testimonio	_	
+
+#Text=Simpliciter dato sine iuramento.  Ber.
+79-1	10161-10172	Simpliciter	_	
+79-2	10173-10177	dato	_	
+79-3	10178-10182	sine	_	
+79-4	10183-10192	iuramento	_	
+79-5	10192-10193	.	_	
+79-6	10195-10198	Ber	_	
+79-7	10198-10199	.	_	
+
+#Text=Inter quos
+80-1	10204-10209	Inter	_	
+80-2	10210-10214	quos	_	
+
+#Text=Et ideo magis praesumitur quod vitam illorum agnoverunt, 23. q. 1, paratus; supra, de praesump., quosdam; et supra, de praesump., quanto; et 12. q. 2, qui et humanis; et 16. dist., quod dicitis.
+81-1	10216-10218	Et	_	
+81-2	10219-10223	ideo	_	
+81-3	10224-10229	magis	_	
+81-4	10230-10241	praesumitur	_	
+81-5	10242-10246	quod	_	
+81-6	10247-10252	vitam	_	
+81-7	10253-10260	illorum	_	
+81-8	10261-10271	agnoverunt	_	
+81-9	10271-10272	,	_	
+81-10	10273-10275	23	Allegazione normativa[95]	
+81-11	10275-10276	.	Allegazione normativa[95]	
+81-12	10277-10278	q	Allegazione normativa[95]	
+81-13	10278-10279	.	Allegazione normativa[95]	
+81-14	10280-10281	1	Allegazione normativa[95]	
+81-15	10281-10282	,	Allegazione normativa[95]	
+81-16	10283-10290	paratus	Allegazione normativa[95]	
+81-17	10290-10291	;	_	
+81-18	10292-10297	supra	_	
+81-19	10297-10298	,	_	
+81-20	10299-10301	de	Allegazione normativa[96]	
+81-21	10302-10310	praesump	Allegazione normativa[96]	
+81-22	10310-10311	.	Allegazione normativa[96]	
+81-23	10311-10312	,	Allegazione normativa[96]	
+81-24	10313-10320	quosdam	Allegazione normativa[96]	
+81-25	10320-10321	;	_	
+81-26	10322-10324	et	_	
+81-27	10325-10330	supra	_	
+81-28	10330-10331	,	_	
+81-29	10332-10334	de	Allegazione normativa[97]	
+81-30	10335-10343	praesump	Allegazione normativa[97]	
+81-31	10343-10344	.	Allegazione normativa[97]	
+81-32	10344-10345	,	Allegazione normativa[97]	
+81-33	10346-10352	quanto	Allegazione normativa[97]	
+81-34	10352-10353	;	_	
+81-35	10354-10356	et	_	
+81-36	10357-10359	12	Allegazione normativa[98]	
+81-37	10359-10360	.	Allegazione normativa[98]	
+81-38	10361-10362	q	Allegazione normativa[98]	
+81-39	10362-10363	.	Allegazione normativa[98]	
+81-40	10364-10365	2	Allegazione normativa[98]	
+81-41	10365-10366	,	Allegazione normativa[98]	
+81-42	10367-10370	qui	Allegazione normativa[98]	
+81-43	10371-10373	et	Allegazione normativa[98]	
+81-44	10374-10381	humanis	Allegazione normativa[98]	
+81-45	10381-10382	;	_	
+81-46	10383-10385	et	_	
+81-47	10386-10388	16	Allegazione normativa[99]	
+81-48	10388-10389	.	Allegazione normativa[99]	
+81-49	10390-10394	dist	Allegazione normativa[99]	
+81-50	10394-10395	.	Allegazione normativa[99]	
+81-51	10395-10396	,	Allegazione normativa[99]	
+81-52	10397-10401	quod	Allegazione normativa[99]	
+81-53	10402-10409	dicitis	Allegazione normativa[99]	
+81-54	10409-10410	.	_	
+
+#Text=Nec accusator
+82-1	10415-10418	Nec	_	
+82-2	10419-10428	accusator	_	
+
+#Text=2. q. 1, de manifesta; infra, de accusat., evidentia; et supra, de iureiur., ad nostram 3.
+83-1	10430-10431	2	Allegazione normativa[100]	
+83-2	10431-10432	.	Allegazione normativa[100]	
+83-3	10433-10434	q	Allegazione normativa[100]	
+83-4	10434-10435	.	Allegazione normativa[100]	
+83-5	10436-10437	1	Allegazione normativa[100]	
+83-6	10437-10438	,	Allegazione normativa[100]	
+83-7	10439-10441	de	Allegazione normativa[100]	
+83-8	10442-10451	manifesta	Allegazione normativa[100]	
+83-9	10451-10452	;	_	
+83-10	10453-10458	infra	_	
+83-11	10458-10459	,	_	
+83-12	10460-10462	de	Allegazione normativa[101]	
+83-13	10463-10470	accusat	Allegazione normativa[101]	
+83-14	10470-10471	.	Allegazione normativa[101]	
+83-15	10471-10472	,	Allegazione normativa[101]	
+83-16	10473-10482	evidentia	Allegazione normativa[101]	
+83-17	10482-10483	;	_	
+83-18	10484-10486	et	_	
+83-19	10487-10492	supra	_	
+83-20	10492-10493	,	_	
+83-21	10494-10496	de	Allegazione normativa[102]	
+83-22	10497-10504	iureiur	Allegazione normativa[102]	
+83-23	10504-10505	.	Allegazione normativa[102]	
+83-24	10505-10506	,	Allegazione normativa[102]	
+83-25	10507-10509	ad	Allegazione normativa[102]	
+83-26	10510-10517	nostram	Allegazione normativa[102]	
+83-27	10518-10519	3	_	
+83-28	10519-10520	.	_	
+
+#Text=Celari
+84-1	10525-10531	Celari	_	
+
+#Text=Quia et si vellet celare, negatio nulla esset, C. de poe., qui sententiam; ff. de trib. act., illud § penulti.
+85-1	10533-10537	Quia	_	
+85-2	10538-10540	et	_	
+85-3	10541-10543	si	_	
+85-4	10544-10550	vellet	_	
+85-5	10551-10557	celare	_	
+85-6	10557-10558	,	_	
+85-7	10559-10566	negatio	_	
+85-8	10567-10572	nulla	_	
+85-9	10573-10578	esset	_	
+85-10	10578-10579	,	_	
+85-11	10580-10581	C	Allegazione normativa[103]	
+85-12	10581-10582	.	Allegazione normativa[103]	
+85-13	10583-10585	de	Allegazione normativa[103]	
+85-14	10586-10589	poe	Allegazione normativa[103]	
+85-15	10589-10590	.	Allegazione normativa[103]	
+85-16	10590-10591	,	Allegazione normativa[103]	
+85-17	10592-10595	qui	Allegazione normativa[103]	
+85-18	10596-10606	sententiam	Allegazione normativa[103]	
+85-19	10606-10607	;	_	
+85-20	10608-10610	ff	Allegazione normativa[104]	
+85-21	10610-10611	.	Allegazione normativa[104]	
+85-22	10612-10614	de	Allegazione normativa[104]	
+85-23	10615-10619	trib	Allegazione normativa[104]	
+85-24	10619-10620	.	Allegazione normativa[104]	
+85-25	10621-10624	act	Allegazione normativa[104]	
+85-26	10624-10625	.	Allegazione normativa[104]	
+85-27	10625-10626	,	Allegazione normativa[104]	
+85-28	10627-10632	illud	Allegazione normativa[104]	
+85-29	10633-10634	§	Allegazione normativa[104]	
+85-30	10635-10642	penulti	Allegazione normativa[104]	
+85-31	10642-10643	.	Allegazione normativa[104]	
+
+#Text=Ex evidentia
+86-1	10648-10650	Ex	_	
+86-2	10651-10660	evidentia	_	
+
+#Text=Si constet aliquem habere suspectam mulierem secum in domo, eo ipso videtur probata fornicatio, supra, de cohab. cler. et mul., si quisquam; et supra, de cohab. cler. et mul., clericos.  Et si publice eam detineat, eo ipso convictus est, ut in capitulo supra, de cohab. cler. et mul., clericos.  Alias enim non posset esse certum nisi per huiusmodi praesumptionem supra, de praesump., litteris; et supra, de praesump., ex studiis.  Ergo si haec notoria non sunt, sed tamen fama sit, testimonia requiritur, ut sequitur in littera.
+87-1	10662-10664	Si	_	
+87-2	10665-10672	constet	_	
+87-3	10673-10680	aliquem	_	
+87-4	10681-10687	habere	_	
+87-5	10688-10697	suspectam	_	
+87-6	10698-10706	mulierem	_	
+87-7	10707-10712	secum	_	
+87-8	10713-10715	in	_	
+87-9	10716-10720	domo	_	
+87-10	10720-10721	,	_	
+87-11	10722-10724	eo	_	
+87-12	10725-10729	ipso	_	
+87-13	10730-10737	videtur	_	
+87-14	10738-10745	probata	_	
+87-15	10746-10756	fornicatio	_	
+87-16	10756-10757	,	_	
+87-17	10758-10763	supra	_	
+87-18	10763-10764	,	_	
+87-19	10765-10767	de	Allegazione normativa[105]	
+87-20	10768-10773	cohab	Allegazione normativa[105]	
+87-21	10773-10774	.	Allegazione normativa[105]	
+87-22	10775-10779	cler	Allegazione normativa[105]	
+87-23	10779-10780	.	Allegazione normativa[105]	
+87-24	10781-10783	et	Allegazione normativa[105]	
+87-25	10784-10787	mul	Allegazione normativa[105]	
+87-26	10787-10788	.	Allegazione normativa[105]	
+87-27	10788-10789	,	Allegazione normativa[105]	
+87-28	10790-10792	si	Allegazione normativa[105]	
+87-29	10793-10801	quisquam	Allegazione normativa[105]	
+87-30	10801-10802	;	_	
+87-31	10803-10805	et	_	
+87-32	10806-10811	supra	_	
+87-33	10811-10812	,	_	
+87-34	10813-10815	de	Allegazione normativa[106]	
+87-35	10816-10821	cohab	Allegazione normativa[106]	
+87-36	10821-10822	.	Allegazione normativa[106]	
+87-37	10823-10827	cler	Allegazione normativa[106]	
+87-38	10827-10828	.	Allegazione normativa[106]	
+87-39	10829-10831	et	Allegazione normativa[106]	
+87-40	10832-10835	mul	Allegazione normativa[106]	
+87-41	10835-10836	.	Allegazione normativa[106]	
+87-42	10836-10837	,	Allegazione normativa[106]	
+87-43	10838-10846	clericos	Allegazione normativa[106]	
+87-44	10846-10847	.	_	
+87-45	10849-10851	Et	_	
+87-46	10852-10854	si	_	
+87-47	10855-10862	publice	_	
+87-48	10863-10866	eam	_	
+87-49	10867-10875	detineat	_	
+87-50	10875-10876	,	_	
+87-51	10877-10879	eo	_	
+87-52	10880-10884	ipso	_	
+87-53	10885-10894	convictus	_	
+87-54	10895-10898	est	_	
+87-55	10898-10899	,	_	
+87-56	10900-10902	ut	_	
+87-57	10903-10905	in	_	
+87-58	10906-10914	capitulo	_	
+87-59	10915-10920	supra	_	
+87-60	10920-10921	,	_	
+87-61	10922-10924	de	Allegazione normativa[107]	
+87-62	10925-10930	cohab	Allegazione normativa[107]	
+87-63	10930-10931	.	Allegazione normativa[107]	
+87-64	10932-10936	cler	Allegazione normativa[107]	
+87-65	10936-10937	.	Allegazione normativa[107]	
+87-66	10938-10940	et	Allegazione normativa[107]	
+87-67	10941-10944	mul	Allegazione normativa[107]	
+87-68	10944-10945	.	Allegazione normativa[107]	
+87-69	10945-10946	,	Allegazione normativa[107]	
+87-70	10947-10955	clericos	Allegazione normativa[107]	
+87-71	10955-10956	.	_	
+87-72	10958-10963	Alias	_	
+87-73	10964-10968	enim	_	
+87-74	10969-10972	non	_	
+87-75	10973-10979	posset	_	
+87-76	10980-10984	esse	_	
+87-77	10985-10991	certum	_	
+87-78	10992-10996	nisi	_	
+87-79	10997-11000	per	_	
+87-80	11001-11010	huiusmodi	_	
+87-81	11011-11025	praesumptionem	_	
+87-82	11026-11031	supra	_	
+87-83	11031-11032	,	_	
+87-84	11033-11035	de	Allegazione normativa[108]	
+87-85	11036-11044	praesump	Allegazione normativa[108]	
+87-86	11044-11045	.	Allegazione normativa[108]	
+87-87	11045-11046	,	Allegazione normativa[108]	
+87-88	11047-11055	litteris	Allegazione normativa[108]	
+87-89	11055-11056	;	_	
+87-90	11057-11059	et	_	
+87-91	11060-11065	supra	_	
+87-92	11065-11066	,	_	
+87-93	11067-11069	de	Allegazione normativa[109]	
+87-94	11070-11078	praesump	Allegazione normativa[109]	
+87-95	11078-11079	.	Allegazione normativa[109]	
+87-96	11079-11080	,	Allegazione normativa[109]	
+87-97	11081-11083	ex	Allegazione normativa[109]	
+87-98	11084-11091	studiis	Allegazione normativa[109]	
+87-99	11091-11092	.	_	
+87-100	11094-11098	Ergo	_	
+87-101	11099-11101	si	_	
+87-102	11102-11106	haec	_	
+87-103	11107-11114	notoria	_	
+87-104	11115-11118	non	_	
+87-105	11119-11123	sunt	_	
+87-106	11123-11124	,	_	
+87-107	11125-11128	sed	_	
+87-108	11129-11134	tamen	_	
+87-109	11135-11139	fama	_	
+87-110	11140-11143	sit	_	
+87-111	11143-11144	,	_	
+87-112	11145-11155	testimonia	_	
+87-113	11156-11166	requiritur	_	
+87-114	11166-11167	,	_	
+87-115	11168-11170	ut	_	
+87-116	11171-11179	sequitur	_	
+87-117	11180-11182	in	_	
+87-118	11183-11190	littera	_	
+87-119	11190-11191	.	_	
+
+#Text=Testimoniis
+88-1	11196-11207	Testimoniis	_	
+
+#Text=ff. de testi., testium § item divus; et 4. q. 3, si testes § alia est fides; et in Auth. de fid. instrum. § si vero, coll. 6.  Valent tamen talia testimonia ad infamiam alicuius, arg. de conse. dist. 1, iubemus; 24. dist., nullus acolythorum; et 2. q. 7, cum pastoris.
+89-1	11209-11211	ff	Allegazione normativa[110]	
+89-2	11211-11212	.	Allegazione normativa[110]	
+89-3	11213-11215	de	Allegazione normativa[110]	
+89-4	11216-11221	testi	Allegazione normativa[110]	
+89-5	11221-11222	.	Allegazione normativa[110]	
+89-6	11222-11223	,	Allegazione normativa[110]	
+89-7	11224-11231	testium	Allegazione normativa[110]	
+89-8	11232-11233	§	Allegazione normativa[110]	
+89-9	11234-11238	item	Allegazione normativa[110]	
+89-10	11239-11244	divus	Allegazione normativa[110]	
+89-11	11244-11245	;	_	
+89-12	11246-11248	et	_	
+89-13	11249-11250	4	Allegazione normativa[111]	
+89-14	11250-11251	.	Allegazione normativa[111]	
+89-15	11252-11253	q	Allegazione normativa[111]	
+89-16	11253-11254	.	Allegazione normativa[111]	
+89-17	11255-11256	3	Allegazione normativa[111]	
+89-18	11256-11257	,	Allegazione normativa[111]	
+89-19	11258-11260	si	Allegazione normativa[111]	
+89-20	11261-11267	testes	Allegazione normativa[111]	
+89-21	11268-11269	§	Allegazione normativa[111]	
+89-22	11270-11274	alia	Allegazione normativa[111]	
+89-23	11275-11278	est	Allegazione normativa[111]	
+89-24	11279-11284	fides	Allegazione normativa[111]	
+89-25	11284-11285	;	_	
+89-26	11286-11288	et	_	
+89-27	11289-11291	in	_	
+89-28	11292-11296	Auth	Allegazione normativa[112]	
+89-29	11296-11297	.	Allegazione normativa[112]	
+89-30	11298-11300	de	Allegazione normativa[112]	
+89-31	11301-11304	fid	Allegazione normativa[112]	
+89-32	11304-11305	.	Allegazione normativa[112]	
+89-33	11306-11313	instrum	Allegazione normativa[112]	
+89-34	11313-11314	.	Allegazione normativa[112]	
+89-35	11315-11316	§	Allegazione normativa[112]	
+89-36	11317-11319	si	Allegazione normativa[112]	
+89-37	11320-11324	vero	Allegazione normativa[112]	
+89-38	11324-11325	,	Allegazione normativa[112]	
+89-39	11326-11330	coll	Allegazione normativa[112]	
+89-40	11330-11331	.	Allegazione normativa[112]	
+89-41	11332-11333	6	Allegazione normativa[112]	
+89-42	11333-11334	.	_	
+89-43	11336-11342	Valent	_	
+89-44	11343-11348	tamen	_	
+89-45	11349-11354	talia	_	
+89-46	11355-11365	testimonia	_	
+89-47	11366-11368	ad	_	
+89-48	11369-11377	infamiam	_	
+89-49	11378-11386	alicuius	_	
+89-50	11386-11387	,	_	
+89-51	11388-11391	arg	_	
+89-52	11391-11392	.	_	
+89-53	11393-11395	de	Allegazione normativa[113]	
+89-54	11396-11401	conse	Allegazione normativa[113]	
+89-55	11401-11402	.	Allegazione normativa[113]	
+89-56	11403-11407	dist	Allegazione normativa[113]	
+89-57	11407-11408	.	Allegazione normativa[113]	
+89-58	11409-11410	1	Allegazione normativa[113]	
+89-59	11410-11411	,	Allegazione normativa[113]	
+89-60	11412-11419	iubemus	Allegazione normativa[113]	
+89-61	11419-11420	;	_	
+89-62	11421-11423	24	Allegazione normativa[114]	
+89-63	11423-11424	.	Allegazione normativa[114]	
+89-64	11425-11429	dist	Allegazione normativa[114]	
+89-65	11429-11430	.	Allegazione normativa[114]	
+89-66	11430-11431	,	Allegazione normativa[114]	
+89-67	11432-11438	nullus	Allegazione normativa[114]	
+89-68	11439-11450	acolythorum	Allegazione normativa[114]	
+89-69	11450-11451	;	_	
+89-70	11452-11454	et	_	
+89-71	11455-11456	2	Allegazione normativa[115]	
+89-72	11456-11457	.	Allegazione normativa[115]	
+89-73	11458-11459	q	Allegazione normativa[115]	
+89-74	11459-11460	.	Allegazione normativa[115]	
+89-75	11461-11462	7	Allegazione normativa[115]	
+89-76	11462-11463	,	Allegazione normativa[115]	
+89-77	11464-11467	cum	Allegazione normativa[115]	
+89-78	11468-11476	pastoris	Allegazione normativa[115]	
+89-79	11476-11477	.	_	
+
+#Text=Scandalum
+90-1	11482-11491	Scandalum	_	
+
+#Text=Ex hoc videtur quod propter solam suspicionem sive famam non est indicenda purgatio nisi scandalum oriatur, arg. 2. q. 5, presbyter; et 3. q. 2, audivimus; et 2. q. 1, nomen; et infra, de accusat., qualiter et quando 2.  Ber.
+91-1	11493-11495	Ex	_	
+91-2	11496-11499	hoc	_	
+91-3	11500-11507	videtur	_	
+91-4	11508-11512	quod	_	
+91-5	11513-11520	propter	_	
+91-6	11521-11526	solam	_	
+91-7	11527-11538	suspicionem	_	
+91-8	11539-11543	sive	_	
+91-9	11544-11549	famam	_	
+91-10	11550-11553	non	_	
+91-11	11554-11557	est	_	
+91-12	11558-11567	indicenda	_	
+91-13	11568-11576	purgatio	_	
+91-14	11577-11581	nisi	_	
+91-15	11582-11591	scandalum	_	
+91-16	11592-11599	oriatur	_	
+91-17	11599-11600	,	_	
+91-18	11601-11604	arg	_	
+91-19	11604-11605	.	_	
+91-20	11606-11607	2	Allegazione normativa[116]	
+91-21	11607-11608	.	Allegazione normativa[116]	
+91-22	11609-11610	q	Allegazione normativa[116]	
+91-23	11610-11611	.	Allegazione normativa[116]	
+91-24	11612-11613	5	Allegazione normativa[116]	
+91-25	11613-11614	,	Allegazione normativa[116]	
+91-26	11615-11624	presbyter	Allegazione normativa[116]	
+91-27	11624-11625	;	_	
+91-28	11626-11628	et	_	
+91-29	11629-11630	3	Allegazione normativa[117]	
+91-30	11630-11631	.	Allegazione normativa[117]	
+91-31	11632-11633	q	Allegazione normativa[117]	
+91-32	11633-11634	.	Allegazione normativa[117]	
+91-33	11635-11636	2	Allegazione normativa[117]	
+91-34	11636-11637	,	Allegazione normativa[117]	
+91-35	11638-11647	audivimus	Allegazione normativa[117]	
+91-36	11647-11648	;	_	
+91-37	11649-11651	et	_	
+91-38	11652-11653	2	Allegazione normativa[118]	
+91-39	11653-11654	.	Allegazione normativa[118]	
+91-40	11655-11656	q	Allegazione normativa[118]	
+91-41	11656-11657	.	Allegazione normativa[118]	
+91-42	11658-11659	1	Allegazione normativa[118]	
+91-43	11659-11660	,	Allegazione normativa[118]	
+91-44	11661-11666	nomen	Allegazione normativa[118]	
+91-45	11666-11667	;	_	
+91-46	11668-11670	et	_	
+91-47	11671-11676	infra	_	
+91-48	11676-11677	,	_	
+91-49	11678-11680	de	Allegazione normativa[119]	
+91-50	11681-11688	accusat	Allegazione normativa[119]	
+91-51	11688-11689	.	Allegazione normativa[119]	
+91-52	11689-11690	,	Allegazione normativa[119]	
+91-53	11691-11699	qualiter	Allegazione normativa[119]	
+91-54	11700-11702	et	Allegazione normativa[119]	
+91-55	11703-11709	quando	Allegazione normativa[119]	
+91-56	11710-11711	2	Allegazione normativa[119]	
+91-57	11711-11712	.	_	
+91-58	11714-11717	Ber	_	
+91-59	11717-11718	.	_	
+
+#Text=X 3.02.09 A nobis tua
+92-1	11722-11723	X	_	
+92-2	11724-11731	3.02.09	_	
+92-3	11732-11733	A	_	
+92-4	11734-11739	nobis	_	
+92-5	11740-11743	tua	_	
+
+#Text=Mulierculas
+93-1	11748-11759	Mulierculas	_	
+
+#Text=32. dist., interdixit; et 81. dist., cum omnibus.
+94-1	11761-11763	32	Allegazione normativa[120]	
+94-2	11763-11764	.	Allegazione normativa[120]	
+94-3	11765-11769	dist	Allegazione normativa[120]	
+94-4	11769-11770	.	Allegazione normativa[120]	
+94-5	11770-11771	,	Allegazione normativa[120]	
+94-6	11772-11782	interdixit	Allegazione normativa[120]	
+94-7	11782-11783	;	_	
+94-8	11784-11786	et	_	
+94-9	11787-11789	81	Allegazione normativa[121]	
+94-10	11789-11790	.	Allegazione normativa[121]	
+94-11	11791-11795	dist	Allegazione normativa[121]	
+94-12	11795-11796	.	Allegazione normativa[121]	
+94-13	11796-11797	,	Allegazione normativa[121]	
+94-14	11798-11801	cum	Allegazione normativa[121]	
+94-15	11802-11809	omnibus	Allegazione normativa[121]	
+94-16	11809-11810	.	_	
+
+#Text=De illis personas
+95-1	11815-11817	De	_	
+95-2	11818-11823	illis	_	
+95-3	11824-11832	personas	_	
+
+#Text=Arg. contra supra, de cohab. cler. et mul., inhibendum.  Dic super hac materia ut ibi notatum est.
+96-1	11834-11837	Arg	_	
+96-2	11837-11838	.	_	
+96-3	11839-11845	contra	_	
+96-4	11846-11851	supra	_	
+96-5	11851-11852	,	_	
+96-6	11853-11855	de	Allegazione normativa[122]	
+96-7	11856-11861	cohab	Allegazione normativa[122]	
+96-8	11861-11862	.	Allegazione normativa[122]	
+96-9	11863-11867	cler	Allegazione normativa[122]	
+96-10	11867-11868	.	Allegazione normativa[122]	
+96-11	11869-11871	et	Allegazione normativa[122]	
+96-12	11872-11875	mul	Allegazione normativa[122]	
+96-13	11875-11876	.	Allegazione normativa[122]	
+96-14	11876-11877	,	Allegazione normativa[122]	
+96-15	11878-11888	inhibendum	Allegazione normativa[122]	
+96-16	11888-11889	.	_	
+96-17	11891-11894	Dic	_	
+96-18	11895-11900	super	_	
+96-19	11901-11904	hac	_	
+96-20	11905-11912	materia	_	
+96-21	11913-11915	ut	_	
+96-22	11916-11919	ibi	_	
+96-23	11920-11927	notatum	_	
+96-24	11928-11931	est	_	
+96-25	11931-11932	.	_	
+
+#Text=Naturale
+97-1	11937-11945	Naturale	_	
+
+#Text=Sic supra, de praesump., cum in iuventute; et C. de episc. et cler., eum qui.  Ber.
+98-1	11947-11950	Sic	_	
+98-2	11951-11956	supra	_	
+98-3	11956-11957	,	_	
+98-4	11958-11960	de	Allegazione normativa[123]	
+98-5	11961-11969	praesump	Allegazione normativa[123]	
+98-6	11969-11970	.	Allegazione normativa[123]	
+98-7	11970-11971	,	Allegazione normativa[123]	
+98-8	11972-11975	cum	Allegazione normativa[123]	
+98-9	11976-11978	in	Allegazione normativa[123]	
+98-10	11979-11988	iuventute	Allegazione normativa[123]	
+98-11	11988-11989	;	_	
+98-12	11990-11992	et	_	
+98-13	11993-11994	C	Allegazione normativa[124]	
+98-14	11994-11995	.	Allegazione normativa[124]	
+98-15	11996-11998	de	Allegazione normativa[124]	
+98-16	11999-12004	episc	Allegazione normativa[124]	
+98-17	12004-12005	.	Allegazione normativa[124]	
+98-18	12006-12008	et	Allegazione normativa[124]	
+98-19	12009-12013	cler	Allegazione normativa[124]	
+98-20	12013-12014	.	Allegazione normativa[124]	
+98-21	12014-12015	,	Allegazione normativa[124]	
+98-22	12016-12019	eum	Allegazione normativa[124]	
+98-23	12020-12023	qui	Allegazione normativa[124]	
+98-24	12023-12024	.	_	
+98-25	12026-12029	Ber	_	
+98-26	12029-12030	.	_	
+
+#Text=X 3.02.10 Quaesitum est
+99-1	12034-12035	X	_	
+99-2	12036-12043	3.02.10	_	
+99-3	12044-12053	Quaesitum	_	
+99-4	12054-12057	est	_	
+
+#Text=Ad seipsum
+100-1	12062-12064	Ad	_	
+100-2	12065-12072	seipsum	_	
+
+#Text=Nota quod aliquis dicitur suspensus quo ad se tantum, et non quo ad alios, ut quilibet in peccato mortali constitutus, ut 6. dist., in testamentum; et 1. q. 1, sacerdotes, in fi.; supra, de temp. ord., quaesitum; et hic; et supra, de cohab. cler. et mul., vestra.  Quandoque tamen quantum ad se et quantum ad alios, 32. dist., nullus; et 32. dist., praeter; et infra, de simon., tanta; et hic, in fi.; et supra, de cohab. cler. et mul., vestra.  Quandoque aliquis dicitur suspensus quo ad alios et non quo ad se, ut cum civitas vel villa est interdicta propter delictum civium vel saecularis potestatis.  Tunc clerici non sunt suspensi quo ad se, quia in alio loco possunt celebrare non interdicto.  Sic supra, de cleri. peregri., tuae fraternitatis.
+101-1	12074-12078	Nota	_	
+101-2	12079-12083	quod	_	
+101-3	12084-12091	aliquis	_	
+101-4	12092-12099	dicitur	_	
+101-5	12100-12109	suspensus	_	
+101-6	12110-12113	quo	_	
+101-7	12114-12116	ad	_	
+101-8	12117-12119	se	_	
+101-9	12120-12126	tantum	_	
+101-10	12126-12127	,	_	
+101-11	12128-12130	et	_	
+101-12	12131-12134	non	_	
+101-13	12135-12138	quo	_	
+101-14	12139-12141	ad	_	
+101-15	12142-12147	alios	_	
+101-16	12147-12148	,	_	
+101-17	12149-12151	ut	_	
+101-18	12152-12160	quilibet	_	
+101-19	12161-12163	in	_	
+101-20	12164-12171	peccato	_	
+101-21	12172-12179	mortali	_	
+101-22	12180-12191	constitutus	_	
+101-23	12191-12192	,	_	
+101-24	12193-12195	ut	_	
+101-25	12196-12197	6	Allegazione normativa[125]	
+101-26	12197-12198	.	Allegazione normativa[125]	
+101-27	12199-12203	dist	Allegazione normativa[125]	
+101-28	12203-12204	.	Allegazione normativa[125]	
+101-29	12204-12205	,	Allegazione normativa[125]	
+101-30	12206-12208	in	Allegazione normativa[125]	
+101-31	12209-12220	testamentum	Allegazione normativa[125]	
+101-32	12220-12221	;	_	
+101-33	12222-12224	et	_	
+101-34	12225-12226	1	Allegazione normativa[126]	
+101-35	12226-12227	.	Allegazione normativa[126]	
+101-36	12228-12229	q	Allegazione normativa[126]	
+101-37	12229-12230	.	Allegazione normativa[126]	
+101-38	12231-12232	1	Allegazione normativa[126]	
+101-39	12232-12233	,	Allegazione normativa[126]	
+101-40	12234-12244	sacerdotes	Allegazione normativa[126]	
+101-41	12244-12245	,	Allegazione normativa[126]	
+101-42	12246-12248	in	Allegazione normativa[126]	
+101-43	12249-12251	fi	Allegazione normativa[126]	
+101-44	12251-12252	.	Allegazione normativa[126]	
+101-45	12252-12253	;	_	
+101-46	12254-12259	supra	_	
+101-47	12259-12260	,	_	
+101-48	12261-12263	de	Allegazione normativa[127]	
+101-49	12264-12268	temp	Allegazione normativa[127]	
+101-50	12268-12269	.	Allegazione normativa[127]	
+101-51	12270-12273	ord	Allegazione normativa[127]	
+101-52	12273-12274	.	Allegazione normativa[127]	
+101-53	12274-12275	,	Allegazione normativa[127]	
+101-54	12276-12285	quaesitum	Allegazione normativa[127]	
+101-55	12285-12286	;	_	
+101-56	12287-12289	et	_	
+101-57	12290-12293	hic	_	
+101-58	12293-12294	;	_	
+101-59	12295-12297	et	_	
+101-60	12298-12303	supra	_	
+101-61	12303-12304	,	_	
+101-62	12305-12307	de	Allegazione normativa[128]	
+101-63	12308-12313	cohab	Allegazione normativa[128]	
+101-64	12313-12314	.	Allegazione normativa[128]	
+101-65	12315-12319	cler	Allegazione normativa[128]	
+101-66	12319-12320	.	Allegazione normativa[128]	
+101-67	12321-12323	et	Allegazione normativa[128]	
+101-68	12324-12327	mul	Allegazione normativa[128]	
+101-69	12327-12328	.	Allegazione normativa[128]	
+101-70	12328-12329	,	Allegazione normativa[128]	
+101-71	12330-12336	vestra	Allegazione normativa[128]	
+101-72	12336-12337	.	_	
+101-73	12339-12348	Quandoque	_	
+101-74	12349-12354	tamen	_	
+101-75	12355-12362	quantum	_	
+101-76	12363-12365	ad	_	
+101-77	12366-12368	se	_	
+101-78	12369-12371	et	_	
+101-79	12372-12379	quantum	_	
+101-80	12380-12382	ad	_	
+101-81	12383-12388	alios	_	
+101-82	12388-12389	,	_	
+101-83	12390-12392	32	Allegazione normativa[129]	
+101-84	12392-12393	.	Allegazione normativa[129]	
+101-85	12394-12398	dist	Allegazione normativa[129]	
+101-86	12398-12399	.	Allegazione normativa[129]	
+101-87	12399-12400	,	Allegazione normativa[129]	
+101-88	12401-12407	nullus	Allegazione normativa[129]	
+101-89	12407-12408	;	_	
+101-90	12409-12411	et	_	
+101-91	12412-12414	32	Allegazione normativa[130]	
+101-92	12414-12415	.	Allegazione normativa[130]	
+101-93	12416-12420	dist	Allegazione normativa[130]	
+101-94	12420-12421	.	Allegazione normativa[130]	
+101-95	12421-12422	,	Allegazione normativa[130]	
+101-96	12423-12430	praeter	Allegazione normativa[130]	
+101-97	12430-12431	;	_	
+101-98	12432-12434	et	_	
+101-99	12435-12440	infra	_	
+101-100	12440-12441	,	_	
+101-101	12442-12444	de	Allegazione normativa[131]	
+101-102	12445-12450	simon	Allegazione normativa[131]	
+101-103	12450-12451	.	Allegazione normativa[131]	
+101-104	12451-12452	,	Allegazione normativa[131]	
+101-105	12453-12458	tanta	Allegazione normativa[131]	
+101-106	12458-12459	;	_	
+101-107	12460-12462	et	_	
+101-108	12463-12466	hic	_	
+101-109	12466-12467	,	_	
+101-110	12468-12470	in	_	
+101-111	12471-12473	fi	_	
+101-112	12473-12474	.	_	
+101-113	12474-12475	;	_	
+101-114	12476-12478	et	_	
+101-115	12479-12484	supra	_	
+101-116	12484-12485	,	_	
+101-117	12486-12488	de	Allegazione normativa[132]	
+101-118	12489-12494	cohab	Allegazione normativa[132]	
+101-119	12494-12495	.	Allegazione normativa[132]	
+101-120	12496-12500	cler	Allegazione normativa[132]	
+101-121	12500-12501	.	Allegazione normativa[132]	
+101-122	12502-12504	et	Allegazione normativa[132]	
+101-123	12505-12508	mul	Allegazione normativa[132]	
+101-124	12508-12509	.	Allegazione normativa[132]	
+101-125	12509-12510	,	Allegazione normativa[132]	
+101-126	12511-12517	vestra	Allegazione normativa[132]	
+101-127	12517-12518	.	_	
+101-128	12520-12529	Quandoque	_	
+101-129	12530-12537	aliquis	_	
+101-130	12538-12545	dicitur	_	
+101-131	12546-12555	suspensus	_	
+101-132	12556-12559	quo	_	
+101-133	12560-12562	ad	_	
+101-134	12563-12568	alios	_	
+101-135	12569-12571	et	_	
+101-136	12572-12575	non	_	
+101-137	12576-12579	quo	_	
+101-138	12580-12582	ad	_	
+101-139	12583-12585	se	_	
+101-140	12585-12586	,	_	
+101-141	12587-12589	ut	_	
+101-142	12590-12593	cum	_	
+101-143	12594-12601	civitas	_	
+101-144	12602-12605	vel	_	
+101-145	12606-12611	villa	_	
+101-146	12612-12615	est	_	
+101-147	12616-12626	interdicta	_	
+101-148	12627-12634	propter	_	
+101-149	12635-12643	delictum	_	
+101-150	12644-12650	civium	_	
+101-151	12651-12654	vel	_	
+101-152	12655-12665	saecularis	_	
+101-153	12666-12676	potestatis	_	
+101-154	12676-12677	.	_	
+101-155	12679-12683	Tunc	_	
+101-156	12684-12691	clerici	_	
+101-157	12692-12695	non	_	
+101-158	12696-12700	sunt	_	
+101-159	12701-12709	suspensi	_	
+101-160	12710-12713	quo	_	
+101-161	12714-12716	ad	_	
+101-162	12717-12719	se	_	
+101-163	12719-12720	,	_	
+101-164	12721-12725	quia	_	
+101-165	12726-12728	in	_	
+101-166	12729-12733	alio	_	
+101-167	12734-12738	loco	_	
+101-168	12739-12746	possunt	_	
+101-169	12747-12756	celebrare	_	
+101-170	12757-12760	non	_	
+101-171	12761-12771	interdicto	_	
+101-172	12771-12772	.	_	
+101-173	12774-12777	Sic	_	
+101-174	12778-12783	supra	_	
+101-175	12783-12784	,	_	
+101-176	12785-12787	de	Allegazione normativa[133]	
+101-177	12788-12793	cleri	Allegazione normativa[133]	
+101-178	12793-12794	.	Allegazione normativa[133]	
+101-179	12795-12802	peregri	Allegazione normativa[133]	
+101-180	12802-12803	.	Allegazione normativa[133]	
+101-181	12803-12804	,	Allegazione normativa[133]	
+101-182	12805-12809	tuae	Allegazione normativa[133]	
+101-183	12810-12823	fraternitatis	Allegazione normativa[133]	
+101-184	12823-12824	.	_	
+
+#Text=Evitari
+102-1	12829-12836	Evitari	_	
+
+#Text=Et ita licet aliquis sit criminosus, non debet in officiis evitari quamdiu ab ecclesia toleratur, ut supra, de cohab. cler. et mul., vestra; et 15. q. 8, sciscitantibus.  Nisi in tribus casibus sequentibus, cum quis de hoc sit condemnatus vel in iure confessus vel evidentia rei sit factum notorium.  De hoc satis dictum est supra, de cohab. cler. et mul., vestra.
+103-1	12838-12840	Et	_	
+103-2	12841-12844	ita	_	
+103-3	12845-12850	licet	_	
+103-4	12851-12858	aliquis	_	
+103-5	12859-12862	sit	_	
+103-6	12863-12873	criminosus	_	
+103-7	12873-12874	,	_	
+103-8	12875-12878	non	_	
+103-9	12879-12884	debet	_	
+103-10	12885-12887	in	_	
+103-11	12888-12896	officiis	_	
+103-12	12897-12904	evitari	_	
+103-13	12905-12912	quamdiu	_	
+103-14	12913-12915	ab	_	
+103-15	12916-12924	ecclesia	_	
+103-16	12925-12934	toleratur	_	
+103-17	12934-12935	,	_	
+103-18	12936-12938	ut	_	
+103-19	12939-12944	supra	_	
+103-20	12944-12945	,	_	
+103-21	12946-12948	de	Allegazione normativa[134]	
+103-22	12949-12954	cohab	Allegazione normativa[134]	
+103-23	12954-12955	.	Allegazione normativa[134]	
+103-24	12956-12960	cler	Allegazione normativa[134]	
+103-25	12960-12961	.	Allegazione normativa[134]	
+103-26	12962-12964	et	Allegazione normativa[134]	
+103-27	12965-12968	mul	Allegazione normativa[134]	
+103-28	12968-12969	.	Allegazione normativa[134]	
+103-29	12969-12970	,	Allegazione normativa[134]	
+103-30	12971-12977	vestra	Allegazione normativa[134]	
+103-31	12977-12978	;	_	
+103-32	12979-12981	et	_	
+103-33	12982-12984	15	Allegazione normativa[135]	
+103-34	12984-12985	.	Allegazione normativa[135]	
+103-35	12986-12987	q	Allegazione normativa[135]	
+103-36	12987-12988	.	Allegazione normativa[135]	
+103-37	12989-12990	8	Allegazione normativa[135]	
+103-38	12990-12991	,	Allegazione normativa[135]	
+103-39	12992-13006	sciscitantibus	Allegazione normativa[135]	
+103-40	13006-13007	.	_	
+103-41	13009-13013	Nisi	_	
+103-42	13014-13016	in	_	
+103-43	13017-13023	tribus	_	
+103-44	13024-13031	casibus	_	
+103-45	13032-13043	sequentibus	_	
+103-46	13043-13044	,	_	
+103-47	13045-13048	cum	_	
+103-48	13049-13053	quis	_	
+103-49	13054-13056	de	_	
+103-50	13057-13060	hoc	_	
+103-51	13061-13064	sit	_	
+103-52	13065-13076	condemnatus	_	
+103-53	13077-13080	vel	_	
+103-54	13081-13083	in	_	
+103-55	13084-13088	iure	_	
+103-56	13089-13098	confessus	_	
+103-57	13099-13102	vel	_	
+103-58	13103-13112	evidentia	_	
+103-59	13113-13116	rei	_	
+103-60	13117-13120	sit	_	
+103-61	13121-13127	factum	_	
+103-62	13128-13136	notorium	_	
+103-63	13136-13137	.	_	
+103-64	13139-13141	De	_	
+103-65	13142-13145	hoc	_	
+103-66	13146-13151	satis	_	
+103-67	13152-13158	dictum	_	
+103-68	13159-13162	est	_	
+103-69	13163-13168	supra	_	
+103-70	13168-13169	,	_	
+103-71	13170-13172	de	Allegazione normativa[136]	
+103-72	13173-13178	cohab	Allegazione normativa[136]	
+103-73	13178-13179	.	Allegazione normativa[136]	
+103-74	13180-13184	cler	Allegazione normativa[136]	
+103-75	13184-13185	.	Allegazione normativa[136]	
+103-76	13186-13188	et	Allegazione normativa[136]	
+103-77	13189-13192	mul	Allegazione normativa[136]	
+103-78	13192-13193	.	Allegazione normativa[136]	
+103-79	13193-13194	,	Allegazione normativa[136]	
+103-80	13195-13201	vestra	Allegazione normativa[136]	
+103-81	13201-13202	.	_	
+
+#Text=Proposito
+104-1	13207-13216	Proposito	_	
+
+#Text=Bene dicit in casu proposito, scilicet de fornicatione, ut in principio capituli.  In isto enim casu magis videtur vitandus, cum in aliis non sit quis ipso iure suspensus quantumcumque crimen fuerit notorium, excepto simoniae crimine ubi suspensus est ipso iure etiam si crimen sit occultum, 32. dist., praeter § verum; 1. q. 1, reperiuntur; infra, de simon., tanta.  Et sic notavit Vincen.
+105-1	13218-13222	Bene	_	
+105-2	13223-13228	dicit	_	
+105-3	13229-13231	in	_	
+105-4	13232-13236	casu	_	
+105-5	13237-13246	proposito	_	
+105-6	13246-13247	,	_	
+105-7	13248-13256	scilicet	_	
+105-8	13257-13259	de	_	
+105-9	13260-13272	fornicatione	_	
+105-10	13272-13273	,	_	
+105-11	13274-13276	ut	_	
+105-12	13277-13279	in	_	
+105-13	13280-13289	principio	_	
+105-14	13290-13298	capituli	_	
+105-15	13298-13299	.	_	
+105-16	13301-13303	In	_	
+105-17	13304-13308	isto	_	
+105-18	13309-13313	enim	_	
+105-19	13314-13318	casu	_	
+105-20	13319-13324	magis	_	
+105-21	13325-13332	videtur	_	
+105-22	13333-13341	vitandus	_	
+105-23	13341-13342	,	_	
+105-24	13343-13346	cum	_	
+105-25	13347-13349	in	_	
+105-26	13350-13355	aliis	_	
+105-27	13356-13359	non	_	
+105-28	13360-13363	sit	_	
+105-29	13364-13368	quis	_	
+105-30	13369-13373	ipso	_	
+105-31	13374-13378	iure	_	
+105-32	13379-13388	suspensus	_	
+105-33	13389-13402	quantumcumque	_	
+105-34	13403-13409	crimen	_	
+105-35	13410-13416	fuerit	_	
+105-36	13417-13425	notorium	_	
+105-37	13425-13426	,	_	
+105-38	13427-13434	excepto	_	
+105-39	13435-13443	simoniae	_	
+105-40	13444-13451	crimine	_	
+105-41	13452-13455	ubi	_	
+105-42	13456-13465	suspensus	_	
+105-43	13466-13469	est	_	
+105-44	13470-13474	ipso	_	
+105-45	13475-13479	iure	_	
+105-46	13480-13485	etiam	_	
+105-47	13486-13488	si	_	
+105-48	13489-13495	crimen	_	
+105-49	13496-13499	sit	_	
+105-50	13500-13508	occultum	_	
+105-51	13508-13509	,	_	
+105-52	13510-13512	32	Allegazione normativa[137]	
+105-53	13512-13513	.	Allegazione normativa[137]	
+105-54	13514-13518	dist	Allegazione normativa[137]	
+105-55	13518-13519	.	Allegazione normativa[137]	
+105-56	13519-13520	,	Allegazione normativa[137]	
+105-57	13521-13528	praeter	Allegazione normativa[137]	
+105-58	13529-13530	§	Allegazione normativa[137]	
+105-59	13531-13536	verum	Allegazione normativa[137]	
+105-60	13536-13537	;	_	
+105-61	13538-13539	1	Allegazione normativa[138]	
+105-62	13539-13540	.	Allegazione normativa[138]	
+105-63	13541-13542	q	Allegazione normativa[138]	
+105-64	13542-13543	.	Allegazione normativa[138]	
+105-65	13544-13545	1	Allegazione normativa[138]	
+105-66	13545-13546	,	Allegazione normativa[138]	
+105-67	13547-13558	reperiuntur	Allegazione normativa[138]	
+105-68	13558-13559	;	_	
+105-69	13560-13565	infra	_	
+105-70	13565-13566	,	_	
+105-71	13567-13569	de	Allegazione normativa[139]	
+105-72	13570-13575	simon	Allegazione normativa[139]	
+105-73	13575-13576	.	Allegazione normativa[139]	
+105-74	13576-13577	,	Allegazione normativa[139]	
+105-75	13578-13583	tanta	Allegazione normativa[139]	
+105-76	13583-13584	.	_	
+105-77	13586-13588	Et	_	
+105-78	13589-13592	sic	_	
+105-79	13593-13600	notavit	_	
+105-80	13601-13607	Vincen	_	
+105-81	13607-13608	.	_	
+
+#Text=Per sententiam
+106-1	13613-13616	Per	_	
+106-2	13617-13627	sententiam	_	
+
+#Text=Diffinitivam, supra, de ord. cognit., cum dilectus; et supra, de except., denique.
+107-1	13629-13641	Diffinitivam	_	
+107-2	13641-13642	,	_	
+107-3	13643-13648	supra	_	
+107-4	13648-13649	,	_	
+107-5	13650-13652	de	Allegazione normativa[140]	
+107-6	13653-13656	ord	Allegazione normativa[140]	
+107-7	13656-13657	.	Allegazione normativa[140]	
+107-8	13658-13664	cognit	Allegazione normativa[140]	
+107-9	13664-13665	.	Allegazione normativa[140]	
+107-10	13665-13666	,	Allegazione normativa[140]	
+107-11	13667-13670	cum	Allegazione normativa[140]	
+107-12	13671-13679	dilectus	Allegazione normativa[140]	
+107-13	13679-13680	;	_	
+107-14	13681-13683	et	_	
+107-15	13684-13689	supra	_	
+107-16	13689-13690	,	_	
+107-17	13691-13693	de	Allegazione normativa[141]	
+107-18	13694-13700	except	Allegazione normativa[141]	
+107-19	13700-13701	.	Allegazione normativa[141]	
+107-20	13701-13702	,	Allegazione normativa[141]	
+107-21	13703-13710	denique	Allegazione normativa[141]	
+107-22	13710-13711	.	_	

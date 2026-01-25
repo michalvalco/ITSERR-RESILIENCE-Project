@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="28" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="34" end="56" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="61" end="75" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Lemma glossato" begin="99" end="107" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="116" end="145" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Lemma glossato" begin="438" end="445" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Lemma glossato" begin="527" end="542" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="603" end="632" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.25 DE OFFICIO PRIMICERII&#13;&#10;&#13;&#10;X 1.25.01 Ut primicerius&#13;&#10;&#13;&#10; Ut primicerius&#13;&#10;Supple statuimus.&#13;&#10;&#13;&#10; Diaconis&#13;&#10;Supra, de offi. archidiac., officium.  Contra capitulum ista loquuntur secundum diversas consuetudines diversarum ecclesiarum, vel primicerius hoc facit ad mandatum archidiaconi, vel tamquam vicarius eius.  Et ita praelatus qui subest episcopo potest alii demandare vices suas, et merito, quia ordinarii iudices sunt.  Laur.&#13;&#10;&#13;&#10; Ut ipse&#13;&#10;Scilicet, archidiaconus.  Vel ipse, scilicet, primicerius, quod est melius.&#13;&#10;&#13;&#10; Donet lectiones&#13;&#10;Sed hoc videtur pertinere ad officium archidiaconi, supra, de offi. archidiac., officium.  Diversa consuetudo diversarum ecclesiarum impedit contradictionem, quae circa huiusmodi officia consideratur potius.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9"/>
+</xmi:XMI>

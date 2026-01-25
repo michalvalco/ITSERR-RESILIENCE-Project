@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="26" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="32" end="49" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="54" end="63" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="72" end="109" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="111" end="131" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="133" end="154" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="166" end="191" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="203" end="226" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Lemma glossato" begin="232" end="241" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="385" end="405" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="445" end="466" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="608" end="647" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="710" end="736" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="741" end="765" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="770" end="791" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="837" end="860" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="929" end="950" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1159" end="1187" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Lemma glossato" begin="1255" end="1262" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1322" end="1349" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1354" end="1370" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1709" end="1733" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Capitolo" begin="1798" end="1813" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Lemma glossato" begin="1818" end="1832" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1960" end="1995" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2000" end="2029" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.24 DE CLERICO VENATORE&#13;&#10;&#13;&#10;X 5.24.01 Episcopum&#13;&#10;&#13;&#10; Non licet&#13;&#10;Supra, ne cler. vel mon. saecul. neg., multa; 34. dist., quorundam; 86. dist., an putatis; et supra, de censib., cum Apostolus; et infra, de cleri. ven., omnibus.&#13;&#10;&#13;&#10; Voluptate&#13;&#10;Ergo videtur quod causa necessitatis vel recretationis licitum sit, quod posset concedi aliis clericis excepto episcopo cui omnino non licet, 34. dist., quorundam.  Dummodo clamosam venationem evitent, 86. dist., an putatis.  Et non saepius ut hic dicit ne in consuetudinem perducatur.  Quaedam enim venatio dicitur oppressiva hominum, et haec omnino illicita est, 6. dist., non est peccatum § his itaque.  Et est adulatoria quae fit per verba, et haec est illicita, 86. dist., qui venatoribus; et 46. dist., sunt nonnulli; et 6. q. 1, sunt plurimi.  Et est arenaria quae fit in arena et mala, 3. q. 6, infamis § tria.  Saltuosa et clamosa licita est laicis, de qua dicitur in capitulo 86. dist., an putatis.  Sed clericis omnino non licet talis venatio.  Sed quieta, ut dictum est, causa necessitatis vel recreationis.  Episcopo, presbytero, diacono et subdiacono qui cum diacono eodem gaudet privilegio, ut supra, de serv. non ordin., miramur.  Ex toto prohibetur, quia de illis fit hic tantum prohibitio.&#13;&#10;&#13;&#10; Officio&#13;&#10;Plus punitur hic minor quam maior, quod est contra illud, 40. dist., homo Christianus; et 19. dist., nulli.  Solutio: plus punitur hic episcopus et presbyter quam diaconus, maior enim reputatur in episcopo ista poena vel presbytero quam suspensio ab omni officio in diacono propter maius scandalum, et magis imputatur illa poena episcopo vel presbytero quam suspensio a beneficio in diacono vel subdiacono, ex persona enim consideratur iniuria, Inst. de iniuri. § atrox.  Sic et poena ex persona iudicatur parva vel magna.  Ber.&#13;&#10;&#13;&#10;X 5.24.02 Omnibus&#13;&#10;&#13;&#10; Omnibus servis&#13;&#10;Id est, clericis, qui specialiter dicuntur servi Dei qui in sortem domini ad eius obsequium specialiter sunt assumpti, supra, de praeben., cum secundum Apostolum; et 21. dist., cleros et clericos.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27"/>
+</xmi:XMI>

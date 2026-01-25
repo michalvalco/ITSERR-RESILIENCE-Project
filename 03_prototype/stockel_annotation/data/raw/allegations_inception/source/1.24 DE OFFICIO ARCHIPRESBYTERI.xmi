@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="33" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="39" end="64" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="69" end="86" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Lemma glossato" begin="110" end="117" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="197" end="226" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="238" end="268" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="363" end="376" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="381" end="399" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="404" end="432" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="459" end="487" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="562" end="579" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="585" end="594" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="645" end="663" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="669" end="679" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="685" end="713" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Capitolo" begin="772" end="791" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="796" end="807" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="839" end="858" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1063" end="1083" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1088" end="1112" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1161" end="1178" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Lemma glossato" begin="1184" end="1210" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1323" end="1339" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1344" end="1370" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="1376" end="1392" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1456" end="1482" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Lemma glossato" begin="1561" end="1567" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Lemma glossato" begin="1625" end="1637" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Lemma glossato" begin="1692" end="1701" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1719" end="1737" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1816" end="1835" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="1841" end="1871" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1944" end="1999" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2181" end="2207" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2226" end="2265" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Lemma glossato" begin="2271" end="2278" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Lemma glossato" begin="2366" end="2375" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2388" end="2427" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2432" end="2452" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Capitolo" begin="2459" end="2475" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Lemma glossato" begin="2480" end="2493" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Lemma glossato" begin="2542" end="2550" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2552" end="2587" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="2644" end="2685" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Lemma glossato" begin="2691" end="2707" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="2806" end="2828" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="2833" end="2853" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Lemma glossato" begin="2859" end="2874" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3033" end="3053" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3068" end="3093" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="3105" end="3123" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Capitolo" begin="3338" end="3357" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Lemma glossato" begin="3362" end="3373" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Lemma glossato" begin="3478" end="3485" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="3516" end="3544" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="3549" end="3568" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="3600" end="3627" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="3663" end="3693" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="3701" end="3731" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="3788" end="3820" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="3938" end="3963" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Lemma glossato" begin="3969" end="3978" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="4043" end="4063" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4065" end="4086" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="4102" end="4129" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="4134" end="4150" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="4155" end="4178" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Lemma glossato" begin="4183" end="4189" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="4287" end="4315" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="4399" end="4431" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="4497" end="4523" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="4535" end="4563" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="4575" end="4608" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Lemma glossato" begin="4688" end="4697" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="4746" end="4767" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Lemma glossato" begin="4785" end="4804" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Lemma glossato" begin="4918" end="4926" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Allegazione normativa" begin="5036" end="5069" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Allegazione normativa" begin="5081" end="5112" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.24 DE OFFICIO ARCHIPRESBYTERI&#13;&#10;&#13;&#10;X 1.24.01 Ut archipresbyter&#13;&#10;&#13;&#10; Ut archipresbyter&#13;&#10;Supple statuimus.&#13;&#10;&#13;&#10; Subesse&#13;&#10;Sic videtur quod qui maior est in ordine, subsit minori.  Unde contra, infra, de maior. et obed., statuimus; et infra, de maior. et obed., cum certum.  Sed dicas quod archidiaconus praeest archipresbytero quo ad dignitatem, non quo ad ordinem, 2. q. 7, puto; et 2. q. 7, quaeritur; C. de off. vicar., in civilibus.  Et sic non contradicunt 33. q. 5, est ordo naturalis.  Sic et in angelis et in potestate et in ordine differt alter ab altero, 89. dist., ad hoc.&#13;&#10;&#13;&#10; Collectam&#13;&#10;Id est, missam matutinalem seu ferialem.  Simile 69. dist., quoniam.&#13;&#10;&#13;&#10; Iniunxerit&#13;&#10;Sic 25. dist., perlectis, ad fi.  Unde sumptum fuit hoc capitulum de verbo ad verbum.&#13;&#10;&#13;&#10;X 1.24.02 Ministerium&#13;&#10;&#13;&#10; Cardinalium&#13;&#10;Id est, principalium.  Simile 7. q. 1, pastoralis.  Et dicunt cardinales a cardine, quia sicut in cardine regitur ostium, ita per istos debet in ecclesia regi officium.  Unde etiam dicti sunt cardinales, quia per eos regitur universalis ecclesia; simile 24. dist., presbyter; et 71. dist., fraternitatem.  Ibi exponitur cardinalis, id est proprius; et 21. q. 1, relatio.&#13;&#10;&#13;&#10; A sacrosancto die dominico&#13;&#10;Id est, a vespere sabbati, quoniam tunc incipit secundum canonicam computationem; sive quo ad officium, infra, de fer., quoniam; et 75. dist., quod a patribus.&#13;&#10;&#13;&#10; Indeclinabiliter&#13;&#10;Id est, horis statutis, et iusto impedimento cessante, infra, de celeb. miss., presbyter.  Et ferens illam sententiam: maledictus qui negligenter facit opera Dei.&#13;&#10;&#13;&#10; Cedant&#13;&#10;Id est, cessent quando officium suum facere debent.&#13;&#10;&#13;&#10; Scurrilitate&#13;&#10;Id est, rusticitate vivendi, sicut scurra facit.&#13;&#10;&#13;&#10; Prohibita&#13;&#10;De quibus habes 68. dist., quamvis.  Sed ad ea facienda debent vicinos episcopos invitare cum cautela et studio, 7. q. 1, pontifices.&#13;&#10;&#13;&#10; Consulto episcopo reconciliare&#13;&#10;Ergo eo inconsulto non debet, nisi eo absente maxima necessitas cogat, 26. q. 6, presbyter inconsulto episcopo non reconciliet.  Et loquitur de solemni poenitente, qui publicum crimen commisit, quod universam commovet urbem, ut ibi dicitur.  In quo etiam casu quilibet sacerdos posset eum reconciliare, arg. 17. q. 4, si quis suadente; et etiam laicus, de conse. dist. 4, sanctum est baptisma.&#13;&#10;&#13;&#10; Cunctis&#13;&#10;Archipresbyter post episcopum curam debet habere animarum in ecclesia cathedrali.&#13;&#10;&#13;&#10; Iussionem&#13;&#10;Sic supra, de offi. archipresb., ut archipresbyter; et 25. dist., perlectis.&#13;&#10;&#13;&#10;X 1.24.03 Officium&#13;&#10;&#13;&#10; Benedictiones&#13;&#10;In matutinis quando debent legi lectiones.&#13;&#10;&#13;&#10; Infirmos&#13;&#10;de conse. dist. 2, in tribus contra, ubi subaudiendum est, nisi ad opus infirmorum, ut hic, de conse. dist. 2, presbyter Eucharistiam.&#13;&#10;&#13;&#10; Sine confessione&#13;&#10;Si culpa vel negligentia presbyteri moriatur infirmus sine confessione, reus erit animae illius, 26. q. 6, si presbyter; et 26. q. 6, cognovimus.&#13;&#10;&#13;&#10; A foris veniunt&#13;&#10;Id est, extra civitatem, tamen qui sint de diocesi.  Et arg. quod quilibet de episcopatu potest sacramenta recipere in maiori ecclesia, quod verum est, arg. 50. dist., in capite.  Arg. contra de poen. dist. 6, placuit; et infra, de paroch., nullus; non contradicunt.  Episcopus non debet recipere parochianum alterius episcopi, hic nullum parochianum alterius recipit, quia omnes possunt recurrere ad archipresbyterum maioris ecclesiae, ut hic dicit.  Ber.&#13;&#10;&#13;&#10;X 1.24.04 Ut singulae&#13;&#10;&#13;&#10; Ut singulae&#13;&#10;Hoc capitulum loquitur de archipresbytero rurali, praecedens de archipresbytero Civitatensi.  Ala.&#13;&#10;&#13;&#10; Titulos&#13;&#10;Titulus appellatur ecclesia, 70. dist., sanctorum canonum; et 80. dist., episcopi.  Et hic etiam titulus canoni, 50. dist., si quis diaconus.  Item dicitur titulus, tractatus, ff. de postulan., hunc titulum.  Arg. 26. q. 5, nec mirum, verba fi., verba his duobus titulis.  Item dicitur actio titulus, C. fam. ercis., non est ambiguum.  Item dicitur titulus dignitas, unde Ovidius: gratulor Oecaliam titulis accedere nostris.  De hoc dictum est supra, de elect., dudum ecclesia.&#13;&#10;&#13;&#10; Renunciet&#13;&#10;Arg. quod solus episcopus sit iudex ordinarius in sua diocesi, 11. q. 1, de persona; 80. dist., non debere.  Arg. contra, 10. q. 3, placuit ut nullus; et 10. q. 3, nullus; et 2. q. 1, nemo, 1. resp.&#13;&#10;&#13;&#10; Valeat&#13;&#10;Quia ipse sufficere omnibus non potest, et ideo per alios hoc facere debet.  Arg. contra infra, de offi. ord., inter caetera.  Nec ipsemet eam sibi assumere debet, quia et praetor se tutorem dare non potest, ff. de tutor. et curat., praetor.  Sic praelatus a seipso praelaturam accipere non potest, infra, de instit., cum ad nostram; et infra, de iure patron., per nostras; et infra, de bapt. et eius effect., debitum.  Quia differentia debet esse inter dantem et accipientem, ut ibi dicitur.&#13;&#10;&#13;&#10; Sua onera&#13;&#10;Debet enim sua onera partiri cum aliis, infra, de praesump., mandata, ubi de hoc.&#13;&#10;&#13;&#10; Ita archipresbyteri&#13;&#10;Istud, ita, non notat omnimodam similitudinem, quia aliter praeest episcopus quam archipresbyteri praesint.&#13;&#10;&#13;&#10; Referant&#13;&#10;Praeter minora quae ipsi archipresbyteri determinare possunt, cum habeant ordinariam iurisdictionem, infra, de offi. ord., cum ab ecclesiarum; et infra, de cons. et affin., ex litteris.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80"/>
+</xmi:XMI>

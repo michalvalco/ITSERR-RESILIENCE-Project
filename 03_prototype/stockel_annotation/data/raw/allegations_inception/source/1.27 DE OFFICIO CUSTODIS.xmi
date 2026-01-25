@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="26" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="32" end="56" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="61" end="75" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="84" end="104" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="116" end="151" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="156" end="178" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Lemma glossato" begin="184" end="193" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="202" end="230" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Lemma glossato" begin="314" end="319" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="325" end="340" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="425" end="450" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="452" end="473" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="475" end="494" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="499" end="524" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="529" end="555" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="571" end="613" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="803" end="818" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="862" end="882" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Lemma glossato" begin="888" end="901" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1064" end="1115" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1183" end="1211" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Lemma glossato" begin="1217" end="1224" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1286" end="1306" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1311" end="1335" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1390" end="1406" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Lemma glossato" begin="1412" end="1423" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1483" end="1502" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1511" end="1532" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1541" end="1563" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1617" end="1649" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Capitolo" begin="1656" end="1681" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="1686" end="1702" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1763" end="1783" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="1826" end="1872" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="1877" end="1895" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Lemma glossato" begin="1901" end="1911" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Lemma glossato" begin="1983" end="1993" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2055" end="2069" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2074" end="2090" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2092" end="2116" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="2121" end="2149" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2151" end="2170" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2175" end="2214" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="2221" end="2242" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="2254" end="2274" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="2286" end="2319" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="2331" end="2355" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="2357" end="2379" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="2384" end="2406" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="2413" end="2444" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="2629" end="2662" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="2674" end="2694" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Lemma glossato" begin="2700" end="2711" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="2834" end="2873" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.27 DE OFFICIO CUSTODIS&#13;&#10;&#13;&#10;X 1.27.01 Custos ecclesiae&#13;&#10;&#13;&#10; Tintinabulorum&#13;&#10;Supra, de elect., in causis; et infra, de offi. custod., custos sollicitus; et 1. dist., ius militare.&#13;&#10;&#13;&#10; Utensilia&#13;&#10;Supra, de offi. archidiac., ea quae.  Solutio: supple sub archidiacono et sacrista.  Vel diversa est consuetudo.&#13;&#10;  &#13;&#10; Modum&#13;&#10;Sic 24. q. 1, manet.  Arg. quod ita exceditur modus in eo quod est amplius, sicut in eo quod est minus, 51. dist., quod in aliquo; 45. dist., disciplina; 41. dist., quisquis; et ff. de poe., respiciendum; C. de cust. reo., si quis, in fi.; et infra, de vit. et honest. cler., clerici officia.  Et sic media via teneda est.  Unde versus: cum media semper gaudebam ludere forma // maior enim mediis gratia rebus inest.  Et illud versus: inter utrumque vola medio tutissimus ibis.&#13;&#10;&#13;&#10; Cum discretione&#13;&#10;Discretio enim mater est omnium virtutum, 1. q. 5, praesentium.&#13;&#10;&#13;&#10; Minus idoneus&#13;&#10;Sic ergo removetur ab officio suo minus idoneus.  Sic magister minus idoneus removetur, qui primum moribus, deinde scientia et facundia alios praecellere debet, C. de prof. et med., grammaticos seu oratores, lib. 10.  Et iudex et praelatus removentur propter negligentiam, supra, de offi. archidiac., ea quae.&#13;&#10;&#13;&#10; Emendet&#13;&#10;Arg. guod per denuciationem offensa proxima veniam meretur, 35. dist., episcopus; C. de episcopal. aud., nemo.  Et sic quodlibet peccatum non inducit depositionem, 5. q. 4, in loco.&#13;&#10;&#13;&#10; Denunciando&#13;&#10;Arg. quod per denunciationem aliquis removendus sit, arg. 2. q. 7, quapropter; infra, de iureiur., querelam; infra, de fideiuss., pervenit.  Sed non loquuntur in denunciatione, et arg. ad hoc 24. q. 3, ecce, vers. undecumque.&#13;&#10;&#13;&#10;X 1.27.02 Custos sollicitus&#13;&#10;&#13;&#10; Absente episcopo&#13;&#10;Arg. quod res canonicorum per episcopum dispensari debent, 12. q. 2, Vulteranae.  Et per ipsum debet constitui oeconomus, C. de episc. et cler., omnes § hoc nihilominus; et 9. q. 3, cum simus.&#13;&#10;&#13;&#10; His tribus&#13;&#10;Qui enumerantur inferius archidiaconus, archipresbyter et custos.&#13;&#10;&#13;&#10; Sanctiores&#13;&#10;Et ita videtur quod semper melior et iustior sit eligendus, 8. q. 1, licet; et 8. q. 1, si ergo; 63. dist., metropolitano; et 25. dist., unum § nunc autem; 1. q. 1, vilissimus; in Auth. de monach. § ordinatione, coll. 1; arg. 16. q. 7, monasterium; et supra, de elect., cum nobis; et supra, de renunciat., nisi § pro defectu; et infra, de praeben., venerabilis; 61. dist., Cathinensis; et 85. dist., Florentinum; arg. ff. de leg. 2, cum pater § rogo.  Solutio: melior, iustior et sanctior debet eligi.  Tamen si alius eligatur, licet non sit melior, sufficit quod sit sufficiens, quia conveniens scientia sufficit in praelato, supra, de renunciat., nisi § pro defectu; et supra, de elect., cum nobis.&#13;&#10;&#13;&#10; Neque zelus&#13;&#10;Id est, odium, quia est et bonus zelus et malus zelus.  De malo hic intelligitur.  Sicut est bonus dolus et malus dolus, ff. de dolo mal., hoc edicto § non fuit.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55"/>
+</xmi:XMI>

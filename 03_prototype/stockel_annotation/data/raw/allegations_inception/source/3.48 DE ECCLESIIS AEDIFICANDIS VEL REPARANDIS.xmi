@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="47" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="53" end="70" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="75" end="83" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="207" end="258" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="262" end="322" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="367" end="433" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="441" end="486" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="497" end="521" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="571" end="610" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="614" end="665" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="669" end="713" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="787" end="802" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Capitolo" begin="845" end="862" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="867" end="870" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="910" end="925" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="986" end="1010" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="1015" end="1024" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1081" end="1101" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1171" end="1203" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Lemma glossato" begin="1209" end="1225" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1279" end="1296" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1300" end="1330" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1336" end="1354" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1360" end="1390" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1501" end="1560" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1564" end="1598" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1599" end="1628" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1639" end="1671" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1753" end="1784" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1785" end="1815" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1816" end="1850" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="1858" end="1892" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1903" end="1924" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Lemma glossato" begin="1929" end="1940" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2078" end="2096" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2176" end="2213" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2229" end="2254" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Capitolo" begin="2266" end="2287" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Lemma glossato" begin="2292" end="2310" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2472" end="2492" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="2497" end="2513" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2518" end="2541" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2546" end="2587" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="2593" end="2633" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="2639" end="2683" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="2700" end="2722" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="2731" end="2758" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="2764" end="2794" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Lemma glossato" begin="2800" end="2812" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="2839" end="2858" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="2863" end="2882" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="2887" end="2907" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="2919" end="2945" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="2947" end="2966" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Lemma glossato" begin="2972" end="2980" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="3053" end="3070" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="3072" end="3092" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="3141" end="3173" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="3175" end="3206" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="3211" end="3230" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="3305" end="3331" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="3700" end="3717" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Lemma glossato" begin="4021" end="4032" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4103" end="4122" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="4127" end="4146" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="4480" end="4515" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="4525" end="4546" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="4551" end="4571" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="4633" end="4653" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="4935" end="4956" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="5025" end="5049" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="5137" end="5162" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Lemma glossato" begin="5168" end="5173" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Allegazione normativa" begin="5251" end="5268" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="5317" end="5343" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Lemma glossato" begin="5349" end="5354" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Lemma glossato" begin="5405" end="5415" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Capitolo" begin="5442" end="5456" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Lemma glossato" begin="5461" end="5472" sofa="1"/>
+  <custom:Glossa xmi:id="81" Tipo="Allegazione normativa" begin="5509" end="5529" sofa="1"/>
+  <custom:Glossa xmi:id="82" Tipo="Allegazione normativa" begin="5534" end="5548" sofa="1"/>
+  <custom:Glossa xmi:id="83" Tipo="Allegazione normativa" begin="5608" end="5652" sofa="1"/>
+  <custom:Glossa xmi:id="84" Tipo="Allegazione normativa" begin="5662" end="5682" sofa="1"/>
+  <custom:Glossa xmi:id="85" Tipo="Allegazione normativa" begin="5694" end="5723" sofa="1"/>
+  <custom:Glossa xmi:id="86" Tipo="Allegazione normativa" begin="5735" end="5761" sofa="1"/>
+  <custom:Glossa xmi:id="87" Tipo="Lemma glossato" begin="5779" end="5786" sofa="1"/>
+  <custom:Glossa xmi:id="88" Tipo="Allegazione normativa" begin="5863" end="5884" sofa="1"/>
+  <custom:Glossa xmi:id="89" Tipo="Allegazione normativa" begin="5889" end="5906" sofa="1"/>
+  <custom:Glossa xmi:id="90" Tipo="Allegazione normativa" begin="5911" end="5949" sofa="1"/>
+  <custom:Glossa xmi:id="91" Tipo="Allegazione normativa" begin="5955" end="5980" sofa="1"/>
+  <custom:Glossa xmi:id="92" Tipo="Allegazione normativa" begin="5982" end="6008" sofa="1"/>
+  <custom:Glossa xmi:id="93" Tipo="Allegazione normativa" begin="6013" end="6031" sofa="1"/>
+  <custom:Glossa xmi:id="94" Tipo="Allegazione normativa" begin="6033" end="6044" sofa="1"/>
+  <custom:Glossa xmi:id="95" Tipo="Allegazione normativa" begin="6051" end="6077" sofa="1"/>
+  <custom:Glossa xmi:id="96" Tipo="Capitolo" begin="6084" end="6105" sofa="1"/>
+  <custom:Glossa xmi:id="97" Tipo="Lemma glossato" begin="6110" end="6120" sofa="1"/>
+  <custom:Glossa xmi:id="98" Tipo="Allegazione normativa" begin="6409" end="6432" sofa="1"/>
+  <custom:Glossa xmi:id="99" Tipo="Allegazione normativa" begin="6613" end="6646" sofa="1"/>
+  <custom:Glossa xmi:id="100" Tipo="Allegazione normativa" begin="6783" end="6809" sofa="1"/>
+  <custom:Glossa xmi:id="101" Tipo="Lemma glossato" begin="6815" end="6818" sofa="1"/>
+  <custom:Glossa xmi:id="102" Tipo="Allegazione normativa" begin="6922" end="6939" sofa="1"/>
+  <custom:Glossa xmi:id="103" Tipo="Allegazione normativa" begin="6951" end="6972" sofa="1"/>
+  <custom:Glossa xmi:id="104" Tipo="Allegazione normativa" begin="6986" end="7016" sofa="1"/>
+  <custom:Glossa xmi:id="105" Tipo="Allegazione normativa" begin="7194" end="7220" sofa="1"/>
+  <custom:Glossa xmi:id="106" Tipo="Allegazione normativa" begin="7225" end="7243" sofa="1"/>
+  <custom:Glossa xmi:id="107" Tipo="Allegazione normativa" begin="7398" end="7438" sofa="1"/>
+  <custom:Glossa xmi:id="108" Tipo="Allegazione normativa" begin="7497" end="7523" sofa="1"/>
+  <custom:Glossa xmi:id="109" Tipo="Allegazione normativa" begin="7535" end="7561" sofa="1"/>
+  <custom:Glossa xmi:id="110" Tipo="Lemma glossato" begin="7567" end="7579" sofa="1"/>
+  <custom:Glossa xmi:id="111" Tipo="Allegazione normativa" begin="7691" end="7724" sofa="1"/>
+  <custom:Glossa xmi:id="112" Tipo="Allegazione normativa" begin="7729" end="7756" sofa="1"/>
+  <custom:Glossa xmi:id="113" Tipo="Allegazione normativa" begin="7768" end="7802" sofa="1"/>
+  <custom:Glossa xmi:id="114" Tipo="Allegazione normativa" begin="7864" end="7929" sofa="1"/>
+  <custom:Glossa xmi:id="115" Tipo="Allegazione normativa" begin="7944" end="7993" sofa="1"/>
+  <custom:Glossa xmi:id="116" Tipo="Allegazione normativa" begin="8230" end="8273" sofa="1"/>
+  <custom:Glossa xmi:id="117" Tipo="Capitolo" begin="8280" end="8295" sofa="1"/>
+  <custom:Glossa xmi:id="118" Tipo="Lemma glossato" begin="8300" end="8314" sofa="1"/>
+  <custom:Glossa xmi:id="119" Tipo="Allegazione normativa" begin="8323" end="8348" sofa="1"/>
+  <custom:Glossa xmi:id="120" Tipo="Allegazione normativa" begin="8350" end="8378" sofa="1"/>
+  <custom:Glossa xmi:id="121" Tipo="Allegazione normativa" begin="8390" end="8424" sofa="1"/>
+  <custom:Glossa xmi:id="122" Tipo="Allegazione normativa" begin="8506" end="8529" sofa="1"/>
+  <custom:Glossa xmi:id="123" Tipo="Lemma glossato" begin="8535" end="8552" sofa="1"/>
+  <custom:Glossa xmi:id="124" Tipo="Lemma glossato" begin="8710" end="8719" sofa="1"/>
+  <custom:Glossa xmi:id="125" Tipo="Allegazione normativa" begin="8842" end="8859" sofa="1"/>
+  <custom:Glossa xmi:id="126" Tipo="Allegazione normativa" begin="8871" end="8901" sofa="1"/>
+  <custom:Glossa xmi:id="127" Tipo="Allegazione normativa" begin="9070" end="9092" sofa="1"/>
+  <custom:Glossa xmi:id="128" Tipo="Allegazione normativa" begin="9097" end="9116" sofa="1"/>
+  <custom:Glossa xmi:id="129" Tipo="Lemma glossato" begin="9122" end="9131" sofa="1"/>
+  <custom:Glossa xmi:id="130" Tipo="Allegazione normativa" begin="9225" end="9255" sofa="1"/>
+  <custom:Glossa xmi:id="131" Tipo="Allegazione normativa" begin="9259" end="9280" sofa="1"/>
+  <custom:Glossa xmi:id="132" Tipo="Allegazione normativa" begin="9285" end="9304" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.48 DE ECCLESIIS AEDIFICANDIS VEL REPARANDIS&#13;&#10;&#13;&#10;X 3.48.01 Quicumque&#13;&#10;&#13;&#10; Ad tecta&#13;&#10;Nam ubi est emolumentum, ibi debet esse onus, quia non est ferendus is qui lucrum amplectitur, onus autem subire recusat, C. de caduc. toll., et nomen § pro secundo, in fi.; et C. de caduc. toll., et nomen § ne autem, vers. si nec talis.  Sicut ad quem spectat onus et emolumentum, C. de furti. et serv. cor., manifestissimi § penulti., in fi.  Sic supra, de his quae fi. a maior. par. cap., ex parte; et infra, de eccl. aedif., de his.  Nam et ipse fructuarius tenetur ad sarta tecta, C. de usufruct. et habit., eum ad quem; et ff. de usufru., usufructu legato, 1. resp., in fi.; et ff. de usufru., usufructu legato § hactenus.  Et hoc intelligo, cum quarta ad hoc deputata non sufficit, de qua habes 10. q. 3, unio.  Alias si sufficeret, non teneretur.&#13;&#10;&#13;&#10;X 3.48.02 Cum dicat&#13;&#10;&#13;&#10; Tot&#13;&#10;Sed quot sufficiunt?  Forte decem, ut 10. q. 3, unio.  Vel etiam pauciores, dummodo velint ecclesiam dotare, arg. de conse. dist. 1, nemo.&#13;&#10;&#13;&#10; Veteribus&#13;&#10;Veteres enim ecclesiae propter novas laedi non debent, 16. q. 1, quicumque.  Ecclesiae tamen de decimis modicum damnum possunt sustinere, infra, de eccl. aedif., ad audientiam 1.&#13;&#10;&#13;&#10; Aliorum iniuriam&#13;&#10;Arg. nullius inopiam relevari cum alterius iactura, 22. q. 2, primum; et ff. de condi. indeb., nam hoc; arg. 14. q. 5, denique; arg. C. de emancip. lib., nec avus.  Quia et si princeps concedit alicui aedificare in loco publico, hoc intelligitur facere sine damno alterius, ff. ne quid in loc. pub., praetor ait § si quis a principe; et ff. ad Trebel., sed cum ab herede; ff. de admin. tut., impuberi; et infra, de eccl. aedif., ad audientiam 2.  Sic enim interpretanda sunt beneficia principis, ut non incipiant esse iniqua, ff. de vulg. et pup., ex facto; ff. de praet. stipul., Paulus; ff. ex quib. cau. maio., sciendum; supra, de auctor. et usu pal., ex tuarum; et supra, de offi. ord., licet.&#13;&#10;&#13;&#10; Nutrimentis&#13;&#10;De omnibus autem aliis solvant decimas, ex quo de istis tantum prohibentur, quia quod de uno prohibetur de alio concessum intelligitur, 25. dist., qualis.  Nisi religionem aliquorum assumerent, tunc gauderent eorum privilegio, supra, de statu monach., recolentes, in fi.; et arg. supra, de decim., ex parte tua 1.  Io.&#13;&#10;&#13;&#10;X 3.48.03 Ad audientiam&#13;&#10;&#13;&#10; Magna difficultate&#13;&#10;Haec est iusta causa constituendi ecclesiam in alterius parochia, et in eius praeiudicium.  Et ita difficultas aliquid permittit quod alias prohibetur.  Simile 63. dist., cum longe; et 93. dist., iuxta; et ff. de iud., si longius; et ff. de recepti., si cum dies § si arbiter; et C. in quib. caus. tut. hab., propter late; et C. in quib. caus. tut. hab., cum ob augmentum.  Simile supra, de rescript., nonnulli; supra, de elect., nihil est § ulti.; et 7. q. 1, temporis qualitas § 1.&#13;&#10;&#13;&#10; Convenienter&#13;&#10;Alias non permitteretur, 16. q. 1, quicumque; et 16. q. 1, ecclesiae; et 16. q. 1, de decimis; et supra, de eccl. aedif., cum dicat; 12. q. 2, bonae rei.&#13;&#10;&#13;&#10; Rectoris&#13;&#10;Praesentatio rectoris est necessaria, quia ille est ei subiectus, arg. 24. dist., quando; 50. dist., in capite.  Et quod ipsum tangit, approbare debet, supra, de temp. ord., si archiepiscopus; C. de aucto. praestan., veterem; et 16. q. 1, statuimus.  Sed quare praesentatio non spectat principaliter ad patronum, ut supra, de iure patron., per totum?  Potest dici quod ideo spectat ad maiorem ecclesiam, quia in eius praeiudicium fundatur alia in ipsius parochia.  Unde quasi quadam compensatione praesentat cum assensu patroni, et hoc providet Papa forte de consensu patroni.  Vel potest dici quod patronus tantum eliget et praesentabit electum rectori maioris ecclesiae, qui illum postea episcopo praesentabit, arg. 24. dist., quando.  Sed primum verius videtur.  Sed quid si patronus non concordat cum illo rectore?  Nisi iustam causam contradictionis ostendat, non nocet.  Vel dic quod ambo sunt patroni, et ambo debent similiter eligere, quia de bonis utriusque dotatur ecclesia, et presbyterum praesentabunt archiepiscopo.  Ber.&#13;&#10;&#13;&#10; Obventiones&#13;&#10;Et ita videtur quod debeat habere decimas illius villae.  Sed contra 16. q. 1, quicumque; et 16. q. 1, ecclesiae.  Non sunt contraria, sed Papa hoc fecit ex plenitudine potestatis.  Et hoc ideo quia propter proventus illius villae rector maioris ecclesiae poterat competenter sustentari, ut supra dicitur.  Sed episcopus hoc facere non posset nisi de consensu rectoris maioris ecclesiae, quia non potest iura illius ecclesiae dare alteri, supra, de rebus ecc. non alien., non licet; et arg. 16. q. 1, constitutum; et 16. q. 1 § sicut duo.  Gratian. tamen contradicere videtur, ut colligitur ex illo 16. q. 1 § sicut duo, a contrario sensu praecedentium capitulorum.  Licet possit dici, scilicet oblationibus, et de personalibus decimis quae dantur diebus quibus accedunt ad ecclesiam et ex mortuariis et consimilibus, quia de iure communi perceptio decimarum pertinet ad parochialem ecclesiam, supra, de decim., cum in tua.  Et si Papa de illis intellexisset, bene expressisset, arg. supra, de decim., ad audientiam.  Sicut expressit de obventionibus, expressisset supra de decimis.  Arg. contra infra, de verb. sign., cum inter.&#13;&#10;&#13;&#10; Honor&#13;&#10;Scilicet ut aliquid annuatim in signum subiectionis praestetur, arg. supra, de censib., omnis, moderandum tamen ad arbitrium episcopi, supra, de offi. deleg., de causis.&#13;&#10;&#13;&#10; Arcas&#13;&#10;Mensura terrae est, et est vulgare Anglorum.&#13;&#10;&#13;&#10; Distulerit&#13;&#10;Et patronus cum eo.&#13;&#10;&#13;&#10;X 3.48.04 De his&#13;&#10;&#13;&#10; Cogi debent&#13;&#10;Si partem fabricae recipiant, arg. 10. q. 1, decrevimus; et 10. q. 3, unio.  Immo certe et sine illa si possunt, ut colligitur supra, de his quae fi. a maior. par. cap., ex parte; et arg. 12. q. 3, pontifices; et supra, de testamen., cum in officiis; et supra, de eccl. aedif., quicumque, ubi de hoc.&#13;&#10;&#13;&#10; Exemplo&#13;&#10;Qui alium invitat ad aliquid faciendum, in se debet habere quod praedicat, 26. dist., una tantum; et 25. dist., primum; et ff. de negot. gest., si pupilli § ulti.; et ff. de fideiussor., tutor; ff. si serv. vend., altius; et 61. dist., miramur; 42. dist. § 1; et 47. dist., sicut § necesse.&#13;&#10;&#13;&#10;X 3.48.05 Ad audientiam&#13;&#10;&#13;&#10; Indulgemus&#13;&#10;Sed quid valet ista indulgentia, cum hoc non possit sine licentia diocesani, quia et hoc idem poterat, si tantum licentiam episcopi habuisset?  Quantum ad hoc parum valet, nisi quia episcopus citius movebitur ad consentiendum.  Et si non consentiret, facilius compelleretur, arg. supra, de iure patron., nullus.  Sed in hoc prodest, quia hoc facere poterit clericis invitis, dummodo aeque ibi vel alibi provideat eis, alias eis invitis hoc facere non posset.  Similis indulgentia est supra, de auctor. et usu pal., ex tuarum.  Et est optimum argumentum quod Papa non intendit alicui facere praeiudicium per suum privilegium.  De hoc nota plura argumenta supra, de eccl. aedif., cum dicat.&#13;&#10;&#13;&#10; Ibi&#13;&#10;Sed hoc videtur contra ius, quia homines diversae professionis in eodem officio non debent associari, 16. q. 7, in nova; et supra, de elect., cum causam; arg. supra, de postuland., clerici, in fi.  In potestate episcopi erit an velit eis providere ibi vel alibi, sed honestius est, ut eis alibi provideat.  Arg. est hic quod aliquis punitur sine culpa, quod esse non debet, 56. dist., satis perversum; et 16. q. 7, inventum.  Et hoc quidem regulare est, sed hoc facit Papa ex speciali indulgentia, ut removeantur favore religionis.  Et est summa ratio quae pro religione facit, ff. de rel. et sump. fun., sunt personae.  Propter quam multa fiunt quae alias non fierent, infra, de apostat., ex litterarum; et supra, de fil. presbyt., ut filii.&#13;&#10;&#13;&#10; Non possumus&#13;&#10;Sic ergo patet quod rei quod non est, non datur privilegium.  Non enim ante ratio quaerenda est quam persona, ff. de iure cod., quidam referunt; et ff. comm. praed., aedificia; et infra, de despon. impub., ad dissolvendum.  Sic rescriptum non datur ad lites quae nondum sunt, supra, de rescript., quia nonnulli, ubi plures concordantiae sunt ad hoc.  Arg. contra ff. de servitu. urb. praed., si servitus § futuro.  Solve istud contrarium cum suis concordantiis, et dic quod futuro aedificio non potest servitus constitui, ut statim sit servitus, quia non est cui serviat, sed aliquis potest obligari ad eam constituendam cum fuerit aedificium, arg. ff. fam. ercis., heredes § an ea stipulatio.&#13;&#10;&#13;&#10;X 3.48.06 Tua nos&#13;&#10;&#13;&#10; Non alienandis&#13;&#10;Simile 28. dist., de Syracusanae, 10. q. 3, illud magnitudinem; et supra, de rebus ecc. non alien., ut super.  Sic et rex in sua coronatione iurat regni sui iura illibita conservare, supra, de iureiur., intellecto.&#13;&#10;&#13;&#10; Destitui videatur&#13;&#10;Trepidavit ubi non fuit timor.  In hoc facto videbatur praeiudicium fieri ecclesiae suae, quia parochiani illi veniebant forte ad ecclesiam suam.  Ber.&#13;&#10;&#13;&#10; Iuramenti&#13;&#10;Iuramentum enim non extendebatur ad hunc casum, licet illi essent parochiani sui, ex quo populus indigebat.  Arg. supra, de consti., cum M; et supra, de eccl. aedif., ad audientiam 1.  Nec poterat illud servare iuramentum sine periculo animarum propter carentiam sacerdotum.  Unde si propter episcopi negligentiam aliqui perirent, imputaretur ipsi, 26. q. 6, si presbyter; et 26. q. 6, agnovimus.&#13;&#10;&#13;&#10; Indigenti&#13;&#10;Ecce causa quare nova potest constitui ecclesia in praeiudicium etiam alterius.  Sic supra, de eccl. aedif., ad audientiam 1; 16. q. 1, praecipimus; et 16. q. 7, ecclesias.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132"/>
+</xmi:XMI>

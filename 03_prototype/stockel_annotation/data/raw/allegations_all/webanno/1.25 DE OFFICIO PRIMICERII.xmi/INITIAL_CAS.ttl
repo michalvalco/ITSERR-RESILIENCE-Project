@@ -1,0 +1,1320 @@
+@prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+@prefix nif:    <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_622_623>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "622"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "623"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_624_632> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_621_622> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_154>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Contra" ;
+        nif:beginIndex        "148"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "154"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_155_164> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_234_235>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "234"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "235"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_236_239> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_223_234> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_621_622>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "621"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "622"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_622_623> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_612_621> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_432>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Laur" ;
+        nif:beginIndex        "428"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "432"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_432_433> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_433> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Donet lectiones\r\nSed hoc videtur pertinere ad officium archidiaconi, supra, de offi. archidiac., officium." ;
+        nif:beginIndex        "527"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "633"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_573_581> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_603_605> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_601_602> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_596_601> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_560_569> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_570_572> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_624_632> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_548_551> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_621_622> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_582_594> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_632_633> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_594_595> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_533_542> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_544_547> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_532> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_552_559> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_606_610> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_612_621> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_610_611> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_622_623> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_84_93>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "statuimus" ;
+        nif:beginIndex        "84"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "93"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_93_94> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_77_83> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_319_322>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ita" ;
+        nif:beginIndex        "319"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "322"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_323_332> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_318> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_262_264>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ad" ;
+        nif:beginIndex        "262"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "264"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_265_273> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_256_261> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_93_94>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "93"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "94"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_84_93> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761>
+        rdf:type        nif:OffsetBasedString , nif:Context ;
+        nif:beginIndex  "0"^^xsd:nonNegativeInteger ;
+        nif:endIndex    "761"^^xsd:nonNegativeInteger ;
+        nif:isString    "X 1.25 DE OFFICIO PRIMICERII\r\n\r\nX 1.25.01 Ut primicerius\r\n\r\n Ut primicerius\r\nSupple statuimus.\r\n\r\n Diaconis\r\nSupra, de offi. archidiac., officium.  Contra capitulum ista loquuntur secundum diversas consuetudines diversarum ecclesiarum, vel primicerius hoc facit ad mandatum archidiaconi, vel tamquam vicarius eius.  Et ita praelatus qui subest episcopo potest alii demandare vices suas, et merito, quia ordinarii iudices sunt.  Laur.\r\n\r\n Ut ipse\r\nScilicet, archidiaconus.  Vel ipse, scilicet, primicerius, quod est melius.\r\n\r\n Donet lectiones\r\nSed hoc videtur pertinere ad officium archidiaconi, supra, de offi. archidiac., officium.  Diversa consuetudo diversarum ecclesiarum impedit contradictionem, quae circa huiusmodi officia consideratur potius.  Ber.\r\n\r\n" .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_123_124>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "123"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "124"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_125_134> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_119_123> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_333_336>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "qui" ;
+        nif:beginIndex        "333"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "336"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_337_343> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_323_332> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_77_83>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Supple" ;
+        nif:beginIndex        "77"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "83"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_84_93> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_64_75> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_375_380>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "vices" ;
+        nif:beginIndex        "375"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "380"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_381_385> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_365_374> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_612_621>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "archidiac" ;
+        nif:beginIndex        "612"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "621"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_621_622> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_610_611> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_544_547>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Sed" ;
+        nif:beginIndex        "544"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "547"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_548_551> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_533_542> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_252_255>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "hoc" ;
+        nif:beginIndex        "252"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "255"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_256_261> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_240_251> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_145_146>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "145"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "146"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_137_145> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_180_188>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "secundum" ;
+        nif:beginIndex        "180"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "188"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_189_197> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_170_179> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_45_56>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "primicerius" ;
+        nif:beginIndex        "45"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "56"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_61_63> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_42_44> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_441_445>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ipse" ;
+        nif:beginIndex        "441"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "445"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_447_455> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_440> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_642>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Diversa" ;
+        nif:beginIndex        "635"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "642"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_643_653> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_313_314>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "313"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "314"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_309_313> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_481_482>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "481"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "482"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_483_491> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_477_481> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_360_364>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "alii" ;
+        nif:beginIndex        "360"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "364"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_365_374> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_353_359> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_114_115>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "114"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "115"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_116_118> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_109_114> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_337_343>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "subest" ;
+        nif:beginIndex        "337"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "343"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_344_352> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_333_336> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_236_239>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "vel" ;
+        nif:beginIndex        "236"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "239"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_240_251> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_234_235> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_654_664>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "diversarum" ;
+        nif:beginIndex        "654"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "664"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_665_676> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_643_653> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_385_386>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "385"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "386"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_387_389> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_381_385> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_137_145>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "officium" ;
+        nif:beginIndex        "137"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "145"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_145_146> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_135_136> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_119_123>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "offi" ;
+        nif:beginIndex        "119"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "123"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_123_124> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_116_118> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_532>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Donet" ;
+        nif:beginIndex        "527"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "532"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_533_542> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_42_44>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Ut" ;
+        nif:beginIndex        "42"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "44"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_45_56> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_34_41> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_713_722>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "huiusmodi" ;
+        nif:beginIndex        "713"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "722"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_723_730> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_707_712> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426>
+        rdf:type              nif:Sentence , nif:OffsetBasedString ;
+        nif:anchorOf          "Et ita praelatus qui subest episcopo potest alii demandare vices suas, et merito, quia ordinarii iudices sunt." ;
+        nif:beginIndex        "316"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "426"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_433> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_333_336> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_353_359> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_318> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_421_425> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_425_426> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_396_397> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_360_364> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_337_343> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_319_322> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_398_402> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_365_374> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_344_352> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_390_396> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_381_385> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_403_412> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_387_389> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_385_386> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_413_420> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_323_332> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_375_380> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_109_114>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Supra" ;
+        nif:beginIndex        "109"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "114"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_114_115> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_107> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_552_559>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "videtur" ;
+        nif:beginIndex        "552"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "559"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_560_569> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_548_551> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_10_17>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "OFFICIO" ;
+        nif:beginIndex        "10"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "17"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_18_28> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_7_9> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Ut ipse\r\nScilicet, archidiaconus." ;
+        nif:beginIndex        "438"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "471"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_433> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_457_470> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_440> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_441_445> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_447_455> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_455_456> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_470_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_288_291>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "vel" ;
+        nif:beginIndex        "288"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "291"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_292_299> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_286_287> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_381_385>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "suas" ;
+        nif:beginIndex        "381"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "385"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_385_386> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_375_380> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_596_601>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "supra" ;
+        nif:beginIndex        "596"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "601"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_601_602> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_594_595> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_135_136>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "135"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "136"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_137_145> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_134_135> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_309_313>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "eius" ;
+        nif:beginIndex        "309"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "313"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_313_314> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_300_308> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_756_757>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "756"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "757"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_756> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_757> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_477_481>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ipse" ;
+        nif:beginIndex        "477"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "481"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_481_482> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_476> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_757>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Ber." ;
+        nif:beginIndex        "753"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "757"^^xsd:nonNegativeInteger ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_756_757> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_756> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "X 1.25 DE OFFICIO PRIMICERII\r\n\r\nX 1.25.01 Ut primicerius\r\n\r\n Ut primicerius\r\nSupple statuimus." ;
+        nif:beginIndex        "0"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "94"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_84_93> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_2_6> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_32_33> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_93_94> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_10_17> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_45_56> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_1> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_18_28> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_34_41> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_7_9> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_77_83> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_61_63> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_64_75> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_42_44> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_723_730>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "officia" ;
+        nif:beginIndex        "723"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "730"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_731_743> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_713_722> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_603_605>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "de" ;
+        nif:beginIndex        "603"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "605"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_606_610> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_601_602> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_64_75>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "primicerius" ;
+        nif:beginIndex        "64"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "75"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_77_83> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_61_63> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_256_261>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "facit" ;
+        nif:beginIndex        "256"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "261"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_262_264> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_252_255> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_700_701>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "700"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "701"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_702_706> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_685_700> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_632_633>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "632"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "633"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_624_632> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_170_179>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "loquuntur" ;
+        nif:beginIndex        "170"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "179"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_180_188> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_165_169> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_318>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Et" ;
+        nif:beginIndex        "316"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "318"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_319_322> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_134_135>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "134"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "135"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_135_136> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_125_134> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_750_751>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "750"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "751"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_744_750> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_665_676>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ecclesiarum" ;
+        nif:beginIndex        "665"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "676"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_677_684> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_654_664> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_398_402>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "quia" ;
+        nif:beginIndex        "398"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "402"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_403_412> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_396_397> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_702_706>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "quae" ;
+        nif:beginIndex        "702"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "706"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_707_712> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_700_701> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_677_684>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "impedit" ;
+        nif:beginIndex        "677"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "684"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_685_700> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_665_676> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_731_743>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "consideratur" ;
+        nif:beginIndex        "731"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "743"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_744_750> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_723_730> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_1>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "X" ;
+        nif:beginIndex        "0"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "1"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_2_6> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_744_750>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "potius" ;
+        nif:beginIndex        "744"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "750"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_750_751> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_731_743> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_34_41>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "1.25.01" ;
+        nif:beginIndex        "34"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "41"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_42_44> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_32_33> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_155_164>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "capitulum" ;
+        nif:beginIndex        "155"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "164"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_165_169> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_154> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_506_510>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "quod" ;
+        nif:beginIndex        "506"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "510"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_511_514> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_504_505> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_2_6>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "1.25" ;
+        nif:beginIndex        "2"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "6"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_7_9> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_1> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_493_504>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "primicerius" ;
+        nif:beginIndex        "493"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "504"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_504_505> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_491_492> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_455_456>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "455"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "456"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_457_470> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_447_455> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_61_63>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Ut" ;
+        nif:beginIndex        "61"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "63"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_64_75> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_45_56> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_756>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Ber" ;
+        nif:beginIndex        "753"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "756"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_756_757> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_757> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_323_332>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "praelatus" ;
+        nif:beginIndex        "323"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "332"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_333_336> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_319_322> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_107>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Diaconis" ;
+        nif:beginIndex        "99"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "107"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_109_114> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_198_211>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "consuetudines" ;
+        nif:beginIndex        "198"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "211"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_212_222> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_189_197> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_624_632>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "officium" ;
+        nif:beginIndex        "624"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "632"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_632_633> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_622_623> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_286_287>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "286"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "287"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_288_291> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_274_286> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_707_712>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "circa" ;
+        nif:beginIndex        "707"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "712"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_713_722> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_702_706> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_387_389>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "et" ;
+        nif:beginIndex        "387"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "389"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_390_396> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_385_386> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_573_581>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "officium" ;
+        nif:beginIndex        "573"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "581"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_582_594> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_570_572> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_610_611>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "610"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "611"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_612_621> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_606_610> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_274_286>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "archidiaconi" ;
+        nif:beginIndex        "274"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "286"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_286_287> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_265_273> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_396_397>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "396"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "397"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_398_402> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_390_396> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_447_455>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Scilicet" ;
+        nif:beginIndex        "447"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "455"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_455_456> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_441_445> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_212_222>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "diversarum" ;
+        nif:beginIndex        "212"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "222"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_223_234> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_198_211> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_491_492>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "491"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "492"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_493_504> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_483_491> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_240_251>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "primicerius" ;
+        nif:beginIndex        "240"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "251"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_252_255> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_236_239> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_594_595>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "594"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "595"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_596_601> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_582_594> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_300_308>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "vicarius" ;
+        nif:beginIndex        "300"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "308"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_309_313> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_292_299> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_413_420>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "iudices" ;
+        nif:beginIndex        "413"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "420"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_421_425> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_403_412> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_521_522>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "521"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "522"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_515_521> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Contra capitulum ista loquuntur secundum diversas consuetudines diversarum ecclesiarum, vel primicerius hoc facit ad mandatum archidiaconi, vel tamquam vicarius eius." ;
+        nif:beginIndex        "148"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "314"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_170_179> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_180_188> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_198_211> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_189_197> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_240_251> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_236_239> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_234_235> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_265_273> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_292_299> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_212_222> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_288_291> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_300_308> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_252_255> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_274_286> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_309_313> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_165_169> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_286_287> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_313_314> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_262_264> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_155_164> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_154> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_256_261> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_223_234> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_265_273>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "mandatum" ;
+        nif:beginIndex        "265"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "273"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_274_286> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_262_264> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_125_134>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "archidiac" ;
+        nif:beginIndex        "125"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "134"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_134_135> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_123_124> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_548_551>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "hoc" ;
+        nif:beginIndex        "548"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "551"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_552_559> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_544_547> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_515_521>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "melius" ;
+        nif:beginIndex        "515"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "521"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_521_522> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_511_514> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_582_594>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "archidiaconi" ;
+        nif:beginIndex        "582"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "594"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_594_595> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_573_581> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_470_471>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "470"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "471"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_457_470> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_601_602>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "601"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "602"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_603_605> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_596_601> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_425_426>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "425"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "426"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_421_425> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_353_359>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "potest" ;
+        nif:beginIndex        "353"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "359"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_360_364> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_344_352> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_189_197>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "diversas" ;
+        nif:beginIndex        "189"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "197"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_198_211> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_180_188> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_685_700>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "contradictionem" ;
+        nif:beginIndex        "685"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "700"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_700_701> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_677_684> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_483_491>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "scilicet" ;
+        nif:beginIndex        "483"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "491"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_491_492> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_481_482> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Vel ipse, scilicet, primicerius, quod est melius." ;
+        nif:beginIndex        "473"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "522"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_511_514> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_476> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_504_505> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_521_522> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_506_510> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_483_491> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_515_521> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_491_492> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_481_482> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_493_504> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_477_481> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_32_33>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "X" ;
+        nif:beginIndex        "32"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "33"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_34_41> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_18_28> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_18_28>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "PRIMICERII" ;
+        nif:beginIndex        "18"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "28"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_32_33> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_10_17> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_7_9>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "DE" ;
+        nif:beginIndex        "7"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "9"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_10_17> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_2_6> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_432_433>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "." ;
+        nif:beginIndex        "432"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "433"^^xsd:nonNegativeInteger ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_432> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_433> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_643_653>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "consuetudo" ;
+        nif:beginIndex        "643"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "653"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_654_664> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_642> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_116_118>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "de" ;
+        nif:beginIndex        "116"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "118"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_119_123> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_114_115> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_606_610>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "offi" ;
+        nif:beginIndex        "606"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "610"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_610_611> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_603_605> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_165_169>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ista" ;
+        nif:beginIndex        "165"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "169"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_170_179> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_155_164> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_751>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Diversa consuetudo diversarum ecclesiarum impedit contradictionem, quae circa huiusmodi officia consideratur potius." ;
+        nif:beginIndex        "635"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "751"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_753_757> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_707_712> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_685_700> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_723_730> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_677_684> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_702_706> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_713_722> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_643_653> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_750_751> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_700_701> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_654_664> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_744_750> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_665_676> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_731_743> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_635_642> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_390_396>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "merito" ;
+        nif:beginIndex        "390"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "396"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_396_397> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_387_389> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_433>
+        rdf:type              nif:Sentence , nif:OffsetBasedString ;
+        nif:anchorOf          "Laur." ;
+        nif:beginIndex        "428"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "433"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_428_432> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_432_433> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_457_470>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "archidiaconus" ;
+        nif:beginIndex        "457"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "470"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_470_471> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_455_456> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_440>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Ut" ;
+        nif:beginIndex        "438"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "440"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_441_445> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_438_471> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_403_412>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ordinarii" ;
+        nif:beginIndex        "403"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "412"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_413_420> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_398_402> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_511_514>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "est" ;
+        nif:beginIndex        "511"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "514"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_515_521> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_506_510> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_365_374>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "demandare" ;
+        nif:beginIndex        "365"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "374"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_375_380> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_360_364> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_476>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "Vel" ;
+        nif:beginIndex        "473"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "476"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_477_481> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_421_425>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "sunt" ;
+        nif:beginIndex        "421"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "425"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_425_426> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_413_420> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_344_352>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "episcopo" ;
+        nif:beginIndex        "344"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "352"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_353_359> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_337_343> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_316_426> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_223_234>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ecclesiarum" ;
+        nif:beginIndex        "223"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "234"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_234_235> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_212_222> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_570_572>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "ad" ;
+        nif:beginIndex        "570"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "572"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_573_581> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_560_569> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_292_299>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "tamquam" ;
+        nif:beginIndex        "292"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "299"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_300_308> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_288_291> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_560_569>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "pertinere" ;
+        nif:beginIndex        "560"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "569"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_570_572> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_552_559> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_504_505>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "," ;
+        nif:beginIndex        "504"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "505"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_506_510> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_493_504> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_473_522> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_146>
+        rdf:type              nif:OffsetBasedString , nif:Sentence ;
+        nif:anchorOf          "Diaconis\r\nSupra, de offi. archidiac., officium." ;
+        nif:beginIndex        "99"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "146"^^xsd:nonNegativeInteger ;
+        nif:nextSentence      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_148_314> ;
+        nif:previousSentence  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_94> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:word              <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_123_124> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_119_123> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_134_135> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_99_107> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_116_118> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_114_115> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_109_114> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_145_146> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_125_134> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_137_145> , <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_135_136> .
+
+<file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_533_542>
+        rdf:type              nif:OffsetBasedString , nif:Word ;
+        nif:anchorOf          "lectiones" ;
+        nif:beginIndex        "533"^^xsd:nonNegativeInteger ;
+        nif:endIndex          "542"^^xsd:nonNegativeInteger ;
+        nif:nextWord          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_544_547> ;
+        nif:previousWord      <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_532> ;
+        nif:referenceContext  <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_0_761> ;
+        nif:sentence          <file:/export/repository/project/10/document/13166/source/INITIAL_CAS#offset_527_633> .

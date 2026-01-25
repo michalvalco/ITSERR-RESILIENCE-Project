@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="16" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="22" end="37" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="42" end="54" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="60" end="77" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="85" end="108" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="257" end="287" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="371" end="401" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="497" end="520" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="529" end="566" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Capitolo" begin="573" end="591" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="596" end="606" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="671" end="696" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Lemma glossato" begin="702" end="724" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="837" end="855" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1004" end="1026" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1031" end="1051" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="1057" end="1060" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Lemma glossato" begin="1086" end="1094" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Capitolo" begin="1132" end="1145" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Lemma glossato" begin="1150" end="1156" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="1262" end="1280" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1390" end="1410" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1415" end="1434" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1439" end="1457" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1462" end="1477" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1479" end="1504" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1516" end="1531" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1536" end="1564" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1579" end="1595" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1721" end="1752" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1765" end="1793" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="1798" end="1824" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1826" end="1844" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2153" end="2179" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2474" end="2498" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2569" end="2590" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2595" end="2612" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2624" end="2658" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Lemma glossato" begin="2803" end="2813" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2919" end="2945" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="2950" end="2967" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Capitolo" begin="2974" end="2991" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Lemma glossato" begin="2996" end="3000" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="3048" end="3078" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="3087" end="3116" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Lemma glossato" begin="3201" end="3208" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="3362" end="3396" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="3403" end="3431" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3575" end="3599" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Lemma glossato" begin="3605" end="3631" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="3647" end="3685" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Capitolo" begin="3764" end="3786" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Lemma glossato" begin="3791" end="3799" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="3831" end="3865" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="3870" end="3913" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="3969" end="3986" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="3991" end="4007" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="4012" end="4031" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="4054" end="4074" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Capitolo" begin="4081" end="4093" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Lemma glossato" begin="4098" end="4108" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="4167" end="4195" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="4314" end="4348" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4366" end="4400" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="4405" end="4426" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="4561" end="4586" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Lemma glossato" begin="4639" end="4650" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="4659" end="4678" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="4683" end="4701" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="4786" end="4814" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Capitolo" begin="4821" end="4840" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Lemma glossato" begin="4845" end="4859" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="4910" end="4940" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Allegazione normativa" begin="4952" end="4974" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="4986" end="5007" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Allegazione normativa" begin="5024" end="5048" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Allegazione normativa" begin="5053" end="5078" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Lemma glossato" begin="5084" end="5092" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Allegazione normativa" begin="5281" end="5302" sofa="1"/>
+  <custom:Glossa xmi:id="81" Tipo="Allegazione normativa" begin="5402" end="5422" sofa="1"/>
+  <custom:Glossa xmi:id="82" Tipo="Allegazione normativa" begin="5451" end="5473" sofa="1"/>
+  <custom:Glossa xmi:id="83" Tipo="Allegazione normativa" begin="5606" end="5645" sofa="1"/>
+  <custom:Glossa xmi:id="84" Tipo="Allegazione normativa" begin="5710" end="5737" sofa="1"/>
+  <custom:Glossa xmi:id="85" Tipo="Allegazione normativa" begin="5785" end="5808" sofa="1"/>
+  <custom:Glossa xmi:id="86" Tipo="Allegazione normativa" begin="5820" end="5834" sofa="1"/>
+  <custom:Glossa xmi:id="87" Tipo="Allegazione normativa" begin="5836" end="5851" sofa="1"/>
+  <custom:Glossa xmi:id="88" Tipo="Allegazione normativa" begin="5856" end="5880" sofa="1"/>
+  <custom:Glossa xmi:id="89" Tipo="Allegazione normativa" begin="5911" end="5937" sofa="1"/>
+  <custom:Glossa xmi:id="90" Tipo="Allegazione normativa" begin="5942" end="5966" sofa="1"/>
+  <custom:Glossa xmi:id="91" Tipo="Allegazione normativa" begin="6029" end="6056" sofa="1"/>
+  <custom:Glossa xmi:id="92" Tipo="Lemma glossato" begin="6108" end="6117" sofa="1"/>
+  <custom:Glossa xmi:id="93" Tipo="Allegazione normativa" begin="6181" end="6211" sofa="1"/>
+  <custom:Glossa xmi:id="94" Tipo="Allegazione normativa" begin="6216" end="6249" sofa="1"/>
+  <custom:Glossa xmi:id="95" Tipo="Capitolo" begin="6255" end="6272" sofa="1"/>
+  <custom:Glossa xmi:id="96" Tipo="Lemma glossato" begin="6277" end="6287" sofa="1"/>
+  <custom:Glossa xmi:id="97" Tipo="Allegazione normativa" begin="6322" end="6352" sofa="1"/>
+  <custom:Glossa xmi:id="98" Tipo="Allegazione normativa" begin="6364" end="6389" sofa="1"/>
+  <custom:Glossa xmi:id="99" Tipo="Lemma glossato" begin="6401" end="6413" sofa="1"/>
+  <custom:Glossa xmi:id="100" Tipo="Allegazione normativa" begin="6478" end="6512" sofa="1"/>
+  <custom:Glossa xmi:id="101" Tipo="Allegazione normativa" begin="6518" end="6549" sofa="1"/>
+  <custom:Glossa xmi:id="102" Tipo="Allegazione normativa" begin="6584" end="6615" sofa="1"/>
+  <custom:Glossa xmi:id="103" Tipo="Capitolo" begin="6630" end="6642" sofa="1"/>
+  <custom:Glossa xmi:id="104" Tipo="Lemma glossato" begin="6647" end="6657" sofa="1"/>
+  <custom:Glossa xmi:id="105" Tipo="Allegazione normativa" begin="6715" end="6768" sofa="1"/>
+  <custom:Glossa xmi:id="106" Tipo="Allegazione normativa" begin="6777" end="6805" sofa="1"/>
+  <custom:Glossa xmi:id="107" Tipo="Allegazione normativa" begin="6984" end="7014" sofa="1"/>
+  <custom:Glossa xmi:id="108" Tipo="Allegazione normativa" begin="7019" end="7048" sofa="1"/>
+  <custom:Glossa xmi:id="109" Tipo="Allegazione normativa" begin="7050" end="7090" sofa="1"/>
+  <custom:Glossa xmi:id="110" Tipo="Allegazione normativa" begin="7239" end="7290" sofa="1"/>
+  <custom:Glossa xmi:id="111" Tipo="Allegazione normativa" begin="7486" end="7524" sofa="1"/>
+  <custom:Glossa xmi:id="112" Tipo="Allegazione normativa" begin="7533" end="7584" sofa="1"/>
+  <custom:Glossa xmi:id="113" Tipo="Allegazione normativa" begin="7589" end="7636" sofa="1"/>
+  <custom:Glossa xmi:id="114" Tipo="Allegazione normativa" begin="7641" end="7670" sofa="1"/>
+  <custom:Glossa xmi:id="115" Tipo="Allegazione normativa" begin="7829" end="7872" sofa="1"/>
+  <custom:Glossa xmi:id="116" Tipo="Allegazione normativa" begin="7877" end="7920" sofa="1"/>
+  <custom:Glossa xmi:id="117" Tipo="Allegazione normativa" begin="7954" end="7991" sofa="1"/>
+  <custom:Glossa xmi:id="118" Tipo="Allegazione normativa" begin="8122" end="8152" sofa="1"/>
+  <custom:Glossa xmi:id="119" Tipo="Allegazione normativa" begin="8159" end="8212" sofa="1"/>
+  <custom:Glossa xmi:id="120" Tipo="Allegazione normativa" begin="8226" end="8253" sofa="1"/>
+  <custom:Glossa xmi:id="121" Tipo="Allegazione normativa" begin="8258" end="8303" sofa="1"/>
+  <custom:Glossa xmi:id="122" Tipo="Allegazione normativa" begin="8473" end="8489" sofa="1"/>
+  <custom:Glossa xmi:id="123" Tipo="Allegazione normativa" begin="8494" end="8523" sofa="1"/>
+  <custom:Glossa xmi:id="124" Tipo="Allegazione normativa" begin="8642" end="8661" sofa="1"/>
+  <custom:Glossa xmi:id="125" Tipo="Allegazione normativa" begin="8864" end="8920" sofa="1"/>
+  <custom:Glossa xmi:id="126" Tipo="Allegazione normativa" begin="8930" end="8962" sofa="1"/>
+  <custom:Glossa xmi:id="127" Tipo="Allegazione normativa" begin="9035" end="9063" sofa="1"/>
+  <custom:Glossa xmi:id="128" Tipo="Allegazione normativa" begin="9244" end="9275" sofa="1"/>
+  <custom:Glossa xmi:id="129" Tipo="Allegazione normativa" begin="9320" end="9357" sofa="1"/>
+  <custom:Glossa xmi:id="130" Tipo="Allegazione normativa" begin="9395" end="9419" sofa="1"/>
+  <custom:Glossa xmi:id="131" Tipo="Lemma glossato" begin="9425" end="9444" sofa="1"/>
+  <custom:Glossa xmi:id="132" Tipo="Allegazione normativa" begin="9509" end="9539" sofa="1"/>
+  <custom:Glossa xmi:id="133" Tipo="Allegazione normativa" begin="9541" end="9574" sofa="1"/>
+  <custom:Glossa xmi:id="134" Tipo="Lemma glossato" begin="9579" end="9584" sofa="1"/>
+  <custom:Glossa xmi:id="135" Tipo="Allegazione normativa" begin="9682" end="9704" sofa="1"/>
+  <custom:Glossa xmi:id="136" Tipo="Allegazione normativa" begin="9726" end="9748" sofa="1"/>
+  <custom:Glossa xmi:id="137" Tipo="Allegazione normativa" begin="9784" end="9803" sofa="1"/>
+  <custom:Glossa xmi:id="138" Tipo="Capitolo" begin="9810" end="9826" sofa="1"/>
+  <custom:Glossa xmi:id="139" Tipo="Lemma glossato" begin="9831" end="9843" sofa="1"/>
+  <custom:Glossa xmi:id="140" Tipo="Allegazione normativa" begin="9998" end="10024" sofa="1"/>
+  <custom:Glossa xmi:id="141" Tipo="Allegazione normativa" begin="10100" end="10126" sofa="1"/>
+  <custom:Glossa xmi:id="142" Tipo="Allegazione normativa" begin="10163" end="10182" sofa="1"/>
+  <custom:Glossa xmi:id="143" Tipo="Allegazione normativa" begin="10254" end="10271" sofa="1"/>
+  <custom:Glossa xmi:id="144" Tipo="Capitolo" begin="10278" end="10301" sofa="1"/>
+  <custom:Glossa xmi:id="145" Tipo="Lemma glossato" begin="10306" end="10317" sofa="1"/>
+  <custom:Glossa xmi:id="146" Tipo="Allegazione normativa" begin="10411" end="10437" sofa="1"/>
+  <custom:Glossa xmi:id="147" Tipo="Allegazione normativa" begin="10459" end="10482" sofa="1"/>
+  <custom:Glossa xmi:id="148" Tipo="Allegazione normativa" begin="10494" end="10513" sofa="1"/>
+  <custom:Glossa xmi:id="149" Tipo="Allegazione normativa" begin="10787" end="10809" sofa="1"/>
+  <custom:Glossa xmi:id="150" Tipo="Allegazione normativa" begin="10823" end="10843" sofa="1"/>
+  <custom:Glossa xmi:id="151" Tipo="Allegazione normativa" begin="10911" end="10937" sofa="1"/>
+  <custom:Glossa xmi:id="152" Tipo="Capitolo" begin="10944" end="10964" sofa="1"/>
+  <custom:Glossa xmi:id="153" Tipo="Lemma glossato" begin="10969" end="10980" sofa="1"/>
+  <custom:Glossa xmi:id="154" Tipo="Allegazione normativa" begin="11023" end="11039" sofa="1"/>
+  <custom:Glossa xmi:id="155" Tipo="Allegazione normativa" begin="11119" end="11141" sofa="1"/>
+  <custom:Glossa xmi:id="156" Tipo="Allegazione normativa" begin="11153" end="11185" sofa="1"/>
+  <custom:Glossa xmi:id="157" Tipo="Allegazione normativa" begin="11197" end="11216" sofa="1"/>
+  <custom:Glossa xmi:id="158" Tipo="Allegazione normativa" begin="11221" end="11244" sofa="1"/>
+  <custom:Glossa xmi:id="159" Tipo="Lemma glossato" begin="11250" end="11264" sofa="1"/>
+  <custom:Glossa xmi:id="160" Tipo="Allegazione normativa" begin="11398" end="11420" sofa="1"/>
+  <custom:Glossa xmi:id="161" Tipo="Allegazione normativa" begin="11425" end="11444" sofa="1"/>
+  <custom:Glossa xmi:id="162" Tipo="Allegazione normativa" begin="11521" end="11541" sofa="1"/>
+  <custom:Glossa xmi:id="163" Tipo="Allegazione normativa" begin="11546" end="11571" sofa="1"/>
+  <custom:Glossa xmi:id="164" Tipo="Allegazione normativa" begin="11583" end="11608" sofa="1"/>
+  <custom:Glossa xmi:id="165" Tipo="Allegazione normativa" begin="11643" end="11673" sofa="1"/>
+  <custom:Glossa xmi:id="166" Tipo="Allegazione normativa" begin="11685" end="11718" sofa="1"/>
+  <custom:Glossa xmi:id="167" Tipo="Lemma glossato" begin="11723" end="11737" sofa="1"/>
+  <custom:Glossa xmi:id="168" Tipo="Allegazione normativa" begin="11776" end="11809" sofa="1"/>
+  <custom:Glossa xmi:id="169" Tipo="Lemma glossato" begin="11862" end="11878" sofa="1"/>
+  <custom:Glossa xmi:id="170" Tipo="Allegazione normativa" begin="11931" end="11957" sofa="1"/>
+  <custom:Glossa xmi:id="171" Tipo="Allegazione normativa" begin="11962" end="11980" sofa="1"/>
+  <custom:Glossa xmi:id="172" Tipo="Allegazione normativa" begin="12003" end="12022" sofa="1"/>
+  <custom:Glossa xmi:id="173" Tipo="Allegazione normativa" begin="12027" end="12053" sofa="1"/>
+  <custom:Glossa xmi:id="174" Tipo="Allegazione normativa" begin="12175" end="12193" sofa="1"/>
+  <custom:Glossa xmi:id="175" Tipo="Allegazione normativa" begin="12201" end="12245" sofa="1"/>
+  <custom:Glossa xmi:id="176" Tipo="Allegazione normativa" begin="12250" end="12273" sofa="1"/>
+  <custom:Glossa xmi:id="177" Tipo="Allegazione normativa" begin="12290" end="12319" sofa="1"/>
+  <custom:Glossa xmi:id="178" Tipo="Allegazione normativa" begin="12407" end="12424" sofa="1"/>
+  <custom:Glossa xmi:id="179" Tipo="Lemma glossato" begin="12430" end="12440" sofa="1"/>
+  <custom:Glossa xmi:id="180" Tipo="Allegazione normativa" begin="12595" end="12624" sofa="1"/>
+  <custom:Glossa xmi:id="181" Tipo="Allegazione normativa" begin="12724" end="12776" sofa="1"/>
+  <custom:Glossa xmi:id="182" Tipo="Allegazione normativa" begin="12800" end="12821" sofa="1"/>
+  <custom:Glossa xmi:id="183" Tipo="Allegazione normativa" begin="12870" end="12900" sofa="1"/>
+  <custom:Glossa xmi:id="184" Tipo="Lemma glossato" begin="12906" end="12918" sofa="1"/>
+  <custom:Glossa xmi:id="185" Tipo="Allegazione normativa" begin="12996" end="13022" sofa="1"/>
+  <custom:Glossa xmi:id="186" Tipo="Allegazione normativa" begin="13030" end="13066" sofa="1"/>
+  <custom:Glossa xmi:id="187" Tipo="Allegazione normativa" begin="13083" end="13109" sofa="1"/>
+  <custom:Glossa xmi:id="188" Tipo="Lemma glossato" begin="13121" end="13132" sofa="1"/>
+  <custom:Glossa xmi:id="189" Tipo="Allegazione normativa" begin="13295" end="13317" sofa="1"/>
+  <custom:Glossa xmi:id="190" Tipo="Capitolo" begin="13489" end="13503" sofa="1"/>
+  <custom:Glossa xmi:id="191" Tipo="Lemma glossato" begin="13508" end="13514" sofa="1"/>
+  <custom:Glossa xmi:id="192" Tipo="Allegazione normativa" begin="13529" end="13545" sofa="1"/>
+  <custom:Glossa xmi:id="193" Tipo="Allegazione normativa" begin="13550" end="13568" sofa="1"/>
+  <custom:Glossa xmi:id="194" Tipo="Allegazione normativa" begin="13612" end="13632" sofa="1"/>
+  <custom:Glossa xmi:id="195" Tipo="Allegazione normativa" begin="13676" end="13696" sofa="1"/>
+  <custom:Glossa xmi:id="196" Tipo="Lemma glossato" begin="13708" end="13719" sofa="1"/>
+  <custom:Glossa xmi:id="197" Tipo="Allegazione normativa" begin="13778" end="13822" sofa="1"/>
+  <custom:Glossa xmi:id="198" Tipo="Allegazione normativa" begin="13831" end="13849" sofa="1"/>
+  <custom:Glossa xmi:id="199" Tipo="Allegazione normativa" begin="13898" end="13912" sofa="1"/>
+  <custom:Glossa xmi:id="200" Tipo="Lemma glossato" begin="13918" end="13939" sofa="1"/>
+  <custom:Glossa xmi:id="201" Tipo="Allegazione normativa" begin="14095" end="14132" sofa="1"/>
+  <custom:Glossa xmi:id="202" Tipo="Lemma glossato" begin="14313" end="14323" sofa="1"/>
+  <custom:Glossa xmi:id="203" Tipo="Allegazione normativa" begin="14412" end="14438" sofa="1"/>
+  <custom:Glossa xmi:id="204" Tipo="Allegazione normativa" begin="14443" end="14464" sofa="1"/>
+  <custom:Glossa xmi:id="205" Tipo="Allegazione normativa" begin="14524" end="14576" sofa="1"/>
+  <custom:Glossa xmi:id="206" Tipo="Allegazione normativa" begin="14619" end="14644" sofa="1"/>
+  <custom:Glossa xmi:id="207" Tipo="Lemma glossato" begin="14662" end="14693" sofa="1"/>
+  <custom:Glossa xmi:id="208" Tipo="Allegazione normativa" begin="14867" end="14912" sofa="1"/>
+  <custom:Glossa xmi:id="209" Tipo="Allegazione normativa" begin="14924" end="14945" sofa="1"/>
+  <custom:Glossa xmi:id="210" Tipo="Allegazione normativa" begin="14950" end="14973" sofa="1"/>
+  <custom:Glossa xmi:id="211" Tipo="Allegazione normativa" begin="15153" end="15187" sofa="1"/>
+  <custom:Glossa xmi:id="212" Tipo="Allegazione normativa" begin="15192" end="15213" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.37 DE POENIS&#13;&#10;&#13;&#10;X 5.37.01 Ea quae&#13;&#10;&#13;&#10; Condemnentur&#13;&#10;Sic 16. q. 1, imitare; et de poen. dist. 1, mensuram.  Et ita quotiens quis deliquerit, totiens puniri debet.  Sicut in contractibus consuevit dici, ut poena soluta contractus maneat in sua firmitate, ff. de transaction., qui fidem.  Sed etiam arbitrio quis stare non cogitur poena soluta nisi id expresse dicatur, ff. de recepti., si duo, in fi.  Et est arg. quotiens clericus in delicto repertus fuerit, totiens exigatur ab eo poena, arg. 23. dist., quamquam, in fi.; et ff. de ver. oblig., si sic stipulatus.&#13;&#10;&#13;&#10;X 5.37.02 Presbyteri&#13;&#10;&#13;&#10; Compositio&#13;&#10;Haec compositio per legem Lombardam est sexcentorum solidorum, 17. q. 4, qui subdiaconum.&#13;&#10;&#13;&#10; Utilitatibus ecclesiae&#13;&#10;Hoc ideo quia et sic ecclesiae iniuria facta fuit, et in suum ministrum iuxta illud: qui vos tangit me tangit, 2. q. 7, accusatio.  Et est arg. quod poenas pecuniarias quas recipit episcopus non lucratur ipsa, sed in utilitatem ecclesiae converti debent vel dividet illas, arg. 1. dist., ius militare; et 16. q. 6, consuetudo.&#13;&#10;&#13;&#10; Cui&#13;&#10;Scilicet ecclesiae.&#13;&#10;&#13;&#10; Sociavit&#13;&#10;Baptizando et ordinando illum.&#13;&#10;&#13;&#10;X 5.37.03 Licet&#13;&#10;&#13;&#10; Laicis&#13;&#10;Sed quare a laicis?  Quia forte sunt de sua iurisdictione temporali vel de consuetudine hoc habent.&#13;&#10;&#13;&#10; Poenam pecuniariam&#13;&#10;Ex hac decretali videtur quod pro criminibus poena pecuniaria exigi non debet, cum Papa eam prohibeat, arg. 16. q. 6, cognovimus; et 16. q. 6, de lapsis; et 16. q. 6, episcopo; et 16. q. 6, illud; 1. q. 1, nullus episcopus; et supra, de simon., nemo; et 83. dist., si quis episcopus.  Arg. contra 23. q. 5, si vos.  Unde nota quod cum ius statuit poenam pecuniariam infligendam, quicumque cognoscit de illo crimine illam potest infligere, ff. de iud., consensisse § ulti.; et supra, de rapt., in archiepiscopatu; et 12. q. 2, cum devotissimam; 18. dist., quoniam.  Si vero ius solam poenam spiritualem vel corporalem super crimine statuit, iudex nec debet nec potest illam in aliam commutare, sed ille tantum qui de illo crimine potest dispensare.  Et cum de poena criminis nihil de iure cautum est an pecuniariam vel aliam infligat, iudicis arbitrio committitur, supra, de offi. deleg., de causis.  Cum iudex super crimine dispensare potest, bene potest infligere poenam pecuniariam vel aliam.  Sed archidiaconi isti super his criminibus dispensare non poterant.  Unde non debebant poenam pecuniariam infligere, sed imponere spiritualem secundum quod qualitas criminis exigebat, arg. supra, de iudic., at si clerici.  Hug. dicit quod illa poena est infligenda quae magis timeatur, arg. 23. q. 4, ea vindicta; et 23. q. 5, prodest; et supra, ut lite non cont., quoniam, in fi.  Sed hoc intellige habere locum cum iudex talis est qui possit dispensare et commutare poenas, sed isti archidiaconi hoc non possunt.  Ala.&#13;&#10;&#13;&#10; A vicariis&#13;&#10;Hoc erat simoniacum cum ordo sit sacramentum, cui adhaeret executio.  Si ergo unum vendunt et reliquum, 1. q. 3, si quis obiecerit; et 1. q. 3, salvator.&#13;&#10;&#13;&#10;X 5.37.04 Calumniam&#13;&#10;&#13;&#10; Alio&#13;&#10;Ita ut praeter expensas de calumnia puniatur, C. de calum., qui non probasse; et Inst. de po. tem. lit. § adversus.  Quia infamis efficitur ut ibi dicitur, de quibus legibus hic facit mentionem.&#13;&#10;&#13;&#10; Victori&#13;&#10;Victus victori in expensis condemnari debet, si per calumniam et malam fidem appareat eum movisse litem, ut hic expresse dicit littera in princ., et in Auth. de iudicib. § oportet, coll. 6; et ff. de iud., cum quem temere.  Alii dicunt quod eo ipso quod succumbit praesumitur calumniari.  Unde condemnari debet in expensis.  De hac materia plene dictum est, supra, de dolo et contu., finem.&#13;&#10;&#13;&#10; Nisi sententia pro absente&#13;&#10;Sicut cavetur C. de iud., properandum § et si quidem, ibi dicitur quod victus praesens sumptus suos de condemnatione deducat.&#13;&#10;&#13;&#10;X 5.37.05 Quod in dubiis&#13;&#10;&#13;&#10; Incitant&#13;&#10;In bello iniusto, arg. supra, de homic., sicut dignum § qui vero; et ff. ad leg. Aquil., item Mela § item cum eo.  Secus si esset iustum quia tunc licitum est hortari, 23. q. 8, hortatu; et 23. q. 8, igitur; et 23. q. 8, ut pridem; et interesse bellis, 23. q. 3, Maximianus.&#13;&#10;&#13;&#10;X 5.37.06 Tuae&#13;&#10;&#13;&#10; Deprehensi&#13;&#10;Et convicti.  Sola enim deprehensio non sufficit, supra, de iudic., cum non ab homine.  Vel intellige deprehensi, ita quod factum sit notorium per evidentiam facti.  Tales enim statim condemnari possunt, C. de defensor. civit., defensores.  Et arg. supra, de cohab. cler. et mul., quaesitum; et 2. q. 1, de manifesta.  Et talis deprehensio auctoritate sui praelati fieri debet, ne ultra se extendat violentia quam exegerit defensio clericorum, infra, de sent. excom., ut famae.  Alias capientes essent excommunicati, ut ibi.&#13;&#10;&#13;&#10; Monasteriis&#13;&#10;Simile 16. q. 6, de lapsis; et 50. dist., si ille.  Et si incorrigibiles fuerint per saecularem iudicem postea deprehendantur, supra, de iudic., cum non ab homine.&#13;&#10;&#13;&#10;X 5.37.07 Constitutus&#13;&#10;&#13;&#10; Ex confessione&#13;&#10;Confessio enim in iure facta praeiudicat, supra, de transact., praeterea quarto; et supra, de confess., cum super; et supra, de confess., ex parte, ubi de hoc; et C. de confes., confessos; et ff. de confes., confessus.&#13;&#10;&#13;&#10; Utramque&#13;&#10;Sed videtur quod episcopus non inciderit in poenam, nam cum altera pars ei subtraxit pensionem, licite potuit petere procurationem, quia fidem non servanti fides non est servanda, supra, de iureiur., pervenit 2.  Nam licitum est redire ad priorem actionem, cum ex parte altera non paretur pacto, arg. supra, de pact., cum pridem.  De hoc dictum fuit supra, de elect., cum inter R.  Econtra videtur quod illi potius praeiudicet qui ultimo incidit in poenam.  Nam si uterque est in mora, semper ultima mora nocet, ff. de peric. et comm. rei vend., illud.  Respondeo: hic propter par delictum neuter incidit in poenam, ff. de regul. iur., cum par.  Et in delictis mutua fit compensatio, supra, de adult., intelleximus; et supra, de adult., tua; 32. q. 6, nihil; et ff. solut. matrim., viro.  Io.  Compensatio mutua fit, ff. de compensat., si ambo; et ff. de dolo mal., si duo.  Haec decretalis decisa fuit in fine huius decretalis supra, de relig. dom., constitutus, et per illam poteris intelligere istam.  Ber.&#13;&#10;&#13;&#10; Absolutam&#13;&#10;Praeferenda est enim opinio aestimationis pecuniario commodo, ff. de solut., cum ex pluribus; et ff. de usuri., in pecudum § ulti.&#13;&#10;&#13;&#10;X 5.37.08 Super his&#13;&#10;&#13;&#10; Variaverat&#13;&#10;Et ideo non fuerat ei credendum, 4. q. 3, si testes § qui falso; et supra, ut eccl. ben., ut nostrum.  Ber.&#13;&#10;&#13;&#10; Non incurrit&#13;&#10;Quia genus poenae per se non infamat nisi sententia praecedat, C. ex quib. caus. infam., infamiae; et C. ex quib. caus. infam., nullam.  Licet Gratian. aliter senserit, 3. q. 7, infamis § tria, in fi.  Vincen.&#13;&#10;&#13;&#10;X 5.37.09 Suam&#13;&#10;&#13;&#10; Persolutis&#13;&#10;Eo ipso quod sortem recipit, poenae renuciasse videtur, ff. de eo quod cert. loc. dar. op., si post moram, in fi.; et ff. de lege comm., post diem.  Et ita videtur quod eam ulterius petere non possit per hoc quod hic dicitur, nisi aliter convenerit inter eos cum sortem recepit, scilicet quod sors et poena peti possit, arg. ff. de transaction., qui fidem; C. de transaction., cum proponas; ff. si quis caut., non exigimus, 1. resp.  Et sic videtur ex hac decretali quod non committatur poena in totum cum effectu, licet sors in totum soluta non sit.  Unde habes contraria plura, ff. de ver. oblig., stipulationum aliae § si sortem.  Super hoc consuevit distingui.  Aut enim illud quod promittitur sub poena consistit in dando aut in faciendo.  Si consistit in dando in totum committitur poena, licet in parte sit satisfactum, ff. fam. ercis., heredes § in illa, in fi.; et ff. de ver. oblig., stipulationum aliae § si sortem; et ff. de ver. oblig., in executione § item si ita; et ff. de pignorib., sed an viae, arg.  Si vero consistit in faciendo et illud quod promissum est sub poena sit individuum, tunc idem est quod in primo casu, quia in totum committitur poena, ff. fam. ercis., heredes § an ea stipulatio; et ff. de ver. oblig., eadem § cato, in princ., ibi: ab omnibus factum etc.; et ff. de ver. oblig., in executione § 2.  Sed in primo casu cum consistit in dando, dixit Azo quod opposita exceptione repelleretur a poena pro rata solutae partis, arg. ff. si quis caut., si servus § 1; et ff. de ver. oblig., stipulationum quaedam § ulti., ad fi.; et arg. ff. deposi., si duo heredes; et ff. de ver. oblig., in executione § insolidum.  Et hanc aequitatem servat hic Innocentius.  Nec est servandus ille rigor ut in totum poena exigatur, quia non debet quis cum aliena iactura ditari, ut hic dicitur, et 22. q. 2, primum; et ff. de condi. indeb., nam hoc.  Quia non interest illius poenam recipere pro soluta sorte.  Et ideo quia placuit aequitatem praeferri stricto iuri, C. de iud., placuit.  Unde litterae super hoc impetratae non valuerunt, quod patet ex eo quod dicit: veritate tacita.  Alii doctores legum servant illum rigorem.  Si vero factum sit dividuum, pro parte tantum committitur, ff. rem rat. hab., si procurator § si quis a procuratore; et arg. ff. de ver. oblig., eadem § cato, ibi: at si de eo cautum etc.  Sed contrarium videtur in lege praedicta ff. si quis caut., si servus, ubi committitur poena in totum, licet detur exceptio pro alia parte et factum videtur dividuum.  Sed dici consuevit quod illud est speciale in iudicio, quia et ibi mora purgatur, ff. si quis caut., si post tres.  Sed in poenali stipulatione non purgatur, C. de contrah. et comm. stip., magnam, quia tempus ibi interpellat, supra, de loc. et cond., potuit.&#13;&#10;&#13;&#10; Modestiae oblivisci&#13;&#10;Praeferenda est enim existimationis opinio pecuniario commodo, ff. de solut., cum ex pluribus; ff. de usuri., in pecudum § ulti.&#13;&#10;&#13;&#10; Poena&#13;&#10;Videtur ergo ex hoc quod ecclesiastica persona non possit exigere poenam, nec ab ea exigi, arg. 2. q. 2, fraternitatis.  Arg. contra supra, de poeni., constitutus.  De hac materia dictum est supra, de arbitr., dilecti.&#13;&#10;&#13;&#10;X 5.37.10 Ad aures&#13;&#10;&#13;&#10; Restituantur&#13;&#10;Immo videtur quod maiori poena puniendi sunt, ut non solum ea restituantur, sed omnia alia bona sua ecclesiae cui iniuria facta est, tradantur perpetuo, 17. q. 4, si quis deinceps.  Et anathematizentur, ut ibi dicitur, licet ipso iure sint excommunicati, 17. q. 4, si quis suadente.  Item alia poena imponitur, infra, de poeni., dilectus.  Et si iterum aliqui suum episcopum interficiant, privantur episcopo, 25. q. 2, ita nos.&#13;&#10;&#13;&#10;X 5.37.11 Dilectus filius&#13;&#10;&#13;&#10; Assertionem&#13;&#10;Arg. quod verbo iudicis est credendum nisi contrarium probetur, ut hic dicitur, arg. supra, de probat., post cessionem.  Arg. contra supra, de testib., cum a nobis; et supra, de probat., quoniam, cui standum est.  Sed quod dicit hic quod puniri debet litigator, verum est cum temere contradicit iudicis assertioni, puta cum iudex hoc quod dicit ostendit per acta vel cum litigator nihil ostendit contra excommunicationis sententiam, tunc puniatur in sumptibus, infra, de sent. excom., sacro; arg. supra, de poeni., calumniam.  Vel alias secundum arbitrium superioris, ut hic dicit, et supra, de offi. deleg., de causis.&#13;&#10;&#13;&#10;X 5.37.12 In quibusdam&#13;&#10;&#13;&#10; Defensionis&#13;&#10;Patroni enim ecclesiam defendere debent, 16. q. 7, filiis.  Hanc defensionem non debent extendere ad gravamen, ut hic dicit.  Sic supra, de appell., ad nostram; et supra, de appell., cum speciali § porro; et supra, de iureiur., quanto; et 22. q. 4, inter caetera.&#13;&#10;&#13;&#10; Iure permissum&#13;&#10;Permissum patronis est praesentare rectorem et habere ius professionis.  Et si ad inopiam vergat ei ab ecclesia succurritur, supra, de iure patron., nobis; et 16. q. 7, quicumque.  Sic episcopus non debet plus petere a subditis quam sit permissum a iure, 18. q. 2, hoc tantum; et 10. q. 3, quia cognovimus; et supra, de censib., cum Apostolus, alias restitueret duplum, supra, de immun. eccl., quia plerique; et supra, de censib., procurationes, in fi.&#13;&#10;&#13;&#10; Praesumpserint&#13;&#10;Nisi forte in casu quem habes infra, de sent. excom., si vero alicuius.  Cum moderamine inculpatae tutelae, alias non.&#13;&#10;&#13;&#10; Prorsus amittant&#13;&#10;Et devolvantur ad ecclesiam cui facta est iniuria, 17. q. 4, si quis deinceps; et 17. q. 4, quisquis, ut dictum est supra, de poeni., ad aures; et 27. q. 1, si quis rapuerit.  Sic ergo ecclesia non habebit patronum sic et vasallus amittit feudum, ut hic patet, si non servat fidelitatem domino, 22. q. 5, de forma; et in libro de feudis quemadmodum feudum amittatur; et 96. dist., si imperator.  Simile supra, de postuland., cum sacerdotis.  Sic et donatio revocatur propter talem ingratitudinem et propter alias etiam, supra, de dona., propter.&#13;&#10;&#13;&#10; Ad heredes&#13;&#10;Et descendentes per lineam directam usque ad quartam generationem, ut hic dicitur.  Quia usque ad quartam generationem extenditur consanguinitas, supra, de cons. et affin., non debet.  Et est speciale hic quod filius puniatur pro delicto patris, sicut in crimine laesae maiestatis, 6. q. 1, quaero § verum, vers. si quis cum militibus; et in haeresi, supra, de haeret., vergentis.  Alias bona damnatorum devolvuntur ad heredes, C. de bon. damn., authen. bona.&#13;&#10;&#13;&#10; Praelationis&#13;&#10;Sed contra videtur, cum ingressus religionis tollat irregularitatem, supra, de fil. presbyt., ut filii; et in Auth. de monach., in princ., coll. 1.  Dic ut supra, de apostat., ex litterarum.  Ber.&#13;&#10;&#13;&#10; Dispensatum&#13;&#10;Cum non determinetur a quo possit dispensari.  Dicit Io. quod episcopus potest dispensare, ex quo Papa specialiter non retinuit sibi dispensationem, arg. infra, de sent. excom., nuper.  Honestum esset quod nullus episcopus sine licentia Papae dispensaret cum talibus, ut alii saltem timerent, cum viderent illos usque ad ultimam generationem puniri.&#13;&#10;&#13;&#10;X 5.37.13 Gravem&#13;&#10;&#13;&#10; Claves&#13;&#10;Datas Petro, 22. dist., omnes; et 21. dist., in novo.  Et in Petro datae sunt ecclesiae claves, 24. q. 1, quodcumque.  Et cuilibet eius successori, arg. supra, de translat., quanto.  Ber.&#13;&#10;&#13;&#10; Contemnendo&#13;&#10;Et si alias ligatus non fuisset, ex contemptu ligaretur, 11. q. 3, non solum § cum ergo sententia, in fi.; et 24. q. 3, notandum.  Non enim debet contemni, cum sit medicinalis, 2. q. 1, multi.&#13;&#10;&#13;&#10; Haereticae pravitatis&#13;&#10;Hoc ideo dicit, quia qui propter suspicionem haeresis excommunicatur, si per annum steterit in excommunicatione postea tamquam haereticus habetur, supra, de haeret., excommunicamus itaque § 1.  Tamen si pro contumacia excommunicetur, sive per annum sive per plures in excommunicatione steterit, non habetur ut haereticus sed alias contra eum proceditur, ut hic dicit.&#13;&#10;&#13;&#10; Nobilitati&#13;&#10;Nota quod parcitur nobilitati circa poenas, ut aliter puniatur nobilis quam ignobilis, 24. q. 1, qui contra pacem; et 50. dist., contumaces.  Et in beneficiis etiam magis providendum est nobilitati, 86. dist., non satis, vers. item si consideranda est.  Arg. contra quod aeque puniatur, supra, de statu monach., ea quae, ubi de hoc.&#13;&#10;&#13;&#10; Ecclesias in quibus aliquod ius&#13;&#10;Forte ius patronatus vel quicquid aliud possit ab ecclesia percipere, ut si ecclesia aliquo debito tenetur eidem, ut interim ecclesia ei respondere non teneatur, ut supra, de haeret., excommunicamus itaque § credentes; et supra, de haeret., absolutos; et 15. q. 6, nos sanctorum.  Et ipso iure absoluti sunt tales.  Et hic praecipitur quod denuncientur solummodo absoluti, ut in fi. dicit.  Et est arg. quod crescente contumacia crescere debet poena, supra, ut lite non cont., quoniam, in fi.; et ff. de poe., relegati.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212"/>
+</xmi:XMI>

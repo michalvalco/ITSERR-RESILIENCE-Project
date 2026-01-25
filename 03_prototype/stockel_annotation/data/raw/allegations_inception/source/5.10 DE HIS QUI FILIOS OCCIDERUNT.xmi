@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="35" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="41" end="56" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="61" end="78" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="80" end="99" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="104" end="122" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Lemma glossato" begin="134" end="144" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="157" end="191" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="216" end="257" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="358" end="377" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="382" end="404" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="452" end="487" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="493" end="499" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="508" end="536" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="555" end="601" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="719" end="744" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Capitolo" begin="751" end="771" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="776" end="784" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="838" end="855" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="910" end="928" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="933" end="960" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="966" end="975" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1016" end="1036" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1161" end="1177" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Capitolo" begin="1339" end="1360" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="1365" end="1385" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1667" end="1693" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1698" end="1724" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1797" end="1827" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1834" end="1856" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1868" end="1900" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1918" end="1936" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2037" end="2069" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2258" end="2282" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2290" end="2314" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2361" end="2402" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2407" end="2447" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2560" end="2584" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2612" end="2644" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2829" end="2851" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2968" end="2996" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="3008" end="3035" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Lemma glossato" begin="3048" end="3055" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="3057" end="3075" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.10 DE HIS QUI FILIOS OCCIDERUNT&#13;&#10;&#13;&#10;X 5.10.01 Veniens&#13;&#10;&#13;&#10; Iracundiae calore&#13;&#10;11. q. 3, ira saepe; et 11. q. 3, cum apud.  Ber.&#13;&#10;&#13;&#10; Interfecit&#13;&#10;Sic infra, de his qui fil. occ., intelleximus.  De poena istius habes C. de his qui par. vel lib. occ., si quis.  Secundum canones non ita puniuntur, quia Deus non vult mortem peccatoris sed ut convertatur etc., 26. q. 6, agnovimus; et 23. q. 8, his a quibus.  De hac poena secundum canones dicitur infra, de his qui fil. occ., de infantibus.&#13;&#10;&#13;&#10; Multos&#13;&#10;Simile 31. q. 1, quomodo virginibus; et simile supra, qui cler. vel vov. matr. contr. poss., veniens.  Si autem non esset praesumptio de ipsius incontinentia, non daretur sibi licentia contrahendi propter crimen suum, 23. q. 2, in adolescentia.&#13;&#10;&#13;&#10;X 5.10.02 Intelleximus&#13;&#10;&#13;&#10; Abiurare&#13;&#10;Et male, quia quos Deus coniunxit homo non separet, 33. q. 2, an quod.  Et ob hanc causam eam maritus dimittere non posset, 32. q. 2, quicquid; et 32. q. 7, omnes causationes.&#13;&#10;&#13;&#10; Iuramento&#13;&#10;Tale iuramentum illicitum fuit, supra, de iureiur., tua nos 2.  Tamen in hoc non multum peccavit, quia compulsus hoc fecit, sed potius debuit quaelibet mala pati quam mala consentire, 32. q. 5, ita ne.  Unde iurare non debuit, quia sine periculo salutis aeternae servare non potuit iuramentum.  Mitius tamen agetur cum ea propter filios quos debet nutrire.&#13;&#10;&#13;&#10;X 5.10.03 De infantibus&#13;&#10;&#13;&#10; Nec etiam sine poena&#13;&#10;Sed si non constat eos interfectos a patre vel matre sed eventus fuit causa mortis, non debet eis poenitentia imponi, quia non peccaverunt.  Licet hoc non constet, tamen ad cautelam tutius est quod inde poenitentiam agant quia forsitan minorem diligentiam illis adhibuerunt, arg. 23. q. 5, excommunicatorum; et 34. q. 2, in lectum mariti.  Quia bonarum mentium est, ibi culpam timere ubi culpa non est, supra, de observ. ieiun., consilium § 2; et 5. dist., ad eius vero; et infra, de poenit. et remiss., quaesitum.  Et arg. supra, de spons., iuvenis; et hoc secundum discretionem pietatis, ut hic dicit, ad arbitrium imponentis ut in capitulo infra, de poenit. et remiss., quaesitum.  Si vero sponte hoc fecerunt, tunc gravissima poenitentia debet eis imponi, aliquantulum maior quam pro alio homicidio, quia magis peccare videtur proprium filium occidendo.  Arg. infra, de homic., cum iuramento; et de poen. dist. 1, aut facta.  Et secundum leges fortiori poena puniuntur, C. de his qui par. vel lib. occ., si quis; et ff. de lege Pomp. de parr., lege Pompeia.  Si non casu sed culpa gravi praecendente, tunc poenitentia septem vel quinque annorum est eis imponenda, arg. 50. dist., si qua femina.  Si quis sponte et infra, de poenit. et remiss., quaesitum.  Si vero levis culpa praecessit, posset imponi poenitentia trium annorum, ut hic dicit.  Si autem nulla praecessit culpa vel negligentia, de iure in nullo sunt puniendi.  Arg. infra, de homic., ex litteris 1.  Sed ad cautelam, ut dictum est, debet imponi propter ambiguum duplicitatis consideratis omnibus circumstantiis, de poen. dist. 5, consideret; et infra, de poenit. et remiss., Deus.  Tanc.&#13;&#10;&#13;&#10; Eventus&#13;&#10;50. dist., studeat.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44"/>
+</xmi:XMI>

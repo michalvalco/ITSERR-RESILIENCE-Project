@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="25" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="31" end="52" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="57" end="68" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="178" end="200" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="204" end="226" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="357" end="388" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="389" end="422" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="497" end="527" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="674" end="696" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="767" end="792" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="887" end="909" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="1004" end="1030" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="1041" end="1071" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Capitolo" begin="1078" end="1095" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Lemma glossato" begin="1100" end="1106" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1284" end="1329" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1340" end="1372" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1383" end="1409" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1441" end="1477" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1551" end="1586" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1803" end="1828" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1879" end="1914" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1980" end="2004" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Capitolo" begin="2011" end="2026" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="2031" end="2039" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2206" end="2227" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="2231" end="2261" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="2262" end="2294" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="2298" end="2320" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Lemma glossato" begin="2556" end="2564" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="2877" end="2884" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2927" end="2949" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Capitolo" begin="2956" end="2972" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Lemma glossato" begin="2977" end="2985" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="3218" end="3253" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="3607" end="3652" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="3659" end="3679" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="4101" end="4136" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Capitolo" begin="4215" end="4232" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Lemma glossato" begin="4237" end="4244" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="4327" end="4361" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="4363" end="4385" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="4390" end="4406" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="4483" end="4518" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Lemma glossato" begin="4524" end="4538" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="4604" end="4646" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="4651" end="4690" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Lemma glossato" begin="4695" end="4702" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="4778" end="4801" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="4806" end="4846" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="4899" end="4921" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="5132" end="5164" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="5169" end="5203" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="5314" end="5341" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Capitolo" begin="5350" end="5366" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Lemma glossato" begin="5371" end="5389" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="5534" end="5558" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="5570" end="5605" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="5779" end="5823" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="5835" end="5866" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="5878" end="5899" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="5992" end="6027" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="6100" end="6119" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="6121" end="6142" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="6147" end="6163" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="6170" end="6201" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="6206" end="6225" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Lemma glossato" begin="6231" end="6248" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="6353" end="6382" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="6435" end="6455" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="6589" end="6614" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="6626" end="6658" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="6663" end="6683" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.28 DE OFFICIO VICARII&#13;&#10;&#13;&#10;X 1.28.01 Ad audientiam&#13;&#10;&#13;&#10; In diversis&#13;&#10;Quod esse non debuit, cum pluribus servire non possit, quia dum ad utrumque festinat, neutrum bene peragit, 16. q. 1, presbyteros; et C. de assessor., nemo.  Et eo ipso quod permisit se intitulari in secunda, vel postquam translatus est ad eam, perdit ius quod habuit in vicaria, infra, de concess. praeben., litteras; 21. q. 2, si quis iam translatus.  Et qui beneficiatus est in una ecclesia non est idoneus ad aliam, infra, de praeben., super inordinata.  Immo non solum vicariam petere non poterat, sed utrumque beneficium perdere debet, si utrumque retinere contendit, secundum moderna iura, infra, de praeben., de multa.  Qui enim habet vicariam perpetuam, beneficiatus intelligitur, supra, de rescript., postulasti.  Et quod curam animarum vel praelationem et consimilem recipit, prima ipso iure vacat, infra, de praeben., de multa.  Et idem est si quis habet perpetuam vicariam, sicut si haberet ecclesiam intitulatam, infra, de offi. vicar., ex parte; et supra, de fil. presbyt., constitutus.&#13;&#10; &#13;&#10;X 1.28.02 Provideas&#13;&#10;&#13;&#10; Plures&#13;&#10;Ex eo quod dicit, plures, videtur quod possit habere unam vicariam.  Sed hoc videtur falsum, quia quilibet in propria persona, et non per vicarium debet in ecclesia deservire, infra, de cleri. non residen., quia nonnulli; et infra, de cleri. non residen., relatum; et supra, de elect., cum in cunctis.  Et melius in iure novo infra, de praeben., extirpandae § qui vero.  Et hoc est verum nisi in casibus qui ponuntur in dicta decretali infra, de praeben., extirpandae § qui vero, scilicet, cum parochialis ecclesia sit annexa dignitati vel praebendae maioris ecclesiae, ut ibi; alias hodie vicarii constitui non possunt.  Et talis vicarius debet esse sacerdos, cum habeat curam animarum, infra, de offi. vicar., ex parte.  Et debet esse perpetuus, ut in praedicto infra, de praeben., extirpandae § qui vero; et canonice institutus cum certa portione per episcopum, infra, de offi. vicar., ad haec.&#13;&#10;&#13;&#10;X 1.28.03 Ad haec&#13;&#10;&#13;&#10; Episcopi&#13;&#10;Quidam supplent: et patroni si non sit collegiata ecclesia, quoniam patroni consensus desideratur ubicumque ius perpetuum percipiendi aliquid confertur alicui, arg. 16. q. 7, decernimus; et 16. q. 5, si quis episcoporum; C. de aucto. praestan., veterem; et 63. dist., principali.  Hoc non credo quod consensus patroni sit requirendus, cum patronus tantummodo debeat praesentare vacante ecclesia, ut dicunt iura praedicta.  Sed ecclesia non intelligitur vacare in institutione vicarii, et hoc videtur hic innui.&#13;&#10;&#13;&#10; Removere&#13;&#10;Ergo habet ius in re.  Verum est quod habet ius vicariae, sed non dicit habere ecclesiam quo ad titulum.  Solus enim praelatus habet eam intitulatam.  Tamen expelli non potest, ac si haberet eam intitulatam sine iusta causa, et tunc per iudicem, et non per praelatum ipsius ecclesiae, ut hic in fine dicit.&#13;&#10;&#13;&#10; Minuere&#13;&#10;Cum sit perpetuo constituta, arg. infra, de censib., prohibemus.&#13;&#10;&#13;&#10;X 1.28.04 Clericos&#13;&#10;&#13;&#10; Clericos&#13;&#10;Sic pone casum: praelati ecclesiarum in quibus habent curam animarum vel aliam dignitatem in propria persona deservire debent ecclesiae et non substituere sibi vicarios, quia hoc est contra rationem.  Et iste casus probatur infra, de praeben., extirpandae § qui vero.  Et sic ordinabis litteram.  Non permittas clericos, id est, praelatos, in presbyteratu vel alios in inferioribus ordinibus constitutos substituere alios in vicariis ecclesiarum quas, scilicet, ecclesias adepti sunt tamquam praelati.  Et quod ita accipiatur hoc nomen, clericos, probatur.  Appellatione enim clericorum omnes superiores continentur, in Auth. de sanct. episc. § presbyterorum, coll. 9; et 11. q. 1, de persona.  Secundum alium casum, qui poni consuevit, expone clericos, id est vicarios substitutos, alios scilicet vicarios in vicariis quas adeptis sunt, quasi dicat vicarius non potest alium vicarium sibi constituere.  Sed iste casus non est bonus, quia per hoc innuitur quod licitum sit constituere vicarium, quod non est verum, ut dictum est secundum ius novum, nisi tu velis restringere hanc decretalem ad casum illius infra, de praeben., extirpandae § qui vero.  Sed in nullo casu licet vicario alium sibi vicarium substituere.  Ber.&#13;&#10;&#13;&#10;X 1.28.05 Sua nobis&#13;&#10;&#13;&#10; Vicarii&#13;&#10;Vicarius omnia potest quae pertinent ad iurisdictionem illius cuius vices gerit, C. de off. eius qui vic., in causa; 93. dist., praecipimus; et 94. dist., valde.  Quaedam tamen sunt quae sine speciali mandato attentare non debet, infra, de offi. legat., quod translationem.&#13;&#10;&#13;&#10; Non extenditur&#13;&#10;Nisi forte infra centesimum milliare ad instar praefecti urbis, ff. de off. praef. urb., omnia § in initio; et ff. de off. procon., si in alia § ulti.&#13;&#10;&#13;&#10; Irritum&#13;&#10;Nota quod factum est per surreptionem non valet tamquam a non suo iudice, 11. q. 1, in clericorum; et C. si a non comp. iud., et in privatorum.  Et retractari potest altera parte absente, infra, de re iudic., cum olim.  Et praecipue in decretali ista, hae enim litterae nullam conferebant iurisdictionem, quia iurisdictio vicarii non extenditur extra urbem, ut hic dicit.  Ergo si concedat litteras extra est nulla iurisdictio, ff. de iuris., extra territorium; C. qui pro sua iur. iud., in causarum.  Et ita quicquid factum est hic per litteras vicarii ipso iure non tenuit.  De hac materia dictum est supra, de rescript., ad audientiam 2.&#13;&#10;&#13;&#10;X 1.28.06 Ex parte&#13;&#10;&#13;&#10; Perpetuos vicarios&#13;&#10;Perpetuus vicarius dicitur qui canonice a persona ecclesiae et auctoritate episcopi est institutus et certam debet percipere portionem, supra, de offi. vicar., ad haec; et infra, de praeben., extirpandae § qui vero.  Nec potest quis habere plures vicarias, cum habeat curam animarum tamquam vicarius et debet residere in loco, ut hic dicit, sicut nec quis potest habere plures ecclesias, infra, de cleri. non residen., quia nonnulli; et infra, de cleri. non residen., relatum; et infra, de praeben., de multa.  In quibus casibus possit quis constituere vicarium, dicitur in praedicta decretali infra, de praeben., extirpandae § qui vero.  Beneficia enim ecclesiarum propter officia divina constituta fuerunt, 12. q. 2, concessio; 16. q. 1, generaliter; et 1. q. 2, clerici; arg. C. de testam. milit., ne quidam; et 21. q. 3, Cyprianus.&#13;&#10;&#13;&#10; Per subtractionem&#13;&#10;Et sic certam compelluntur alii clerici quando necessitas vel utilitas, ut ordinentur exposcit, supra, de aetat. et qualit., quaeris.  Nec habet locum distinctio quae consuevit notari, 84. dist., in princ., maxime ubi quis recipit beneficium animarum curam habens annexam sibi, indistincte debet promoveri vel privari illo officio, supra, de elect., cum in cunctis; et supra, de aetat. et qualit., ut abbates; et 60. dist., per totum.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74"/>
+</xmi:XMI>

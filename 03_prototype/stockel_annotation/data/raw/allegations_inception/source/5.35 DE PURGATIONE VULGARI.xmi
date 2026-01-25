@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="28" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="34" end="46" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="51" end="71" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="189" end="210" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="315" end="333" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="382" end="403" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="484" end="508" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="561" end="577" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="581" end="602" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="646" end="678" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="740" end="760" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="807" end="837" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Capitolo" begin="843" end="866" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="871" end="881" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1106" end="1134" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1202" end="1234" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1245" end="1266" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1315" end="1344" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1345" end="1375" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1457" end="1491" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1492" end="1510" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1511" end="1561" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1665" end="1700" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1747" end="1771" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1775" end="1804" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1805" end="1838" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Capitolo" begin="1998" end="2019" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Lemma glossato" begin="2024" end="2031" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="2083" end="2111" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="2122" end="2139" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="2184" end="2207" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="2212" end="2223" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2228" end="2244" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2248" end="2269" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2280" end="2305" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2316" end="2359" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2363" end="2393" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Lemma glossato" begin="2398" end="2405" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2478" end="2497" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2502" end="2520" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.35 DE PURGATIONE VULGARI&#13;&#10;&#13;&#10;X 5.35.01 Cura&#13;&#10;&#13;&#10; Aliquatenus tolerare&#13;&#10;In nullo enim casu talis purgatio debet tolerari.  Nec obstat quod possit obiici de Goliath qui pugnavit cum David, 2. q. 5, monomachiam.  Quia illud fuit factum instinctu Spiritus Sancti, sicut Petrus excusatur qui geminum fecit homicidium, 23. q. 8, occidit.  Et patriarchae excusantur ab adulterio, supra, de divort., gaudemus.  Haec purgatio ab ecclesia reprobatur, cum Deum potius tentare videatur, infra, de purg. vulg., dilecti.  Et fabricante diabolo facta est vulgaris purgatio, 2. q. 5, Mennam; et 2. q. 5, consuluisti.  Unde qui in culpa non est punitur, infra, de purg. vulg., significantibus.  Nam quamdiu habet homo quid faciat, non debet Deum tentare, 22. q. 2, quaeritur.  Et athletae secundum leges non habent locum, C. de glad., cruenta, lib. 11.&#13;&#10;&#13;&#10;X 5.35.02 Significantibus&#13;&#10;&#13;&#10; Restituant&#13;&#10;Sed qualiter hoc esse potest quod retractetur sententia a qua non fuit appellatum, cum iam transiverit in rem iudicatam, licet veritas aliter se habeat, et iam ex ipsa sententia ius factum est quantum ad litigantes, supra, de re iudic., cum inter vos.  Et per ea quae postea emergunt, sententia non retractetur, supra, de re iudic., inter monasterium; et supra, de re iudic., duobus.  Talis error detectus sententiam non retractat, ff. fam. ercis., cum putarem; C. de condi. indeb., pecuniae.  Ad hoc dicas quod propter probabilem errorem bene retractatur sententia, supra, de frig. et malef., fraternitatis; 23. q. 1, paratus; ff. quan. de pecul. act., praetor ait § quaesitum, alias est § primae legis, et incipit quaesitum.  Et plerumque veritate comperta retractatur sententia, ff. de condi. sine caus., si fullo.  Et etiam propter delictum adversarii, supra, de divort., ex litteris; et ff. de iureiuran., admonendi; C. de transaction., si ex falsis.  Sic ergo modo apparet quod sententia falso lata nullius fuit auctoritatis et reprobatae probationis de utroque iure, ergo debuit merito retractari.  Io.&#13;&#10;&#13;&#10;X 5.35.03 Dilecti filii&#13;&#10;&#13;&#10; Noviter&#13;&#10;Propter quod cum eis mitius esset agendum, infra, de poenit. et remiss., Deus; et supra, de divort., Deus.  Quousque fuerint in firma radice plantati, 35. q. 3, quod scripsi.&#13;&#10;&#13;&#10; Interdictum&#13;&#10;Ut 2. q. 5, Mennam; et 2. q. 5, consuluisti; et supra, de purg. can., ex tuarum; et supra, ne cler. vel mon. saecul. neg., sententiam; et C. de glad., cruenta, lib. 11.&#13;&#10;&#13;&#10; Tentari&#13;&#10;Quod fieri non debet iuxta illud, non tentabis dominum Deum tuum etc., 22. q. 2, quaeritur; et 23. q. 8, si nulla.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41"/>
+</xmi:XMI>

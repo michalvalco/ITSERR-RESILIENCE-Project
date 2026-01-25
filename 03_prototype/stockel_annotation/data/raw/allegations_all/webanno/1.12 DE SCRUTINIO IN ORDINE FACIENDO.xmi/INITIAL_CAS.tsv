@@ -1,0 +1,368 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 1.12 DE SCRUTINIO IN ORDINE FACIENDO\r
+#Text=\r
+#Text=X 1.12.01 Ex parte\r
+#Text=\r
+#Text= Et scit et testificatur\r
+#Text=Mirabilis est responsio ista.
+1-1	0-1	X	_	
+1-2	2-6	1.12	Titolo[1]	
+1-3	7-9	DE	Titolo[1]	
+1-4	10-19	SCRUTINIO	Titolo[1]	
+1-5	20-22	IN	Titolo[1]	
+1-6	23-29	ORDINE	Titolo[1]	
+1-7	30-38	FACIENDO	Titolo[1]	
+1-8	42-43	X	_	
+1-9	44-51	1.12.01	Capitolo[2]	
+1-10	52-54	Ex	Capitolo[2]	
+1-11	55-60	parte	Capitolo[2]	
+1-12	65-67	Et	Lemma glossato[3]	
+1-13	68-72	scit	Lemma glossato[3]	
+1-14	73-75	et	Lemma glossato[3]	
+1-15	76-88	testificatur	Lemma glossato[3]	
+1-16	90-99	Mirabilis	_	
+1-17	100-103	est	_	
+1-18	104-113	responsio	_	
+1-19	114-118	ista	_	
+1-20	118-119	.	_	
+
+#Text=Potius enim dicere deberet se nullam habere scientiam de eius dignitate vel indignitate?
+2-1	121-127	Potius	_	
+2-2	128-132	enim	_	
+2-3	133-139	dicere	_	
+2-4	140-147	deberet	_	
+2-5	148-150	se	_	
+2-6	151-157	nullam	_	
+2-7	158-164	habere	_	
+2-8	165-174	scientiam	_	
+2-9	175-177	de	_	
+2-10	178-182	eius	_	
+2-11	183-192	dignitate	_	
+2-12	193-196	vel	_	
+2-13	197-208	indignitate	_	
+2-14	208-209	?	_	
+
+#Text=Respondeo ex eo quod videt illum electum a bonis, quandam videtur habere notitiam de dignitate ipsius, et de tali respondet, quia audivit ab aliis, 22. q. 5, hoc videtur.
+3-1	211-220	Respondeo	_	
+3-2	221-223	ex	_	
+3-3	224-226	eo	_	
+3-4	227-231	quod	_	
+3-5	232-237	videt	_	
+3-6	238-243	illum	_	
+3-7	244-251	electum	_	
+3-8	252-253	a	_	
+3-9	254-259	bonis	_	
+3-10	259-260	,	_	
+3-11	261-268	quandam	_	
+3-12	269-276	videtur	_	
+3-13	277-283	habere	_	
+3-14	284-292	notitiam	_	
+3-15	293-295	de	_	
+3-16	296-305	dignitate	_	
+3-17	306-312	ipsius	_	
+3-18	312-313	,	_	
+3-19	314-316	et	_	
+3-20	317-319	de	_	
+3-21	320-324	tali	_	
+3-22	325-334	respondet	_	
+3-23	334-335	,	_	
+3-24	336-340	quia	_	
+3-25	341-348	audivit	_	
+3-26	349-351	ab	_	
+3-27	352-357	aliis	_	
+3-28	357-358	,	_	
+3-29	359-361	22	Allegazione normativa[4]	
+3-30	361-362	.	Allegazione normativa[4]	
+3-31	363-364	q	Allegazione normativa[4]	
+3-32	364-365	.	Allegazione normativa[4]	
+3-33	366-367	5	Allegazione normativa[4]	
+3-34	367-368	,	Allegazione normativa[4]	
+3-35	369-372	hoc	Allegazione normativa[4]	
+3-36	373-380	videtur	Allegazione normativa[4]	
+3-37	380-381	.	Allegazione normativa[4]	
+
+#Text=Contra conscientiam\r
+#Text=Quia tunc aedificaret ad gehennam, infra, de restit. spol., litteras; infra, de praescrip., quoniam § ex his.
+4-1	386-392	Contra	Lemma glossato[5]	
+4-2	393-405	conscientiam	Lemma glossato[5]	
+4-3	407-411	Quia	_	
+4-4	412-416	tunc	_	
+4-5	417-428	aedificaret	_	
+4-6	429-431	ad	_	
+4-7	432-440	gehennam	_	
+4-8	440-441	,	_	
+4-9	442-447	infra	_	
+4-10	447-448	,	_	
+4-11	449-451	de	Allegazione normativa[6]	
+4-12	452-458	restit	Allegazione normativa[6]	
+4-13	458-459	.	Allegazione normativa[6]	
+4-14	460-464	spol	Allegazione normativa[6]	
+4-15	464-465	.	Allegazione normativa[6]	
+4-16	465-466	,	Allegazione normativa[6]	
+4-17	467-475	litteras	Allegazione normativa[6]	
+4-18	475-476	;	Allegazione normativa[6]	
+4-19	477-482	infra	_	
+4-20	482-483	,	_	
+4-21	484-486	de	Allegazione normativa[7]	
+4-22	487-496	praescrip	Allegazione normativa[7]	
+4-23	496-497	.	Allegazione normativa[7]	
+4-24	497-498	,	Allegazione normativa[7]	
+4-25	499-506	quoniam	Allegazione normativa[7]	
+4-26	507-508	§	Allegazione normativa[7]	
+4-27	509-511	ex	Allegazione normativa[7]	
+4-28	512-515	his	Allegazione normativa[7]	
+4-29	515-516	.	Allegazione normativa[7]	
+
+#Text=Aestimare\r
+#Text=Nota quemlibet praesumi dignum nisi probetur indignus, et de quolibet praesumendum est bonum, nisi probetur contrarium, infra, de praesump., dudum; ff. de manum. test., servos; et ff. de leg. 2, cum pater § rogo.
+5-1	521-530	Aestimare	Lemma glossato	
+5-2	532-536	Nota	_	
+5-3	537-546	quemlibet	_	
+5-4	547-555	praesumi	_	
+5-5	556-562	dignum	_	
+5-6	563-567	nisi	_	
+5-7	568-576	probetur	_	
+5-8	577-585	indignus	_	
+5-9	585-586	,	_	
+5-10	587-589	et	_	
+5-11	590-592	de	_	
+5-12	593-601	quolibet	_	
+5-13	602-614	praesumendum	_	
+5-14	615-618	est	_	
+5-15	619-624	bonum	_	
+5-16	624-625	,	_	
+5-17	626-630	nisi	_	
+5-18	631-639	probetur	_	
+5-19	640-650	contrarium	_	
+5-20	650-651	,	_	
+5-21	652-657	infra	_	
+5-22	657-658	,	_	
+5-23	659-661	de	Allegazione normativa[8]	
+5-24	662-670	praesump	Allegazione normativa[8]	
+5-25	670-671	.	Allegazione normativa[8]	
+5-26	671-672	,	Allegazione normativa[8]	
+5-27	673-678	dudum	Allegazione normativa[8]	
+5-28	678-679	;	Allegazione normativa[8]	
+5-29	680-682	ff	Allegazione normativa[9]	
+5-30	682-683	.	Allegazione normativa[9]	
+5-31	684-686	de	Allegazione normativa[9]	
+5-32	687-692	manum	Allegazione normativa[9]	
+5-33	692-693	.	Allegazione normativa[9]	
+5-34	694-698	test	Allegazione normativa[9]	
+5-35	698-699	.	Allegazione normativa[9]	
+5-36	699-700	,	Allegazione normativa[9]	
+5-37	701-707	servos	Allegazione normativa[9]	
+5-38	707-708	;	Allegazione normativa[9]	
+5-39	709-711	et	_	
+5-40	712-714	ff	Allegazione normativa[10]	
+5-41	714-715	.	Allegazione normativa[10]	
+5-42	716-718	de	Allegazione normativa[10]	
+5-43	719-722	leg	Allegazione normativa[10]	
+5-44	722-723	.	Allegazione normativa[10]	
+5-45	724-725	2	Allegazione normativa[10]	
+5-46	725-726	,	Allegazione normativa[10]	
+5-47	727-730	cum	Allegazione normativa[10]	
+5-48	731-736	pater	Allegazione normativa[10]	
+5-49	737-738	§	Allegazione normativa[10]	
+5-50	739-743	rogo	Allegazione normativa[10]	
+5-51	743-744	.	Allegazione normativa[10]	
+
+#Text=Sed contra videtur, quia praesumitur non idoneus nisi probetur idoneus, C. de his qui ven. aet. impetr., omnes; et C. de probation., ex persona; ff. de mag. conv., in ordinem § si magistratus.
+6-1	746-749	Sed	_	
+6-2	750-756	contra	_	
+6-3	757-764	videtur	_	
+6-4	764-765	,	_	
+6-5	766-770	quia	_	
+6-6	771-782	praesumitur	_	
+6-7	783-786	non	_	
+6-8	787-794	idoneus	_	
+6-9	795-799	nisi	_	
+6-10	800-808	probetur	_	
+6-11	809-816	idoneus	_	
+6-12	816-817	,	_	
+6-13	818-819	C	Allegazione normativa[11]	
+6-14	819-820	.	Allegazione normativa[11]	
+6-15	821-823	de	Allegazione normativa[11]	
+6-16	824-827	his	Allegazione normativa[11]	
+6-17	828-831	qui	Allegazione normativa[11]	
+6-18	832-835	ven	Allegazione normativa[11]	
+6-19	835-836	.	Allegazione normativa[11]	
+6-20	837-840	aet	Allegazione normativa[11]	
+6-21	840-841	.	Allegazione normativa[11]	
+6-22	842-848	impetr	Allegazione normativa[11]	
+6-23	848-849	.	Allegazione normativa[11]	
+6-24	849-850	,	Allegazione normativa[11]	
+6-25	851-856	omnes	Allegazione normativa[11]	
+6-26	856-857	;	Allegazione normativa[11]	
+6-27	858-860	et	_	
+6-28	861-862	C	Allegazione normativa[12]	
+6-29	862-863	.	Allegazione normativa[12]	
+6-30	864-866	de	Allegazione normativa[12]	
+6-31	867-876	probation	Allegazione normativa[12]	
+6-32	876-877	.	Allegazione normativa[12]	
+6-33	877-878	,	Allegazione normativa[12]	
+6-34	879-881	ex	Allegazione normativa[12]	
+6-35	882-889	persona	Allegazione normativa[12]	
+6-36	889-890	;	Allegazione normativa[12]	
+6-37	891-893	ff	Allegazione normativa[13]	
+6-38	893-894	.	Allegazione normativa[13]	
+6-39	895-897	de	Allegazione normativa[13]	
+6-40	898-901	mag	Allegazione normativa[13]	
+6-41	901-902	.	Allegazione normativa[13]	
+6-42	903-907	conv	Allegazione normativa[13]	
+6-43	907-908	.	Allegazione normativa[13]	
+6-44	908-909	,	Allegazione normativa[13]	
+6-45	910-912	in	Allegazione normativa[13]	
+6-46	913-920	ordinem	Allegazione normativa[13]	
+6-47	921-922	§	Allegazione normativa[13]	
+6-48	923-925	si	Allegazione normativa[13]	
+6-49	926-937	magistratus	Allegazione normativa[13]	
+6-50	937-938	.	Allegazione normativa[13]	
+
+#Text=Et in dubio praesumitur quis excommunicatus, infra, de sent. excom., cum desideres § secundae quaestioni; et praesumitur potius fornicatio quam matrimonium, 30. q. 5, aliter.
+7-1	940-942	Et	_	
+7-2	943-945	in	_	
+7-3	946-951	dubio	_	
+7-4	952-963	praesumitur	_	
+7-5	964-968	quis	_	
+7-6	969-983	excommunicatus	_	
+7-7	983-984	,	_	
+7-8	985-990	infra	_	
+7-9	990-991	,	_	
+7-10	992-994	de	Allegazione normativa[14]	
+7-11	995-999	sent	Allegazione normativa[14]	
+7-12	999-1000	.	Allegazione normativa[14]	
+7-13	1001-1006	excom	Allegazione normativa[14]	
+7-14	1006-1007	.	Allegazione normativa[14]	
+7-15	1007-1008	,	Allegazione normativa[14]	
+7-16	1009-1012	cum	Allegazione normativa[14]	
+7-17	1013-1022	desideres	Allegazione normativa[14]	
+7-18	1023-1024	§	Allegazione normativa[14]	
+7-19	1025-1033	secundae	Allegazione normativa[14]	
+7-20	1034-1044	quaestioni	Allegazione normativa[14]	
+7-21	1044-1045	;	Allegazione normativa[14]	
+7-22	1046-1048	et	_	
+7-23	1049-1060	praesumitur	_	
+7-24	1061-1067	potius	_	
+7-25	1068-1078	fornicatio	_	
+7-26	1079-1083	quam	_	
+7-27	1084-1095	matrimonium	_	
+7-28	1095-1096	,	_	
+7-29	1097-1099	30	Allegazione normativa[15]	
+7-30	1099-1100	.	Allegazione normativa[15]	
+7-31	1101-1102	q	Allegazione normativa[15]	
+7-32	1102-1103	.	Allegazione normativa[15]	
+7-33	1104-1105	5	Allegazione normativa[15]	
+7-34	1105-1106	,	Allegazione normativa[15]	
+7-35	1107-1113	aliter	Allegazione normativa[15]	
+7-36	1113-1114	.	Allegazione normativa[15]	
+
+#Text=Solutio: hoc generale est ut ubi periculum animae vertitur, praesumatur in deteriorem partem, infra, de spons., iuvenis; et 68. dist., presbytreri.
+8-1	1116-1123	Solutio	_	
+8-2	1123-1124	:	_	
+8-3	1125-1128	hoc	_	
+8-4	1129-1137	generale	_	
+8-5	1138-1141	est	_	
+8-6	1142-1144	ut	_	
+8-7	1145-1148	ubi	_	
+8-8	1149-1158	periculum	_	
+8-9	1159-1165	animae	_	
+8-10	1166-1174	vertitur	_	
+8-11	1174-1175	,	_	
+8-12	1176-1187	praesumatur	_	
+8-13	1188-1190	in	_	
+8-14	1191-1201	deteriorem	_	
+8-15	1202-1208	partem	_	
+8-16	1208-1209	,	_	
+8-17	1210-1215	infra	_	
+8-18	1215-1216	,	_	
+8-19	1217-1219	de	Allegazione normativa[16]	
+8-20	1220-1225	spons	Allegazione normativa[16]	
+8-21	1225-1226	.	Allegazione normativa[16]	
+8-22	1226-1227	,	Allegazione normativa[16]	
+8-23	1228-1235	iuvenis	Allegazione normativa[16]	
+8-24	1235-1236	;	Allegazione normativa[16]	
+8-25	1237-1239	et	_	
+8-26	1240-1242	68	Allegazione normativa[17]	
+8-27	1242-1243	.	Allegazione normativa[17]	
+8-28	1244-1248	dist	Allegazione normativa[17]	
+8-29	1248-1249	.	Allegazione normativa[17]	
+8-30	1249-1250	,	Allegazione normativa[17]	
+8-31	1251-1262	presbytreri	Allegazione normativa[17]	
+8-32	1262-1263	.	Allegazione normativa[17]	
+
+#Text=Sed licet videatur deterior, tamen melior et tutior est; simile de conse. dist. 4, parvulos.
+9-1	1265-1268	Sed	_	
+9-2	1269-1274	licet	_	
+9-3	1275-1283	videatur	_	
+9-4	1284-1292	deterior	_	
+9-5	1292-1293	,	_	
+9-6	1294-1299	tamen	_	
+9-7	1300-1306	melior	_	
+9-8	1307-1309	et	_	
+9-9	1310-1316	tutior	_	
+9-10	1317-1320	est	_	
+9-11	1320-1321	;	_	
+9-12	1322-1328	simile	_	
+9-13	1329-1331	de	Allegazione normativa[18]	
+9-14	1332-1337	conse	Allegazione normativa[18]	
+9-15	1337-1338	.	Allegazione normativa[18]	
+9-16	1339-1343	dist	Allegazione normativa[18]	
+9-17	1343-1344	.	Allegazione normativa[18]	
+9-18	1345-1346	4	Allegazione normativa[18]	
+9-19	1346-1347	,	Allegazione normativa[18]	
+9-20	1348-1356	parvulos	Allegazione normativa[18]	
+9-21	1356-1357	.	Allegazione normativa[18]	
+
+#Text=Alias circa indicia potius praesumitur iustum vel bonum, quam econverso, 86. dist., si quid vero; 11. q. 3, in cunctis; 22. q. 4, innocens; ff. de probation., ab ea parte.
+10-1	1359-1364	Alias	_	
+10-2	1365-1370	circa	_	
+10-3	1371-1378	indicia	_	
+10-4	1379-1385	potius	_	
+10-5	1386-1397	praesumitur	_	
+10-6	1398-1404	iustum	_	
+10-7	1405-1408	vel	_	
+10-8	1409-1414	bonum	_	
+10-9	1414-1415	,	_	
+10-10	1416-1420	quam	_	
+10-11	1421-1430	econverso	_	
+10-12	1430-1431	,	_	
+10-13	1432-1434	86	Allegazione normativa[19]	
+10-14	1434-1435	.	Allegazione normativa[19]	
+10-15	1436-1440	dist	Allegazione normativa[19]	
+10-16	1440-1441	.	Allegazione normativa[19]	
+10-17	1441-1442	,	Allegazione normativa[19]	
+10-18	1443-1445	si	Allegazione normativa[19]	
+10-19	1446-1450	quid	Allegazione normativa[19]	
+10-20	1451-1455	vero	Allegazione normativa[19]	
+10-21	1455-1456	;	Allegazione normativa[19]	
+10-22	1457-1459	11	Allegazione normativa[20]	
+10-23	1459-1460	.	Allegazione normativa[20]	
+10-24	1461-1462	q	Allegazione normativa[20]	
+10-25	1462-1463	.	Allegazione normativa[20]	
+10-26	1464-1465	3	Allegazione normativa[20]	
+10-27	1465-1466	,	Allegazione normativa[20]	
+10-28	1467-1469	in	Allegazione normativa[20]	
+10-29	1470-1477	cunctis	Allegazione normativa[20]	
+10-30	1477-1478	;	Allegazione normativa[20]	
+10-31	1479-1481	22	Allegazione normativa[21]	
+10-32	1481-1482	.	Allegazione normativa[21]	
+10-33	1483-1484	q	Allegazione normativa[21]	
+10-34	1484-1485	.	Allegazione normativa[21]	
+10-35	1486-1487	4	Allegazione normativa[21]	
+10-36	1487-1488	,	Allegazione normativa[21]	
+10-37	1489-1497	innocens	Allegazione normativa[21]	
+10-38	1497-1498	;	Allegazione normativa[21]	
+10-39	1499-1501	ff	Allegazione normativa[22]	
+10-40	1501-1502	.	Allegazione normativa[22]	
+10-41	1503-1505	de	Allegazione normativa[22]	
+10-42	1506-1515	probation	Allegazione normativa[22]	
+10-43	1515-1516	.	Allegazione normativa[22]	
+10-44	1516-1517	,	Allegazione normativa[22]	
+10-45	1518-1520	ab	Allegazione normativa[22]	
+10-46	1521-1523	ea	Allegazione normativa[22]	
+10-47	1524-1529	parte	Allegazione normativa[22]	
+10-48	1529-1530	.	Allegazione normativa[22]	

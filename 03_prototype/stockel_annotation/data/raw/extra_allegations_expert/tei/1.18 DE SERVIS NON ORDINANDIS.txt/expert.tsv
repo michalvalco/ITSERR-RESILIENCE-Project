@@ -1,0 +1,2655 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 1.18 DE SERVIS NON ORDINANDIS
+1-1	0-1	X	_	
+1-2	2-6	1.18	_	
+1-3	7-9	DE	_	
+1-4	10-16	SERVIS	_	
+1-5	17-20	NON	_	
+1-6	21-31	ORDINANDIS	_	
+
+#Text=X 1.18.01 Instruendi
+2-1	35-36	X	_	
+2-2	37-44	1.18.01	_	
+2-3	45-55	Instruendi	_	
+
+#Text=Ingenuitatis
+3-1	60-72	Ingenuitatis	_	
+
+#Text=Improprie tenetur illud verbum, quia ingenuus est qui statim cum nascitur liber est, Inst. de ingen., in princ.  Unde dic ingenuitatis, id est, libertatis plenae, quia qui ad clericatum promovetur, prius plenam libertatem consequi debet nullo a domino retento obsequio temporali, alioquin promoveri ad clericatum non debet, 54. dist., quicumque.
+4-1	74-83	Improprie	_	
+4-2	84-91	tenetur	_	
+4-3	92-97	illud	_	
+4-4	98-104	verbum	_	
+4-5	104-105	,	_	
+4-6	106-110	quia	_	
+4-7	111-119	ingenuus	_	
+4-8	120-123	est	_	
+4-9	124-127	qui	_	
+4-10	128-134	statim	_	
+4-11	135-138	cum	_	
+4-12	139-147	nascitur	_	
+4-13	148-153	liber	_	
+4-14	154-157	est	_	
+4-15	157-158	,	_	
+4-16	159-163	Inst	Allegazione normativa[1]	
+4-17	163-164	.	Allegazione normativa[1]	
+4-18	165-167	de	Allegazione normativa[1]	
+4-19	168-173	ingen	Allegazione normativa[1]	
+4-20	173-174	.	Allegazione normativa[1]	
+4-21	174-175	,	Allegazione normativa[1]	
+4-22	176-178	in	Allegazione normativa[1]	
+4-23	179-184	princ	Allegazione normativa[1]	
+4-24	184-185	.	Allegazione normativa[1]	
+4-25	187-191	Unde	_	
+4-26	192-195	dic	_	
+4-27	196-208	ingenuitatis	_	
+4-28	208-209	,	_	
+4-29	210-212	id	_	
+4-30	213-216	est	_	
+4-31	216-217	,	_	
+4-32	218-228	libertatis	_	
+4-33	229-235	plenae	_	
+4-34	235-236	,	_	
+4-35	237-241	quia	_	
+4-36	242-245	qui	_	
+4-37	246-248	ad	_	
+4-38	249-259	clericatum	_	
+4-39	260-270	promovetur	_	
+4-40	270-271	,	_	
+4-41	272-277	prius	_	
+4-42	278-284	plenam	_	
+4-43	285-295	libertatem	_	
+4-44	296-304	consequi	_	
+4-45	305-310	debet	_	
+4-46	311-316	nullo	_	
+4-47	317-318	a	_	
+4-48	319-325	domino	_	
+4-49	326-333	retento	_	
+4-50	334-342	obsequio	_	
+4-51	343-352	temporali	_	
+4-52	352-353	,	_	
+4-53	354-362	alioquin	_	
+4-54	363-372	promoveri	_	
+4-55	373-375	ad	_	
+4-56	376-386	clericatum	_	
+4-57	387-390	non	_	
+4-58	391-396	debet	_	
+4-59	396-397	,	_	
+4-60	398-400	54	Allegazione normativa[2]	
+4-61	400-401	.	Allegazione normativa[2]	
+4-62	402-406	dist	Allegazione normativa[2]	
+4-63	406-407	.	Allegazione normativa[2]	
+4-64	407-408	,	Allegazione normativa[2]	
+4-65	409-418	quicumque	Allegazione normativa[2]	
+4-66	418-419	.	_	
+
+#Text=Praecaveri
+5-1	424-434	Praecaveri	_	
+
+#Text=Nota quod futura sunt praecavenda, 23. dist., in nomine Domini; et 63. dist., cum Hadrianus; et 1. q. 7, convenientibus, circa princ.  Et exempla praesentia nos cavere praemonent in futurum, 82. dist., plurimos, in fi.  Et maior tristitia est de talibus cum revocantur quam nascatur gratia de accitis, id est, vocatis, 51. dist., praeterea; et 51. dist., designata.  Et ecclesia pro talibus infamatur, infra, de obligat. ad rat. ord., magnus.  Et sic ad cautelam futuorum aliquid fit, 28. dist., de Syracusanae.  Et providere quis debet, quod contingere potest, ff. locat. et conduct., si quis domum § 1.  Arg. contra quod non imputatur alicui si non divinavit, ff. ad leg. Aquil., si putator, in fi.; et ff. mand. vel cont., si fideiussor § si cum debitor; et infra, ut eccl. ben., ut nostrum.
+6-1	436-440	Nota	_	
+6-2	441-445	quod	_	
+6-3	446-452	futura	_	
+6-4	453-457	sunt	_	
+6-5	458-469	praecavenda	_	
+6-6	469-470	,	_	
+6-7	471-473	23	Allegazione normativa[3]	
+6-8	473-474	.	Allegazione normativa[3]	
+6-9	475-479	dist	Allegazione normativa[3]	
+6-10	479-480	.	Allegazione normativa[3]	
+6-11	480-481	,	Allegazione normativa[3]	
+6-12	482-484	in	Allegazione normativa[3]	
+6-13	485-491	nomine	Allegazione normativa[3]	
+6-14	492-498	Domini	Allegazione normativa[3]	
+6-15	498-499	;	_	
+6-16	500-502	et	_	
+6-17	503-505	63	Allegazione normativa[4]	
+6-18	505-506	.	Allegazione normativa[4]	
+6-19	507-511	dist	Allegazione normativa[4]	
+6-20	511-512	.	Allegazione normativa[4]	
+6-21	512-513	,	Allegazione normativa[4]	
+6-22	514-517	cum	Allegazione normativa[4]	
+6-23	518-527	Hadrianus	Allegazione normativa[4]	
+6-24	527-528	;	_	
+6-25	529-531	et	_	
+6-26	532-533	1	Allegazione normativa[5]	
+6-27	533-534	.	Allegazione normativa[5]	
+6-28	535-536	q	Allegazione normativa[5]	
+6-29	536-537	.	Allegazione normativa[5]	
+6-30	538-539	7	Allegazione normativa[5]	
+6-31	539-540	,	Allegazione normativa[5]	
+6-32	541-555	convenientibus	Allegazione normativa[5]	
+6-33	555-556	,	Allegazione normativa[5]	
+6-34	557-562	circa	Allegazione normativa[5]	
+6-35	563-568	princ	Allegazione normativa[5]	
+6-36	568-569	.	_	
+6-37	571-573	Et	_	
+6-38	574-581	exempla	_	
+6-39	582-592	praesentia	_	
+6-40	593-596	nos	_	
+6-41	597-603	cavere	_	
+6-42	604-614	praemonent	_	
+6-43	615-617	in	_	
+6-44	618-625	futurum	_	
+6-45	625-626	,	_	
+6-46	627-629	82	Allegazione normativa[6]	
+6-47	629-630	.	Allegazione normativa[6]	
+6-48	631-635	dist	Allegazione normativa[6]	
+6-49	635-636	.	Allegazione normativa[6]	
+6-50	636-637	,	Allegazione normativa[6]	
+6-51	638-646	plurimos	Allegazione normativa[6]	
+6-52	646-647	,	Allegazione normativa[6]	
+6-53	648-650	in	Allegazione normativa[6]	
+6-54	651-653	fi	Allegazione normativa[6]	
+6-55	653-654	.	_	
+6-56	656-658	Et	_	
+6-57	659-664	maior	_	
+6-58	665-674	tristitia	_	
+6-59	675-678	est	_	
+6-60	679-681	de	_	
+6-61	682-689	talibus	_	
+6-62	690-693	cum	_	
+6-63	694-704	revocantur	_	
+6-64	705-709	quam	_	
+6-65	710-718	nascatur	_	
+6-66	719-725	gratia	_	
+6-67	726-728	de	_	
+6-68	729-736	accitis	_	
+6-69	736-737	,	_	
+6-70	738-740	id	_	
+6-71	741-744	est	_	
+6-72	744-745	,	_	
+6-73	746-753	vocatis	_	
+6-74	753-754	,	_	
+6-75	755-757	51	Allegazione normativa[7]	
+6-76	757-758	.	Allegazione normativa[7]	
+6-77	759-763	dist	Allegazione normativa[7]	
+6-78	763-764	.	Allegazione normativa[7]	
+6-79	764-765	,	Allegazione normativa[7]	
+6-80	766-775	praeterea	Allegazione normativa[7]	
+6-81	775-776	;	_	
+6-82	777-779	et	_	
+6-83	780-782	51	Allegazione normativa[8]	
+6-84	782-783	.	Allegazione normativa[8]	
+6-85	784-788	dist	Allegazione normativa[8]	
+6-86	788-789	.	Allegazione normativa[8]	
+6-87	789-790	,	Allegazione normativa[8]	
+6-88	791-800	designata	Allegazione normativa[8]	
+6-89	800-801	.	_	
+6-90	803-805	Et	_	
+6-91	806-814	ecclesia	_	
+6-92	815-818	pro	_	
+6-93	819-826	talibus	_	
+6-94	827-836	infamatur	_	
+6-95	836-837	,	_	
+6-96	838-843	infra	_	
+6-97	843-844	,	_	
+6-98	845-847	de	Allegazione normativa[9]	
+6-99	848-855	obligat	Allegazione normativa[9]	
+6-100	855-856	.	Allegazione normativa[9]	
+6-101	857-859	ad	Allegazione normativa[9]	
+6-102	860-863	rat	Allegazione normativa[9]	
+6-103	863-864	.	Allegazione normativa[9]	
+6-104	865-868	ord	Allegazione normativa[9]	
+6-105	868-869	.	Allegazione normativa[9]	
+6-106	869-870	,	Allegazione normativa[9]	
+6-107	871-877	magnus	Allegazione normativa[9]	
+6-108	877-878	.	_	
+6-109	880-882	Et	_	
+6-110	883-886	sic	_	
+6-111	887-889	ad	_	
+6-112	890-898	cautelam	_	
+6-113	899-907	futuorum	_	
+6-114	908-915	aliquid	_	
+6-115	916-919	fit	_	
+6-116	919-920	,	_	
+6-117	921-923	28	Allegazione normativa[10]	
+6-118	923-924	.	Allegazione normativa[10]	
+6-119	925-929	dist	Allegazione normativa[10]	
+6-120	929-930	.	Allegazione normativa[10]	
+6-121	930-931	,	Allegazione normativa[10]	
+6-122	932-934	de	Allegazione normativa[10]	
+6-123	935-946	Syracusanae	Allegazione normativa[10]	
+6-124	946-947	.	_	
+6-125	949-951	Et	_	
+6-126	952-961	providere	_	
+6-127	962-966	quis	_	
+6-128	967-972	debet	_	
+6-129	972-973	,	_	
+6-130	974-978	quod	_	
+6-131	979-989	contingere	_	
+6-132	990-996	potest	_	
+6-133	996-997	,	_	
+6-134	998-1000	ff	Allegazione normativa[11]	
+6-135	1000-1001	.	Allegazione normativa[11]	
+6-136	1002-1007	locat	Allegazione normativa[11]	
+6-137	1007-1008	.	Allegazione normativa[11]	
+6-138	1009-1011	et	Allegazione normativa[11]	
+6-139	1012-1019	conduct	Allegazione normativa[11]	
+6-140	1019-1020	.	Allegazione normativa[11]	
+6-141	1020-1021	,	Allegazione normativa[11]	
+6-142	1022-1024	si	Allegazione normativa[11]	
+6-143	1025-1029	quis	Allegazione normativa[11]	
+6-144	1030-1035	domum	Allegazione normativa[11]	
+6-145	1036-1037	§	Allegazione normativa[11]	
+6-146	1038-1039	1	Allegazione normativa[11]	
+6-147	1039-1040	.	_	
+6-148	1042-1045	Arg	_	
+6-149	1045-1046	.	_	
+6-150	1047-1053	contra	_	
+6-151	1054-1058	quod	_	
+6-152	1059-1062	non	_	
+6-153	1063-1072	imputatur	_	
+6-154	1073-1079	alicui	_	
+6-155	1080-1082	si	_	
+6-156	1083-1086	non	_	
+6-157	1087-1096	divinavit	_	
+6-158	1096-1097	,	_	
+6-159	1098-1100	ff	Allegazione normativa[12]	
+6-160	1100-1101	.	Allegazione normativa[12]	
+6-161	1102-1104	ad	Allegazione normativa[12]	
+6-162	1105-1108	leg	Allegazione normativa[12]	
+6-163	1108-1109	.	Allegazione normativa[12]	
+6-164	1110-1115	Aquil	Allegazione normativa[12]	
+6-165	1115-1116	.	Allegazione normativa[12]	
+6-166	1116-1117	,	Allegazione normativa[12]	
+6-167	1118-1120	si	Allegazione normativa[12]	
+6-168	1121-1128	putator	Allegazione normativa[12]	
+6-169	1128-1129	,	Allegazione normativa[12]	
+6-170	1130-1132	in	Allegazione normativa[12]	
+6-171	1133-1135	fi	Allegazione normativa[12]	
+6-172	1135-1136	.	Allegazione normativa[12]	
+6-173	1136-1137	;	_	
+6-174	1138-1140	et	_	
+6-175	1141-1143	ff	Allegazione normativa[13]	
+6-176	1143-1144	.	Allegazione normativa[13]	
+6-177	1145-1149	mand	Allegazione normativa[13]	
+6-178	1149-1150	.	Allegazione normativa[13]	
+6-179	1151-1154	vel	Allegazione normativa[13]	
+6-180	1155-1159	cont	Allegazione normativa[13]	
+6-181	1159-1160	.	Allegazione normativa[13]	
+6-182	1160-1161	,	Allegazione normativa[13]	
+6-183	1162-1164	si	Allegazione normativa[13]	
+6-184	1165-1175	fideiussor	Allegazione normativa[13]	
+6-185	1176-1177	§	Allegazione normativa[13]	
+6-186	1178-1180	si	Allegazione normativa[13]	
+6-187	1181-1184	cum	Allegazione normativa[13]	
+6-188	1185-1192	debitor	Allegazione normativa[13]	
+6-189	1192-1193	;	_	
+6-190	1194-1196	et	_	
+6-191	1197-1202	infra	_	
+6-192	1202-1203	,	_	
+6-193	1204-1206	ut	Allegazione normativa[14]	
+6-194	1207-1211	eccl	Allegazione normativa[14]	
+6-195	1211-1212	.	Allegazione normativa[14]	
+6-196	1213-1216	ben	Allegazione normativa[14]	
+6-197	1216-1217	.	Allegazione normativa[14]	
+6-198	1217-1218	,	Allegazione normativa[14]	
+6-199	1219-1221	ut	Allegazione normativa[14]	
+6-200	1222-1229	nostrum	Allegazione normativa[14]	
+6-201	1229-1230	.	_	
+
+#Text=X 1.18.02 De servorum
+7-1	1234-1235	X	_	
+7-2	1236-1243	1.18.02	_	
+7-3	1244-1246	De	_	
+7-4	1247-1255	servorum	_	
+
+#Text=Ad sacros
+8-1	1260-1262	Ad	_	
+8-2	1263-1269	sacros	_	
+
+#Text=Idem intelligas de inferioribus, 54. dist., nullus episcoporum; et 54. dist., quicumque; et 54. dist., si quis obligatus; et supra, de serv. non ordin., instruendi.
+9-1	1271-1275	Idem	_	
+9-2	1276-1286	intelligas	_	
+9-3	1287-1289	de	_	
+9-4	1290-1302	inferioribus	_	
+9-5	1302-1303	,	_	
+9-6	1304-1306	54	Allegazione normativa[15]	
+9-7	1306-1307	.	Allegazione normativa[15]	
+9-8	1308-1312	dist	Allegazione normativa[15]	
+9-9	1312-1313	.	Allegazione normativa[15]	
+9-10	1313-1314	,	Allegazione normativa[15]	
+9-11	1315-1321	nullus	Allegazione normativa[15]	
+9-12	1322-1333	episcoporum	Allegazione normativa[15]	
+9-13	1333-1334	;	_	
+9-14	1335-1337	et	_	
+9-15	1338-1340	54	Allegazione normativa[16]	
+9-16	1340-1341	.	Allegazione normativa[16]	
+9-17	1342-1346	dist	Allegazione normativa[16]	
+9-18	1346-1347	.	Allegazione normativa[16]	
+9-19	1347-1348	,	Allegazione normativa[16]	
+9-20	1349-1358	quicumque	Allegazione normativa[16]	
+9-21	1358-1359	;	_	
+9-22	1360-1362	et	_	
+9-23	1363-1365	54	Allegazione normativa[17]	
+9-24	1365-1366	.	Allegazione normativa[17]	
+9-25	1367-1371	dist	Allegazione normativa[17]	
+9-26	1371-1372	.	Allegazione normativa[17]	
+9-27	1372-1373	,	Allegazione normativa[17]	
+9-28	1374-1376	si	Allegazione normativa[17]	
+9-29	1377-1381	quis	Allegazione normativa[17]	
+9-30	1382-1391	obligatus	Allegazione normativa[17]	
+9-31	1391-1392	;	_	
+9-32	1393-1395	et	_	
+9-33	1396-1401	supra	_	
+9-34	1401-1402	,	_	
+9-35	1403-1405	de	Allegazione normativa[18]	
+9-36	1406-1410	serv	Allegazione normativa[18]	
+9-37	1410-1411	.	Allegazione normativa[18]	
+9-38	1412-1415	non	Allegazione normativa[18]	
+9-39	1416-1421	ordin	Allegazione normativa[18]	
+9-40	1421-1422	.	Allegazione normativa[18]	
+9-41	1422-1423	,	Allegazione normativa[18]	
+9-42	1424-1434	instruendi	Allegazione normativa[18]	
+9-43	1434-1435	.	_	
+
+#Text=Fugiens
+10-1	1440-1447	Fugiens	_	
+
+#Text=Iste fugiens si de statu suo certare voluerit, ad priorem iudicem a quo fugit, remitti debet, ut ibi causa status agatur, C. ubi cau. stat. agi deb., quae a te.  Si vero est possessione libertatis, sub illo iudice ubi est convenietur, C. ubi cau. stat. agi deb., si in possessione.  Hoc autem debes intelligere, quod haec quaestio si dubitetur an sit fugitivus vel non, tractabitur et finetur antequam inchoetur causa status, ff. de liber. caus., liberis § sunt et aliae; et ff. de liber. caus., igitur § potest.  Si vero non est fugitivus, et vult proclamare in libertatem, sequitur forum domini, C. ubi cau. stat. agi deb., si ex possessione.
+11-1	1449-1453	Iste	_	
+11-2	1454-1461	fugiens	_	
+11-3	1462-1464	si	_	
+11-4	1465-1467	de	_	
+11-5	1468-1473	statu	_	
+11-6	1474-1477	suo	_	
+11-7	1478-1485	certare	_	
+11-8	1486-1494	voluerit	_	
+11-9	1494-1495	,	_	
+11-10	1496-1498	ad	_	
+11-11	1499-1506	priorem	_	
+11-12	1507-1514	iudicem	_	
+11-13	1515-1516	a	_	
+11-14	1517-1520	quo	_	
+11-15	1521-1526	fugit	_	
+11-16	1526-1527	,	_	
+11-17	1528-1535	remitti	_	
+11-18	1536-1541	debet	_	
+11-19	1541-1542	,	_	
+11-20	1543-1545	ut	_	
+11-21	1546-1549	ibi	_	
+11-22	1550-1555	causa	_	
+11-23	1556-1562	status	_	
+11-24	1563-1569	agatur	_	
+11-25	1569-1570	,	_	
+11-26	1571-1572	C	Allegazione normativa[19]	
+11-27	1572-1573	.	Allegazione normativa[19]	
+11-28	1574-1577	ubi	Allegazione normativa[19]	
+11-29	1578-1581	cau	Allegazione normativa[19]	
+11-30	1581-1582	.	Allegazione normativa[19]	
+11-31	1583-1587	stat	Allegazione normativa[19]	
+11-32	1587-1588	.	Allegazione normativa[19]	
+11-33	1589-1592	agi	Allegazione normativa[19]	
+11-34	1593-1596	deb	Allegazione normativa[19]	
+11-35	1596-1597	.	Allegazione normativa[19]	
+11-36	1597-1598	,	Allegazione normativa[19]	
+11-37	1599-1603	quae	Allegazione normativa[19]	
+11-38	1604-1605	a	Allegazione normativa[19]	
+11-39	1606-1608	te	Allegazione normativa[19]	
+11-40	1608-1609	.	_	
+11-41	1611-1613	Si	_	
+11-42	1614-1618	vero	_	
+11-43	1619-1622	est	_	
+11-44	1623-1634	possessione	_	
+11-45	1635-1645	libertatis	_	
+11-46	1645-1646	,	_	
+11-47	1647-1650	sub	_	
+11-48	1651-1655	illo	_	
+11-49	1656-1662	iudice	_	
+11-50	1663-1666	ubi	_	
+11-51	1667-1670	est	_	
+11-52	1671-1682	convenietur	_	
+11-53	1682-1683	,	_	
+11-54	1684-1685	C	Allegazione normativa[20]	
+11-55	1685-1686	.	Allegazione normativa[20]	
+11-56	1687-1690	ubi	Allegazione normativa[20]	
+11-57	1691-1694	cau	Allegazione normativa[20]	
+11-58	1694-1695	.	Allegazione normativa[20]	
+11-59	1696-1700	stat	Allegazione normativa[20]	
+11-60	1700-1701	.	Allegazione normativa[20]	
+11-61	1702-1705	agi	Allegazione normativa[20]	
+11-62	1706-1709	deb	Allegazione normativa[20]	
+11-63	1709-1710	.	Allegazione normativa[20]	
+11-64	1710-1711	,	Allegazione normativa[20]	
+11-65	1712-1714	si	Allegazione normativa[20]	
+11-66	1715-1717	in	Allegazione normativa[20]	
+11-67	1718-1729	possessione	Allegazione normativa[20]	
+11-68	1729-1730	.	_	
+11-69	1732-1735	Hoc	_	
+11-70	1736-1741	autem	_	
+11-71	1742-1747	debes	_	
+11-72	1748-1759	intelligere	_	
+11-73	1759-1760	,	_	
+11-74	1761-1765	quod	_	
+11-75	1766-1770	haec	_	
+11-76	1771-1779	quaestio	_	
+11-77	1780-1782	si	_	
+11-78	1783-1792	dubitetur	_	
+11-79	1793-1795	an	_	
+11-80	1796-1799	sit	_	
+11-81	1800-1809	fugitivus	_	
+11-82	1810-1813	vel	_	
+11-83	1814-1817	non	_	
+11-84	1817-1818	,	_	
+11-85	1819-1830	tractabitur	_	
+11-86	1831-1833	et	_	
+11-87	1834-1841	finetur	_	
+11-88	1842-1850	antequam	_	
+11-89	1851-1860	inchoetur	_	
+11-90	1861-1866	causa	_	
+11-91	1867-1873	status	_	
+11-92	1873-1874	,	_	
+11-93	1875-1877	ff	Allegazione normativa[21]	
+11-94	1877-1878	.	Allegazione normativa[21]	
+11-95	1879-1881	de	Allegazione normativa[21]	
+11-96	1882-1887	liber	Allegazione normativa[21]	
+11-97	1887-1888	.	Allegazione normativa[21]	
+11-98	1889-1893	caus	Allegazione normativa[21]	
+11-99	1893-1894	.	Allegazione normativa[21]	
+11-100	1894-1895	,	Allegazione normativa[21]	
+11-101	1896-1903	liberis	Allegazione normativa[21]	
+11-102	1904-1905	§	Allegazione normativa[21]	
+11-103	1906-1910	sunt	Allegazione normativa[21]	
+11-104	1911-1913	et	Allegazione normativa[21]	
+11-105	1914-1919	aliae	Allegazione normativa[21]	
+11-106	1919-1920	;	_	
+11-107	1921-1923	et	_	
+11-108	1924-1926	ff	Allegazione normativa[22]	
+11-109	1926-1927	.	Allegazione normativa[22]	
+11-110	1928-1930	de	Allegazione normativa[22]	
+11-111	1931-1936	liber	Allegazione normativa[22]	
+11-112	1936-1937	.	Allegazione normativa[22]	
+11-113	1938-1942	caus	Allegazione normativa[22]	
+11-114	1942-1943	.	Allegazione normativa[22]	
+11-115	1943-1944	,	Allegazione normativa[22]	
+11-116	1945-1951	igitur	Allegazione normativa[22]	
+11-117	1952-1953	§	Allegazione normativa[22]	
+11-118	1954-1960	potest	Allegazione normativa[22]	
+11-119	1960-1961	.	_	
+11-120	1963-1965	Si	_	
+11-121	1966-1970	vero	_	
+11-122	1971-1974	non	_	
+11-123	1975-1978	est	_	
+11-124	1979-1988	fugitivus	_	
+11-125	1988-1989	,	_	
+11-126	1990-1992	et	_	
+11-127	1993-1997	vult	_	
+11-128	1998-2008	proclamare	_	
+11-129	2009-2011	in	_	
+11-130	2012-2022	libertatem	_	
+11-131	2022-2023	,	_	
+11-132	2024-2032	sequitur	_	
+11-133	2033-2038	forum	_	
+11-134	2039-2045	domini	_	
+11-135	2045-2046	,	_	
+11-136	2047-2048	C	Allegazione normativa[23]	
+11-137	2048-2049	.	Allegazione normativa[23]	
+11-138	2050-2053	ubi	Allegazione normativa[23]	
+11-139	2054-2057	cau	Allegazione normativa[23]	
+11-140	2057-2058	.	Allegazione normativa[23]	
+11-141	2059-2063	stat	Allegazione normativa[23]	
+11-142	2063-2064	.	Allegazione normativa[23]	
+11-143	2065-2068	agi	Allegazione normativa[23]	
+11-144	2069-2072	deb	Allegazione normativa[23]	
+11-145	2072-2073	.	Allegazione normativa[23]	
+11-146	2073-2074	,	Allegazione normativa[23]	
+11-147	2075-2077	si	Allegazione normativa[23]	
+11-148	2078-2080	ex	Allegazione normativa[23]	
+11-149	2081-2092	possessione	Allegazione normativa[23]	
+11-150	2092-2093	.	_	
+
+#Text=Deponatur
+12-1	2098-2107	Deponatur	_	
+
+#Text=Quid iuris sit de servis ordinatis, nota quod si ordinatur servus domino sciente et contradicente, servus remanet et restituitur domino, etiam si sacerdos sit factus, ut quidam dicunt, ut 54. dist., ex antiquis.  Alii contradicunt, ut Io. et Tanc.  Si vero sciente et non contradicente domino, tunc statim liber est, ut 54. dist., si servus sciente.  Si autem domino ignorante ordinetur, sed episcopo vel praesentatore sciente quod sit servus, tunc ille efficitur liber, et episcopus vel praesentator tenetur dare domino duos servos aeque bonos, 54. dist., si servus absente.  Si non habeat unde solvat, restituetur domino, ut statim distinguitur.  Si vero domino ignorante, et episcopo et praesentatore fuit ordinatus, si constitutus est in minoribus ordinibus, deponitur et remanet servus, 54. dist., ex antiquis; et 54. dist., frequens.  Diaconus vero det vicarium pro se, aut si non habet, ipse reddatur, 54. dist., ex antiquis.  Eodem privilegio subdiaconus gaudet, infra, de serv. non ordin., miramur.  Arg. ad id supra, de aetat. et qualit., a multis.  Si vero est sacerdos, statim liber est, sed amissione peculii sui mulctatur, ut in 54. dist., ex antiquis.  Vel si non habet peculium, serviat domino in divinis officiis, 54. dist., frequens.  Si vero quis monachus factus est, usque ad triennium tantum potest eum repetere, ultra vero remanet monachus et liber, 54. dist., servus sciente.
+13-1	2109-2113	Quid	_	
+13-2	2114-2119	iuris	_	
+13-3	2120-2123	sit	_	
+13-4	2124-2126	de	_	
+13-5	2127-2133	servis	_	
+13-6	2134-2143	ordinatis	_	
+13-7	2143-2144	,	_	
+13-8	2145-2149	nota	_	
+13-9	2150-2154	quod	_	
+13-10	2155-2157	si	_	
+13-11	2158-2167	ordinatur	_	
+13-12	2168-2174	servus	_	
+13-13	2175-2181	domino	_	
+13-14	2182-2189	sciente	_	
+13-15	2190-2192	et	_	
+13-16	2193-2206	contradicente	_	
+13-17	2206-2207	,	_	
+13-18	2208-2214	servus	_	
+13-19	2215-2222	remanet	_	
+13-20	2223-2225	et	_	
+13-21	2226-2237	restituitur	_	
+13-22	2238-2244	domino	_	
+13-23	2244-2245	,	_	
+13-24	2246-2251	etiam	_	
+13-25	2252-2254	si	_	
+13-26	2255-2263	sacerdos	_	
+13-27	2264-2267	sit	_	
+13-28	2268-2274	factus	_	
+13-29	2274-2275	,	_	
+13-30	2276-2278	ut	_	
+13-31	2279-2285	quidam	_	
+13-32	2286-2292	dicunt	_	
+13-33	2292-2293	,	_	
+13-34	2294-2296	ut	_	
+13-35	2297-2299	54	Allegazione normativa[24]	
+13-36	2299-2300	.	Allegazione normativa[24]	
+13-37	2301-2305	dist	Allegazione normativa[24]	
+13-38	2305-2306	.	Allegazione normativa[24]	
+13-39	2306-2307	,	Allegazione normativa[24]	
+13-40	2308-2310	ex	Allegazione normativa[24]	
+13-41	2311-2319	antiquis	Allegazione normativa[24]	
+13-42	2319-2320	.	_	
+13-43	2322-2326	Alii	_	
+13-44	2327-2339	contradicunt	_	
+13-45	2339-2340	,	_	
+13-46	2341-2343	ut	_	
+13-47	2344-2346	Io	_	
+13-48	2346-2347	.	_	
+13-49	2348-2350	et	_	
+13-50	2351-2355	Tanc	_	
+13-51	2355-2356	.	_	
+13-52	2358-2360	Si	_	
+13-53	2361-2365	vero	_	
+13-54	2366-2373	sciente	_	
+13-55	2374-2376	et	_	
+13-56	2377-2380	non	_	
+13-57	2381-2394	contradicente	_	
+13-58	2395-2401	domino	_	
+13-59	2401-2402	,	_	
+13-60	2403-2407	tunc	_	
+13-61	2408-2414	statim	_	
+13-62	2415-2420	liber	_	
+13-63	2421-2424	est	_	
+13-64	2424-2425	,	_	
+13-65	2426-2428	ut	_	
+13-66	2429-2431	54	Allegazione normativa[25]	
+13-67	2431-2432	.	Allegazione normativa[25]	
+13-68	2433-2437	dist	Allegazione normativa[25]	
+13-69	2437-2438	.	Allegazione normativa[25]	
+13-70	2438-2439	,	Allegazione normativa[25]	
+13-71	2440-2442	si	Allegazione normativa[25]	
+13-72	2443-2449	servus	Allegazione normativa[25]	
+13-73	2450-2457	sciente	Allegazione normativa[25]	
+13-74	2457-2458	.	_	
+13-75	2460-2462	Si	_	
+13-76	2463-2468	autem	_	
+13-77	2469-2475	domino	_	
+13-78	2476-2485	ignorante	_	
+13-79	2486-2495	ordinetur	_	
+13-80	2495-2496	,	_	
+13-81	2497-2500	sed	_	
+13-82	2501-2509	episcopo	_	
+13-83	2510-2513	vel	_	
+13-84	2514-2527	praesentatore	_	
+13-85	2528-2535	sciente	_	
+13-86	2536-2540	quod	_	
+13-87	2541-2544	sit	_	
+13-88	2545-2551	servus	_	
+13-89	2551-2552	,	_	
+13-90	2553-2557	tunc	_	
+13-91	2558-2562	ille	_	
+13-92	2563-2572	efficitur	_	
+13-93	2573-2578	liber	_	
+13-94	2578-2579	,	_	
+13-95	2580-2582	et	_	
+13-96	2583-2592	episcopus	_	
+13-97	2593-2596	vel	_	
+13-98	2597-2609	praesentator	_	
+13-99	2610-2617	tenetur	_	
+13-100	2618-2622	dare	_	
+13-101	2623-2629	domino	_	
+13-102	2630-2634	duos	_	
+13-103	2635-2641	servos	_	
+13-104	2642-2647	aeque	_	
+13-105	2648-2653	bonos	_	
+13-106	2653-2654	,	_	
+13-107	2655-2657	54	Allegazione normativa[26]	
+13-108	2657-2658	.	Allegazione normativa[26]	
+13-109	2659-2663	dist	Allegazione normativa[26]	
+13-110	2663-2664	.	Allegazione normativa[26]	
+13-111	2664-2665	,	Allegazione normativa[26]	
+13-112	2666-2668	si	Allegazione normativa[26]	
+13-113	2669-2675	servus	Allegazione normativa[26]	
+13-114	2676-2683	absente	Allegazione normativa[26]	
+13-115	2683-2684	.	_	
+13-116	2686-2688	Si	_	
+13-117	2689-2692	non	_	
+13-118	2693-2699	habeat	_	
+13-119	2700-2704	unde	_	
+13-120	2705-2711	solvat	_	
+13-121	2711-2712	,	_	
+13-122	2713-2724	restituetur	_	
+13-123	2725-2731	domino	_	
+13-124	2731-2732	,	_	
+13-125	2733-2735	ut	_	
+13-126	2736-2742	statim	_	
+13-127	2743-2755	distinguitur	_	
+13-128	2755-2756	.	_	
+13-129	2758-2760	Si	_	
+13-130	2761-2765	vero	_	
+13-131	2766-2772	domino	_	
+13-132	2773-2782	ignorante	_	
+13-133	2782-2783	,	_	
+13-134	2784-2786	et	_	
+13-135	2787-2795	episcopo	_	
+13-136	2796-2798	et	_	
+13-137	2799-2812	praesentatore	_	
+13-138	2813-2817	fuit	_	
+13-139	2818-2827	ordinatus	_	
+13-140	2827-2828	,	_	
+13-141	2829-2831	si	_	
+13-142	2832-2843	constitutus	_	
+13-143	2844-2847	est	_	
+13-144	2848-2850	in	_	
+13-145	2851-2860	minoribus	_	
+13-146	2861-2870	ordinibus	_	
+13-147	2870-2871	,	_	
+13-148	2872-2881	deponitur	_	
+13-149	2882-2884	et	_	
+13-150	2885-2892	remanet	_	
+13-151	2893-2899	servus	_	
+13-152	2899-2900	,	_	
+13-153	2901-2903	54	Allegazione normativa[27]	
+13-154	2903-2904	.	Allegazione normativa[27]	
+13-155	2905-2909	dist	Allegazione normativa[27]	
+13-156	2909-2910	.	Allegazione normativa[27]	
+13-157	2910-2911	,	Allegazione normativa[27]	
+13-158	2912-2914	ex	Allegazione normativa[27]	
+13-159	2915-2923	antiquis	Allegazione normativa[27]	
+13-160	2923-2924	;	_	
+13-161	2925-2927	et	_	
+13-162	2928-2930	54	Allegazione normativa[28]	
+13-163	2930-2931	.	Allegazione normativa[28]	
+13-164	2932-2936	dist	Allegazione normativa[28]	
+13-165	2936-2937	.	Allegazione normativa[28]	
+13-166	2937-2938	,	Allegazione normativa[28]	
+13-167	2939-2947	frequens	Allegazione normativa[28]	
+13-168	2947-2948	.	_	
+13-169	2950-2958	Diaconus	_	
+13-170	2959-2963	vero	_	
+13-171	2964-2967	det	_	
+13-172	2968-2976	vicarium	_	
+13-173	2977-2980	pro	_	
+13-174	2981-2983	se	_	
+13-175	2983-2984	,	_	
+13-176	2985-2988	aut	_	
+13-177	2989-2991	si	_	
+13-178	2992-2995	non	_	
+13-179	2996-3001	habet	_	
+13-180	3001-3002	,	_	
+13-181	3003-3007	ipse	_	
+13-182	3008-3016	reddatur	_	
+13-183	3016-3017	,	_	
+13-184	3018-3020	54	Allegazione normativa[29]	
+13-185	3020-3021	.	Allegazione normativa[29]	
+13-186	3022-3026	dist	Allegazione normativa[29]	
+13-187	3026-3027	.	Allegazione normativa[29]	
+13-188	3027-3028	,	Allegazione normativa[29]	
+13-189	3029-3031	ex	Allegazione normativa[29]	
+13-190	3032-3040	antiquis	Allegazione normativa[29]	
+13-191	3040-3041	.	_	
+13-192	3043-3048	Eodem	_	
+13-193	3049-3059	privilegio	_	
+13-194	3060-3071	subdiaconus	_	
+13-195	3072-3078	gaudet	_	
+13-196	3078-3079	,	_	
+13-197	3080-3085	infra	_	
+13-198	3085-3086	,	_	
+13-199	3087-3089	de	Allegazione normativa[30]	
+13-200	3090-3094	serv	Allegazione normativa[30]	
+13-201	3094-3095	.	Allegazione normativa[30]	
+13-202	3096-3099	non	Allegazione normativa[30]	
+13-203	3100-3105	ordin	Allegazione normativa[30]	
+13-204	3105-3106	.	Allegazione normativa[30]	
+13-205	3106-3107	,	Allegazione normativa[30]	
+13-206	3108-3115	miramur	Allegazione normativa[30]	
+13-207	3115-3116	.	_	
+13-208	3118-3121	Arg	_	
+13-209	3121-3122	.	_	
+13-210	3123-3125	ad	_	
+13-211	3126-3128	id	_	
+13-212	3129-3134	supra	_	
+13-213	3134-3135	,	_	
+13-214	3136-3138	de	_	
+13-215	3139-3144	aetat	_	
+13-216	3144-3145	.	_	
+13-217	3146-3148	et	_	
+13-218	3149-3155	qualit	_	
+13-219	3155-3156	.	_	
+13-220	3156-3157	,	_	
+13-221	3158-3159	a	_	
+13-222	3160-3166	multis	_	
+13-223	3166-3167	.	_	
+13-224	3169-3171	Si	_	
+13-225	3172-3176	vero	_	
+13-226	3177-3180	est	_	
+13-227	3181-3189	sacerdos	_	
+13-228	3189-3190	,	_	
+13-229	3191-3197	statim	_	
+13-230	3198-3203	liber	_	
+13-231	3204-3207	est	_	
+13-232	3207-3208	,	_	
+13-233	3209-3212	sed	_	
+13-234	3213-3222	amissione	_	
+13-235	3223-3230	peculii	_	
+13-236	3231-3234	sui	_	
+13-237	3235-3244	mulctatur	_	
+13-238	3244-3245	,	_	
+13-239	3246-3248	ut	_	
+13-240	3249-3251	in	_	
+13-241	3252-3254	54	Allegazione normativa[31]	
+13-242	3254-3255	.	Allegazione normativa[31]	
+13-243	3256-3260	dist	Allegazione normativa[31]	
+13-244	3260-3261	.	Allegazione normativa[31]	
+13-245	3261-3262	,	Allegazione normativa[31]	
+13-246	3263-3265	ex	Allegazione normativa[31]	
+13-247	3266-3274	antiquis	Allegazione normativa[31]	
+13-248	3274-3275	.	_	
+13-249	3277-3280	Vel	_	
+13-250	3281-3283	si	_	
+13-251	3284-3287	non	_	
+13-252	3288-3293	habet	_	
+13-253	3294-3302	peculium	_	
+13-254	3302-3303	,	_	
+13-255	3304-3311	serviat	_	
+13-256	3312-3318	domino	_	
+13-257	3319-3321	in	_	
+13-258	3322-3329	divinis	_	
+13-259	3330-3338	officiis	_	
+13-260	3338-3339	,	_	
+13-261	3340-3342	54	Allegazione normativa[32]	
+13-262	3342-3343	.	Allegazione normativa[32]	
+13-263	3344-3348	dist	Allegazione normativa[32]	
+13-264	3348-3349	.	Allegazione normativa[32]	
+13-265	3349-3350	,	Allegazione normativa[32]	
+13-266	3351-3359	frequens	Allegazione normativa[32]	
+13-267	3359-3360	.	_	
+13-268	3362-3364	Si	_	
+13-269	3365-3369	vero	_	
+13-270	3370-3374	quis	_	
+13-271	3375-3383	monachus	_	
+13-272	3384-3390	factus	_	
+13-273	3391-3394	est	_	
+13-274	3394-3395	,	_	
+13-275	3396-3401	usque	_	
+13-276	3402-3404	ad	_	
+13-277	3405-3414	triennium	_	
+13-278	3415-3421	tantum	_	
+13-279	3422-3428	potest	_	
+13-280	3429-3432	eum	_	
+13-281	3433-3441	repetere	_	
+13-282	3441-3442	,	_	
+13-283	3443-3448	ultra	_	
+13-284	3449-3453	vero	_	
+13-285	3454-3461	remanet	_	
+13-286	3462-3470	monachus	_	
+13-287	3471-3473	et	_	
+13-288	3474-3479	liber	_	
+13-289	3479-3480	,	_	
+13-290	3481-3483	54	*[33]	
+13-291	3483-3484	.	*[33]	
+13-292	3485-3489	dist	*[33]	
+13-293	3489-3490	.	*[33]	
+13-294	3490-3491	,	*[33]	
+13-295	3492-3498	servus	*[33]	
+13-296	3499-3506	sciente	*[33]	
+13-297	3506-3507	.	_	
+
+#Text=X 1.18.03 De famulis
+14-1	3511-3512	X	_	
+14-2	3513-3520	1.18.03	_	
+14-3	3521-3523	De	_	
+14-4	3524-3531	famulis	_	
+
+#Text=Non licebit
+15-1	3536-3539	Non	_	
+15-2	3540-3547	licebit	_	
+
+#Text=12. q. 3, placuit; et 12. q. 3, quicumque.  Contra hoc loquitur libertis ecclesiae hac conditione manumissis.  Illud intelligitur de his qui ingenui sunt.  Item contra, Inst. de succ. lib. § sed nostra.  Hic de rebus acquisitis occasione ecclesiae, ibi de aliis.  Vel hoc de manumissis ab ecclesia, ut quicquid acquirant, ecclesiis intelligantur acquirere, illud a privatis.  Vel isti non habebant consanguineos, illi sic, 12. q. 2, episcopus qui filios.  Et ratio est 12. q. 3, pontifices; et infra, de testamen., cum in officiis.  Hoc est de his quae intuitu ecclesiae data sunt, et pro remedio animarum defunctorum, ut ibi dicitur, et in 12. q. 3, pontifices.  Illud verius credo quod hac conditione isti manumissi fuerunt.  Si vero simpliciter libertati sunt donati, tunc liberum est eis facere quod volunt, infra, de serv. non ordin., eo libentius.
+16-1	3549-3551	12	_	
+16-2	3551-3552	.	_	
+16-3	3553-3554	q	_	
+16-4	3554-3555	.	_	
+16-5	3556-3557	3	_	
+16-6	3557-3558	,	_	
+16-7	3559-3566	placuit	_	
+16-8	3566-3567	;	_	
+16-9	3568-3570	et	_	
+16-10	3571-3573	12	_	
+16-11	3573-3574	.	_	
+16-12	3575-3576	q	_	
+16-13	3576-3577	.	_	
+16-14	3578-3579	3	_	
+16-15	3579-3580	,	_	
+16-16	3581-3590	quicumque	_	
+16-17	3590-3591	.	_	
+16-18	3593-3599	Contra	_	
+16-19	3600-3603	hoc	_	
+16-20	3604-3612	loquitur	_	
+16-21	3613-3621	libertis	_	
+16-22	3622-3631	ecclesiae	_	
+16-23	3632-3635	hac	_	
+16-24	3636-3646	conditione	_	
+16-25	3647-3657	manumissis	_	
+16-26	3657-3658	.	_	
+16-27	3660-3665	Illud	_	
+16-28	3666-3678	intelligitur	_	
+16-29	3679-3681	de	_	
+16-30	3682-3685	his	_	
+16-31	3686-3689	qui	_	
+16-32	3690-3697	ingenui	_	
+16-33	3698-3702	sunt	_	
+16-34	3702-3703	.	_	
+16-35	3705-3709	Item	_	
+16-36	3710-3716	contra	_	
+16-37	3716-3717	,	_	
+16-38	3718-3722	Inst	_	
+16-39	3722-3723	.	_	
+16-40	3724-3726	de	_	
+16-41	3727-3731	succ	_	
+16-42	3731-3732	.	_	
+16-43	3733-3736	lib	_	
+16-44	3736-3737	.	_	
+16-45	3738-3739	§	_	
+16-46	3740-3743	sed	_	
+16-47	3744-3750	nostra	_	
+16-48	3750-3751	.	_	
+16-49	3753-3756	Hic	_	
+16-50	3757-3759	de	_	
+16-51	3760-3765	rebus	_	
+16-52	3766-3776	acquisitis	_	
+16-53	3777-3786	occasione	_	
+16-54	3787-3796	ecclesiae	_	
+16-55	3796-3797	,	_	
+16-56	3798-3801	ibi	_	
+16-57	3802-3804	de	_	
+16-58	3805-3810	aliis	_	
+16-59	3810-3811	.	_	
+16-60	3813-3816	Vel	_	
+16-61	3817-3820	hoc	_	
+16-62	3821-3823	de	_	
+16-63	3824-3834	manumissis	_	
+16-64	3835-3837	ab	_	
+16-65	3838-3846	ecclesia	_	
+16-66	3846-3847	,	_	
+16-67	3848-3850	ut	_	
+16-68	3851-3859	quicquid	_	
+16-69	3860-3869	acquirant	_	
+16-70	3869-3870	,	_	
+16-71	3871-3880	ecclesiis	_	
+16-72	3881-3894	intelligantur	_	
+16-73	3895-3904	acquirere	_	
+16-74	3904-3905	,	_	
+16-75	3906-3911	illud	_	
+16-76	3912-3913	a	_	
+16-77	3914-3922	privatis	_	
+16-78	3922-3923	.	_	
+16-79	3925-3928	Vel	_	
+16-80	3929-3933	isti	_	
+16-81	3934-3937	non	_	
+16-82	3938-3946	habebant	_	
+16-83	3947-3960	consanguineos	_	
+16-84	3960-3961	,	_	
+16-85	3962-3966	illi	_	
+16-86	3967-3970	sic	_	
+16-87	3970-3971	,	_	
+16-88	3972-3974	12	_	
+16-89	3974-3975	.	_	
+16-90	3976-3977	q	_	
+16-91	3977-3978	.	_	
+16-92	3979-3980	2	_	
+16-93	3980-3981	,	_	
+16-94	3982-3991	episcopus	_	
+16-95	3992-3995	qui	_	
+16-96	3996-4002	filios	_	
+16-97	4002-4003	.	_	
+16-98	4005-4007	Et	_	
+16-99	4008-4013	ratio	_	
+16-100	4014-4017	est	_	
+16-101	4018-4020	12	_	
+16-102	4020-4021	.	_	
+16-103	4022-4023	q	_	
+16-104	4023-4024	.	_	
+16-105	4025-4026	3	_	
+16-106	4026-4027	,	_	
+16-107	4028-4038	pontifices	_	
+16-108	4038-4039	;	_	
+16-109	4040-4042	et	_	
+16-110	4043-4048	infra	_	
+16-111	4048-4049	,	_	
+16-112	4050-4052	de	_	
+16-113	4053-4061	testamen	_	
+16-114	4061-4062	.	_	
+16-115	4062-4063	,	_	
+16-116	4064-4067	cum	_	
+16-117	4068-4070	in	_	
+16-118	4071-4079	officiis	_	
+16-119	4079-4080	.	_	
+16-120	4082-4085	Hoc	_	
+16-121	4086-4089	est	_	
+16-122	4090-4092	de	_	
+16-123	4093-4096	his	_	
+16-124	4097-4101	quae	_	
+16-125	4102-4109	intuitu	_	
+16-126	4110-4119	ecclesiae	_	
+16-127	4120-4124	data	_	
+16-128	4125-4129	sunt	_	
+16-129	4129-4130	,	_	
+16-130	4131-4133	et	_	
+16-131	4134-4137	pro	_	
+16-132	4138-4145	remedio	_	
+16-133	4146-4154	animarum	_	
+16-134	4155-4166	defunctorum	_	
+16-135	4166-4167	,	_	
+16-136	4168-4170	ut	_	
+16-137	4171-4174	ibi	_	
+16-138	4175-4182	dicitur	_	
+16-139	4182-4183	,	_	
+16-140	4184-4186	et	_	
+16-141	4187-4189	in	_	
+16-142	4190-4192	12	_	
+16-143	4192-4193	.	_	
+16-144	4194-4195	q	_	
+16-145	4195-4196	.	_	
+16-146	4197-4198	3	_	
+16-147	4198-4199	,	_	
+16-148	4200-4210	pontifices	_	
+16-149	4210-4211	.	_	
+16-150	4213-4218	Illud	_	
+16-151	4219-4225	verius	_	
+16-152	4226-4231	credo	_	
+16-153	4232-4236	quod	_	
+16-154	4237-4240	hac	_	
+16-155	4241-4251	conditione	_	
+16-156	4252-4256	isti	_	
+16-157	4257-4266	manumissi	_	
+16-158	4267-4274	fuerunt	_	
+16-159	4274-4275	.	_	
+16-160	4277-4279	Si	_	
+16-161	4280-4284	vero	_	
+16-162	4285-4296	simpliciter	_	
+16-163	4297-4306	libertati	_	
+16-164	4307-4311	sunt	_	
+16-165	4312-4318	donati	_	
+16-166	4318-4319	,	_	
+16-167	4320-4324	tunc	_	
+16-168	4325-4332	liberum	_	
+16-169	4333-4336	est	_	
+16-170	4337-4340	eis	_	
+16-171	4341-4347	facere	_	
+16-172	4348-4352	quod	_	
+16-173	4353-4359	volunt	_	
+16-174	4359-4360	,	_	
+16-175	4361-4366	infra	_	
+16-176	4366-4367	,	_	
+16-177	4368-4370	de	_	
+16-178	4371-4375	serv	_	
+16-179	4375-4376	.	_	
+16-180	4377-4380	non	_	
+16-181	4381-4386	ordin	_	
+16-182	4386-4387	.	_	
+16-183	4387-4388	,	_	
+16-184	4389-4391	eo	_	
+16-185	4392-4401	libentius	_	
+16-186	4401-4402	.	_	
+
+#Text=Ecclesiam
+17-1	4407-4416	Ecclesiam	_	
+
+#Text=Id est, praelatum, quia ei praecipue tenentur, cum sit caput, infra, de verb. sign., cum clerici.  Secus est de aliis singularibus personis, 12. q. 2, qui manumittitur; 12. q. 2, octava discussio; et 12. q. 2, episcopus qui mancipium.  Sed contra ecclesiam testificari non potest, cum sit patrona, nisi ipsius edicti venia impetrata, C. de in ius voc., venia; et 12. q. 2, qui manumittitur.  Alias in servitutem rediguntur, ut dicit hic, et 12. q. 2, qui manumittitur.
+18-1	4418-4420	Id	_	
+18-2	4421-4424	est	_	
+18-3	4424-4425	,	_	
+18-4	4426-4435	praelatum	_	
+18-5	4435-4436	,	_	
+18-6	4437-4441	quia	_	
+18-7	4442-4444	ei	_	
+18-8	4445-4454	praecipue	_	
+18-9	4455-4463	tenentur	_	
+18-10	4463-4464	,	_	
+18-11	4465-4468	cum	_	
+18-12	4469-4472	sit	_	
+18-13	4473-4478	caput	_	
+18-14	4478-4479	,	_	
+18-15	4480-4485	infra	_	
+18-16	4485-4486	,	_	
+18-17	4487-4489	de	_	
+18-18	4490-4494	verb	_	
+18-19	4494-4495	.	_	
+18-20	4496-4500	sign	_	
+18-21	4500-4501	.	_	
+18-22	4501-4502	,	_	
+18-23	4503-4506	cum	_	
+18-24	4507-4514	clerici	_	
+18-25	4514-4515	.	_	
+18-26	4517-4522	Secus	_	
+18-27	4523-4526	est	_	
+18-28	4527-4529	de	_	
+18-29	4530-4535	aliis	_	
+18-30	4536-4548	singularibus	_	
+18-31	4549-4557	personis	_	
+18-32	4557-4558	,	_	
+18-33	4559-4561	12	_	
+18-34	4561-4562	.	_	
+18-35	4563-4564	q	_	
+18-36	4564-4565	.	_	
+18-37	4566-4567	2	_	
+18-38	4567-4568	,	_	
+18-39	4569-4572	qui	_	
+18-40	4573-4585	manumittitur	_	
+18-41	4585-4586	;	_	
+18-42	4587-4589	12	_	
+18-43	4589-4590	.	_	
+18-44	4591-4592	q	_	
+18-45	4592-4593	.	_	
+18-46	4594-4595	2	_	
+18-47	4595-4596	,	_	
+18-48	4597-4603	octava	_	
+18-49	4604-4613	discussio	_	
+18-50	4613-4614	;	_	
+18-51	4615-4617	et	_	
+18-52	4618-4620	12	_	
+18-53	4620-4621	.	_	
+18-54	4622-4623	q	_	
+18-55	4623-4624	.	_	
+18-56	4625-4626	2	_	
+18-57	4626-4627	,	_	
+18-58	4628-4637	episcopus	_	
+18-59	4638-4641	qui	_	
+18-60	4642-4651	mancipium	_	
+18-61	4651-4652	.	_	
+18-62	4654-4657	Sed	_	
+18-63	4658-4664	contra	_	
+18-64	4665-4674	ecclesiam	_	
+18-65	4675-4686	testificari	_	
+18-66	4687-4690	non	_	
+18-67	4691-4697	potest	_	
+18-68	4697-4698	,	_	
+18-69	4699-4702	cum	_	
+18-70	4703-4706	sit	_	
+18-71	4707-4714	patrona	_	
+18-72	4714-4715	,	_	
+18-73	4716-4720	nisi	_	
+18-74	4721-4727	ipsius	_	
+18-75	4728-4734	edicti	_	
+18-76	4735-4740	venia	_	
+18-77	4741-4750	impetrata	_	
+18-78	4750-4751	,	_	
+18-79	4752-4753	C	_	
+18-80	4753-4754	.	_	
+18-81	4755-4757	de	_	
+18-82	4758-4760	in	_	
+18-83	4761-4764	ius	_	
+18-84	4765-4768	voc	_	
+18-85	4768-4769	.	_	
+18-86	4769-4770	,	_	
+18-87	4771-4776	venia	_	
+18-88	4776-4777	;	_	
+18-89	4778-4780	et	_	
+18-90	4781-4783	12	_	
+18-91	4783-4784	.	_	
+18-92	4785-4786	q	_	
+18-93	4786-4787	.	_	
+18-94	4788-4789	2	_	
+18-95	4789-4790	,	_	
+18-96	4791-4794	qui	_	
+18-97	4795-4807	manumittitur	_	
+18-98	4807-4808	.	_	
+18-99	4810-4815	Alias	_	
+18-100	4816-4818	in	_	
+18-101	4819-4829	servitutem	_	
+18-102	4830-4840	rediguntur	_	
+18-103	4840-4841	,	_	
+18-104	4842-4844	ut	_	
+18-105	4845-4850	dicit	_	
+18-106	4851-4854	hic	_	
+18-107	4854-4855	,	_	
+18-108	4856-4858	et	_	
+18-109	4859-4861	12	_	
+18-110	4861-4862	.	_	
+18-111	4863-4864	q	_	
+18-112	4864-4865	.	_	
+18-113	4866-4867	2	_	
+18-114	4867-4868	,	_	
+18-115	4869-4872	qui	_	
+18-116	4873-4885	manumittitur	_	
+18-117	4885-4886	.	_	
+
+#Text=Meruerunt
+19-1	4891-4900	Meruerunt	_	
+
+#Text=Id est, acceperunt.  Vel intellige proprie, quia ipsi libertatem meritis suis acceperunt, 12. q. 2, si quos.
+20-1	4902-4904	Id	_	
+20-2	4905-4908	est	_	
+20-3	4908-4909	,	_	
+20-4	4910-4920	acceperunt	_	
+20-5	4920-4921	.	_	
+20-6	4923-4926	Vel	_	
+20-7	4927-4936	intellige	_	
+20-8	4937-4944	proprie	_	
+20-9	4944-4945	,	_	
+20-10	4946-4950	quia	_	
+20-11	4951-4955	ipsi	_	
+20-12	4956-4966	libertatem	_	
+20-13	4967-4974	meritis	_	
+20-14	4975-4979	suis	_	
+20-15	4980-4990	acceperunt	_	
+20-16	4990-4991	,	_	
+20-17	4992-4994	12	_	
+20-18	4994-4995	.	_	
+20-19	4996-4997	q	_	
+20-20	4997-4998	.	_	
+20-21	4999-5000	2	_	
+20-22	5000-5001	,	_	
+20-23	5002-5004	si	_	
+20-24	5005-5009	quos	_	
+20-25	5009-5010	.	_	
+
+#Text=X 1.18.04 Nullus
+21-1	5014-5015	X	_	
+21-2	5016-5023	1.18.04	_	
+21-3	5024-5030	Nullus	_	
+
+#Text=Canonicas
+22-1	5035-5044	Canonicas	_	
+
+#Text=Arg. quod dominus posset retinere operas spirituales in eo quem manumittat ad clericatum.  Arg. contra 54. dist., quicumque.  Illud intelligitur de obsequio temporali, quod retinetur in eo quod manumittitur non ad ordines, sed ut laicus remaneat, et istud de obsequio spirituali, quod non prohibetur, immo licitum est, 54. dist., frequens, in fi.
+23-1	5046-5049	Arg	_	
+23-2	5049-5050	.	_	
+23-3	5051-5055	quod	_	
+23-4	5056-5063	dominus	_	
+23-5	5064-5070	posset	_	
+23-6	5071-5079	retinere	_	
+23-7	5080-5086	operas	_	
+23-8	5087-5098	spirituales	_	
+23-9	5099-5101	in	_	
+23-10	5102-5104	eo	_	
+23-11	5105-5109	quem	_	
+23-12	5110-5120	manumittat	_	
+23-13	5121-5123	ad	_	
+23-14	5124-5134	clericatum	_	
+23-15	5134-5135	.	_	
+23-16	5137-5140	Arg	_	
+23-17	5140-5141	.	_	
+23-18	5142-5148	contra	_	
+23-19	5149-5151	54	_	
+23-20	5151-5152	.	_	
+23-21	5153-5157	dist	_	
+23-22	5157-5158	.	_	
+23-23	5158-5159	,	_	
+23-24	5160-5169	quicumque	_	
+23-25	5169-5170	.	_	
+23-26	5172-5177	Illud	_	
+23-27	5178-5190	intelligitur	_	
+23-28	5191-5193	de	_	
+23-29	5194-5202	obsequio	_	
+23-30	5203-5212	temporali	_	
+23-31	5212-5213	,	_	
+23-32	5214-5218	quod	_	
+23-33	5219-5228	retinetur	_	
+23-34	5229-5231	in	_	
+23-35	5232-5234	eo	_	
+23-36	5235-5239	quod	_	
+23-37	5240-5252	manumittitur	_	
+23-38	5253-5256	non	_	
+23-39	5257-5259	ad	_	
+23-40	5260-5267	ordines	_	
+23-41	5267-5268	,	_	
+23-42	5269-5272	sed	_	
+23-43	5273-5275	ut	_	
+23-44	5276-5282	laicus	_	
+23-45	5283-5291	remaneat	_	
+23-46	5291-5292	,	_	
+23-47	5293-5295	et	_	
+23-48	5296-5301	istud	_	
+23-49	5302-5304	de	_	
+23-50	5305-5313	obsequio	_	
+23-51	5314-5324	spirituali	_	
+23-52	5324-5325	,	_	
+23-53	5326-5330	quod	_	
+23-54	5331-5334	non	_	
+23-55	5335-5345	prohibetur	_	
+23-56	5345-5346	,	_	
+23-57	5347-5351	immo	_	
+23-58	5352-5359	licitum	_	
+23-59	5360-5363	est	_	
+23-60	5363-5364	,	_	
+23-61	5365-5367	54	_	
+23-62	5367-5368	.	_	
+23-63	5369-5373	dist	_	
+23-64	5373-5374	.	_	
+23-65	5374-5375	,	_	
+23-66	5376-5384	frequens	_	
+23-67	5384-5385	,	_	
+23-68	5386-5388	in	_	
+23-69	5389-5391	fi	_	
+23-70	5391-5392	.	_	
+
+#Text=Accusatus
+24-1	5397-5406	Accusatus	_	
+
+#Text=Sed qualiter contra istum agitur, civiliter an criminaliter?  Si criminaliter, et dominus non probet, qualiter punietur dominus?  Potest dici quod accusatus non punitur proprie, quia dominus non accusat, sed potius agit ut in servitutem refigatur, arg. C. de edend., qui accusare.  Vel si vis ut proprie teneatur, accusator punietur pro motu iudicis si defecerit in probando, et obligabit se ad extraordinariam poenam, infra, de accusat., super his.
+25-1	5408-5411	Sed	_	
+25-2	5412-5420	qualiter	_	
+25-3	5421-5427	contra	_	
+25-4	5428-5433	istum	_	
+25-5	5434-5440	agitur	_	
+25-6	5440-5441	,	_	
+25-7	5442-5451	civiliter	_	
+25-8	5452-5454	an	_	
+25-9	5455-5467	criminaliter	_	
+25-10	5467-5468	?	_	
+25-11	5470-5472	Si	_	
+25-12	5473-5485	criminaliter	_	
+25-13	5485-5486	,	_	
+25-14	5487-5489	et	_	
+25-15	5490-5497	dominus	_	
+25-16	5498-5501	non	_	
+25-17	5502-5508	probet	_	
+25-18	5508-5509	,	_	
+25-19	5510-5518	qualiter	_	
+25-20	5519-5527	punietur	_	
+25-21	5528-5535	dominus	_	
+25-22	5535-5536	?	_	
+25-23	5538-5544	Potest	_	
+25-24	5545-5549	dici	_	
+25-25	5550-5554	quod	_	
+25-26	5555-5564	accusatus	_	
+25-27	5565-5568	non	_	
+25-28	5569-5576	punitur	_	
+25-29	5577-5584	proprie	_	
+25-30	5584-5585	,	_	
+25-31	5586-5590	quia	_	
+25-32	5591-5598	dominus	_	
+25-33	5599-5602	non	_	
+25-34	5603-5610	accusat	_	
+25-35	5610-5611	,	_	
+25-36	5612-5615	sed	_	
+25-37	5616-5622	potius	_	
+25-38	5623-5627	agit	_	
+25-39	5628-5630	ut	_	
+25-40	5631-5633	in	_	
+25-41	5634-5644	servitutem	_	
+25-42	5645-5654	refigatur	_	
+25-43	5654-5655	,	_	
+25-44	5656-5659	arg	_	
+25-45	5659-5660	.	_	
+25-46	5661-5662	C	_	
+25-47	5662-5663	.	_	
+25-48	5664-5666	de	_	
+25-49	5667-5672	edend	_	
+25-50	5672-5673	.	_	
+25-51	5673-5674	,	_	
+25-52	5675-5678	qui	_	
+25-53	5679-5687	accusare	_	
+25-54	5687-5688	.	_	
+25-55	5690-5693	Vel	_	
+25-56	5694-5696	si	_	
+25-57	5697-5700	vis	_	
+25-58	5701-5703	ut	_	
+25-59	5704-5711	proprie	_	
+25-60	5712-5720	teneatur	_	
+25-61	5720-5721	,	_	
+25-62	5722-5731	accusator	_	
+25-63	5732-5740	punietur	_	
+25-64	5741-5744	pro	_	
+25-65	5745-5749	motu	_	
+25-66	5750-5757	iudicis	_	
+25-67	5758-5760	si	_	
+25-68	5761-5770	defecerit	_	
+25-69	5771-5773	in	_	
+25-70	5774-5782	probando	_	
+25-71	5782-5783	,	_	
+25-72	5784-5786	et	_	
+25-73	5787-5796	obligabit	_	
+25-74	5797-5799	se	_	
+25-75	5800-5802	ad	_	
+25-76	5803-5818	extraordinariam	_	
+25-77	5819-5825	poenam	_	
+25-78	5825-5826	,	_	
+25-79	5827-5832	infra	_	
+25-80	5832-5833	,	_	
+25-81	5834-5836	de	_	
+25-82	5837-5844	accusat	_	
+25-83	5844-5845	.	_	
+25-84	5845-5846	,	_	
+25-85	5847-5852	super	_	
+25-86	5853-5856	his	_	
+25-87	5856-5857	.	_	
+
+#Text=Degradetur
+26-1	5862-5872	Degradetur	_	
+
+#Text=54. dist., ex antiquis; et 54. dist., frequens.  Contra, ubi dicitur quod sacerdos factus remanet liber, super hoc varii varia dixerunt.  Quidam dicunt quod istud corrigitur per illa.  Vel dic quod illa continent ius commune, haec specialia sunt in odium illorum qui promoti sunt ut serviant in divinis officiis, arg. infra, de serv. non ordin., eo libentius.  Melend. dixit, quod hoc dominus dixit in pacto ut redigeretur in servitutem, nisi ministraret dominis suis divina.  B. dicit quod intelligitur de servo praelati.  Vel posset dici, ut quidam dicunt, quod libertas est res spiritualis, et ideo potest venire in commutatione cum alia re spirituali, infra, de rerum perm., ad quaestiones.  Hug. dicit quod hoc capitulo non tenet.  Verior videtur opinio Melend., qui dicit quod eo pacto vel conditione liber factus fuit et ordinatus, ut serviret dominis suis in divinis, alias in servitutem refigatur.  Et facit pro hoc infra, de serv. non ordin., eo libentius.  Et est arg. quod si domino ignorante servus sacerdos factus fuerit, debet reddi Domino ut serviat ei in divinis, 54. dist., frequens.  Ergo multo fortius debet ei servire ubi eo pacto promotus est, ut dixi, quia maior contumacia praesumitur illius, et sic propter contumaciam, et quia fidem promissam non servat, deponitur et redditur domino, et nullo privilegio clericali gaudebit ulterius, quo ad dominum.
+27-1	5874-5876	54	_	
+27-2	5876-5877	.	_	
+27-3	5878-5882	dist	_	
+27-4	5882-5883	.	_	
+27-5	5883-5884	,	_	
+27-6	5885-5887	ex	_	
+27-7	5888-5896	antiquis	_	
+27-8	5896-5897	;	_	
+27-9	5898-5900	et	_	
+27-10	5901-5903	54	_	
+27-11	5903-5904	.	_	
+27-12	5905-5909	dist	_	
+27-13	5909-5910	.	_	
+27-14	5910-5911	,	_	
+27-15	5912-5920	frequens	_	
+27-16	5920-5921	.	_	
+27-17	5923-5929	Contra	_	
+27-18	5929-5930	,	_	
+27-19	5931-5934	ubi	_	
+27-20	5935-5942	dicitur	_	
+27-21	5943-5947	quod	_	
+27-22	5948-5956	sacerdos	_	
+27-23	5957-5963	factus	_	
+27-24	5964-5971	remanet	_	
+27-25	5972-5977	liber	_	
+27-26	5977-5978	,	_	
+27-27	5979-5984	super	_	
+27-28	5985-5988	hoc	_	
+27-29	5989-5994	varii	_	
+27-30	5995-6000	varia	_	
+27-31	6001-6009	dixerunt	_	
+27-32	6009-6010	.	_	
+27-33	6012-6018	Quidam	_	
+27-34	6019-6025	dicunt	_	
+27-35	6026-6030	quod	_	
+27-36	6031-6036	istud	_	
+27-37	6037-6047	corrigitur	_	
+27-38	6048-6051	per	_	
+27-39	6052-6056	illa	_	
+27-40	6056-6057	.	_	
+27-41	6059-6062	Vel	_	
+27-42	6063-6066	dic	_	
+27-43	6067-6071	quod	_	
+27-44	6072-6076	illa	_	
+27-45	6077-6086	continent	_	
+27-46	6087-6090	ius	_	
+27-47	6091-6098	commune	_	
+27-48	6098-6099	,	_	
+27-49	6100-6104	haec	_	
+27-50	6105-6114	specialia	_	
+27-51	6115-6119	sunt	_	
+27-52	6120-6122	in	_	
+27-53	6123-6128	odium	_	
+27-54	6129-6136	illorum	_	
+27-55	6137-6140	qui	_	
+27-56	6141-6148	promoti	_	
+27-57	6149-6153	sunt	_	
+27-58	6154-6156	ut	_	
+27-59	6157-6165	serviant	_	
+27-60	6166-6168	in	_	
+27-61	6169-6176	divinis	_	
+27-62	6177-6185	officiis	_	
+27-63	6185-6186	,	_	
+27-64	6187-6190	arg	_	
+27-65	6190-6191	.	_	
+27-66	6192-6197	infra	_	
+27-67	6197-6198	,	_	
+27-68	6199-6201	de	_	
+27-69	6202-6206	serv	_	
+27-70	6206-6207	.	_	
+27-71	6208-6211	non	_	
+27-72	6212-6217	ordin	_	
+27-73	6217-6218	.	_	
+27-74	6218-6219	,	_	
+27-75	6220-6222	eo	_	
+27-76	6223-6232	libentius	_	
+27-77	6232-6233	.	_	
+27-78	6235-6241	Melend	_	
+27-79	6241-6242	.	_	
+27-80	6243-6248	dixit	_	
+27-81	6248-6249	,	_	
+27-82	6250-6254	quod	_	
+27-83	6255-6258	hoc	_	
+27-84	6259-6266	dominus	_	
+27-85	6267-6272	dixit	_	
+27-86	6273-6275	in	_	
+27-87	6276-6281	pacto	_	
+27-88	6282-6284	ut	_	
+27-89	6285-6296	redigeretur	_	
+27-90	6297-6299	in	_	
+27-91	6300-6310	servitutem	_	
+27-92	6310-6311	,	_	
+27-93	6312-6316	nisi	_	
+27-94	6317-6328	ministraret	_	
+27-95	6329-6336	dominis	_	
+27-96	6337-6341	suis	_	
+27-97	6342-6348	divina	_	
+27-98	6348-6349	.	_	
+27-99	6351-6352	B	_	
+27-100	6352-6353	.	_	
+27-101	6354-6359	dicit	_	
+27-102	6360-6364	quod	_	
+27-103	6365-6377	intelligitur	_	
+27-104	6378-6380	de	_	
+27-105	6381-6386	servo	_	
+27-106	6387-6395	praelati	_	
+27-107	6395-6396	.	_	
+27-108	6398-6401	Vel	_	
+27-109	6402-6408	posset	_	
+27-110	6409-6413	dici	_	
+27-111	6413-6414	,	_	
+27-112	6415-6417	ut	_	
+27-113	6418-6424	quidam	_	
+27-114	6425-6431	dicunt	_	
+27-115	6431-6432	,	_	
+27-116	6433-6437	quod	_	
+27-117	6438-6446	libertas	_	
+27-118	6447-6450	est	_	
+27-119	6451-6454	res	_	
+27-120	6455-6466	spiritualis	_	
+27-121	6466-6467	,	_	
+27-122	6468-6470	et	_	
+27-123	6471-6475	ideo	_	
+27-124	6476-6482	potest	_	
+27-125	6483-6489	venire	_	
+27-126	6490-6492	in	_	
+27-127	6493-6505	commutatione	_	
+27-128	6506-6509	cum	_	
+27-129	6510-6514	alia	_	
+27-130	6515-6517	re	_	
+27-131	6518-6528	spirituali	_	
+27-132	6528-6529	,	_	
+27-133	6530-6535	infra	_	
+27-134	6535-6536	,	_	
+27-135	6537-6539	de	_	
+27-136	6540-6545	rerum	_	
+27-137	6546-6550	perm	_	
+27-138	6550-6551	.	_	
+27-139	6551-6552	,	_	
+27-140	6553-6555	ad	_	
+27-141	6556-6567	quaestiones	_	
+27-142	6567-6568	.	_	
+27-143	6570-6573	Hug	_	
+27-144	6573-6574	.	_	
+27-145	6575-6580	dicit	_	
+27-146	6581-6585	quod	_	
+27-147	6586-6589	hoc	_	
+27-148	6590-6598	capitulo	_	
+27-149	6599-6602	non	_	
+27-150	6603-6608	tenet	_	
+27-151	6608-6609	.	_	
+27-152	6611-6617	Verior	_	
+27-153	6618-6625	videtur	_	
+27-154	6626-6632	opinio	_	
+27-155	6633-6639	Melend	_	
+27-156	6639-6640	.	_	
+27-157	6640-6641	,	_	
+27-158	6642-6645	qui	_	
+27-159	6646-6651	dicit	_	
+27-160	6652-6656	quod	_	
+27-161	6657-6659	eo	_	
+27-162	6660-6665	pacto	_	
+27-163	6666-6669	vel	_	
+27-164	6670-6680	conditione	_	
+27-165	6681-6686	liber	_	
+27-166	6687-6693	factus	_	
+27-167	6694-6698	fuit	_	
+27-168	6699-6701	et	_	
+27-169	6702-6711	ordinatus	_	
+27-170	6711-6712	,	_	
+27-171	6713-6715	ut	_	
+27-172	6716-6724	serviret	_	
+27-173	6725-6732	dominis	_	
+27-174	6733-6737	suis	_	
+27-175	6738-6740	in	_	
+27-176	6741-6748	divinis	_	
+27-177	6748-6749	,	_	
+27-178	6750-6755	alias	_	
+27-179	6756-6758	in	_	
+27-180	6759-6769	servitutem	_	
+27-181	6770-6779	refigatur	_	
+27-182	6779-6780	.	_	
+27-183	6782-6784	Et	_	
+27-184	6785-6790	facit	_	
+27-185	6791-6794	pro	_	
+27-186	6795-6798	hoc	_	
+27-187	6799-6804	infra	_	
+27-188	6804-6805	,	_	
+27-189	6806-6808	de	_	
+27-190	6809-6813	serv	_	
+27-191	6813-6814	.	_	
+27-192	6815-6818	non	_	
+27-193	6819-6824	ordin	_	
+27-194	6824-6825	.	_	
+27-195	6825-6826	,	_	
+27-196	6827-6829	eo	_	
+27-197	6830-6839	libentius	_	
+27-198	6839-6840	.	_	
+27-199	6842-6844	Et	_	
+27-200	6845-6848	est	_	
+27-201	6849-6852	arg	_	
+27-202	6852-6853	.	_	
+27-203	6854-6858	quod	_	
+27-204	6859-6861	si	_	
+27-205	6862-6868	domino	_	
+27-206	6869-6878	ignorante	_	
+27-207	6879-6885	servus	_	
+27-208	6886-6894	sacerdos	_	
+27-209	6895-6901	factus	_	
+27-210	6902-6908	fuerit	_	
+27-211	6908-6909	,	_	
+27-212	6910-6915	debet	_	
+27-213	6916-6921	reddi	_	
+27-214	6922-6928	Domino	_	
+27-215	6929-6931	ut	_	
+27-216	6932-6939	serviat	_	
+27-217	6940-6942	ei	_	
+27-218	6943-6945	in	_	
+27-219	6946-6953	divinis	_	
+27-220	6953-6954	,	_	
+27-221	6955-6957	54	_	
+27-222	6957-6958	.	_	
+27-223	6959-6963	dist	_	
+27-224	6963-6964	.	_	
+27-225	6964-6965	,	_	
+27-226	6966-6974	frequens	_	
+27-227	6974-6975	.	_	
+27-228	6977-6981	Ergo	_	
+27-229	6982-6987	multo	_	
+27-230	6988-6995	fortius	_	
+27-231	6996-7001	debet	_	
+27-232	7002-7004	ei	_	
+27-233	7005-7012	servire	_	
+27-234	7013-7016	ubi	_	
+27-235	7017-7019	eo	_	
+27-236	7020-7025	pacto	_	
+27-237	7026-7034	promotus	_	
+27-238	7035-7038	est	_	
+27-239	7038-7039	,	_	
+27-240	7040-7042	ut	_	
+27-241	7043-7047	dixi	_	
+27-242	7047-7048	,	_	
+27-243	7049-7053	quia	_	
+27-244	7054-7059	maior	_	
+27-245	7060-7070	contumacia	_	
+27-246	7071-7082	praesumitur	_	
+27-247	7083-7089	illius	_	
+27-248	7089-7090	,	_	
+27-249	7091-7093	et	_	
+27-250	7094-7097	sic	_	
+27-251	7098-7105	propter	_	
+27-252	7106-7117	contumaciam	_	
+27-253	7117-7118	,	_	
+27-254	7119-7121	et	_	
+27-255	7122-7126	quia	_	
+27-256	7127-7132	fidem	_	
+27-257	7133-7142	promissam	_	
+27-258	7143-7146	non	_	
+27-259	7147-7153	servat	_	
+27-260	7153-7154	,	_	
+27-261	7155-7164	deponitur	_	
+27-262	7165-7167	et	_	
+27-263	7168-7176	redditur	_	
+27-264	7177-7183	domino	_	
+27-265	7183-7184	,	_	
+27-266	7185-7187	et	_	
+27-267	7188-7193	nullo	_	
+27-268	7194-7204	privilegio	_	
+27-269	7205-7214	clericali	_	
+27-270	7215-7223	gaudebit	_	
+27-271	7224-7232	ulterius	_	
+27-272	7232-7233	,	_	
+27-273	7234-7237	quo	_	
+27-274	7238-7240	ad	_	
+27-275	7241-7248	dominum	_	
+27-276	7248-7249	.	_	
+
+#Text=X 1.18.05 Consuluit
+28-1	7253-7254	X	_	
+28-2	7255-7262	1.18.05	_	
+28-3	7263-7272	Consuluit	_	
+
+#Text=Spurios
+29-1	7277-7284	Spurios	_	
+
+#Text=Spurius est cui pater vulgus et sic non potest ostendere patrem.  Vel si ostendit verecundum, ostendit quem habere non licet, ff. de statu hom., vulgo.  Et isti illegitime nati promoveri non debent, supra, de fil. presbyt., ut filii; et supra, de fil. presbyt., nimis.
+30-1	7286-7293	Spurius	_	
+30-2	7294-7297	est	_	
+30-3	7298-7301	cui	_	
+30-4	7302-7307	pater	_	
+30-5	7308-7314	vulgus	_	
+30-6	7315-7317	et	_	
+30-7	7318-7321	sic	_	
+30-8	7322-7325	non	_	
+30-9	7326-7332	potest	_	
+30-10	7333-7342	ostendere	_	
+30-11	7343-7349	patrem	_	
+30-12	7349-7350	.	_	
+30-13	7352-7355	Vel	_	
+30-14	7356-7358	si	_	
+30-15	7359-7367	ostendit	_	
+30-16	7368-7378	verecundum	_	
+30-17	7378-7379	,	_	
+30-18	7380-7388	ostendit	_	
+30-19	7389-7393	quem	_	
+30-20	7394-7400	habere	_	
+30-21	7401-7404	non	_	
+30-22	7405-7410	licet	_	
+30-23	7410-7411	,	_	
+30-24	7412-7414	ff	_	
+30-25	7414-7415	.	_	
+30-26	7416-7418	de	_	
+30-27	7419-7424	statu	_	
+30-28	7425-7428	hom	_	
+30-29	7428-7429	.	_	
+30-30	7429-7430	,	_	
+30-31	7431-7436	vulgo	_	
+30-32	7436-7437	.	_	
+30-33	7439-7441	Et	_	
+30-34	7442-7446	isti	_	
+30-35	7447-7457	illegitime	_	
+30-36	7458-7462	nati	_	
+30-37	7463-7472	promoveri	_	
+30-38	7473-7476	non	_	
+30-39	7477-7483	debent	_	
+30-40	7483-7484	,	_	
+30-41	7485-7490	supra	_	
+30-42	7490-7491	,	_	
+30-43	7492-7494	de	_	
+30-44	7495-7498	fil	_	
+30-45	7498-7499	.	_	
+30-46	7500-7507	presbyt	_	
+30-47	7507-7508	.	_	
+30-48	7508-7509	,	_	
+30-49	7510-7512	ut	_	
+30-50	7513-7518	filii	_	
+30-51	7518-7519	;	_	
+30-52	7520-7522	et	_	
+30-53	7523-7528	supra	_	
+30-54	7528-7529	,	_	
+30-55	7530-7532	de	_	
+30-56	7533-7536	fil	_	
+30-57	7536-7537	.	_	
+30-58	7538-7545	presbyt	_	
+30-59	7545-7546	.	_	
+30-60	7546-7547	,	_	
+30-61	7548-7553	nimis	_	
+30-62	7553-7554	.	_	
+
+#Text=Servos
+31-1	7559-7565	Servos	_	
+
+#Text=54. dist., nullus episcoporum; et supra, de serv. non ordin., per totum.
+32-1	7567-7569	54	_	
+32-2	7569-7570	.	_	
+32-3	7571-7575	dist	_	
+32-4	7575-7576	.	_	
+32-5	7576-7577	,	_	
+32-6	7578-7584	nullus	_	
+32-7	7585-7596	episcoporum	_	
+32-8	7596-7597	;	_	
+32-9	7598-7600	et	_	
+32-10	7601-7606	supra	_	
+32-11	7606-7607	,	_	
+32-12	7608-7610	de	_	
+32-13	7611-7615	serv	_	
+32-14	7615-7616	.	_	
+32-15	7617-7620	non	_	
+32-16	7621-7626	ordin	_	
+32-17	7626-7627	.	_	
+32-18	7627-7628	,	_	
+32-19	7629-7632	per	_	
+32-20	7633-7638	totum	_	
+32-21	7638-7639	.	_	
+
+#Text=X 1.18.06 Eo libentius
+33-1	7643-7644	X	_	
+33-2	7645-7652	1.18.06	_	
+33-3	7653-7655	Eo	_	
+33-4	7656-7665	libentius	_	
+
+#Text=Eo tenore
+34-1	7670-7672	Eo	_	
+34-2	7673-7679	tenore	_	
+
+#Text=Arg. contra, 1. q. 2, quam pio; et supra, de serv. non ordin., instruendi; et infra, de pact., pactiones; eo intuitu vel modo.  Non enim fuit conditio, sed modus ad quem servandum tenetur, supra, de serv. non ordin., instruendi; et infra, de pact., pactiones.  Arg. quod non fuit conditio, ff. de tutel., muto § sub conditione; et infra, de praeben., significatum; ff. de manum. test., libertas § haec scriptura.  Vel aliter sicut sponsalia possunt contrahi sub conditione, ut quis fidem Christianam recipiat, 28. q. 1, non oportet.  Vel ut corrigat vitam, infra, de spons., inter opera.  Item potest aliquem manumittere ut ordinem recipiat, ut hic, et infra, de cond. appos., cum sit.  Libertas enim res spiritualis est, et ideo potest venire in commutationem cum alio spirituali, ut hic, et supra, de serv. non ordin., nullus; et infra, de rerum perm., ad quaestiones.
+35-1	7681-7684	Arg	_	
+35-2	7684-7685	.	_	
+35-3	7686-7692	contra	_	
+35-4	7692-7693	,	_	
+35-5	7694-7695	1	_	
+35-6	7695-7696	.	_	
+35-7	7697-7698	q	_	
+35-8	7698-7699	.	_	
+35-9	7700-7701	2	_	
+35-10	7701-7702	,	_	
+35-11	7703-7707	quam	_	
+35-12	7708-7711	pio	_	
+35-13	7711-7712	;	_	
+35-14	7713-7715	et	_	
+35-15	7716-7721	supra	_	
+35-16	7721-7722	,	_	
+35-17	7723-7725	de	_	
+35-18	7726-7730	serv	_	
+35-19	7730-7731	.	_	
+35-20	7732-7735	non	_	
+35-21	7736-7741	ordin	_	
+35-22	7741-7742	.	_	
+35-23	7742-7743	,	_	
+35-24	7744-7754	instruendi	_	
+35-25	7754-7755	;	_	
+35-26	7756-7758	et	_	
+35-27	7759-7764	infra	_	
+35-28	7764-7765	,	_	
+35-29	7766-7768	de	_	
+35-30	7769-7773	pact	_	
+35-31	7773-7774	.	_	
+35-32	7774-7775	,	_	
+35-33	7776-7785	pactiones	_	
+35-34	7785-7786	;	_	
+35-35	7787-7789	eo	_	
+35-36	7790-7797	intuitu	_	
+35-37	7798-7801	vel	_	
+35-38	7802-7806	modo	_	
+35-39	7806-7807	.	_	
+35-40	7809-7812	Non	_	
+35-41	7813-7817	enim	_	
+35-42	7818-7822	fuit	_	
+35-43	7823-7831	conditio	_	
+35-44	7831-7832	,	_	
+35-45	7833-7836	sed	_	
+35-46	7837-7842	modus	_	
+35-47	7843-7845	ad	_	
+35-48	7846-7850	quem	_	
+35-49	7851-7860	servandum	_	
+35-50	7861-7868	tenetur	_	
+35-51	7868-7869	,	_	
+35-52	7870-7875	supra	_	
+35-53	7875-7876	,	_	
+35-54	7877-7879	de	_	
+35-55	7880-7884	serv	_	
+35-56	7884-7885	.	_	
+35-57	7886-7889	non	_	
+35-58	7890-7895	ordin	_	
+35-59	7895-7896	.	_	
+35-60	7896-7897	,	_	
+35-61	7898-7908	instruendi	_	
+35-62	7908-7909	;	_	
+35-63	7910-7912	et	_	
+35-64	7913-7918	infra	_	
+35-65	7918-7919	,	_	
+35-66	7920-7922	de	_	
+35-67	7923-7927	pact	_	
+35-68	7927-7928	.	_	
+35-69	7928-7929	,	_	
+35-70	7930-7939	pactiones	_	
+35-71	7939-7940	.	_	
+35-72	7942-7945	Arg	_	
+35-73	7945-7946	.	_	
+35-74	7947-7951	quod	_	
+35-75	7952-7955	non	_	
+35-76	7956-7960	fuit	_	
+35-77	7961-7969	conditio	_	
+35-78	7969-7970	,	_	
+35-79	7971-7973	ff	_	
+35-80	7973-7974	.	_	
+35-81	7975-7977	de	_	
+35-82	7978-7983	tutel	_	
+35-83	7983-7984	.	_	
+35-84	7984-7985	,	_	
+35-85	7986-7990	muto	_	
+35-86	7991-7992	§	_	
+35-87	7993-7996	sub	_	
+35-88	7997-8007	conditione	_	
+35-89	8007-8008	;	_	
+35-90	8009-8011	et	_	
+35-91	8012-8017	infra	_	
+35-92	8017-8018	,	_	
+35-93	8019-8021	de	_	
+35-94	8022-8029	praeben	_	
+35-95	8029-8030	.	_	
+35-96	8030-8031	,	_	
+35-97	8032-8044	significatum	_	
+35-98	8044-8045	;	_	
+35-99	8046-8048	ff	_	
+35-100	8048-8049	.	_	
+35-101	8050-8052	de	_	
+35-102	8053-8058	manum	_	
+35-103	8058-8059	.	_	
+35-104	8060-8064	test	_	
+35-105	8064-8065	.	_	
+35-106	8065-8066	,	_	
+35-107	8067-8075	libertas	_	
+35-108	8076-8077	§	_	
+35-109	8078-8082	haec	_	
+35-110	8083-8092	scriptura	_	
+35-111	8092-8093	.	_	
+35-112	8095-8098	Vel	_	
+35-113	8099-8105	aliter	_	
+35-114	8106-8111	sicut	_	
+35-115	8112-8121	sponsalia	_	
+35-116	8122-8129	possunt	_	
+35-117	8130-8138	contrahi	_	
+35-118	8139-8142	sub	_	
+35-119	8143-8153	conditione	_	
+35-120	8153-8154	,	_	
+35-121	8155-8157	ut	_	
+35-122	8158-8162	quis	_	
+35-123	8163-8168	fidem	_	
+35-124	8169-8180	Christianam	_	
+35-125	8181-8189	recipiat	_	
+35-126	8189-8190	,	_	
+35-127	8191-8193	28	_	
+35-128	8193-8194	.	_	
+35-129	8195-8196	q	_	
+35-130	8196-8197	.	_	
+35-131	8198-8199	1	_	
+35-132	8199-8200	,	_	
+35-133	8201-8204	non	_	
+35-134	8205-8212	oportet	_	
+35-135	8212-8213	.	_	
+35-136	8215-8218	Vel	_	
+35-137	8219-8221	ut	_	
+35-138	8222-8230	corrigat	_	
+35-139	8231-8236	vitam	_	
+35-140	8236-8237	,	_	
+35-141	8238-8243	infra	_	
+35-142	8243-8244	,	_	
+35-143	8245-8247	de	_	
+35-144	8248-8253	spons	_	
+35-145	8253-8254	.	_	
+35-146	8254-8255	,	_	
+35-147	8256-8261	inter	_	
+35-148	8262-8267	opera	_	
+35-149	8267-8268	.	_	
+35-150	8270-8274	Item	_	
+35-151	8275-8281	potest	_	
+35-152	8282-8289	aliquem	_	
+35-153	8290-8301	manumittere	_	
+35-154	8302-8304	ut	_	
+35-155	8305-8312	ordinem	_	
+35-156	8313-8321	recipiat	_	
+35-157	8321-8322	,	_	
+35-158	8323-8325	ut	_	
+35-159	8326-8329	hic	_	
+35-160	8329-8330	,	_	
+35-161	8331-8333	et	_	
+35-162	8334-8339	infra	_	
+35-163	8339-8340	,	_	
+35-164	8341-8343	de	_	
+35-165	8344-8348	cond	_	
+35-166	8348-8349	.	_	
+35-167	8350-8355	appos	_	
+35-168	8355-8356	.	_	
+35-169	8356-8357	,	_	
+35-170	8358-8361	cum	_	
+35-171	8362-8365	sit	_	
+35-172	8365-8366	.	_	
+35-173	8368-8376	Libertas	_	
+35-174	8377-8381	enim	_	
+35-175	8382-8385	res	_	
+35-176	8386-8397	spiritualis	_	
+35-177	8398-8401	est	_	
+35-178	8401-8402	,	_	
+35-179	8403-8405	et	_	
+35-180	8406-8410	ideo	_	
+35-181	8411-8417	potest	_	
+35-182	8418-8424	venire	_	
+35-183	8425-8427	in	_	
+35-184	8428-8441	commutationem	_	
+35-185	8442-8445	cum	_	
+35-186	8446-8450	alio	_	
+35-187	8451-8461	spirituali	_	
+35-188	8461-8462	,	_	
+35-189	8463-8465	ut	_	
+35-190	8466-8469	hic	_	
+35-191	8469-8470	,	_	
+35-192	8471-8473	et	_	
+35-193	8474-8479	supra	_	
+35-194	8479-8480	,	_	
+35-195	8481-8483	de	_	
+35-196	8484-8488	serv	_	
+35-197	8488-8489	.	_	
+35-198	8490-8493	non	_	
+35-199	8494-8499	ordin	_	
+35-200	8499-8500	.	_	
+35-201	8500-8501	,	_	
+35-202	8502-8508	nullus	_	
+35-203	8508-8509	;	_	
+35-204	8510-8512	et	_	
+35-205	8513-8518	infra	_	
+35-206	8518-8519	,	_	
+35-207	8520-8522	de	_	
+35-208	8523-8528	rerum	_	
+35-209	8529-8533	perm	_	
+35-210	8533-8534	.	_	
+35-211	8534-8535	,	_	
+35-212	8536-8538	ad	_	
+35-213	8539-8550	quaestiones	_	
+35-214	8550-8551	.	_	
+
+#Text=Impendere
+36-1	8556-8565	Impendere	_	
+
+#Text=Immo si non impendunt, rediguntur in servitutem, 12. q. 2, diaconi; et 12. q. 2, octava discussio.  Et illud exaudias secundum hoc et secundum distinctionem istius intelligas, supra, de serv. non ordinan., nullus, ut ibi dictum est.
+37-1	8567-8571	Immo	_	
+37-2	8572-8574	si	_	
+37-3	8575-8578	non	_	
+37-4	8579-8588	impendunt	_	
+37-5	8588-8589	,	_	
+37-6	8590-8600	rediguntur	_	
+37-7	8601-8603	in	_	
+37-8	8604-8614	servitutem	_	
+37-9	8614-8615	,	_	
+37-10	8616-8618	12	_	
+37-11	8618-8619	.	_	
+37-12	8620-8621	q	_	
+37-13	8621-8622	.	_	
+37-14	8623-8624	2	_	
+37-15	8624-8625	,	_	
+37-16	8626-8633	diaconi	_	
+37-17	8633-8634	;	_	
+37-18	8635-8637	et	_	
+37-19	8638-8640	12	_	
+37-20	8640-8641	.	_	
+37-21	8642-8643	q	_	
+37-22	8643-8644	.	_	
+37-23	8645-8646	2	_	
+37-24	8646-8647	,	_	
+37-25	8648-8654	octava	_	
+37-26	8655-8664	discussio	_	
+37-27	8664-8665	.	_	
+37-28	8667-8669	Et	_	
+37-29	8670-8675	illud	_	
+37-30	8676-8684	exaudias	_	
+37-31	8685-8693	secundum	_	
+37-32	8694-8697	hoc	_	
+37-33	8698-8700	et	_	
+37-34	8701-8709	secundum	_	
+37-35	8710-8723	distinctionem	_	
+37-36	8724-8730	istius	_	
+37-37	8731-8741	intelligas	_	
+37-38	8741-8742	,	_	
+37-39	8743-8748	supra	_	
+37-40	8748-8749	,	_	
+37-41	8750-8752	de	_	
+37-42	8753-8757	serv	_	
+37-43	8757-8758	.	_	
+37-44	8759-8762	non	_	
+37-45	8763-8770	ordinan	_	
+37-46	8770-8771	.	_	
+37-47	8771-8772	,	_	
+37-48	8773-8779	nullus	_	
+37-49	8779-8780	,	_	
+37-50	8781-8783	ut	_	
+37-51	8784-8787	ibi	_	
+37-52	8788-8794	dictum	_	
+37-53	8795-8798	est	_	
+37-54	8798-8799	.	_	
+
+#Text=Ad aliam
+38-1	8804-8806	Ad	_	
+38-2	8807-8812	aliam	_	
+
+#Text=De licentia tamen episcopi, alias non esset quaestio.  Ex quo enim intitulari sunt in aliqua ecclesia, debent in ea perpetuo permanere, 70. dist., sanctorum; 21. q. 1, clericus; supra, de renunciat., admonet; et infra, de pact., pactiones.
+39-1	8814-8816	De	_	
+39-2	8817-8825	licentia	_	
+39-3	8826-8831	tamen	_	
+39-4	8832-8840	episcopi	_	
+39-5	8840-8841	,	_	
+39-6	8842-8847	alias	_	
+39-7	8848-8851	non	_	
+39-8	8852-8857	esset	_	
+39-9	8858-8866	quaestio	_	
+39-10	8866-8867	.	_	
+39-11	8869-8871	Ex	_	
+39-12	8872-8875	quo	_	
+39-13	8876-8880	enim	_	
+39-14	8881-8891	intitulari	_	
+39-15	8892-8896	sunt	_	
+39-16	8897-8899	in	_	
+39-17	8900-8906	aliqua	_	
+39-18	8907-8915	ecclesia	_	
+39-19	8915-8916	,	_	
+39-20	8917-8923	debent	_	
+39-21	8924-8926	in	_	
+39-22	8927-8929	ea	_	
+39-23	8930-8938	perpetuo	_	
+39-24	8939-8948	permanere	_	
+39-25	8948-8949	,	_	
+39-26	8950-8952	70	_	
+39-27	8952-8953	.	_	
+39-28	8954-8958	dist	_	
+39-29	8958-8959	.	_	
+39-30	8959-8960	,	_	
+39-31	8961-8970	sanctorum	_	
+39-32	8970-8971	;	_	
+39-33	8972-8974	21	_	
+39-34	8974-8975	.	_	
+39-35	8976-8977	q	_	
+39-36	8977-8978	.	_	
+39-37	8979-8980	1	_	
+39-38	8980-8981	,	_	
+39-39	8982-8990	clericus	_	
+39-40	8990-8991	;	_	
+39-41	8992-8997	supra	_	
+39-42	8997-8998	,	_	
+39-43	8999-9001	de	_	
+39-44	9002-9011	renunciat	_	
+39-45	9011-9012	.	_	
+39-46	9012-9013	,	_	
+39-47	9014-9021	admonet	_	
+39-48	9021-9022	;	_	
+39-49	9023-9025	et	_	
+39-50	9026-9031	infra	_	
+39-51	9031-9032	,	_	
+39-52	9033-9035	de	_	
+39-53	9036-9040	pact	_	
+39-54	9040-9041	.	_	
+39-55	9041-9042	,	_	
+39-56	9043-9052	pactiones	_	
+39-57	9052-9053	.	_	
+
+#Text=X 1.18.07 Miramur
+40-1	9057-9058	X	_	
+40-2	9059-9066	1.18.07	_	
+40-3	9067-9074	Miramur	_	
+
+#Text=Antiquorum
+41-1	9079-9089	Antiquorum	_	
+
+#Text=54. dist., ex antiquis; 54. dist., frequens; et 54. dist., quis autem.
+42-1	9091-9093	54	_	
+42-2	9093-9094	.	_	
+42-3	9095-9099	dist	_	
+42-4	9099-9100	.	_	
+42-5	9100-9101	,	_	
+42-6	9102-9104	ex	_	
+42-7	9105-9113	antiquis	_	
+42-8	9113-9114	;	_	
+42-9	9115-9117	54	_	
+42-10	9117-9118	.	_	
+42-11	9119-9123	dist	_	
+42-12	9123-9124	.	_	
+42-13	9124-9125	,	_	
+42-14	9126-9134	frequens	_	
+42-15	9134-9135	;	_	
+42-16	9136-9138	et	_	
+42-17	9139-9141	54	_	
+42-18	9141-9142	.	_	
+42-19	9143-9147	dist	_	
+42-20	9147-9148	.	_	
+42-21	9148-9149	,	_	
+42-22	9150-9154	quis	_	
+42-23	9155-9160	autem	_	
+42-24	9160-9161	.	_	
+
+#Text=Mentio
+43-1	9166-9172	Mentio	_	
+
+#Text=Ut patet in praedictis canonibus, 54. dist., ex antiquis, ubi nulla fit mentio de subdiacono expresse.  De subdiacono et inferioribus officiis fit mentio non expresse, sed generaliter fit de subdiacono mentio in 54. dist., ex antiquis, vers. reliqua vero officia.  Illa clausula respicit omnes post diaconum, quia secundum antiqua iura subdiaconalis ordo non erat sacer, et ideo communi iure censebatur cum inferioribus ordinibus in primitiva ecclesia, 60. dist., nullus in episcopum; et 60. dist., innovamus, in quibus ad honores provehi prohibentur omnes inferiores post diaconum.  Et ideo olim subdiaconus si promotus fuerat domino suo ignorante, revocabatur in servitutem.  Hodie vero cum diacono non eodem privilegio gaudet, ut si quis ignorante domino subdiaconus fiat, vicarium pro se praestet, aut si non habet, ipse reddatur.  Hic cavetur de diacono, et idem iuris est de subdiacono per hanc decretalem.
+44-1	9174-9176	Ut	_	
+44-2	9177-9182	patet	_	
+44-3	9183-9185	in	_	
+44-4	9186-9196	praedictis	_	
+44-5	9197-9206	canonibus	_	
+44-6	9206-9207	,	_	
+44-7	9208-9210	54	_	
+44-8	9210-9211	.	_	
+44-9	9212-9216	dist	_	
+44-10	9216-9217	.	_	
+44-11	9217-9218	,	_	
+44-12	9219-9221	ex	_	
+44-13	9222-9230	antiquis	_	
+44-14	9230-9231	,	_	
+44-15	9232-9235	ubi	_	
+44-16	9236-9241	nulla	_	
+44-17	9242-9245	fit	_	
+44-18	9246-9252	mentio	_	
+44-19	9253-9255	de	_	
+44-20	9256-9266	subdiacono	_	
+44-21	9267-9275	expresse	_	
+44-22	9275-9276	.	_	
+44-23	9278-9280	De	_	
+44-24	9281-9291	subdiacono	_	
+44-25	9292-9294	et	_	
+44-26	9295-9307	inferioribus	_	
+44-27	9308-9316	officiis	_	
+44-28	9317-9320	fit	_	
+44-29	9321-9327	mentio	_	
+44-30	9328-9331	non	_	
+44-31	9332-9340	expresse	_	
+44-32	9340-9341	,	_	
+44-33	9342-9345	sed	_	
+44-34	9346-9357	generaliter	_	
+44-35	9358-9361	fit	_	
+44-36	9362-9364	de	_	
+44-37	9365-9375	subdiacono	_	
+44-38	9376-9382	mentio	_	
+44-39	9383-9385	in	_	
+44-40	9386-9388	54	_	
+44-41	9388-9389	.	_	
+44-42	9390-9394	dist	_	
+44-43	9394-9395	.	_	
+44-44	9395-9396	,	_	
+44-45	9397-9399	ex	_	
+44-46	9400-9408	antiquis	_	
+44-47	9408-9409	,	_	
+44-48	9410-9414	vers	_	
+44-49	9414-9415	.	_	
+44-50	9416-9423	reliqua	_	
+44-51	9424-9428	vero	_	
+44-52	9429-9436	officia	_	
+44-53	9436-9437	.	_	
+44-54	9439-9443	Illa	_	
+44-55	9444-9452	clausula	_	
+44-56	9453-9461	respicit	_	
+44-57	9462-9467	omnes	_	
+44-58	9468-9472	post	_	
+44-59	9473-9481	diaconum	_	
+44-60	9481-9482	,	_	
+44-61	9483-9487	quia	_	
+44-62	9488-9496	secundum	_	
+44-63	9497-9504	antiqua	_	
+44-64	9505-9509	iura	_	
+44-65	9510-9523	subdiaconalis	_	
+44-66	9524-9528	ordo	_	
+44-67	9529-9532	non	_	
+44-68	9533-9537	erat	_	
+44-69	9538-9543	sacer	_	
+44-70	9543-9544	,	_	
+44-71	9545-9547	et	_	
+44-72	9548-9552	ideo	_	
+44-73	9553-9560	communi	_	
+44-74	9561-9565	iure	_	
+44-75	9566-9576	censebatur	_	
+44-76	9577-9580	cum	_	
+44-77	9581-9593	inferioribus	_	
+44-78	9594-9603	ordinibus	_	
+44-79	9604-9606	in	_	
+44-80	9607-9616	primitiva	_	
+44-81	9617-9625	ecclesia	_	
+44-82	9625-9626	,	_	
+44-83	9627-9629	60	_	
+44-84	9629-9630	.	_	
+44-85	9631-9635	dist	_	
+44-86	9635-9636	.	_	
+44-87	9636-9637	,	_	
+44-88	9638-9644	nullus	_	
+44-89	9645-9647	in	_	
+44-90	9648-9657	episcopum	_	
+44-91	9657-9658	;	_	
+44-92	9659-9661	et	_	
+44-93	9662-9664	60	_	
+44-94	9664-9665	.	_	
+44-95	9666-9670	dist	_	
+44-96	9670-9671	.	_	
+44-97	9671-9672	,	_	
+44-98	9673-9682	innovamus	_	
+44-99	9682-9683	,	_	
+44-100	9684-9686	in	_	
+44-101	9687-9693	quibus	_	
+44-102	9694-9696	ad	_	
+44-103	9697-9704	honores	_	
+44-104	9705-9712	provehi	_	
+44-105	9713-9724	prohibentur	_	
+44-106	9725-9730	omnes	_	
+44-107	9731-9741	inferiores	_	
+44-108	9742-9746	post	_	
+44-109	9747-9755	diaconum	_	
+44-110	9755-9756	.	_	
+44-111	9758-9760	Et	_	
+44-112	9761-9765	ideo	_	
+44-113	9766-9770	olim	_	
+44-114	9771-9782	subdiaconus	_	
+44-115	9783-9785	si	_	
+44-116	9786-9794	promotus	_	
+44-117	9795-9801	fuerat	_	
+44-118	9802-9808	domino	_	
+44-119	9809-9812	suo	_	
+44-120	9813-9822	ignorante	_	
+44-121	9822-9823	,	_	
+44-122	9824-9835	revocabatur	_	
+44-123	9836-9838	in	_	
+44-124	9839-9849	servitutem	_	
+44-125	9849-9850	.	_	
+44-126	9852-9857	Hodie	_	
+44-127	9858-9862	vero	_	
+44-128	9863-9866	cum	_	
+44-129	9867-9874	diacono	_	
+44-130	9875-9878	non	_	
+44-131	9879-9884	eodem	_	
+44-132	9885-9895	privilegio	_	
+44-133	9896-9902	gaudet	_	
+44-134	9902-9903	,	_	
+44-135	9904-9906	ut	_	
+44-136	9907-9909	si	_	
+44-137	9910-9914	quis	_	
+44-138	9915-9924	ignorante	_	
+44-139	9925-9931	domino	_	
+44-140	9932-9943	subdiaconus	_	
+44-141	9944-9948	fiat	_	
+44-142	9948-9949	,	_	
+44-143	9950-9958	vicarium	_	
+44-144	9959-9962	pro	_	
+44-145	9963-9965	se	_	
+44-146	9966-9974	praestet	_	
+44-147	9974-9975	,	_	
+44-148	9976-9979	aut	_	
+44-149	9980-9982	si	_	
+44-150	9983-9986	non	_	
+44-151	9987-9992	habet	_	
+44-152	9992-9993	,	_	
+44-153	9994-9998	ipse	_	
+44-154	9999-10007	reddatur	_	
+44-155	10007-10008	.	_	
+44-156	10010-10013	Hic	_	
+44-157	10014-10021	cavetur	_	
+44-158	10022-10024	de	_	
+44-159	10025-10032	diacono	_	
+44-160	10032-10033	,	_	
+44-161	10034-10036	et	_	
+44-162	10037-10041	idem	_	
+44-163	10042-10047	iuris	_	
+44-164	10048-10051	est	_	
+44-165	10052-10054	de	_	
+44-166	10055-10065	subdiacono	_	
+44-167	10066-10069	per	_	
+44-168	10070-10074	hanc	_	
+44-169	10075-10085	decretalem	_	
+44-170	10085-10086	.	_	
+
+#Text=Gregorii
+45-1	10091-10099	Gregorii	_	
+
+#Text=Constitutionem Gregorii habes 31. dist., ante triennium; et 28. dist., nullum.
+46-1	10101-10115	Constitutionem	_	
+46-2	10116-10124	Gregorii	_	
+46-3	10125-10130	habes	_	
+46-4	10131-10133	31	_	
+46-5	10133-10134	.	_	
+46-6	10135-10139	dist	_	
+46-7	10139-10140	.	_	
+46-8	10140-10141	,	_	
+46-9	10142-10146	ante	_	
+46-10	10147-10156	triennium	_	
+46-11	10156-10157	;	_	
+46-12	10158-10160	et	_	
+46-13	10161-10163	28	_	
+46-14	10163-10164	.	_	
+46-15	10165-10169	dist	_	
+46-16	10169-10170	.	_	
+46-17	10170-10171	,	_	
+46-18	10172-10178	nullum	_	
+46-19	10178-10179	.	_	
+
+#Text=Urbani
+47-1	10184-10190	Urbani	_	
+
+#Text=Secundi scilicet, ut 32. dist., erubescant.  Et illa iura, 61. dist., hodie correcta sunt, quia bene potest subdiaconus hodie eligi in episcopum, supra, de aetat. et qualit., a multis.
+48-1	10192-10199	Secundi	_	
+48-2	10200-10208	scilicet	_	
+48-3	10208-10209	,	_	
+48-4	10210-10212	ut	_	
+48-5	10213-10215	32	_	
+48-6	10215-10216	.	_	
+48-7	10217-10221	dist	_	
+48-8	10221-10222	.	_	
+48-9	10222-10223	,	_	
+48-10	10224-10234	erubescant	_	
+48-11	10234-10235	.	_	
+48-12	10237-10239	Et	_	
+48-13	10240-10244	illa	_	
+48-14	10245-10249	iura	_	
+48-15	10249-10250	,	_	
+48-16	10251-10253	61	_	
+48-17	10253-10254	.	_	
+48-18	10255-10259	dist	_	
+48-19	10259-10260	.	_	
+48-20	10260-10261	,	_	
+48-21	10262-10267	hodie	_	
+48-22	10268-10276	correcta	_	
+48-23	10277-10281	sunt	_	
+48-24	10281-10282	,	_	
+48-25	10283-10287	quia	_	
+48-26	10288-10292	bene	_	
+48-27	10293-10299	potest	_	
+48-28	10300-10311	subdiaconus	_	
+48-29	10312-10317	hodie	_	
+48-30	10318-10323	eligi	_	
+48-31	10324-10326	in	_	
+48-32	10327-10336	episcopum	_	
+48-33	10336-10337	,	_	
+48-34	10338-10343	supra	_	
+48-35	10343-10344	,	_	
+48-36	10345-10347	de	_	
+48-37	10348-10353	aetat	_	
+48-38	10353-10354	.	_	
+48-39	10355-10357	et	_	
+48-40	10358-10364	qualit	_	
+48-41	10364-10365	.	_	
+48-42	10365-10366	,	_	
+48-43	10367-10368	a	_	
+48-44	10369-10375	multis	_	
+48-45	10375-10376	.	_	
+
+#Text=X 1.18.08 Dilectus filius G.
+49-1	10380-10381	X	_	
+49-2	10382-10389	1.18.08	_	
+49-3	10390-10398	Dilectus	_	
+49-4	10399-10405	filius	_	
+49-5	10406-10407	G	_	
+49-6	10407-10408	.	_	
+
+#Text=Mater sua
+50-1	10413-10418	Mater	_	
+50-2	10419-10422	sua	_	
+
+#Text=Si iste natus est de legitimo matrimonio, contradicit illud decretalem, 32. q. 4, liberi dicti sunt, ubi dicitur quod natus de legitimo matrimonio deteriorem partem sequitur semper.  Et hic dicitur partus sequitur matrem.  Si autem dicis quod non fuit natus de matrimonio, tunc sequitur conditionem etiam matris, ut ibi.  Et hic videtur idem.  Sed secundum hoc non potest stare quod hic dicitur, quia si iste non est natus de matrimonio legitimo, promoveri non potest ad sacros ordines, supra, de fil. presbyt., ut filii.  Et hic dicit quod in presbyterum ordinetur.  Dico ergo quod iste erat natus de legitimo matrimonio, et tamen sequitur conditionem liberae matris, C. de rei vend., partum; et ff. de liber. caus., placuit.  Et etiam ancillae si ibi non est matrimonium, ut ff. de statu hom., lex naturae.  Et capitulum illud intelligitur secundum Lombardam consuetudinem, quae adhuc observatur in multis regionibus, ut partus sequatur deteriorem conditionem natus de matrimonio legitimo.  Sed lex Romana aliud tenet, ut partus sequatur conditionem matris natus de legitimo matrimonio, ut dicunt leges praedictae.  Vel capitulum illud, 32. q. 4, liberi dicti sunt, potest reduci ad leges praedictas, ut dicas ibi: deteriorem partem sequatur, id est, debiliorem, scilicet, femineam.  Nam sexus femineus debilis est, et ideo iste cum sit natus liber de libera matre potest promoveri non obstante contradictione militis.  Praeterea cum iste iam esset diaconus, poterat in libertate remanere dato vicario, et sic dominus ipsum impedire non poterat, 54. dist., ex antiquis.
+51-1	10424-10426	Si	_	
+51-2	10427-10431	iste	_	
+51-3	10432-10437	natus	_	
+51-4	10438-10441	est	_	
+51-5	10442-10444	de	_	
+51-6	10445-10453	legitimo	_	
+51-7	10454-10464	matrimonio	_	
+51-8	10464-10465	,	_	
+51-9	10466-10477	contradicit	_	
+51-10	10478-10483	illud	_	
+51-11	10484-10494	decretalem	_	
+51-12	10494-10495	,	_	
+51-13	10496-10498	32	_	
+51-14	10498-10499	.	_	
+51-15	10500-10501	q	_	
+51-16	10501-10502	.	_	
+51-17	10503-10504	4	_	
+51-18	10504-10505	,	_	
+51-19	10506-10512	liberi	_	
+51-20	10513-10518	dicti	_	
+51-21	10519-10523	sunt	_	
+51-22	10523-10524	,	_	
+51-23	10525-10528	ubi	_	
+51-24	10529-10536	dicitur	_	
+51-25	10537-10541	quod	_	
+51-26	10542-10547	natus	_	
+51-27	10548-10550	de	_	
+51-28	10551-10559	legitimo	_	
+51-29	10560-10570	matrimonio	_	
+51-30	10571-10581	deteriorem	_	
+51-31	10582-10588	partem	_	
+51-32	10589-10597	sequitur	_	
+51-33	10598-10604	semper	_	
+51-34	10604-10605	.	_	
+51-35	10607-10609	Et	_	
+51-36	10610-10613	hic	_	
+51-37	10614-10621	dicitur	_	
+51-38	10622-10628	partus	_	
+51-39	10629-10637	sequitur	_	
+51-40	10638-10644	matrem	_	
+51-41	10644-10645	.	_	
+51-42	10647-10649	Si	_	
+51-43	10650-10655	autem	_	
+51-44	10656-10661	dicis	_	
+51-45	10662-10666	quod	_	
+51-46	10667-10670	non	_	
+51-47	10671-10675	fuit	_	
+51-48	10676-10681	natus	_	
+51-49	10682-10684	de	_	
+51-50	10685-10695	matrimonio	_	
+51-51	10695-10696	,	_	
+51-52	10697-10701	tunc	_	
+51-53	10702-10710	sequitur	_	
+51-54	10711-10722	conditionem	_	
+51-55	10723-10728	etiam	_	
+51-56	10729-10735	matris	_	
+51-57	10735-10736	,	_	
+51-58	10737-10739	ut	_	
+51-59	10740-10743	ibi	_	
+51-60	10743-10744	.	_	
+51-61	10746-10748	Et	_	
+51-62	10749-10752	hic	_	
+51-63	10753-10760	videtur	_	
+51-64	10761-10765	idem	_	
+51-65	10765-10766	.	_	
+51-66	10768-10771	Sed	_	
+51-67	10772-10780	secundum	_	
+51-68	10781-10784	hoc	_	
+51-69	10785-10788	non	_	
+51-70	10789-10795	potest	_	
+51-71	10796-10801	stare	_	
+51-72	10802-10806	quod	_	
+51-73	10807-10810	hic	_	
+51-74	10811-10818	dicitur	_	
+51-75	10818-10819	,	_	
+51-76	10820-10824	quia	_	
+51-77	10825-10827	si	_	
+51-78	10828-10832	iste	_	
+51-79	10833-10836	non	_	
+51-80	10837-10840	est	_	
+51-81	10841-10846	natus	_	
+51-82	10847-10849	de	_	
+51-83	10850-10860	matrimonio	_	
+51-84	10861-10869	legitimo	_	
+51-85	10869-10870	,	_	
+51-86	10871-10880	promoveri	_	
+51-87	10881-10884	non	_	
+51-88	10885-10891	potest	_	
+51-89	10892-10894	ad	_	
+51-90	10895-10901	sacros	_	
+51-91	10902-10909	ordines	_	
+51-92	10909-10910	,	_	
+51-93	10911-10916	supra	_	
+51-94	10916-10917	,	_	
+51-95	10918-10920	de	_	
+51-96	10921-10924	fil	_	
+51-97	10924-10925	.	_	
+51-98	10926-10933	presbyt	_	
+51-99	10933-10934	.	_	
+51-100	10934-10935	,	_	
+51-101	10936-10938	ut	_	
+51-102	10939-10944	filii	_	
+51-103	10944-10945	.	_	
+51-104	10947-10949	Et	_	
+51-105	10950-10953	hic	_	
+51-106	10954-10959	dicit	_	
+51-107	10960-10964	quod	_	
+51-108	10965-10967	in	_	
+51-109	10968-10979	presbyterum	_	
+51-110	10980-10989	ordinetur	_	
+51-111	10989-10990	.	_	
+51-112	10992-10996	Dico	_	
+51-113	10997-11001	ergo	_	
+51-114	11002-11006	quod	_	
+51-115	11007-11011	iste	_	
+51-116	11012-11016	erat	_	
+51-117	11017-11022	natus	_	
+51-118	11023-11025	de	_	
+51-119	11026-11034	legitimo	_	
+51-120	11035-11045	matrimonio	_	
+51-121	11045-11046	,	_	
+51-122	11047-11049	et	_	
+51-123	11050-11055	tamen	_	
+51-124	11056-11064	sequitur	_	
+51-125	11065-11076	conditionem	_	
+51-126	11077-11084	liberae	_	
+51-127	11085-11091	matris	_	
+51-128	11091-11092	,	_	
+51-129	11093-11094	C	_	
+51-130	11094-11095	.	_	
+51-131	11096-11098	de	_	
+51-132	11099-11102	rei	_	
+51-133	11103-11107	vend	_	
+51-134	11107-11108	.	_	
+51-135	11108-11109	,	_	
+51-136	11110-11116	partum	_	
+51-137	11116-11117	;	_	
+51-138	11118-11120	et	_	
+51-139	11121-11123	ff	_	
+51-140	11123-11124	.	_	
+51-141	11125-11127	de	_	
+51-142	11128-11133	liber	_	
+51-143	11133-11134	.	_	
+51-144	11135-11139	caus	_	
+51-145	11139-11140	.	_	
+51-146	11140-11141	,	_	
+51-147	11142-11149	placuit	_	
+51-148	11149-11150	.	_	
+51-149	11152-11154	Et	_	
+51-150	11155-11160	etiam	_	
+51-151	11161-11169	ancillae	_	
+51-152	11170-11172	si	_	
+51-153	11173-11176	ibi	_	
+51-154	11177-11180	non	_	
+51-155	11181-11184	est	_	
+51-156	11185-11196	matrimonium	_	
+51-157	11196-11197	,	_	
+51-158	11198-11200	ut	_	
+51-159	11201-11203	ff	_	
+51-160	11203-11204	.	_	
+51-161	11205-11207	de	_	
+51-162	11208-11213	statu	_	
+51-163	11214-11217	hom	_	
+51-164	11217-11218	.	_	
+51-165	11218-11219	,	_	
+51-166	11220-11223	lex	_	
+51-167	11224-11231	naturae	_	
+51-168	11231-11232	.	_	
+51-169	11234-11236	Et	_	
+51-170	11237-11246	capitulum	_	
+51-171	11247-11252	illud	_	
+51-172	11253-11265	intelligitur	_	
+51-173	11266-11274	secundum	_	
+51-174	11275-11284	Lombardam	_	
+51-175	11285-11298	consuetudinem	_	
+51-176	11298-11299	,	_	
+51-177	11300-11304	quae	_	
+51-178	11305-11310	adhuc	_	
+51-179	11311-11321	observatur	_	
+51-180	11322-11324	in	_	
+51-181	11325-11331	multis	_	
+51-182	11332-11342	regionibus	_	
+51-183	11342-11343	,	_	
+51-184	11344-11346	ut	_	
+51-185	11347-11353	partus	_	
+51-186	11354-11362	sequatur	_	
+51-187	11363-11373	deteriorem	_	
+51-188	11374-11385	conditionem	_	
+51-189	11386-11391	natus	_	
+51-190	11392-11394	de	_	
+51-191	11395-11405	matrimonio	_	
+51-192	11406-11414	legitimo	_	
+51-193	11414-11415	.	_	
+51-194	11417-11420	Sed	_	
+51-195	11421-11424	lex	_	
+51-196	11425-11431	Romana	_	
+51-197	11432-11437	aliud	_	
+51-198	11438-11443	tenet	_	
+51-199	11443-11444	,	_	
+51-200	11445-11447	ut	_	
+51-201	11448-11454	partus	_	
+51-202	11455-11463	sequatur	_	
+51-203	11464-11475	conditionem	_	
+51-204	11476-11482	matris	_	
+51-205	11483-11488	natus	_	
+51-206	11489-11491	de	_	
+51-207	11492-11500	legitimo	_	
+51-208	11501-11511	matrimonio	_	
+51-209	11511-11512	,	_	
+51-210	11513-11515	ut	_	
+51-211	11516-11522	dicunt	_	
+51-212	11523-11528	leges	_	
+51-213	11529-11539	praedictae	_	
+51-214	11539-11540	.	_	
+51-215	11542-11545	Vel	_	
+51-216	11546-11555	capitulum	_	
+51-217	11556-11561	illud	_	
+51-218	11561-11562	,	_	
+51-219	11563-11565	32	_	
+51-220	11565-11566	.	_	
+51-221	11567-11568	q	_	
+51-222	11568-11569	.	_	
+51-223	11570-11571	4	_	
+51-224	11571-11572	,	_	
+51-225	11573-11579	liberi	_	
+51-226	11580-11585	dicti	_	
+51-227	11586-11590	sunt	_	
+51-228	11590-11591	,	_	
+51-229	11592-11598	potest	_	
+51-230	11599-11605	reduci	_	
+51-231	11606-11608	ad	_	
+51-232	11609-11614	leges	_	
+51-233	11615-11625	praedictas	_	
+51-234	11625-11626	,	_	
+51-235	11627-11629	ut	_	
+51-236	11630-11635	dicas	_	
+51-237	11636-11639	ibi	_	
+51-238	11639-11640	:	_	
+51-239	11641-11651	deteriorem	_	
+51-240	11652-11658	partem	_	
+51-241	11659-11667	sequatur	_	
+51-242	11667-11668	,	_	
+51-243	11669-11671	id	_	
+51-244	11672-11675	est	_	
+51-245	11675-11676	,	_	
+51-246	11677-11687	debiliorem	_	
+51-247	11687-11688	,	_	
+51-248	11689-11697	scilicet	_	
+51-249	11697-11698	,	_	
+51-250	11699-11707	femineam	_	
+51-251	11707-11708	.	_	
+51-252	11710-11713	Nam	_	
+51-253	11714-11719	sexus	_	
+51-254	11720-11728	femineus	_	
+51-255	11729-11736	debilis	_	
+51-256	11737-11740	est	_	
+51-257	11740-11741	,	_	
+51-258	11742-11744	et	_	
+51-259	11745-11749	ideo	_	
+51-260	11750-11754	iste	_	
+51-261	11755-11758	cum	_	
+51-262	11759-11762	sit	_	
+51-263	11763-11768	natus	_	
+51-264	11769-11774	liber	_	
+51-265	11775-11777	de	_	
+51-266	11778-11784	libera	_	
+51-267	11785-11790	matre	_	
+51-268	11791-11797	potest	_	
+51-269	11798-11807	promoveri	_	
+51-270	11808-11811	non	_	
+51-271	11812-11820	obstante	_	
+51-272	11821-11835	contradictione	_	
+51-273	11836-11843	militis	_	
+51-274	11843-11844	.	_	
+51-275	11846-11855	Praeterea	_	
+51-276	11856-11859	cum	_	
+51-277	11860-11864	iste	_	
+51-278	11865-11868	iam	_	
+51-279	11869-11874	esset	_	
+51-280	11875-11883	diaconus	_	
+51-281	11883-11884	,	_	
+51-282	11885-11892	poterat	_	
+51-283	11893-11895	in	_	
+51-284	11896-11905	libertate	_	
+51-285	11906-11914	remanere	_	
+51-286	11915-11919	dato	_	
+51-287	11920-11927	vicario	_	
+51-288	11927-11928	,	_	
+51-289	11929-11931	et	_	
+51-290	11932-11935	sic	_	
+51-291	11936-11943	dominus	_	
+51-292	11944-11949	ipsum	_	
+51-293	11950-11958	impedire	_	
+51-294	11959-11962	non	_	
+51-295	11963-11970	poterat	_	
+51-296	11970-11971	,	_	
+51-297	11972-11974	54	_	
+51-298	11974-11975	.	_	
+51-299	11976-11980	dist	_	
+51-300	11980-11981	.	_	
+51-301	11981-11982	,	_	
+51-302	11983-11985	ex	_	
+51-303	11986-11994	antiquis	_	
+51-304	11994-11995	.	_	

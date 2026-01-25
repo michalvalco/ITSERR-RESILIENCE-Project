@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="44" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="50" end="85" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="90" end="102" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="181" end="215" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="261" end="298" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="429" end="469" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="549" end="598" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Lemma glossato" begin="604" end="614" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="756" end="777" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Lemma glossato" begin="826" end="835" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="1006" end="1016" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="1179" end="1197" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="1202" end="1217" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="1226" end="1263" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1275" end="1319" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1331" end="1370" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1518" end="1537" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1544" end="1561" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1563" end="1583" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1819" end="1836" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1841" end="1857" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1862" end="1881" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="2000" end="2031" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="2043" end="2070" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="2075" end="2090" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2092" end="2120" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="2122" end="2151" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="2311" end="2337" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="2349" end="2377" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="2590" end="2606" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="2618" end="2627" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2843" end="2863" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Lemma glossato" begin="2914" end="2920" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2979" end="3026" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="3040" end="3065" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.19 DE OBLIGATIS AD RATIOCINIA ORDINANDIS&#13;&#10;&#13;&#10;X 1.19.01 Magnus episcopus Augustinus&#13;&#10;&#13;&#10; Procuratores&#13;&#10;Procurator dicitur qui mandato domini aliena negotia in iudicio administrat, ff. de procur., procurator est qui.  Alius dicitur procurator ad negoria datus, ff. mand. vel cont., si remunerandi § 1.  Et specialis titulis est iste ad negotia, quia iste ad causas, ille ad negotia actor constituitur a corpore vel universitate, ff. quod cui. univ. nom., neque societas.  Et debet constitui etiam cum decreto, et ad lites praesentes non ad futuras, ff. quod cui. univ. nom., item eorum § sed si ita.&#13;&#10;&#13;&#10; Executores&#13;&#10;Qui mandata iudicum exequuntur, sicut sunt huiusmodi officiales dum tamen saeva praecepta non exercuerint, quia illi promoveri non possunt, 51. dist., aliquantos; ita quod irregularitatem non contraxerunt.&#13;&#10;&#13;&#10; Curatores&#13;&#10;Melius dixisset, tutores, per hoc quod sequitur, pupillorum.  Tutor enim datur pupillo intra quatuordecim annos, curator post quatuordecim, usque ad vigintiquinque.&#13;&#10;&#13;&#10; Ratiocinia&#13;&#10;Ratiociniis obligatus alicuius saecularis personae nisi fuerit miserabilis cui obligatus est.  Et si in officio suo voluerit remanere, promoveri non debet, arg. 21. q. 3, pervenit; et 21. q. 3, credo; infra, ne cler. vel mon. saecul. neg., multa; et infra, ne cler. vel mon. saecul. neg., sacerdotibus; et infra, ne cler. vel mon. saecul. neg., sed nec.  Si vero ecclesiasticae personae vel miserabili fuerit obligatus, etiam in officio suo perseverans poterit promoveri, si aliud non obsistat, arg. 86. dist., pervenit; arg. 16. q. 7, in nova; 89. dist., indicatum.  Si vero privata, aut in ipsa promotione movetur sibi quaestio, aut non.  Si movetur, aut prius mota est, distinguitur: aut convenitur de dolo, vel de culpa tantum.  Si de dolo vel perfidia, non debet ante finem litis promoveri, arg. 81. dist., tantis; et 23. dist., illud; et C. de procur., reum; et in hoc casu potest intelligi hoc capitulum.  Et tamen debet taxari infra quod tempus decidatur causa, arg. infra, de clan. despon., cum inhibitio; et infra, qui fil. sint legit., lator; et 5. q. 1, quidam; C. de ing. manum., diffamari; ff. de accusation., cum Titia.  Si de culpa tantum convenitur, promoveri potest, non obstante reclamatione creditoris, cum lis suo marte currere possit ut prius, et etiam sub eodem iudice, ff. de iuris., cum quaedam; et infra, de for. compet., proposuisti.  Si vero nec lis sibi movetur nec mota est, non obstante obligatione promovetur, nisi manifestum sit ipsum de dolo teneri.  Tunc enim episcopus ipsum ex officio suo repellere potest, sicut quemlibet criminosum, 6. q. 1, infames.  Ala.&#13;&#10;&#13;&#10; Infamatur&#13;&#10;Quid si prohibente creditore fuerit promotus ad clericatum?  Resp.: non deponetur propter hoc, sed bona sua cedent ei in solutum, quae si non sufficiant, episcopus ei tenetur qui abstulit ei occasionem negotiandi, 88. dist., fornicari.  Et expone infamatur, id est, inde puniatur.&#13;&#10;&#13;&#10; Nostra&#13;&#10;Nam omnia nostra facimus quibus auctoritatem impertimur, C. de vet. iure enucl., Deo auctore § sed neque; arg. infra, de sent. excom., mulieres.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36"/>
+</xmi:XMI>

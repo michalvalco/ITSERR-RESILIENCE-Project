@@ -1,0 +1,324 @@
+# text = X 5.14 DE CLERICIS PUGNATIBUS IN DUELLO    X 5.14.01 Porro     Oblatum susceperit  Nec offerre nec oblatum suscipere debuit aliquo modo, quia hoc prohibitum est, 2. q. 5, monomachiam; et infra, de purg. vulg., per totum.
+1	X	_	_	_	_	_	_	_	_
+2	5.14	_	_	_	_	_	_	_	_
+3	DE	_	_	_	_	_	_	_	_
+4	CLERICIS	_	_	_	_	_	_	_	_
+5	PUGNATIBUS	_	_	_	_	_	_	_	_
+6	IN	_	_	_	_	_	_	_	_
+7	DUELLO	_	_	_	_	_	_	_	_
+8	X	_	_	_	_	_	_	_	_
+9	5.14.01	_	_	_	_	_	_	_	_
+10	Porro	_	_	_	_	_	_	_	_
+11	Oblatum	_	_	_	_	_	_	_	_
+12	susceperit	_	_	_	_	_	_	_	_
+13	Nec	_	_	_	_	_	_	_	_
+14	offerre	_	_	_	_	_	_	_	_
+15	nec	_	_	_	_	_	_	_	_
+16	oblatum	_	_	_	_	_	_	_	_
+17	suscipere	_	_	_	_	_	_	_	_
+18	debuit	_	_	_	_	_	_	_	_
+19	aliquo	_	_	_	_	_	_	_	_
+20	modo	_	_	_	_	_	_	_	SpaceAfter=No
+21	,	_	_	_	_	_	_	_	_
+22	quia	_	_	_	_	_	_	_	_
+23	hoc	_	_	_	_	_	_	_	_
+24	prohibitum	_	_	_	_	_	_	_	_
+25	est	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	2	_	_	_	_	_	_	_	SpaceAfter=No
+28	.	_	_	_	_	_	_	_	_
+29	q	_	_	_	_	_	_	_	SpaceAfter=No
+30	.	_	_	_	_	_	_	_	_
+31	5	_	_	_	_	_	_	_	SpaceAfter=No
+32	,	_	_	_	_	_	_	_	_
+33	monomachiam	_	_	_	_	_	_	_	SpaceAfter=No
+34	;	_	_	_	_	_	_	_	_
+35	et	_	_	_	_	_	_	_	_
+36	infra	_	_	_	_	_	_	_	SpaceAfter=No
+37	,	_	_	_	_	_	_	_	_
+38	de	_	_	_	_	_	_	_	_
+39	purg	_	_	_	_	_	_	_	SpaceAfter=No
+40	.	_	_	_	_	_	_	_	_
+41	vulg	_	_	_	_	_	_	_	SpaceAfter=No
+42	.	_	_	_	_	_	_	_	SpaceAfter=No
+43	,	_	_	_	_	_	_	_	_
+44	per	_	_	_	_	_	_	_	_
+45	totum	_	_	_	_	_	_	_	SpaceAfter=No
+46	.	_	_	_	_	_	_	_	_
+
+# text = Sed potius debet omnia mala pati quam huic malo vel alii consentire, 32. q. 5, ita ne.
+1	Sed	_	_	_	_	_	_	_	_
+2	potius	_	_	_	_	_	_	_	_
+3	debet	_	_	_	_	_	_	_	_
+4	omnia	_	_	_	_	_	_	_	_
+5	mala	_	_	_	_	_	_	_	_
+6	pati	_	_	_	_	_	_	_	_
+7	quam	_	_	_	_	_	_	_	_
+8	huic	_	_	_	_	_	_	_	_
+9	malo	_	_	_	_	_	_	_	_
+10	vel	_	_	_	_	_	_	_	_
+11	alii	_	_	_	_	_	_	_	_
+12	consentire	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	32	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+16	q	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+18	5	_	_	_	_	_	_	_	SpaceAfter=No
+19	,	_	_	_	_	_	_	_	_
+20	ita	_	_	_	_	_	_	_	_
+21	ne	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+
+# text = Quia facere debemus quod fieri debet de iure, 22. q. 2, faciat homo.
+1	Quia	_	_	_	_	_	_	_	_
+2	facere	_	_	_	_	_	_	_	_
+3	debemus	_	_	_	_	_	_	_	_
+4	quod	_	_	_	_	_	_	_	_
+5	fieri	_	_	_	_	_	_	_	_
+6	debet	_	_	_	_	_	_	_	_
+7	de	_	_	_	_	_	_	_	_
+8	iure	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	22	_	_	_	_	_	_	_	SpaceAfter=No
+11	.	_	_	_	_	_	_	_	_
+12	q	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	2	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	faciat	_	_	_	_	_	_	_	_
+17	homo	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	_
+
+# text = Deponendus  Quia huiusmodi pugiles homicidae existunt, infra, de cleri. pug., Henricus.
+1	Deponendus	_	_	_	_	_	_	_	_
+2	Quia	_	_	_	_	_	_	_	_
+3	huiusmodi	_	_	_	_	_	_	_	_
+4	pugiles	_	_	_	_	_	_	_	_
+5	homicidae	_	_	_	_	_	_	_	_
+6	existunt	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	infra	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	de	_	_	_	_	_	_	_	_
+11	cleri	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	_
+13	pug	_	_	_	_	_	_	_	SpaceAfter=No
+14	.	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	Henricus	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+
+# text = Unde cum ad hoc accesserit, non potest quis promoveri, 51. dist., si quis post.
+1	Unde	_	_	_	_	_	_	_	_
+2	cum	_	_	_	_	_	_	_	_
+3	ad	_	_	_	_	_	_	_	_
+4	hoc	_	_	_	_	_	_	_	_
+5	accesserit	_	_	_	_	_	_	_	SpaceAfter=No
+6	,	_	_	_	_	_	_	_	_
+7	non	_	_	_	_	_	_	_	_
+8	potest	_	_	_	_	_	_	_	_
+9	quis	_	_	_	_	_	_	_	_
+10	promoveri	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	51	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	dist	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	si	_	_	_	_	_	_	_	_
+18	quis	_	_	_	_	_	_	_	_
+19	post	_	_	_	_	_	_	_	SpaceAfter=No
+20	.	_	_	_	_	_	_	_	_
+
+# text = Nec dispensatur cum tali si mors vel membrorum mutilatio fuerit subsecuta, infra, de cleri. pug., Henricus.
+1	Nec	_	_	_	_	_	_	_	_
+2	dispensatur	_	_	_	_	_	_	_	_
+3	cum	_	_	_	_	_	_	_	_
+4	tali	_	_	_	_	_	_	_	_
+5	si	_	_	_	_	_	_	_	_
+6	mors	_	_	_	_	_	_	_	_
+7	vel	_	_	_	_	_	_	_	_
+8	membrorum	_	_	_	_	_	_	_	_
+9	mutilatio	_	_	_	_	_	_	_	_
+10	fuerit	_	_	_	_	_	_	_	_
+11	subsecuta	_	_	_	_	_	_	_	SpaceAfter=No
+12	,	_	_	_	_	_	_	_	_
+13	infra	_	_	_	_	_	_	_	SpaceAfter=No
+14	,	_	_	_	_	_	_	_	_
+15	de	_	_	_	_	_	_	_	_
+16	cleri	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+18	pug	_	_	_	_	_	_	_	SpaceAfter=No
+19	.	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	Henricus	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+
+# text = Alias potest cum tali episcopus dispensare, ut infra sequitur.
+1	Alias	_	_	_	_	_	_	_	_
+2	potest	_	_	_	_	_	_	_	_
+3	cum	_	_	_	_	_	_	_	_
+4	tali	_	_	_	_	_	_	_	_
+5	episcopus	_	_	_	_	_	_	_	_
+6	dispensare	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	ut	_	_	_	_	_	_	_	_
+9	infra	_	_	_	_	_	_	_	_
+10	sequitur	_	_	_	_	_	_	_	SpaceAfter=No
+11	.	_	_	_	_	_	_	_	_
+
+# text = Ber.
+1	Ber	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+
+# text = X 5.14.02 Henricus     Pravam  Et reprobatam, infra, de purg. vulg., per totum; et 2. q. 5, monomachiam.
+1	X	_	_	_	_	_	_	_	_
+2	5.14.02	_	_	_	_	_	_	_	_
+3	Henricus	_	_	_	_	_	_	_	_
+4	Pravam	_	_	_	_	_	_	_	_
+5	Et	_	_	_	_	_	_	_	_
+6	reprobatam	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	infra	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	de	_	_	_	_	_	_	_	_
+11	purg	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	_
+13	vulg	_	_	_	_	_	_	_	SpaceAfter=No
+14	.	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	per	_	_	_	_	_	_	_	_
+17	totum	_	_	_	_	_	_	_	SpaceAfter=No
+18	;	_	_	_	_	_	_	_	_
+19	et	_	_	_	_	_	_	_	_
+20	2	_	_	_	_	_	_	_	SpaceAfter=No
+21	.	_	_	_	_	_	_	_	_
+22	q	_	_	_	_	_	_	_	SpaceAfter=No
+23	.	_	_	_	_	_	_	_	_
+24	5	_	_	_	_	_	_	_	SpaceAfter=No
+25	,	_	_	_	_	_	_	_	_
+26	monomachiam	_	_	_	_	_	_	_	SpaceAfter=No
+27	.	_	_	_	_	_	_	_	_
+
+# text = Quia Deum tentare videntur.
+1	Quia	_	_	_	_	_	_	_	_
+2	Deum	_	_	_	_	_	_	_	_
+3	tentare	_	_	_	_	_	_	_	_
+4	videntur	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+
+# text = Homicidae  Vere quantum ad propositum vel occasionaliter vel vere quandoque, ut hic patet.
+1	Homicidae	_	_	_	_	_	_	_	_
+2	Vere	_	_	_	_	_	_	_	_
+3	quantum	_	_	_	_	_	_	_	_
+4	ad	_	_	_	_	_	_	_	_
+5	propositum	_	_	_	_	_	_	_	_
+6	vel	_	_	_	_	_	_	_	_
+7	occasionaliter	_	_	_	_	_	_	_	_
+8	vel	_	_	_	_	_	_	_	_
+9	vere	_	_	_	_	_	_	_	_
+10	quandoque	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	ut	_	_	_	_	_	_	_	_
+13	hic	_	_	_	_	_	_	_	_
+14	patet	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+
+# text = Et sententia lata per talem probationem non transit in rem iudicatam, infra, de purg. vulg., significantibus.
+1	Et	_	_	_	_	_	_	_	_
+2	sententia	_	_	_	_	_	_	_	_
+3	lata	_	_	_	_	_	_	_	_
+4	per	_	_	_	_	_	_	_	_
+5	talem	_	_	_	_	_	_	_	_
+6	probationem	_	_	_	_	_	_	_	_
+7	non	_	_	_	_	_	_	_	_
+8	transit	_	_	_	_	_	_	_	_
+9	in	_	_	_	_	_	_	_	_
+10	rem	_	_	_	_	_	_	_	_
+11	iudicatam	_	_	_	_	_	_	_	SpaceAfter=No
+12	,	_	_	_	_	_	_	_	_
+13	infra	_	_	_	_	_	_	_	SpaceAfter=No
+14	,	_	_	_	_	_	_	_	_
+15	de	_	_	_	_	_	_	_	_
+16	purg	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+18	vulg	_	_	_	_	_	_	_	SpaceAfter=No
+19	.	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	significantibus	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+
+# text = Ber.
+1	Ber	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+
+# text = Facto  Istis quatuor modis sive lingua aive adhortatione committitur directum homicidium.
+1	Facto	_	_	_	_	_	_	_	_
+2	Istis	_	_	_	_	_	_	_	_
+3	quatuor	_	_	_	_	_	_	_	_
+4	modis	_	_	_	_	_	_	_	_
+5	sive	_	_	_	_	_	_	_	_
+6	lingua	_	_	_	_	_	_	_	_
+7	aive	_	_	_	_	_	_	_	_
+8	adhortatione	_	_	_	_	_	_	_	_
+9	committitur	_	_	_	_	_	_	_	_
+10	directum	_	_	_	_	_	_	_	_
+11	homicidium	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	_
+
+# text = De hoc dicitur supra, de homic., sicut dignum.
+1	De	_	_	_	_	_	_	_	_
+2	hoc	_	_	_	_	_	_	_	_
+3	dicitur	_	_	_	_	_	_	_	_
+4	supra	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	de	_	_	_	_	_	_	_	_
+7	homic	_	_	_	_	_	_	_	SpaceAfter=No
+8	.	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	sicut	_	_	_	_	_	_	_	_
+11	dignum	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	_
+
+# text = Beneficium  50. dist., studeat; 28. dist., presbyterum.
+1	Beneficium	_	_	_	_	_	_	_	_
+2	50	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	dist	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	SpaceAfter=No
+6	,	_	_	_	_	_	_	_	_
+7	studeat	_	_	_	_	_	_	_	SpaceAfter=No
+8	;	_	_	_	_	_	_	_	_
+9	28	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+11	dist	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	presbyterum	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+
+# text = Scilicet ne cogatur in cleri opprobrium mendicare, 93. dist., diaconi, ibi: mendicat infelix clericus etc.
+1	Scilicet	_	_	_	_	_	_	_	_
+2	ne	_	_	_	_	_	_	_	_
+3	cogatur	_	_	_	_	_	_	_	_
+4	in	_	_	_	_	_	_	_	_
+5	cleri	_	_	_	_	_	_	_	_
+6	opprobrium	_	_	_	_	_	_	_	_
+7	mendicare	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	93	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+11	dist	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	diaconi	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	ibi	_	_	_	_	_	_	_	SpaceAfter=No
+17	:	_	_	_	_	_	_	_	_
+18	mendicat	_	_	_	_	_	_	_	_
+19	infelix	_	_	_	_	_	_	_	_
+20	clericus	_	_	_	_	_	_	_	_
+21	etc	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+

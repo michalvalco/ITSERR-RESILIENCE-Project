@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="34" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="40" end="65" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="70" end="79" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="159" end="186" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="191" end="223" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Lemma glossato" begin="229" end="245" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="296" end="324" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="373" end="399" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="411" end="439" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="506" end="526" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Capitolo" begin="539" end="564" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="569" end="581" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="612" end="643" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="657" end="686" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="691" end="710" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1089" end="1122" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="1128" end="1137" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1151" end="1184" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1192" end="1220" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1228" end="1254" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="1278" end="1292" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1661" end="1689" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1925" end="1950" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Capitolo" begin="1957" end="1972" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="1977" end="1986" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2101" end="2133" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="2145" end="2178" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="2180" end="2206" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Lemma glossato" begin="2212" end="2232" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="2234" end="2260" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="2272" end="2287" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2289" end="2308" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Lemma glossato" begin="2314" end="2335" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2447" end="2467" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2472" end="2499" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2511" end="2531" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Lemma glossato" begin="2537" end="2552" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2655" end="2687" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2699" end="2732" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Lemma glossato" begin="2856" end="2864" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Lemma glossato" begin="2910" end="2922" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Lemma glossato" begin="2971" end="2979" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2988" end="3008" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="3020" end="3038" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="3043" end="3070" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Lemma glossato" begin="3076" end="3092" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Lemma glossato" begin="3256" end="3263" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Lemma glossato" begin="3346" end="3373" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3382" end="3410" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Lemma glossato" begin="3495" end="3500" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Lemma glossato" begin="3539" end="3549" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="3662" end="3694" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="3706" end="3734" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="3796" end="3816" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="4234" end="4266" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="4327" end="4360" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Lemma glossato" begin="4366" end="4387" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="4393" end="4424" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Lemma glossato" begin="4430" end="4438" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="4686" end="4719" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="4721" end="4752" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Lemma glossato" begin="4830" end="4842" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="4887" end="4919" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Lemma glossato" begin="4925" end="4946" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="5016" end="5040" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="5045" end="5065" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="5074" end="5097" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="5109" end="5138" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.43 DE PRESBYTERO NON BAPTIZATO&#13;&#10;&#13;&#10;X 3.43.01 Si quis presbyter&#13;&#10;&#13;&#10; Ordinatus&#13;&#10;De facto, quia qui de iure ordinatus non est, presbyter non est censendus, ut 1. q. 1, si quis confugerit; et 1. q. 1, si quis per ignorantiam.&#13;&#10;&#13;&#10; Iterum ordinetur&#13;&#10;Et hoc patet quod nullum ordinem recepit, infra, de presb. non bapt., veniens, quia baptismus est ianua omnium sacramentorum, 32. dist., praeter § verum; et infra, de presb. non bapt., veniens.  Si ergo primo ordinem suscepisset, iterum non esset ordinandus, 1. q. 1, quod quidam.  Ber.&#13;&#10;&#13;&#10;X 3.43.02 Apostolicam sedem&#13;&#10;&#13;&#10; Ab originali&#13;&#10;Et etiam ab actuali peccato, de conse. dist. 4, catechuminum.  Sed contra de conse. dist. 4, firmissime; et 1. q. 1, firmissime, in quibus dicitur quod sine baptismo nullus salvatur.  Quod verum est de eo qui potest baptizari et non baptizatur.  Iste vero credebat se baptizatum et in fide illa salvatur, et iste non contempsit.  Et est triplex baptismus, scilicet fluminis et flaminis et sanguinis.  Hic autem baptismo flaminis invisibili baptizatus fuit per fidem quam habuit de baptismo.  Simile supra, de bapt. et eius effect., debitum.&#13;&#10;&#13;&#10; Augustini&#13;&#10;Prout habes de conse. dist. 4, baptismi vicem; et de conse. dist. 4, catechuminum; et de conse. dist. 4, non dubito, alias non dubium.&#13;&#10;&#13;&#10; Beati Ambrosii&#13;&#10;Legitur beatum Ambrosium dixisse de Valentiniano, qui dum properaret ad baptismum in itinere decessit: ventrem meum doleo, quia quem regeneraturus eram perdidi.  Ille tamen gratiam quam poposcerat non amisit.  Laur.  Sic ergo patet quod iste per solam fidem quam habebat de baptismo salvatus est.  Iste credebat se sacerdotem fuisse, sed non erat in veritate, supra, de presb. non bapt., si quis.  Numquid conficiebat?  Non in veritate, sed quo ad se bene conficiebat, et quo ad alios qui hoc credebant.  Et tamquam verum sacramentum conficeret, sibi et recipientibus ab ipso credo quod proficiebat.  De hac materia dicitur supra, de elect., dudum ecclesia.&#13;&#10;&#13;&#10;X 3.43.03 Veniens&#13;&#10;&#13;&#10; Evangelii&#13;&#10;Ite per mundum universum, baptizate omnes gentes in nomine patris et filii et spiritus sancti, quam habes supra, de bapt. et eius effect., non ut; et supra, de bapt. et eius effect., debitum; de conse. dist. 4, proprie.&#13;&#10;&#13;&#10; Omnium sacramentorum&#13;&#10;32. dist., praeter § verum.  Ber.&#13;&#10;&#13;&#10; Superaedificari&#13;&#10;1. q. 1, cum Paulus.&#13;&#10;&#13;&#10; Per sacramentum fidei&#13;&#10;In cuius perceptione gratia confertur.  Secus in sacramento matrimonii, quod est etiam apud infideles, infra, de divort., gaudemus; et 26. dist., deinde opponitur; et supra, de translat., quanto.&#13;&#10;&#13;&#10; Habet per fidem&#13;&#10;Quam quis habet de ipso sacramento, licet ipsum sacramentum non habeat, sed credat se habere, supra, de presb. non bapt., Apostolicam; et supra, de bapt. et eius effect., debitum.  Et ita talis baptismus dicitur baptismus flaminis.  Idem est in baptismo sanguinis per quem salvati sunt innocentes.&#13;&#10;&#13;&#10; De novis&#13;&#10;Id est, de sacramentis novi testamenti.&#13;&#10;&#13;&#10; De veteribus&#13;&#10;Id est, de sacramentis veteris testamenti.&#13;&#10;&#13;&#10; Coniugii&#13;&#10;Infra, de divort., gaudemus; et infra, de divort., quanto; et 26. dist., deinde opponitur.&#13;&#10;&#13;&#10; A non baptizatis&#13;&#10;Scilicet baptismo fluminis.  Sed baptismo flaminis baptizatis, cum illi quo ad gratiam baptizati intelliguntur, et accipere possunt sacramentum Eucharistiae.&#13;&#10;&#13;&#10; Videtur&#13;&#10;Sed non est verum quod conferatur, ut infra patet.  Sed allegatum dicit hoc.&#13;&#10;&#13;&#10; In concilio apud Compendium&#13;&#10;Supra, de presb. non bapt., si quis.  Et hic ponit quaestionis solutionem per concilium apud Compendium celebratum.&#13;&#10;&#13;&#10; Usque&#13;&#10;Inclusive per hoc quod sequitur.&#13;&#10;&#13;&#10; Ministrare&#13;&#10;Sed obiicitur: ille credebat se baptizatum, et sic habebat sacramentum fidei, ergo fuit ordinatus, arg. supra, de presb. non bapt., Apostolicam; et supra, de presb. non bapt., si quis.  Quare ergo ordinatur, cum per hoc fiat iniuria sacramento, 1. q. 1, quod quidam.  Haec obiectio non valet, quia licet quis habeat sacramentum per fidem, quam cito incipit scire se non habere sacramentum baptismi, et contemnit illud recipere, statim amittit sacramentum fidei.  Unde iterum ordinatur, quia certus est quod non receperat ordines ante baptismum.  Sed quae forma servabit circa istum, si omnino certum esset quod non fuit baptizatus?  Tunc communis forma servabitur, quam habes supra, de bapt. et eius effect., non ut.  Sed si illud habetur dubium, servabitur forma illa supra, de bapt. et eius effect., si quis.&#13;&#10;&#13;&#10; Intelligitur iteratum&#13;&#10;Sic de conse. dist. 1, solemnitates.&#13;&#10;&#13;&#10; Nec male&#13;&#10;Tacita responsio videtur, quasi dicat: licet dicamus istum baptizandum, non ideo male sentimus de sacramento baptismi, quia si aliquis in articulo mortis velit baptizari, nec est qui velit eum baptizare, propter hoc non minus erit salvus, supra, de bapt. et eius effect., debitum; de conse. dist. 4, catechuminum.  Cum illud non religionis contemptus, sed necessitas articulus impedit.&#13;&#10;&#13;&#10; Necessitatis&#13;&#10;Vel ignorantiae facti quae excusat, supra, de presb. non bapt., Apostolicam.&#13;&#10;&#13;&#10; Contrarium probaretur&#13;&#10;Nota violentiam praesumptionem admittere probationem in contrarium, 35. q. 3, extraordinaria; et 27. q. 1, nec aliqua; supra, de probat., proposuisti; et supra, de probat., causam matrimonii.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69"/>
+</xmi:XMI>

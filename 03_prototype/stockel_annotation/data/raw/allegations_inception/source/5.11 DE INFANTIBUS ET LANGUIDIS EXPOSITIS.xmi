@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="43" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="49" end="67" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="72" end="79" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="95" end="123" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="135" end="173" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="234" end="253" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="258" end="277" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Lemma glossato" begin="295" end="308" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="379" end="436" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="448" end="486" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="551" end="582" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="594" end="610" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="694" end="715" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="762" end="793" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Lemma glossato" begin="799" end="808" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="835" end="858" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1258" end="1291" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1297" end="1326" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1458" end="1510" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1561" end="1584" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1589" end="1618" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1659" end="1691" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1817" end="1848" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1990" end="2013" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="2212" end="2221" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2476" end="2504" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="2510" end="2561" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="2606" end="2658" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="2750" end="2775" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="2933" end="2944" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="3131" end="3140" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="3182" end="3212" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.11 DE INFANTIBUS ET LANGUIDIS EXPOSITIS&#13;&#10;&#13;&#10;X 5.11.01 Si a patre&#13;&#10;&#13;&#10; Sciente&#13;&#10;Ipso.  Simile 54. dist., si servus sciente; et supra, de his quae fi. a prael., continebatur.  Et ita est hic arg. quod qui tacet consentire videtur, ut 65. dist., si forte; et 27. dist., diaconus, ubi de hoc.&#13;&#10;&#13;&#10; Ratum habente&#13;&#10;Rati enim habitio in maleficiis retrotrahitur et mandato comparatur, ff. de vi et de vi arm., praetor ait § sed et si cum quis; et supra, de restit. spol., cum ad sedem, in fi.  Et generaliter dicit lex quod omnis ratihabitio retrotrahitur, C. de Maced., si filiusfamilias.  Ber.&#13;&#10;&#13;&#10; Pietatis officio&#13;&#10;Et re vera relegato quia debuerunt viscera eius commoveri super filio suo, supra, de praesump., afferte.  Et paternus affectus omnem vincit affectum, C. de curat. fur., cum furiosus.&#13;&#10;&#13;&#10; Liberatus&#13;&#10;De istis expositis habes 87. dist., si expositus.  Et intelligas illud secundum istud.  Nota ergo super hoc aut exponitur infans sciente patre vel domino seu patrono aut ignorante.  Si sciente et non contradicente vel ratum habente expositus sit, filii sic expositi sui iuris existant, liberti in ingenuitatem, servi in libertatem eripiantur.  Et multo magis si ipsemet ipsum exposuit, quia nec dicere suum postea poterit qui pereuntem contempsit, C. de infant. expos., unusquisque; et C. de infant. expos., sancimus.  Tenor quarum hic comprehendit, si enim ipsum alere non poterat, eum in xenonem mittere debuit vel quo poterat modo eum adiuvare, C. de Lat. libert. toll., cum dediticii § sed scimus.  Et videtur quod tamquam homicidae damnentur, ut 87. dist., si expositus; et ff. de liber. agnosc., necare.  Unde expositi sanguinolenti dicuntur, C. de infant. expos., in rubrica.  Si vero ignorante vel invito non praeiudicat ei quin possit illum repetere, sed restituat expensas nisi a fure vendicetur, C. de infant. expos., si invito; et hic in principio ubi dicit, sciente eo aut ratum habente ergo si ignorante vel contradicente, non nocet patri vel domino capitulum illud 87. dist., si expositus.  Intelligit Hug. quando infans expositus est ab alio quam a patre vel domino, ut tunc possit repeti post contestationem publice factam infra decem dies, et hoc capitulum non contradicit.  Ber.&#13;&#10;&#13;&#10; Languidis&#13;&#10;Idem iuris est circa praedictas personas cuiuscumque aetatis sint, si languidae fuerint sive alimenta eis impie negentur, ut tam filii sui iuris efficiantur quam servi et liberti in libertatem et ingenuitatem eripiantur, quia habent hos pro derelictis, ff. pro derelic., Sempronius; et C. de Lat. libert. toll., cum dediticii § sed scimus.  Nec ad eorum bona ulterius aspirabunt, ut C. de Lat. libert. toll., cum dediticii § sed scimus.  Sic et abbas debet recolligere monachum suum, ne damnabiliter evagetur ne pereat, supra, de regular., ne religiosi.  Quod si non fecerit et ille in saeculo remanens aliqua acquirat et sic moriatur, monasterium quod neglexerit illum ab ipsius bonis maneat segregatum, arg. praedicti §.  Et est hic arg. ad hoc quod crederem si monasterium ipsum expulit, vel etiam si redire voluit salva ordinis disciplina et non fuit admissus, quia sic impie alimenta negavit.  Ber.&#13;&#10;&#13;&#10; Vendicare&#13;&#10;Immo liberi erunt et sibi acquirunt, ut C. de infant. expos., sancimus.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33"/>
+</xmi:XMI>

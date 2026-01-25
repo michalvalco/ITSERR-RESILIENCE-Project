@@ -1,0 +1,711 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.Glossa|Tipo
+
+
+#Text=X 2.05 DE LITIS CONTESTATIONE
+1-1	0-1	X	_	
+1-2	2-6	2.05	_	
+1-3	7-9	DE	_	
+1-4	10-15	LITIS	_	
+1-5	16-29	CONTESTATIONE	_	
+
+#Text=X 2.05.01 Olim
+2-1	33-34	X	_	
+2-2	35-42	2.05.01	_	
+2-3	43-47	Olim	_	
+
+#Text=Responsiones
+3-1	52-64	Responsiones	_	
+
+#Text=Sic supra, de elect., dudum ecclesia.  Sed videtur quod istud sufficeret, quia positiones super ipso facto fiunt, unde satis intelligitur litis contestatio fieri per positiones et responsiones.  Sed non est verum, quia litis contestatio est exordium litis, sive principium causae appellatur, supra, de offi. deleg., super quaestionum § 1; et supra, de offi. deleg., super quaestionum § 2.  Et res deducta in iudicium non videtur per simplicem petitionem vel per editionem actionis, C. de lit. contest., res.  Et ubi principium deest, nihil superaedificari potest, 1. q. 1, cum Paulus; et infra, de presb. non bapt., veniens.  Et cuiusque rei principium potissima pars est, ff. de orig. iuris, facturus.  Et licet contestatio litis sit principium, tamen necesse est libellum praecedere vel porrigere super quo litis contestatio fiat, ut dictum est supra, de libel. oblat., ignarus.  Est autem litis contestatio negotii principalis hinc inde apud iudicem facta narratio et subsecuta responsio, ut hic, sive negando sive confitendo.  De hoc notatur supra, de elect., dudum ecclesia, quod est ita intelligendum, ut fiat animo procedendi in causa et ea intentione directe ex proposito.  Unde si aliquis proponat factum coram iudice non ea mente ut litem contestetur, vel respondeat salvo iure suo et sine praeiudicio, non erit propterea litis contestatio facta.  Cum hoc fiat non ad iudicis interrogationem, sed motu proprio.  Litis contestatio fieri debet interrogante iudice, actore proponente suam actionem, et reo respondente ad interrogationem iudicis, ut mos est fieri, arg. C. de lit. contest., res, in fi.; infra, de dolo et contu., prout.  Sic patet quod non erat facta litis contestatio, cum factum proponitur cum protestatione et sine praeiudicio, arg. optimum ff. quib. mod. pig. vel hyp. sol., si debitor § si in venditione.  Et arg. supra, de elect., Cumana, ubi dicitur de protestatione.  Ubi ergo litis contestatio non procedit, nil valet quod agitur, ut hic, et infra, ut lite non cont., per totum.  Et potest ratio assignari quare per positiones et responsiones ad eas non fit litis contestatio.  Qui enim ponit aliquod dictum vel factum, nihil petit ab adversario.  Nec etiam ostendit se per hoc velle agere.  Et ita non posset per hoc fieri sententia condemnationis vel absolutionis, cum nil petitum sit per positionem, sed ostenditur aliquid esse factum vel dictum seu promissum.  Et sententia semper ferenda est secundum modum agendi, infra, de accusat., qualiter et quando 1, ad fi.; et infra, de simon., licet Heli.  Et condemnatio non est facienda nisi ad hoc sit actum, infra, de ord. cognit., cum dilectus, ad fi.  Et hoc etiam probatur, quia interrogationes et responsiones aliquando fiunt ante litis contestationem, ff. de interrog. act., quasi per totum.  De quibus quidem notatur infra, de iuram. calumn., cum causam, in glossa quae incipit: omnia quae.  Et per illas interrogationes et responsiones nulla fieret condemnatio vel absolutio, nisi fieret postea litis contestatio super petitione actoris.  Et ita patet quod ubi fiunt tantum positiones et responsiones nulla petitione praemissa, vel nulla litis contestatione facta, nullus est processus, ut supra, de elect., dudum ecclesia, et hic.  Sed quid si petitio oblata fuit et in actis redacta, sed contestatio litis non fuit facta, sed positiones et responsiones factae fuerunt?  Idem credo, scilicet quod processus non valeat, quia litis contestatio non est facta.  Ber.
+4-1	66-69	Sic	_	
+4-2	70-75	supra	_	
+4-3	75-76	,	_	
+4-4	77-79	de	Allegazione normativa[1]	
+4-5	80-85	elect	Allegazione normativa[1]	
+4-6	85-86	.	Allegazione normativa[1]	
+4-7	86-87	,	Allegazione normativa[1]	
+4-8	88-93	dudum	Allegazione normativa[1]	
+4-9	94-102	ecclesia	Allegazione normativa[1]	
+4-10	102-103	.	_	
+4-11	105-108	Sed	_	
+4-12	109-116	videtur	_	
+4-13	117-121	quod	_	
+4-14	122-127	istud	_	
+4-15	128-138	sufficeret	_	
+4-16	138-139	,	_	
+4-17	140-144	quia	_	
+4-18	145-155	positiones	_	
+4-19	156-161	super	_	
+4-20	162-166	ipso	_	
+4-21	167-172	facto	_	
+4-22	173-178	fiunt	_	
+4-23	178-179	,	_	
+4-24	180-184	unde	_	
+4-25	185-190	satis	_	
+4-26	191-203	intelligitur	_	
+4-27	204-209	litis	_	
+4-28	210-221	contestatio	_	
+4-29	222-227	fieri	_	
+4-30	228-231	per	_	
+4-31	232-242	positiones	_	
+4-32	243-245	et	_	
+4-33	246-258	responsiones	_	
+4-34	258-259	.	_	
+4-35	261-264	Sed	_	
+4-36	265-268	non	_	
+4-37	269-272	est	_	
+4-38	273-278	verum	_	
+4-39	278-279	,	_	
+4-40	280-284	quia	_	
+4-41	285-290	litis	_	
+4-42	291-302	contestatio	_	
+4-43	303-306	est	_	
+4-44	307-315	exordium	_	
+4-45	316-321	litis	_	
+4-46	321-322	,	_	
+4-47	323-327	sive	_	
+4-48	328-338	principium	_	
+4-49	339-345	causae	_	
+4-50	346-356	appellatur	_	
+4-51	356-357	,	_	
+4-52	358-363	supra	_	
+4-53	363-364	,	_	
+4-54	365-367	de	Allegazione normativa[2]	
+4-55	368-372	offi	Allegazione normativa[2]	
+4-56	372-373	.	Allegazione normativa[2]	
+4-57	374-379	deleg	Allegazione normativa[2]	
+4-58	379-380	.	Allegazione normativa[2]	
+4-59	380-381	,	Allegazione normativa[2]	
+4-60	382-387	super	Allegazione normativa[2]	
+4-61	388-399	quaestionum	Allegazione normativa[2]	
+4-62	400-401	§	Allegazione normativa[2]	
+4-63	402-403	1	Allegazione normativa[2]	
+4-64	403-404	;	_	
+4-65	405-407	et	_	
+4-66	408-413	supra	_	
+4-67	413-414	,	_	
+4-68	415-417	de	Allegazione normativa[3]	
+4-69	418-422	offi	Allegazione normativa[3]	
+4-70	422-423	.	Allegazione normativa[3]	
+4-71	424-429	deleg	Allegazione normativa[3]	
+4-72	429-430	.	Allegazione normativa[3]	
+4-73	430-431	,	Allegazione normativa[3]	
+4-74	432-437	super	Allegazione normativa[3]	
+4-75	438-449	quaestionum	Allegazione normativa[3]	
+4-76	450-451	§	Allegazione normativa[3]	
+4-77	452-453	2	Allegazione normativa[3]	
+4-78	453-454	.	_	
+4-79	456-458	Et	_	
+4-80	459-462	res	_	
+4-81	463-470	deducta	_	
+4-82	471-473	in	_	
+4-83	474-482	iudicium	_	
+4-84	483-486	non	_	
+4-85	487-494	videtur	_	
+4-86	495-498	per	_	
+4-87	499-508	simplicem	_	
+4-88	509-519	petitionem	_	
+4-89	520-523	vel	_	
+4-90	524-527	per	_	
+4-91	528-537	editionem	_	
+4-92	538-546	actionis	_	
+4-93	546-547	,	_	
+4-94	548-549	C	Allegazione normativa[4]	
+4-95	549-550	.	Allegazione normativa[4]	
+4-96	551-553	de	Allegazione normativa[4]	
+4-97	554-557	lit	Allegazione normativa[4]	
+4-98	557-558	.	Allegazione normativa[4]	
+4-99	559-566	contest	Allegazione normativa[4]	
+4-100	566-567	.	Allegazione normativa[4]	
+4-101	567-568	,	Allegazione normativa[4]	
+4-102	569-572	res	Allegazione normativa[4]	
+4-103	572-573	.	_	
+4-104	575-577	Et	_	
+4-105	578-581	ubi	_	
+4-106	582-592	principium	_	
+4-107	593-598	deest	_	
+4-108	598-599	,	_	
+4-109	600-605	nihil	_	
+4-110	606-621	superaedificari	_	
+4-111	622-628	potest	_	
+4-112	628-629	,	_	
+4-113	630-631	1	Allegazione normativa[5]	
+4-114	631-632	.	Allegazione normativa[5]	
+4-115	633-634	q	Allegazione normativa[5]	
+4-116	634-635	.	Allegazione normativa[5]	
+4-117	636-637	1	Allegazione normativa[5]	
+4-118	637-638	,	Allegazione normativa[5]	
+4-119	639-642	cum	Allegazione normativa[5]	
+4-120	643-649	Paulus	Allegazione normativa[5]	
+4-121	649-650	;	_	
+4-122	651-653	et	_	
+4-123	654-659	infra	_	
+4-124	659-660	,	_	
+4-125	661-663	de	Allegazione normativa[6]	
+4-126	664-669	presb	Allegazione normativa[6]	
+4-127	669-670	.	Allegazione normativa[6]	
+4-128	671-674	non	Allegazione normativa[6]	
+4-129	675-679	bapt	Allegazione normativa[6]	
+4-130	679-680	.	Allegazione normativa[6]	
+4-131	680-681	,	Allegazione normativa[6]	
+4-132	682-689	veniens	Allegazione normativa[6]	
+4-133	689-690	.	_	
+4-134	692-694	Et	_	
+4-135	695-703	cuiusque	_	
+4-136	704-707	rei	_	
+4-137	708-718	principium	_	
+4-138	719-728	potissima	_	
+4-139	729-733	pars	_	
+4-140	734-737	est	_	
+4-141	737-738	,	_	
+4-142	739-741	ff	*[7]	
+4-143	741-742	.	*[7]	
+4-144	743-745	de	*[7]	
+4-145	746-750	orig	*[7]	
+4-146	750-751	.	*[7]	
+4-147	752-757	iuris	*[7]	
+4-148	757-758	,	*[7]	
+4-149	759-767	facturus	*[7]	
+4-150	767-768	.	_	
+4-151	770-772	Et	_	
+4-152	773-778	licet	_	
+4-153	779-790	contestatio	_	
+4-154	791-796	litis	_	
+4-155	797-800	sit	_	
+4-156	801-811	principium	_	
+4-157	811-812	,	_	
+4-158	813-818	tamen	_	
+4-159	819-826	necesse	_	
+4-160	827-830	est	_	
+4-161	831-839	libellum	_	
+4-162	840-850	praecedere	_	
+4-163	851-854	vel	_	
+4-164	855-864	porrigere	_	
+4-165	865-870	super	_	
+4-166	871-874	quo	_	
+4-167	875-880	litis	_	
+4-168	881-892	contestatio	_	
+4-169	893-897	fiat	_	
+4-170	897-898	,	_	
+4-171	899-901	ut	_	
+4-172	902-908	dictum	_	
+4-173	909-912	est	_	
+4-174	913-918	supra	_	
+4-175	918-919	,	_	
+4-176	920-922	de	Allegazione normativa[8]	
+4-177	923-928	libel	Allegazione normativa[8]	
+4-178	928-929	.	Allegazione normativa[8]	
+4-179	930-935	oblat	Allegazione normativa[8]	
+4-180	935-936	.	Allegazione normativa[8]	
+4-181	936-937	,	Allegazione normativa[8]	
+4-182	938-945	ignarus	Allegazione normativa[8]	
+4-183	945-946	.	_	
+4-184	948-951	Est	_	
+4-185	952-957	autem	_	
+4-186	958-963	litis	_	
+4-187	964-975	contestatio	_	
+4-188	976-983	negotii	_	
+4-189	984-995	principalis	_	
+4-190	996-1000	hinc	_	
+4-191	1001-1005	inde	_	
+4-192	1006-1010	apud	_	
+4-193	1011-1018	iudicem	_	
+4-194	1019-1024	facta	_	
+4-195	1025-1033	narratio	_	
+4-196	1034-1036	et	_	
+4-197	1037-1046	subsecuta	_	
+4-198	1047-1056	responsio	_	
+4-199	1056-1057	,	_	
+4-200	1058-1060	ut	_	
+4-201	1061-1064	hic	_	
+4-202	1064-1065	,	_	
+4-203	1066-1070	sive	_	
+4-204	1071-1078	negando	_	
+4-205	1079-1083	sive	_	
+4-206	1084-1094	confitendo	_	
+4-207	1094-1095	.	_	
+4-208	1097-1099	De	_	
+4-209	1100-1103	hoc	_	
+4-210	1104-1111	notatur	_	
+4-211	1112-1117	supra	_	
+4-212	1117-1118	,	_	
+4-213	1119-1121	de	Allegazione normativa[9]	
+4-214	1122-1127	elect	Allegazione normativa[9]	
+4-215	1127-1128	.	Allegazione normativa[9]	
+4-216	1128-1129	,	Allegazione normativa[9]	
+4-217	1130-1135	dudum	Allegazione normativa[9]	
+4-218	1136-1144	ecclesia	Allegazione normativa[9]	
+4-219	1144-1145	,	_	
+4-220	1146-1150	quod	_	
+4-221	1151-1154	est	_	
+4-222	1155-1158	ita	_	
+4-223	1159-1172	intelligendum	_	
+4-224	1172-1173	,	_	
+4-225	1174-1176	ut	_	
+4-226	1177-1181	fiat	_	
+4-227	1182-1187	animo	_	
+4-228	1188-1198	procedendi	_	
+4-229	1199-1201	in	_	
+4-230	1202-1207	causa	_	
+4-231	1208-1210	et	_	
+4-232	1211-1213	ea	_	
+4-233	1214-1224	intentione	_	
+4-234	1225-1232	directe	_	
+4-235	1233-1235	ex	_	
+4-236	1236-1245	proposito	_	
+4-237	1245-1246	.	_	
+4-238	1248-1252	Unde	_	
+4-239	1253-1255	si	_	
+4-240	1256-1263	aliquis	_	
+4-241	1264-1272	proponat	_	
+4-242	1273-1279	factum	_	
+4-243	1280-1285	coram	_	
+4-244	1286-1292	iudice	_	
+4-245	1293-1296	non	_	
+4-246	1297-1299	ea	_	
+4-247	1300-1305	mente	_	
+4-248	1306-1308	ut	_	
+4-249	1309-1314	litem	_	
+4-250	1315-1326	contestetur	_	
+4-251	1326-1327	,	_	
+4-252	1328-1331	vel	_	
+4-253	1332-1342	respondeat	_	
+4-254	1343-1348	salvo	_	
+4-255	1349-1353	iure	_	
+4-256	1354-1357	suo	_	
+4-257	1358-1360	et	_	
+4-258	1361-1365	sine	_	
+4-259	1366-1377	praeiudicio	_	
+4-260	1377-1378	,	_	
+4-261	1379-1382	non	_	
+4-262	1383-1387	erit	_	
+4-263	1388-1397	propterea	_	
+4-264	1398-1403	litis	_	
+4-265	1404-1415	contestatio	_	
+4-266	1416-1421	facta	_	
+4-267	1421-1422	.	_	
+4-268	1424-1427	Cum	_	
+4-269	1428-1431	hoc	_	
+4-270	1432-1436	fiat	_	
+4-271	1437-1440	non	_	
+4-272	1441-1443	ad	_	
+4-273	1444-1451	iudicis	_	
+4-274	1452-1467	interrogationem	_	
+4-275	1467-1468	,	_	
+4-276	1469-1472	sed	_	
+4-277	1473-1477	motu	_	
+4-278	1478-1485	proprio	_	
+4-279	1485-1486	.	_	
+4-280	1488-1493	Litis	_	
+4-281	1494-1505	contestatio	_	
+4-282	1506-1511	fieri	_	
+4-283	1512-1517	debet	_	
+4-284	1518-1530	interrogante	_	
+4-285	1531-1537	iudice	_	
+4-286	1537-1538	,	_	
+4-287	1539-1545	actore	_	
+4-288	1546-1556	proponente	_	
+4-289	1557-1561	suam	_	
+4-290	1562-1570	actionem	_	
+4-291	1570-1571	,	_	
+4-292	1572-1574	et	_	
+4-293	1575-1578	reo	_	
+4-294	1579-1590	respondente	_	
+4-295	1591-1593	ad	_	
+4-296	1594-1609	interrogationem	_	
+4-297	1610-1617	iudicis	_	
+4-298	1617-1618	,	_	
+4-299	1619-1621	ut	_	
+4-300	1622-1625	mos	_	
+4-301	1626-1629	est	_	
+4-302	1630-1635	fieri	_	
+4-303	1635-1636	,	_	
+4-304	1637-1640	arg	_	
+4-305	1640-1641	.	_	
+4-306	1642-1643	C	Allegazione normativa[10]	
+4-307	1643-1644	.	Allegazione normativa[10]	
+4-308	1645-1647	de	Allegazione normativa[10]	
+4-309	1648-1651	lit	Allegazione normativa[10]	
+4-310	1651-1652	.	Allegazione normativa[10]	
+4-311	1653-1660	contest	Allegazione normativa[10]	
+4-312	1660-1661	.	Allegazione normativa[10]	
+4-313	1661-1662	,	Allegazione normativa[10]	
+4-314	1663-1666	res	Allegazione normativa[10]	
+4-315	1666-1667	,	Allegazione normativa[10]	
+4-316	1668-1670	in	Allegazione normativa[10]	
+4-317	1671-1673	fi	Allegazione normativa[10]	
+4-318	1673-1674	.	Allegazione normativa[10]	
+4-319	1674-1675	;	_	
+4-320	1676-1681	infra	_	
+4-321	1681-1682	,	_	
+4-322	1683-1685	de	Allegazione normativa[11]	
+4-323	1686-1690	dolo	Allegazione normativa[11]	
+4-324	1691-1693	et	Allegazione normativa[11]	
+4-325	1694-1699	contu	Allegazione normativa[11]	
+4-326	1699-1700	.	Allegazione normativa[11]	
+4-327	1700-1701	,	Allegazione normativa[11]	
+4-328	1702-1707	prout	Allegazione normativa[11]	
+4-329	1707-1708	.	_	
+4-330	1710-1713	Sic	_	
+4-331	1714-1719	patet	_	
+4-332	1720-1724	quod	_	
+4-333	1725-1728	non	_	
+4-334	1729-1733	erat	_	
+4-335	1734-1739	facta	_	
+4-336	1740-1745	litis	_	
+4-337	1746-1757	contestatio	_	
+4-338	1757-1758	,	_	
+4-339	1759-1762	cum	_	
+4-340	1763-1769	factum	_	
+4-341	1770-1780	proponitur	_	
+4-342	1781-1784	cum	_	
+4-343	1785-1798	protestatione	_	
+4-344	1799-1801	et	_	
+4-345	1802-1806	sine	_	
+4-346	1807-1818	praeiudicio	_	
+4-347	1818-1819	,	_	
+4-348	1820-1823	arg	_	
+4-349	1823-1824	.	_	
+4-350	1825-1832	optimum	_	
+4-351	1833-1835	ff	Allegazione normativa[12]	
+4-352	1835-1836	.	Allegazione normativa[12]	
+4-353	1837-1841	quib	Allegazione normativa[12]	
+4-354	1841-1842	.	Allegazione normativa[12]	
+4-355	1843-1846	mod	Allegazione normativa[12]	
+4-356	1846-1847	.	Allegazione normativa[12]	
+4-357	1848-1851	pig	Allegazione normativa[12]	
+4-358	1851-1852	.	Allegazione normativa[12]	
+4-359	1853-1856	vel	Allegazione normativa[12]	
+4-360	1857-1860	hyp	Allegazione normativa[12]	
+4-361	1860-1861	.	Allegazione normativa[12]	
+4-362	1862-1865	sol	Allegazione normativa[12]	
+4-363	1865-1866	.	Allegazione normativa[12]	
+4-364	1866-1867	,	Allegazione normativa[12]	
+4-365	1868-1870	si	Allegazione normativa[12]	
+4-366	1871-1878	debitor	Allegazione normativa[12]	
+4-367	1879-1880	§	Allegazione normativa[12]	
+4-368	1881-1883	si	Allegazione normativa[12]	
+4-369	1884-1886	in	Allegazione normativa[12]	
+4-370	1887-1897	venditione	Allegazione normativa[12]	
+4-371	1897-1898	.	_	
+4-372	1900-1902	Et	_	
+4-373	1903-1906	arg	_	
+4-374	1906-1907	.	_	
+4-375	1908-1913	supra	_	
+4-376	1913-1914	,	_	
+4-377	1915-1917	de	Allegazione normativa[13]	
+4-378	1918-1923	elect	Allegazione normativa[13]	
+4-379	1923-1924	.	Allegazione normativa[13]	
+4-380	1924-1925	,	Allegazione normativa[13]	
+4-381	1926-1932	Cumana	Allegazione normativa[13]	
+4-382	1932-1933	,	_	
+4-383	1934-1937	ubi	_	
+4-384	1938-1945	dicitur	_	
+4-385	1946-1948	de	_	
+4-386	1949-1962	protestatione	_	
+4-387	1962-1963	.	_	
+4-388	1965-1968	Ubi	_	
+4-389	1969-1973	ergo	_	
+4-390	1974-1979	litis	_	
+4-391	1980-1991	contestatio	_	
+4-392	1992-1995	non	_	
+4-393	1996-2004	procedit	_	
+4-394	2004-2005	,	_	
+4-395	2006-2009	nil	_	
+4-396	2010-2015	valet	_	
+4-397	2016-2020	quod	_	
+4-398	2021-2027	agitur	_	
+4-399	2027-2028	,	_	
+4-400	2029-2031	ut	_	
+4-401	2032-2035	hic	_	
+4-402	2035-2036	,	_	
+4-403	2037-2039	et	_	
+4-404	2040-2045	infra	_	
+4-405	2045-2046	,	_	
+4-406	2047-2049	ut	Allegazione normativa[14]	
+4-407	2050-2054	lite	Allegazione normativa[14]	
+4-408	2055-2058	non	Allegazione normativa[14]	
+4-409	2059-2063	cont	Allegazione normativa[14]	
+4-410	2063-2064	.	Allegazione normativa[14]	
+4-411	2064-2065	,	Allegazione normativa[14]	
+4-412	2066-2069	per	Allegazione normativa[14]	
+4-413	2070-2075	totum	Allegazione normativa[14]	
+4-414	2075-2076	.	_	
+4-415	2078-2080	Et	_	
+4-416	2081-2087	potest	_	
+4-417	2088-2093	ratio	_	
+4-418	2094-2103	assignari	_	
+4-419	2104-2109	quare	_	
+4-420	2110-2113	per	_	
+4-421	2114-2124	positiones	_	
+4-422	2125-2127	et	_	
+4-423	2128-2140	responsiones	_	
+4-424	2141-2143	ad	_	
+4-425	2144-2147	eas	_	
+4-426	2148-2151	non	_	
+4-427	2152-2155	fit	_	
+4-428	2156-2161	litis	_	
+4-429	2162-2173	contestatio	_	
+4-430	2173-2174	.	_	
+4-431	2176-2179	Qui	_	
+4-432	2180-2184	enim	_	
+4-433	2185-2190	ponit	_	
+4-434	2191-2198	aliquod	_	
+4-435	2199-2205	dictum	_	
+4-436	2206-2209	vel	_	
+4-437	2210-2216	factum	_	
+4-438	2216-2217	,	_	
+4-439	2218-2223	nihil	_	
+4-440	2224-2229	petit	_	
+4-441	2230-2232	ab	_	
+4-442	2233-2243	adversario	_	
+4-443	2243-2244	.	_	
+4-444	2246-2249	Nec	_	
+4-445	2250-2255	etiam	_	
+4-446	2256-2264	ostendit	_	
+4-447	2265-2267	se	_	
+4-448	2268-2271	per	_	
+4-449	2272-2275	hoc	_	
+4-450	2276-2281	velle	_	
+4-451	2282-2287	agere	_	
+4-452	2287-2288	.	_	
+4-453	2290-2292	Et	_	
+4-454	2293-2296	ita	_	
+4-455	2297-2300	non	_	
+4-456	2301-2307	posset	_	
+4-457	2308-2311	per	_	
+4-458	2312-2315	hoc	_	
+4-459	2316-2321	fieri	_	
+4-460	2322-2331	sententia	_	
+4-461	2332-2346	condemnationis	_	
+4-462	2347-2350	vel	_	
+4-463	2351-2363	absolutionis	_	
+4-464	2363-2364	,	_	
+4-465	2365-2368	cum	_	
+4-466	2369-2372	nil	_	
+4-467	2373-2380	petitum	_	
+4-468	2381-2384	sit	_	
+4-469	2385-2388	per	_	
+4-470	2389-2399	positionem	_	
+4-471	2399-2400	,	_	
+4-472	2401-2404	sed	_	
+4-473	2405-2415	ostenditur	_	
+4-474	2416-2423	aliquid	_	
+4-475	2424-2428	esse	_	
+4-476	2429-2435	factum	_	
+4-477	2436-2439	vel	_	
+4-478	2440-2446	dictum	_	
+4-479	2447-2450	seu	_	
+4-480	2451-2460	promissum	_	
+4-481	2460-2461	.	_	
+4-482	2463-2465	Et	_	
+4-483	2466-2475	sententia	_	
+4-484	2476-2482	semper	_	
+4-485	2483-2490	ferenda	_	
+4-486	2491-2494	est	_	
+4-487	2495-2503	secundum	_	
+4-488	2504-2509	modum	_	
+4-489	2510-2516	agendi	_	
+4-490	2516-2517	,	_	
+4-491	2518-2523	infra	_	
+4-492	2523-2524	,	_	
+4-493	2525-2527	de	Allegazione normativa[15]	
+4-494	2528-2535	accusat	Allegazione normativa[15]	
+4-495	2535-2536	.	Allegazione normativa[15]	
+4-496	2536-2537	,	Allegazione normativa[15]	
+4-497	2538-2546	qualiter	Allegazione normativa[15]	
+4-498	2547-2549	et	Allegazione normativa[15]	
+4-499	2550-2556	quando	Allegazione normativa[15]	
+4-500	2557-2558	1	Allegazione normativa[15]	
+4-501	2558-2559	,	Allegazione normativa[15]	
+4-502	2560-2562	ad	Allegazione normativa[15]	
+4-503	2563-2565	fi	Allegazione normativa[15]	
+4-504	2565-2566	.	Allegazione normativa[15]	
+4-505	2566-2567	;	_	
+4-506	2568-2570	et	_	
+4-507	2571-2576	infra	_	
+4-508	2576-2577	,	_	
+4-509	2578-2580	de	Allegazione normativa[16]	
+4-510	2581-2586	simon	Allegazione normativa[16]	
+4-511	2586-2587	.	Allegazione normativa[16]	
+4-512	2587-2588	,	Allegazione normativa[16]	
+4-513	2589-2594	licet	Allegazione normativa[16]	
+4-514	2595-2599	Heli	Allegazione normativa[16]	
+4-515	2599-2600	.	_	
+4-516	2602-2604	Et	_	
+4-517	2605-2616	condemnatio	_	
+4-518	2617-2620	non	_	
+4-519	2621-2624	est	_	
+4-520	2625-2633	facienda	_	
+4-521	2634-2638	nisi	_	
+4-522	2639-2641	ad	_	
+4-523	2642-2645	hoc	_	
+4-524	2646-2649	sit	_	
+4-525	2650-2655	actum	_	
+4-526	2655-2656	,	_	
+4-527	2657-2662	infra	_	
+4-528	2662-2663	,	_	
+4-529	2664-2666	de	Allegazione normativa[17]	
+4-530	2667-2670	ord	Allegazione normativa[17]	
+4-531	2670-2671	.	Allegazione normativa[17]	
+4-532	2672-2678	cognit	Allegazione normativa[17]	
+4-533	2678-2679	.	Allegazione normativa[17]	
+4-534	2679-2680	,	Allegazione normativa[17]	
+4-535	2681-2684	cum	Allegazione normativa[17]	
+4-536	2685-2693	dilectus	Allegazione normativa[17]	
+4-537	2693-2694	,	Allegazione normativa[17]	
+4-538	2695-2697	ad	Allegazione normativa[17]	
+4-539	2698-2700	fi	Allegazione normativa[17]	
+4-540	2700-2701	.	Allegazione normativa[17]	
+4-541	2703-2705	Et	_	
+4-542	2706-2709	hoc	_	
+4-543	2710-2715	etiam	_	
+4-544	2716-2724	probatur	_	
+4-545	2724-2725	,	_	
+4-546	2726-2730	quia	_	
+4-547	2731-2746	interrogationes	_	
+4-548	2747-2749	et	_	
+4-549	2750-2762	responsiones	_	
+4-550	2763-2772	aliquando	_	
+4-551	2773-2778	fiunt	_	
+4-552	2779-2783	ante	_	
+4-553	2784-2789	litis	_	
+4-554	2790-2804	contestationem	_	
+4-555	2804-2805	,	_	
+4-556	2806-2808	ff	Allegazione normativa[18]	
+4-557	2808-2809	.	Allegazione normativa[18]	
+4-558	2810-2812	de	Allegazione normativa[18]	
+4-559	2813-2821	interrog	Allegazione normativa[18]	
+4-560	2821-2822	.	Allegazione normativa[18]	
+4-561	2823-2826	act	Allegazione normativa[18]	
+4-562	2826-2827	.	Allegazione normativa[18]	
+4-563	2827-2828	,	Allegazione normativa[18]	
+4-564	2829-2834	quasi	Allegazione normativa[18]	
+4-565	2835-2838	per	Allegazione normativa[18]	
+4-566	2839-2844	totum	Allegazione normativa[18]	
+4-567	2844-2845	.	_	
+4-568	2847-2849	De	_	
+4-569	2850-2856	quibus	_	
+4-570	2857-2863	quidem	_	
+4-571	2864-2871	notatur	_	
+4-572	2872-2877	infra	_	
+4-573	2877-2878	,	_	
+4-574	2879-2881	de	Allegazione normativa[19]	
+4-575	2882-2887	iuram	Allegazione normativa[19]	
+4-576	2887-2888	.	Allegazione normativa[19]	
+4-577	2889-2895	calumn	Allegazione normativa[19]	
+4-578	2895-2896	.	Allegazione normativa[19]	
+4-579	2896-2897	,	Allegazione normativa[19]	
+4-580	2898-2901	cum	Allegazione normativa[19]	
+4-581	2902-2908	causam	Allegazione normativa[19]	
+4-582	2908-2909	,	_	
+4-583	2910-2912	in	_	
+4-584	2913-2919	glossa	_	
+4-585	2920-2924	quae	_	
+4-586	2925-2932	incipit	_	
+4-587	2932-2933	:	_	
+4-588	2934-2939	omnia	_	
+4-589	2940-2944	quae	_	
+4-590	2944-2945	.	_	
+4-591	2947-2949	Et	_	
+4-592	2950-2953	per	_	
+4-593	2954-2959	illas	_	
+4-594	2960-2975	interrogationes	_	
+4-595	2976-2978	et	_	
+4-596	2979-2991	responsiones	_	
+4-597	2992-2997	nulla	_	
+4-598	2998-3004	fieret	_	
+4-599	3005-3016	condemnatio	_	
+4-600	3017-3020	vel	_	
+4-601	3021-3030	absolutio	_	
+4-602	3030-3031	,	_	
+4-603	3032-3036	nisi	_	
+4-604	3037-3043	fieret	_	
+4-605	3044-3050	postea	_	
+4-606	3051-3056	litis	_	
+4-607	3057-3068	contestatio	_	
+4-608	3069-3074	super	_	
+4-609	3075-3084	petitione	_	
+4-610	3085-3092	actoris	_	
+4-611	3092-3093	.	_	
+4-612	3095-3097	Et	_	
+4-613	3098-3101	ita	_	
+4-614	3102-3107	patet	_	
+4-615	3108-3112	quod	_	
+4-616	3113-3116	ubi	_	
+4-617	3117-3122	fiunt	_	
+4-618	3123-3129	tantum	_	
+4-619	3130-3140	positiones	_	
+4-620	3141-3143	et	_	
+4-621	3144-3156	responsiones	_	
+4-622	3157-3162	nulla	_	
+4-623	3163-3172	petitione	_	
+4-624	3173-3182	praemissa	_	
+4-625	3182-3183	,	_	
+4-626	3184-3187	vel	_	
+4-627	3188-3193	nulla	_	
+4-628	3194-3199	litis	_	
+4-629	3200-3213	contestatione	_	
+4-630	3214-3219	facta	_	
+4-631	3219-3220	,	_	
+4-632	3221-3227	nullus	_	
+4-633	3228-3231	est	_	
+4-634	3232-3241	processus	_	
+4-635	3241-3242	,	_	
+4-636	3243-3245	ut	_	
+4-637	3246-3251	supra	_	
+4-638	3251-3252	,	_	
+4-639	3253-3255	de	Allegazione normativa[20]	
+4-640	3256-3261	elect	Allegazione normativa[20]	
+4-641	3261-3262	.	Allegazione normativa[20]	
+4-642	3262-3263	,	Allegazione normativa[20]	
+4-643	3264-3269	dudum	Allegazione normativa[20]	
+4-644	3270-3278	ecclesia	Allegazione normativa[20]	
+4-645	3278-3279	,	_	
+4-646	3280-3282	et	_	
+4-647	3283-3286	hic	_	
+4-648	3286-3287	.	_	
+4-649	3289-3292	Sed	_	
+4-650	3293-3297	quid	_	
+4-651	3298-3300	si	_	
+4-652	3301-3308	petitio	_	
+4-653	3309-3315	oblata	_	
+4-654	3316-3320	fuit	_	
+4-655	3321-3323	et	_	
+4-656	3324-3326	in	_	
+4-657	3327-3332	actis	_	
+4-658	3333-3340	redacta	_	
+4-659	3340-3341	,	_	
+4-660	3342-3345	sed	_	
+4-661	3346-3357	contestatio	_	
+4-662	3358-3363	litis	_	
+4-663	3364-3367	non	_	
+4-664	3368-3372	fuit	_	
+4-665	3373-3378	facta	_	
+4-666	3378-3379	,	_	
+4-667	3380-3383	sed	_	
+4-668	3384-3394	positiones	_	
+4-669	3395-3397	et	_	
+4-670	3398-3410	responsiones	_	
+4-671	3411-3417	factae	_	
+4-672	3418-3425	fuerunt	_	
+4-673	3425-3426	?	_	
+4-674	3428-3432	Idem	_	
+4-675	3433-3438	credo	_	
+4-676	3438-3439	,	_	
+4-677	3440-3448	scilicet	_	
+4-678	3449-3453	quod	_	
+4-679	3454-3463	processus	_	
+4-680	3464-3467	non	_	
+4-681	3468-3474	valeat	_	
+4-682	3474-3475	,	_	
+4-683	3476-3480	quia	_	
+4-684	3481-3486	litis	_	
+4-685	3487-3498	contestatio	_	
+4-686	3499-3502	non	_	
+4-687	3503-3506	est	_	
+4-688	3507-3512	facta	_	
+4-689	3512-3513	.	_	
+4-690	3515-3518	Ber	_	
+4-691	3518-3519	.	_	

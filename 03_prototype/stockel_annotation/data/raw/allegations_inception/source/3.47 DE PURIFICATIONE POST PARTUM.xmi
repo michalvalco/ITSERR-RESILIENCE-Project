@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="35" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="41" end="55" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="60" end="70" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="133" end="142" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Lemma glossato" begin="239" end="256" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="313" end="332" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="337" end="359" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="364" end="386" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Lemma glossato" begin="392" end="406" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="408" end="435" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="479" end="509" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="516" end="538" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.47 DE PURIFICATIONE POST PARTUM&#13;&#10;&#13;&#10;X 3.47.01 Volens&#13;&#10;&#13;&#10; Certi dies&#13;&#10;Scilicet pro masculo quadraginta dies, pro femina octaginta, dist. 5 § 1.  Et ideo ad litteram hoc fiebat, quia reputabantur immundae usque ad tempus illud.  Ber.&#13;&#10;&#13;&#10; Intrare voluerint&#13;&#10;Prohiberi non debent, ne poena eis vertatur in culpam, 5. dist., si mulier; et 5. dist., ad eius vero; et 7. q. 1, cum percussio.&#13;&#10;&#13;&#10; Ex veneratione&#13;&#10;de conse. dist. 2, quotidie.  Et quia bonarum mentium est etc., supra, de observ. ieiun., consilium § 2; et 5. dist., ad eius vero.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13"/>
+</xmi:XMI>

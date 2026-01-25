@@ -1,0 +1,1498 @@
+# text = X 1.15 DE SACRA UNCTIONE
+1	X	_	_	_	_	_	_	_	_
+2	1.15	_	_	_	_	_	_	_	_
+3	DE	_	_	_	_	_	_	_	_
+4	SACRA	_	_	_	_	_	_	_	_
+5	UNCTIONE	_	_	_	_	_	_	_	_
+
+# text = X 1.15.01 Cum venisset
+1	X	_	_	_	_	_	_	_	_
+2	1.15.01	_	_	_	_	_	_	_	_
+3	Cum	_	_	_	_	_	_	_	_
+4	venisset	_	_	_	_	_	_	_	_
+
+# text = Apud vos
+1	Apud	_	_	_	_	_	_	_	_
+2	vos	_	_	_	_	_	_	_	_
+
+# text = Id est, apud Graecos.  Scribit enim patriarchae Constantinopolitano.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	apud	_	_	_	_	_	_	_	_
+5	Graecos	_	_	_	_	_	_	_	SpaceAfter=No
+6	.	_	_	_	_	_	_	_	_
+7	Scribit	_	_	_	_	_	_	_	_
+8	enim	_	_	_	_	_	_	_	_
+9	patriarchae	_	_	_	_	_	_	_	_
+10	Constantinopolitano	_	_	_	_	_	_	_	SpaceAfter=No
+11	.	_	_	_	_	_	_	_	_
+
+# text = Suppleri
+1	Suppleri	_	_	_	_	_	_	_	_
+
+# text = Ut 1. q. 1, Spiritus Sanctus § ecce quando ab haereticis.  Ergo caute supplendum est quod incaute praetermissum fuerat, infra, de sacram. non iter., pastoralis; et infra, de sacram. non iter., presbyter; unde non dicitur actum cum aliquid superest ad agendum, C. de his quib. ut indign., cum Silanianum.; et 7. q. 1, nihil.
+1	Ut	_	_	_	_	_	_	_	_
+2	1	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	q	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	1	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	Spiritus	_	_	_	_	_	_	_	_
+9	Sanctus	_	_	_	_	_	_	_	_
+10	§	_	_	_	_	_	_	_	_
+11	ecce	_	_	_	_	_	_	_	_
+12	quando	_	_	_	_	_	_	_	_
+13	ab	_	_	_	_	_	_	_	_
+14	haereticis	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+16	Ergo	_	_	_	_	_	_	_	_
+17	caute	_	_	_	_	_	_	_	_
+18	supplendum	_	_	_	_	_	_	_	_
+19	est	_	_	_	_	_	_	_	_
+20	quod	_	_	_	_	_	_	_	_
+21	incaute	_	_	_	_	_	_	_	_
+22	praetermissum	_	_	_	_	_	_	_	_
+23	fuerat	_	_	_	_	_	_	_	SpaceAfter=No
+24	,	_	_	_	_	_	_	_	_
+25	infra	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	de	_	_	_	_	_	_	_	_
+28	sacram	_	_	_	_	_	_	_	SpaceAfter=No
+29	.	_	_	_	_	_	_	_	_
+30	non	_	_	_	_	_	_	_	_
+31	iter	_	_	_	_	_	_	_	SpaceAfter=No
+32	.	_	_	_	_	_	_	_	SpaceAfter=No
+33	,	_	_	_	_	_	_	_	_
+34	pastoralis	_	_	_	_	_	_	_	SpaceAfter=No
+35	;	_	_	_	_	_	_	_	_
+36	et	_	_	_	_	_	_	_	_
+37	infra	_	_	_	_	_	_	_	SpaceAfter=No
+38	,	_	_	_	_	_	_	_	_
+39	de	_	_	_	_	_	_	_	_
+40	sacram	_	_	_	_	_	_	_	SpaceAfter=No
+41	.	_	_	_	_	_	_	_	_
+42	non	_	_	_	_	_	_	_	_
+43	iter	_	_	_	_	_	_	_	SpaceAfter=No
+44	.	_	_	_	_	_	_	_	SpaceAfter=No
+45	,	_	_	_	_	_	_	_	_
+46	presbyter	_	_	_	_	_	_	_	SpaceAfter=No
+47	;	_	_	_	_	_	_	_	_
+48	unde	_	_	_	_	_	_	_	_
+49	non	_	_	_	_	_	_	_	_
+50	dicitur	_	_	_	_	_	_	_	_
+51	actum	_	_	_	_	_	_	_	_
+52	cum	_	_	_	_	_	_	_	_
+53	aliquid	_	_	_	_	_	_	_	_
+54	superest	_	_	_	_	_	_	_	_
+55	ad	_	_	_	_	_	_	_	_
+56	agendum	_	_	_	_	_	_	_	SpaceAfter=No
+57	,	_	_	_	_	_	_	_	_
+58	C	_	_	_	_	_	_	_	SpaceAfter=No
+59	.	_	_	_	_	_	_	_	_
+60	de	_	_	_	_	_	_	_	_
+61	his	_	_	_	_	_	_	_	_
+62	quib	_	_	_	_	_	_	_	SpaceAfter=No
+63	.	_	_	_	_	_	_	_	_
+64	ut	_	_	_	_	_	_	_	_
+65	indign	_	_	_	_	_	_	_	SpaceAfter=No
+66	.	_	_	_	_	_	_	_	SpaceAfter=No
+67	,	_	_	_	_	_	_	_	_
+68	cum	_	_	_	_	_	_	_	_
+69	Silanianum	_	_	_	_	_	_	_	SpaceAfter=No
+70	.	_	_	_	_	_	_	_	SpaceAfter=No
+71	;	_	_	_	_	_	_	_	_
+72	et	_	_	_	_	_	_	_	_
+73	7	_	_	_	_	_	_	_	SpaceAfter=No
+74	.	_	_	_	_	_	_	_	_
+75	q	_	_	_	_	_	_	_	SpaceAfter=No
+76	.	_	_	_	_	_	_	_	_
+77	1	_	_	_	_	_	_	_	SpaceAfter=No
+78	,	_	_	_	_	_	_	_	_
+79	nihil	_	_	_	_	_	_	_	SpaceAfter=No
+80	.	_	_	_	_	_	_	_	_
+
+# text = Assistentibus et duobus
+1	Assistentibus	_	_	_	_	_	_	_	_
+2	et	_	_	_	_	_	_	_	_
+3	duobus	_	_	_	_	_	_	_	_
+
+# text = Quia in consecratione episcoporum ad minus tres episcopi debent esse, 66. dist., porro; et supra, de temp. ord., si archiepiscopus.
+1	Quia	_	_	_	_	_	_	_	_
+2	in	_	_	_	_	_	_	_	_
+3	consecratione	_	_	_	_	_	_	_	_
+4	episcoporum	_	_	_	_	_	_	_	_
+5	ad	_	_	_	_	_	_	_	_
+6	minus	_	_	_	_	_	_	_	_
+7	tres	_	_	_	_	_	_	_	_
+8	episcopi	_	_	_	_	_	_	_	_
+9	debent	_	_	_	_	_	_	_	_
+10	esse	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	66	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	dist	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	porro	_	_	_	_	_	_	_	SpaceAfter=No
+18	;	_	_	_	_	_	_	_	_
+19	et	_	_	_	_	_	_	_	_
+20	supra	_	_	_	_	_	_	_	SpaceAfter=No
+21	,	_	_	_	_	_	_	_	_
+22	de	_	_	_	_	_	_	_	_
+23	temp	_	_	_	_	_	_	_	SpaceAfter=No
+24	.	_	_	_	_	_	_	_	_
+25	ord	_	_	_	_	_	_	_	SpaceAfter=No
+26	.	_	_	_	_	_	_	_	SpaceAfter=No
+27	,	_	_	_	_	_	_	_	_
+28	si	_	_	_	_	_	_	_	_
+29	archiepiscopus	_	_	_	_	_	_	_	SpaceAfter=No
+30	.	_	_	_	_	_	_	_	_
+
+# text = Inungitur cor
+1	Inungitur	_	_	_	_	_	_	_	_
+2	cor	_	_	_	_	_	_	_	_
+
+# text = Immo anima, sed hoc ideo dicit, quia anima sedem habet in corde principaliter, vel potius quia non fructificat unctio in anima, nisi ex corde et voluntate procedat.  Vincen.
+1	Immo	_	_	_	_	_	_	_	_
+2	anima	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	sed	_	_	_	_	_	_	_	_
+5	hoc	_	_	_	_	_	_	_	_
+6	ideo	_	_	_	_	_	_	_	_
+7	dicit	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	quia	_	_	_	_	_	_	_	_
+10	anima	_	_	_	_	_	_	_	_
+11	sedem	_	_	_	_	_	_	_	_
+12	habet	_	_	_	_	_	_	_	_
+13	in	_	_	_	_	_	_	_	_
+14	corde	_	_	_	_	_	_	_	_
+15	principaliter	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	vel	_	_	_	_	_	_	_	_
+18	potius	_	_	_	_	_	_	_	_
+19	quia	_	_	_	_	_	_	_	_
+20	non	_	_	_	_	_	_	_	_
+21	fructificat	_	_	_	_	_	_	_	_
+22	unctio	_	_	_	_	_	_	_	_
+23	in	_	_	_	_	_	_	_	_
+24	anima	_	_	_	_	_	_	_	SpaceAfter=No
+25	,	_	_	_	_	_	_	_	_
+26	nisi	_	_	_	_	_	_	_	_
+27	ex	_	_	_	_	_	_	_	_
+28	corde	_	_	_	_	_	_	_	_
+29	et	_	_	_	_	_	_	_	_
+30	voluntate	_	_	_	_	_	_	_	_
+31	procedat	_	_	_	_	_	_	_	SpaceAfter=No
+32	.	_	_	_	_	_	_	_	_
+33	Vincen	_	_	_	_	_	_	_	SpaceAfter=No
+34	.	_	_	_	_	_	_	_	_
+
+# text = Infirmatur
+1	Infirmatur	_	_	_	_	_	_	_	_
+
+# text = 95. dist., presbyteros § sed istud.
+1	95	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+3	dist	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	presbyteros	_	_	_	_	_	_	_	_
+7	§	_	_	_	_	_	_	_	_
+8	sed	_	_	_	_	_	_	_	_
+9	istud	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+
+# text = Unctionem
+1	Unctionem	_	_	_	_	_	_	_	_
+
+# text = Id est, unctio.  Figura est antiptosis, cum casus ponitur pro casu, simile 25. dist., primum; et 65. dist., sane si, vers. omnis sanctificatio, id est, omnem sanctificatum; et infra, de iudic., de Quodvultdeo, vers. quem id est qui.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	unctio	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	Figura	_	_	_	_	_	_	_	_
+7	est	_	_	_	_	_	_	_	_
+8	antiptosis	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	cum	_	_	_	_	_	_	_	_
+11	casus	_	_	_	_	_	_	_	_
+12	ponitur	_	_	_	_	_	_	_	_
+13	pro	_	_	_	_	_	_	_	_
+14	casu	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	simile	_	_	_	_	_	_	_	_
+17	25	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	_
+19	dist	_	_	_	_	_	_	_	SpaceAfter=No
+20	.	_	_	_	_	_	_	_	SpaceAfter=No
+21	,	_	_	_	_	_	_	_	_
+22	primum	_	_	_	_	_	_	_	SpaceAfter=No
+23	;	_	_	_	_	_	_	_	_
+24	et	_	_	_	_	_	_	_	_
+25	65	_	_	_	_	_	_	_	SpaceAfter=No
+26	.	_	_	_	_	_	_	_	_
+27	dist	_	_	_	_	_	_	_	SpaceAfter=No
+28	.	_	_	_	_	_	_	_	SpaceAfter=No
+29	,	_	_	_	_	_	_	_	_
+30	sane	_	_	_	_	_	_	_	_
+31	si	_	_	_	_	_	_	_	SpaceAfter=No
+32	,	_	_	_	_	_	_	_	_
+33	vers	_	_	_	_	_	_	_	SpaceAfter=No
+34	.	_	_	_	_	_	_	_	_
+35	omnis	_	_	_	_	_	_	_	_
+36	sanctificatio	_	_	_	_	_	_	_	SpaceAfter=No
+37	,	_	_	_	_	_	_	_	_
+38	id	_	_	_	_	_	_	_	_
+39	est	_	_	_	_	_	_	_	SpaceAfter=No
+40	,	_	_	_	_	_	_	_	_
+41	omnem	_	_	_	_	_	_	_	_
+42	sanctificatum	_	_	_	_	_	_	_	SpaceAfter=No
+43	;	_	_	_	_	_	_	_	_
+44	et	_	_	_	_	_	_	_	_
+45	infra	_	_	_	_	_	_	_	SpaceAfter=No
+46	,	_	_	_	_	_	_	_	_
+47	de	_	_	_	_	_	_	_	_
+48	iudic	_	_	_	_	_	_	_	SpaceAfter=No
+49	.	_	_	_	_	_	_	_	SpaceAfter=No
+50	,	_	_	_	_	_	_	_	_
+51	de	_	_	_	_	_	_	_	_
+52	Quodvultdeo	_	_	_	_	_	_	_	SpaceAfter=No
+53	,	_	_	_	_	_	_	_	_
+54	vers	_	_	_	_	_	_	_	SpaceAfter=No
+55	.	_	_	_	_	_	_	_	_
+56	quem	_	_	_	_	_	_	_	_
+57	id	_	_	_	_	_	_	_	_
+58	est	_	_	_	_	_	_	_	_
+59	qui	_	_	_	_	_	_	_	SpaceAfter=No
+60	.	_	_	_	_	_	_	_	_
+
+# text = Sacramentum
+1	Sacramentum	_	_	_	_	_	_	_	_
+
+# text = Simile de conse. dist. 4, necessarium; et infra, de celeb. miss., cum Marthae § ex eo, in fi.
+1	Simile	_	_	_	_	_	_	_	_
+2	de	_	_	_	_	_	_	_	_
+3	conse	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+5	dist	_	_	_	_	_	_	_	SpaceAfter=No
+6	.	_	_	_	_	_	_	_	_
+7	4	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	necessarium	_	_	_	_	_	_	_	SpaceAfter=No
+10	;	_	_	_	_	_	_	_	_
+11	et	_	_	_	_	_	_	_	_
+12	infra	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	de	_	_	_	_	_	_	_	_
+15	celeb	_	_	_	_	_	_	_	SpaceAfter=No
+16	.	_	_	_	_	_	_	_	_
+17	miss	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	SpaceAfter=No
+19	,	_	_	_	_	_	_	_	_
+20	cum	_	_	_	_	_	_	_	_
+21	Marthae	_	_	_	_	_	_	_	_
+22	§	_	_	_	_	_	_	_	_
+23	ex	_	_	_	_	_	_	_	_
+24	eo	_	_	_	_	_	_	_	SpaceAfter=No
+25	,	_	_	_	_	_	_	_	_
+26	in	_	_	_	_	_	_	_	_
+27	fi	_	_	_	_	_	_	_	SpaceAfter=No
+28	.	_	_	_	_	_	_	_	_
+
+# text = Agit
+1	Agit	_	_	_	_	_	_	_	_
+
+# text = Scilicet, salutem.
+1	Scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+2	,	_	_	_	_	_	_	_	_
+3	salutem	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+
+# text = Auget
+1	Auget	_	_	_	_	_	_	_	_
+
+# text = Iuxta illud: super aegros manus imponent, et bene habebunt, et vere auget sicut confirmatio, infra, de sacr. unct., cum venisset, vers. quia per eam Spirtitus Sanctus ad augmentum datur, et robur, etc.
+1	Iuxta	_	_	_	_	_	_	_	_
+2	illud	_	_	_	_	_	_	_	SpaceAfter=No
+3	:	_	_	_	_	_	_	_	_
+4	super	_	_	_	_	_	_	_	_
+5	aegros	_	_	_	_	_	_	_	_
+6	manus	_	_	_	_	_	_	_	_
+7	imponent	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	et	_	_	_	_	_	_	_	_
+10	bene	_	_	_	_	_	_	_	_
+11	habebunt	_	_	_	_	_	_	_	SpaceAfter=No
+12	,	_	_	_	_	_	_	_	_
+13	et	_	_	_	_	_	_	_	_
+14	vere	_	_	_	_	_	_	_	_
+15	auget	_	_	_	_	_	_	_	_
+16	sicut	_	_	_	_	_	_	_	_
+17	confirmatio	_	_	_	_	_	_	_	SpaceAfter=No
+18	,	_	_	_	_	_	_	_	_
+19	infra	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	de	_	_	_	_	_	_	_	_
+22	sacr	_	_	_	_	_	_	_	SpaceAfter=No
+23	.	_	_	_	_	_	_	_	_
+24	unct	_	_	_	_	_	_	_	SpaceAfter=No
+25	.	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	cum	_	_	_	_	_	_	_	_
+28	venisset	_	_	_	_	_	_	_	SpaceAfter=No
+29	,	_	_	_	_	_	_	_	_
+30	vers	_	_	_	_	_	_	_	SpaceAfter=No
+31	.	_	_	_	_	_	_	_	_
+32	quia	_	_	_	_	_	_	_	_
+33	per	_	_	_	_	_	_	_	_
+34	eam	_	_	_	_	_	_	_	_
+35	Spirtitus	_	_	_	_	_	_	_	_
+36	Sanctus	_	_	_	_	_	_	_	_
+37	ad	_	_	_	_	_	_	_	_
+38	augmentum	_	_	_	_	_	_	_	_
+39	datur	_	_	_	_	_	_	_	SpaceAfter=No
+40	,	_	_	_	_	_	_	_	_
+41	et	_	_	_	_	_	_	_	_
+42	robur	_	_	_	_	_	_	_	SpaceAfter=No
+43	,	_	_	_	_	_	_	_	_
+44	etc	_	_	_	_	_	_	_	SpaceAfter=No
+45	.	_	_	_	_	_	_	_	_
+
+# text = Mystica ratione
+1	Mystica	_	_	_	_	_	_	_	_
+2	ratione	_	_	_	_	_	_	_	_
+
+# text = Prout statim sequitur.
+1	Prout	_	_	_	_	_	_	_	_
+2	statim	_	_	_	_	_	_	_	_
+3	sequitur	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+
+# text = Legitur
+1	Legitur	_	_	_	_	_	_	_	_
+
+# text = In evangelio sancti Matthaei.
+1	In	_	_	_	_	_	_	_	_
+2	evangelio	_	_	_	_	_	_	_	_
+3	sancti	_	_	_	_	_	_	_	_
+4	Matthaei	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+
+# text = Dicitur
+1	Dicitur	_	_	_	_	_	_	_	_
+
+# text = In libro Sapientiae.
+1	In	_	_	_	_	_	_	_	_
+2	libro	_	_	_	_	_	_	_	_
+3	Sapientiae	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+
+# text = Quo ad proximum
+1	Quo	_	_	_	_	_	_	_	_
+2	ad	_	_	_	_	_	_	_	_
+3	proximum	_	_	_	_	_	_	_	_
+
+# text = Ista duo necessaria sunt, 12. q. 1, nolo; et 11. q. 3, non sunt audendi.
+1	Ista	_	_	_	_	_	_	_	_
+2	duo	_	_	_	_	_	_	_	_
+3	necessaria	_	_	_	_	_	_	_	_
+4	sunt	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	12	_	_	_	_	_	_	_	SpaceAfter=No
+7	.	_	_	_	_	_	_	_	_
+8	q	_	_	_	_	_	_	_	SpaceAfter=No
+9	.	_	_	_	_	_	_	_	_
+10	1	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	nolo	_	_	_	_	_	_	_	SpaceAfter=No
+13	;	_	_	_	_	_	_	_	_
+14	et	_	_	_	_	_	_	_	_
+15	11	_	_	_	_	_	_	_	SpaceAfter=No
+16	.	_	_	_	_	_	_	_	_
+17	q	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	_
+19	3	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	non	_	_	_	_	_	_	_	_
+22	sunt	_	_	_	_	_	_	_	_
+23	audendi	_	_	_	_	_	_	_	SpaceAfter=No
+24	.	_	_	_	_	_	_	_	_
+
+# text = Ab intus
+1	Ab	_	_	_	_	_	_	_	_
+2	intus	_	_	_	_	_	_	_	_
+
+# text = Procedit.  Supple unctio.
+1	Procedit	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+3	Supple	_	_	_	_	_	_	_	_
+4	unctio	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+
+# text = Bonus odor
+1	Bonus	_	_	_	_	_	_	_	_
+2	odor	_	_	_	_	_	_	_	_
+
+# text = Id est, exemplum et imitatio Apostolorum, quoniam Apostoli per praedicationem et famam invitabant homines ad salutem.  Verba ista habes 23. q. 4, Nabuchodonosor.  Et dicitur bonus odor praedicatio bonorum, quam quidam ex caritate suscipiunt.  Et inde isti in anima vivunt, unde dicit: aliis sumus odor vitae in vitam, scilicet, aeternam.  Alii vilipendunt et contemnunt praedicationem bonorum, et isti de tali contempu mortem incurrunt animae, unde dicitur: aliis sumus odor mortis in mortem, scilicet, aeternam.  Et ita ex eodem bono odore alii salvantur, et alii pereunt.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	exemplum	_	_	_	_	_	_	_	_
+5	et	_	_	_	_	_	_	_	_
+6	imitatio	_	_	_	_	_	_	_	_
+7	Apostolorum	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	quoniam	_	_	_	_	_	_	_	_
+10	Apostoli	_	_	_	_	_	_	_	_
+11	per	_	_	_	_	_	_	_	_
+12	praedicationem	_	_	_	_	_	_	_	_
+13	et	_	_	_	_	_	_	_	_
+14	famam	_	_	_	_	_	_	_	_
+15	invitabant	_	_	_	_	_	_	_	_
+16	homines	_	_	_	_	_	_	_	_
+17	ad	_	_	_	_	_	_	_	_
+18	salutem	_	_	_	_	_	_	_	SpaceAfter=No
+19	.	_	_	_	_	_	_	_	_
+20	Verba	_	_	_	_	_	_	_	_
+21	ista	_	_	_	_	_	_	_	_
+22	habes	_	_	_	_	_	_	_	_
+23	23	_	_	_	_	_	_	_	SpaceAfter=No
+24	.	_	_	_	_	_	_	_	_
+25	q	_	_	_	_	_	_	_	SpaceAfter=No
+26	.	_	_	_	_	_	_	_	_
+27	4	_	_	_	_	_	_	_	SpaceAfter=No
+28	,	_	_	_	_	_	_	_	_
+29	Nabuchodonosor	_	_	_	_	_	_	_	SpaceAfter=No
+30	.	_	_	_	_	_	_	_	_
+31	Et	_	_	_	_	_	_	_	_
+32	dicitur	_	_	_	_	_	_	_	_
+33	bonus	_	_	_	_	_	_	_	_
+34	odor	_	_	_	_	_	_	_	_
+35	praedicatio	_	_	_	_	_	_	_	_
+36	bonorum	_	_	_	_	_	_	_	SpaceAfter=No
+37	,	_	_	_	_	_	_	_	_
+38	quam	_	_	_	_	_	_	_	_
+39	quidam	_	_	_	_	_	_	_	_
+40	ex	_	_	_	_	_	_	_	_
+41	caritate	_	_	_	_	_	_	_	_
+42	suscipiunt	_	_	_	_	_	_	_	SpaceAfter=No
+43	.	_	_	_	_	_	_	_	_
+44	Et	_	_	_	_	_	_	_	_
+45	inde	_	_	_	_	_	_	_	_
+46	isti	_	_	_	_	_	_	_	_
+47	in	_	_	_	_	_	_	_	_
+48	anima	_	_	_	_	_	_	_	_
+49	vivunt	_	_	_	_	_	_	_	SpaceAfter=No
+50	,	_	_	_	_	_	_	_	_
+51	unde	_	_	_	_	_	_	_	_
+52	dicit	_	_	_	_	_	_	_	SpaceAfter=No
+53	:	_	_	_	_	_	_	_	_
+54	aliis	_	_	_	_	_	_	_	_
+55	sumus	_	_	_	_	_	_	_	_
+56	odor	_	_	_	_	_	_	_	_
+57	vitae	_	_	_	_	_	_	_	_
+58	in	_	_	_	_	_	_	_	_
+59	vitam	_	_	_	_	_	_	_	SpaceAfter=No
+60	,	_	_	_	_	_	_	_	_
+61	scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+62	,	_	_	_	_	_	_	_	_
+63	aeternam	_	_	_	_	_	_	_	SpaceAfter=No
+64	.	_	_	_	_	_	_	_	_
+65	Alii	_	_	_	_	_	_	_	_
+66	vilipendunt	_	_	_	_	_	_	_	_
+67	et	_	_	_	_	_	_	_	_
+68	contemnunt	_	_	_	_	_	_	_	_
+69	praedicationem	_	_	_	_	_	_	_	_
+70	bonorum	_	_	_	_	_	_	_	SpaceAfter=No
+71	,	_	_	_	_	_	_	_	_
+72	et	_	_	_	_	_	_	_	_
+73	isti	_	_	_	_	_	_	_	_
+74	de	_	_	_	_	_	_	_	_
+75	tali	_	_	_	_	_	_	_	_
+76	contempu	_	_	_	_	_	_	_	_
+77	mortem	_	_	_	_	_	_	_	_
+78	incurrunt	_	_	_	_	_	_	_	_
+79	animae	_	_	_	_	_	_	_	SpaceAfter=No
+80	,	_	_	_	_	_	_	_	_
+81	unde	_	_	_	_	_	_	_	_
+82	dicitur	_	_	_	_	_	_	_	SpaceAfter=No
+83	:	_	_	_	_	_	_	_	_
+84	aliis	_	_	_	_	_	_	_	_
+85	sumus	_	_	_	_	_	_	_	_
+86	odor	_	_	_	_	_	_	_	_
+87	mortis	_	_	_	_	_	_	_	_
+88	in	_	_	_	_	_	_	_	_
+89	mortem	_	_	_	_	_	_	_	SpaceAfter=No
+90	,	_	_	_	_	_	_	_	_
+91	scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+92	,	_	_	_	_	_	_	_	_
+93	aeternam	_	_	_	_	_	_	_	SpaceAfter=No
+94	.	_	_	_	_	_	_	_	_
+95	Et	_	_	_	_	_	_	_	_
+96	ita	_	_	_	_	_	_	_	_
+97	ex	_	_	_	_	_	_	_	_
+98	eodem	_	_	_	_	_	_	_	_
+99	bono	_	_	_	_	_	_	_	_
+100	odore	_	_	_	_	_	_	_	_
+101	alii	_	_	_	_	_	_	_	_
+102	salvantur	_	_	_	_	_	_	_	SpaceAfter=No
+103	,	_	_	_	_	_	_	_	_
+104	et	_	_	_	_	_	_	_	_
+105	alii	_	_	_	_	_	_	_	_
+106	pereunt	_	_	_	_	_	_	_	SpaceAfter=No
+107	.	_	_	_	_	_	_	_	_
+
+# text = Vitae
+1	Vitae	_	_	_	_	_	_	_	_
+
+# text = Id est, dilectionis, et bonae opinionis ducentis eos in vitam, scilicet, aeternam.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	dilectionis	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	et	_	_	_	_	_	_	_	_
+7	bonae	_	_	_	_	_	_	_	_
+8	opinionis	_	_	_	_	_	_	_	_
+9	ducentis	_	_	_	_	_	_	_	_
+10	eos	_	_	_	_	_	_	_	_
+11	in	_	_	_	_	_	_	_	_
+12	vitam	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	aeternam	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+
+# text = Mortis
+1	Mortis	_	_	_	_	_	_	_	_
+
+# text = Id est, invidiae, et malae opinionis, ducentus eos in mortem, scilicet, aeternam.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	invidiae	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	et	_	_	_	_	_	_	_	_
+7	malae	_	_	_	_	_	_	_	_
+8	opinionis	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	ducentus	_	_	_	_	_	_	_	_
+11	eos	_	_	_	_	_	_	_	_
+12	in	_	_	_	_	_	_	_	_
+13	mortem	_	_	_	_	_	_	_	SpaceAfter=No
+14	,	_	_	_	_	_	_	_	_
+15	scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	aeternam	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	_
+
+# text = Foris
+1	Foris	_	_	_	_	_	_	_	_
+
+# text = Simile 8. q. 1, licet ergo; et 63. dist., plebs; et 63. dist., nosse; et 63. dist., vota civium; et 63. dist., si forte; et de conse. dist. 1, iubemus.
+1	Simile	_	_	_	_	_	_	_	_
+2	8	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	q	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	1	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	licet	_	_	_	_	_	_	_	_
+9	ergo	_	_	_	_	_	_	_	SpaceAfter=No
+10	;	_	_	_	_	_	_	_	_
+11	et	_	_	_	_	_	_	_	_
+12	63	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	dist	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	plebs	_	_	_	_	_	_	_	SpaceAfter=No
+18	;	_	_	_	_	_	_	_	_
+19	et	_	_	_	_	_	_	_	_
+20	63	_	_	_	_	_	_	_	SpaceAfter=No
+21	.	_	_	_	_	_	_	_	_
+22	dist	_	_	_	_	_	_	_	SpaceAfter=No
+23	.	_	_	_	_	_	_	_	SpaceAfter=No
+24	,	_	_	_	_	_	_	_	_
+25	nosse	_	_	_	_	_	_	_	SpaceAfter=No
+26	;	_	_	_	_	_	_	_	_
+27	et	_	_	_	_	_	_	_	_
+28	63	_	_	_	_	_	_	_	SpaceAfter=No
+29	.	_	_	_	_	_	_	_	_
+30	dist	_	_	_	_	_	_	_	SpaceAfter=No
+31	.	_	_	_	_	_	_	_	SpaceAfter=No
+32	,	_	_	_	_	_	_	_	_
+33	vota	_	_	_	_	_	_	_	_
+34	civium	_	_	_	_	_	_	_	SpaceAfter=No
+35	;	_	_	_	_	_	_	_	_
+36	et	_	_	_	_	_	_	_	_
+37	63	_	_	_	_	_	_	_	SpaceAfter=No
+38	.	_	_	_	_	_	_	_	_
+39	dist	_	_	_	_	_	_	_	SpaceAfter=No
+40	.	_	_	_	_	_	_	_	SpaceAfter=No
+41	,	_	_	_	_	_	_	_	_
+42	si	_	_	_	_	_	_	_	_
+43	forte	_	_	_	_	_	_	_	SpaceAfter=No
+44	;	_	_	_	_	_	_	_	_
+45	et	_	_	_	_	_	_	_	_
+46	de	_	_	_	_	_	_	_	_
+47	conse	_	_	_	_	_	_	_	SpaceAfter=No
+48	.	_	_	_	_	_	_	_	_
+49	dist	_	_	_	_	_	_	_	SpaceAfter=No
+50	.	_	_	_	_	_	_	_	_
+51	1	_	_	_	_	_	_	_	SpaceAfter=No
+52	,	_	_	_	_	_	_	_	_
+53	iubemus	_	_	_	_	_	_	_	SpaceAfter=No
+54	.	_	_	_	_	_	_	_	_
+
+# text = Ut cortina cortinam trahat
+1	Ut	_	_	_	_	_	_	_	_
+2	cortina	_	_	_	_	_	_	_	_
+3	cortinam	_	_	_	_	_	_	_	_
+4	trahat	_	_	_	_	_	_	_	_
+
+# text = Id est, ut fidelis trahat infidelem, 28. q. 1, iam nunc.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	ut	_	_	_	_	_	_	_	_
+5	fidelis	_	_	_	_	_	_	_	_
+6	trahat	_	_	_	_	_	_	_	_
+7	infidelem	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	28	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+11	q	_	_	_	_	_	_	_	SpaceAfter=No
+12	.	_	_	_	_	_	_	_	_
+13	1	_	_	_	_	_	_	_	SpaceAfter=No
+14	,	_	_	_	_	_	_	_	_
+15	iam	_	_	_	_	_	_	_	_
+16	nunc	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+
+# text = Iuxta illud
+1	Iuxta	_	_	_	_	_	_	_	_
+2	illud	_	_	_	_	_	_	_	_
+
+# text = Evangelii.  Vel dic iuxta illud in canticis canticorum.
+1	Evangelii	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+3	Vel	_	_	_	_	_	_	_	_
+4	dic	_	_	_	_	_	_	_	_
+5	iuxta	_	_	_	_	_	_	_	_
+6	illud	_	_	_	_	_	_	_	_
+7	in	_	_	_	_	_	_	_	_
+8	canticis	_	_	_	_	_	_	_	_
+9	canticorum	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+
+# text = Sicut seipsum
+1	Sicut	_	_	_	_	_	_	_	_
+2	seipsum	_	_	_	_	_	_	_	_
+
+# text = Id est, ad id quod seipsum.  Hoc adverbium sicut, non est sicutissimum, quia ordinata caritas prius debet incipere a seipso, 23. q. 5, si non licet.  Unde primo debet quis facere eleemosynam sibi, deinde proximo, de poen. dist. 3, sane cavendum; C. de servit., praeses.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	ad	_	_	_	_	_	_	_	_
+5	id	_	_	_	_	_	_	_	_
+6	quod	_	_	_	_	_	_	_	_
+7	seipsum	_	_	_	_	_	_	_	SpaceAfter=No
+8	.	_	_	_	_	_	_	_	_
+9	Hoc	_	_	_	_	_	_	_	_
+10	adverbium	_	_	_	_	_	_	_	_
+11	sicut	_	_	_	_	_	_	_	SpaceAfter=No
+12	,	_	_	_	_	_	_	_	_
+13	non	_	_	_	_	_	_	_	_
+14	est	_	_	_	_	_	_	_	_
+15	sicutissimum	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	quia	_	_	_	_	_	_	_	_
+18	ordinata	_	_	_	_	_	_	_	_
+19	caritas	_	_	_	_	_	_	_	_
+20	prius	_	_	_	_	_	_	_	_
+21	debet	_	_	_	_	_	_	_	_
+22	incipere	_	_	_	_	_	_	_	_
+23	a	_	_	_	_	_	_	_	_
+24	seipso	_	_	_	_	_	_	_	SpaceAfter=No
+25	,	_	_	_	_	_	_	_	_
+26	23	_	_	_	_	_	_	_	SpaceAfter=No
+27	.	_	_	_	_	_	_	_	_
+28	q	_	_	_	_	_	_	_	SpaceAfter=No
+29	.	_	_	_	_	_	_	_	_
+30	5	_	_	_	_	_	_	_	SpaceAfter=No
+31	,	_	_	_	_	_	_	_	_
+32	si	_	_	_	_	_	_	_	_
+33	non	_	_	_	_	_	_	_	_
+34	licet	_	_	_	_	_	_	_	SpaceAfter=No
+35	.	_	_	_	_	_	_	_	_
+36	Unde	_	_	_	_	_	_	_	_
+37	primo	_	_	_	_	_	_	_	_
+38	debet	_	_	_	_	_	_	_	_
+39	quis	_	_	_	_	_	_	_	_
+40	facere	_	_	_	_	_	_	_	_
+41	eleemosynam	_	_	_	_	_	_	_	_
+42	sibi	_	_	_	_	_	_	_	SpaceAfter=No
+43	,	_	_	_	_	_	_	_	_
+44	deinde	_	_	_	_	_	_	_	_
+45	proximo	_	_	_	_	_	_	_	SpaceAfter=No
+46	,	_	_	_	_	_	_	_	_
+47	de	_	_	_	_	_	_	_	_
+48	poen	_	_	_	_	_	_	_	SpaceAfter=No
+49	.	_	_	_	_	_	_	_	_
+50	dist	_	_	_	_	_	_	_	SpaceAfter=No
+51	.	_	_	_	_	_	_	_	_
+52	3	_	_	_	_	_	_	_	SpaceAfter=No
+53	,	_	_	_	_	_	_	_	_
+54	sane	_	_	_	_	_	_	_	_
+55	cavendum	_	_	_	_	_	_	_	SpaceAfter=No
+56	;	_	_	_	_	_	_	_	_
+57	C	_	_	_	_	_	_	_	SpaceAfter=No
+58	.	_	_	_	_	_	_	_	_
+59	de	_	_	_	_	_	_	_	_
+60	servit	_	_	_	_	_	_	_	SpaceAfter=No
+61	.	_	_	_	_	_	_	_	SpaceAfter=No
+62	,	_	_	_	_	_	_	_	_
+63	praeses	_	_	_	_	_	_	_	SpaceAfter=No
+64	.	_	_	_	_	_	_	_	_
+
+# text = Illius
+1	Illius	_	_	_	_	_	_	_	_
+
+# text = Scilicet, Christi.
+1	Scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+2	,	_	_	_	_	_	_	_	_
+3	Christi	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+
+# text = Caput enim viri
+1	Caput	_	_	_	_	_	_	_	_
+2	enim	_	_	_	_	_	_	_	_
+3	viri	_	_	_	_	_	_	_	_
+
+# text = 33. q. 5, cum caput.
+1	33	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+3	q	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+5	5	_	_	_	_	_	_	_	SpaceAfter=No
+6	,	_	_	_	_	_	_	_	_
+7	cum	_	_	_	_	_	_	_	_
+8	caput	_	_	_	_	_	_	_	SpaceAfter=No
+9	.	_	_	_	_	_	_	_	_
+
+# text = Consecrare inquit
+1	Consecrare	_	_	_	_	_	_	_	_
+2	inquit	_	_	_	_	_	_	_	_
+
+# text = Haec benedictio dicitur ab episcopo dum consecrat manus presbyterorum.  Et sic communis est haec benedictio episcoporum et presbyterorum, 16. q. 1, generaliter § ecce.
+1	Haec	_	_	_	_	_	_	_	_
+2	benedictio	_	_	_	_	_	_	_	_
+3	dicitur	_	_	_	_	_	_	_	_
+4	ab	_	_	_	_	_	_	_	_
+5	episcopo	_	_	_	_	_	_	_	_
+6	dum	_	_	_	_	_	_	_	_
+7	consecrat	_	_	_	_	_	_	_	_
+8	manus	_	_	_	_	_	_	_	_
+9	presbyterorum	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+11	Et	_	_	_	_	_	_	_	_
+12	sic	_	_	_	_	_	_	_	_
+13	communis	_	_	_	_	_	_	_	_
+14	est	_	_	_	_	_	_	_	_
+15	haec	_	_	_	_	_	_	_	_
+16	benedictio	_	_	_	_	_	_	_	_
+17	episcoporum	_	_	_	_	_	_	_	_
+18	et	_	_	_	_	_	_	_	_
+19	presbyterorum	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	16	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+23	q	_	_	_	_	_	_	_	SpaceAfter=No
+24	.	_	_	_	_	_	_	_	_
+25	1	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	generaliter	_	_	_	_	_	_	_	_
+28	§	_	_	_	_	_	_	_	_
+29	ecce	_	_	_	_	_	_	_	SpaceAfter=No
+30	.	_	_	_	_	_	_	_	_
+
+# text = Ubi
+1	Ubi	_	_	_	_	_	_	_	_
+
+# text = Id est, postquam.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	postquam	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+
+# text = Unxit
+1	Unxit	_	_	_	_	_	_	_	_
+
+# text = Mystica fuit et invisibilis unctio Christi, quia nec in regem nec in sacerdotem fuit unctus, ut 2. q. 7, testes § his ita respondetur.
+1	Mystica	_	_	_	_	_	_	_	_
+2	fuit	_	_	_	_	_	_	_	_
+3	et	_	_	_	_	_	_	_	_
+4	invisibilis	_	_	_	_	_	_	_	_
+5	unctio	_	_	_	_	_	_	_	_
+6	Christi	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	quia	_	_	_	_	_	_	_	_
+9	nec	_	_	_	_	_	_	_	_
+10	in	_	_	_	_	_	_	_	_
+11	regem	_	_	_	_	_	_	_	_
+12	nec	_	_	_	_	_	_	_	_
+13	in	_	_	_	_	_	_	_	_
+14	sacerdotem	_	_	_	_	_	_	_	_
+15	fuit	_	_	_	_	_	_	_	_
+16	unctus	_	_	_	_	_	_	_	SpaceAfter=No
+17	,	_	_	_	_	_	_	_	_
+18	ut	_	_	_	_	_	_	_	_
+19	2	_	_	_	_	_	_	_	SpaceAfter=No
+20	.	_	_	_	_	_	_	_	_
+21	q	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+23	7	_	_	_	_	_	_	_	SpaceAfter=No
+24	,	_	_	_	_	_	_	_	_
+25	testes	_	_	_	_	_	_	_	_
+26	§	_	_	_	_	_	_	_	_
+27	his	_	_	_	_	_	_	_	_
+28	ita	_	_	_	_	_	_	_	_
+29	respondetur	_	_	_	_	_	_	_	SpaceAfter=No
+30	.	_	_	_	_	_	_	_	_
+
+# text = Ex tunc
+1	Ex	_	_	_	_	_	_	_	_
+2	tunc	_	_	_	_	_	_	_	_
+
+# text = Id est, ex tempore Christi.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	ex	_	_	_	_	_	_	_	_
+5	tempore	_	_	_	_	_	_	_	_
+6	Christi	_	_	_	_	_	_	_	SpaceAfter=No
+7	.	_	_	_	_	_	_	_	_
+
+# text = Personam capitis
+1	Personam	_	_	_	_	_	_	_	_
+2	capitis	_	_	_	_	_	_	_	_
+
+# text = Id est, Christi, qui est caput ecclesiae.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	Christi	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	qui	_	_	_	_	_	_	_	_
+7	est	_	_	_	_	_	_	_	_
+8	caput	_	_	_	_	_	_	_	_
+9	ecclesiae	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+
+# text = Differentia
+1	Differentia	_	_	_	_	_	_	_	_
+
+# text = Quod ostenditur 96. dist., duo sunt; et infra, de maior. et obed., solitae.
+1	Quod	_	_	_	_	_	_	_	_
+2	ostenditur	_	_	_	_	_	_	_	_
+3	96	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+5	dist	_	_	_	_	_	_	_	SpaceAfter=No
+6	.	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	duo	_	_	_	_	_	_	_	_
+9	sunt	_	_	_	_	_	_	_	SpaceAfter=No
+10	;	_	_	_	_	_	_	_	_
+11	et	_	_	_	_	_	_	_	_
+12	infra	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	de	_	_	_	_	_	_	_	_
+15	maior	_	_	_	_	_	_	_	SpaceAfter=No
+16	.	_	_	_	_	_	_	_	_
+17	et	_	_	_	_	_	_	_	_
+18	obed	_	_	_	_	_	_	_	SpaceAfter=No
+19	.	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	solitae	_	_	_	_	_	_	_	SpaceAfter=No
+22	.	_	_	_	_	_	_	_	_
+
+# text = In fronte
+1	In	_	_	_	_	_	_	_	_
+2	fronte	_	_	_	_	_	_	_	_
+
+# text = Ut de conse. dist. 5, de his; et de conse. dist. 5, novissime; et de conse. dist. 5, manus; in quibus habetur significatio istarum unctionum.
+1	Ut	_	_	_	_	_	_	_	_
+2	de	_	_	_	_	_	_	_	_
+3	conse	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+5	dist	_	_	_	_	_	_	_	SpaceAfter=No
+6	.	_	_	_	_	_	_	_	_
+7	5	_	_	_	_	_	_	_	SpaceAfter=No
+8	,	_	_	_	_	_	_	_	_
+9	de	_	_	_	_	_	_	_	_
+10	his	_	_	_	_	_	_	_	SpaceAfter=No
+11	;	_	_	_	_	_	_	_	_
+12	et	_	_	_	_	_	_	_	_
+13	de	_	_	_	_	_	_	_	_
+14	conse	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+16	dist	_	_	_	_	_	_	_	SpaceAfter=No
+17	.	_	_	_	_	_	_	_	_
+18	5	_	_	_	_	_	_	_	SpaceAfter=No
+19	,	_	_	_	_	_	_	_	_
+20	novissime	_	_	_	_	_	_	_	SpaceAfter=No
+21	;	_	_	_	_	_	_	_	_
+22	et	_	_	_	_	_	_	_	_
+23	de	_	_	_	_	_	_	_	_
+24	conse	_	_	_	_	_	_	_	SpaceAfter=No
+25	.	_	_	_	_	_	_	_	_
+26	dist	_	_	_	_	_	_	_	SpaceAfter=No
+27	.	_	_	_	_	_	_	_	_
+28	5	_	_	_	_	_	_	_	SpaceAfter=No
+29	,	_	_	_	_	_	_	_	_
+30	manus	_	_	_	_	_	_	_	SpaceAfter=No
+31	;	_	_	_	_	_	_	_	_
+32	in	_	_	_	_	_	_	_	_
+33	quibus	_	_	_	_	_	_	_	_
+34	habetur	_	_	_	_	_	_	_	_
+35	significatio	_	_	_	_	_	_	_	_
+36	istarum	_	_	_	_	_	_	_	_
+37	unctionum	_	_	_	_	_	_	_	SpaceAfter=No
+38	.	_	_	_	_	_	_	_	_
+
+# text = In pectore
+1	In	_	_	_	_	_	_	_	_
+2	pectore	_	_	_	_	_	_	_	_
+
+# text = de conse. dist. 4, deinde; et de conse. dist. 4, presbyteri.
+1	de	_	_	_	_	_	_	_	_
+2	conse	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	dist	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	4	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	deinde	_	_	_	_	_	_	_	SpaceAfter=No
+9	;	_	_	_	_	_	_	_	_
+10	et	_	_	_	_	_	_	_	_
+11	de	_	_	_	_	_	_	_	_
+12	conse	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	dist	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	_
+16	4	_	_	_	_	_	_	_	SpaceAfter=No
+17	,	_	_	_	_	_	_	_	_
+18	presbyteri	_	_	_	_	_	_	_	SpaceAfter=No
+19	.	_	_	_	_	_	_	_	_
+
+# text = Reddere rationem
+1	Reddere	_	_	_	_	_	_	_	_
+2	rationem	_	_	_	_	_	_	_	_
+
+# text = Ut 36. dist., qui ecclesiasticis § ecce ad finem.
+1	Ut	_	_	_	_	_	_	_	_
+2	36	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	dist	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	SpaceAfter=No
+6	,	_	_	_	_	_	_	_	_
+7	qui	_	_	_	_	_	_	_	_
+8	ecclesiasticis	_	_	_	_	_	_	_	_
+9	§	_	_	_	_	_	_	_	_
+10	ecce	_	_	_	_	_	_	_	_
+11	ad	_	_	_	_	_	_	_	_
+12	finem	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+
+# text = Simplex sacerdos
+1	Simplex	_	_	_	_	_	_	_	_
+2	sacerdos	_	_	_	_	_	_	_	_
+
+# text = de conse. dist. 4, presbyteri.
+1	de	_	_	_	_	_	_	_	_
+2	conse	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	dist	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	4	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	presbyteri	_	_	_	_	_	_	_	SpaceAfter=No
+9	.	_	_	_	_	_	_	_	_
+
+# text = Hanc
+1	Hanc	_	_	_	_	_	_	_	_
+
+# text = Scilicet, confirmationem in fronte soli episcopi conferunt, supra, de consuet., quanto, ubi de hoc.  Arg. contra 95. dist., pervenit, ubi presbyteri chrismabant in fronte.  Solutio: illud concessit Gregorius dispensative ad tempus propter scandalum, ut ibi expresse patet, alias sacerdos nihil conferret, ut in capitulo supra, de consuet., quanto.
+1	Scilicet	_	_	_	_	_	_	_	SpaceAfter=No
+2	,	_	_	_	_	_	_	_	_
+3	confirmationem	_	_	_	_	_	_	_	_
+4	in	_	_	_	_	_	_	_	_
+5	fronte	_	_	_	_	_	_	_	_
+6	soli	_	_	_	_	_	_	_	_
+7	episcopi	_	_	_	_	_	_	_	_
+8	conferunt	_	_	_	_	_	_	_	SpaceAfter=No
+9	,	_	_	_	_	_	_	_	_
+10	supra	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	de	_	_	_	_	_	_	_	_
+13	consuet	_	_	_	_	_	_	_	SpaceAfter=No
+14	.	_	_	_	_	_	_	_	SpaceAfter=No
+15	,	_	_	_	_	_	_	_	_
+16	quanto	_	_	_	_	_	_	_	SpaceAfter=No
+17	,	_	_	_	_	_	_	_	_
+18	ubi	_	_	_	_	_	_	_	_
+19	de	_	_	_	_	_	_	_	_
+20	hoc	_	_	_	_	_	_	_	SpaceAfter=No
+21	.	_	_	_	_	_	_	_	_
+22	Arg	_	_	_	_	_	_	_	SpaceAfter=No
+23	.	_	_	_	_	_	_	_	_
+24	contra	_	_	_	_	_	_	_	_
+25	95	_	_	_	_	_	_	_	SpaceAfter=No
+26	.	_	_	_	_	_	_	_	_
+27	dist	_	_	_	_	_	_	_	SpaceAfter=No
+28	.	_	_	_	_	_	_	_	SpaceAfter=No
+29	,	_	_	_	_	_	_	_	_
+30	pervenit	_	_	_	_	_	_	_	SpaceAfter=No
+31	,	_	_	_	_	_	_	_	_
+32	ubi	_	_	_	_	_	_	_	_
+33	presbyteri	_	_	_	_	_	_	_	_
+34	chrismabant	_	_	_	_	_	_	_	_
+35	in	_	_	_	_	_	_	_	_
+36	fronte	_	_	_	_	_	_	_	SpaceAfter=No
+37	.	_	_	_	_	_	_	_	_
+38	Solutio	_	_	_	_	_	_	_	SpaceAfter=No
+39	:	_	_	_	_	_	_	_	_
+40	illud	_	_	_	_	_	_	_	_
+41	concessit	_	_	_	_	_	_	_	_
+42	Gregorius	_	_	_	_	_	_	_	_
+43	dispensative	_	_	_	_	_	_	_	_
+44	ad	_	_	_	_	_	_	_	_
+45	tempus	_	_	_	_	_	_	_	_
+46	propter	_	_	_	_	_	_	_	_
+47	scandalum	_	_	_	_	_	_	_	SpaceAfter=No
+48	,	_	_	_	_	_	_	_	_
+49	ut	_	_	_	_	_	_	_	_
+50	ibi	_	_	_	_	_	_	_	_
+51	expresse	_	_	_	_	_	_	_	_
+52	patet	_	_	_	_	_	_	_	SpaceAfter=No
+53	,	_	_	_	_	_	_	_	_
+54	alias	_	_	_	_	_	_	_	_
+55	sacerdos	_	_	_	_	_	_	_	_
+56	nihil	_	_	_	_	_	_	_	_
+57	conferret	_	_	_	_	_	_	_	SpaceAfter=No
+58	,	_	_	_	_	_	_	_	_
+59	ut	_	_	_	_	_	_	_	_
+60	in	_	_	_	_	_	_	_	_
+61	capitulo	_	_	_	_	_	_	_	_
+62	supra	_	_	_	_	_	_	_	SpaceAfter=No
+63	,	_	_	_	_	_	_	_	_
+64	de	_	_	_	_	_	_	_	_
+65	consuet	_	_	_	_	_	_	_	SpaceAfter=No
+66	.	_	_	_	_	_	_	_	SpaceAfter=No
+67	,	_	_	_	_	_	_	_	_
+68	quanto	_	_	_	_	_	_	_	SpaceAfter=No
+69	.	_	_	_	_	_	_	_	_
+
+# text = Summus sacerdos
+1	Summus	_	_	_	_	_	_	_	_
+2	sacerdos	_	_	_	_	_	_	_	_
+
+# text = Id est, episcopus, 2. q. 7, accusatio.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	episcopus	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	2	_	_	_	_	_	_	_	SpaceAfter=No
+7	.	_	_	_	_	_	_	_	_
+8	q	_	_	_	_	_	_	_	SpaceAfter=No
+9	.	_	_	_	_	_	_	_	_
+10	7	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	accusatio	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+
+# text = Vicarii
+1	Vicarii	_	_	_	_	_	_	_	_
+
+# text = 68. dist., quorum vices.
+1	68	_	_	_	_	_	_	_	SpaceAfter=No
+2	.	_	_	_	_	_	_	_	_
+3	dist	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	SpaceAfter=No
+5	,	_	_	_	_	_	_	_	_
+6	quorum	_	_	_	_	_	_	_	_
+7	vices	_	_	_	_	_	_	_	SpaceAfter=No
+8	.	_	_	_	_	_	_	_	_
+
+# text = In qua
+1	In	_	_	_	_	_	_	_	_
+2	qua	_	_	_	_	_	_	_	_
+
+# text = Simplex relatio est hic sicut ibi, mulier salvavit quae damnavit, quoniam alia fuit columba quae detulit ramum olivae in arca Noe, et alia quae descendit super Christum dum baptizaretur.
+1	Simplex	_	_	_	_	_	_	_	_
+2	relatio	_	_	_	_	_	_	_	_
+3	est	_	_	_	_	_	_	_	_
+4	hic	_	_	_	_	_	_	_	_
+5	sicut	_	_	_	_	_	_	_	_
+6	ibi	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	mulier	_	_	_	_	_	_	_	_
+9	salvavit	_	_	_	_	_	_	_	_
+10	quae	_	_	_	_	_	_	_	_
+11	damnavit	_	_	_	_	_	_	_	SpaceAfter=No
+12	,	_	_	_	_	_	_	_	_
+13	quoniam	_	_	_	_	_	_	_	_
+14	alia	_	_	_	_	_	_	_	_
+15	fuit	_	_	_	_	_	_	_	_
+16	columba	_	_	_	_	_	_	_	_
+17	quae	_	_	_	_	_	_	_	_
+18	detulit	_	_	_	_	_	_	_	_
+19	ramum	_	_	_	_	_	_	_	_
+20	olivae	_	_	_	_	_	_	_	_
+21	in	_	_	_	_	_	_	_	_
+22	arca	_	_	_	_	_	_	_	_
+23	Noe	_	_	_	_	_	_	_	SpaceAfter=No
+24	,	_	_	_	_	_	_	_	_
+25	et	_	_	_	_	_	_	_	_
+26	alia	_	_	_	_	_	_	_	_
+27	quae	_	_	_	_	_	_	_	_
+28	descendit	_	_	_	_	_	_	_	_
+29	super	_	_	_	_	_	_	_	_
+30	Christum	_	_	_	_	_	_	_	_
+31	dum	_	_	_	_	_	_	_	_
+32	baptizaretur	_	_	_	_	_	_	_	SpaceAfter=No
+33	.	_	_	_	_	_	_	_	_
+
+# text = In cataclysmo
+1	In	_	_	_	_	_	_	_	_
+2	cataclysmo	_	_	_	_	_	_	_	_
+
+# text = Id est, in generali diluvio sive tempore diluvii.
+1	Id	_	_	_	_	_	_	_	_
+2	est	_	_	_	_	_	_	_	SpaceAfter=No
+3	,	_	_	_	_	_	_	_	_
+4	in	_	_	_	_	_	_	_	_
+5	generali	_	_	_	_	_	_	_	_
+6	diluvio	_	_	_	_	_	_	_	_
+7	sive	_	_	_	_	_	_	_	_
+8	tempore	_	_	_	_	_	_	_	_
+9	diluvii	_	_	_	_	_	_	_	SpaceAfter=No
+10	.	_	_	_	_	_	_	_	_
+
+# text = Revertens
+1	Revertens	_	_	_	_	_	_	_	_
+
+# text = Ad arcam Noe.
+1	Ad	_	_	_	_	_	_	_	_
+2	arcam	_	_	_	_	_	_	_	_
+3	Noe	_	_	_	_	_	_	_	SpaceAfter=No
+4	.	_	_	_	_	_	_	_	_
+
+# text = Aliud quidem
+1	Aliud	_	_	_	_	_	_	_	_
+2	quidem	_	_	_	_	_	_	_	_
+
+# text = Et sic colligitur hic quod alium ordinem habuit in substantia olim Levita, et alium hodie, alias videretur etiam ecclesia iudaizare in identitate.
+1	Et	_	_	_	_	_	_	_	_
+2	sic	_	_	_	_	_	_	_	_
+3	colligitur	_	_	_	_	_	_	_	_
+4	hic	_	_	_	_	_	_	_	_
+5	quod	_	_	_	_	_	_	_	_
+6	alium	_	_	_	_	_	_	_	_
+7	ordinem	_	_	_	_	_	_	_	_
+8	habuit	_	_	_	_	_	_	_	_
+9	in	_	_	_	_	_	_	_	_
+10	substantia	_	_	_	_	_	_	_	_
+11	olim	_	_	_	_	_	_	_	_
+12	Levita	_	_	_	_	_	_	_	SpaceAfter=No
+13	,	_	_	_	_	_	_	_	_
+14	et	_	_	_	_	_	_	_	_
+15	alium	_	_	_	_	_	_	_	_
+16	hodie	_	_	_	_	_	_	_	SpaceAfter=No
+17	,	_	_	_	_	_	_	_	_
+18	alias	_	_	_	_	_	_	_	_
+19	videretur	_	_	_	_	_	_	_	_
+20	etiam	_	_	_	_	_	_	_	_
+21	ecclesia	_	_	_	_	_	_	_	_
+22	iudaizare	_	_	_	_	_	_	_	_
+23	in	_	_	_	_	_	_	_	_
+24	identitate	_	_	_	_	_	_	_	SpaceAfter=No
+25	.	_	_	_	_	_	_	_	_
+
+# text = Pastoralis
+1	Pastoralis	_	_	_	_	_	_	_	_
+
+# text = de conse. dist. 1, nullus episcopus; et 45. dist., disciplina.  Ber.
+1	de	_	_	_	_	_	_	_	_
+2	conse	_	_	_	_	_	_	_	SpaceAfter=No
+3	.	_	_	_	_	_	_	_	_
+4	dist	_	_	_	_	_	_	_	SpaceAfter=No
+5	.	_	_	_	_	_	_	_	_
+6	1	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	nullus	_	_	_	_	_	_	_	_
+9	episcopus	_	_	_	_	_	_	_	SpaceAfter=No
+10	;	_	_	_	_	_	_	_	_
+11	et	_	_	_	_	_	_	_	_
+12	45	_	_	_	_	_	_	_	SpaceAfter=No
+13	.	_	_	_	_	_	_	_	_
+14	dist	_	_	_	_	_	_	_	SpaceAfter=No
+15	.	_	_	_	_	_	_	_	SpaceAfter=No
+16	,	_	_	_	_	_	_	_	_
+17	disciplina	_	_	_	_	_	_	_	SpaceAfter=No
+18	.	_	_	_	_	_	_	_	_
+19	Ber	_	_	_	_	_	_	_	SpaceAfter=No
+20	.	_	_	_	_	_	_	_	_
+
+# text = Propter historiam
+1	Propter	_	_	_	_	_	_	_	_
+2	historiam	_	_	_	_	_	_	_	_
+
+# text = Martialis unus de discipulis Petri, quem posuit Dominus inter discipulos cum dixit: nisi efficiamini sicut parvulus iste, non intrabitis in regnum caelorum, etc., quem postea Petrus cum alio, scilicet Matthaeo, ad praedicandum misit in Germaniam, qui cum iret mortuus est, et rediit collega ad Petrum.  Et Petrus ait: accipe baculum, et tangens eum dic ut in nomine Domini surgat et praedicet.  Et ivit quadragesima die a tempore mortis tetigit eum, et resurrexit et praedicavit, et ita Petrus removit a se baculum, et dedit subditis.  Designatur autem per baculum ea quae his versibus comprehenduntur: in baculi forma praesul datur haec tibi norma. // Attrahe per primum medio rege punge per imum. // Attrahe peccantes rege iustos punge vagantes // Attrahe sustenta stimula vaga morbida lenta.  Vincen.
+1	Martialis	_	_	_	_	_	_	_	_
+2	unus	_	_	_	_	_	_	_	_
+3	de	_	_	_	_	_	_	_	_
+4	discipulis	_	_	_	_	_	_	_	_
+5	Petri	_	_	_	_	_	_	_	SpaceAfter=No
+6	,	_	_	_	_	_	_	_	_
+7	quem	_	_	_	_	_	_	_	_
+8	posuit	_	_	_	_	_	_	_	_
+9	Dominus	_	_	_	_	_	_	_	_
+10	inter	_	_	_	_	_	_	_	_
+11	discipulos	_	_	_	_	_	_	_	_
+12	cum	_	_	_	_	_	_	_	_
+13	dixit	_	_	_	_	_	_	_	SpaceAfter=No
+14	:	_	_	_	_	_	_	_	_
+15	nisi	_	_	_	_	_	_	_	_
+16	efficiamini	_	_	_	_	_	_	_	_
+17	sicut	_	_	_	_	_	_	_	_
+18	parvulus	_	_	_	_	_	_	_	_
+19	iste	_	_	_	_	_	_	_	SpaceAfter=No
+20	,	_	_	_	_	_	_	_	_
+21	non	_	_	_	_	_	_	_	_
+22	intrabitis	_	_	_	_	_	_	_	_
+23	in	_	_	_	_	_	_	_	_
+24	regnum	_	_	_	_	_	_	_	_
+25	caelorum	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	etc	_	_	_	_	_	_	_	SpaceAfter=No
+28	.	_	_	_	_	_	_	_	SpaceAfter=No
+29	,	_	_	_	_	_	_	_	_
+30	quem	_	_	_	_	_	_	_	_
+31	postea	_	_	_	_	_	_	_	_
+32	Petrus	_	_	_	_	_	_	_	_
+33	cum	_	_	_	_	_	_	_	_
+34	alio	_	_	_	_	_	_	_	SpaceAfter=No
+35	,	_	_	_	_	_	_	_	_
+36	scilicet	_	_	_	_	_	_	_	_
+37	Matthaeo	_	_	_	_	_	_	_	SpaceAfter=No
+38	,	_	_	_	_	_	_	_	_
+39	ad	_	_	_	_	_	_	_	_
+40	praedicandum	_	_	_	_	_	_	_	_
+41	misit	_	_	_	_	_	_	_	_
+42	in	_	_	_	_	_	_	_	_
+43	Germaniam	_	_	_	_	_	_	_	SpaceAfter=No
+44	,	_	_	_	_	_	_	_	_
+45	qui	_	_	_	_	_	_	_	_
+46	cum	_	_	_	_	_	_	_	_
+47	iret	_	_	_	_	_	_	_	_
+48	mortuus	_	_	_	_	_	_	_	_
+49	est	_	_	_	_	_	_	_	SpaceAfter=No
+50	,	_	_	_	_	_	_	_	_
+51	et	_	_	_	_	_	_	_	_
+52	rediit	_	_	_	_	_	_	_	_
+53	collega	_	_	_	_	_	_	_	_
+54	ad	_	_	_	_	_	_	_	_
+55	Petrum	_	_	_	_	_	_	_	SpaceAfter=No
+56	.	_	_	_	_	_	_	_	_
+57	Et	_	_	_	_	_	_	_	_
+58	Petrus	_	_	_	_	_	_	_	_
+59	ait	_	_	_	_	_	_	_	SpaceAfter=No
+60	:	_	_	_	_	_	_	_	_
+61	accipe	_	_	_	_	_	_	_	_
+62	baculum	_	_	_	_	_	_	_	SpaceAfter=No
+63	,	_	_	_	_	_	_	_	_
+64	et	_	_	_	_	_	_	_	_
+65	tangens	_	_	_	_	_	_	_	_
+66	eum	_	_	_	_	_	_	_	_
+67	dic	_	_	_	_	_	_	_	_
+68	ut	_	_	_	_	_	_	_	_
+69	in	_	_	_	_	_	_	_	_
+70	nomine	_	_	_	_	_	_	_	_
+71	Domini	_	_	_	_	_	_	_	_
+72	surgat	_	_	_	_	_	_	_	_
+73	et	_	_	_	_	_	_	_	_
+74	praedicet	_	_	_	_	_	_	_	SpaceAfter=No
+75	.	_	_	_	_	_	_	_	_
+76	Et	_	_	_	_	_	_	_	_
+77	ivit	_	_	_	_	_	_	_	_
+78	quadragesima	_	_	_	_	_	_	_	_
+79	die	_	_	_	_	_	_	_	_
+80	a	_	_	_	_	_	_	_	_
+81	tempore	_	_	_	_	_	_	_	_
+82	mortis	_	_	_	_	_	_	_	_
+83	tetigit	_	_	_	_	_	_	_	_
+84	eum	_	_	_	_	_	_	_	SpaceAfter=No
+85	,	_	_	_	_	_	_	_	_
+86	et	_	_	_	_	_	_	_	_
+87	resurrexit	_	_	_	_	_	_	_	_
+88	et	_	_	_	_	_	_	_	_
+89	praedicavit	_	_	_	_	_	_	_	SpaceAfter=No
+90	,	_	_	_	_	_	_	_	_
+91	et	_	_	_	_	_	_	_	_
+92	ita	_	_	_	_	_	_	_	_
+93	Petrus	_	_	_	_	_	_	_	_
+94	removit	_	_	_	_	_	_	_	_
+95	a	_	_	_	_	_	_	_	_
+96	se	_	_	_	_	_	_	_	_
+97	baculum	_	_	_	_	_	_	_	SpaceAfter=No
+98	,	_	_	_	_	_	_	_	_
+99	et	_	_	_	_	_	_	_	_
+100	dedit	_	_	_	_	_	_	_	_
+101	subditis	_	_	_	_	_	_	_	SpaceAfter=No
+102	.	_	_	_	_	_	_	_	_
+103	Designatur	_	_	_	_	_	_	_	_
+104	autem	_	_	_	_	_	_	_	_
+105	per	_	_	_	_	_	_	_	_
+106	baculum	_	_	_	_	_	_	_	_
+107	ea	_	_	_	_	_	_	_	_
+108	quae	_	_	_	_	_	_	_	_
+109	his	_	_	_	_	_	_	_	_
+110	versibus	_	_	_	_	_	_	_	_
+111	comprehenduntur	_	_	_	_	_	_	_	SpaceAfter=No
+112	:	_	_	_	_	_	_	_	_
+113	in	_	_	_	_	_	_	_	_
+114	baculi	_	_	_	_	_	_	_	_
+115	forma	_	_	_	_	_	_	_	_
+116	praesul	_	_	_	_	_	_	_	_
+117	datur	_	_	_	_	_	_	_	_
+118	haec	_	_	_	_	_	_	_	_
+119	tibi	_	_	_	_	_	_	_	_
+120	norma	_	_	_	_	_	_	_	SpaceAfter=No
+121	.	_	_	_	_	_	_	_	_
+122	/	_	_	_	_	_	_	_	SpaceAfter=No
+123	/	_	_	_	_	_	_	_	_
+124	Attrahe	_	_	_	_	_	_	_	_
+125	per	_	_	_	_	_	_	_	_
+126	primum	_	_	_	_	_	_	_	_
+127	medio	_	_	_	_	_	_	_	_
+128	rege	_	_	_	_	_	_	_	_
+129	punge	_	_	_	_	_	_	_	_
+130	per	_	_	_	_	_	_	_	_
+131	imum	_	_	_	_	_	_	_	SpaceAfter=No
+132	.	_	_	_	_	_	_	_	_
+133	/	_	_	_	_	_	_	_	SpaceAfter=No
+134	/	_	_	_	_	_	_	_	_
+135	Attrahe	_	_	_	_	_	_	_	_
+136	peccantes	_	_	_	_	_	_	_	_
+137	rege	_	_	_	_	_	_	_	_
+138	iustos	_	_	_	_	_	_	_	_
+139	punge	_	_	_	_	_	_	_	_
+140	vagantes	_	_	_	_	_	_	_	_
+141	/	_	_	_	_	_	_	_	SpaceAfter=No
+142	/	_	_	_	_	_	_	_	_
+143	Attrahe	_	_	_	_	_	_	_	_
+144	sustenta	_	_	_	_	_	_	_	_
+145	stimula	_	_	_	_	_	_	_	_
+146	vaga	_	_	_	_	_	_	_	_
+147	morbida	_	_	_	_	_	_	_	_
+148	lenta	_	_	_	_	_	_	_	SpaceAfter=No
+149	.	_	_	_	_	_	_	_	_
+150	Vincen	_	_	_	_	_	_	_	SpaceAfter=No
+151	.	_	_	_	_	_	_	_	_
+
+# text = Mysticam rationem
+1	Mysticam	_	_	_	_	_	_	_	_
+2	rationem	_	_	_	_	_	_	_	_
+
+# text = Quia baculus habet in summitate recuruationem, quasi ad trahendum, quod non est necessarium Romano Pontifici, quia nullus ab illo divertere potest finaliter, quia ecclesia non potest esse nulla, 24. q. 1, pudenda, in fi.  Vel quia per baculum designatur coerctio sive castigatio, ideo alii pontifices recipiunt a suis superioribus baculos, quia ab homine potestatem recipiunt.  Romanus Pontifex non utitur baculo, quia potestatem a solo Deo recipit.
+1	Quia	_	_	_	_	_	_	_	_
+2	baculus	_	_	_	_	_	_	_	_
+3	habet	_	_	_	_	_	_	_	_
+4	in	_	_	_	_	_	_	_	_
+5	summitate	_	_	_	_	_	_	_	_
+6	recuruationem	_	_	_	_	_	_	_	SpaceAfter=No
+7	,	_	_	_	_	_	_	_	_
+8	quasi	_	_	_	_	_	_	_	_
+9	ad	_	_	_	_	_	_	_	_
+10	trahendum	_	_	_	_	_	_	_	SpaceAfter=No
+11	,	_	_	_	_	_	_	_	_
+12	quod	_	_	_	_	_	_	_	_
+13	non	_	_	_	_	_	_	_	_
+14	est	_	_	_	_	_	_	_	_
+15	necessarium	_	_	_	_	_	_	_	_
+16	Romano	_	_	_	_	_	_	_	_
+17	Pontifici	_	_	_	_	_	_	_	SpaceAfter=No
+18	,	_	_	_	_	_	_	_	_
+19	quia	_	_	_	_	_	_	_	_
+20	nullus	_	_	_	_	_	_	_	_
+21	ab	_	_	_	_	_	_	_	_
+22	illo	_	_	_	_	_	_	_	_
+23	divertere	_	_	_	_	_	_	_	_
+24	potest	_	_	_	_	_	_	_	_
+25	finaliter	_	_	_	_	_	_	_	SpaceAfter=No
+26	,	_	_	_	_	_	_	_	_
+27	quia	_	_	_	_	_	_	_	_
+28	ecclesia	_	_	_	_	_	_	_	_
+29	non	_	_	_	_	_	_	_	_
+30	potest	_	_	_	_	_	_	_	_
+31	esse	_	_	_	_	_	_	_	_
+32	nulla	_	_	_	_	_	_	_	SpaceAfter=No
+33	,	_	_	_	_	_	_	_	_
+34	24	_	_	_	_	_	_	_	SpaceAfter=No
+35	.	_	_	_	_	_	_	_	_
+36	q	_	_	_	_	_	_	_	SpaceAfter=No
+37	.	_	_	_	_	_	_	_	_
+38	1	_	_	_	_	_	_	_	SpaceAfter=No
+39	,	_	_	_	_	_	_	_	_
+40	pudenda	_	_	_	_	_	_	_	SpaceAfter=No
+41	,	_	_	_	_	_	_	_	_
+42	in	_	_	_	_	_	_	_	_
+43	fi	_	_	_	_	_	_	_	SpaceAfter=No
+44	.	_	_	_	_	_	_	_	_
+45	Vel	_	_	_	_	_	_	_	_
+46	quia	_	_	_	_	_	_	_	_
+47	per	_	_	_	_	_	_	_	_
+48	baculum	_	_	_	_	_	_	_	_
+49	designatur	_	_	_	_	_	_	_	_
+50	coerctio	_	_	_	_	_	_	_	_
+51	sive	_	_	_	_	_	_	_	_
+52	castigatio	_	_	_	_	_	_	_	SpaceAfter=No
+53	,	_	_	_	_	_	_	_	_
+54	ideo	_	_	_	_	_	_	_	_
+55	alii	_	_	_	_	_	_	_	_
+56	pontifices	_	_	_	_	_	_	_	_
+57	recipiunt	_	_	_	_	_	_	_	_
+58	a	_	_	_	_	_	_	_	_
+59	suis	_	_	_	_	_	_	_	_
+60	superioribus	_	_	_	_	_	_	_	_
+61	baculos	_	_	_	_	_	_	_	SpaceAfter=No
+62	,	_	_	_	_	_	_	_	_
+63	quia	_	_	_	_	_	_	_	_
+64	ab	_	_	_	_	_	_	_	_
+65	homine	_	_	_	_	_	_	_	_
+66	potestatem	_	_	_	_	_	_	_	_
+67	recipiunt	_	_	_	_	_	_	_	SpaceAfter=No
+68	.	_	_	_	_	_	_	_	_
+69	Romanus	_	_	_	_	_	_	_	_
+70	Pontifex	_	_	_	_	_	_	_	_
+71	non	_	_	_	_	_	_	_	_
+72	utitur	_	_	_	_	_	_	_	_
+73	baculo	_	_	_	_	_	_	_	SpaceAfter=No
+74	,	_	_	_	_	_	_	_	_
+75	quia	_	_	_	_	_	_	_	_
+76	potestatem	_	_	_	_	_	_	_	_
+77	a	_	_	_	_	_	_	_	_
+78	solo	_	_	_	_	_	_	_	_
+79	Deo	_	_	_	_	_	_	_	_
+80	recipit	_	_	_	_	_	_	_	SpaceAfter=No
+81	.	_	_	_	_	_	_	_	_
+

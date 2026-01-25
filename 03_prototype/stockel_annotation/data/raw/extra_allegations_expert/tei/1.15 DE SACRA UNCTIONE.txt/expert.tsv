@@ -1,0 +1,1500 @@
+#FORMAT=WebAnno TSV 3.3
+
+
+#Text=X 1.15 DE SACRA UNCTIONE
+1-1	0-1	X	
+1-2	2-6	1.15	
+1-3	7-9	DE	
+1-4	10-15	SACRA	
+1-5	16-24	UNCTIONE	
+
+#Text=X 1.15.01 Cum venisset
+2-1	28-29	X	
+2-2	30-37	1.15.01	
+2-3	38-41	Cum	
+2-4	42-50	venisset	
+
+#Text=Apud vos
+3-1	55-59	Apud	
+3-2	60-63	vos	
+
+#Text=Id est, apud Graecos.  Scribit enim patriarchae Constantinopolitano.
+4-1	65-67	Id	
+4-2	68-71	est	
+4-3	71-72	,	
+4-4	73-77	apud	
+4-5	78-85	Graecos	
+4-6	85-86	.	
+4-7	88-95	Scribit	
+4-8	96-100	enim	
+4-9	101-112	patriarchae	
+4-10	113-132	Constantinopolitano	
+4-11	132-133	.	
+
+#Text=Suppleri
+5-1	138-146	Suppleri	
+
+#Text=Ut 1. q. 1, Spiritus Sanctus § ecce quando ab haereticis.  Ergo caute supplendum est quod incaute praetermissum fuerat, infra, de sacram. non iter., pastoralis; et infra, de sacram. non iter., presbyter; unde non dicitur actum cum aliquid superest ad agendum, C. de his quib. ut indign., cum Silanianum.; et 7. q. 1, nihil.
+6-1	148-150	Ut	
+6-2	151-152	1	
+6-3	152-153	.	
+6-4	154-155	q	
+6-5	155-156	.	
+6-6	157-158	1	
+6-7	158-159	,	
+6-8	160-168	Spiritus	
+6-9	169-176	Sanctus	
+6-10	177-178	§	
+6-11	179-183	ecce	
+6-12	184-190	quando	
+6-13	191-193	ab	
+6-14	194-204	haereticis	
+6-15	204-205	.	
+6-16	207-211	Ergo	
+6-17	212-217	caute	
+6-18	218-228	supplendum	
+6-19	229-232	est	
+6-20	233-237	quod	
+6-21	238-245	incaute	
+6-22	246-259	praetermissum	
+6-23	260-266	fuerat	
+6-24	266-267	,	
+6-25	268-273	infra	
+6-26	273-274	,	
+6-27	275-277	de	
+6-28	278-284	sacram	
+6-29	284-285	.	
+6-30	286-289	non	
+6-31	290-294	iter	
+6-32	294-295	.	
+6-33	295-296	,	
+6-34	297-307	pastoralis	
+6-35	307-308	;	
+6-36	309-311	et	
+6-37	312-317	infra	
+6-38	317-318	,	
+6-39	319-321	de	
+6-40	322-328	sacram	
+6-41	328-329	.	
+6-42	330-333	non	
+6-43	334-338	iter	
+6-44	338-339	.	
+6-45	339-340	,	
+6-46	341-350	presbyter	
+6-47	350-351	;	
+6-48	352-356	unde	
+6-49	357-360	non	
+6-50	361-368	dicitur	
+6-51	369-374	actum	
+6-52	375-378	cum	
+6-53	379-386	aliquid	
+6-54	387-395	superest	
+6-55	396-398	ad	
+6-56	399-406	agendum	
+6-57	406-407	,	
+6-58	408-409	C	
+6-59	409-410	.	
+6-60	411-413	de	
+6-61	414-417	his	
+6-62	418-422	quib	
+6-63	422-423	.	
+6-64	424-426	ut	
+6-65	427-433	indign	
+6-66	433-434	.	
+6-67	434-435	,	
+6-68	436-439	cum	
+6-69	440-450	Silanianum	
+6-70	450-451	.	
+6-71	451-452	;	
+6-72	453-455	et	
+6-73	456-457	7	
+6-74	457-458	.	
+6-75	459-460	q	
+6-76	460-461	.	
+6-77	462-463	1	
+6-78	463-464	,	
+6-79	465-470	nihil	
+6-80	470-471	.	
+
+#Text=Assistentibus et duobus
+7-1	476-489	Assistentibus	
+7-2	490-492	et	
+7-3	493-499	duobus	
+
+#Text=Quia in consecratione episcoporum ad minus tres episcopi debent esse, 66. dist., porro; et supra, de temp. ord., si archiepiscopus.
+8-1	501-505	Quia	
+8-2	506-508	in	
+8-3	509-522	consecratione	
+8-4	523-534	episcoporum	
+8-5	535-537	ad	
+8-6	538-543	minus	
+8-7	544-548	tres	
+8-8	549-557	episcopi	
+8-9	558-564	debent	
+8-10	565-569	esse	
+8-11	569-570	,	
+8-12	571-573	66	
+8-13	573-574	.	
+8-14	575-579	dist	
+8-15	579-580	.	
+8-16	580-581	,	
+8-17	582-587	porro	
+8-18	587-588	;	
+8-19	589-591	et	
+8-20	592-597	supra	
+8-21	597-598	,	
+8-22	599-601	de	
+8-23	602-606	temp	
+8-24	606-607	.	
+8-25	608-611	ord	
+8-26	611-612	.	
+8-27	612-613	,	
+8-28	614-616	si	
+8-29	617-631	archiepiscopus	
+8-30	631-632	.	
+
+#Text=Inungitur cor
+9-1	637-646	Inungitur	
+9-2	647-650	cor	
+
+#Text=Immo anima, sed hoc ideo dicit, quia anima sedem habet in corde principaliter, vel potius quia non fructificat unctio in anima, nisi ex corde et voluntate procedat.  Vincen.
+10-1	652-656	Immo	
+10-2	657-662	anima	
+10-3	662-663	,	
+10-4	664-667	sed	
+10-5	668-671	hoc	
+10-6	672-676	ideo	
+10-7	677-682	dicit	
+10-8	682-683	,	
+10-9	684-688	quia	
+10-10	689-694	anima	
+10-11	695-700	sedem	
+10-12	701-706	habet	
+10-13	707-709	in	
+10-14	710-715	corde	
+10-15	716-729	principaliter	
+10-16	729-730	,	
+10-17	731-734	vel	
+10-18	735-741	potius	
+10-19	742-746	quia	
+10-20	747-750	non	
+10-21	751-762	fructificat	
+10-22	763-769	unctio	
+10-23	770-772	in	
+10-24	773-778	anima	
+10-25	778-779	,	
+10-26	780-784	nisi	
+10-27	785-787	ex	
+10-28	788-793	corde	
+10-29	794-796	et	
+10-30	797-806	voluntate	
+10-31	807-815	procedat	
+10-32	815-816	.	
+10-33	818-824	Vincen	
+10-34	824-825	.	
+
+#Text=Infirmatur
+11-1	830-840	Infirmatur	
+
+#Text=95. dist., presbyteros § sed istud.
+12-1	842-844	95	
+12-2	844-845	.	
+12-3	846-850	dist	
+12-4	850-851	.	
+12-5	851-852	,	
+12-6	853-864	presbyteros	
+12-7	865-866	§	
+12-8	867-870	sed	
+12-9	871-876	istud	
+12-10	876-877	.	
+
+#Text=Unctionem
+13-1	882-891	Unctionem	
+
+#Text=Id est, unctio.  Figura est antiptosis, cum casus ponitur pro casu, simile 25. dist., primum; et 65. dist., sane si, vers. omnis sanctificatio, id est, omnem sanctificatum; et infra, de iudic., de Quodvultdeo, vers. quem id est qui.
+14-1	893-895	Id	
+14-2	896-899	est	
+14-3	899-900	,	
+14-4	901-907	unctio	
+14-5	907-908	.	
+14-6	910-916	Figura	
+14-7	917-920	est	
+14-8	921-931	antiptosis	
+14-9	931-932	,	
+14-10	933-936	cum	
+14-11	937-942	casus	
+14-12	943-950	ponitur	
+14-13	951-954	pro	
+14-14	955-959	casu	
+14-15	959-960	,	
+14-16	961-967	simile	
+14-17	968-970	25	
+14-18	970-971	.	
+14-19	972-976	dist	
+14-20	976-977	.	
+14-21	977-978	,	
+14-22	979-985	primum	
+14-23	985-986	;	
+14-24	987-989	et	
+14-25	990-992	65	
+14-26	992-993	.	
+14-27	994-998	dist	
+14-28	998-999	.	
+14-29	999-1000	,	
+14-30	1001-1005	sane	
+14-31	1006-1008	si	
+14-32	1008-1009	,	
+14-33	1010-1014	vers	
+14-34	1014-1015	.	
+14-35	1016-1021	omnis	
+14-36	1022-1035	sanctificatio	
+14-37	1035-1036	,	
+14-38	1037-1039	id	
+14-39	1040-1043	est	
+14-40	1043-1044	,	
+14-41	1045-1050	omnem	
+14-42	1051-1064	sanctificatum	
+14-43	1064-1065	;	
+14-44	1066-1068	et	
+14-45	1069-1074	infra	
+14-46	1074-1075	,	
+14-47	1076-1078	de	
+14-48	1079-1084	iudic	
+14-49	1084-1085	.	
+14-50	1085-1086	,	
+14-51	1087-1089	de	
+14-52	1090-1101	Quodvultdeo	
+14-53	1101-1102	,	
+14-54	1103-1107	vers	
+14-55	1107-1108	.	
+14-56	1109-1113	quem	
+14-57	1114-1116	id	
+14-58	1117-1120	est	
+14-59	1121-1124	qui	
+14-60	1124-1125	.	
+
+#Text=Sacramentum
+15-1	1130-1141	Sacramentum	
+
+#Text=Simile de conse. dist. 4, necessarium; et infra, de celeb. miss., cum Marthae § ex eo, in fi.
+16-1	1143-1149	Simile	
+16-2	1150-1152	de	
+16-3	1153-1158	conse	
+16-4	1158-1159	.	
+16-5	1160-1164	dist	
+16-6	1164-1165	.	
+16-7	1166-1167	4	
+16-8	1167-1168	,	
+16-9	1169-1180	necessarium	
+16-10	1180-1181	;	
+16-11	1182-1184	et	
+16-12	1185-1190	infra	
+16-13	1190-1191	,	
+16-14	1192-1194	de	
+16-15	1195-1200	celeb	
+16-16	1200-1201	.	
+16-17	1202-1206	miss	
+16-18	1206-1207	.	
+16-19	1207-1208	,	
+16-20	1209-1212	cum	
+16-21	1213-1220	Marthae	
+16-22	1221-1222	§	
+16-23	1223-1225	ex	
+16-24	1226-1228	eo	
+16-25	1228-1229	,	
+16-26	1230-1232	in	
+16-27	1233-1235	fi	
+16-28	1235-1236	.	
+
+#Text=Agit
+17-1	1241-1245	Agit	
+
+#Text=Scilicet, salutem.
+18-1	1247-1255	Scilicet	
+18-2	1255-1256	,	
+18-3	1257-1264	salutem	
+18-4	1264-1265	.	
+
+#Text=Auget
+19-1	1270-1275	Auget	
+
+#Text=Iuxta illud: super aegros manus imponent, et bene habebunt, et vere auget sicut confirmatio, infra, de sacr. unct., cum venisset, vers. quia per eam Spirtitus Sanctus ad augmentum datur, et robur, etc.
+20-1	1277-1282	Iuxta	
+20-2	1283-1288	illud	
+20-3	1288-1289	:	
+20-4	1290-1295	super	
+20-5	1296-1302	aegros	
+20-6	1303-1308	manus	
+20-7	1309-1317	imponent	
+20-8	1317-1318	,	
+20-9	1319-1321	et	
+20-10	1322-1326	bene	
+20-11	1327-1335	habebunt	
+20-12	1335-1336	,	
+20-13	1337-1339	et	
+20-14	1340-1344	vere	
+20-15	1345-1350	auget	
+20-16	1351-1356	sicut	
+20-17	1357-1368	confirmatio	
+20-18	1368-1369	,	
+20-19	1370-1375	infra	
+20-20	1375-1376	,	
+20-21	1377-1379	de	
+20-22	1380-1384	sacr	
+20-23	1384-1385	.	
+20-24	1386-1390	unct	
+20-25	1390-1391	.	
+20-26	1391-1392	,	
+20-27	1393-1396	cum	
+20-28	1397-1405	venisset	
+20-29	1405-1406	,	
+20-30	1407-1411	vers	
+20-31	1411-1412	.	
+20-32	1413-1417	quia	
+20-33	1418-1421	per	
+20-34	1422-1425	eam	
+20-35	1426-1435	Spirtitus	
+20-36	1436-1443	Sanctus	
+20-37	1444-1446	ad	
+20-38	1447-1456	augmentum	
+20-39	1457-1462	datur	
+20-40	1462-1463	,	
+20-41	1464-1466	et	
+20-42	1467-1472	robur	
+20-43	1472-1473	,	
+20-44	1474-1477	etc	
+20-45	1477-1478	.	
+
+#Text=Mystica ratione
+21-1	1483-1490	Mystica	
+21-2	1491-1498	ratione	
+
+#Text=Prout statim sequitur.
+22-1	1500-1505	Prout	
+22-2	1506-1512	statim	
+22-3	1513-1521	sequitur	
+22-4	1521-1522	.	
+
+#Text=Legitur
+23-1	1527-1534	Legitur	
+
+#Text=In evangelio sancti Matthaei.
+24-1	1536-1538	In	
+24-2	1539-1548	evangelio	
+24-3	1549-1555	sancti	
+24-4	1556-1564	Matthaei	
+24-5	1564-1565	.	
+
+#Text=Dicitur
+25-1	1570-1577	Dicitur	
+
+#Text=In libro Sapientiae.
+26-1	1579-1581	In	
+26-2	1582-1587	libro	
+26-3	1588-1598	Sapientiae	
+26-4	1598-1599	.	
+
+#Text=Quo ad proximum
+27-1	1604-1607	Quo	
+27-2	1608-1610	ad	
+27-3	1611-1619	proximum	
+
+#Text=Ista duo necessaria sunt, 12. q. 1, nolo; et 11. q. 3, non sunt audendi.
+28-1	1621-1625	Ista	
+28-2	1626-1629	duo	
+28-3	1630-1640	necessaria	
+28-4	1641-1645	sunt	
+28-5	1645-1646	,	
+28-6	1647-1649	12	
+28-7	1649-1650	.	
+28-8	1651-1652	q	
+28-9	1652-1653	.	
+28-10	1654-1655	1	
+28-11	1655-1656	,	
+28-12	1657-1661	nolo	
+28-13	1661-1662	;	
+28-14	1663-1665	et	
+28-15	1666-1668	11	
+28-16	1668-1669	.	
+28-17	1670-1671	q	
+28-18	1671-1672	.	
+28-19	1673-1674	3	
+28-20	1674-1675	,	
+28-21	1676-1679	non	
+28-22	1680-1684	sunt	
+28-23	1685-1692	audendi	
+28-24	1692-1693	.	
+
+#Text=Ab intus
+29-1	1698-1700	Ab	
+29-2	1701-1706	intus	
+
+#Text=Procedit.  Supple unctio.
+30-1	1708-1716	Procedit	
+30-2	1716-1717	.	
+30-3	1719-1725	Supple	
+30-4	1726-1732	unctio	
+30-5	1732-1733	.	
+
+#Text=Bonus odor
+31-1	1738-1743	Bonus	
+31-2	1744-1748	odor	
+
+#Text=Id est, exemplum et imitatio Apostolorum, quoniam Apostoli per praedicationem et famam invitabant homines ad salutem.  Verba ista habes 23. q. 4, Nabuchodonosor.  Et dicitur bonus odor praedicatio bonorum, quam quidam ex caritate suscipiunt.  Et inde isti in anima vivunt, unde dicit: aliis sumus odor vitae in vitam, scilicet, aeternam.  Alii vilipendunt et contemnunt praedicationem bonorum, et isti de tali contempu mortem incurrunt animae, unde dicitur: aliis sumus odor mortis in mortem, scilicet, aeternam.  Et ita ex eodem bono odore alii salvantur, et alii pereunt.
+32-1	1750-1752	Id	
+32-2	1753-1756	est	
+32-3	1756-1757	,	
+32-4	1758-1766	exemplum	
+32-5	1767-1769	et	
+32-6	1770-1778	imitatio	
+32-7	1779-1790	Apostolorum	
+32-8	1790-1791	,	
+32-9	1792-1799	quoniam	
+32-10	1800-1808	Apostoli	
+32-11	1809-1812	per	
+32-12	1813-1827	praedicationem	
+32-13	1828-1830	et	
+32-14	1831-1836	famam	
+32-15	1837-1847	invitabant	
+32-16	1848-1855	homines	
+32-17	1856-1858	ad	
+32-18	1859-1866	salutem	
+32-19	1866-1867	.	
+32-20	1869-1874	Verba	
+32-21	1875-1879	ista	
+32-22	1880-1885	habes	
+32-23	1886-1888	23	
+32-24	1888-1889	.	
+32-25	1890-1891	q	
+32-26	1891-1892	.	
+32-27	1893-1894	4	
+32-28	1894-1895	,	
+32-29	1896-1910	Nabuchodonosor	
+32-30	1910-1911	.	
+32-31	1913-1915	Et	
+32-32	1916-1923	dicitur	
+32-33	1924-1929	bonus	
+32-34	1930-1934	odor	
+32-35	1935-1946	praedicatio	
+32-36	1947-1954	bonorum	
+32-37	1954-1955	,	
+32-38	1956-1960	quam	
+32-39	1961-1967	quidam	
+32-40	1968-1970	ex	
+32-41	1971-1979	caritate	
+32-42	1980-1990	suscipiunt	
+32-43	1990-1991	.	
+32-44	1993-1995	Et	
+32-45	1996-2000	inde	
+32-46	2001-2005	isti	
+32-47	2006-2008	in	
+32-48	2009-2014	anima	
+32-49	2015-2021	vivunt	
+32-50	2021-2022	,	
+32-51	2023-2027	unde	
+32-52	2028-2033	dicit	
+32-53	2033-2034	:	
+32-54	2035-2040	aliis	
+32-55	2041-2046	sumus	
+32-56	2047-2051	odor	
+32-57	2052-2057	vitae	
+32-58	2058-2060	in	
+32-59	2061-2066	vitam	
+32-60	2066-2067	,	
+32-61	2068-2076	scilicet	
+32-62	2076-2077	,	
+32-63	2078-2086	aeternam	
+32-64	2086-2087	.	
+32-65	2089-2093	Alii	
+32-66	2094-2105	vilipendunt	
+32-67	2106-2108	et	
+32-68	2109-2119	contemnunt	
+32-69	2120-2134	praedicationem	
+32-70	2135-2142	bonorum	
+32-71	2142-2143	,	
+32-72	2144-2146	et	
+32-73	2147-2151	isti	
+32-74	2152-2154	de	
+32-75	2155-2159	tali	
+32-76	2160-2168	contempu	
+32-77	2169-2175	mortem	
+32-78	2176-2185	incurrunt	
+32-79	2186-2192	animae	
+32-80	2192-2193	,	
+32-81	2194-2198	unde	
+32-82	2199-2206	dicitur	
+32-83	2206-2207	:	
+32-84	2208-2213	aliis	
+32-85	2214-2219	sumus	
+32-86	2220-2224	odor	
+32-87	2225-2231	mortis	
+32-88	2232-2234	in	
+32-89	2235-2241	mortem	
+32-90	2241-2242	,	
+32-91	2243-2251	scilicet	
+32-92	2251-2252	,	
+32-93	2253-2261	aeternam	
+32-94	2261-2262	.	
+32-95	2264-2266	Et	
+32-96	2267-2270	ita	
+32-97	2271-2273	ex	
+32-98	2274-2279	eodem	
+32-99	2280-2284	bono	
+32-100	2285-2290	odore	
+32-101	2291-2295	alii	
+32-102	2296-2305	salvantur	
+32-103	2305-2306	,	
+32-104	2307-2309	et	
+32-105	2310-2314	alii	
+32-106	2315-2322	pereunt	
+32-107	2322-2323	.	
+
+#Text=Vitae
+33-1	2328-2333	Vitae	
+
+#Text=Id est, dilectionis, et bonae opinionis ducentis eos in vitam, scilicet, aeternam.
+34-1	2335-2337	Id	
+34-2	2338-2341	est	
+34-3	2341-2342	,	
+34-4	2343-2354	dilectionis	
+34-5	2354-2355	,	
+34-6	2356-2358	et	
+34-7	2359-2364	bonae	
+34-8	2365-2374	opinionis	
+34-9	2375-2383	ducentis	
+34-10	2384-2387	eos	
+34-11	2388-2390	in	
+34-12	2391-2396	vitam	
+34-13	2396-2397	,	
+34-14	2398-2406	scilicet	
+34-15	2406-2407	,	
+34-16	2408-2416	aeternam	
+34-17	2416-2417	.	
+
+#Text=Mortis
+35-1	2422-2428	Mortis	
+
+#Text=Id est, invidiae, et malae opinionis, ducentus eos in mortem, scilicet, aeternam.
+36-1	2430-2432	Id	
+36-2	2433-2436	est	
+36-3	2436-2437	,	
+36-4	2438-2446	invidiae	
+36-5	2446-2447	,	
+36-6	2448-2450	et	
+36-7	2451-2456	malae	
+36-8	2457-2466	opinionis	
+36-9	2466-2467	,	
+36-10	2468-2476	ducentus	
+36-11	2477-2480	eos	
+36-12	2481-2483	in	
+36-13	2484-2490	mortem	
+36-14	2490-2491	,	
+36-15	2492-2500	scilicet	
+36-16	2500-2501	,	
+36-17	2502-2510	aeternam	
+36-18	2510-2511	.	
+
+#Text=Foris
+37-1	2516-2521	Foris	
+
+#Text=Simile 8. q. 1, licet ergo; et 63. dist., plebs; et 63. dist., nosse; et 63. dist., vota civium; et 63. dist., si forte; et de conse. dist. 1, iubemus.
+38-1	2523-2529	Simile	
+38-2	2530-2531	8	
+38-3	2531-2532	.	
+38-4	2533-2534	q	
+38-5	2534-2535	.	
+38-6	2536-2537	1	
+38-7	2537-2538	,	
+38-8	2539-2544	licet	
+38-9	2545-2549	ergo	
+38-10	2549-2550	;	
+38-11	2551-2553	et	
+38-12	2554-2556	63	
+38-13	2556-2557	.	
+38-14	2558-2562	dist	
+38-15	2562-2563	.	
+38-16	2563-2564	,	
+38-17	2565-2570	plebs	
+38-18	2570-2571	;	
+38-19	2572-2574	et	
+38-20	2575-2577	63	
+38-21	2577-2578	.	
+38-22	2579-2583	dist	
+38-23	2583-2584	.	
+38-24	2584-2585	,	
+38-25	2586-2591	nosse	
+38-26	2591-2592	;	
+38-27	2593-2595	et	
+38-28	2596-2598	63	
+38-29	2598-2599	.	
+38-30	2600-2604	dist	
+38-31	2604-2605	.	
+38-32	2605-2606	,	
+38-33	2607-2611	vota	
+38-34	2612-2618	civium	
+38-35	2618-2619	;	
+38-36	2620-2622	et	
+38-37	2623-2625	63	
+38-38	2625-2626	.	
+38-39	2627-2631	dist	
+38-40	2631-2632	.	
+38-41	2632-2633	,	
+38-42	2634-2636	si	
+38-43	2637-2642	forte	
+38-44	2642-2643	;	
+38-45	2644-2646	et	
+38-46	2647-2649	de	
+38-47	2650-2655	conse	
+38-48	2655-2656	.	
+38-49	2657-2661	dist	
+38-50	2661-2662	.	
+38-51	2663-2664	1	
+38-52	2664-2665	,	
+38-53	2666-2673	iubemus	
+38-54	2673-2674	.	
+
+#Text=Ut cortina cortinam trahat
+39-1	2679-2681	Ut	
+39-2	2682-2689	cortina	
+39-3	2690-2698	cortinam	
+39-4	2699-2705	trahat	
+
+#Text=Id est, ut fidelis trahat infidelem, 28. q. 1, iam nunc.
+40-1	2707-2709	Id	
+40-2	2710-2713	est	
+40-3	2713-2714	,	
+40-4	2715-2717	ut	
+40-5	2718-2725	fidelis	
+40-6	2726-2732	trahat	
+40-7	2733-2742	infidelem	
+40-8	2742-2743	,	
+40-9	2744-2746	28	
+40-10	2746-2747	.	
+40-11	2748-2749	q	
+40-12	2749-2750	.	
+40-13	2751-2752	1	
+40-14	2752-2753	,	
+40-15	2754-2757	iam	
+40-16	2758-2762	nunc	
+40-17	2762-2763	.	
+
+#Text=Iuxta illud
+41-1	2768-2773	Iuxta	
+41-2	2774-2779	illud	
+
+#Text=Evangelii.  Vel dic iuxta illud in canticis canticorum.
+42-1	2781-2790	Evangelii	
+42-2	2790-2791	.	
+42-3	2793-2796	Vel	
+42-4	2797-2800	dic	
+42-5	2801-2806	iuxta	
+42-6	2807-2812	illud	
+42-7	2813-2815	in	
+42-8	2816-2824	canticis	
+42-9	2825-2835	canticorum	
+42-10	2835-2836	.	
+
+#Text=Sicut seipsum
+43-1	2841-2846	Sicut	
+43-2	2847-2854	seipsum	
+
+#Text=Id est, ad id quod seipsum.  Hoc adverbium sicut, non est sicutissimum, quia ordinata caritas prius debet incipere a seipso, 23. q. 5, si non licet.  Unde primo debet quis facere eleemosynam sibi, deinde proximo, de poen. dist. 3, sane cavendum; C. de servit., praeses.
+44-1	2856-2858	Id	
+44-2	2859-2862	est	
+44-3	2862-2863	,	
+44-4	2864-2866	ad	
+44-5	2867-2869	id	
+44-6	2870-2874	quod	
+44-7	2875-2882	seipsum	
+44-8	2882-2883	.	
+44-9	2885-2888	Hoc	
+44-10	2889-2898	adverbium	
+44-11	2899-2904	sicut	
+44-12	2904-2905	,	
+44-13	2906-2909	non	
+44-14	2910-2913	est	
+44-15	2914-2926	sicutissimum	
+44-16	2926-2927	,	
+44-17	2928-2932	quia	
+44-18	2933-2941	ordinata	
+44-19	2942-2949	caritas	
+44-20	2950-2955	prius	
+44-21	2956-2961	debet	
+44-22	2962-2970	incipere	
+44-23	2971-2972	a	
+44-24	2973-2979	seipso	
+44-25	2979-2980	,	
+44-26	2981-2983	23	
+44-27	2983-2984	.	
+44-28	2985-2986	q	
+44-29	2986-2987	.	
+44-30	2988-2989	5	
+44-31	2989-2990	,	
+44-32	2991-2993	si	
+44-33	2994-2997	non	
+44-34	2998-3003	licet	
+44-35	3003-3004	.	
+44-36	3006-3010	Unde	
+44-37	3011-3016	primo	
+44-38	3017-3022	debet	
+44-39	3023-3027	quis	
+44-40	3028-3034	facere	
+44-41	3035-3046	eleemosynam	
+44-42	3047-3051	sibi	
+44-43	3051-3052	,	
+44-44	3053-3059	deinde	
+44-45	3060-3067	proximo	
+44-46	3067-3068	,	
+44-47	3069-3071	de	
+44-48	3072-3076	poen	
+44-49	3076-3077	.	
+44-50	3078-3082	dist	
+44-51	3082-3083	.	
+44-52	3084-3085	3	
+44-53	3085-3086	,	
+44-54	3087-3091	sane	
+44-55	3092-3100	cavendum	
+44-56	3100-3101	;	
+44-57	3102-3103	C	
+44-58	3103-3104	.	
+44-59	3105-3107	de	
+44-60	3108-3114	servit	
+44-61	3114-3115	.	
+44-62	3115-3116	,	
+44-63	3117-3124	praeses	
+44-64	3124-3125	.	
+
+#Text=Illius
+45-1	3130-3136	Illius	
+
+#Text=Scilicet, Christi.
+46-1	3138-3146	Scilicet	
+46-2	3146-3147	,	
+46-3	3148-3155	Christi	
+46-4	3155-3156	.	
+
+#Text=Caput enim viri
+47-1	3161-3166	Caput	
+47-2	3167-3171	enim	
+47-3	3172-3176	viri	
+
+#Text=33. q. 5, cum caput.
+48-1	3178-3180	33	
+48-2	3180-3181	.	
+48-3	3182-3183	q	
+48-4	3183-3184	.	
+48-5	3185-3186	5	
+48-6	3186-3187	,	
+48-7	3188-3191	cum	
+48-8	3192-3197	caput	
+48-9	3197-3198	.	
+
+#Text=Consecrare inquit
+49-1	3203-3213	Consecrare	
+49-2	3214-3220	inquit	
+
+#Text=Haec benedictio dicitur ab episcopo dum consecrat manus presbyterorum.  Et sic communis est haec benedictio episcoporum et presbyterorum, 16. q. 1, generaliter § ecce.
+50-1	3222-3226	Haec	
+50-2	3227-3237	benedictio	
+50-3	3238-3245	dicitur	
+50-4	3246-3248	ab	
+50-5	3249-3257	episcopo	
+50-6	3258-3261	dum	
+50-7	3262-3271	consecrat	
+50-8	3272-3277	manus	
+50-9	3278-3291	presbyterorum	
+50-10	3291-3292	.	
+50-11	3294-3296	Et	
+50-12	3297-3300	sic	
+50-13	3301-3309	communis	
+50-14	3310-3313	est	
+50-15	3314-3318	haec	
+50-16	3319-3329	benedictio	
+50-17	3330-3341	episcoporum	
+50-18	3342-3344	et	
+50-19	3345-3358	presbyterorum	
+50-20	3358-3359	,	
+50-21	3360-3362	16	
+50-22	3362-3363	.	
+50-23	3364-3365	q	
+50-24	3365-3366	.	
+50-25	3367-3368	1	
+50-26	3368-3369	,	
+50-27	3370-3381	generaliter	
+50-28	3382-3383	§	
+50-29	3384-3388	ecce	
+50-30	3388-3389	.	
+
+#Text=Ubi
+51-1	3394-3397	Ubi	
+
+#Text=Id est, postquam.
+52-1	3399-3401	Id	
+52-2	3402-3405	est	
+52-3	3405-3406	,	
+52-4	3407-3415	postquam	
+52-5	3415-3416	.	
+
+#Text=Unxit
+53-1	3421-3426	Unxit	
+
+#Text=Mystica fuit et invisibilis unctio Christi, quia nec in regem nec in sacerdotem fuit unctus, ut 2. q. 7, testes § his ita respondetur.
+54-1	3428-3435	Mystica	
+54-2	3436-3440	fuit	
+54-3	3441-3443	et	
+54-4	3444-3455	invisibilis	
+54-5	3456-3462	unctio	
+54-6	3463-3470	Christi	
+54-7	3470-3471	,	
+54-8	3472-3476	quia	
+54-9	3477-3480	nec	
+54-10	3481-3483	in	
+54-11	3484-3489	regem	
+54-12	3490-3493	nec	
+54-13	3494-3496	in	
+54-14	3497-3507	sacerdotem	
+54-15	3508-3512	fuit	
+54-16	3513-3519	unctus	
+54-17	3519-3520	,	
+54-18	3521-3523	ut	
+54-19	3524-3525	2	
+54-20	3525-3526	.	
+54-21	3527-3528	q	
+54-22	3528-3529	.	
+54-23	3530-3531	7	
+54-24	3531-3532	,	
+54-25	3533-3539	testes	
+54-26	3540-3541	§	
+54-27	3542-3545	his	
+54-28	3546-3549	ita	
+54-29	3550-3561	respondetur	
+54-30	3561-3562	.	
+
+#Text=Ex tunc
+55-1	3567-3569	Ex	
+55-2	3570-3574	tunc	
+
+#Text=Id est, ex tempore Christi.
+56-1	3576-3578	Id	
+56-2	3579-3582	est	
+56-3	3582-3583	,	
+56-4	3584-3586	ex	
+56-5	3587-3594	tempore	
+56-6	3595-3602	Christi	
+56-7	3602-3603	.	
+
+#Text=Personam capitis
+57-1	3608-3616	Personam	
+57-2	3617-3624	capitis	
+
+#Text=Id est, Christi, qui est caput ecclesiae.
+58-1	3626-3628	Id	
+58-2	3629-3632	est	
+58-3	3632-3633	,	
+58-4	3634-3641	Christi	
+58-5	3641-3642	,	
+58-6	3643-3646	qui	
+58-7	3647-3650	est	
+58-8	3651-3656	caput	
+58-9	3657-3666	ecclesiae	
+58-10	3666-3667	.	
+
+#Text=Differentia
+59-1	3672-3683	Differentia	
+
+#Text=Quod ostenditur 96. dist., duo sunt; et infra, de maior. et obed., solitae.
+60-1	3685-3689	Quod	
+60-2	3690-3700	ostenditur	
+60-3	3701-3703	96	
+60-4	3703-3704	.	
+60-5	3705-3709	dist	
+60-6	3709-3710	.	
+60-7	3710-3711	,	
+60-8	3712-3715	duo	
+60-9	3716-3720	sunt	
+60-10	3720-3721	;	
+60-11	3722-3724	et	
+60-12	3725-3730	infra	
+60-13	3730-3731	,	
+60-14	3732-3734	de	
+60-15	3735-3740	maior	
+60-16	3740-3741	.	
+60-17	3742-3744	et	
+60-18	3745-3749	obed	
+60-19	3749-3750	.	
+60-20	3750-3751	,	
+60-21	3752-3759	solitae	
+60-22	3759-3760	.	
+
+#Text=In fronte
+61-1	3765-3767	In	
+61-2	3768-3774	fronte	
+
+#Text=Ut de conse. dist. 5, de his; et de conse. dist. 5, novissime; et de conse. dist. 5, manus; in quibus habetur significatio istarum unctionum.
+62-1	3776-3778	Ut	
+62-2	3779-3781	de	
+62-3	3782-3787	conse	
+62-4	3787-3788	.	
+62-5	3789-3793	dist	
+62-6	3793-3794	.	
+62-7	3795-3796	5	
+62-8	3796-3797	,	
+62-9	3798-3800	de	
+62-10	3801-3804	his	
+62-11	3804-3805	;	
+62-12	3806-3808	et	
+62-13	3809-3811	de	
+62-14	3812-3817	conse	
+62-15	3817-3818	.	
+62-16	3819-3823	dist	
+62-17	3823-3824	.	
+62-18	3825-3826	5	
+62-19	3826-3827	,	
+62-20	3828-3837	novissime	
+62-21	3837-3838	;	
+62-22	3839-3841	et	
+62-23	3842-3844	de	
+62-24	3845-3850	conse	
+62-25	3850-3851	.	
+62-26	3852-3856	dist	
+62-27	3856-3857	.	
+62-28	3858-3859	5	
+62-29	3859-3860	,	
+62-30	3861-3866	manus	
+62-31	3866-3867	;	
+62-32	3868-3870	in	
+62-33	3871-3877	quibus	
+62-34	3878-3885	habetur	
+62-35	3886-3898	significatio	
+62-36	3899-3906	istarum	
+62-37	3907-3916	unctionum	
+62-38	3916-3917	.	
+
+#Text=In pectore
+63-1	3922-3924	In	
+63-2	3925-3932	pectore	
+
+#Text=de conse. dist. 4, deinde; et de conse. dist. 4, presbyteri.
+64-1	3934-3936	de	
+64-2	3937-3942	conse	
+64-3	3942-3943	.	
+64-4	3944-3948	dist	
+64-5	3948-3949	.	
+64-6	3950-3951	4	
+64-7	3951-3952	,	
+64-8	3953-3959	deinde	
+64-9	3959-3960	;	
+64-10	3961-3963	et	
+64-11	3964-3966	de	
+64-12	3967-3972	conse	
+64-13	3972-3973	.	
+64-14	3974-3978	dist	
+64-15	3978-3979	.	
+64-16	3980-3981	4	
+64-17	3981-3982	,	
+64-18	3983-3993	presbyteri	
+64-19	3993-3994	.	
+
+#Text=Reddere rationem
+65-1	3999-4006	Reddere	
+65-2	4007-4015	rationem	
+
+#Text=Ut 36. dist., qui ecclesiasticis § ecce ad finem.
+66-1	4017-4019	Ut	
+66-2	4020-4022	36	
+66-3	4022-4023	.	
+66-4	4024-4028	dist	
+66-5	4028-4029	.	
+66-6	4029-4030	,	
+66-7	4031-4034	qui	
+66-8	4035-4049	ecclesiasticis	
+66-9	4050-4051	§	
+66-10	4052-4056	ecce	
+66-11	4057-4059	ad	
+66-12	4060-4065	finem	
+66-13	4065-4066	.	
+
+#Text=Simplex sacerdos
+67-1	4071-4078	Simplex	
+67-2	4079-4087	sacerdos	
+
+#Text=de conse. dist. 4, presbyteri.
+68-1	4089-4091	de	
+68-2	4092-4097	conse	
+68-3	4097-4098	.	
+68-4	4099-4103	dist	
+68-5	4103-4104	.	
+68-6	4105-4106	4	
+68-7	4106-4107	,	
+68-8	4108-4118	presbyteri	
+68-9	4118-4119	.	
+
+#Text=Hanc
+69-1	4124-4128	Hanc	
+
+#Text=Scilicet, confirmationem in fronte soli episcopi conferunt, supra, de consuet., quanto, ubi de hoc.  Arg. contra 95. dist., pervenit, ubi presbyteri chrismabant in fronte.  Solutio: illud concessit Gregorius dispensative ad tempus propter scandalum, ut ibi expresse patet, alias sacerdos nihil conferret, ut in capitulo supra, de consuet., quanto.
+70-1	4130-4138	Scilicet	
+70-2	4138-4139	,	
+70-3	4140-4154	confirmationem	
+70-4	4155-4157	in	
+70-5	4158-4164	fronte	
+70-6	4165-4169	soli	
+70-7	4170-4178	episcopi	
+70-8	4179-4188	conferunt	
+70-9	4188-4189	,	
+70-10	4190-4195	supra	
+70-11	4195-4196	,	
+70-12	4197-4199	de	
+70-13	4200-4207	consuet	
+70-14	4207-4208	.	
+70-15	4208-4209	,	
+70-16	4210-4216	quanto	
+70-17	4216-4217	,	
+70-18	4218-4221	ubi	
+70-19	4222-4224	de	
+70-20	4225-4228	hoc	
+70-21	4228-4229	.	
+70-22	4231-4234	Arg	
+70-23	4234-4235	.	
+70-24	4236-4242	contra	
+70-25	4243-4245	95	
+70-26	4245-4246	.	
+70-27	4247-4251	dist	
+70-28	4251-4252	.	
+70-29	4252-4253	,	
+70-30	4254-4262	pervenit	
+70-31	4262-4263	,	
+70-32	4264-4267	ubi	
+70-33	4268-4278	presbyteri	
+70-34	4279-4290	chrismabant	
+70-35	4291-4293	in	
+70-36	4294-4300	fronte	
+70-37	4300-4301	.	
+70-38	4303-4310	Solutio	
+70-39	4310-4311	:	
+70-40	4312-4317	illud	
+70-41	4318-4327	concessit	
+70-42	4328-4337	Gregorius	
+70-43	4338-4350	dispensative	
+70-44	4351-4353	ad	
+70-45	4354-4360	tempus	
+70-46	4361-4368	propter	
+70-47	4369-4378	scandalum	
+70-48	4378-4379	,	
+70-49	4380-4382	ut	
+70-50	4383-4386	ibi	
+70-51	4387-4395	expresse	
+70-52	4396-4401	patet	
+70-53	4401-4402	,	
+70-54	4403-4408	alias	
+70-55	4409-4417	sacerdos	
+70-56	4418-4423	nihil	
+70-57	4424-4433	conferret	
+70-58	4433-4434	,	
+70-59	4435-4437	ut	
+70-60	4438-4440	in	
+70-61	4441-4449	capitulo	
+70-62	4450-4455	supra	
+70-63	4455-4456	,	
+70-64	4457-4459	de	
+70-65	4460-4467	consuet	
+70-66	4467-4468	.	
+70-67	4468-4469	,	
+70-68	4470-4476	quanto	
+70-69	4476-4477	.	
+
+#Text=Summus sacerdos
+71-1	4482-4488	Summus	
+71-2	4489-4497	sacerdos	
+
+#Text=Id est, episcopus, 2. q. 7, accusatio.
+72-1	4499-4501	Id	
+72-2	4502-4505	est	
+72-3	4505-4506	,	
+72-4	4507-4516	episcopus	
+72-5	4516-4517	,	
+72-6	4518-4519	2	
+72-7	4519-4520	.	
+72-8	4521-4522	q	
+72-9	4522-4523	.	
+72-10	4524-4525	7	
+72-11	4525-4526	,	
+72-12	4527-4536	accusatio	
+72-13	4536-4537	.	
+
+#Text=Vicarii
+73-1	4542-4549	Vicarii	
+
+#Text=68. dist., quorum vices.
+74-1	4551-4553	68	
+74-2	4553-4554	.	
+74-3	4555-4559	dist	
+74-4	4559-4560	.	
+74-5	4560-4561	,	
+74-6	4562-4568	quorum	
+74-7	4569-4574	vices	
+74-8	4574-4575	.	
+
+#Text=In qua
+75-1	4580-4582	In	
+75-2	4583-4586	qua	
+
+#Text=Simplex relatio est hic sicut ibi, mulier salvavit quae damnavit, quoniam alia fuit columba quae detulit ramum olivae in arca Noe, et alia quae descendit super Christum dum baptizaretur.
+76-1	4588-4595	Simplex	
+76-2	4596-4603	relatio	
+76-3	4604-4607	est	
+76-4	4608-4611	hic	
+76-5	4612-4617	sicut	
+76-6	4618-4621	ibi	
+76-7	4621-4622	,	
+76-8	4623-4629	mulier	
+76-9	4630-4638	salvavit	
+76-10	4639-4643	quae	
+76-11	4644-4652	damnavit	
+76-12	4652-4653	,	
+76-13	4654-4661	quoniam	
+76-14	4662-4666	alia	
+76-15	4667-4671	fuit	
+76-16	4672-4679	columba	
+76-17	4680-4684	quae	
+76-18	4685-4692	detulit	
+76-19	4693-4698	ramum	
+76-20	4699-4705	olivae	
+76-21	4706-4708	in	
+76-22	4709-4713	arca	
+76-23	4714-4717	Noe	
+76-24	4717-4718	,	
+76-25	4719-4721	et	
+76-26	4722-4726	alia	
+76-27	4727-4731	quae	
+76-28	4732-4741	descendit	
+76-29	4742-4747	super	
+76-30	4748-4756	Christum	
+76-31	4757-4760	dum	
+76-32	4761-4773	baptizaretur	
+76-33	4773-4774	.	
+
+#Text=In cataclysmo
+77-1	4779-4781	In	
+77-2	4782-4792	cataclysmo	
+
+#Text=Id est, in generali diluvio sive tempore diluvii.
+78-1	4794-4796	Id	
+78-2	4797-4800	est	
+78-3	4800-4801	,	
+78-4	4802-4804	in	
+78-5	4805-4813	generali	
+78-6	4814-4821	diluvio	
+78-7	4822-4826	sive	
+78-8	4827-4834	tempore	
+78-9	4835-4842	diluvii	
+78-10	4842-4843	.	
+
+#Text=Revertens
+79-1	4848-4857	Revertens	
+
+#Text=Ad arcam Noe.
+80-1	4859-4861	Ad	
+80-2	4862-4867	arcam	
+80-3	4868-4871	Noe	
+80-4	4871-4872	.	
+
+#Text=Aliud quidem
+81-1	4877-4882	Aliud	
+81-2	4883-4889	quidem	
+
+#Text=Et sic colligitur hic quod alium ordinem habuit in substantia olim Levita, et alium hodie, alias videretur etiam ecclesia iudaizare in identitate.
+82-1	4891-4893	Et	
+82-2	4894-4897	sic	
+82-3	4898-4908	colligitur	
+82-4	4909-4912	hic	
+82-5	4913-4917	quod	
+82-6	4918-4923	alium	
+82-7	4924-4931	ordinem	
+82-8	4932-4938	habuit	
+82-9	4939-4941	in	
+82-10	4942-4952	substantia	
+82-11	4953-4957	olim	
+82-12	4958-4964	Levita	
+82-13	4964-4965	,	
+82-14	4966-4968	et	
+82-15	4969-4974	alium	
+82-16	4975-4980	hodie	
+82-17	4980-4981	,	
+82-18	4982-4987	alias	
+82-19	4988-4997	videretur	
+82-20	4998-5003	etiam	
+82-21	5004-5012	ecclesia	
+82-22	5013-5022	iudaizare	
+82-23	5023-5025	in	
+82-24	5026-5036	identitate	
+82-25	5036-5037	.	
+
+#Text=Pastoralis
+83-1	5042-5052	Pastoralis	
+
+#Text=de conse. dist. 1, nullus episcopus; et 45. dist., disciplina.  Ber.
+84-1	5054-5056	de	
+84-2	5057-5062	conse	
+84-3	5062-5063	.	
+84-4	5064-5068	dist	
+84-5	5068-5069	.	
+84-6	5070-5071	1	
+84-7	5071-5072	,	
+84-8	5073-5079	nullus	
+84-9	5080-5089	episcopus	
+84-10	5089-5090	;	
+84-11	5091-5093	et	
+84-12	5094-5096	45	
+84-13	5096-5097	.	
+84-14	5098-5102	dist	
+84-15	5102-5103	.	
+84-16	5103-5104	,	
+84-17	5105-5115	disciplina	
+84-18	5115-5116	.	
+84-19	5118-5121	Ber	
+84-20	5121-5122	.	
+
+#Text=Propter historiam
+85-1	5127-5134	Propter	
+85-2	5135-5144	historiam	
+
+#Text=Martialis unus de discipulis Petri, quem posuit Dominus inter discipulos cum dixit: nisi efficiamini sicut parvulus iste, non intrabitis in regnum caelorum, etc., quem postea Petrus cum alio, scilicet Matthaeo, ad praedicandum misit in Germaniam, qui cum iret mortuus est, et rediit collega ad Petrum.  Et Petrus ait: accipe baculum, et tangens eum dic ut in nomine Domini surgat et praedicet.  Et ivit quadragesima die a tempore mortis tetigit eum, et resurrexit et praedicavit, et ita Petrus removit a se baculum, et dedit subditis.  Designatur autem per baculum ea quae his versibus comprehenduntur: in baculi forma praesul datur haec tibi norma. // Attrahe per primum medio rege punge per imum. // Attrahe peccantes rege iustos punge vagantes // Attrahe sustenta stimula vaga morbida lenta.  Vincen.
+86-1	5146-5155	Martialis	
+86-2	5156-5160	unus	
+86-3	5161-5163	de	
+86-4	5164-5174	discipulis	
+86-5	5175-5180	Petri	
+86-6	5180-5181	,	
+86-7	5182-5186	quem	
+86-8	5187-5193	posuit	
+86-9	5194-5201	Dominus	
+86-10	5202-5207	inter	
+86-11	5208-5218	discipulos	
+86-12	5219-5222	cum	
+86-13	5223-5228	dixit	
+86-14	5228-5229	:	
+86-15	5230-5234	nisi	
+86-16	5235-5246	efficiamini	
+86-17	5247-5252	sicut	
+86-18	5253-5261	parvulus	
+86-19	5262-5266	iste	
+86-20	5266-5267	,	
+86-21	5268-5271	non	
+86-22	5272-5282	intrabitis	
+86-23	5283-5285	in	
+86-24	5286-5292	regnum	
+86-25	5293-5301	caelorum	
+86-26	5301-5302	,	
+86-27	5303-5306	etc	
+86-28	5306-5307	.	
+86-29	5307-5308	,	
+86-30	5309-5313	quem	
+86-31	5314-5320	postea	
+86-32	5321-5327	Petrus	
+86-33	5328-5331	cum	
+86-34	5332-5336	alio	
+86-35	5336-5337	,	
+86-36	5338-5346	scilicet	
+86-37	5347-5355	Matthaeo	
+86-38	5355-5356	,	
+86-39	5357-5359	ad	
+86-40	5360-5372	praedicandum	
+86-41	5373-5378	misit	
+86-42	5379-5381	in	
+86-43	5382-5391	Germaniam	
+86-44	5391-5392	,	
+86-45	5393-5396	qui	
+86-46	5397-5400	cum	
+86-47	5401-5405	iret	
+86-48	5406-5413	mortuus	
+86-49	5414-5417	est	
+86-50	5417-5418	,	
+86-51	5419-5421	et	
+86-52	5422-5428	rediit	
+86-53	5429-5436	collega	
+86-54	5437-5439	ad	
+86-55	5440-5446	Petrum	
+86-56	5446-5447	.	
+86-57	5449-5451	Et	
+86-58	5452-5458	Petrus	
+86-59	5459-5462	ait	
+86-60	5462-5463	:	
+86-61	5464-5470	accipe	
+86-62	5471-5478	baculum	
+86-63	5478-5479	,	
+86-64	5480-5482	et	
+86-65	5483-5490	tangens	
+86-66	5491-5494	eum	
+86-67	5495-5498	dic	
+86-68	5499-5501	ut	
+86-69	5502-5504	in	
+86-70	5505-5511	nomine	
+86-71	5512-5518	Domini	
+86-72	5519-5525	surgat	
+86-73	5526-5528	et	
+86-74	5529-5538	praedicet	
+86-75	5538-5539	.	
+86-76	5541-5543	Et	
+86-77	5544-5548	ivit	
+86-78	5549-5561	quadragesima	
+86-79	5562-5565	die	
+86-80	5566-5567	a	
+86-81	5568-5575	tempore	
+86-82	5576-5582	mortis	
+86-83	5583-5590	tetigit	
+86-84	5591-5594	eum	
+86-85	5594-5595	,	
+86-86	5596-5598	et	
+86-87	5599-5609	resurrexit	
+86-88	5610-5612	et	
+86-89	5613-5624	praedicavit	
+86-90	5624-5625	,	
+86-91	5626-5628	et	
+86-92	5629-5632	ita	
+86-93	5633-5639	Petrus	
+86-94	5640-5647	removit	
+86-95	5648-5649	a	
+86-96	5650-5652	se	
+86-97	5653-5660	baculum	
+86-98	5660-5661	,	
+86-99	5662-5664	et	
+86-100	5665-5670	dedit	
+86-101	5671-5679	subditis	
+86-102	5679-5680	.	
+86-103	5682-5692	Designatur	
+86-104	5693-5698	autem	
+86-105	5699-5702	per	
+86-106	5703-5710	baculum	
+86-107	5711-5713	ea	
+86-108	5714-5718	quae	
+86-109	5719-5722	his	
+86-110	5723-5731	versibus	
+86-111	5732-5747	comprehenduntur	
+86-112	5747-5748	:	
+86-113	5749-5751	in	
+86-114	5752-5758	baculi	
+86-115	5759-5764	forma	
+86-116	5765-5772	praesul	
+86-117	5773-5778	datur	
+86-118	5779-5783	haec	
+86-119	5784-5788	tibi	
+86-120	5789-5794	norma	
+86-121	5794-5795	.	
+86-122	5796-5797	/	
+86-123	5797-5798	/	
+86-124	5799-5806	Attrahe	
+86-125	5807-5810	per	
+86-126	5811-5817	primum	
+86-127	5818-5823	medio	
+86-128	5824-5828	rege	
+86-129	5829-5834	punge	
+86-130	5835-5838	per	
+86-131	5839-5843	imum	
+86-132	5843-5844	.	
+86-133	5845-5846	/	
+86-134	5846-5847	/	
+86-135	5848-5855	Attrahe	
+86-136	5856-5865	peccantes	
+86-137	5866-5870	rege	
+86-138	5871-5877	iustos	
+86-139	5878-5883	punge	
+86-140	5884-5892	vagantes	
+86-141	5893-5894	/	
+86-142	5894-5895	/	
+86-143	5896-5903	Attrahe	
+86-144	5904-5912	sustenta	
+86-145	5913-5920	stimula	
+86-146	5921-5925	vaga	
+86-147	5926-5933	morbida	
+86-148	5934-5939	lenta	
+86-149	5939-5940	.	
+86-150	5942-5948	Vincen	
+86-151	5948-5949	.	
+
+#Text=Mysticam rationem
+87-1	5954-5962	Mysticam	
+87-2	5963-5971	rationem	
+
+#Text=Quia baculus habet in summitate recuruationem, quasi ad trahendum, quod non est necessarium Romano Pontifici, quia nullus ab illo divertere potest finaliter, quia ecclesia non potest esse nulla, 24. q. 1, pudenda, in fi.  Vel quia per baculum designatur coerctio sive castigatio, ideo alii pontifices recipiunt a suis superioribus baculos, quia ab homine potestatem recipiunt.  Romanus Pontifex non utitur baculo, quia potestatem a solo Deo recipit.
+88-1	5973-5977	Quia	
+88-2	5978-5985	baculus	
+88-3	5986-5991	habet	
+88-4	5992-5994	in	
+88-5	5995-6004	summitate	
+88-6	6005-6018	recuruationem	
+88-7	6018-6019	,	
+88-8	6020-6025	quasi	
+88-9	6026-6028	ad	
+88-10	6029-6038	trahendum	
+88-11	6038-6039	,	
+88-12	6040-6044	quod	
+88-13	6045-6048	non	
+88-14	6049-6052	est	
+88-15	6053-6064	necessarium	
+88-16	6065-6071	Romano	
+88-17	6072-6081	Pontifici	
+88-18	6081-6082	,	
+88-19	6083-6087	quia	
+88-20	6088-6094	nullus	
+88-21	6095-6097	ab	
+88-22	6098-6102	illo	
+88-23	6103-6112	divertere	
+88-24	6113-6119	potest	
+88-25	6120-6129	finaliter	
+88-26	6129-6130	,	
+88-27	6131-6135	quia	
+88-28	6136-6144	ecclesia	
+88-29	6145-6148	non	
+88-30	6149-6155	potest	
+88-31	6156-6160	esse	
+88-32	6161-6166	nulla	
+88-33	6166-6167	,	
+88-34	6168-6170	24	
+88-35	6170-6171	.	
+88-36	6172-6173	q	
+88-37	6173-6174	.	
+88-38	6175-6176	1	
+88-39	6176-6177	,	
+88-40	6178-6185	pudenda	
+88-41	6185-6186	,	
+88-42	6187-6189	in	
+88-43	6190-6192	fi	
+88-44	6192-6193	.	
+88-45	6195-6198	Vel	
+88-46	6199-6203	quia	
+88-47	6204-6207	per	
+88-48	6208-6215	baculum	
+88-49	6216-6226	designatur	
+88-50	6227-6235	coerctio	
+88-51	6236-6240	sive	
+88-52	6241-6251	castigatio	
+88-53	6251-6252	,	
+88-54	6253-6257	ideo	
+88-55	6258-6262	alii	
+88-56	6263-6273	pontifices	
+88-57	6274-6283	recipiunt	
+88-58	6284-6285	a	
+88-59	6286-6290	suis	
+88-60	6291-6303	superioribus	
+88-61	6304-6311	baculos	
+88-62	6311-6312	,	
+88-63	6313-6317	quia	
+88-64	6318-6320	ab	
+88-65	6321-6327	homine	
+88-66	6328-6338	potestatem	
+88-67	6339-6348	recipiunt	
+88-68	6348-6349	.	
+88-69	6351-6358	Romanus	
+88-70	6359-6367	Pontifex	
+88-71	6368-6371	non	
+88-72	6372-6378	utitur	
+88-73	6379-6385	baculo	
+88-74	6385-6386	,	
+88-75	6387-6391	quia	
+88-76	6392-6402	potestatem	
+88-77	6403-6404	a	
+88-78	6405-6409	solo	
+88-79	6410-6413	Deo	
+88-80	6414-6421	recipit	
+88-81	6421-6422	.	

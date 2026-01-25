@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="38" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="44" end="60" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="65" end="88" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="359" end="381" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Lemma glossato" begin="386" end="405" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="449" end="476" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="484" end="516" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Lemma glossato" begin="521" end="530" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="659" end="679" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="680" end="708" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="712" end="744" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="818" end="857" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="861" end="890" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="891" end="938" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="992" end="1045" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1097" end="1114" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1217" end="1236" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1240" end="1263" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1329" end="1357" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1432" end="1456" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1457" end="1478" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1479" end="1498" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1499" end="1530" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 1.12 DE SCRUTINIO IN ORDINE FACIENDO&#13;&#10;&#13;&#10;X 1.12.01 Ex parte&#13;&#10;&#13;&#10; Et scit et testificatur&#13;&#10;Mirabilis est responsio ista.  Potius enim dicere deberet se nullam habere scientiam de eius dignitate vel indignitate?  Respondeo ex eo quod videt illum electum a bonis, quandam videtur habere notitiam de dignitate ipsius, et de tali respondet, quia audivit ab aliis, 22. q. 5, hoc videtur.&#13;&#10;&#13;&#10; Contra conscientiam&#13;&#10;Quia tunc aedificaret ad gehennam, infra, de restit. spol., litteras; infra, de praescrip., quoniam § ex his.&#13;&#10;&#13;&#10; Aestimare&#13;&#10;Nota quemlibet praesumi dignum nisi probetur indignus, et de quolibet praesumendum est bonum, nisi probetur contrarium, infra, de praesump., dudum; ff. de manum. test., servos; et ff. de leg. 2, cum pater § rogo.  Sed contra videtur, quia praesumitur non idoneus nisi probetur idoneus, C. de his qui ven. aet. impetr., omnes; et C. de probation., ex persona; ff. de mag. conv., in ordinem § si magistratus.  Et in dubio praesumitur quis excommunicatus, infra, de sent. excom., cum desideres § secundae quaestioni; et praesumitur potius fornicatio quam matrimonium, 30. q. 5, aliter.  Solutio: hoc generale est ut ubi periculum animae vertitur, praesumatur in deteriorem partem, infra, de spons., iuvenis; et 68. dist., presbytreri.  Sed licet videatur deterior, tamen melior et tutior est; simile de conse. dist. 4, parvulos.  Alias circa indicia potius praesumitur iustum vel bonum, quam econverso, 86. dist., si quid vero; 11. q. 3, in cunctis; 22. q. 4, innocens; ff. de probation., ab ea parte.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24"/>
+</xmi:XMI>

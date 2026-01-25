@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="39" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="45" end="58" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="63" end="81" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="162" end="182" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="194" end="208" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="291" end="307" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="356" end="377" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Lemma glossato" begin="383" end="393" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="445" end="469" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="527" end="550" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="635" end="659" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Capitolo" begin="736" end="752" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Lemma glossato" begin="757" end="763" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="787" end="812" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="817" end="837" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Lemma glossato" begin="872" end="881" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1041" end="1072" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Lemma glossato" begin="1084" end="1089" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1197" end="1220" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Lemma glossato" begin="1226" end="1236" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1238" end="1256" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1258" end="1280" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1334" end="1352" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.14 DE CLERICIS PUGNATIBUS IN DUELLO&#13;&#10;&#13;&#10;X 5.14.01 Porro&#13;&#10;&#13;&#10; Oblatum susceperit&#13;&#10;Nec offerre nec oblatum suscipere debuit aliquo modo, quia hoc prohibitum est, 2. q. 5, monomachiam; et infra, de purg. vulg., per totum.  Sed potius debet omnia mala pati quam huic malo vel alii consentire, 32. q. 5, ita ne.  Quia facere debemus quod fieri debet de iure, 22. q. 2, faciat homo.&#13;&#10;&#13;&#10; Deponendus&#13;&#10;Quia huiusmodi pugiles homicidae existunt, infra, de cleri. pug., Henricus.  Unde cum ad hoc accesserit, non potest quis promoveri, 51. dist., si quis post.  Nec dispensatur cum tali si mors vel membrorum mutilatio fuerit subsecuta, infra, de cleri. pug., Henricus.  Alias potest cum tali episcopus dispensare, ut infra sequitur.  Ber.&#13;&#10;&#13;&#10;X 5.14.02 Henricus&#13;&#10;&#13;&#10; Pravam&#13;&#10;Et reprobatam, infra, de purg. vulg., per totum; et 2. q. 5, monomachiam.  Quia Deum tentare videntur.&#13;&#10;&#13;&#10; Homicidae&#13;&#10;Vere quantum ad propositum vel occasionaliter vel vere quandoque, ut hic patet.  Et sententia lata per talem probationem non transit in rem iudicatam, infra, de purg. vulg., significantibus.  Ber.&#13;&#10;&#13;&#10; Facto&#13;&#10;Istis quatuor modis sive lingua aive adhortatione committitur directum homicidium.  De hoc dicitur supra, de homic., sicut dignum.&#13;&#10;&#13;&#10; Beneficium&#13;&#10;50. dist., studeat; 28. dist., presbyterum.  Scilicet ne cogatur in cleri opprobrium mendicare, 93. dist., diaconi, ibi: mendicat infelix clericus etc.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24"/>
+</xmi:XMI>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="19" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="25" end="48" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="53" end="64" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="138" end="162" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="164" end="179" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="184" end="203" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="259" end="281" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="286" end="310" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="346" end="380" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="392" end="422" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="428" end="436" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="508" end="529" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="534" end="550" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="555" end="572" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="578" end="610" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="708" end="724" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="736" end="757" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="812" end="837" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="842" end="890" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="895" end="921" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="928" end="967" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Lemma glossato" begin="1148" end="1155" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1321" end="1341" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1353" end="1380" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1392" end="1413" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1503" end="1523" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1566" end="1586" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1598" end="1625" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1630" end="1659" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Capitolo" begin="1666" end="1693" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="1698" end="1707" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="1737" end="1761" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1889" end="1918" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2008" end="2045" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2054" end="2081" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2140" end="2176" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2178" end="2222" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2318" end="2346" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2422" end="2442" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2447" end="2472" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="2477" end="2497" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2553" end="2567" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2649" end="2675" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="2940" end="2960" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="2972" end="2991" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="3003" end="3022" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="3034" end="3054" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="3326" end="3359" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3562" end="3586" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3666" end="3703" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Lemma glossato" begin="3709" end="3721" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="4014" end="4038" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="4051" end="4070" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="4082" end="4100" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Capitolo" begin="4140" end="4164" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Lemma glossato" begin="4169" end="4178" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="4439" end="4471" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="4476" end="4496" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="4536" end="4565" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="4617" end="4654" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="4804" end="4828" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="4833" end="4868" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="4904" end="4926" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4931" end="4962" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="4967" end="5005" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="5011" end="5050" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="5163" end="5203" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="5208" end="5235" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="5306" end="5318" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="5323" end="5365" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="5437" end="5461" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="5467" end="5487" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="5742" end="5776" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Allegazione normativa" begin="5782" end="5812" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="5817" end="5858" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Allegazione normativa" begin="5871" end="5898" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Allegazione normativa" begin="5903" end="5923" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Allegazione normativa" begin="5979" end="6013" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Allegazione normativa" begin="6018" end="6050" sofa="1"/>
+  <custom:Glossa xmi:id="81" Tipo="Allegazione normativa" begin="6255" end="6289" sofa="1"/>
+  <custom:Glossa xmi:id="82" Tipo="Allegazione normativa" begin="6294" end="6331" sofa="1"/>
+  <custom:Glossa xmi:id="83" Tipo="Allegazione normativa" begin="6408" end="6454" sofa="1"/>
+  <custom:Glossa xmi:id="84" Tipo="Allegazione normativa" begin="6459" end="6494" sofa="1"/>
+  <custom:Glossa xmi:id="85" Tipo="Allegazione normativa" begin="6506" end="6525" sofa="1"/>
+  <custom:Glossa xmi:id="86" Tipo="Allegazione normativa" begin="6537" end="6568" sofa="1"/>
+  <custom:Glossa xmi:id="87" Tipo="Allegazione normativa" begin="6573" end="6595" sofa="1"/>
+  <custom:Glossa xmi:id="88" Tipo="Allegazione normativa" begin="6628" end="6665" sofa="1"/>
+  <custom:Glossa xmi:id="89" Tipo="Allegazione normativa" begin="6803" end="6830" sofa="1"/>
+  <custom:Glossa xmi:id="90" Tipo="Allegazione normativa" begin="6842" end="6872" sofa="1"/>
+  <custom:Glossa xmi:id="91" Tipo="Allegazione normativa" begin="6944" end="6975" sofa="1"/>
+  <custom:Glossa xmi:id="92" Tipo="Allegazione normativa" begin="7121" end="7156" sofa="1"/>
+  <custom:Glossa xmi:id="93" Tipo="Lemma glossato" begin="7167" end="7178" sofa="1"/>
+  <custom:Glossa xmi:id="94" Tipo="Allegazione normativa" begin="7265" end="7305" sofa="1"/>
+  <custom:Glossa xmi:id="95" Tipo="Allegazione normativa" begin="7317" end="7339" sofa="1"/>
+  <custom:Glossa xmi:id="96" Tipo="Allegazione normativa" begin="7372" end="7415" sofa="1"/>
+  <custom:Glossa xmi:id="97" Tipo="Allegazione normativa" begin="7421" end="7457" sofa="1"/>
+  <custom:Glossa xmi:id="98" Tipo="Allegazione normativa" begin="7559" end="7575" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 2.18 DE CONFESSIS&#13;&#10;&#13;&#10;X 2.18.01 Cum monasterium&#13;&#10;&#13;&#10; Aliis modis&#13;&#10;Scilicet legitimis et evidentissimis probationibus et luce clarioribus, C. de probation., sciant; 2. q. 8, sciant; et 5. q. 6, Epiphanium.  Vel per propriam confessionem in iure factam, infra, de confess., cum super; et 2. q. 1, nos in quemquam.  Vel per evidentiam facti, infra, de cohab. cler. et mul., quaesitum; et supra, de restit. spol., cum ad sedem.&#13;&#10;&#13;&#10; Confessi&#13;&#10;Nulli ergo de se confesso super crimine aliorum creditur.  Sic infra, de testib., veniens 1; et 15. q. 3, nemini; et 3. q. 11, neganda; et C. de accusation., accusationibus.  Et hoc generale est praeterquam in crimine laesae maiestatis, ut hic, et in praedicto capitulo 15. q. 3, nemini; et infra, de testib., veniens 1.  Item auditur confessio unius latronis contra alium, C. de feri., provinciarum; et C. de fals. mon., quoniam, in glossa immunitatem; et ff. de cust. reo., divus § 1; et ff. de quaest., in criminibus § si quis.  Istis qui de se confitentur, creditur non quantum ad convincendum, sed quantum ad praesumptionem.  Unde si adsunt aliae praesumptiones, valent, alias per se non sufficerent.&#13;&#10;&#13;&#10; Infamia&#13;&#10;De qua debent se purgare cum tertia manu sui ordinis qui sunt honesti, et conversationem ipsius agnoscant.  Alias si defecerint, tamquam convicti puniantur, infra, de purg. can., cum P; et infra, de purg. can., cum dilectus; et infra, de simon., insinuatum.  Alias si infamati non essent, non indiceretur eis purgatio propter talem confessionem, 2. q. 5, si legitimi.  De hac materia plenius tractatur infra, de purg. can., cum P; et infra, de purg. can., cum dilectus; et 2. q. 5, presbyter si a plebe.&#13;&#10;&#13;&#10;X 2.18.02 Cum super electione&#13;&#10;&#13;&#10; Confessus&#13;&#10;Et coram iudice suo, supra, de iudic., at si clerici.  Alias ergo confessio non praeiudicat quantum ad poenam vel condemnationem.  Praeiudicat tamen quantum ad suspicionem, infra, de excess. praelat., quam sit.  Sed nonne iste fuit testis?  Qualiter ergo punitur poena ordinaria contra illud supra, de ord. cognit., cum dilectus, ad fi.; infra, de except., denique, in fi.?  Praeterea sine accusatore non debet quis puniri, infra, ut eccl. ben., ut nostrum, in princ.; ff. de muner. et honor., rescripto § si quis.  Potest dici quod iste vel fuit denunciatus vel inquisitio contra eum facta fuit.  Sic supra, de elect., per inquisitionem.  Vel hic ex officio suo processit dominus Papa et in odium criminis, arg. 3. q. 9, nihilominus; et C. de probation., iubemus; et C. de testi., nullum.  Etenim crimina undecumque claruerint, punienda sunt, 24. q. 3, ecce.  Vel ideo punitur, quia crimen istud contingit principale negotium.  Sic infra, de except., denique, in fi.  Et hoc videtur verius, quia dicebatur ab adversario quod simoniace facta fuit electio, et quia electionem examinat de omnibus inquirere debet: de meritis personae, de modo electionis, de studio eligentium, et sic crimen illud contingit factum principale, supra, de elect., cum terra; et supra, de elect., super eo; et supra, de elect., scriptum; et supra, de elect., nihil est.  De his omnibus inquirit iudex ex officio suo de meritis electi et eligentium.  Et iste fuit unus de electoribus, et ideo merito puniri debuit si commisit in ipso negotio vitium simoniae, sive de hoc actum fuisset sive non, cum ex officio hoc etiam fieri debeat, supra, de elect., cum nobis § his igitur, ubi de hoc.  Et sic punitur aliquis super eo de quo non agitur contra eum directe in odium criminis, ut innuit littera sequens, scilicet: nos quoniam vitium huiusmodi persequi etc.  Et est arg. infra, de testib., tam litteris.  Sic et maritus punitur de lenocinio, licet contra eum directe non sit actum, ff. de adulter., ex lege § si publico.&#13;&#10;&#13;&#10; Sarracenorum&#13;&#10;Exponunt quidam dandorum regi, ut electioni praestaret assensum, vel potius pro seipso recepit illam obligationem ut ipse consentiret.  Sic sola talis obligatio simoniam inducit, licet non receperit id quod venit in obligatione, quia in talibus nulla pactio vel conventio debet intervenire, 1. q. 2, quam pio § ulti.; et supra, de pact., pactiones; et infra, de simon., si quis.  Et est moneta quae sic vocatur.&#13;&#10;&#13;&#10;X 2.18.03 Ex parte abbatis&#13;&#10;&#13;&#10; Confessus&#13;&#10;Nota quod rubrica ista sive titulus de confessis locum habet post litem contestatam.  Sed edictum de interrogatoriis actionibus locum habet et ante litem contestatam et post, quia iudex quotiens et quandocumque aequitas movet ipsum, debet interrogare partes, ff. de interrog. act., ubicumque; et 30. q. 5, iudicantem.  Et in casibus qui notati sunt supra, de iuram. calumn., cum causam.  Et etiam postquam est conclusum in causa, infra, de fide instrum., cum Ioannes § verum.  Ad hoc enim ut confessio praeiudicet alicui exiguntur plura, quae sit maior viginti quinque annis, quia minor potest restitui contra confessionem, ff. de minor., non omnia; et ff. de confes., certum § in pupillo.  Item quod sponte et non coactus, 15. q. 6, si quandoque; et 31. q. 2, Lotharius § praeterea; et ff. de quaest., in criminibus, 1. resp.; et ff. de quaest., in criminibus § divus 2.  Item quod ex certa scientia, quia si errat in confitendo, et potest probare se errasse, non nocet, ut hic, et C. de iuris et fact. ignor., error facti; et ff. de confes., non fatetur.  Item quod contra se confiteatur, quia confessio pro se non prodest, 14. q. 2 § 1; et ff. de interrog. act., de aetate, 1. resp.  Item in iudicio et coram suo iudice, alias non praeiudicat, ut supra, de iudic., at si clerici; et C. confes., confessos.  Quandoque tamen confessio extra ius facta valet, ut si quis confiteatur debere se ex certa causa, puta emptionis vel locationis vel alia causa consimili, si probetur confessio ista per testes qui fuerunt praesentes in confessione, condemnabitur ex ea, C. de non num. pecun., generaliter; et C. de non num. pecun., adversus; et ff. de probation., cum de indebito § ulti.; et infra, de fide instrum., si cautio; et 3. q. 9 § si debitum.  Item quod adversarius sit praesens, alias non nocet, ff. de interrog. act., procuratore; et ff. de confes., certum § si quis.  Item requiritur quod non sit contra rerum naturam, ut si confiteor illum esse filium meum, qui est maioris aetatis quam ego.  Vel si quis confiteatur factum cuius nomine actio cum alio esse non potest, ff. de interrog. act., si is cuius; et ff. de interrog. act., confessionibus.  Item quod non sit contra ius, scilicet de libero homine, alias non nocet, ff. de pacti., iurisgentium § et si stipulatio; et ff. de pacti., iurisgentium § prece; et supra, de pact., pactiones; et infra, de cond. appos., si conditiones; et 32. q. 2, solet quaeri.  Item quod de re litigiosa, ut ff. de interrog. act., confessionibus.  Item in confesso nullae sunt partes iudicis in cognoscendo, sed in sententiando sic, quia debet ferre sententiam ex illa confessiones, ff. ad leg. Aquil., proinde; et supra, de transact., praeterea quarto.  Item si quis confiteatur se servum, talis confessio non nocet ei, ut C. de liber. caus., interrogata.  Lex ista favore libertatis intelligitur de confessione facta apud iudicem, sed non in iudicio liberalis causae, alias contraria esset lex illa C. de liber. caus., iubemus, in fi.  Ber.&#13;&#10;&#13;&#10; Error facti&#13;&#10;Error facti excusat, si probetur nondum finito negotio, ut hic, et in lege praedicta C. de iuris et fact. ignor., error facti; et infra, de sent. excom., sacro.  Error vero iuris non excusat, C. de iuris et fact. ignor., cum ignorantia; et C. de iuris et fact. ignor., cum quis.  Et sic patet quod confessio syndici potest revocari.  Item et confessio advocati revocatur, infra, de censib., olim, ubi de hoc.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98"/>
+</xmi:XMI>

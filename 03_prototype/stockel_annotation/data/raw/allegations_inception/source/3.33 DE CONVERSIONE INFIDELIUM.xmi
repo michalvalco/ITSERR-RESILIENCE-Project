@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="32" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="38" end="56" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="61" end="81" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="94" end="119" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="246" end="262" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="264" end="281" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="290" end="346" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="386" end="441" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="453" end="510" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="641" end="694" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="700" end="710" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="716" end="735" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="737" end="755" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="765" end="790" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="799" end="817" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="819" end="847" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="853" end="876" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="969" end="1002" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1027" end="1045" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1051" end="1076" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="1082" end="1095" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1122" end="1147" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1156" end="1209" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1312" end="1369" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1430" end="1450" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1459" end="1487" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1552" end="1580" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1617" end="1636" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1645" end="1661" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1842" end="1899" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1927" end="1946" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Capitolo" begin="2025" end="2049" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Lemma glossato" begin="2054" end="2065" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2219" end="2252" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2264" end="2289" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2621" end="2664" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2786" end="2832" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2992" end="3032" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="3145" end="3180" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="3214" end="3240" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="3308" end="3350" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="3356" end="3389" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="3475" end="3491" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="3632" end="3650" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="3652" end="3673" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="3755" end="3771" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Lemma glossato" begin="3783" end="3790" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="3799" end="3818" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Lemma glossato" begin="3824" end="3843" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3943" end="3962" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="3964" end="3997" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Lemma glossato" begin="4133" end="4142" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="4204" end="4233" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="4240" end="4261" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="4316" end="4349" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="4485" end="4526" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="4545" end="4571" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="4581" end="4610" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="4678" end="4704" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Lemma glossato" begin="4710" end="4721" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="4836" end="4867" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="4970" end="4997" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="5094" end="5120" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="5217" end="5246" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="5397" end="5419" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="5582" end="5616" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="5695" end="5715" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="5727" end="5745" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="5811" end="5831" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Lemma glossato" begin="5912" end="5926" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="6001" end="6032" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="6039" end="6072" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="6084" end="6120" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Lemma glossato" begin="6126" end="6150" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="6430" end="6464" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.33 DE CONVERSIONE INFIDELIUM&#13;&#10;&#13;&#10;X 3.33.01 Laudabilem&#13;&#10;&#13;&#10; Triburensis concilii&#13;&#10;Quod habes 31. q. 1, si quis vivente.  Quia eas non possunt habere, si in mortem ipsorum aliquid machinatae fuerunt, ut hic dicit.  Idem est si fidem dederunt, ut 31. q. 1, nullus; 31. q. 1, relatum; infra, de eo qui dux. in matr. quam pol. per adult., propositum.  Vel si de facto contraxit, ut infra, de eo qui dux. in matr. quam pol. per adult., super hoc; et infra, de eo qui dux. in matr. quam pol. per adult., cum haberet.  Ita tamen quod post fidem datam cognovit eandem uxorem uxore sua vivente, alias sola fides data non impedit matrimonium, infra, de eo qui dux. in matr. quam pol. per adult., si quis.&#13;&#10;&#13;&#10; Tali lucro&#13;&#10;Sic 14. dist., quod ait; 33. q. 5, si dicat.  Simile 1. q. 1, non est piutanda; infra, de usur., super eo; 22. q. 2, ne quis arbitretur.&#13;&#10;&#13;&#10; Et Christiani similiter&#13;&#10;Pugnantes pro patria et fide, ob quam pater in filium et filius in patrem insurgere debet, ff. de rel. et sump. fun., minime.  Et maritus in uxorem, 28. q. 1, uxor, in fi.; 23. q. 8, legi Syromastem.&#13;&#10;&#13;&#10; Procuraverint&#13;&#10;Ex eo quod hic dicit, et 31. q. 1, si quis vivente; infra, de eo qui dux. in matr. quam pol. per adult., si quis.  Ad hoc ut matimonium impediatur duo exiguntur, scilicet affectus cum opere subsecuto, et est simile ff. de condi. et demon., condicionum quaedam sunt, in fi.  Hic enim tunc puniuntur, cum concorditer ad hoc procedunt, 15. q. 1, merito, in fi.; et 15. q. 1, si quis non iratus.  Quandoque punitur opus sine affectu quo ad legem promotionis, 15. q. 1, si quis non iratus.  Quandoque affectus sine opere, ut 1. q. 1, qui studet; supra, de bigam., nuper.  Ibi tamen intervenit opus non cum affectu.  Quid ergo si ratum habuerunt eos interfectos esse?  Idem videtur, quia in maleficiis ratihabitio retrotrahitur et mandato comparatur, ff. de vi et de vi arm., praetor ait § sed et si cum quis.  Contra credo arg. infra, de spons., cum apud.  Cum edictum de matrimonio contrahendo sit prohibitorium, ut ibi.  Ber.&#13;&#10;&#13;&#10;X 3.33.02 Ex litteris tuis&#13;&#10;&#13;&#10; Perducendus&#13;&#10;Iusta fuit causa petitionis et honesta.  Et ita sumitur hic arg. quod causa petitionis semper inserenda est in ipsa petitione, alias repellitur, supra, de libel. oblat., significantibus; et supra, de libel. oblat., dilecti, ubi de hoc.  Sed nota quod pater potest petere filium in potestate sua constitutum per interdictum de liberis exhibendis contra matrem et contra quemlibet detinentem.  Mater tamen quandoque habet exceptionem contra maritum, puta si est minor triennio, cum apud eam tunc debeat educari, vel etiam si iudicatum esset in contrarium, ff. de liber. exhib., ait praetor § si vero.  Et in alio casu habet exceptionem ob nequitiam patris, ut sine diminutione patriae potestatis apud eam filius moretur, ff. de liber. exhib., deinde § etiam si maxime.  Circa hoc distingue, aut filius a nullo detinetur, aut ab aliquo.  Si ab aliquo, et tunc volens aut invitus.  Primo casu petere possum per officium iudicis, ff. de liber. exhib., deinde § hoc autem.  Si ab aliquo volens detinetur, potest peti rei vendicat, adiecta causa de iure Quiritum cognitione praetoria, ff. de rei vend., post actiones § 1, quod ius proprie Romanorum est, Inst. de patr. potest. § 2.  In tertio casu locum habet interdictum de liberis exhibendis, ut ff. de liber. exhib., ait praetor, 1. resp.; et ff. de rei vend., post actiones § 1.  Et nota quod filius conditionem patris vel matris conversi ad fidem sequi debet, 28. q. 1, Iudaei.  Et in hoc casu filius infans non doli capax sequitur meliorem conditionem.  Alias si doli capax esset, non deberet baptizari nisi sponte, 23. q. 5, ad fidem; 45. dist., de Iudaeis.  Quandoque tamen sequitur deteriorem conditionem, scilicet matris si serva sit, 32. q. 4, liberi.  Ber.&#13;&#10;&#13;&#10; Paterno&#13;&#10;Supra, de praesump., illud.&#13;&#10;&#13;&#10; Legitima coniunctio&#13;&#10;Matrimonium dicitur legitima coniunctio maris et feminae individuam vitae consuetudinem retinens, 27. q. 2 § sequitur; Inst. de patr. potest., in princ.  Et haec est ratio quae consuevit assignari a doctoribus, quare potius dicatur matrimonium quam patrimonium illa coniunctio.  Ber.&#13;&#10;&#13;&#10; Potestate&#13;&#10;Pater enim dicitur habere filium in potestate et non mater, Inst. de patr. potest. § ulti.; et C. de adopt., mulierem.  Unde filius patris familiam sequitur et non matris, Inst. de legit. agnat. tutel. § 1, unde ista verba fuerunt sumpta.  Et expone familiam, id est, agnationem, licet alias hoc nomen familia multas habeat significationes, ff. de ver. sig., pronunciatio § familiae.  Et facit ad hoc Inst. de patr. potest., in fi.; et C. de ver. sig., apud Labeonem.  Non enim denominatur filius a cognitione matris sed patris, arg. ff. ad municip., municipem.&#13;&#10;&#13;&#10; Insidientur&#13;&#10;Nota quod mortuo patre pupillus educari non debet apud illas personas, quae ipsius pudicitiae possunt insidiari, ff. ubi pupil. educ., si absens.  Praetor enim decernere debet, ut sine ulla suspicione alatur partus etiam contra voluntatem patris, ff. ubi pupil. educ., solet.  Et aestimabit ex affectu singulorum quis magis ad suspicionem et spem successionis sit prior, C. ubi pupil. educ., utrum.  Verumtamen educatio pupilli nulli magis committenda est quam matri, nisi vitricum ei inducat, C. ubi pupil. educ., educatio.  Si vero vivo patre quaestio est apud quem educetur filius facto divortio, olim aestimabat praetor quando apud patrem, et quando apud matrem alatur, C. divort. fact., lict.  Hodie distinguitur, ut si pater causam divortii praestitit, tunc ali debeat apud matrem.  Si vero mater causam praestitit divortii, tunc ali debet apud patrem, C. divort. fact., authen. si pater.  Ergo hic ali debet apud patrem, quia mater praestat causam divortii, infra, de divort., gaudemus; et infra, de divort., quanto, quae non sequitur maritum conversum ad fidem, quem sequi debet, 13. q. 2, unaquaeque.  Et quia insidiaretur vitae ipsius, ut hic dicitur, et per iura praedicta.&#13;&#10;&#13;&#10; Post triennium&#13;&#10;Filius minor triennio apud matrem debet ali, maior triennio apud patrem, C. de patr. potest., nec filium; arg. C. de infant. expos., unusquisque; et infra, de infant. et lang. exp., si a patre.&#13;&#10;&#13;&#10; Ad infidelitatis errorem&#13;&#10;Hac de causa etiam si esset minor triennio vel pater vellet eum perducere ad fidem.  Cum sit in eius potestate, patri debuit assignari in favorem fidei Christianae.  Cum alias si esset maior, et proclamat se velle fieri Christianum, debeat de manibus illorum eripi, arg. infra, de Iudae. et Sarrac., sicut Iudaei.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76"/>
+</xmi:XMI>

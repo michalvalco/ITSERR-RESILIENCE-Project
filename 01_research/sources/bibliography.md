@@ -4,8 +4,10 @@
 
 This bibliography supports the ITSERR/RESILIENCE fellowship research on ethically-grounded AI agents for religious studies. Sources are organized thematically with annotations indicating relevance to the project.
 
-**Total Sources:** 24
-**Last Updated:** January 2026
+**Total Sources:** 37
+**Last Updated:** January 25, 2026
+
+*Note: Section 7 added from Scholar Gateway research on January 25, 2026*
 
 ---
 
@@ -229,6 +231,100 @@ All citations follow Chicago Manual of Style, 17th edition (Notes-Bibliography).
 | Journal articles | Open access or institutional subscription |
 | Technical papers | arXiv / conference proceedings |
 | ITSERR documentation | To be provided by host institution |
+
+---
+
+---
+
+## 7. Recent Scholarship (2024-2025)
+
+Sources discovered via Scholar Gateway research, January 2026. Full annotations in `01_research/literature_notes/2026-01_scholarship_review.md`.
+
+### Personalist Philosophy & AI Ethics
+
+### 7.1 Melé, D. "What is the humanistic and ethical value of the 'logic of gift' in business relationships? A conceptual approach." *Business and Society Review* 129, no. S1 (2024): 741-758.
+
+**Relevance:** 🔴 Essential  
+**Key Concepts:** Personalism (Buber, Wojtyla, Polo), I-Thou relations, self-determination, donal love  
+**Project Application:** Contemporary synthesis of personalist philosophy directly applicable to AI ethics. Grounds the claim that persons must remain "acting persons" in AI interaction.
+
+### 7.2 van der Rijt, J., D. Coelho Mollo, and B. Vaassen. "AI Mimicry and Human Dignity: Chatbot Use as a Violation of Self-Respect." *Journal of Applied Philosophy* (2025).
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Second-personal respect, reciprocity, dignity, anthropomorphism  
+**Project Application:** Cautionary perspective on chatbot design. Supports transparency about AI non-personhood while remaining helpful.
+
+### 7.3 Gastmans, C., et al. "Christian anthropology-based contributions to the ethics of socially assistive robots in care for older adults." *Bioethics* 38, no. 9 (2024): 787-795.
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Gabriel Marcel's corps-sujet/corps-objet, embodied personhood, relational dignity  
+**Project Application:** Theological-anthropological grounding for why AI cannot replicate situated interpretation.
+
+### 7.4 Donati, P. "A critical realist perspective on humanness as a meaningful re-entry of relational distinctions." *Journal for the Theory of Social Behaviour* 51, no. 1 (2020): 49-71.
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Intransitive human dignity, symbolisation vs. sign-production, relational reflexivity  
+**Project Application:** Supports claim that meaning-attribution is irreducibly human—AI produces signs, not symbols.
+
+### Digital Hermeneutics & Methods
+
+### 7.5 Oberbichler, S., et al. "Integrated interdisciplinary workflows for research on historical newspapers." *Journal of the Association for Information Science and Technology* 73, no. 2 (2021): 225-239.
+
+**Relevance:** 🔴 Essential  
+**Key Concepts:** Integrated digital hermeneutics, heuristics/criticism/interpretation workflow  
+**Project Application:** Provides methodological framework adaptable for AI agent design. Emphasizes critical reflection on tools.
+
+### 7.6 Andrushchenko, M., et al. "Using parsed and annotated corpora to analyze parliamentarians' talk in Finland." *Journal of the Association for Information Science and Technology* 73, no. 2 (2021): 288-302.
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Computational modeling + humanities interpretation, contextual knowledge  
+**Project Application:** Reinforces that computational methods are necessary but not sufficient—human interpretation remains essential.
+
+### 7.7 Shaw, R. "Conceptual modeling as language design." *Journal of the Association for Information Science and Technology* 76, no. 2 (2023): 353-363.
+
+**Relevance:** 🟢 Helpful  
+**Key Concepts:** Dialectic between quantitative and hermeneutic understanding  
+**Project Application:** Supports claim that computational analysis and hermeneutics exist in dialectical relationship.
+
+### Epistemic Humility & Uncertainty in AI
+
+### 7.8 Ha, S., S. Monadjemi, and A. Ottley. "Guided By AI: Navigating Trust, Bias, and Data Exploration in AI-Guided Visual Analytics." *Computer Graphics Forum* 43, no. 3 (2024).
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** AI transparency, uncertainty visualization, trust calibration  
+**Project Application:** Empirical support for epistemic indicators, with caution about information overload.
+
+### 7.9 Stokes, C., et al. "From Delays to Densities: Exploring Data Uncertainty through Speech, Text, and Visualization." *Computer Graphics Forum* 43, no. 3 (2024).
+
+**Relevance:** 🟢 Helpful  
+**Key Concepts:** Uncertainty communication across modalities, expert vs. lay audiences  
+**Project Application:** Informs design of text-based epistemic indicators for scholarly researchers.
+
+### 7.10 Naser, M. Z. "A Guide to Machine Learning Epistemic Ignorance, Hidden Paradoxes, and Other Tensions." *WIREs Data Mining and Knowledge Discovery* 15, no. 3 (2025).
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Aleatoric vs. epistemic uncertainty, paradox detection, epistemic transparency  
+**Project Application:** Technical vocabulary for discussing AI limitations; supports indicator framework design.
+
+### AI in Religious Studies
+
+### 7.11 Reed, R. "The theology of GPT-2: Religion and artificial intelligence." *Religion Compass* 15, no. 11 (2021).
+
+**Relevance:** 🔴 Essential  
+**Key Concepts:** Three-fold task for religious studies in AI age, bias reinscription, pattern discovery  
+**Project Application:** Foundational article for project rationale. Articulates both promise and peril of AI in religious studies.
+
+### 7.12 Wahid, S. H. "When Robot Meets the God: Exploring the Relationship between Religion and AI." *Religious Studies Review* 51, no. 2 (2025): 483-488.
+
+**Relevance:** 🟡 Important  
+**Key Concepts:** Integration of theological wisdom in AI design, ethics of liberation  
+**Project Application:** Recent scholarly warrant for our intervention; positions project within emerging discourse.
+
+### 7.13 Caidi, N., et al. "Spiritual and religious information experiences." *Journal of the Association for Information Science and Technology* 77, no. 1 (2025): 40-61.
+
+**Relevance:** 🟢 Helpful  
+**Key Concepts:** Post-secular computing, religious information practices  
+**Project Application:** Broader context for not neglecting the sacred in AI research.
 
 ---
 

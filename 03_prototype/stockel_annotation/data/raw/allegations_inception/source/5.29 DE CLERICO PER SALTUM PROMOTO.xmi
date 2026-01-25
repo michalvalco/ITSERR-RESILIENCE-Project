@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="36" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="42" end="63" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="68" end="75" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Lemma glossato" begin="122" end="134" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="330" end="356" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="435" end="462" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="469" end="498" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="729" end="749" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="969" end="992" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="1004" end="1029" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="1331" end="1383" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="1388" end="1413" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="1477" end="1519" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="1531" end="1560" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Lemma glossato" begin="1572" end="1580" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1582" end="1610" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1618" end="1646" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1654" end="1677" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Lemma glossato" begin="1683" end="1709" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1803" end="1825" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1837" end="1869" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="2084" end="2100" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="2451" end="2483" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="2754" end="2769" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="2774" end="2789" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2794" end="2812" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="2814" end="2840" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.29 DE CLERICO PER SALTUM PROMOTO&#13;&#10;&#13;&#10;X 5.29.01 Tuae litterae&#13;&#10;&#13;&#10; Nescire&#13;&#10;Et sic crassa et supina fuit ignorantia.&#13;&#10;&#13;&#10; Discretionis&#13;&#10;Infra annos discretionis bene recipit quis sacros ordines, licet conferri non debeant.  Et qui ordinaverit puniri debet, et ordinato interdicenda est executio usque ad aetatem legitimam, supra, de temp. ord., vel non est.  Licet secus sit in matrimonio carnali nisi malitia suppleat aetatem, supra, de despon. impub., de illis 2; et de despon. impub., tuae nobis.  Et sic non est semper similitudo inter carnale matrimonium et spirituale.  Sed numquid isti taliter ordinati tenentur continere, cum venerint ad legitimam aetatem?  Arg. quod non, quia continentia res est voti et non praecepti, 27. q. 1, integritas.  Non credo quod possit contrahere, maxime si dicatur quod ordo habeat votum continentiae annexum, sic ergo compellitur continere.  Et ita facit quod votum facere non posset, quia in tali aetate non tenet votum, supra, de regular., ad nostram; et supra, de regular., significatum, cum suis similibus.  Sed aequius videtur quod contrahere possit, si contradicat ante quartum decimum annum.  Sed quod prius dixi verum est, quia statim antequam ordinaretur, debuit contradicere et nullo modo consentire.  Et si simpliciter coactus ordinatus fuisset non recepisset characterem, supra, de bapt. et eius effect., maiores § ulti., vers. fi.&#13;&#10;&#13;&#10; Pro huiusmodi negligentia&#13;&#10;Quae crassa est et supina.  Et ideo ipsum non excusat, supra, de ordin. ab ep. qui ren. epi., requisivit; et supra, de cleri. excom., Apostolicae.  Ber.&#13;&#10;&#13;&#10; Iteratum&#13;&#10;de conse. dist. 1, ecclesiae; et de conse. dist. 1, solemnitates; et de conse. dist. 4, placuit.&#13;&#10;&#13;&#10; De misericordia ministrare&#13;&#10;In casu isto episcopus suo iure dispensare potest, ut satis colligitur ex hac littera.  Sic 52. dist., sollicitudo; et supra, de sacram. non iter., pastoralis.  Sed quid si nullum minorem ordinem habuit et promoveatur ad sacerdotium vel ad alium ordinem sacrum, numquid recipit ordinem?  Hug. dixit quod non, quia si laicus ordinetur in sacrum ordinem, nihil recipit, arg. 40. dist., sicut, ubi dicitur sicut viri et mulieris coniunctio unum facit corpus, ita clericatus et sacerdotium unum faciunt ordinem.  Sed si aliquem de minori habeat, recipit sacrum.  Vincen. dicit contra, quod bene recipit quis sacrum ordinem, etiam si nullum habeat de minoribus praeter episcopalem quem nemo recipere potest nisi sit saltem sacerdos, arg. infra, de excess. praelat., ex litteris, ibi: num igitur pontificale officium sine altaris etc.  Et istud verius videtur.  Sed quid si ordinatur in episcopum, praetermisso diaconatu vel subdiaconatu?  Episcopus est dum tamen fuerit sacerdos.  Sed illum ordinem quem non habuit, aliis conferre non potuit, arg. 1. q. 1, gratia; et 1. q. 1, ventum; et 1. q. 7, Daibertum; de conse. dist. 4, quomodo.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28"/>
+</xmi:XMI>

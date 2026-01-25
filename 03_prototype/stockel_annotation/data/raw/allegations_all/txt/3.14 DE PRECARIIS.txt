@@ -1,0 +1,38 @@
+X 3.14 DE PRECARIIS
+
+X 3.14.01 Precariae
+
+ Precariae
+Precarium est quod precibus petenti utendum conceditur tamdiu, quamdiu is qui concessit patitur, ff. de preca., precarium; infra, de precar., precarium.  Precaria dicitur a preces aliquorum usque ad quinquennium contractus initus, ut hic.  Item dicitur precaria ad preces facta donatio usque ad mortem accipientis, 12. q. 2, saepe; 16. q. 3, clerici.  Item precaria dicitur contractus ad preces factus usque ad mortem accipientis cuius contractus natura talis est quae habetur, 10. q. 2, precariae; et infra, de precar., precarium, qui contractus innominatus est.
+
+ In quinquennium
+Quid si elapso quinquennio cum taciturnitate praetereatur?  Intelligitur contractus innovari, ff. de preca., in rebus § ulti.; C. locat. et conduct., legem quidem; arg. 12. q. 2, longinquitate.  Laur.
+
+ Renoventur
+Ne longitudine temporis pereat memoria contractus.
+
+X 3.14.02 De precariis
+
+ De precariis
+Precaria hic accipitur pro contractu de quo vel quibus fit mentio in notula praedicti capituli.
+
+ Poena
+Promissa super contractu irrationabiliter habito.  In hoc enim casu loquitur capitulum, cum enim contractus non valeat nec poena ei apposita, C. de legi. et const., non dubium; supra, de for. compet., si diligenti; 15. q. 6, si quandoque; et 15. q. 6, auctoritatem; C. de condi. ob turp. caus., si ex cautione.  Sed si contractus rationabiliter habitus est, valet poenae adiectio, arg. supra, de arbitr., dilecti.  Tamen si ecclesia non agnovit contractum, solvere non tenetur, ff. de pigner. act., si pignore § ulti.; ff. de evict., illud § ulti.  Arg. contra ff. de iure fisc., si curator.  Ala.
+
+ Ab eo
+Et etiam ab eo qui alienavit, si toleratur, supra, de rebus ecc. non alien., si quis.  Ita successor potest revocare quod praedecessor illicite fecit, 35. q. 9, quod quis.
+
+X 3.14.03 Precarium
+
+ Precarium
+Est autem precarium, ut dictum est in capitulo supra, de precar., precariae, quod precibus ad utendum datur.  Et tamdiu durat quamdiu patitur qui concessit, ut hic, et ff. de preca., precarium.  Et est simile commodato, qui enim commodat rem suam, sic commodat ut non faciat eam accipientis, sed ut permittat ei uti re commodata.  Et sicut revocatur precarium, ita commodatum, ut ff. de preca., precarium.  Sed distant in hoc quod commodatum non revocatur intempestive, ff. commodat., in commodato § sicut.  Nisi post usum completum, infra, de commod., cum gratia § 1.  Precarium vero quandoque revocatur etiam si ad certum tempus sit concessum, ff. de preca., cum precario.  Consistit autem precarium tam in re mobili quam immobili, et in servitutibus ut si me rogaveris ut per fundum meum ire vel agere tibi liceat, vel in tectum meum, vel in area aedium mearum tignum, vel stillicidium immissum habeas, ff. de preca., ait praetor § ulti.; et ff. de preca., veluti; et ff. de preca., in rebus, in princ.  Item in re propria non consistit precarium, ff. de preca., in rebus § item si rem.  Nisi cum debitor pignus rogat precario a creditore possidere, ff. de preca., si debitor, ratione possessionis et non proprietatis, ff. de preca., certe § ulti.  Item tam ille qui concedit precarium quam qui rogat, possidet unus civiliter et alter naturaliter, ff. de preca., et habet § penulti.  Sed duo insolidum precario possidere non possunt, ff. de preca., duo.  Et restitui debet precarium in pristinam causam, alias condemnabitur in tantum quanti interfuerit actoris, ff. de preca., quaesitum § ex hoc interdicto.  Et precarium constituitur inter praesentes et absentes et per epistolam, ff. de preca., precario.  Item si precario durante prorogatur in ulterius tempus, non mutat causam possessionis, ff. de preca., sed si manente.  Unde non dicitur precarium novum.
+
+ Solvitur
+Obitu eius cui conceditur precarium finitur, et non concedentis.  Immo ad heredem eius qui concessit, transit, ff. de preca., cum precario § precarii; et ff. de preca., quaesitum § quod a Titio; et ff. de preca., quaesitum § illud.  Item solvitur precarium pignoris debitore solvente pecuniam creditori, ff. de preca., si debitor.  Arg. contra ff. locat. et conduct., locatio precariive, ibi finitur precarium morte concedentis.  Sed hoc ideo est, quia ille qui concessit precarium hoc voluit, et expressit voluntatem concedendo precarium, et ideo finitur per mortem ipsius.  Sed hic, et ff. de preca., cum precario § 1, simpliciter concessum fuit precarium sine temporis praefinitione, et ideo non finitur per mortem concedentis.  Ber.
+
+ Per conventionem
+Et si ad certum tempus precarium concessum sit, nihilominus ante tempus illud poterit revocare, ff. de preca., cum precario, ubi sunt haec verba: quod non licet rem alienam etc.  Et culpam non praestat, sed dolum tantum et etiam culpam si dolo sit proxima, ff. de preca., quaesitum § illud.  Ber.
+
+ Precariae
+In alia significatione accipitur hic hoc nomen precariae.  Pro contractu scilicet de possessionibus ecclesiarum, de quo habes supra, de precar., precariae; et supra, de precar., de precariis; et 10. q. 2, hoc ius, ad fi.; et 10. q. 2, precariae.  Nec potest revocari ante constitutum tempus, ut hic, nisi irrationabiliter sit factus talis contractus, supra, de precar., de precariis.  Et ita aliud precarium est, et aliud precariae sive precaria.  Ber.  
+

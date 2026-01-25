@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="27" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="33" end="48" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="53" end="75" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="207" end="233" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="330" end="362" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="373" end="396" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="400" end="415" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="555" end="583" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="694" end="724" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="770" end="809" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="820" end="840" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="891" end="930" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="955" end="985" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="1085" end="1110" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1249" end="1287" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1354" end="1387" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1421" end="1465" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1650" end="1670" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1764" end="1786" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1794" end="1827" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1859" end="1898" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="2077" end="2101" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="2112" end="2138" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Capitolo" begin="2588" end="2611" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="2616" end="2631" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2897" end="2925" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="3034" end="3060" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="3064" end="3084" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="3088" end="3104" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="3172" end="3203" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="3242" end="3271" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="3285" end="3326" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="3330" end="3378" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="3745" end="3789" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="3793" end="3832" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="3836" end="3875" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="3894" end="3943" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="4139" end="4178" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="4182" end="4221" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="4225" end="4263" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="4267" end="4296" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="4297" end="4328" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="4339" end="4360" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="4394" end="4419" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="4460" end="4496" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="4814" end="4863" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="4874" end="4913" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="5036" end="5080" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="5084" end="5122" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="5133" end="5157" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="5307" end="5333" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="5337" end="5374" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="5385" end="5406" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="5467" end="5520" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="5603" end="5652" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="5663" end="5698" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="6064" end="6099" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="6103" end="6138" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="6139" end="6188" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="6325" end="6356" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="6367" end="6385" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="6396" end="6421" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="6645" end="6663" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="6770" end="6790" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="6794" end="6814" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="6895" end="6919" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="6923" end="6953" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="6957" end="6997" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="7055" end="7079" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="7310" end="7355" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="7357" end="7387" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Allegazione normativa" begin="7391" end="7420" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="7498" end="7518" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Allegazione normativa" begin="7672" end="7726" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="7838" end="7884" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Allegazione normativa" begin="8143" end="8182" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Allegazione normativa" begin="8186" end="8222" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Allegazione normativa" begin="8226" end="8250" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Allegazione normativa" begin="8254" end="8298" sofa="1"/>
+  <custom:Glossa xmi:id="81" Tipo="Allegazione normativa" begin="8302" end="8346" sofa="1"/>
+  <custom:Glossa xmi:id="82" Tipo="Allegazione normativa" begin="8347" end="8382" sofa="1"/>
+  <custom:Glossa xmi:id="83" Tipo="Allegazione normativa" begin="8549" end="8603" sofa="1"/>
+  <custom:Glossa xmi:id="84" Tipo="Capitolo" begin="8660" end="8681" sofa="1"/>
+  <custom:Glossa xmi:id="85" Tipo="Lemma glossato" begin="8686" end="8699" sofa="1"/>
+  <custom:Glossa xmi:id="86" Tipo="Allegazione normativa" begin="8753" end="8779" sofa="1"/>
+  <custom:Glossa xmi:id="87" Tipo="Lemma glossato" begin="8784" end="8794" sofa="1"/>
+  <custom:Glossa xmi:id="88" Tipo="Allegazione normativa" begin="8911" end="8945" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 2.03 DE LIBELLI OBLATIONE&#13;&#10;&#13;&#10;X 2.03.01 Ignarus&#13;&#10;&#13;&#10; Libellum reclamationis&#13;&#10;Nota quod duplex est libellus.  Est autem libellus conventionalis seu postulationis, qui datur in civilibus quaestionibus, infra, de libel. oblat., dilecti, de quo hic intelligitur.  Et est libellus accusationis qui datur in criminalibus actionibus, ut 2. q. 8, descripta § libellorum; et infra, de accusat., per totum; et 2. q. 1, legum.  Est ergo libellus scriptura in qua continetur res quae petitur, et causa petendi, et nomen actoris et rei, et coram quo iudice, ut infra, de libel. oblat., per totum.  Et sic patet quod semper offerendus est libellus iudici et per ipsum reo, ut ipse reus possit deliberare, ut 3. q. 3, induciae § offeratur.  Et in scriptis debet dari, ut hic patet, et C. de lit. contest., authen. offeratur; et infra, de probat., quoniam.  Et in principio litis per praedictam authenticam C. de lit. contest., authen. offeratur.  Nota tamen arg. contra 11. q. 1, si quis cum clerico.  Sed illud obtinet in modicis et vilibus causis, ubi scriptura non requiritur.  Item contra infra, de dolo et contu., prout.  Et illud intelligo quod libellus antea datus fuerat.  Et per talem libellum sic oblatum iudici et postea reo, actio annalis perpetuatur, C. quan. lib. princ. dat., temporales.  Et rem litigiosam facit subsecuta per executorem conventione, ut C. de litig., authen. litiogiosa.  Et interrumpit praescriptionem, C. de praescri. trig. vel quad. ann., sicut.  Sed numquid libelli oblatio est de substantia ordinis iudiciarii?  Videtur quod sic, quia concilium istos fratres noluit audire nisi primo libellum scriberent, et optimum arg. infra, de probat., quoniam.  Et per libellum apparet de modo agendi secundum quem semper debet formari sententia, infra, de simon., licet Heli; infra, de accusat., qualiter et quando 1; et per authenticam praedictam C. de lit. contest., authen. offeratur.  Optime videtur probari, ubi dicit: litis autem contestatio contra hoc indultum habita pro nihilo est.  Et sic videtur quod sit de substantia, sicut et litis contestatio, infra, de litis contest., olim; et supra, de elect., dudum ecclesia.  Dicunt tamen quidam quod non est de substantia iudiciarii ordinis oblatio libelli.  Et sic potest omitti tacite, sicut consuevit dici de iuramento calumniae.  Alii contra quod non valet quicquid factum est, et hoc per iura praedicta, nisi sit vilis causa, ut dictum est, quod melius videtur iure canonico.  Ista enim principalia sunt, libellus qui est principium et fundamentum causae, litis contestatio et quod sententia feratur in scriptis.&#13;&#10;&#13;&#10;X 2.03.02 Significantibus&#13;&#10;&#13;&#10; Significantibus&#13;&#10;Nota ad intelligentiam istius capituli et sequentis et eorum quae circa hanc materiam dicuntur.  Aut enim convenitur quis actione reali, puta rei vendicatione, ut hic.  Et tunc exprimenda est res quae petitur, ut utrum petatur tota aut pars, ut peto talem fundum, ff. de rei vend., si in rem.  Alias enim reus deliberare non posset, ut hic dicit.  Nec iudex sententiam ferre debet super incerto, arg. Inst. de action. § curare; et 33. dist., habuisse; et 11. q. 3, grave.  Item duos proximos vicinos illius fundi ad minus designare debet, ff. de censi., forma censualis.  Quia generalitas parit obscuritatem, ff. de iure fisc., ita fidei.  Arg. contra ff. de rei vend., quae de tota § incerta; et ff. comm. divid., et si non omnes § si incertum.  Sed contraria ista specialia sunt circa defalcationem legatorum.  Et licet in casu isto debeat quis specificare rem et ipsam designare, ut est dictum.  Causam tamen exprimere non debetur in libello.  Causa enim expressa est eo ipso quod proponit rei vendicationem.  Causa enim non est alia nisi ipsum dominium, cum dicit rem ad se pertinere iure dominii vel quasi, ff. de excepti. rei iud., si mater § eandem; et ff. de excepti. rei iud., si mater § 1; et ff. de excepti. rei iud., si mater § 2; et melius in lege ff. de excepti. rei iud., et an eadem § actiones.  Item et hoc nota, cum agitur rei vendicatione quod si aliquis subiiciat unam causam in libello et succumbat, potest adhuc eandem rem petere ex alia causa, non obstante exceptione rei iudicatae, ff. de excepti. rei iud., si mater § 1; et ff. de excepti. rei iud., si mater § 2; et ff. de excepti. rei iud., et an eadem; et C. de pet. hered., hereditas; ff. ad exhib., de eo § saepius; et supra, de iudic., examinata.  Idem est in possessorio, infra, de dona., inter dilectos.  Et hoc tutius est actori.  Arg. contra ff. de iureiuran., duobus § colonus, ubi dicitur quod qui proponit unam actionem, non potest aliam proponere pro eadem re.  Sed illud est, quia illae actiones surgunt ex eadem causa.  Si vero nullam causam expressit, tunc totum ius suum in iudicium deduxisse videtur, unde obstabit ei exceptio rei iudicatae, si absolvitur reus, quia actor non probavit, ff. de excepti. rei iud., et an eadem § actiones; et infra, de caus. poss. et propr., cum ecclesia.  Item si fuit absolutus reus, quia ipse non possidebat, si postea incipiat possidere, non obstat exceptio iterum petenti, ff. de excepti. rei iud., si a te, 1. resp.; et ff. de excepti. rei iud., si rem meam; et infra, de except., venerabilem.  Si autem agatur personali actione, ut si petas decem dari tibi, causa petendi exprimenda est in libello, aliter enim non tenetur respondere, infra, de libel. oblat., dilecti; et C. de edict. div. Had. toll., edicto; et infra, de censib., pervenit.  Quia causa semper praecedere debet ex qua aliquid debetur, ff. quan. dies leg. vel fid. ced., huiusmodi legatum.  Et si absolvitur reus, non obstat exceptio si idem postea petatur ex alia causa, ff. de excepti. rei iud., et an eadem § actiones; et infra, de caus. poss. et propr., in causa.  Et idem est quantum ad hoc, quod in rei vendicatione assignata enim una causa petendi in libello, sive actio sit personalis sive realis, non obstat rei iudicatae exceptio.  Si agat ex alia causa, ut dicunt iura praedicta, in universalibus iudiciis non est necesse exprimere sive designare singulas res, sed sufficit dicere: peto talem hereditatem, quia sum heres, ff. de pet. hered., si hereditatem; et ff. de pet. hered., si quo tempore; ff. si pars haer. pet., post actionem § ulti.  Et sic potest sententia proferri, condemno te ut restituas hereditatem quae fuit talis.  Item peto ecclesiam cum pertinentiis suis, infra, de restit. spol., cum ad sedem; et infra, de probat., licet; et infra, de dona., inter dilectos.  In generalibus vero iudiciis, scilicet tutelis, negotiis gestis pro socio et consimilibus, sufficit exprimere causam vel factum sic: peto rationem de administratione quam gessisti.  Nec exigitur expressio aliquarum rerum, C. de iud., licet.  Item nota quod libellus potest mutari et emendari et corrigi sicut placet usque ad litis contestationem, 2. q. 8, libellorum; et C. de edend., edita.  Et post litis contestationem non potest mutari nec aliquid addere vel minuere, ff. de iud., non potest; et ff. de excepti. rei iud., egi; et ff. de excepti. rei iud., cum quaeritur.  Et sic nova interpellatione opus est, ut dicit lex illa ff. de iud., non potest.  Et sic mutaverit actionem vel addiderit, habere debet novas inducias ad deliberandum, nisi ex primo libello potuit esse instructus, et hoc licet sine praeiudicio adversarii, ut scilicet ei teneatur ad interesse totiens variando, ff. de interrog. act., de aetate § ulti.  Arg. ff. de edend., ubi § is autem; et ff. de iud., eum quem temere.  Propter levem et minimam additionem non debet habere novas inducias, infra, de dilat., litterae.  Illud praeterea scias, quod si reus sit iam conventus edita sibi actione per iudicem vel executorem reo postulante necesse habet perficere litem actor, C. quom. et quan. iud. sent. prof., authen. qui semel.  Si vero non sit reus praedicto modo conventus, licitum est ei desistere, quia nemo invitus agere compellitur, C. ut nemo invit. age. vel acc. cog., invitus.  Quod autem dictum est quod actio potest mutari, hoc locum habet in his in quibus una non tollitur per electionem alterius.  Sed si una tollitur per electionem alterius, tunc non potest mutari, quod obtinet in casibus, scilicet in sequentibus concordantiis, C. de furti. et serv. cor., si pecunia; et C. si serv. se em. mand., si extero; et C. de codicil., si quis; et ff. de trib. act., quod in herede § eligere; et C. de pac. inter emp. et ven., commissoriae; ff. de leg. 2, cum filius § variis.  Et quod dixi quod actio potest mutari, non intelligas quod ab ea in totum recedit possit, sed necesse habet accusator eam cum nova actione usque ad finem perducere, C. quom. et quan. iud. sent. prof., authen. qui semel.  Sic intelligunt doctores legum illam authenticam.&#13;&#10;&#13;&#10;X 2.03.03 Dilecti filii&#13;&#10;&#13;&#10; Conventionali&#13;&#10;Quid sit libellus conventionalis, dictum est supra, de libel. oblat., ignarus.&#13;&#10;&#13;&#10; Quare sibi&#13;&#10;Hic manifeste patet, quod in personali actione tenetur quis exprimere causam petitionis.  De hoc dictum est supra, de libel. oblat., significantibus.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88"/>
+</xmi:XMI>

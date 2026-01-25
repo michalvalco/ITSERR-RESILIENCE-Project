@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="33" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="39" end="55" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="60" end="71" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="87" end="112" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="251" end="285" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="354" end="407" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="523" end="569" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="583" end="613" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="615" end="642" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="830" end="852" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Capitolo" begin="859" end="884" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="889" end="907" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="1210" end="1243" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="1368" end="1377" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1424" end="1455" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1498" end="1527" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Lemma glossato" begin="1533" end="1560" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1569" end="1596" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1608" end="1633" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Lemma glossato" begin="1639" end="1652" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1794" end="1811" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1965" end="1998" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Lemma glossato" begin="2004" end="2013" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Lemma glossato" begin="2053" end="2063" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="2065" end="2089" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2101" end="2127" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Lemma glossato" begin="2133" end="2151" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="2251" end="2275" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Capitolo" begin="2282" end="2299" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Lemma glossato" begin="2304" end="2312" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="2428" end="2447" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2528" end="2552" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2557" end="2597" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Lemma glossato" begin="2603" end="2616" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2647" end="2664" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2669" end="2688" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2762" end="2790" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Lemma glossato" begin="2796" end="2805" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2949" end="2967" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="3045" end="3064" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="3094" end="3119" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="3169" end="3201" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="3206" end="3258" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.46 DE OBSERVATIONE IEIUNIORUM&#13;&#10;&#13;&#10;X 3.46.01 Ex parte&#13;&#10;&#13;&#10; Die sabbati&#13;&#10;Simile infra, de verb. sign., quaesivit.  Sic videtur quod dies sabbati debeat servitutem diei lunae.  Sed contra, dies Dominicus qui est medius impedire debet illam servitutem, ff. de servit., servitutes § sacri.  Et medium praedium quod non fuit in servitute impedit servitutem, ff. de servitu. rust. praed., qui sella § in rusticis.  Sed istud non est servitus, immo est debitum quoddam.  Unde cum non possit solvi una die, debet solvi alia, arg. 76. dist., ieiunium, vers. et hoc sciendum est.  Sic supra, de dolo et contu., cum dilecti; ff. de recepti., Celsus § 1.  Quia ad duo tenetur, scilicet ieiunare vigiliam Apostoli et ieiunare.  Unde si non potest ieiunare vigiliam ob reverentiam diei Dominicae, ieiunet die sabbati, arg. praedictae legis et ff. de usuri., debitor.&#13;&#10;&#13;&#10;X 3.46.02 Consilium nostrum&#13;&#10;&#13;&#10; Omnium Apostolorum&#13;&#10;Qui omnium dicit, nihil excipit, nisi tres vigilias quae sequuntur.  Ergo in omnibus aliis est ieiunandum, nisi consuetudo contraria sit, ut in § proxima.  Ex quo excipit tantum de istis, ergo de omnibus aliis intelligendum est, quia doli clausula non refertur ad ea de quibus specialiter cautum est, ff. de ver. oblig., doli clausula.  Non obstantibus versibus illis: Petrus et Andreas Paulus cum Simone Iudas // ut ieiunemus nos admonet atque Mathaeus.&#13;&#10;&#13;&#10; Paschalem&#13;&#10;Inter quam nullum ieiunium necessitatis est, 76. dist., ieiunium § non autem.  Nisi rogationes et vigilia Pentecostes, de conse. dist. 3, rogationes.&#13;&#10;&#13;&#10; In praecedenti sunt sabbato&#13;&#10;Supra, de observ. ieiun., ex parte; et infra, de verb. sign., quaesivit.&#13;&#10;&#13;&#10; Consuetudinem&#13;&#10;A qua recedi non debet sine magna causa, cum ex hoc scandalum generetur.  Immo tamquam contemptores legum puniendi sunt qui contra faciunt, 11. dist., in his.  Si tamen periculum contigerit, non est servanda ut hic dicit inferius, quia utilius etiam scandalum nasci permittitur quam veritas relinquatur, infra, de reg. iur., qui scandalizaverit.&#13;&#10;&#13;&#10; Indulgeri&#13;&#10;Non ex debito, sed ex humanitate.&#13;&#10;&#13;&#10; Necessitas&#13;&#10;de conse. dist. 1, sicut; et infra, de reg. iur., quod non est.&#13;&#10;&#13;&#10; Ut maius periculum&#13;&#10;Scilicet mortis, sicut olim permittebatur dare libellum repudii, ut maius periculum vitaretur, ut 33. q. 2, si quod verius.&#13;&#10;&#13;&#10;X 3.46.03 Explicari&#13;&#10;&#13;&#10; Nec voto&#13;&#10;Ergo si voto tenentur, non debent comedere carnes, quia quae sine conditione voventur, sine conditione solvantur, 32. q. 8, non solum, quia ex quo in voto emisso nihil exceperunt, generaliter tenentur, arg. infra, de privileg., quia circa; et ff. de servitu. urb. praed., si servitus.&#13;&#10;&#13;&#10; Consuetudinem&#13;&#10;Quem pro lege servari debet, 11. dist., in his; et 12. dist., diuturni.  Et sic consuetudo ecclesiae generalis servanda est tamquam lex, supra, de celeb. miss., perniciosus.&#13;&#10;&#13;&#10; Voluerint&#13;&#10;Immo magis laudandi sunt, quia ea sunt in nostris officiis gratiora, quae cum licet nobis non impendere, gratia tamen dilectionis impendimus, 28. q. 1, iam nunc.  Quia maioris gratiae est offerre quod non debes quam reddere quod teneris, 33. q. 5, qui sitit, alias est sub illo capitulo 33. q. 5, tunc salvabitur.  Quia nemo in necessitatibus liberalis existit, ff. de adimen. leg., rem legatam; et ff. de donat. inter vir. et uxor., si quis pro uxore.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44"/>
+</xmi:XMI>

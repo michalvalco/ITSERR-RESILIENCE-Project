@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="19" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="25" end="41" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="46" end="61" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="109" end="127" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="190" end="205" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="260" end="278" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="282" end="303" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="307" end="338" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="351" end="381" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Lemma glossato" begin="386" end="398" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="420" end="449" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="531" end="559" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="563" end="597" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="598" end="631" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="798" end="830" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="834" end="859" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="863" end="901" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1115" end="1138" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1161" end="1183" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1187" end="1207" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1346" end="1372" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1526" end="1552" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1556" end="1575" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1576" end="1608" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Lemma glossato" begin="1613" end="1621" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1672" end="1693" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1704" end="1740" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1763" end="1791" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Capitolo" begin="1797" end="1814" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Lemma glossato" begin="1819" end="1830" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1940" end="1958" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Allegazione normativa" begin="2058" end="2080" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2146" end="2168" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2172" end="2196" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="2197" end="2244" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2400" end="2451" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2552" end="2587" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2632" end="2674" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2749" end="2780" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Lemma glossato" begin="2785" end="2796" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Allegazione normativa" begin="2895" end="2913" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2917" end="2934" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="2985" end="3008" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="3012" end="3032" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Lemma glossato" begin="3037" end="3047" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="3060" end="3093" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Lemma glossato" begin="3099" end="3109" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="3140" end="3160" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3165" end="3183" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3205" end="3247" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Lemma glossato" begin="3259" end="3269" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="3316" end="3334" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="3339" end="3362" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="3367" end="3387" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="3396" end="3426" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Lemma glossato" begin="3431" end="3441" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="3564" end="3589" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="3594" end="3617" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Lemma glossato" begin="3623" end="3638" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="3751" end="3788" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="3795" end="3814" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="3819" end="3881" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.26 DE MALEDICIS&#13;&#10;&#13;&#10;X 5.26.01 Innotuit&#13;&#10;&#13;&#10; In depressionem&#13;&#10;Et male, quia principi nemo maledicere debet, 23. q. 1, paratus.  Et non solum principi detrahi non debet, immo nec fratribus, 6. q. 1, summa.  Et detrahentem secreto proximo suo hunc persequebar, 23. q. 4, minimum; et 23. q. 4, qui peccat; et de poen. dist. 1, homicidiorum; arg. infra, de excess. praelat., quam sit.&#13;&#10;&#13;&#10; A temeritate&#13;&#10;Id est, pertinacia, 11. q. 1, si quis sacerdotum.  Arg. contra quod enim ex temeritate sive calore iracundiae fit, veniam meretur, 2. q. 3, si quem § notandum; et 2. q. 3, si quem § si quis iratus; C. de iureiuran., cum et iudices.  Et dicit imperator, si quis putaverit nostra nomina lacesienda, si hoc ex levitate, contemnendum est; si ab insania, miseratione dignum; si ab iniuria, remittendum, C. si quis imp. maled., si quis; et 23. q. 4, inter querelas; et C. de episc. et cler., si quis in hoc.  Quare ergo mandat Papa quod compescat contra iura praedicta?  Sed Papa non mandat hic puniri propriam iniuriam ratione personae, sed quatenus contingit Romanam ecclesiam quam etiam iniuriam remittere non posset, 63. dist., Salonitanae.  In quo casu loquitur 23. q. 4, Guilisarius; et 23. q. 4, si is qui.  Vel potest dici quod aliquis bene potest punire iniuriam sibi factam a subdito suo, maxime cum nullum habeat superiorem, ut hic, et arg. 45. dist., et qui emendat.  Et praedicta iura loquuntur de benignitate seu de mansuetudine, quia nullus tenetur remittere iniuriam sine satisfactione nisi velit, sed rancorem sic, de poen. dist. 5, fratres; et 23. q. 4, si illic; 90. dist., si quis contristatus.&#13;&#10;&#13;&#10; Terrorem&#13;&#10;Sic enim poena unius debet esset metus alterius, 2. q. 7, qua propter; et supra, de Iudae. et Sarrac., ad liberandam, ubi de hoc; et supra, de calumniat., cum dilectus.&#13;&#10;&#13;&#10;X 5.26.02 Statuimus&#13;&#10;&#13;&#10; Blasphemiam&#13;&#10;Qui blasphemiam dicit in Deum sive in Spiritum Sanctum, neque in hoc saeculo neque in futuro remittetur ei, 25. dist., qualis; supple nisi poenituerit.  Et longe gravius est aeternam quam temporalem laedere maiestatem, supra, de haeret., vergentis.  Sed qui contra temporalem maiestatem delinquit, punitur, supra, de maledic., innotuit; et 6. q. 1, quaero § rerum; C. ad leg. Iul. maiest., si quis cum militibus.  Ergo multo fortius isti puniendi sunt et gravius, quia maiora delicta maioribus poenis sunt punienda et in delicto aequali decet proximas esse poenas, in Auth. ut frat. fil. succed., coll. 9, vers. fi.  Et quia hoc est gravius quam in capitulo proximo punitur gravius, quia gravius commissum intelligitur, 24. q. 1, non afferamus, in fi.  Et secundum leges ultimo supplicio punitur, in Auth. ut non lux. cont nat., § 1, coll. 6.  Sed secundum canones olim laicus excommunicabatur, clericus deponebatur, 22. q. 1, si quis per capillum.&#13;&#10;&#13;&#10; Ingressurus&#13;&#10;Quia qui peccat in Deum peccat in eius ecclesiam et econverso.  Unde privatur eius ingressu, sic 12. q. 2, de viro; et 17. q. 4, frater.  Nec debet eis poena remitti qui in Deum peccant, 63. dist., Salonitanae; et 23. q. 3, si is qui.&#13;&#10;&#13;&#10; Facultates&#13;&#10;Sic supra, de voto et vot. redem., venientis.&#13;&#10;&#13;&#10; Commutetur&#13;&#10;Arg. de commutatione poenae, 82. dist., presbyter; et 22. q. 4, innocens.  De hoc dixi supra, de voto et vot. redem., de peregrinationis.  Ber.&#13;&#10;&#13;&#10; Potestatem&#13;&#10;Arg. quod una iurisdictio per aliam iuvatur, 10. dist., quoniam; et 96. dist., cum ad verum; et 17. dist., nec licut; supra, de offi. ord., quoniam, in fi.&#13;&#10;&#13;&#10; Contra eum&#13;&#10;Id est, potestatem.  Et ita habes hic quod si iudex saecularis negligit facere iustitiam, potest compelli per ecclesiam, 23. q. 5, administratores; et 96. dist., cum ad verum.&#13;&#10;&#13;&#10; Usualis monetae&#13;&#10;Idem esset si hoc non fuisset adiectum, ut de moneta quae in usu habetur solvatur secundum consuetudinem loci, ff. de leg. 1, si servus § si numerus; et ff. de leg. 3, nummis; et ff. de instruc. vel instrum., cum de lanionis § asinam, in fi.  Ber.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63"/>
+</xmi:XMI>

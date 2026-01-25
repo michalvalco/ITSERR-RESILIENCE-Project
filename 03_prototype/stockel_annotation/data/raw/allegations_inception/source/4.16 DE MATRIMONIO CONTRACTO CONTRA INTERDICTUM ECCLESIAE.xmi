@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="59" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="65" end="81" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="86" end="100" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Lemma glossato" begin="160" end="185" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="305" end="336" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="519" end="559" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="564" end="603" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Lemma glossato" begin="609" end="623" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="663" end="692" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Lemma glossato" begin="698" end="720" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="917" end="921" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="943" end="959" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Lemma glossato" begin="965" end="973" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="1015" end="1039" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1051" end="1069" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Lemma glossato" begin="1075" end="1087" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1105" end="1136" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1148" end="1168" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Lemma glossato" begin="1174" end="1178" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Lemma glossato" begin="1202" end="1210" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="1608" end="1628" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1635" end="1652" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1654" end="1678" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1683" end="1704" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1709" end="1743" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1801" end="1841" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1846" end="1880" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1890" end="1930" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1977" end="2014" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Lemma glossato" begin="2020" end="2027" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Capitolo" begin="2229" end="2248" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="2253" end="2261" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2380" end="2411" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Allegazione normativa" begin="2416" end="2436" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Lemma glossato" begin="2442" end="2456" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Allegazione normativa" begin="2517" end="2553" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="2565" end="2595" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Lemma glossato" begin="2601" end="2610" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2639" end="2676" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Allegazione normativa" begin="2688" end="2727" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Lemma glossato" begin="2733" end="2755" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2985" end="3002" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Allegazione normativa" begin="3129" end="3143" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="3155" end="3177" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Lemma glossato" begin="3183" end="3199" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="3243" end="3265" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="3267" end="3282" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="3284" end="3310" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="3322" end="3353" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3368" end="3383" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="3470" end="3501" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="3604" end="3619" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Lemma glossato" begin="3625" end="3630" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="3706" end="3743" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Allegazione normativa" begin="3799" end="3830" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="3909" end="3946" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Capitolo" begin="3953" end="3971" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Lemma glossato" begin="3976" end="3994" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="4030" end="4070" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Allegazione normativa" begin="4082" end="4113" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Allegazione normativa" begin="4127" end="4148" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Lemma glossato" begin="4154" end="4170" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Allegazione normativa" begin="4280" end="4298" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4303" end="4325" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Lemma glossato" begin="4467" end="4475" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Allegazione normativa" begin="4496" end="4535" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 4.16 DE MATRIMONIO CONTRACTO CONTRA INTERDICTUM ECCLESIAE&#13;&#10;&#13;&#10;X 4.16.01 Litterae&#13;&#10;&#13;&#10; Daturum uxorem&#13;&#10;Futuram scilicet, cum sponsalia tantum contaherentur.&#13;&#10;&#13;&#10; Praesente et consentiente&#13;&#10;Expresse, et hoc agebatur, quod mediante fratre tamquam per procuratorem sponsalia contraherentur, quod fieri potest, ff. de sponsal., in sponsalibus.  Alias si per fratrem tantum contraherentur, non valerent, nisi ipsa postea consentiret.  Sed frater tantum ad hoc obligatur, ut sororem inducat, ut cum illo matrimonium contrahat, ff. de ver. oblig., in illa stipulatione; et ff. de ver. oblig., quotiens quis alium.&#13;&#10;&#13;&#10; Dona et munera&#13;&#10;Differentia est inter donum et munus, ff. de ver. sig., inter donum.&#13;&#10;&#13;&#10; Tamquam proprium virum&#13;&#10;Spe futuri matrimonii, non rei praesentis.  Et ita non est matrimonium, et hoc patet per finem.  Et hoc ipso etiam si ea absente contracta fuissent sponsalia, consentire videntur ipso facto.&#13;&#10;&#13;&#10; Viri&#13;&#10;Id est, sponsi; sic 22. q. 2, genuit.&#13;&#10;&#13;&#10; Permisit&#13;&#10;Et male, quod facere non debuit, supra, de spons., ad audientiam; et supra, de spons., sponsam.&#13;&#10;&#13;&#10; Prohibuisses&#13;&#10;Et bene, supra, de sponsa duo., tua fraternitas; et supra, de sponsa duo., tuas.&#13;&#10;&#13;&#10; Alii&#13;&#10;Scilicet, tertio.&#13;&#10;&#13;&#10; Mandatum&#13;&#10;Nota quod remittitur causa ad eum a quo appellatum est, vel quia non tenuit appellatio, vel quia ipsa non fuit prosecuta suam appellationem, et episcopus factum significavit Papae.  Unde mandat ei, ut si est ita, ipsam compellat redire ad domum matris, quia ipsa contempsit mandatum ecclesiae, a tertio viro propterea non separabitur.  Et est hic arg. quod mandatum iudicis non est contemnendum, 34. dist., quorundam; arg. 8. q. 1, sciendum; 11. q. 3, si autem vobis; et 11. q. 3, quando ergo; et ff. ne quid in loc. pub., sicut is.  Et puniri debent contemptores, ut hic patet; et infra, de matr. contrac. con. int., ex litteris; et ff. ne quid in loc. pub., sicut is; et arg. ff. si quis ius dic. non obtem., omnibus.  Alias delusorium videretur edictum iudicis, ff. de re iud., contumacia § contumax.&#13;&#10;&#13;&#10; Excessu&#13;&#10;Scilicet, de fide violata prioris sponsi, et quia desponsare se permisit a fratre sponsi, et quia mandatum ecclesiae contempsit.  Et sic patet quod iudex potest punire contumacem, ut dictum est.&#13;&#10;&#13;&#10;X 4.16.02 Ex litteris&#13;&#10;&#13;&#10; Absentem&#13;&#10;Quae postea consensit, alias non tenuissent sponsalia.  Et ita inter absentes contrahuntur sponsalia et matrimonium, ff. de sponsal., in sponsalibus; et 32. q. 2, honorantur.&#13;&#10;&#13;&#10; Interminatione&#13;&#10;Comminatio tantum fuit, non sententia.  Arg. contra infra, de eo qui furt. ord. recep., veniens; et supra, de loc. et cond., ex rescripto.&#13;&#10;&#13;&#10; Prohibuit&#13;&#10;Quod facere debuit, supra, de matr. contrac. con. int., litterae; et infra, de matr. contrac. con. int., de muliere.&#13;&#10;&#13;&#10; Districtius interdixit&#13;&#10;Nota quod licet iudex deferat appellationi, nihilominus mihi potest interdicere, ne faciam id propter quod appellavi, vel quod ex eo sequitur.  Nec mirum, cum sit ordinarius, et potest etiam statuere terminum appellanti, supra, de appell., saepe.  De causa tamen invito appellante, postquam detulit appellationi, cognoscere non posset, quia iam remisit eam ad superiorem, 2. q. 1, nomen; et supra, de offi. deleg., licet.&#13;&#10;&#13;&#10; Donec causa ipsa&#13;&#10;Hic fertur sententia ipsa sub conditione, 63. dist., Salonitanae; 5. q. 1, quidam; 17. q. 4, si quis suadente; et supra, de appell., praeterea requisiti.  Arg. contra 2. q. 6, biduum.  Sententia excommunicationis bene potest fieri sub conditione, ut in capitulo supra, de appell., praeterea requisiti.  Aliae vero sententiae non debent ferri sub conditione, latae tamen tenent, ut in praedicto capitulo 2. q. 5, biduum.&#13;&#10;&#13;&#10; Ob id&#13;&#10;Sic patet quod interdictum ecclesiae non dissolvit matrimonium, ut supra, de matr. contrac. con. int., litterae.  Quia non est perpetuum impedimentum, ut dixit supra, de sponsa duo., tua fraternitas.  Sed poenitentia debet ei imponi, quia mandatum ecclesiae contempsit, supra, de matr. contrac. con. int., litterae.&#13;&#10;&#13;&#10;X 4.16.03 De muliere&#13;&#10;&#13;&#10; Contra interdictum&#13;&#10;Quod facere non debuit, ut supra, de matr. contrac. con. int., ex litteris; et supra, de sponsa duo., tua fraternitas, ubi de hoc; 33. q. 4, non oportet.&#13;&#10;&#13;&#10; Donec separentur&#13;&#10;Haec sententia est ad tempus, unde ex tempore tollitur sine aliqua absolutione, ut hic videtur; arg. supra, de spons., non est; et 81. dist., si qui sunt.  Sed tutius est quod etiam post separationem absolvantur, saltem ad cautelam, licet videantur excommunicationi tantum dum simul manent.&#13;&#10;&#13;&#10; Quousque&#13;&#10;Arg. contra supra, de sponsa duo., tua fraternitas, in fi.  Sed ibi solvitur qualiter illud, et ea quae in hoc titulo dicuntur intelliguntur circa huiusmodi separationem.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67"/>
+</xmi:XMI>

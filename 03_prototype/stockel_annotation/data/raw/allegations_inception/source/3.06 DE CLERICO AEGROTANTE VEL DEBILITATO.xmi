@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="43" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="49" end="70" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="75" end="83" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="92" end="114" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="119" end="135" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="140" end="162" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Lemma glossato" begin="168" end="177" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="179" end="197" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="202" end="233" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="238" end="275" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Lemma glossato" begin="281" end="288" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="362" end="380" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="402" end="431" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="437" end="447" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="510" end="547" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="589" end="622" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Capitolo" begin="696" end="715" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Lemma glossato" begin="720" end="735" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="790" end="811" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="816" end="848" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Allegazione normativa" begin="937" end="970" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Lemma glossato" begin="982" end="990" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1045" end="1076" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="1088" end="1111" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1123" end="1148" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Lemma glossato" begin="1154" end="1166" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Allegazione normativa" begin="1332" end="1353" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Capitolo" begin="1366" end="1387" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Lemma glossato" begin="1392" end="1400" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1448" end="1477" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Allegazione normativa" begin="1531" end="1567" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="1573" end="1582" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="1664" end="1685" sofa="1"/>
+  <custom:Glossa xmi:id="35" Tipo="Lemma glossato" begin="1711" end="1725" sofa="1"/>
+  <custom:Glossa xmi:id="36" Tipo="Allegazione normativa" begin="1807" end="1828" sofa="1"/>
+  <custom:Glossa xmi:id="37" Tipo="Lemma glossato" begin="1834" end="1843" sofa="1"/>
+  <custom:Glossa xmi:id="38" Tipo="Allegazione normativa" begin="1895" end="1916" sofa="1"/>
+  <custom:Glossa xmi:id="39" Tipo="Allegazione normativa" begin="2066" end="2077" sofa="1"/>
+  <custom:Glossa xmi:id="40" Tipo="Allegazione normativa" begin="2084" end="2104" sofa="1"/>
+  <custom:Glossa xmi:id="41" Tipo="Capitolo" begin="2161" end="2176" sofa="1"/>
+  <custom:Glossa xmi:id="42" Tipo="Lemma glossato" begin="2181" end="2189" sofa="1"/>
+  <custom:Glossa xmi:id="43" Tipo="Allegazione normativa" begin="2198" end="2229" sofa="1"/>
+  <custom:Glossa xmi:id="44" Tipo="Lemma glossato" begin="2235" end="2251" sofa="1"/>
+  <custom:Glossa xmi:id="45" Tipo="Allegazione normativa" begin="2348" end="2379" sofa="1"/>
+  <custom:Glossa xmi:id="46" Tipo="Allegazione normativa" begin="2430" end="2456" sofa="1"/>
+  <custom:Glossa xmi:id="47" Tipo="Allegazione normativa" begin="2461" end="2479" sofa="1"/>
+  <custom:Glossa xmi:id="48" Tipo="Allegazione normativa" begin="2665" end="2696" sofa="1"/>
+  <custom:Glossa xmi:id="49" Tipo="Allegazione normativa" begin="2708" end="2734" sofa="1"/>
+  <custom:Glossa xmi:id="50" Tipo="Allegazione normativa" begin="2746" end="2780" sofa="1"/>
+  <custom:Glossa xmi:id="51" Tipo="Allegazione normativa" begin="3239" end="3270" sofa="1"/>
+  <custom:Glossa xmi:id="52" Tipo="Allegazione normativa" begin="3536" end="3559" sofa="1"/>
+  <custom:Glossa xmi:id="53" Tipo="Allegazione normativa" begin="3639" end="3665" sofa="1"/>
+  <custom:Glossa xmi:id="54" Tipo="Allegazione normativa" begin="3748" end="3799" sofa="1"/>
+  <custom:Glossa xmi:id="55" Tipo="Allegazione normativa" begin="3878" end="3899" sofa="1"/>
+  <custom:Glossa xmi:id="56" Tipo="Lemma glossato" begin="3905" end="3917" sofa="1"/>
+  <custom:Glossa xmi:id="57" Tipo="Allegazione normativa" begin="3926" end="3957" sofa="1"/>
+  <custom:Glossa xmi:id="58" Tipo="Allegazione normativa" begin="4005" end="4028" sofa="1"/>
+  <custom:Glossa xmi:id="59" Tipo="Allegazione normativa" begin="4072" end="4094" sofa="1"/>
+  <custom:Glossa xmi:id="60" Tipo="Allegazione normativa" begin="4134" end="4157" sofa="1"/>
+  <custom:Glossa xmi:id="61" Tipo="Capitolo" begin="4171" end="4187" sofa="1"/>
+  <custom:Glossa xmi:id="62" Tipo="Lemma glossato" begin="4192" end="4197" sofa="1"/>
+  <custom:Glossa xmi:id="63" Tipo="Allegazione normativa" begin="4203" end="4217" sofa="1"/>
+  <custom:Glossa xmi:id="64" Tipo="Lemma glossato" begin="4223" end="4233" sofa="1"/>
+  <custom:Glossa xmi:id="65" Tipo="Allegazione normativa" begin="4235" end="4252" sofa="1"/>
+  <custom:Glossa xmi:id="66" Tipo="Allegazione normativa" begin="4257" end="4280" sofa="1"/>
+  <custom:Glossa xmi:id="67" Tipo="Lemma glossato" begin="4286" end="4295" sofa="1"/>
+  <custom:Glossa xmi:id="68" Tipo="Allegazione normativa" begin="4304" end="4326" sofa="1"/>
+  <custom:Glossa xmi:id="69" Tipo="Allegazione normativa" begin="4328" end="4344" sofa="1"/>
+  <custom:Glossa xmi:id="70" Tipo="Allegazione normativa" begin="4349" end="4371" sofa="1"/>
+  <custom:Glossa xmi:id="71" Tipo="Allegazione normativa" begin="4373" end="4417" sofa="1"/>
+  <custom:Glossa xmi:id="72" Tipo="Allegazione normativa" begin="4481" end="4502" sofa="1"/>
+  <custom:Glossa xmi:id="73" Tipo="Lemma glossato" begin="4570" end="4581" sofa="1"/>
+  <custom:Glossa xmi:id="74" Tipo="Allegazione normativa" begin="4594" end="4628" sofa="1"/>
+  <custom:Glossa xmi:id="75" Tipo="Allegazione normativa" begin="4759" end="4779" sofa="1"/>
+  <custom:Glossa xmi:id="76" Tipo="Allegazione normativa" begin="4784" end="4806" sofa="1"/>
+  <custom:Glossa xmi:id="77" Tipo="Allegazione normativa" begin="4808" end="4840" sofa="1"/>
+  <custom:Glossa xmi:id="78" Tipo="Allegazione normativa" begin="4842" end="4876" sofa="1"/>
+  <custom:Glossa xmi:id="79" Tipo="Allegazione normativa" begin="4883" end="4912" sofa="1"/>
+  <custom:Glossa xmi:id="80" Tipo="Allegazione normativa" begin="4914" end="4942" sofa="1"/>
+  <custom:Glossa xmi:id="81" Tipo="Allegazione normativa" begin="4973" end="5001" sofa="1"/>
+  <custom:Glossa xmi:id="82" Tipo="Allegazione normativa" begin="5006" end="5025" sofa="1"/>
+  <custom:Glossa xmi:id="83" Tipo="Allegazione normativa" begin="5027" end="5042" sofa="1"/>
+  <custom:Glossa xmi:id="84" Tipo="Allegazione normativa" begin="5230" end="5264" sofa="1"/>
+  <custom:Glossa xmi:id="85" Tipo="Allegazione normativa" begin="5333" end="5354" sofa="1"/>
+  <custom:Glossa xmi:id="86" Tipo="Allegazione normativa" begin="5372" end="5391" sofa="1"/>
+  <custom:Glossa xmi:id="87" Tipo="Allegazione normativa" begin="5501" end="5531" sofa="1"/>
+  <custom:Glossa xmi:id="88" Tipo="Capitolo" begin="5540" end="5564" sofa="1"/>
+  <custom:Glossa xmi:id="89" Tipo="Lemma glossato" begin="5569" end="5585" sofa="1"/>
+  <custom:Glossa xmi:id="90" Tipo="Allegazione normativa" begin="5632" end="5656" sofa="1"/>
+  <custom:Glossa xmi:id="91" Tipo="Allegazione normativa" begin="5688" end="5716" sofa="1"/>
+  <custom:Glossa xmi:id="92" Tipo="Lemma glossato" begin="5722" end="5731" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 3.06 DE CLERICO AEGROTANTE VEL DEBILITATO&#13;&#10;&#13;&#10;X 3.06.01 Cum percussio&#13;&#10;&#13;&#10; Impedire&#13;&#10;Simile 7. q. 1, cum percussio; et 3. q. 9, indicas; et 5. dist., ad eius vero.&#13;&#10;&#13;&#10; Militaret&#13;&#10;23. q. 1, militare; et 1. q. 3, salvator, circa medium; C. de episc. et cler., authen. sed hodie.&#13;&#10;&#13;&#10; Ordinem&#13;&#10;Secundum ordinem cuiuscumque et dignitatem constituenda sunt beneficia, 12. q. 2, concesso.  De hoc dixi supra, de maior. et obed., statuimus.&#13;&#10;&#13;&#10; Aegrotanti&#13;&#10;Quia famuli aegri quod curamus, nobis servire intelliguntur, ff. de statulib., cum heres § Stichus.  Et tempore infirmitatis pascendi sunt, ff. commodat., in rebus § possunt.  Sic et clerici in aegritudine stipendiis suis privari non debent.&#13;&#10;&#13;&#10;X 3.06.02 Presbyterum&#13;&#10;&#13;&#10; Non permittimus&#13;&#10;Arg. quod ab initio valuit ex post facto informatur, 33. dist., usque adeo; et 33. dist., communiter diffinimus.  Arg. contra quod enim factum est recte, ex superveniente delicto corrumpi non potest, ff. de itin. act. priv., nec enim.  Ber.&#13;&#10;&#13;&#10; Scandalo&#13;&#10;Propter scandalum enim multa sunt dimittenda, infra, de cleri. aegro., de rectoribus; et supra, de temp. ord., ad aures; et supra, de praeben., cum teneamur.&#13;&#10;&#13;&#10; Deformitatem&#13;&#10;Ex hoc verbo apparet quae deformitas impediat ordinandum, cum suspendat ordinatum.  Hoc tamen potest ipso facto melius perpendi quam aliquo statuto exprimi, infra, de dona., Apostolicae.  Ber.&#13;&#10;&#13;&#10;X 3.06.03 De rectoribus&#13;&#10;&#13;&#10; Scandalo&#13;&#10;Nota nihil cum scandalo esse sciendum, supra, de cleri. aegro., presbyterum.  Dummodo sine peccato mortali possit omitti, infra, de nov. oper. nunc., cum ex iniuncto.&#13;&#10;&#13;&#10; Coadiutor&#13;&#10;Et ita videtur quod propter lepram non removeatur praelatus.  Sed contra infra, de cleri. aegro., tua, ubi de hoc dicitur.&#13;&#10;&#13;&#10; Curam animarum&#13;&#10;Ergo ille coadiutor videtur esse praelatus, ex quo habet curam animarum, infra, de cleri. aegro., tua.&#13;&#10;&#13;&#10; Portionem&#13;&#10;Et sic providebitur ei de bonis ecclesiae, infra, de cleri. aegro., tua.  Sed pone quod ecclesia non possit sufficere utrique.  Respondeo: ille qui servit ecclesiae habebit redditus, et illi infirmo providebit episcopus, 82. dist. § 1; et 82. dist., episcopus.  Et ex hoc verbo est arg. quod non sit praelatus.&#13;&#10;&#13;&#10;X 3.06.04 Tua nos&#13;&#10;&#13;&#10; Scandalo&#13;&#10;Supra, de cleri. aegro., de rectoribus.&#13;&#10;&#13;&#10; Administrationis&#13;&#10;Ex hoc videtur quod propter morbum leprae sit removendus praelatus.  Sed contra videtur supra, de cleri. aegro., de rectoribus.  Et ita sine culpa punitur, quod esse non debet, 56. dist., satis perversum; et 16. q. 7, inventum.  Super hoc est diversitas inter doctores.  Hug. dixit quod numquam substituitur aliquis vivo nisi eo renunciante.  Et in hoc opinione fuit Laur.  Et dandus est ei coadiutor, ut supra, de cleri. aegro., de rectoribus; et infra, de cleri. aegro., ex parte; et infra, de cleri. aegro., consultationibus.  Et quod dicit hic, ab administrationis officio debet removeri, dicit Laur. ab officio quod est in actu, sed quo ad ius retinebit officium.  Bart. distinxit utrum morbus sit curabilis vel incurabilis.  Dicas cum Vincen. et Tanc. quod quamdiu aliquis potest remanere in collegio suo sine scandalo et horrore, non substituitur ei aliquis.  Alias alius erit substituendus, ut hic, qui erit praelatus in totum et infirmo providebitur de bonis ecclesiae, supra, de cleri. aegro., de rectoribus.  Ad idem satis concordat, quia talis coadiutor praelatus est ex toto.  Et hoc patet ex eo quod dicit quod habet curam animarum, et est hoc speciale in lepra propter abominationem populi et scandalum, sicut etiam iudex mutatur si non potest dare operam iudicio, ut ff. de iud., si longius.  Alias autem obtinet sententia Hug. et Laur.  Et datur tunc coadiutor, infra, de cleri. aegro., ex parte.  Et est casus ubi aliquis punitur sine culpa, sed non sine causa.  Simile supra, ut lite non cont., quoniam § si vero aliter, in fi.  In quibus casibus privatur quis sine culpa sed non sine causa dicitur infra, de privileg., antiqua.&#13;&#10;&#13;&#10; Ministrentur&#13;&#10;Supra, de cleri. aegro., de rectoribus.  Ex quo cum infirmitas non crimen abduxit, ut 7. q. 1, quamvis triste, quia non est afflictis addenda afflictio, 7. q. 1, cum percussio.  Criminosus enim dignus est ut egeat, ff. deposi., bona fides.  Laur.&#13;&#10;&#13;&#10;X 3.06.05 Ex parte&#13;&#10;&#13;&#10; Cives&#13;&#10;Sic 7. q. 2, nuper.&#13;&#10;&#13;&#10; Non possis&#13;&#10;7. q. 1, scripsit; et 7. q. 1, quamvis triste.&#13;&#10;&#13;&#10; Afflictio&#13;&#10;Simile 7. q. 1, cum percussio; 3. q. 9, indicas; et 5. dist., ad eius vero; ff. de lege Rhod. de iac., navis § cum autem.  In leproso tamen secus consuevit dici a quibusdam, ut supra, de cleri. aegro., tua, ubi de hoc.  Idem Io. dicit circa leprosum quod Hug. et Laur.&#13;&#10;&#13;&#10; Coadiutorem&#13;&#10;Sic infra, de cleri. aegro., consultationibus.  Et ita patet quod propter infirmitatem supervenientem non privatur praelatus, quia ecclesiastica beneficia non sunt temporalia, 55. dist., praecepta; et ff. de adopt., si tibi; ff. de hered. instit., hereditas; ff. de regul. iur., actus legitimi.  Sic ff. de manum. test., libertas; ff. de peculi., peculium § 2, quod est verum.  Arg. contra ff. de off. praes., si forte; et 7. q. 1, pastoralis; 12. q. 2, nobis.  Solutio: verum est quod beneficia ecclesiastica perpetua sunt.  Et ideo propter casum supervenientem sine culpa non privatur praelatus.  Sed datur ei coadiutor, ut hic patet, et infra, de cleri. aegro., consultationibus.  In casu tamen alius viventi substituitur secundum quosdam, supra, de cleri. aegro., tua, ubi de hoc.; et 7. q. 1, pastoralis.  Omni tamen casu providebitur infirmo de bonis ecclesiae, et coadiutor illi datur etiam invito, arg. infra, de eccl. aedif., ad audientiam 1.&#13;&#10;&#13;&#10;X 3.06.06 Consultationibus&#13;&#10;&#13;&#10; Officium linguae&#13;&#10;Idem est si amiserit officium oculorum, arg. 55. dist., si Evangelica.  Et quia est oculus episcopi, 94. dist., diaconi ecclesiae.&#13;&#10;&#13;&#10; Coadiutor&#13;&#10;Et de hoc dictum est in proximis duobus capitulis.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92"/>
+</xmi:XMI>

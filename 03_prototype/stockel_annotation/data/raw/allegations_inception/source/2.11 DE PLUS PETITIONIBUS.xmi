@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="27" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="33" end="50" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="55" end="78" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="245" end="269" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="325" end="355" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="430" end="470" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="482" end="529" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="535" end="566" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Allegazione normativa" begin="572" end="608" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Allegazione normativa" begin="613" end="647" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="798" end="822" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Lemma glossato" begin="1163" end="1172" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="1321" end="1374" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Allegazione normativa" begin="1412" end="1435" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Lemma glossato" begin="1441" end="1456" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1525" end="1557" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1566" end="1595" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1722" end="1755" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1885" end="1910" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1919" end="1954" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="2023" end="2041" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="2202" end="2237" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="2239" end="2274" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Allegazione normativa" begin="2486" end="2515" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="2524" end="2548" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="2773" end="2816" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 2.11 DE PLUS PETITIONIBUS&#13;&#10;&#13;&#10;X 2.11.01 Consilium&#13;&#10;&#13;&#10; In iudicio persistendum&#13;&#10;Et ita si volunt desistere a petitione, licitum est nec puniuntur.  Et hoc possunt facere usque ad litem contestatam.  Postea vero non possunt desistere sine poena, C. de plus pet., odiosas.  Sic licitum est ei poenitere ante litem contestatam, ff. rem rat. hab., amplius non.  Sed videtur quod licitum sit poenitere quandocumque ante sententiam, ut ff. de inoffic. testam., contra veterani, alias est ff. de inoffic. testam., Papinianus § meminisse; et C. de his quib. ut indign., alia; et C. ad leg. Corn. de fals., qui falsas; et C. locat. et conduct., conductores, in quibus potest poenitere ante sententiam.  Sed prius dictum verius est, quod ante litem contestatam poenitere debent, alias puniuntur in expensis, C. de plus pet., odiosas, et hic.  Et hoc etiam cum re aut causa plus petitur.  Sed lex illa loquitur cum aliquis per dolum super maiori quantitate exigit cautionem, et ille si persistat a toto debito punitur, exceptis duobus casibus, scilicet transactionis et secundae confessionis, qui excipiunt in lege illa.  Et ita de aliis plus petitionibus loquitur hic.&#13;&#10;&#13;&#10; Plus loco&#13;&#10;Qui petit alio loco quam ubi convenit, ad interesse per officium iudicis potest conveniri, in eo in quo damnificatur quod in alio loco convenitur, ff. de eo quod cert. loc. dar. op., arbitraria § ulti.  De hoc interesse dictum est supra, de offi. deleg., P et G.&#13;&#10;&#13;&#10; Amplius tempore&#13;&#10;In istis quatuor modis plus petendi olim puniebatur in tota causa, Inst. de action. § si quis agens; et Inst. de exception. § appellantur.  Sed hodie non ita puniuntur.  Quando enim quis ante tempus petit, induciae duplicantur, et nihilominus in expensis punitur, Inst. de exception. § hodie autem, et hic.  Si autem re, causa, loco plus petat, et reus aliquod damnum sustinuit circa sportulas, actor triplicem poenam patitur, Inst. de action. § tripli; et Inst. de action. § sed hoc quidem antea.  Et in aliis expensis condemnabitur, ut dictum est in littera.&#13;&#10;&#13;&#10; Causa plus petitur&#13;&#10;Hic exemplificat praedictos quatuor modos plus petendi, quia causa plus petitur, ut puta promisi tibi decem vel Stichum, in optione mea est solvere quem volo, C. de condi. indeb., si quis servum; ff. de iure dot., plerumque § ulti.  Vel promisi hominem in genere, non istum vel illum.  Si tu petis a me praecise decem vel Stichum, auferre vis mihi electionem, quod esse non debet.  Unde puniri debes in damnis quae sustinui, ut dictum est, ut Inst. de action. § huic autem; et Inst. de action. § praeterea.  Loco et re patet in ipsa littera.  Tempore, ut si promisi tibi decem solvere usque ad annum, et tu antea petas, vel promisi tibi si imperator intraret Italiam, et tu petis ante conditionem extantem.  Exemplum de his habes Inst. de action. § plus autem quatuor modis.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27"/>
+</xmi:XMI>

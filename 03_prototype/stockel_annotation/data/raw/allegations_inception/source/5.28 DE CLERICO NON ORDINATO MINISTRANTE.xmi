@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:cas="http:///uima/cas.ecore" xmlns:custom="http:///webanno/custom.ecore" xmi:version="2.0">
+  <cas:NULL xmi:id="0"/>
+  <custom:Glossa xmi:id="2" Tipo="Titolo" begin="2" end="42" sofa="1"/>
+  <custom:Glossa xmi:id="3" Tipo="Capitolo" begin="48" end="76" sofa="1"/>
+  <custom:Glossa xmi:id="4" Tipo="Lemma glossato" begin="81" end="101" sofa="1"/>
+  <custom:Glossa xmi:id="5" Tipo="Allegazione normativa" begin="252" end="271" sofa="1"/>
+  <custom:Glossa xmi:id="6" Tipo="Allegazione normativa" begin="276" end="295" sofa="1"/>
+  <custom:Glossa xmi:id="7" Tipo="Allegazione normativa" begin="363" end="390" sofa="1"/>
+  <custom:Glossa xmi:id="8" Tipo="Allegazione normativa" begin="420" end="443" sofa="1"/>
+  <custom:Glossa xmi:id="9" Tipo="Allegazione normativa" begin="455" end="507" sofa="1"/>
+  <custom:Glossa xmi:id="10" Tipo="Capitolo" begin="514" end="533" sofa="1"/>
+  <custom:Glossa xmi:id="11" Tipo="Lemma glossato" begin="538" end="543" sofa="1"/>
+  <custom:Glossa xmi:id="12" Tipo="Allegazione normativa" begin="568" end="599" sofa="1"/>
+  <custom:Glossa xmi:id="13" Tipo="Allegazione normativa" begin="616" end="636" sofa="1"/>
+  <custom:Glossa xmi:id="14" Tipo="Allegazione normativa" begin="761" end="781" sofa="1"/>
+  <custom:Glossa xmi:id="15" Tipo="Lemma glossato" begin="894" end="914" sofa="1"/>
+  <custom:Glossa xmi:id="16" Tipo="Allegazione normativa" begin="1048" end="1090" sofa="1"/>
+  <custom:Glossa xmi:id="17" Tipo="Allegazione normativa" begin="1105" end="1127" sofa="1"/>
+  <custom:Glossa xmi:id="18" Tipo="Allegazione normativa" begin="1132" end="1150" sofa="1"/>
+  <custom:Glossa xmi:id="19" Tipo="Allegazione normativa" begin="1162" end="1193" sofa="1"/>
+  <custom:Glossa xmi:id="20" Tipo="Allegazione normativa" begin="1205" end="1243" sofa="1"/>
+  <custom:Glossa xmi:id="21" Tipo="Allegazione normativa" begin="1273" end="1308" sofa="1"/>
+  <custom:Glossa xmi:id="22" Tipo="Lemma glossato" begin="1326" end="1335" sofa="1"/>
+  <custom:Glossa xmi:id="23" Tipo="Allegazione normativa" begin="1406" end="1458" sofa="1"/>
+  <custom:Glossa xmi:id="24" Tipo="Allegazione normativa" begin="1463" end="1495" sofa="1"/>
+  <custom:Glossa xmi:id="25" Tipo="Lemma glossato" begin="1507" end="1519" sofa="1"/>
+  <custom:Glossa xmi:id="26" Tipo="Allegazione normativa" begin="1525" end="1543" sofa="1"/>
+  <custom:Glossa xmi:id="27" Tipo="Allegazione normativa" begin="1545" end="1567" sofa="1"/>
+  <custom:Glossa xmi:id="28" Tipo="Lemma glossato" begin="1573" end="1580" sofa="1"/>
+  <custom:Glossa xmi:id="29" Tipo="Allegazione normativa" begin="1683" end="1700" sofa="1"/>
+  <custom:Glossa xmi:id="30" Tipo="Allegazione normativa" begin="1710" end="1728" sofa="1"/>
+  <custom:Glossa xmi:id="31" Tipo="Allegazione normativa" begin="1810" end="1842" sofa="1"/>
+  <custom:Glossa xmi:id="32" Tipo="Lemma glossato" begin="1848" end="1861" sofa="1"/>
+  <custom:Glossa xmi:id="33" Tipo="Lemma glossato" begin="2176" end="2185" sofa="1"/>
+  <custom:Glossa xmi:id="34" Tipo="Allegazione normativa" begin="2197" end="2225" sofa="1"/>
+  <cas:Sofa xmi:id="1" sofaNum="1" sofaID="_InitialView" mimeType="text" sofaString="X 5.28 DE CLERICO NON ORDINATO MINISTRANTE&#13;&#10;&#13;&#10;X 5.28.01 Si quis baptizaverit&#13;&#10;&#13;&#10; Si quis baptizaverit&#13;&#10;Intellige ac si esset ordinatus et ei liceret ex officio.  Tunc punitur prout hic dicitur.  Secus si in necessitate, quia tunc licitum est cuilibet, 30. q. 1, ad limina; et 93. dist., diaconos.  Etiam ab haeretico potest recipi baptismus tempore necessitatis, de conse. dist. 4, a quodam; dummodo in forma ecclesiae, 24. q. 1, si quem forte; et supra, de summ. trin. et fid. cath., firmiter § sacramentum.&#13;&#10;&#13;&#10;X 5.28.02 Ex litteris&#13;&#10;&#13;&#10; Manum&#13;&#10;De qua tu habes supra, de sacram. non iter., presbyter, ubi de hoc; et 23. dist., presbyter.  Quae si omissa fuerit non est ordo reiterandus, sed statuto tempore etiam supplendum, ut dicitur in decretalis praedicta, 23. dist., presbyter.  Sed hic nec ordinem nec manus impositionem recipit, prout sequitur ubi dicit, ad sacerdotis officium etc.&#13;&#10;&#13;&#10; Usurpare praesumpsit&#13;&#10;Bene dicit, usurpare, quia non confecit, cum virtutem illam non haberet, quia solus ille conficit qui rite fuerit ordinatus, supra, de summ. trin. et fid. cath., firmiter § 1.  Arg. ad hoc 68. dist., presbyteris; et 1. q. 7, Daibertum; et supra, de iure patron., quod autem, in fi.; et de conse. dist. 1, consecrationem, in fi.  Secus in deposito ut supra, de cleri. excom., si quis episcopus, dictum est.&#13;&#10;&#13;&#10; Promoveri&#13;&#10;Sine dispensatione, et sic punitur in eo in quo delinquit, ut supra, de immun. eccl., immunitatem, cum suis concordantiis; et ff. de fur., qui vas § qui furem.  Ber.&#13;&#10;&#13;&#10; De beneficio&#13;&#10;Sic 50. dist., studeat; 28. dist., presbyterum.&#13;&#10;&#13;&#10; Negotia&#13;&#10;Quia hoc redundaret in opprobrium clericorum, cum ipse clericaliter vivere teneatur sicut depositus, 81. dist., dictum; et arg. 93. dist., diaconi, ibi: mendicat infelix etc.  Et ne cogatur in cleri opproprium mendicare, supra, de renunciat., ad supplicationem.&#13;&#10;&#13;&#10; Misericordiam&#13;&#10;Ut ipse possit ad diaconatum redire post tempus statutum et ad beneficium si digne poenituerit.  Sed numquid episcopus posset dispensare cum eo, ut saltem ad sacerdotium promoveretur post poenitentiam?  Non credo, quia Papa hoc ei prohibere, ut hic.  Sed dic quod potest, quia Papa hoc expresse non prohibet.&#13;&#10;&#13;&#10; Salubrius&#13;&#10;Ut supra, de simon., Matthaeus, in fi.&#13;&#10;&#13;&#10;"/>
+  <cas:View sofa="1" members="2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34"/>
+</xmi:XMI>
