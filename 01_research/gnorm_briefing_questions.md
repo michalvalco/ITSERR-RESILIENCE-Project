@@ -1,278 +1,231 @@
 # GNORM Technical Briefing Questions
 
-**Briefing Dates:** February 11-12, 2026
-**Purpose:** Understand GNORM capabilities for integration with ethically-grounded AI agent prototype
-**Prepared by:** [Your Name]
-**Contact:** Andrea Esuli, Alessio Ferrante (WP5 Hosts)
+**Briefing Dates:** February 11-12, 2026  
+**Purpose:** Understand GNORM capabilities for integration with ethically-grounded AI agent prototype  
+**Primary Contact:** Dr. Arianna Maria Pavone (WP3 Coordinator, University of Palermo)  
+**Additional Contacts:** Andrea Esuli (ISTI-CNR, CRF annotation lead), Vincenzo Roberto Imperia, Andrea Ravasco
 
 ---
 
-## Context
+## What We Already Know (from CEUR Vol-3937 Paper)
 
-This question list is prepared for the GNORM technical briefing during the first week of the ITSERR fellowship. The goal is to gather sufficient technical understanding to implement a working integration between the AI research assistant prototype and GNORM's annotation capabilities.
+Before the briefing, it's worth noting what the published paper has already revealed:
 
-**Integration Goal:** Enable the AI agent to request and display GNORM annotations for religious and theological texts, with appropriate epistemic indicators (FACTUAL/INTERPRETIVE/DEFERRED) based on annotation confidence levels.
+**Technical achievements:**
+- CRF (Conditional Random Fields) outperformed BERT and Latin BERT for allegatio extraction
+- CRF "rich" configuration: **97.8% accuracy**, 21 min training on desktop CPU, 1.1 MB model
+- Latin BERT: 92.4% accuracy, 13 min on 4× A40 GPUs, 423 MB model
+- **41,784 legal references** automatically annotated in Liber Extra's Ordinary Gloss
+- **1,795 distinct referenced sections** indexed from Corpus Iuris Canonici and Corpus Iuris Civilis
 
----
+**Code availability:**
+- GitHub: `github.com/aesuli/CIC_annotation` (annotation pipeline)
+- Zenodo: Dataset with training data and annotations
 
-## 1. Architecture & Overview
-
-### 1.1 System Architecture
-- [ ] What is the overall architecture of GNORM? (monolithic, microservices, etc.)
-- [ ] What components make up the GNORM system?
-- [ ] Is there a system architecture diagram available?
-
-### 1.2 CRF Model Details
-- [ ] What CRF (Conditional Random Field) implementation is used?
-- [ ] What training data was the model trained on?
-- [ ] What is the model's domain coverage for religious/theological texts?
-- [ ] Are there multiple models for different text types or languages?
-
-### 1.3 Current Status
-- [ ] What is the current development status of GNORM?
-- [ ] Is there a stable API available for external integration?
-- [ ] What environments exist? (dev, staging, production)
-- [ ] Are there known limitations or active development areas?
+**Current focus:** Medieval canon law (Liber Extra, Decretales Gregorii IX)  
+**Expanding to:** Babylonian Talmud (Marco Papasidero's work)
 
 ---
 
-## 2. API & Integration
+## Priority Questions (Must-Answer for Integration)
 
-### 2.1 API Fundamentals
-- [ ] What is the API format? (REST, GraphQL, gRPC, other)
-- [ ] What is the base URL structure?
-- [ ] What authentication model is used? (API key, OAuth, JWT, none)
-- [ ] Are there rate limits? If so, what are they?
-- [ ] Is there API documentation available?
+### 1. API Access & Endpoints
 
-### 2.2 Request Format
-- [ ] What is the request payload structure for annotation requests?
-- [ ] How should text be submitted? (plain text, specific encoding, document format)
-- [ ] What parameters are available? (entity types, confidence threshold, etc.)
-- [ ] Is there a maximum text length per request?
-- [ ] Can requests specify which entity types to extract?
+*These are essential for writing the integration code:*
 
-### 2.3 Response Format
-- [ ] What is the response payload structure?
-- [ ] How are annotations represented? (inline, offset-based, standoff, etc.)
-- [ ] What metadata is included with each annotation?
-- [ ] Are confidence scores included? How are they scaled (0-1, 0-100, etc.)?
-- [ ] How are relations between entities represented?
+- [ ] **Is there a REST API endpoint available?** Or is GNORM currently batch-processing only?
+- [ ] **What is the API base URL?** (If exists)
+- [ ] **What authentication is required?** (API key, bearer token, none for research access?)
+- [ ] **Can I get sandbox/dev credentials** for the fellowship period?
 
-### 2.4 Example Request/Response
-- [ ] Can you provide a sample request?
-- [ ] Can you provide a sample response?
-- [ ] Are there example scripts or code snippets available?
+### 2. Request/Response Format
 
----
+*Needed to implement the `GNORMClient` class correctly:*
 
-## 3. Entity Types & Annotations
+- [ ] **What is the exact request payload structure?**
+  ```json
+  // Current assumption in prototype:
+  {
+    "text": "string",
+    "language": "la",  // Latin?
+    "options": {}
+  }
+  ```
+- [ ] **What is the exact response structure?**
+  ```json
+  // Current assumption:
+  {
+    "annotations": [
+      {
+        "entity": "Dig. 1.1.1",
+        "type": "legal_reference",
+        "start_offset": 10,
+        "end_offset": 20,
+        "confidence": 0.95
+      }
+    ],
+    "metadata": {}
+  }
+  ```
+- [ ] **How are confidence scores scaled?** (0-1, 0-100, or categorical?)
+- [ ] **What annotation types are returned?** (legal references only, or also persons, places, etc.?)
 
-### 3.1 Available Entity Types
-- [ ] What entity types does GNORM recognize?
-- [ ] Are there entity types specific to religious/theological content?
-  - Persons (biblical figures, saints, theologians)?
-  - Places (sacred locations, historical sites)?
-  - Concepts (theological terms, doctrines)?
-  - Temporal expressions (liturgical calendar, historical periods)?
-  - Textual references (scripture citations, patristic references)?
-  - Organizations (religious orders, councils, churches)?
+### 3. Confidence Score Semantics
 
-### 3.2 Entity Attributes
-- [ ] What attributes are provided for each entity?
-- [ ] Is there normalization/linking to external databases? (Wikidata, VIAF, etc.)
-- [ ] Are variant forms/aliases handled?
+*Critical for mapping to epistemic indicators:*
 
-### 3.3 Relations
-- [ ] What relation types are extracted between entities?
-- [ ] How are relations represented in the output?
-- [ ] What is the confidence scoring for relations?
+My prototype maps GNORM confidence → epistemic indicators:
+- `confidence ≥ 0.85` → `[FACTUAL]` (high reliability)
+- `0.50 ≤ confidence < 0.85` → `[INTERPRETIVE]` (AI-assisted, needs evaluation)
+- `confidence < 0.50` → `[INTERPRETIVE]` + review flag
 
-### 3.4 Customization
-- [ ] Can custom entity types be defined for specific projects?
-- [ ] Is there a way to provide domain-specific training data?
-- [ ] Can entity extraction be scoped to specific types per request?
+**Questions:**
+- [ ] **Does this threshold mapping make sense** given how CRF confidence scores are calibrated?
+- [ ] **What does a 0.97 vs 0.75 vs 0.40 confidence actually mean** in GNORM's output?
+- [ ] **Are there annotation types that should always be human-reviewed** regardless of confidence?
 
----
+### 4. Text Input Requirements
 
-## 4. Confidence Scores & Interpretation
+*For preprocessing in the agent pipeline:*
 
-### 4.1 Confidence Model
-- [ ] How are confidence scores calculated?
-- [ ] What do different confidence levels indicate about reliability?
-- [ ] What is considered high/medium/low confidence?
-
-### 4.2 Threshold Recommendations
-- [ ] What confidence threshold is recommended for production use?
-- [ ] How should low-confidence annotations be handled?
-- [ ] Are there guidelines for human review triggers?
-
-### 4.3 Mapping to Epistemic Indicators
-For my prototype, I plan to map GNORM confidence to epistemic indicators:
-- High confidence → `[FACTUAL]`
-- Medium confidence → `[INTERPRETIVE]`
-- Low confidence → `[INTERPRETIVE]` with flag for verification
-
-- [ ] Does this mapping align with your understanding of GNORM's confidence semantics?
-- [ ] Are there additional factors beyond confidence that should influence this mapping?
-- [ ] Are there annotation types that should always be flagged for human review regardless of confidence?
+- [ ] **What text encoding is expected?** (UTF-8, specific Latin character handling?)
+- [ ] **Is there a maximum text length per request?**
+- [ ] **Should abbreviations be expanded** before submission, or does GNORM handle them?
+- [ ] **How does GNORM handle modern vs. medieval Latin?**
 
 ---
 
-## 5. Processing Modes
+## Secondary Questions (Important but Less Urgent)
 
-### 5.1 Real-time vs. Batch
-- [ ] Is real-time (synchronous) processing available?
-- [ ] What is the typical latency for a single text annotation?
-- [ ] Is batch processing available for larger documents?
-- [ ] How is batch processing status tracked?
+### 5. Generalizability Beyond Canon Law
 
-### 5.2 Performance Characteristics
-- [ ] What is the processing time per character/word/document?
-- [ ] Are there performance differences by entity type?
-- [ ] What resources are required for self-hosting (if applicable)?
+*For understanding future applicability to Leonard Stöckel corpus and theological texts:*
 
-### 5.3 Caching
-- [ ] Are annotation results cached?
-- [ ] How should clients handle caching for repeated texts?
+- [ ] **How domain-specific is the current model?** (Canon law only, or transferable?)
+- [ ] **What would be needed to adapt GNORM for:**
+  - Patristic texts with biblical citations?
+  - Reformation-era theological texts?
+  - Biblical commentary traditions?
+- [ ] **Is there a mechanism for fine-tuning** on new domains?
+- [ ] **What training data format would be required** if we wanted to contribute Stöckel annotations?
 
----
+### 6. The "Allegationes as Performative Acts" Question
 
-## 6. Text Types & Languages
+*From my letter to Arianna - the hermeneutical dimension:*
 
-### 6.1 Supported Languages
-- [ ] What languages are supported?
-- [ ] Is multilingual text handled within a single document?
-- [ ] Are there language-specific models?
+The paper notes that allegationes in canon law glosses function not just as references but as **argumentative moves**—they're performative as much as informational.
 
-### 6.2 Text Types
-- [ ] What text types work best with GNORM?
-- [ ] How does it perform on:
-  - Modern theological/academic texts?
-  - Historical texts (patristic, medieval)?
-  - Scripture and scriptural commentary?
-  - Liturgical texts?
-- [ ] Are there text types that are known to perform poorly?
+- [ ] **How did the team think about preserving this dimension** in the annotation design?
+- [ ] **Does the data model capture citation function** (authority appeal, counter-argument, etc.) or just citation identity?
+- [ ] **Are there plans to model citation networks** showing argumentative flow?
 
-### 6.3 Pre-processing
-- [ ] What text pre-processing is recommended?
-- [ ] How should special characters, Unicode, etc. be handled?
-- [ ] Are there encoding requirements?
+### 7. Integration with Existing Tools
+
+- [ ] **How does GNORM relate to CRITERION** (the critical editions tool)?
+- [ ] **Is there a common annotation format** (TEI, Web Annotation, custom XML)?
+- [ ] **Can GNORM annotations be exported** for use in other systems?
 
 ---
 
-## 7. Integration with T-ReS
+## Practical Logistics
 
-### 7.1 T-ReS Overview
-- [ ] What is T-ReS's primary function?
-- [ ] How does T-ReS complement GNORM?
-- [ ] What text analysis capabilities does T-ReS provide?
+### 8. Access During & After Fellowship
 
-### 7.2 GNORM + T-ReS Workflow
-- [ ] What is the recommended workflow for using both tools?
-- [ ] Do they share data formats or can outputs be chained?
-- [ ] Are there integration examples available?
+- [ ] **How will I access GNORM during Feb 10-27?** (Local installation, hosted endpoint, VPN?)
+- [ ] **Can my prototype continue using GNORM after the fellowship** for research/publication purposes?
+- [ ] **What attribution/acknowledgment is required** when publishing results using GNORM?
 
-### 7.3 Annotation Sharing
-- [ ] How can annotations be shared between systems?
-- [ ] Is there a common annotation format (TEI, Web Annotation, custom)?
-- [ ] Can T-ReS consume GNORM annotations and vice versa?
+### 9. Technical Support
+
+- [ ] **Who should I contact with technical questions** during prototype development?
+- [ ] **Is there a Slack/Teams channel** for ITSERR developers?
+- [ ] **Are there code examples** beyond the GitHub repo I can study?
 
 ---
 
-## 8. Deployment & Access
+## Questions About GNORM's Roadmap
 
-### 8.1 Access During Fellowship
-- [ ] How will I access GNORM during the fellowship?
-- [ ] Are there test credentials or a sandbox environment?
-- [ ] Is there a development/staging endpoint for testing?
+### 10. Future Development
 
-### 8.2 Post-Fellowship Access
-- [ ] Can the prototype continue using GNORM after the fellowship?
-- [ ] What are the terms for research use?
-- [ ] Is there a process for requesting continued access?
-
-### 8.3 Self-Hosting
-- [ ] Is it possible to run GNORM locally?
-- [ ] What are the system requirements?
-- [ ] Is there a Docker image or installation guide?
-
----
-
-## 9. Future Integrations (ITSERR WPs)
-
-### 9.1 WP4 - DaMSym
-- [ ] Are there plans for GNORM-DaMSym integration?
-- [ ] How might symbolic reasoning complement CRF annotations?
-
-### 9.2 WP6 - YASMINE
-- [ ] How might ethical guidelines from YASMINE apply to annotation display?
-- [ ] Are there coordination plans between WP3 and WP6?
-
-### 9.3 WP7 - REVER
-- [ ] How does GNORM relate to hermeneutical tradition analysis in REVER?
-- [ ] Are there shared annotation schemas?
-
----
-
-## 10. Technical Support & Resources
-
-### 10.1 Documentation
-- [ ] Is there API documentation available?
-- [ ] Are there tutorials or getting-started guides?
-- [ ] Is there a technical paper describing GNORM?
-
-### 10.2 Support Channels
-- [ ] Who should I contact for technical questions during development?
-- [ ] Is there a Slack, Teams, or other communication channel?
-- [ ] Is there a bug tracker or issue system?
-
-### 10.3 Code Examples
-- [ ] Are there Python client examples available?
-- [ ] Are there example projects using GNORM?
-- [ ] Is there a reference implementation?
+- [ ] **What's the timeline for the Talmud extension?** (Marco Papasidero's work)
+- [ ] **Are there plans for a public API** beyond the research consortium?
+- [ ] **What additional entity types are planned?** (persons, places, concepts beyond legal references?)
 
 ---
 
 ## Notes During Briefing
 
-*Use this section to capture notes during the Feb 11-12 briefing*
+### Day 1 - Feb 11 (Technical Overview with Arianna)
 
-### Day 1 Notes (Feb 11)
+**API Details:**
+```
+Base URL: 
+Auth method: 
+Request format: 
+Response format: 
+Confidence scale: 
+```
+
+**Key insights:**
 
 
 
 
-### Day 2 Notes (Feb 12)
+**Follow-up needed:**
 
 
 
 
----
+### Day 2 - Feb 12 (Hands-on / Deep Dive)
 
-## Action Items Post-Briefing
+**Tested scenarios:**
 
-- [ ] Update system_design.md with GNORM integration details
-- [ ] Create GNORM client module in prototype
-- [ ] Define confidence-to-indicator mapping rules
-- [ ] Request API credentials/access
-- [ ] Schedule follow-up questions meeting if needed
+
+
+
+**Issues encountered:**
+
+
+
+
+**Clarifications received:**
+
+
+
 
 ---
 
 ## Quick Reference Card
 
-*Fill in during briefing for quick reference during development*
+*Fill in during briefing for immediate development use*
 
-| Item | Value |
-|------|-------|
-| API Base URL | |
-| Auth Type | |
-| Auth Header | |
-| Request Format | |
-| Response Format | |
-| Confidence Scale | |
-| High Confidence Threshold | |
-| Rate Limit | |
-| Support Contact | |
+| Parameter | Value |
+|-----------|-------|
+| **API Base URL** | |
+| **Auth Type** | |
+| **Auth Header Format** | |
+| **Request Content-Type** | |
+| **Response Content-Type** | |
+| **Confidence Scale** | |
+| **High Confidence (FACTUAL) Threshold** | |
+| **Review Flag Threshold** | |
+| **Max Text Length** | |
+| **Rate Limit** | |
+| **Support Contact (Email)** | |
+| **Support Contact (Slack/Teams)** | |
 
+---
+
+## Post-Briefing Action Items
+
+- [ ] Update `integrations/gnorm.py` with correct API details
+- [ ] Update `core/config.py` with proper GNORM settings
+- [ ] Test integration with real GNORM endpoint
+- [ ] Adjust confidence → epistemic indicator mapping based on briefing insights
+- [ ] Document any domain limitations discovered
+- [ ] Schedule follow-up meeting if technical questions remain
+
+---
+
+*Document prepared: January 25, 2026*  
+*Last updated: January 25, 2026*
