@@ -62,7 +62,7 @@ data/raw/
 │
 ├── extra_allegation_inception/ # Expert INCEpTION export
 │   ├── annotation_ser/
-│   ├── gazeteers/
+│   ├── gazeteers/             # [sic] Original spelling from dataset
 │   └── source/
 │
 └── extra_allegations_expert/  # Expert annotations (39 docs)
