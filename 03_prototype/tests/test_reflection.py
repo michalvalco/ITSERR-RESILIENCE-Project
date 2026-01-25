@@ -107,7 +107,8 @@ class TestReflectionSummarization:
         )
 
         # Verify document was added to collection
-        collection = mock_chromadb.PersistentClient.return_value.get_or_create_collection.return_value
+        # Access the collection directly from the memory system
+        collection = memory._collection
         assert hasattr(collection, "_documents") and len(collection._documents) > 0
 
         # Verify metadata includes reflection flag

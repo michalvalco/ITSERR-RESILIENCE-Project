@@ -439,7 +439,7 @@ class TestEndToEndScenarios:
 
         # Memory should still be accessible (exchanges were stored)
         # Verify ChromaDB was used for storage
-        assert mock_chromadb.PersistentClient.called
+        assert mock_chromadb.called
 
         # Verify context retrieval still works
         retrieved_context = await agent._memory.retrieve_context(
@@ -485,9 +485,10 @@ class TestErrorHandling:
         """Test that memory storage failures don't crash the system."""
         memory = NarrativeMemorySystem(test_config)
 
-        # Make collection.add raise an exception
-        collection = mock_chromadb.PersistentClient.return_value.get_or_create_collection.return_value
-        collection.add = MagicMock(side_effect=Exception("Storage error"))
+        # Make the memory's actual collection raise an exception on add
+        # We access the internal _collection directly to ensure we're modifying
+        # the same object the memory system is using
+        memory._collection.add = MagicMock(side_effect=Exception("Storage error"))
 
         # Store initial exchange count
         initial_count = memory._exchange_count

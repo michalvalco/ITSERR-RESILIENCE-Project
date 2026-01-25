@@ -66,8 +66,12 @@ def mock_embeddings() -> MagicMock:
 
 @pytest.fixture
 def mock_anthropic() -> Generator[MagicMock, None, None]:
-    """Mock the ChatAnthropic class."""
-    with patch("itserr_agent.core.agent.ChatAnthropic") as mock:
+    """Mock the ChatAnthropic class.
+    
+    Note: We patch at the source library level because agent.py uses
+    lazy imports inside the _create_llm() method.
+    """
+    with patch("langchain_anthropic.ChatAnthropic") as mock:
         mock_instance = MagicMock()
         mock_instance.ainvoke = AsyncMock(
             return_value=MagicMock(
@@ -81,8 +85,12 @@ def mock_anthropic() -> Generator[MagicMock, None, None]:
 
 @pytest.fixture
 def mock_sentence_transformer() -> Generator[MagicMock, None, None]:
-    """Mock SentenceTransformer to avoid loading model in tests."""
-    with patch("itserr_agent.memory.narrative.SentenceTransformer") as mock:
+    """Mock SentenceTransformer to avoid loading model in tests.
+    
+    Note: We patch at the source library level because narrative.py uses
+    lazy imports inside the _create_embeddings() method.
+    """
+    with patch("sentence_transformers.SentenceTransformer") as mock:
         mock_instance = MagicMock()
         mock_instance.encode.return_value = [0.1] * 384
         mock.return_value = mock_instance
@@ -145,10 +153,14 @@ class MockChromaCollection:
 
 @pytest.fixture
 def mock_chromadb() -> Generator[MagicMock, None, None]:
-    """Mock ChromaDB client and collection."""
-    with patch("itserr_agent.memory.narrative.chromadb") as mock_chromadb:
+    """Mock ChromaDB client and collection.
+    
+    Note: We patch at the source library level because narrative.py uses
+    lazy imports inside the _initialize_storage() method.
+    """
+    with patch("chromadb.PersistentClient") as mock_persistent_client:
         mock_client = MagicMock()
         mock_collection = MockChromaCollection()
         mock_client.get_or_create_collection.return_value = mock_collection
-        mock_chromadb.PersistentClient.return_value = mock_client
-        yield mock_chromadb
+        mock_persistent_client.return_value = mock_client
+        yield mock_persistent_client
