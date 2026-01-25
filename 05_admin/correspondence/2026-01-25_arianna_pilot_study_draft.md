@@ -80,25 +80,4 @@ Faculty of Arts
 
 ---
 
-## Notes for Review
-
-**Tone considerations:**
-- Professional but collegial
-- Demonstrates preparation without presumption
-- Open to feedback while showing initiative
-
-**Key messages:**
-- I've done my homework (reviewed code, dataset, paper)
-- Concrete proposal, not vague interest
-- Mutual benefit framing (extends GNORM's reach)
-- Realistic scope for fellowship duration
-
-**Before sending:**
-- [ ] Confirm Arianna's preferred email address
-- [ ] Attach PDF versions of selection rationale and briefing questions
-- [ ] Check if sample annotated text should be included
-- [ ] Review with advisor if appropriate
-
----
-
 *Draft prepared: January 25, 2026*
