@@ -11,10 +11,10 @@
 | Category | Progress | Deadline |
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 0/6 tasks | Feb 7 |
+| Text Selection & Preparation | 1/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
-| Documentation & Communication | 2/4 tasks | Feb 9 |
-| **Overall** | **6/18 tasks** | **Feb 9** |
+| Documentation & Communication | 4/4 tasks | Feb 9 |
+| **Overall** | **9/18 tasks** | **Feb 9** |
 
 ---
 
@@ -68,14 +68,14 @@
 
 ### 2.1 Select Test Texts
 
-- [ ] **Select 2-3 chapters from *Annotationes in Locos communes* (1561)**
+- [x] **Select 2-3 chapters from *Annotationes in Locos communes* (1561)**
   - Criteria: High citation density, representative content
   - Selected chapters:
-    1. ___
-    2. ___
-    3. ___
-  - Date completed: ___
-  - Rationale: ___
+    1. *De Peccato Originis* (On Original Sin) — 40-60 est. citations
+    2. *De Iustificatione* (On Justification) — 50-70 est. citations
+    3. *De Lege et Evangelio* (On Law and Gospel) — 35-50 est. citations
+  - Date completed: Jan 25, 2026
+  - Rationale: See `CHAPTER_SELECTION.md` for full analysis
 
 - [ ] **Identify *Catechesis* (1556) sections**
   - Purpose: Simpler citation structure for baseline comparison
@@ -156,20 +156,22 @@
 
 ### 4.1 Technical Documentation
 
-- [ ] **Prepare technical questions document**
+- [x] **Prepare technical questions document**
   - See: `01_research/gnorm_briefing_questions.md`
-  - [ ] Review and update questions based on code exploration
-  - [ ] Add Stöckel-specific technical questions
-  - Date completed: ___
+  - [x] Review and update questions based on code exploration
+  - [x] Add Stöckel-specific technical questions (sections 11-16)
+  - Date completed: Jan 25, 2026
+  - Notes: Added 6 Stöckel-specific question sections covering citation formats, biblical references, patristic abbreviations, mixed language handling, training data requirements, and structural differences
 
 ### 4.2 Communication
 
-- [ ] **Draft email to Arianna outlining pilot study proposal**
-  - [ ] Explain Stöckel corpus selection rationale
-  - [ ] Outline proposed collaboration
-  - [ ] Attach sample annotated text
-  - Email drafted: ___
+- [x] **Draft email to Arianna outlining pilot study proposal**
+  - [x] Explain Stöckel corpus selection rationale
+  - [x] Outline proposed collaboration
+  - [ ] Attach sample annotated text (pending: text digitization)
+  - Email drafted: Jan 25, 2026
   - Email sent: ___
+  - Draft location: `05_admin/correspondence/2026-01-25_arianna_pilot_study_draft.md`
 
 ### 4.3 Development Environment
 
@@ -197,19 +199,24 @@
 
 ### Week of January 27, 2026
 
-**Focus:** ___
+**Focus:** Text Selection & Documentation
 
 **Completed:**
--
+- Selected 3 chapters from *Annotationes* for pilot study (CHAPTER_SELECTION.md)
+- Added Stöckel-specific technical questions to briefing document (6 new sections)
+- Drafted email to Arianna with pilot study proposal
 
 **In Progress:**
--
+- Locating digitized Stöckel texts for OCR/cleaning
 
 **Blockers:**
--
+- Need access to existing digitized materials (04 Projekty/2021 KEGA Stockel)
+- INCEpTION installation (requires local setup time)
 
 **Next Week Priority:**
--
+- Create cleaned digital text files for selected chapters
+- Install INCEpTION and configure annotation project
+- Begin manual annotation (target: 50+ references by Feb 3)
 
 ---
 
@@ -249,6 +256,10 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 25, 2026 | Statistics | 18,425 annotation tokens; 462 unique references (expert set) |
 | Jan 25, 2026 | Best reference doc | `2.02 DE FORO COMPETENTI` has 3,943 annotations (highest density) |
 | Jan 25, 2026 | experiments.md | Added baseline expectations, metrics template, and success criteria |
+| Jan 25, 2026 | Chapter selection | Selected 3 chapters: De Peccato Originis, De Iustificatione, De Lege et Evangelio |
+| Jan 25, 2026 | Selection rationale | High citation density (125-180 est.), diverse types (biblical, patristic, Reformation) |
+| Jan 25, 2026 | Briefing questions | Added 6 Stöckel-specific question sections (11-16) to gnorm_briefing_questions.md |
+| Jan 25, 2026 | Email draft | Pilot study proposal to Arianna drafted; awaiting review before sending |
 
 ---
 
