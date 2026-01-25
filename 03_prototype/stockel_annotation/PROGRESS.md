@@ -13,8 +13,8 @@
 | GNORM Environment | 4/4 tasks | Feb 9 |
 | Text Selection & Preparation | 0/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
-| Documentation & Communication | 1/4 tasks | Feb 9 |
-| **Overall** | **5/18 tasks** | **Feb 9** |
+| Documentation & Communication | 2/4 tasks | Feb 9 |
+| **Overall** | **6/18 tasks** | **Feb 9** |
 
 ---
 
@@ -184,12 +184,12 @@
 
 ### 4.4 Initial Results Documentation
 
-- [ ] **Create initial experiments.md**
+- [x] **Create initial experiments.md**
   - Output file: `results/experiments.md`
-  - [ ] Document baseline expectations
-  - [ ] Set up evaluation metrics template
-  - [ ] Define success criteria
-  - Date completed: ___
+  - [x] Document baseline expectations (GNORM metrics from Zenodo)
+  - [x] Set up evaluation metrics template
+  - [x] Define success criteria (minimum, target, stretch goals)
+  - Date completed: Jan 25, 2026
 
 ---
 
@@ -248,6 +248,7 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 25, 2026 | Format discovery | WebAnno TSV 3.3 format with `Allegazione normativa` labels |
 | Jan 25, 2026 | Statistics | 18,425 annotation tokens; 462 unique references (expert set) |
 | Jan 25, 2026 | Best reference doc | `2.02 DE FORO COMPETENTI` has 3,943 annotations (highest density) |
+| Jan 25, 2026 | experiments.md | Added baseline expectations, metrics template, and success criteria |
 
 ---
 
