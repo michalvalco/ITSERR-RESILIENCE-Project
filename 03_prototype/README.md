@@ -47,7 +47,7 @@ Testing GNORM's CRF-based annotation approach on 16th-century Reformation theolo
 | `data/raw/` | Original OCR output from Stöckel texts |
 | `data/cleaned/` | Preprocessed, normalized plain text |
 | `data/annotations/` | INCEpTION exports (manual annotations) |
-| `models/` | GNORM baseline + domain-adapted CRF |
+| `models/` | Trained CRF models (when available) |
 | `results/experiments.md` | Documented findings |
 
 **Progress Tracking:** See `stockel_annotation/PROGRESS.md`

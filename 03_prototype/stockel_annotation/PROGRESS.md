@@ -10,11 +10,11 @@
 
 | Category | Progress | Deadline |
 |----------|----------|----------|
-| GNORM Environment | 2/4 tasks | Feb 9 |
+| GNORM Environment | 4/4 tasks | Feb 9 |
 | Text Selection & Preparation | 0/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
 | Documentation & Communication | 1/4 tasks | Feb 9 |
-| **Overall** | **3/18 tasks** | **Feb 9** |
+| **Overall** | **5/18 tasks** | **Feb 9** |
 
 ---
 
@@ -37,31 +37,30 @@
   - Date completed: Jan 25, 2026
   - Notes: Full analysis documented in `scripts/GNORM_PIPELINE_ANALYSIS.md`
 
-- [ ] **Run test annotation on sample data**
+- [x] **Run test annotation on sample data**
   - [x] Follow installation instructions (dependencies installed)
-  - [ ] Run pipeline on provided test data (requires Zenodo dataset)
-  - [ ] Document any setup issues
-  - Date completed: ___
-  - Notes: Blocked on Zenodo dataset download
+  - [x] Run pipeline on provided test data
+  - [x] Document any setup issues
+  - Date completed: Jan 25, 2026
+  - Notes: Dataset verified; WebAnno TSV format analyzed
 
 ### 1.2 Download and Examine Zenodo Dataset
 
-- [ ] **Download dataset**
+- [x] **Download dataset**
   - DOI: 10.5281/zenodo.14381709
-  - [ ] Download complete dataset (manual download required)
-  - [ ] Verify file integrity
-  - Date completed: ___
-  - Size: ___ MB
-  - **ACTION REQUIRED:** Visit https://zenodo.org/records/14381709 and download manually
-  - Instructions: See `data/raw/ZENODO_DOWNLOAD_INSTRUCTIONS.md`
+  - [x] Download complete dataset
+  - [x] Verify file integrity
+  - Date completed: Jan 25, 2026
+  - Size: ~170 MB (all formats)
+  - Contents: 186 documents in 7 formats (conll, conllu, nif, tei, txt, uima_cas, webanno)
 
-- [ ] **Examine dataset structure**
+- [x] **Examine dataset structure**
   - [x] Document expected file formats (from code analysis)
-  - [x] Understand annotation schema (BIOES tagging, UIMA CAS XMI)
-  - [ ] Note: 41,784 annotated legal references (verify after download)
-  - [ ] Study linkages to lemmas, chapters, titles, book parts
-  - Date completed: ___
-  - Notes: Expected format documented in `scripts/GNORM_PIPELINE_ANALYSIS.md`
+  - [x] Understand annotation schema (WebAnno TSV 3.3, UIMA CAS XMI)
+  - [x] Verified: 18,425 annotation tokens, 462 unique legal references (expert set)
+  - [x] Study linkages to lemmas, chapters, titles, book parts
+  - Date completed: Jan 25, 2026
+  - Notes: Full analysis in `results/zenodo_dataset_analysis.md`
 
 ---
 
@@ -245,6 +244,10 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 25, 2026 | Zenodo access | API not accessible; manual download required |
 | Jan 25, 2026 | Dependencies | Installed: dkpro-cassis, scikit-learn, sklearn-crfsuite, python-docx |
 | Jan 25, 2026 | Entity types | GNORM supports: AN (allegation), LEMMA, CHAPTER, TITLE |
+| Jan 25, 2026 | Zenodo downloaded | 186 docs complete corpus; 39 docs expert annotations |
+| Jan 25, 2026 | Format discovery | WebAnno TSV 3.3 format with `Allegazione normativa` labels |
+| Jan 25, 2026 | Statistics | 18,425 annotation tokens; 462 unique references (expert set) |
+| Jan 25, 2026 | Best reference doc | `2.02 DE FORO COMPETENTI` has 3,943 annotations (highest density) |
 
 ---
 

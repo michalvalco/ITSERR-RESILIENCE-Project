@@ -37,9 +37,9 @@ stockel_annotation/
 │   ├── gnorm_baseline/    # Reference GNORM model for comparison
 │   └── stockel_crf/       # Domain-adapted CRF model
 ├── scripts/
-│   ├── preprocess.py      # Text cleaning and normalization
-│   ├── train_crf.py       # CRF model training
-│   └── evaluate.py        # Performance metrics
+│   ├── preprocess.py      # (planned) Text cleaning and normalization
+│   ├── train_crf.py       # (planned) CRF model training
+│   └── evaluate.py        # (planned) Performance metrics
 └── results/
     └── experiments.md     # Documented findings
 ```
