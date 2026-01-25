@@ -15,6 +15,7 @@ This document should be read alongside the existing implementation:
 - **Architecture:** [`docs/architecture/gnorm-integration.md`](../docs/architecture/gnorm-integration.md) — System design and component overview
 - **Implementation:** [`03_prototype/src/itserr_agent/integrations/gnorm.py`](../03_prototype/src/itserr_agent/integrations/gnorm.py) — Working client code
 - **Configuration:** [`03_prototype/.env.example`](../03_prototype/.env.example) — GNORM environment variables
+- **Stöckel Pilot:** [`03_prototype/stockel_annotation/CHAPTER_SELECTION.md`](../03_prototype/stockel_annotation/CHAPTER_SELECTION.md) — Chapter selection rationale
 
 ---
 
@@ -210,9 +211,91 @@ The paper notes that allegationes in canon law glosses function not just as refe
 
 ---
 
+## Stöckel Corpus Adaptation Questions
+
+*These questions arise from analyzing GNORM's pipeline for adaptation to 16th-century Protestant theological texts.*
+
+### 11. Citation Format Differences
+
+**Context:** The GNORM pipeline is trained on medieval canon law citations (e.g., "X 2.1.3" for Decretales). Stöckel's *Annotationes* uses theological citation formats that differ significantly.
+
+**Questions:**
+- [ ] **How sensitive is the CRF model to citation format changes?**
+  - Canon law: `X 2.1.3`, `Dig. 1.1.1`, `C. 33 q. 2 c. 1`
+  - Theological: `Aug. de civ. Dei lib. 14`, `Rom. 3:23`, `Chrys. in Matt. hom. 12`
+- [ ] **Would you recommend retraining from scratch** or fine-tuning on domain-specific data?
+- [ ] **Which CRF features are most transferable** across citation domains?
+
+### 12. Biblical Citation Handling
+
+**Context:** Biblical citations have a distinct structure (Book Chapter:Verse) not present in canon law.
+
+**Questions:**
+- [ ] **Has GNORM encountered biblical citations** in the Liber Extra glosses? (Patristic sources often cite Scripture)
+- [ ] **What feature modifications would you suggest** for book:chapter:verse patterns?
+- [ ] **How should we handle abbreviated book names?** (Rom., Gen., Ioan. vs. Romans, Genesis, John)
+- [ ] **Should biblical citations be a separate entity type** or a subtype of existing categories?
+
+### 13. Patristic Author Abbreviations
+
+**Context:** Stöckel uses standard humanist abbreviations for Church Fathers that differ from legal abbreviations.
+
+| Author | Typical Abbreviation | Example Citation |
+|--------|---------------------|------------------|
+| Augustine | Aug. | Aug. de civ. Dei lib. 14 |
+| Jerome | Hieron. | Hieron. ad Gal. |
+| Chrysostom | Chrys. | Chrys. in Matt. hom. 12 |
+| Ambrose | Ambr. | Ambr. de off. |
+
+**Questions:**
+- [ ] **Can the existing author detection features transfer?** Or do they need new training examples?
+- [ ] **How did you handle abbreviation expansion** in the training data?
+- [ ] **Is there a lookup table approach** that could be reused for patristic authors?
+
+### 14. Mixed Language Handling
+
+**Context:** Stöckel's Latin text occasionally includes German phrases or marginal notes, and biblical citations may reference vernacular translations.
+
+**Questions:**
+- [ ] **Did you encounter multilingual passages** in the Liber Extra?
+- [ ] **How should the pipeline handle code-switching** between Latin and German?
+- [ ] **Does the tokenization need adjustment** for 16th-century orthography?
+
+### 15. Training Data Requirements
+
+**Context:** We plan to create manual annotations using INCEpTION for pilot study chapters.
+
+**Questions:**
+- [ ] **What is the minimum training data size** for reasonable CRF performance?
+  - GNORM expert set: 39 documents, 18,425 tokens
+  - Stöckel pilot target: 3 chapters, ~150 references
+- [ ] **Is 100-150 annotated references sufficient** for a proof-of-concept?
+- [ ] **What annotation format should we export from INCEpTION** for compatibility?
+  - WebAnno TSV 3.3?
+  - UIMA CAS XMI?
+  - Other?
+
+### 16. Structural Differences
+
+**Context:** The *Annotationes* is a commentary on Melanchthon's *Loci Communes*, not a legal gloss apparatus.
+
+| Feature | Liber Extra Gloss | Stöckel Annotationes |
+|---------|-------------------|----------------------|
+| Base text structure | Legal titles/chapters | Theological topics (*loci*) |
+| Gloss relationship | Marginal annotations to legal text | Expansions of doctrinal topics |
+| Citation function | Legal authority appeals | Doctrinal proof-texting |
+| Cross-references | To other legal texts | To Scripture, Fathers, Reformers |
+
+**Questions:**
+- [ ] **How important is structural context** (lemma position, gloss markers) for the CRF?
+- [ ] **Can we adapt the "Lemma glossato" category** for biblical/theological terms?
+- [ ] **Should we mark Melanchthon's original text** vs. Stöckel's annotations distinctly?
+
+---
+
 ## Questions About GNORM's Roadmap
 
-### 10. Future Development
+### 17. Future Development
 
 - [ ] **What's the timeline for the Talmud extension?** (Marco Papasidero's work)
 - [ ] **Are there plans for a public API** beyond the research consortium?
@@ -294,5 +377,5 @@ Confidence scale:
 
 ---
 
-*Document prepared: January 25, 2026*  
-*Last updated: January 25, 2026*
+*Document prepared: January 25, 2026*
+*Last updated: January 25, 2026 (Stöckel-specific questions added)*

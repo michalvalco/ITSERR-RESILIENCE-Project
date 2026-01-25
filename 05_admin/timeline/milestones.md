@@ -20,7 +20,7 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Draft working paper outline (Sections 0-6) | Feb 7 | ☐ Pending | Skeletal structure acceptable |
 | Review GNORM codebase | Feb 9 | ☑ Complete | Jan 25: Full analysis in stockel_annotation/scripts/ |
 | Set up dev environment | Feb 9 | ☑ Complete | Jan 25: GNORM deps installed (cassis, crfsuite) |
-| Prepare questions for WP3 team | Feb 9 | ☐ Pending | questions_for_gnorm_team.md |
+| Prepare questions for WP3 team | Feb 9 | ☑ Complete | Jan 25: gnorm_briefing_questions.md (17 sections, 6 Stöckel-specific) |
 | Read ITSERR WP documentation | Feb 9 | ☐ Pending | Surface familiarity WP4-8 |
 
 ### 1B. Stöckel Corpus Preparation (Pilot Study)
@@ -31,11 +31,11 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 |-----------|-------------|--------|-------|
 | Clone GNORM repo & run test annotation | Feb 2 | ☑ Complete | Jan 25: Pipeline analyzed, WebAnno TSV format verified |
 | Download Zenodo dataset & examine structure | Feb 2 | ☑ Complete | Jan 25: 186 docs total (39 expert-annotated with 18,425 tokens, 462 unique refs) |
-| Select 2-3 Stöckel texts for pilot | Feb 4 | ☐ Pending | High citation density chapters |
+| Select 2-3 Stöckel texts for pilot | Feb 4 | ☑ Complete | Jan 25: De Peccato Originis, De Iustificatione, De Lege et Evangelio |
 | Create cleaned digital versions | Feb 6 | ☐ Pending | UTF-8 plain text, normalized |
 | Begin manual annotation (100+ refs) | Feb 9 | ☐ Pending | Using INCEpTION |
 | Document annotation schema decisions | Feb 9 | ☐ Pending | Adaptation from GNORM schema |
-| Draft email to Arianna (pilot proposal) | Feb 7 | ☐ Pending | Outline collaboration potential |
+| Draft email to Arianna (pilot proposal) | Feb 7 | ☑ Complete | Jan 25: Drafted in 05_admin/correspondence/ |
 
 ### Phase 1 Success Criteria
 - [ ] Can articulate the epistemic modesty framework in 5 minutes
@@ -164,4 +164,4 @@ Use this template for daily progress tracking:
 
 ---
 
-*Last updated: [Date]*
+*Last updated: January 25, 2026*
