@@ -3,7 +3,7 @@
 # Extracted: 2026-01-26T12:18:29.718047
 # Language: Latin (lat)
 # OCR Engine: Tesseract 5.3.4
-# Pages: 56-58
+# Pages: 56-57 (actual; requested 56-58 but PDF ends at page 57)
 
 ---
 
