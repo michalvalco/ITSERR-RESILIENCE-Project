@@ -47,8 +47,9 @@ echo "  Java version: OK ($(java -version 2>&1 | head -1))"
 if [ ! -f "$INCEPTION_JAR" ]; then
     echo ""
     echo "Downloading INCEpTION ${INCEPTION_VERSION}..."
-    # Use -f to fail on HTTP errors, --retry for network resilience
-    curl -fL --retry 3 --retry-all-errors -o "$INCEPTION_JAR" "$INCEPTION_URL"
+    # Use -f to fail on HTTP errors, --retry for transient network resilience
+    # Note: --retry-all-errors removed for compatibility with older curl versions
+    curl -fL --retry 3 -o "$INCEPTION_JAR" "$INCEPTION_URL"
     echo "  Download complete: $INCEPTION_JAR"
 else
     echo "  INCEpTION JAR already exists: $INCEPTION_JAR"
