@@ -12,9 +12,9 @@
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
 | Text Selection & Preparation | 5/6 tasks | Feb 7 |
-| Annotation Work | 0/4 tasks | Feb 9 |
+| Annotation Work | 1/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| **Overall** | **13/18 tasks (72%)** | **Feb 9** |
+| **Overall** | **14/18 tasks (78%)** | **Feb 9** |
 
 ---
 
@@ -134,12 +134,16 @@
 
 ### 3.2 INCEpTION Setup
 
-- [ ] **Install and configure INCEpTION**
-  - [ ] Download INCEpTION
-  - [ ] Create project for Stöckel corpus
-  - [ ] Configure annotation layers
-  - [ ] Import cleaned text files
-  - Date completed: ___
+- [x] **Install and configure INCEpTION**
+  - [x] Download INCEpTION (setup script created: `tools/inception/setup_inception.sh`)
+  - [x] Create project for Stöckel corpus (configuration documented)
+  - [x] Configure annotation layers (Citation, CitationTarget, StructuralElement)
+  - [x] Import cleaned text files (instructions in ANNOTATION_SETUP.md)
+  - Setup location: `tools/inception/`
+  - Documentation: `tools/inception/ANNOTATION_SETUP.md`
+  - Version: INCEpTION 39.4 (standalone JAR, requires Java 17+)
+  - Date completed: Jan 26, 2026
+  - Note: Run `./setup_inception.sh` to download and configure
 
 ### 3.3 Manual Annotation Work
 
@@ -228,13 +232,14 @@
 - **Reference marking:** Biblical, patristic, and reformation references tagged
 
 **In Progress:**
-- INCEpTION installation
+- Manual annotation work (pending start)
 
 **Blockers:**
 - None currently
 
 **Next Week Priority:**
-- Install INCEpTION and configure annotation project
+- Run `setup_inception.sh` to download INCEpTION locally
+- Start INCEpTION and create annotation project
 - Begin manual annotation (target: 50+ references by Feb 3)
 - Review normalized text quality for edge cases
 
@@ -293,6 +298,10 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 26, 2026 | Chapters identified | 8 loci found: PRAEFATIO, DE DEO, DE TRINITATE, DE SPIRITU SANCTO, DE CREATIONE, DE PROVIDENTIA, DE LIBERO ARBITRIO, DE PECCATO, DE LEGE |
 | Jan 26, 2026 | Reference tagging | Biblical (Psalm, Rom, etc.), patristic (Augustine, Jerome), reformation (Melanchthon) refs tagged |
 | Jan 26, 2026 | Output location | Normalized files in `data/normalized/`, reports in same directory |
+| Jan 26, 2026 | INCEpTION setup | Created setup script and annotation guide in `tools/inception/` |
+| Jan 26, 2026 | Annotation layers | Defined 3 layers: Citation (span), CitationTarget (relation), StructuralElement (span) |
+| Jan 26, 2026 | Citation types | Tagset: biblical, patristic, reformation, classical, legal |
+| Jan 26, 2026 | INCEpTION version | Using v39.4 (standalone JAR), requires Java 17+ |
 
 ---
 

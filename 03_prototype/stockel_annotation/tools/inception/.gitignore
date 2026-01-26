@@ -1,0 +1,10 @@
+# INCEpTION runtime files (not tracked in git)
+*.jar
+*.jar.asc
+start_inception.sh
+
+# INCEpTION data directory
+.inception/
+
+# Logs
+*.log
