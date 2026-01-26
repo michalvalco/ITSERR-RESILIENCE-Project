@@ -181,13 +181,11 @@ def main():
         )
 
     if start > end:
-        print("Error: Start page must be less than or equal to end page")
-        sys.exit(1)
+        parser.error("Start page must be less than or equal to end page")
 
     # Ensure the source PDF exists before attempting OCR
     if not PDF_PATH.exists():
-        print(f"Error: PDF file not found at {PDF_PATH}")
-        sys.exit(1)
+        parser.error(f"PDF file not found at {PDF_PATH}")
 
     print(f"OCR Processing: Stöckel Annotationes")
     print(f"Pages: {start}-{end}")
