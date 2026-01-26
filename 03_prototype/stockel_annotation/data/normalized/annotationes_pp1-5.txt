@@ -6,7 +6,7 @@
 # Pages: 1-5
 
 ---
-# Normalized: 2026-01-26T13:07:00.106874
+# Normalized: 2026-01-26T13:51:49.285024
 # Normalization: spelling, abbreviations, structural markup
 
 
@@ -116,10 +116,10 @@ mnibus,aliquid detraberet. Sunt enim uná cum bomine create, et precipus in bomi
 ;4 wrent Deo,non diabolo: et: multo magis quá ulla alta do-
 ' naque bomini accidere poffünt.Yn barum ipfarum artium no (cia unma fult facultas bominis ad mon lrandg ev celebran dum Deun:boc csb,in facultate dicendi,in numeroórü,in men furarum,in onorum,in motuum calejtium con fideratione,in «liorum operum noticia: e» maxime im illuftriintellettu bo- ;
 nestarum actionum, qué fole placent Deo. Heec tantam ba-
-bent uim, ut nift bomo per diabolum feductus e fet,nibil am-
+bent uim, ut nift bomo per diabolum feductus e set,nibil am-
 plius d recte coram Deo uiuendum fucrit necessarium;llaa:
-officia facienda ad que Deus bominem,omnium creaturarum Jibi charissimum, condiderat. Homo enim c» feipfum et alia
-opera Det uere intellexi fet, atque ex bis diligentev.confidera-
+officia facienda ad que Deus bominem,omnium creaturarum Jibi char\1ssi\2um, condiderat. Homo enim c» feipfum et alia
+opera Det uere intellexi set, atque ex bis diligentev.confidera-
 tis, interd; fe collatis, Deum conditorem uer agnouiffet ac
 cclebrafjet. lam refpondeo ad maiorem argumenti, que manifefte
 fl f 4 co inpia ejt. Quanquam enim profanarum artium noa
