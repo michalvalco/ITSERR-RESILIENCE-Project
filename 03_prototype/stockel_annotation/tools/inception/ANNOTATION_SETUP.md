@@ -123,7 +123,7 @@ The normalized text files are in `../data/normalized/`:
 1. In your project, go to **Documents**
 2. Click **Import**
 3. Select format: **Plain text (UTF-8)**
-4. Upload files from `data/normalized/`
+4. Upload files from `../data/normalized/` (relative to `tools/inception/`)
 5. Click **Import**
 
 ### Step 3: Assign Documents
@@ -248,9 +248,9 @@ Track progress in INCEpTION:
 
 ## Resources
 
-- [INCEpTION User Guide](https://inception-project.github.io/releases/32.0/docs/user-guide.html)
-- [INCEpTION Admin Guide](https://inception-project.github.io/releases/32.0/docs/admin-guide.html)
-- [WebAnno TSV Format](https://webanno.github.io/webanno/releases/3.6.0/docs/user-guide.html#sect_webannotsv)
+- [INCEpTION User Guide](https://inception-project.github.io/releases/latest/docs/user-guide.html)
+- [INCEpTION Admin Guide](https://inception-project.github.io/releases/latest/docs/admin-guide.html)
+- [WebAnno TSV Format](https://webanno.github.io/webanno/releases/latest/docs/user-guide.html#sect_webannotsv)
 - [GNORM Pipeline](https://github.com/aesuli/CIC_annotation)
 
 ---

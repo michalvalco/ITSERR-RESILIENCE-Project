@@ -143,7 +143,7 @@
   - Documentation: `tools/inception/ANNOTATION_SETUP.md`
   - Version: INCEpTION 39.4 (standalone JAR, requires Java 17+)
   - Date completed: Jan 26, 2026
-  - Note: Run `./setup_inception.sh` to download and configure
+  - Note: From project root, run `./tools/inception/setup_inception.sh` to download and configure
 
 ### 3.3 Manual Annotation Work
 
