@@ -6,10 +6,11 @@ Extracts Latin text from scanned PDF pages using Tesseract OCR.
 Outputs cleaned UTF-8 text files for annotation in INCEpTION.
 
 Usage:
-    python ocr_processor.py [--pages START-END] [--output-dir DIR]
+    python ocr_processor.py [--pages START-END] [--output-dir DIR] [--single-file]
 """
 
 import argparse
+from datetime import datetime
 import re
 import sys
 from pathlib import Path
@@ -17,7 +18,6 @@ from pathlib import Path
 try:
     from pdf2image import convert_from_path
     import pytesseract
-    from PIL import Image
 except ImportError as e:
     print(f"Missing dependency: {e}")
     print("Install with: pip install pdf2image pytesseract pillow")
@@ -31,7 +31,7 @@ TESSERACT_LANG = "lat"  # Latin language pack
 DPI = 300  # Higher DPI = better OCR but slower
 
 
-def extract_text_from_pdf(pdf_path: Path, start_page: int = 1, end_page: int = None) -> dict[int, str]:
+def extract_text_from_pdf(pdf_path: Path, start_page: int = 1, end_page: int | None = None) -> dict[int, str]:
     """
     Convert PDF pages to images and extract text using Tesseract OCR.
 
@@ -130,18 +130,18 @@ def identify_chapters(text: str) -> dict[str, tuple[int, int]]:
     for pattern in chapter_patterns:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
-            chapters[pattern] = match.start()
+            chapters[pattern] = (match.start(), match.end())
 
     return chapters
 
 
-def save_text(text: str, output_path: Path, metadata: dict = None):
+def save_text(text: str, output_path: Path, metadata: dict | None = None):
     """Save extracted text with optional metadata header."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     header = f"""# OCR Extracted Text
 # Source: Annotationes in Locos communes (1561) - Leonard Stöckel
-# Extracted: {__import__('datetime').datetime.now().isoformat()}
+# Extracted: {datetime.now().isoformat()}
 # Language: Latin (lat)
 # OCR Engine: Tesseract {pytesseract.get_tesseract_version()}
 """
@@ -168,10 +168,26 @@ def main():
     args = parser.parse_args()
 
     # Parse page range
-    if '-' in args.pages:
-        start, end = map(int, args.pages.split('-'))
-    else:
-        start = end = int(args.pages)
+    try:
+        if '-' in args.pages:
+            start_str, end_str = args.pages.split('-', 1)
+            start, end = int(start_str), int(end_str)
+        else:
+            start = end = int(args.pages)
+    except ValueError:
+        parser.error(
+            f"Invalid page range '{args.pages}'. "
+            "Use 'START-END' or a single integer page number (e.g., '1-10' or '5')."
+        )
+
+    if start > end:
+        print("Error: Start page must be less than or equal to end page")
+        sys.exit(1)
+
+    # Ensure the source PDF exists before attempting OCR
+    if not PDF_PATH.exists():
+        print(f"Error: PDF file not found at {PDF_PATH}")
+        sys.exit(1)
 
     print(f"OCR Processing: Stöckel Annotationes")
     print(f"Pages: {start}-{end}")
@@ -206,8 +222,8 @@ def main():
     chapters = identify_chapters(all_text)
     if chapters:
         print("Found potential chapter markers:")
-        for name, pos in chapters.items():
-            print(f"  - {name} (position ~{pos})")
+        for name, (start_pos, end_pos) in chapters.items():
+            print(f"  - {name} (position {start_pos}-{end_pos})")
     else:
         print("  No chapter markers detected (may need manual identification)")
 
