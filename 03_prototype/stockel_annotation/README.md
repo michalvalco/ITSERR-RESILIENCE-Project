@@ -29,17 +29,21 @@ This sub-project adapts the GNORM annotation pipeline to Leonard Stöckel's 16th
 stockel_annotation/
 ├── README.md              # This file
 ├── PROGRESS.md            # Detailed progress tracking (pre-fellowship checklist)
+├── CHAPTER_SELECTION.md   # Rationale for chapter selection
 ├── data/
-│   ├── raw/               # Original OCR output from Stöckel texts
-│   ├── cleaned/           # Preprocessed, normalized text files
+│   ├── raw/               # Original PDF and OCR output
+│   ├── cleaned/           # OCR-extracted text files (12 files, ~18,900 words)
+│   ├── normalized/        # Text after normalization pipeline
 │   └── annotations/       # INCEpTION exports (manual annotations)
 ├── models/
 │   ├── gnorm_baseline/    # Reference GNORM model for comparison
 │   └── stockel_crf/       # Domain-adapted CRF model
 ├── scripts/
-│   ├── preprocess.py      # (planned) Text cleaning and normalization
-│   ├── train_crf.py       # (planned) CRF model training
-│   └── evaluate.py        # (planned) Performance metrics
+│   ├── normalize_text.py  # Text normalization (abbreviations, long-s, structure)
+│   ├── ocr_processor.py   # Tesseract OCR extraction for PDF texts
+│   └── GNORM_PIPELINE_ANALYSIS.md  # Analysis of GNORM's CRF pipeline
+├── tools/
+│   └── inception/         # INCEpTION setup and annotation configuration
 └── results/
     └── experiments.md     # Documented findings
 ```
@@ -106,4 +110,4 @@ See **[PROGRESS.md](PROGRESS.md)** for detailed checklist and status updates.
 ---
 
 *Part of the ITSERR Transnational Access Fellowship project*
-*Last updated: January 25, 2026*
+*Last updated: January 26, 2026*
