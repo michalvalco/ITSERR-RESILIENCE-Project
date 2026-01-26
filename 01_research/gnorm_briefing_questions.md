@@ -211,6 +211,16 @@ The paper notes that allegationes in canon law glosses function not just as refe
 
 ---
 
+## Questions About GNORM's Roadmap
+
+### 10. Future Development
+
+- [ ] **What's the timeline for the Talmud extension?** (Marco Papasidero's work)
+- [ ] **Are there plans for a public API** beyond the research consortium?
+- [ ] **What additional entity types are planned?** (persons, places, concepts beyond legal references?)
+
+---
+
 ## Stöckel Corpus Adaptation Questions
 
 *These questions arise from analyzing GNORM's pipeline for adaptation to 16th-century Protestant theological texts.*
@@ -290,16 +300,6 @@ The paper notes that allegationes in canon law glosses function not just as refe
 - [ ] **How important is structural context** (lemma position, gloss markers) for the CRF?
 - [ ] **Can we adapt the "Lemma glossato" category** for biblical/theological terms?
 - [ ] **Should we mark Melanchthon's original text** vs. Stöckel's annotations distinctly?
-
----
-
-## Questions About GNORM's Roadmap
-
-### 10. Future Development
-
-- [ ] **What's the timeline for the Talmud extension?** (Marco Papasidero's work)
-- [ ] **Are there plans for a public API** beyond the research consortium?
-- [ ] **What additional entity types are planned?** (persons, places, concepts beyond legal references?)
 
 ---
 
