@@ -140,7 +140,6 @@ ABBREVIATIONS = {
     r'\be\s*z\b': 'et',
 
     # que abbreviation (appears as q; or similar)
-    r'\bq;': 'que',        # q; at word boundary start
     r'q;': 'que',          # any q; sequence
 
     # Common theological abbreviations (lowercase patterns - case handled dynamically)
@@ -164,7 +163,9 @@ ABBREVIATIONS = {
     # etc. and similar (no trailing \b after period)
     # Note: & is not a word character, so use (?<!\w) instead of \b
     r'(?<!\w)&c\.': 'etc.',
-    r'\bec\.(?!\w)': 'etc.',  # ec. not followed by word char (avoid matching 'ecclesiastical')
+    # ec. followed by non-word char (space, punctuation, or end of string)
+    # Allows "ec.," and "ec.;" while preventing partial matches
+    r'\bec\.(?!\w)': 'etc.',
 }
 
 
@@ -206,7 +207,14 @@ def expand_abbreviations(text: str, stats: NormalizationStats) -> str:
             if first_alpha is None:
                 return replacement
 
+            # Defensive check: if replacement is empty or single character
+            if not replacement:
+                return replacement
+            if len(replacement) == 1:
+                return replacement.upper() if first_alpha.isupper() else replacement.lower()
+
             # Preserve case: if original starts uppercase, uppercase the replacement
+            # Note: calling upper()/lower() on non-alpha chars is safe (returns unchanged)
             if first_alpha.isupper():
                 return replacement[0].upper() + replacement[1:]
             else:
