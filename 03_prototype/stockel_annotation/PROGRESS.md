@@ -89,11 +89,11 @@
 
 ### 2.2 Create Digital Text Files
 
-- [x] **Digitize selected texts (if needed)**
+- [ ] **Digitize selected texts (if needed)** — IN PROGRESS
   - [x] OCR processor script created (`scripts/ocr_processor.py`)
   - [x] Tesseract OCR with Latin language pack installed
   - [x] Initial OCR test: pages 1-5 extracted successfully
-  - [ ] Full OCR extraction (pages 1-58) — IN PROGRESS
+  - [ ] Full OCR extraction (pages 1-58)
   - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf`
   - Date completed: Jan 25, 2026 (initial test); Jan 26, 2026 (tools verified)
 
