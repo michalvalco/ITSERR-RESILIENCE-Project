@@ -293,8 +293,19 @@ def fix_long_s(text: str, stats: NormalizationStats) -> str:
     """Fix long s (ſ) OCR'd as f in Latin words."""
 
     def case_preserving_repl(replacement: str):
-        """Return a replacement function that preserves the case of the first character."""
+        """
+        Return a replacement function that preserves the case of the first character.
+
+        Handles both simple replacements and backreference patterns (e.g., r'\1ssi\2').
+        """
+        # Check if replacement contains backreferences
+        has_backrefs = bool(re.search(r'\\[0-9]', replacement))
+
         def repl(match: re.Match) -> str:
+            if has_backrefs:
+                # Use match.expand() to properly expand backreferences
+                return match.expand(replacement)
+
             matched = match.group(0)
             if not matched:
                 return replacement

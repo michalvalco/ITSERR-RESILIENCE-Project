@@ -1,5 +1,5 @@
 # Text Normalization Report
-Generated: 2026-01-26T13:51:49.808007
+Generated: 2026-01-26T14:22:09.827591
 
 ## Summary Statistics
 
@@ -8,7 +8,7 @@ Generated: 2026-01-26T13:51:49.808007
 | Noise characters removed | 1913 |
 | 'et' normalized (ez/cz) | 252 |
 | Abbreviations expanded | 156 |
-| Long s (ſ→s) fixed | 704 |
+| Long s (ſ→s) fixed | 703 |
 | Reference markers added | 6 |
 | Words before | 18792 |
 | Words after | 17707 |

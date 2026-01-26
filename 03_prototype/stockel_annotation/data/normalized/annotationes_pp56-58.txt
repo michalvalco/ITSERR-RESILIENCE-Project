@@ -6,7 +6,7 @@
 # Pages: 56-57 (actual; requested 56-58 but PDF ends at page 57)
 
 ---
-# Normalized: 2026-01-26T13:51:49.758523
+# Normalized: 2026-01-26T14:22:09.785842
 # Normalization: spelling, abbreviations, structural markup
 
 
