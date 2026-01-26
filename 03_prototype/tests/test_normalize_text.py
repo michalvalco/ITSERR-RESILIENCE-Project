@@ -147,6 +147,14 @@ class TestExpandAbbreviations:
         result = expand_abbreviations(text, stats)
         assert "hominisque" in result
 
+    def test_que_backreference_preserves_word_case(self, stats):
+        """Backreference pattern should preserve the word's original case."""
+        # The backreference pattern r'(\w+)q;\s' -> r'\1que ' captures the word
+        # and the replacement preserves it via \1 backreference
+        text = "Hominisq; gratia"
+        result = expand_abbreviations(text, stats)
+        assert "Hominisque" in result
+
     # -------------------------------------------------------------------------
     # Theological Abbreviations - Case Insensitive Tests
     # -------------------------------------------------------------------------
@@ -230,6 +238,14 @@ class TestExpandAbbreviations:
         text = "libros, codices, &c."
         result = expand_abbreviations(text, stats)
         assert "etc." in result
+
+    def test_etc_ampersand_uppercase(self, stats):
+        """'&C.' should expand to 'Etc.' (case-preserving based on C)."""
+        # The first alphabetic character in '&C.' is 'C' (uppercase)
+        # so the replacement preserves that case
+        text = "libros, codices, &C."
+        result = expand_abbreviations(text, stats)
+        assert "Etc." in result
 
     def test_etc_ec(self, stats):
         """'ec.' should expand to 'etc.'."""
@@ -574,11 +590,12 @@ class TestEdgeCases:
 
     def test_word_boundary_respected(self, stats):
         """Word boundaries should prevent false matches."""
-        # 'fez' as a word should become 'et', but 'fezes' should not match \bez\b
-        text = "hoc fez illud"  # Note: 'fez' is not 'ez' at word boundary
+        # 'ez' should expand to 'et' only when it appears as a standalone word (\bez\b)
+        # 'fez' contains 'ez' but does not match the \bez\b pattern (starts with 'f')
+        text = "hoc fez illud"
         result = expand_abbreviations(text, stats)
-        # 'fez' is not \bez\b so it should remain (unless caught by other rules)
-        assert "fez" in result or "et" in result
+        # 'fez' does not match \bez\b so it should not be changed
+        assert "fez" in result
 
 
 # =============================================================================

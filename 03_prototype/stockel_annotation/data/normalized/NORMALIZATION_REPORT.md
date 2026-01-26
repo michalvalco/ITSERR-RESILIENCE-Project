@@ -56,13 +56,13 @@ The normalization script has comprehensive unit test coverage:
 | Test Category | Tests | Status |
 |---------------|-------|--------|
 | OCR Noise Removal | 7 | Passing |
-| Abbreviation Expansion | 21 | Passing |
+| Abbreviation Expansion | 23 | Passing |
 | Long S Correction | 13 | Passing |
 | Structural Elements | 7 | Passing |
-| Lemma Boundaries | 11 | Passing |
+| Lemma Boundaries | 10 | Passing |
 | Pipeline Integration | 6 | Passing |
 | Edge Cases | 6 | Passing |
 | Configuration | 4 | Passing |
-| **Total** | **74** | **All Passing** |
+| **Total** | **76** | **All Passing** |
 
 Test file: `03_prototype/tests/test_normalize_text.py`
