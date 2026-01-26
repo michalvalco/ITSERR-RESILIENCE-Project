@@ -11,10 +11,10 @@
 | Category | Progress | Deadline |
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 2/6 tasks | Feb 7 |
+| Text Selection & Preparation | 3/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| **Overall** | **10/18 tasks** | **Feb 9** |
+| **Overall** | **11/18 tasks** | **Feb 9** |
 
 ---
 
@@ -89,13 +89,15 @@
 
 ### 2.2 Create Digital Text Files
 
-- [ ] **Digitize selected texts (if needed)** — IN PROGRESS
+- [x] **Digitize selected texts (if needed)**
   - [x] OCR processor script created (`scripts/ocr_processor.py`)
   - [x] Tesseract OCR with Latin language pack installed
   - [x] Initial OCR test: pages 1-5 extracted successfully
-  - [ ] Full OCR extraction (pages 1-58)
-  - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf`
-  - Date completed: Jan 25, 2026 (initial test); Jan 26, 2026 (tools verified)
+  - [x] Full OCR extraction (pages 1-57) — COMPLETE
+  - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf` (57 pages)
+  - Output: 12 files in `data/cleaned/`, ~18,900 words total
+  - Chapter marker found: "DE PECCATO ORIG" (pages 46-50)
+  - Date completed: Jan 26, 2026
 
 - [ ] **Clean and normalize texts**
   - [ ] Normalize spelling variants
@@ -271,6 +273,8 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 25, 2026 | OCR test | Initial test: pages 1-5 extracted to `data/cleaned/annotationes_pp1-5.txt` |
 | Jan 26, 2026 | OCR tools verified | Tesseract 5.3.4 + Latin pack + pdf2image + pytesseract all working |
 | Jan 26, 2026 | Copilot review | Addressed 10 code review suggestions for ocr_processor.py |
+| Jan 26, 2026 | OCR complete | Full extraction: 57 pages, 18,912 words in 12 files |
+| Jan 26, 2026 | Chapter found | "DE PECCATO ORIG" marker detected in pages 46-50 |
 
 ---
 

@@ -32,7 +32,7 @@ This document tracks deliverables and milestones for the TNA Fellowship at Unive
 | Clone GNORM repo & run test annotation | Feb 2 | ☑ Complete | Jan 25: Pipeline analyzed, WebAnno TSV format verified |
 | Download Zenodo dataset & examine structure | Feb 2 | ☑ Complete | Jan 25: 186 docs total (39 expert-annotated with 18,425 tokens, 462 unique refs) |
 | Select 2-3 Stöckel texts for pilot | Feb 4 | ☑ Complete | Jan 25: De Peccato Originis, De Iustificatione, De Lege et Evangelio |
-| Create cleaned digital versions | Feb 6 | ⏳ In Progress | OCR test done (pp1-5); full extraction pending |
+| Create cleaned digital versions | Feb 6 | ☑ Complete | Jan 26: Full OCR extraction (57 pages, 18,912 words) |
 | Begin manual annotation (100+ refs) | Feb 9 | ☐ Pending | Using INCEpTION |
 | Document annotation schema decisions | Feb 9 | ☐ Pending | Adaptation from GNORM schema |
 | Draft email to Arianna (pilot proposal) | Feb 7 | ☑ Complete | Jan 25: Drafted in 05_admin/correspondence/ |
