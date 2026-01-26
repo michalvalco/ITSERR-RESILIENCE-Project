@@ -131,6 +131,8 @@ def remove_ocr_noise(text: str, stats: NormalizationStats) -> str:
 # =============================================================================
 
 # Common Latin abbreviations in 16th-century texts
+# Note: All patterns are matched case-insensitively (re.IGNORECASE)
+# The replacement preserves the original case of the first character
 ABBREVIATIONS = {
     # Tironian et and variants
     r'\bez\b': 'et',
@@ -138,49 +140,89 @@ ABBREVIATIONS = {
     r'\be\s*z\b': 'et',
 
     # que abbreviation (appears as q; or similar)
-    r'\bq;\b': 'que',
-    r'\bq\s*;\b': 'que',
-    r'q;': 'que',
+    r'\bq;': 'que',        # q; at word boundary start
+    r'q;': 'que',          # any q; sequence
 
-    # Common theological abbreviations
-    r'\bDñs\b': 'Dominus',
-    r'\bDñm\b': 'Dominum',
-    r'\bDño\b': 'Domino',
-    r'\bDñi\b': 'Domini',
-    r'\bXpi\b': 'Christi',
-    r'\bXpo\b': 'Christo',
-    r'\bXpm\b': 'Christum',
-    r'\bXps\b': 'Christus',
+    # Common theological abbreviations (lowercase patterns - case handled dynamically)
+    r'\bdñs\b': 'dominus',
+    r'\bdñm\b': 'dominum',
+    r'\bdño\b': 'domino',
+    r'\bdñi\b': 'domini',
+    r'\bxpi\b': 'christi',
+    r'\bxpo\b': 'christo',
+    r'\bxpm\b': 'christum',
+    r'\bxps\b': 'christus',
 
-    # Ecclesiastical
-    r'\beccl\.\b': 'ecclesia',
-    r'\bEccl\.\b': 'Ecclesia',
-    r'\bepi\.\b': 'episcopus',
-    r'\bEpi\.\b': 'Episcopus',
+    # Ecclesiastical (lowercase patterns - case handled dynamically)
+    # Note: No trailing \b after period since period is a word boundary
+    r'\beccl\.': 'ecclesia',
+    r'\bepi\.': 'episcopus',
 
     # Common word endings
     r'(\w+)q;\s': r'\1que ',
 
-    # etc. and similar
-    r'\b&c\.\b': 'etc.',
-    r'\bec\.\b': 'etc.',
+    # etc. and similar (no trailing \b after period)
+    # Note: & is not a word character, so use (?<!\w) instead of \b
+    r'(?<!\w)&c\.': 'etc.',
+    r'\bec\.(?!\w)': 'etc.',  # ec. not followed by word char (avoid matching 'ecclesiastical')
 }
 
 
 def expand_abbreviations(text: str, stats: NormalizationStats) -> str:
-    """Expand common Latin abbreviations."""
-    # Track Tironian et separately
+    """
+    Expand common Latin abbreviations.
+
+    All patterns are matched case-insensitively (re.IGNORECASE) and the
+    replacement preserves the case of the first character in the match.
+    """
+    # Track Tironian et separately for statistics
     tironian_patterns = [r'\bez\b', r'\bcz\b', r'\be\s*z\b']
 
+    def case_preserving_repl(replacement: str):
+        """
+        Return a replacement function that preserves the case of the first character.
+
+        Handles both simple replacements and backreference patterns (e.g., r'\1que ').
+        """
+        # Check if replacement contains backreferences
+        has_backrefs = bool(re.search(r'\\[0-9]', replacement))
+
+        def repl(match: re.Match) -> str:
+            if has_backrefs:
+                # Use match.expand() to properly expand backreferences
+                return match.expand(replacement)
+
+            matched = match.group(0)
+            if not matched:
+                return replacement
+
+            # Find the first alphabetic character in the match to determine case
+            first_alpha = None
+            for char in matched:
+                if char.isalpha():
+                    first_alpha = char
+                    break
+
+            if first_alpha is None:
+                return replacement
+
+            # Preserve case: if original starts uppercase, uppercase the replacement
+            if first_alpha.isupper():
+                return replacement[0].upper() + replacement[1:]
+            else:
+                return replacement[0].lower() + replacement[1:]
+
+        return repl
+
     for pattern, expansion in ABBREVIATIONS.items():
+        matches = len(re.findall(pattern, text, re.IGNORECASE))
+
         if pattern in tironian_patterns:
-            matches = len(re.findall(pattern, text))
             stats.et_normalized += matches
-            text = re.sub(pattern, expansion, text)
         else:
-            matches = len(re.findall(pattern, text, re.IGNORECASE))
             stats.abbreviations_expanded += matches
-            text = re.sub(pattern, expansion, text, flags=re.IGNORECASE)
+
+        text = re.sub(pattern, case_preserving_repl(expansion), text, flags=re.IGNORECASE)
 
     return text
 

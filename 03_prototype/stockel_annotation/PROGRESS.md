@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** January 26, 2026 (Text normalization complete)
+**Last Updated:** January 26, 2026 (Unit tests added, IGNORECASE for abbreviations)
 
 ---
 
@@ -11,10 +11,11 @@
 | Category | Progress | Deadline |
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 5/6 tasks | Feb 7 |
+| Text Selection & Preparation | 6/6 tasks | Feb 7 |
 | Annotation Work | 1/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| **Overall** | **14/18 tasks (78%)** | **Feb 9** |
+| Testing & Quality | 1/1 tasks | Feb 9 |
+| **Overall** | **16/19 tasks (84%)** | **Feb 9** |
 
 ---
 
@@ -103,11 +104,20 @@
 - [x] **Clean and normalize texts**
   - [x] Normalize spelling variants (long s → s, ez/cz → et)
   - [x] Expand abbreviations consistently (q; → que, etc.)
+  - [x] Case-insensitive abbreviation matching with case-preserving replacement
   - [x] Document normalization decisions
   - Normalization script: `scripts/normalize_text.py`
   - Files saved to: `data/normalized/`
   - Statistics: 1,913 noise chars removed, 156 abbreviations expanded, 658 long-s fixed
   - See: `data/normalized/NORMALIZATION_REPORT.md`
+  - Date completed: Jan 26, 2026
+
+- [x] **Unit tests for normalization script**
+  - [x] Created comprehensive test suite (74 tests)
+  - [x] Tests for OCR noise removal, abbreviation expansion, long-s correction
+  - [x] Tests for structural element marking and lemma boundary identification
+  - [x] Tests for case-insensitive matching with case-preserving replacement
+  - Test file: `03_prototype/tests/test_normalize_text.py`
   - Date completed: Jan 26, 2026
 
 - [x] **Mark structural elements**
@@ -230,6 +240,11 @@
   - OCR noise removed: 1,913 characters
 - **Structural analysis complete:** 8 chapters identified (PRAEFATIO through DE LEGE)
 - **Reference marking:** Biblical, patristic, and reformation references tagged
+- **Unit tests added:** 74 comprehensive tests for `normalize_text.py`
+  - Case-insensitive abbreviation matching with case-preserving replacement
+  - Full test coverage for all normalization functions
+  - Tests for OCR noise removal, long-s correction, structural marking
+  - All tests passing (74/74)
 
 **In Progress:**
 - Manual annotation work (pending start)
@@ -302,6 +317,10 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 26, 2026 | Annotation layers | Defined 3 layers: Citation (span), CitationTarget (relation), StructuralElement (span) |
 | Jan 26, 2026 | Citation types | Tagset: biblical, patristic, reformation, classical, legal |
 | Jan 26, 2026 | INCEpTION version | Using v39.4 (standalone JAR), requires Java 17+ |
+| Jan 26, 2026 | IGNORECASE | Added case-insensitive matching for all abbreviation patterns |
+| Jan 26, 2026 | Case preservation | Abbreviation expansions now preserve original case of first character |
+| Jan 26, 2026 | Unit tests | Created 74 unit tests for normalize_text.py (all passing) |
+| Jan 26, 2026 | Test coverage | Tests cover OCR noise, abbreviations, long-s, structure, references |
 
 ---
 

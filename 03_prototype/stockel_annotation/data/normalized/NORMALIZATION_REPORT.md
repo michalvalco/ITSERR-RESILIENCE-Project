@@ -34,6 +34,9 @@ Generated: 2026-01-26T14:22:09.827591
 ### Abbreviations Expanded
 - `q;` → `que`
 - Common theological abbreviations (Dñs, Xpi, etc.)
+- **Case-insensitive matching:** All abbreviations matched regardless of case
+- **Case-preserving replacement:** Original case of first character preserved
+  - Example: `DÑS` → `Dominus`, `dñs` → `dominus`
 
 ### Structural Markup
 - Chapter headings marked with XML comments
@@ -45,3 +48,21 @@ Generated: 2026-01-26T14:22:09.827591
 - Original page markers [Page N] preserved
 - Page break markers [PAGE BREAK] preserved
 - OCR metadata header preserved
+
+## Testing
+
+The normalization script has comprehensive unit test coverage:
+
+| Test Category | Tests | Status |
+|---------------|-------|--------|
+| OCR Noise Removal | 7 | Passing |
+| Abbreviation Expansion | 21 | Passing |
+| Long S Correction | 13 | Passing |
+| Structural Elements | 7 | Passing |
+| Lemma Boundaries | 11 | Passing |
+| Pipeline Integration | 6 | Passing |
+| Edge Cases | 6 | Passing |
+| Configuration | 4 | Passing |
+| **Total** | **74** | **All Passing** |
+
+Test file: `03_prototype/tests/test_normalize_text.py`

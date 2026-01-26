@@ -107,10 +107,11 @@ Stöckel's commentary structure typically follows this pattern:
 - Latin text structure intact
 - Page break markers preserved
 
-### Common OCR Errors (partially corrected)
+### Common OCR Errors (corrected)
 
-- Long s (ſ) → f: `sunt` appeared as `funt` (corrected)
-- `et` → `ez`/`cz`: Tironian et misread (corrected)
+- Long s (ſ) → f: `sunt` appeared as `funt` (corrected with case-preservation)
+- `et` → `ez`/`cz`: Tironian et misread (corrected with IGNORECASE)
+- Latin abbreviations: `Dñs`, `Xpi`, etc. expanded (case-insensitive, case-preserving)
 - Margin artifacts: Random characters at page edges (partially removed)
 - Line breaks: Some words split across lines
 
