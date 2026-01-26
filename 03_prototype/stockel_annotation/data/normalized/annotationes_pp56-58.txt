@@ -6,7 +6,7 @@
 # Pages: 56-57 (actual; requested 56-58 but PDF ends at page 57)
 
 ---
-# Normalized: 2026-01-26T13:07:00.604983
+# Normalized: 2026-01-26T13:51:49.758523
 # Normalization: spelling, abbreviations, structural markup
 
 
@@ -59,6 +59,6 @@ a 1l dest ad incolumitatent communem, Nulla enim focictas, neq:
 tio idem nomen significat legem nature,que eft fons et prin cipium omnium aliarum legum bumnanarum.Neque enim po f-
 sunt ullorum bominum leges babere autboritatem , "ft cons
 sentiant cum lege nature , que continet reliquias quaflar
-illius lucis , cum. qua bono conditus fuit ad imaginem Dei. Nm fi natura bominis integra e fet , nibil omnino inter le-
+illius lucis , cum. qua bono conditus fuit ad imaginem Dei. Nm fi natura bominis integra e set , nibil omnino inter le-
 gein nature qz legem diuinam intereffet, ^ Quarto, ni
 tm,

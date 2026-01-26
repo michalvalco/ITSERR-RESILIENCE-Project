@@ -41,8 +41,6 @@ class NormalizationStats:
 
 def remove_ocr_noise(text: str, stats: NormalizationStats) -> str:
     """Remove OCR artifacts and noise from the text."""
-    original = text
-
     # First, protect page markers from being mangled
     # Convert [Page X] to a protected token
     page_markers = re.findall(r'\[Page\s+\d+\]', text)
@@ -99,10 +97,11 @@ def remove_ocr_noise(text: str, stats: NormalizationStats) -> str:
     text = '\n'.join(cleaned_lines)
 
     # Remove inline noise (but protect brackets around page markers)
+    # Note: Page markers are already protected as __PAGE_MARKER_N__ tokens
     inline_noise_patterns = [
         (r'\s*\|\s*', ' '),                     # Pipe characters
         (r'(?<!_)\[(?!Page)', ' '),             # Opening brackets (not [Page)
-        (r'(?<!Page\s\d)\](?!_)', ' '),         # Closing brackets (not Page X])
+        (r'\](?!_)', ' '),                      # Closing brackets (not marker placeholders)
         (r'\s*\!\s*(?![A-Z])', ' '),            # Exclamation marks (not sentence-initial)
         (r'\s*[—–-]{2,}\s*', ' '),              # Multiple dashes
         (r'(?<![_\d])\s{2,}(?![_\d])', ' '),    # Multiple spaces
@@ -207,14 +206,17 @@ LONG_S_PATTERNS = [
     (r'\beffent', 'essent'),
     (r'\befse', 'esse'),
     (r'\beffi', 'essi'),
-    (r'\beffic', 'essic'),        # but keep efficax
+    (r'\beffic(?!ax)', 'essic'),  # preserve efficax
     (r'\bmiffio', 'missio'),
     (r'\bremifsi', 'remissi'),
     (r'\btranfgre', 'transgre'),
     (r'\bproficif', 'proficis'),
 
-    # Words ending in -is (OCR'd as -if)
-    (r'(\w{3,})if\b', r'\1is'),   # Generic -is endings
+    # Additional common OCR confusions for long s (ſ) in Latin
+    (r'\bficut\b', 'sicut'),      # sicut = thus/as
+    (r'\bftc\b', 'sic'),          # sic (alternate OCR)
+    (r'\bfet\b', 'set'),          # set
+    (r'\bfunt(?=\w)', 'sunt'),    # funt at start of compounds (funttres)
 
     # Common -st- patterns
     (r'\bconfti', 'consti'),      # constitutio
@@ -289,11 +291,28 @@ LONG_S_PATTERNS = [
 
 def fix_long_s(text: str, stats: NormalizationStats) -> str:
     """Fix long s (ſ) OCR'd as f in Latin words."""
+
+    def case_preserving_repl(replacement: str):
+        """Return a replacement function that preserves the case of the first character."""
+        def repl(match: re.Match) -> str:
+            matched = match.group(0)
+            if not matched:
+                return replacement
+            first = matched[0]
+            # If the first character of the match is uppercase, uppercase the first
+            # character of the replacement; otherwise use the replacement as given.
+            if first.isalpha() and first.isupper():
+                return replacement[0].upper() + replacement[1:]
+            elif first.isalpha() and first.islower():
+                return replacement[0].lower() + replacement[1:]
+            return replacement
+        return repl
+
     for pattern, replacement in LONG_S_PATTERNS:
         matches = len(re.findall(pattern, text, re.IGNORECASE))
         stats.long_s_fixed += matches
-        # Preserve case for first character
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+        # Use case-aware replacement to preserve capitalization
+        text = re.sub(pattern, case_preserving_repl(replacement), text, flags=re.IGNORECASE)
 
     return text
 
@@ -329,18 +348,13 @@ def mark_structural_elements(text: str, stats: NormalizationStats) -> str:
     """Identify and mark chapter breaks and structural elements."""
 
     # Find and normalize chapter titles
+    # Note: OCR noise often appears before chapter headings in page headers,
+    # so we detect any occurrence of the pattern rather than requiring strict
+    # positioning. The chapter list is used for documentation purposes.
     for pattern, normalized in CHAPTER_PATTERNS:
-        match = re.search(pattern, text, re.IGNORECASE)
-        if match:
-            # Check if this is a chapter heading (usually in page header or standalone)
-            context_start = max(0, match.start() - 50)
-            context_end = min(len(text), match.end() + 50)
-            context = text[context_start:context_end]
-
-            # If it looks like a heading (after page marker or at line start)
-            if re.search(r'(\[Page \d+\]|\n)\s*' + pattern, text, re.IGNORECASE):
-                if normalized not in stats.chapters_found:
-                    stats.chapters_found.append(normalized)
+        if re.search(pattern, text, re.IGNORECASE):
+            if normalized not in stats.chapters_found:
+                stats.chapters_found.append(normalized)
 
     # Mark chapter headings with XML-like tags for INCEpTION
     for pattern, normalized in CHAPTER_PATTERNS:
@@ -415,11 +429,11 @@ def identify_lemma_boundaries(text: str, stats: NormalizationStats) -> str:
         )
 
     # Reformation-era references
+    # Note: "Philippus" removed as too ambiguous (could be Philip the Apostle, etc.)
     reformation_patterns = [
         r'\b(Luther(?:us|i)?)',
         r'\b(Melanchthon(?:is)?)',
         r'\b(Caluin(?:us|i)?)',
-        r'\b(Philippus)',  # Often refers to Melanchthon
     ]
 
     for pattern in reformation_patterns:
@@ -443,31 +457,48 @@ def normalize_text(text: str, stats: Optional[NormalizationStats] = None) -> str
     """
     Apply full normalization pipeline to OCR text.
 
-    Pipeline order:
+    Pipeline order (order is intentional and interdependent):
+
     1. Remove OCR noise
+       Runs first so obviously spurious characters do not interfere with
+       subsequent pattern-based normalizations.
+
     2. Expand abbreviations
+       Abbreviation patterns are defined against the raw OCR tokens; running
+       this before long-s normalization keeps the rules simple and stable.
+
     3. Fix long s → s
+       After abbreviations are expanded, we normalize long s to modern "s"
+       so later consumers of the text see standard Latin spelling.
+
     4. Mark structural elements
+       Structural markers (chapters, headings) are added on the already-
+       normalized text to avoid matching on transient OCR noise.
+
     5. Identify lemma/reference boundaries
+       Lemma/reference tags are added last, on top of the structural markup.
+       The implementation operates on already-marked structure so structural
+       tags are preserved.
     """
     if stats is None:
         stats = NormalizationStats()
 
     stats.total_words_before = len(text.split())
 
-    # 1. Remove noise
+    # 1. Remove noise early so later steps do not see obvious OCR artifacts
     text = remove_ocr_noise(text, stats)
 
-    # 2. Expand abbreviations
+    # 2. Expand abbreviations on the raw OCR-based tokens
+    # Note: runs before long-s normalization; abbreviation rules use original forms
     text = expand_abbreviations(text, stats)
 
-    # 3. Fix long s
+    # 3. Fix long s after abbreviation expansion for normalized output
     text = fix_long_s(text, stats)
 
-    # 4. Mark structural elements
+    # 4. Mark structural elements before adding lemma/reference tags
     text = mark_structural_elements(text, stats)
 
-    # 5. Identify lemma boundaries
+    # 5. Identify lemma boundaries as final layer of XML-like tagging
     text = identify_lemma_boundaries(text, stats)
 
     # Final cleanup

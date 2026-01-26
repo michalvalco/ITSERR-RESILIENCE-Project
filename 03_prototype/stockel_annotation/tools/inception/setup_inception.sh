@@ -11,6 +11,10 @@
 
 set -e
 
+# Change to script directory so artifacts are created in the right place
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
 INCEPTION_VERSION="39.4"
 INCEPTION_JAR="inception-app-webapp-${INCEPTION_VERSION}-standalone.jar"
 INCEPTION_URL="https://github.com/inception-project/inception/releases/download/inception-${INCEPTION_VERSION}/${INCEPTION_JAR}"
@@ -20,6 +24,7 @@ INCEPTION_PORT=8080
 echo "=============================================="
 echo "INCEpTION Setup for Stöckel Annotation Project"
 echo "=============================================="
+echo "Working directory: $SCRIPT_DIR"
 echo ""
 
 # Check Java version
@@ -42,7 +47,8 @@ echo "  Java version: OK ($(java -version 2>&1 | head -1))"
 if [ ! -f "$INCEPTION_JAR" ]; then
     echo ""
     echo "Downloading INCEpTION ${INCEPTION_VERSION}..."
-    curl -L -o "$INCEPTION_JAR" "$INCEPTION_URL"
+    # Use -f to fail on HTTP errors, --retry for network resilience
+    curl -fL --retry 3 --retry-all-errors -o "$INCEPTION_JAR" "$INCEPTION_URL"
     echo "  Download complete: $INCEPTION_JAR"
 else
     echo "  INCEpTION JAR already exists: $INCEPTION_JAR"
@@ -61,7 +67,7 @@ if [ ! -f "$SETTINGS_FILE" ]; then
     echo "Creating settings file..."
     cat > "$SETTINGS_FILE" << EOF
 # INCEpTION Settings for Stöckel Annotation Project
-# Generated: $(date -Iseconds)
+# Generated: $(date -u "+%Y-%m-%dT%H:%M:%SZ")
 
 # Server configuration
 server.port=${INCEPTION_PORT}

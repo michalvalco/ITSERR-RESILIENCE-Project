@@ -1,5 +1,5 @@
 # Text Normalization Report
-Generated: 2026-01-26T13:07:00.654231
+Generated: 2026-01-26T13:51:49.808007
 
 ## Summary Statistics
 
@@ -8,18 +8,21 @@ Generated: 2026-01-26T13:07:00.654231
 | Noise characters removed | 1913 |
 | 'et' normalized (ez/cz) | 252 |
 | Abbreviations expanded | 156 |
-| Long s (ſ→s) fixed | 658 |
+| Long s (ſ→s) fixed | 704 |
 | Reference markers added | 6 |
 | Words before | 18792 |
 | Words after | 17707 |
 
 ## Chapters Identified
 
+- DE CREATIONE
 - PRAEFATIO
 - DE DEO
 - DE SPIRITU SANCTO
 - DE LIBERO ARBITRIO
+- DE PECCATO ORIGINIS
 - DE PECCATO
+- DE LEGE
 
 ## Normalization Decisions
 
