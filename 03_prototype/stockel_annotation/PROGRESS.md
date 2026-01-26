@@ -94,8 +94,9 @@
   - [x] Tesseract OCR with Latin language pack installed
   - [x] Initial OCR test: pages 1-5 extracted successfully
   - [x] Full OCR extraction (pages 1-57) — COMPLETE
-  - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf` (57 pages)
-  - Output: 12 files in `data/cleaned/`, ~18,900 words total
+  - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf`
+  - Note: PDF filename says "58 pages" but actually contains 57 pages
+  - Output: 12 files in `data/cleaned/` (pp1-5 through pp56-58), ~18,900 words total
   - Chapter marker found: "DE PECCATO ORIG" (pages 46-50)
   - Date completed: Jan 26, 2026
 
