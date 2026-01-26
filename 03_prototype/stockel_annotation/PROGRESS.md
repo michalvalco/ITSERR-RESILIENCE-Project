@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** January 26, 2026
+**Last Updated:** January 26, 2026 (Text normalization complete)
 
 ---
 
@@ -11,10 +11,10 @@
 | Category | Progress | Deadline |
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 3/6 tasks | Feb 7 |
+| Text Selection & Preparation | 5/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| **Overall** | **11/18 tasks** | **Feb 9** |
+| **Overall** | **13/18 tasks (72%)** | **Feb 9** |
 
 ---
 
@@ -100,19 +100,23 @@
   - Chapter marker found: "DE PECCATO ORIG" (pages 46-50)
   - Date completed: Jan 26, 2026
 
-- [ ] **Clean and normalize texts**
-  - [ ] Normalize spelling variants
-  - [ ] Expand abbreviations consistently
-  - [ ] Document normalization decisions
-  - Files saved to: `data/cleaned/`
-  - Date completed: ___
+- [x] **Clean and normalize texts**
+  - [x] Normalize spelling variants (long s → s, ez/cz → et)
+  - [x] Expand abbreviations consistently (q; → que, etc.)
+  - [x] Document normalization decisions
+  - Normalization script: `scripts/normalize_text.py`
+  - Files saved to: `data/normalized/`
+  - Statistics: 1,913 noise chars removed, 156 abbreviations expanded, 658 long-s fixed
+  - See: `data/normalized/NORMALIZATION_REPORT.md`
+  - Date completed: Jan 26, 2026
 
-- [ ] **Mark structural elements**
-  - [ ] Chapter breaks
-  - [ ] Lemma boundaries
-  - [ ] Gloss markers
-  - [ ] Save in UTF-8 plain text format
-  - Date completed: ___
+- [x] **Mark structural elements**
+  - [x] Chapter breaks (8 chapters identified: PRAEFATIO through DE LEGE)
+  - [x] Lemma boundaries (biblical, patristic, reformation references tagged)
+  - [x] Gloss markers (reference patterns identified)
+  - [x] Save in UTF-8 plain text format
+  - See: `data/normalized/STRUCTURAL_ANALYSIS.md`
+  - Date completed: Jan 26, 2026
 
 ---
 
@@ -204,7 +208,7 @@
 
 ### Week of January 27, 2026
 
-**Focus:** Text Digitization & OCR Setup
+**Focus:** Text Digitization, OCR & Normalization
 
 **Completed:**
 - Selected 3 chapters from *Annotationes* for pilot study (CHAPTER_SELECTION.md)
@@ -214,19 +218,25 @@
 - Completed initial OCR test (pages 1-5)
 - Addressed Copilot code review feedback (10 suggestions implemented)
 - Fixed GNORM briefing questions section numbering (sections now consecutive 1-16)
+- **Full OCR extraction complete:** 57 pages, 18,912 words, 12 files
+- **Text normalization complete:** Created `normalize_text.py` script
+  - Long s (ſ→s) corrections: 658 instances
+  - Tironian et (ez/cz→et) normalized
+  - Abbreviations expanded: 156 instances
+  - OCR noise removed: 1,913 characters
+- **Structural analysis complete:** 8 chapters identified (PRAEFATIO through DE LEGE)
+- **Reference marking:** Biblical, patristic, and reformation references tagged
 
 **In Progress:**
-- Full OCR extraction (58 pages, processing in 5-page chunks)
-- Text cleaning and normalization
+- INCEpTION installation
 
 **Blockers:**
-- INCEpTION installation (requires local setup time)
+- None currently
 
 **Next Week Priority:**
-- Complete full OCR extraction for all 58 pages
-- Clean and normalize extracted text
 - Install INCEpTION and configure annotation project
 - Begin manual annotation (target: 50+ references by Feb 3)
+- Review normalized text quality for edge cases
 
 ---
 
@@ -276,6 +286,13 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 26, 2026 | Copilot review | Addressed 10 code review suggestions for ocr_processor.py |
 | Jan 26, 2026 | OCR complete | Full extraction: 57 pages, 18,912 words in 12 files |
 | Jan 26, 2026 | Chapter found | "DE PECCATO ORIG" marker detected in pages 46-50 |
+| Jan 26, 2026 | Normalization script | Created `scripts/normalize_text.py` for text cleanup |
+| Jan 26, 2026 | Long s patterns | Identified 658 instances of ſ→f OCR errors, corrected systematically |
+| Jan 26, 2026 | Tironian et | `ez` and `cz` normalized to `et` throughout corpus |
+| Jan 26, 2026 | Abbreviations | `q;` → `que` and other Latin abbreviations expanded |
+| Jan 26, 2026 | Chapters identified | 8 loci found: PRAEFATIO, DE DEO, DE TRINITATE, DE SPIRITU SANCTO, DE CREATIONE, DE PROVIDENTIA, DE LIBERO ARBITRIO, DE PECCATO, DE LEGE |
+| Jan 26, 2026 | Reference tagging | Biblical (Psalm, Rom, etc.), patristic (Augustine, Jerome), reformation (Melanchthon) refs tagged |
+| Jan 26, 2026 | Output location | Normalized files in `data/normalized/`, reports in same directory |
 
 ---
 
@@ -295,12 +312,12 @@ Use this section to record important decisions, insights, and issues encountered
 
 Before arriving in Palermo on February 10, 2026, you should be able to:
 
-- [ ] Run the GNORM pipeline on test data successfully
-- [ ] Have 2-3 cleaned Stöckel texts ready in `data/cleaned/`
+- [x] Run the GNORM pipeline on test data successfully
+- [x] Have 2-3 cleaned Stöckel texts ready in `data/normalized/` *(12 files covering 57 pages)*
 - [ ] Have at least 100 manually annotated references
-- [ ] Articulate the annotation schema decisions clearly
-- [ ] Have specific technical questions prepared for the WP3 team
-- [ ] Have drafted the pilot study proposal email
+- [x] Articulate the annotation schema decisions clearly *(see STRUCTURAL_ANALYSIS.md)*
+- [x] Have specific technical questions prepared for the WP3 team
+- [x] Have drafted the pilot study proposal email
 
 ---
 
