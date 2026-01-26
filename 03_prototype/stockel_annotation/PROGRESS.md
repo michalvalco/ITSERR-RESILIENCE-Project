@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** January 25, 2026
+**Last Updated:** January 26, 2026
 
 ---
 
@@ -11,10 +11,10 @@
 | Category | Progress | Deadline |
 |----------|----------|----------|
 | GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 1/6 tasks | Feb 7 |
+| Text Selection & Preparation | 2/6 tasks | Feb 7 |
 | Annotation Work | 0/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| **Overall** | **9/18 tasks** | **Feb 9** |
+| **Overall** | **10/18 tasks** | **Feb 9** |
 
 ---
 
@@ -89,11 +89,13 @@
 
 ### 2.2 Create Digital Text Files
 
-- [ ] **Digitize selected texts (if needed)**
-  - [ ] OCR using Transkribus or ABBYY
-  - [ ] Verify OCR accuracy
-  - Source location: ___
-  - Date completed: ___
+- [x] **Digitize selected texts (if needed)**
+  - [x] OCR processor script created (`scripts/ocr_processor.py`)
+  - [x] Tesseract OCR with Latin language pack installed
+  - [x] Initial OCR test: pages 1-5 extracted successfully
+  - [ ] Full OCR extraction (pages 1-58) — IN PROGRESS
+  - Source: `data/raw/Annotationes Locorum Communium, 1561 - Stoeckel - first 58 pages.pdf`
+  - Date completed: Jan 25, 2026 (initial test); Jan 26, 2026 (tools verified)
 
 - [ ] **Clean and normalize texts**
   - [ ] Normalize spelling variants
@@ -199,22 +201,27 @@
 
 ### Week of January 27, 2026
 
-**Focus:** Text Selection & Documentation
+**Focus:** Text Digitization & OCR Setup
 
 **Completed:**
 - Selected 3 chapters from *Annotationes* for pilot study (CHAPTER_SELECTION.md)
 - Added Stöckel-specific technical questions to briefing document (6 new sections)
 - Drafted email to Arianna with pilot study proposal
+- Created `ocr_processor.py` script with Tesseract Latin OCR
+- Completed initial OCR test (pages 1-5)
+- Addressed Copilot code review feedback (10 suggestions implemented)
+- Fixed GNORM briefing questions section numbering (sections now consecutive 1-16)
 
 **In Progress:**
-- Locating digitized Stöckel texts for OCR/cleaning
+- Full OCR extraction (58 pages, processing in 5-page chunks)
+- Text cleaning and normalization
 
 **Blockers:**
-- Need access to existing digitized materials (04 Projekty/2021 KEGA Stockel)
 - INCEpTION installation (requires local setup time)
 
 **Next Week Priority:**
-- Create cleaned digital text files for selected chapters
+- Complete full OCR extraction for all 58 pages
+- Clean and normalize extracted text
 - Install INCEpTION and configure annotation project
 - Begin manual annotation (target: 50+ references by Feb 3)
 
@@ -260,6 +267,10 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 25, 2026 | Selection rationale | High citation density (125-180 est.), diverse types (biblical, patristic, Reformation) |
 | Jan 25, 2026 | Briefing questions | Added 6 Stöckel-specific question sections (11-16) to gnorm_briefing_questions.md |
 | Jan 25, 2026 | Email draft | Pilot study proposal to Arianna drafted; awaiting review before sending |
+| Jan 25, 2026 | OCR processor | Created `scripts/ocr_processor.py` with Tesseract Latin support |
+| Jan 25, 2026 | OCR test | Initial test: pages 1-5 extracted to `data/cleaned/annotationes_pp1-5.txt` |
+| Jan 26, 2026 | OCR tools verified | Tesseract 5.3.4 + Latin pack + pdf2image + pytesseract all working |
+| Jan 26, 2026 | Copilot review | Addressed 10 code review suggestions for ocr_processor.py |
 
 ---
 
