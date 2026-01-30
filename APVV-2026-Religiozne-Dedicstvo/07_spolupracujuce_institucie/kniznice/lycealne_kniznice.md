@@ -64,4 +64,4 @@ Knižnice evanjelických lýceí uchovávajú bohaté zbierky archívnych dokume
 
 ---
 
-*Zdroj: korešpondencia s Dr. Evou Kowalskou (29.1.2026)*
+*Zdroj: korešpondencia s Dr. Evou Kowalskou (29. január 2026)*

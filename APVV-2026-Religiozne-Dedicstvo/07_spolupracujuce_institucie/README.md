@@ -1,13 +1,13 @@
 # Spolupracujúce inštitúcie
 
-Tento adresár obsahuje informácie o inštitúciách, ktoré budú spolupracovať na projekte, ale nie sú formálnymi partnermi v zmysle APVV žiadosti.
+Tento adresár obsahuje profily inštitúcií, ktoré budú spolupracovať na projekte, ale nie sú formálnymi partnermi v zmysle APVV žiadosti. Nižšie uvádzame rozlíšenie pre lepšiu orientáciu.
 
 ## Rozlíšenie partnerov a spolupracujúcich inštitúcií
 
 ### Partneri projektu (formálne zapojení)
-Partneri sú inštitúcie, ktorých zamestnanci sú členmi riešiteľského tímu:
+Partneri sú inštitúcie, ktorých zamestnanci sú členmi riešiteľského tímu (profily sú v adresári `03_partneri/`):
 - **EBF UK** – Žiadateľ (Prof. Valčo, Mgr. Hanus)
-- **Historický ústav SAV** – Spoluriešiteľská organizácia (Dr. Kowalská)
+- **Historický ústav SAV, v. v. i.** – Spoluriešiteľská organizácia (Dr. Kowalská)
 
 ### Spolupracujúce inštitúcie
 Inštitúcie, ktoré poskytujú prístup k fondom, expertízu alebo infraštruktúru:
@@ -21,7 +21,7 @@ Inštitúcie, ktoré poskytujú prístup k fondom, expertízu alebo infraštrukt
 
 #### Medzinárodné infraštruktúry
 - [RESILIENCE](https://www.resilience-ri.eu/) – Európska výskumná infraštruktúra pre religionistiku
-- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE
+- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE (Horizont Európa)
 
 ## Štruktúra adresára
 
