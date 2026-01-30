@@ -20,7 +20,7 @@
 
 ### Spoluriešitelia
 - **Mgr. Radoslav Hanus, PhD.** – EBF UK, Katedra cirkevných dejín
-- **PhDr. Eva Kowalská, DrSc.** – Historický ústav SAV v Bratislave
+- **PhDr. Eva Kowalská, DrSc.** – Historický ústav SAV, v. v. i.
 
 ### Partnerská organizácia
 - **Historický ústav SAV, v. v. i.** – Spoluriešiteľská organizácia
@@ -35,7 +35,7 @@
 
 #### Medzinárodné infraštruktúry
 - [RESILIENCE](https://www.resilience-ri.eu/) – Európska výskumná infraštruktúra pre religionistiku
-- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE
+- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE (Horizont Európa)
 
 ## Tematické zameranie
 

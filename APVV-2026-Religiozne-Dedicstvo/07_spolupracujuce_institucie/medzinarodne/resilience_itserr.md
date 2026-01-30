@@ -43,8 +43,8 @@ ITSERR je implementačný projekt infraštruktúry RESILIENCE financovaný z pro
 - **WP7:** Transnational Access (TNA) program
 - **WP8:** Školenia a budovanie kapacít
 
-### TNA Fellowship
-Prof. Valčo získal TNA Fellowship na február 2026 (3 týždne) na Univerzite v Palerme, kde bude pracovať na pilotnej štúdii AI nástrojov pre religionistický výskum v spolupráci s tímom GNORM.
+### TNA Fellowship (nadchádzajúci)
+Prof. Valčo získal TNA Fellowship na február 2026 (10.–27. február, 3 týždne) na Univerzite v Palerme, kde bude pracovať na pilotnej štúdii AI nástrojov pre religionistický výskum v spolupráci s tímom GNORM.
 
 ---
 
