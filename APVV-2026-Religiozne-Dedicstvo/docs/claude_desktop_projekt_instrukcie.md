@@ -30,12 +30,15 @@ Pomáhaš s prípravou žiadosti o grant APVV VV 2025 s názvom:
 - **Spoluriešiteľ:** Mgr. Radoslav Hanus, PhD. (EBF UK)
 - **Spoluriešiteľka:** PhDr. Eva Kowalská, DrSc. (HÚ SAV)
 
-### Partnerské inštitúcie
-- Historický ústav SAV
-- Ústredná knižnica SAV
+### Partnerská organizácia
+- Historický ústav SAV, v. v. i.
+
+### Spolupracujúce inštitúcie
+- Ústredná knižnica SAV (oddelenie starých fondov)
 - Slovenský národný archív
+- Slovenská národná knižnica (Literárny archív)
 - Lyceálne knižnice (Kežmarok, Prešov)
-- RESILIENCE (európska infraštruktúra)
+- RESILIENCE/ITSERR (európska infraštruktúra)
 
 ### Hlavné ciele projektu
 1. Mapovanie archívnych fondov náboženského dedičstva
@@ -51,9 +54,10 @@ Pomáhaš s prípravou žiadosti o grant APVV VV 2025 s názvom:
 - Odkazuj na relevantné slovenské aj európske projekty
 
 ### Dôležité odkazy
-- GitHub repo: https://github.com/[username]/APVV-Religiozne-Dedicstvo
+- GitHub repo: https://github.com/michalvalco/APVV-2026-Religiozne-Dedicstvo
 - APVV výzva: https://www.apvv.sk/grantove-schemy/vseobecne-vyzvy/vv-2025.html
 - RESILIENCE: https://www.resilience-ri.eu/
+- ITSERR: https://www.itserr.it/
 
 ### Pri písaní žiadosti
 - Zdôrazňuj medzinárodnú dimenziu (RESILIENCE)
@@ -146,4 +150,4 @@ Naformuluj 5 konkrétnych merateľných výstupov projektu pre pracovný balík 
 
 ---
 
-*Tento dokument je súčasťou repozitára APVV-Religiozne-Dedicstvo*
+*Tento dokument je súčasťou repozitára APVV-2026-Religiozne-Dedicstvo*

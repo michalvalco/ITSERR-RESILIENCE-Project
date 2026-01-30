@@ -43,7 +43,7 @@ Slovensko disponuje bohatým archívnym dedičstvom súvisiacim s náboženským
 | Inštitúcia | Typ fondov | Online dostupnosť |
 |------------|------------|-------------------|
 | Ústredná knižnica SAV | Zbierky Ev. lýcea (tlače, rkp.) | [Katalóg rukopisov](https://uk.sav.sk/historicke-fondy/vyhladavanie-rukopisov/), [Digitalizované](http://147.213.4.22/digi/index.php) |
-| Slovenský národný archív | Cirkevné fondy | [Inventáre (PDF)](https://www.minv.sk/swift_data/source/verejna_sprava/slovensky_narodny_archiv/...) |
+| Slovenský národný archív | Cirkevné fondy | [Inventáre (PDF)](https://www.minv.sk/swift_data/source/verejna_sprava/slovensky_narodny_archiv/zoznam_archivnych_fondov_a_zbierok_slovenskeho_narodneho_archivu/zoznam_archivnych_fondov_a_zbierok_sna_5_11_2025.pdf) |
 | SNK Literárny archív | Rukopisy, korešpondencia | [Katalóg](https://chamo.kis3g.sk/search/query?facet_subject_form=rukopisy&sort=author&theme=snkla) |
 | Lyceálna knižnica Kežmarok | Staré tlače, rukopisy | [Všeobecne](https://www.ecavkk.sk/lycealnakniznica), [Zipser Drucke](https://ds.ub.uni-bielefeld.de/viewer/collections/zipserdrucke/) |
 
@@ -141,8 +141,8 @@ Slovensko disponuje bohatým archívnym dedičstvom súvisiacim s náboženským
 
 ## 8. Prepojenie na existujúce aktivity
 
-- **ITSERR Fellowship** (február 2026) – Pilotná štúdia AI nástrojov pre religionistický výskum
-- **RESILIENCE infraštruktúra** – Priame prepojenie cez status pozorovateľa EBF UK
+- **[ITSERR](https://www.itserr.it/) Fellowship** (február 2026) – Pilotná štúdia AI nástrojov pre religionistický výskum
+- **[RESILIENCE](https://www.resilience-ri.eu/) infraštruktúra** – Priame prepojenie cez status pozorovateľa EBF UK
 - **Spolupráca s HÚ SAV** – Dlhoročná expertíza v cirkevných dejinách
 
 ---
