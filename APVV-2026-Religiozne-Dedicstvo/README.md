@@ -22,13 +22,20 @@
 - **Mgr. Radoslav Hanus, PhD.** – EBF UK, Katedra cirkevných dejín
 - **PhDr. Eva Kowalská, DrSc.** – Historický ústav SAV v Bratislave
 
-### Spolupracujúce organizácie
-- Historický ústav SAV
+### Partnerská organizácia
+- **Historický ústav SAV, v. v. i.** – Spoluriešiteľská organizácia
+
+### Spolupracujúce inštitúcie
+
+#### Slovenské archívy a knižnice
 - Ústredná knižnica SAV (oddelenie starých fondov)
 - Slovenský národný archív
 - Slovenská národná knižnica (Literárny archív)
 - Lyceálne knižnice (Kežmarok, Prešov)
-- RESILIENCE/ITSERR (európska výskumná infraštruktúra)
+
+#### Medzinárodné infraštruktúry
+- [RESILIENCE](https://www.resilience-ri.eu/) – Európska výskumná infraštruktúra pre religionistiku
+- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE
 
 ## Tematické zameranie
 
@@ -43,19 +50,21 @@ Projekt sa zameriava na **systematické mapovanie, digitálne sprístupnenie a v
 
 ```
 APVV-2026-Religiozne-Dedicstvo/
-├── 01_ziadost/           # Formulár žiadosti a rozpočet
-├── 02_vyskum/            # Výskumné podklady a literatúra
-├── 03_partneri/          # Profily partnerov a inštitúcií
-├── 04_mapovanie/         # Mapovanie archívov a zbierok
-├── 05_admin/             # Administratíva a APVV dokumenty
-├── 06_riesenie/          # Pracovné balíky (po schválení)
-└── docs/                 # Dokumentácia projektu
+├── 01_ziadost/                    # Formulár žiadosti a rozpočet
+├── 02_vyskum/                     # Výskumné podklady a literatúra
+├── 03_partneri/                   # Profily partnerov projektu (EBF UK, HÚ SAV)
+├── 04_mapovanie/                  # Mapovanie archívov a zbierok
+├── 05_admin/                      # Administratíva a APVV dokumenty
+├── 06_riesenie/                   # Pracovné balíky (po schválení)
+├── 07_spolupracujuce_institucie/  # Archívy, knižnice, medzinárodné infraštruktúry
+└── docs/                          # Dokumentácia projektu
 ```
 
 ## Súvisiace projekty
 
 - [ITSERR-RESILIENCE-Project](https://github.com/michalvalco/ITSERR-RESILIENCE-Project) – AI agent pre religionistický výskum
 - [RESILIENCE](https://www.resilience-ri.eu/) – Európska výskumná infraštruktúra pre religionistiku
+- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE (Horizont Európa)
 
 ## Licencia
 

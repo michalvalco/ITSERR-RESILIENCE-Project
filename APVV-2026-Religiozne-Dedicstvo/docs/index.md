@@ -24,3 +24,12 @@ Tento repozitár slúži na prípravu a realizáciu žiadosti o grant APVV VV 20
 ## Deadline
 
 **11. február 2026**
+
+## Medzinárodné prepojenie
+
+- [RESILIENCE](https://www.resilience-ri.eu/) – Európska výskumná infraštruktúra pre religionistiku
+- [ITSERR](https://www.itserr.it/) – Implementačný projekt RESILIENCE (Horizont Európa)
+
+## Spolupracujúce inštitúcie
+
+- [Prehľad spolupracujúcich inštitúcií](../07_spolupracujuce_institucie/README.md)
