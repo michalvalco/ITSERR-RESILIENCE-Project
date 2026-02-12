@@ -62,6 +62,9 @@ dependencies = [
     # Utilities
     "tenacity>=8.0.0",  # Retry logic
     "structlog>=24.0.0",  # Structured logging
+
+    # XML processing (ALTO XML extraction for annotation pipeline)
+    "lxml>=5.0.0",
 ]
 
 [project.optional-dependencies]
