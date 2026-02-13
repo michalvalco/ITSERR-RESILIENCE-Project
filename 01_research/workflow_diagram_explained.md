@@ -1,15 +1,24 @@
 # Workflow Diagram: GNORM Adaptation for Slovak Religious Heritage
+# 🎓 Annotated Edition — with plain-language explanations
 
-**Prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
+**Original prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
+**This version:** Annotated for non-technical readers (colleagues, students, grant evaluators, librarians)  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 12 February 2026 (created) | 13 February 2026 (revised)  
-**Status:** Working draft — revised after Feb 12 meeting and code analysis. Ready for Miro transfer and collaborative refinement.
+**Date:** 13 February 2026
+
+> 🎓 **What is this document?**
+>
+> This is an annotated copy of our project's main technical workflow. The original text is preserved in full. After each section, you'll find a plain-language explanation marked with 🎓 that translates the technical language into everyday terms. Think of it as a guided tour through the project — the technical blueprint is here if you need precision, and the explanations are here if you need clarity.
 
 ---
 
 ## Project in One Sentence
 
 We want to adapt the GNORM/CIC_annotation pipeline — originally built for detecting legal citations in medieval Canon law — to detect theological citations (biblical, patristic, confessional) in 16th-18th century religious texts from the Kingdom of Hungary - with the focus on present-day Slovakia (Upper Hungary) - (German, Latin, old Czech), starting with the works of Leonard Stöckel (Latin and German).
+
+> 🎓 **In even simpler terms:**
+>
+> Italian researchers built a computer tool that can automatically find and tag legal references inside medieval law books. We want to take that same tool and teach it to find *theological* references instead — Bible verses, Church Father quotations, Reformation documents — inside the writings of Leonard Stöckel, a 16th-century Slovak Protestant theologian. It's like taking a search engine trained to find case law and retraining it to find Scripture citations.
 
 ---
 
@@ -24,6 +33,14 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 | **GNORM/WP3 team** (Pavone, Ravasco, Imperia, Esuli, Puccetti) | Technical methodology: the annotation pipeline, CRF models, architectural expertise |
 | **Annotators** (Hanus, Kollárová + doctoral student) | Manual annotation in INCEpTION to create training data |
 
+> 🎓 **Who does the work?**
+>
+> Four groups of people contribute to making this happen:
+> - **Historians** who actually understand the old texts and can tell the computer what a Bible reference looks like vs. a reference to a Church Father vs. a reference to a hymnal.
+> - **Librarians** at the Slovak National Library who already photographed the old books and can provide us with digital images.
+> - **The Italian tech team** who built the original tool and know how it works under the hood.
+> - **Annotators** — people who sit down with the text on screen and manually highlight references so the computer can learn from their examples. This is like creating an answer key for the machine.
+
 ### Who Consumes Value
 
 | User | What They Need | Format |
@@ -34,13 +51,32 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 | **RESILIENCE network** | Demonstrated methodology for expanding GNORM to new domains | Documentation, reproducible pipeline, trained models |
 | **APVV evaluators** | Evidence that the methodology works | Published results, pilot study data |
 
+> 🎓 **Who benefits from it?**
+>
+> Once the tool works, several groups of people get something valuable:
+> - **Scholars** can search the texts in ways that were never possible before — for instance, instantly finding every place Stöckel quotes the Apostle Paul, or mapping which Church Fathers he relies on most.
+> - **Linguists** get a carefully labelled dataset showing how Latin (and German, and Czech) was actually written in the 1500s — spelling variants and all.
+> - **The Slovak National Library** gets enriched catalogue records for their digital collections.
+> - **The European research network** (RESILIENCE) gets a proven example of how to adapt these tools for new kinds of texts.
+> - **Grant evaluators** get evidence that the method actually works.
+
 ### Domain Context
 
 16th–18th century Protestant theology and other religious texts in the Kingdom of Hungary. Texts are primarily in Latin with German and early Czech or Slovak passages. The reference apparatus includes biblical citations, Church Fathers, Reformation confessional documents, and cross-references to other theological works. These citation patterns are **structurally similar** to the legal citations GNORM was built for — abbreviated references pointing to canonical source texts — but use entirely different abbreviation conventions and reference hierarchies.
 
+> 🎓 **Why does this adaptation make sense?**
+>
+> Here's the key insight: a legal citation like "*Decretales, Lib. II, Tit. 3, Cap. 5*" and a theological citation like "*Matt. 5,3–12*" look very different on the surface, but they work the same way structurally. Both are shorthand codes that point to a specific passage in a well-known source text. The original tool learned to spot one kind of shorthand; we need to teach it the other kind. The grammar of referencing is similar — only the vocabulary changes.
+
 ---
 
 ## The Seven Stages
+
+> 🎓 **Why seven stages?**
+>
+> Our Italian colleague Marcello organised the whole workflow into seven steps, following a standard framework from data science (Fry 2007). Every data project — whether you're analysing sports statistics or medieval manuscripts — follows roughly this path: get the data, clean it up, define your categories, run your analysis, show the results, refine them, and put them into a form people can actually use. The stages below walk through each step as it applies to our project.
+
+---
 
 ### STAGE 1: ACQUIRE
 
@@ -66,9 +102,11 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 
 **What we do NOT do:** We do not digitise. We work with existing digitised materials only.
 
-**Open questions for Palermo team:**
-- Does GNORM assume any particular image quality or resolution threshold?
-- Any standard acquisition checklist beyond this workflow? (This document serves as our working checklist.)
+> 🎓 **Stage 1 in plain language: Getting the photographs**
+>
+> Before you can do anything with old books on a computer, someone needs to photograph every page. The good news is that the Slovak National Library has already done this for thousands of pages of Stöckel's works. These high-resolution photographs are stored in their digital repository called DIKDA. Our job starts *after* the photography — we don't scan books ourselves.
+>
+> Think of it like this: the library took the photos; we develop them into something a computer can read.
 
 ---
 
@@ -122,10 +160,15 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - OCR error rates on 16th-century print are unknown — empirical testing required
 - Multilingual documents (Latin/German/Slovak switches within paragraphs)
 
-**Open questions for Palermo team:**
-- Should we preserve ALTO word-level confidence scores for downstream filtering?
-- Recommendations for handling OCR noise — post-processing rules or noisy training data?
-- Marcello suggested Transkribus for handwriting recognition — to be explored for marginalia if encountered
+> 🎓 **Stage 2 in plain language: Teaching the computer to read old print**
+>
+> A photograph of a page is just a picture — the computer doesn't know there are words on it. **OCR** (Optical Character Recognition) is the technology that looks at the image and converts the shapes of letters into actual text that a computer can search, copy, and analyse. It's the same technology your phone uses when you scan a receipt.
+>
+> The catch is that 16th-century books look very different from modern ones. The letter "s" was often printed as "ſ" (a tall, f-like shape), abbreviations were everywhere, and some books used Gothic-style lettering (called **Fraktur**) that's hard even for specialised software. So after the OCR runs, we have to **clean up the text**: fix the ſ→s confusion, expand abbreviations like "Xpi" back to "Christi," and mark structural elements like chapter headings.
+>
+> The output at this stage is a reasonably clean text with preliminary markings — like a rough draft with highlighted notes saying "this looks like a Bible reference" or "this seems to be a chapter heading." But these markings are *suggestions*, not final labels. They're meant to help the human experts in the next stage, not to replace them.
+>
+> **The crucial thing to understand:** this stage does NOT produce the machine-ready labelled data the pipeline needs. That comes later, after human experts review and correct the text. There's a deliberate human checkpoint between "cleaned-up text" and "data the pipeline can learn from."
 
 ---
 
@@ -162,9 +205,21 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - How do we handle composite references (*Matt. 5,3 et Luc. 6,20*)?
 - Annotation boundary: the reference string only, or reference + framing context?
 
-**Open questions for Palermo team:**
-- Arianna: what was your experience with multiple entity types in the CRF?
-- What is the minimum inter-annotator agreement needed before training?
+> 🎓 **Stage 3 in plain language: Deciding what to look for**
+>
+> Before the computer can find anything, we have to tell it exactly *what kinds of things* to look for. This is like giving a student a highlighter and saying: "Mark every Bible verse in yellow, every Church Father quote in green, every reference to the Augsburg Confession in blue..."
+>
+> The original Italian tool was trained to find one main type of reference: legal citations in Canon law. We need to define **seven types** for our theological texts:
+>
+> 1. **Bible references** — "Matt. 5,3–12" (the Gospel of Matthew, chapter 5, verses 3 through 12)
+> 2. **Church Father references** — "Aug. de civ. Dei XIV.28" (Augustine's *City of God*, Book 14, Chapter 28)
+> 3. **Confessional references** — "CA Art. IV" (the Augsburg Confession, Article 4)
+> 4. **Hymnal references** — "Cithara Sanctorum No. 42" (a specific hymn in the Tranovský hymnal)
+> 5. **Cross-references** — "vid. supra cap. III" ("see above, chapter 3" — pointing to another part of the same book)
+> 6. **Theological terms being defined** — when Stöckel pauses to explain what *iustificatio* (justification) means
+> 7. **Section headers** — chapter titles like "Caput III: De fide" (Chapter 3: On Faith)
+>
+> This is also the stage where **humans sit down with the text** in a specialised annotation tool called **INCEpTION** and manually mark up a sample of pages. They highlight each reference, assign it a type, and that hand-labelled data becomes the "answer key" the computer will learn from. This is the most labour-intensive part of the whole project — and the most important, because the quality of everything downstream depends on the quality of these human decisions.
 
 ---
 
@@ -220,10 +275,30 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 
 **Design note:** This dual-path approach — method consensus across pipeline layers *plus* CRF marginal probabilities within the ML layer — is more robust than either mechanism alone, and represents a methodological extension beyond the original CIC_annotation design.
 
-**Open questions for Palermo team:**
-- Zero-shot test results will determine where to focus adaptation effort
-- Code analysis confirms the layered architecture is domain-agnostic (CRF is entity-type agnostic, merge logic is format-agnostic) — but would value Arianna's confirmation and any caveats from experience
-- Character-level features for orthographic variation — worth adding?
+> 🎓 **Stage 4 in plain language: The six-layer detection engine**
+>
+> This is the heart of the project — where the computer actually finds the references. But here's the surprise: it's not just one program doing the finding. It's **six different methods** running one after another, each catching things the others might miss. Think of it like six detectives working the same case, each with a different speciality:
+>
+> 1. **The Rule Follower** — knows that "Matt. 5,3" always means a Bible reference because it matches a predictable pattern (a book abbreviation, a period, a number, a comma, another number). Fast and precise, but only catches references that follow the expected format exactly.
+>
+> 2. **The Dictionary Expert** — has a list of every known abbreviation ("Aug." = Augustine, "CA" = Confessio Augustana, etc.) and flags them wherever they appear. Only as good as the dictionary we give it.
+>
+> 3. **The Pattern Matcher** — remembers patterns it has seen before in the training data and looks for similar ones. Also uses statistics to fill in small gaps (if words 1, 2, and 4 of a reference are found, it guesses word 3 probably belongs too).
+>
+> 4. **The Machine Learner (CRF)** — the most sophisticated method. A statistical model that has been *trained* on the hand-labelled examples from Stage 3. It looks at each word in context (the six words before it and the six words after it) and estimates the probability that this word is part of a reference. This is the layer that achieves the famous 97.8% accuracy on the original legal texts.
+>
+> 5. **The Structural Parser** — finds chapter headings, section titles, and other organisational elements based on formatting patterns.
+>
+> 6. **The Merger** — takes all the results from layers 1–5 and combines them. When multiple methods agree, we're more confident. When they disagree, we're more cautious. Each annotation gets a label saying *which method found it* — so a human reviewer can always see where a finding came from.
+>
+> **The honesty system.** After the pipeline runs, every annotation gets classified into one of three honesty levels:
+> - **FACTUAL** — multiple methods agree AND the machine is very confident. We trust this and publish it.
+> - **INTERPRETIVE** — only one method found it, or the confidence is moderate. We flag this for a human expert to check.
+> - **DEFERRED** — the methods disagree, the confidence is low, or the question requires theological judgment that no machine should make. We hand this to a human annotator.
+>
+> This honesty system is something we're adding to the original Italian design. It's one of our project's intellectual contributions: the idea that a computer tool should be transparent about *how sure it is* and *how it knows what it knows.*
+>
+> **The roundtrip.** After the pipeline runs, its results go back into the annotation tool (INCEpTION) for human experts to review. They correct mistakes, the corrected data feeds back into training, and the pipeline gets better over time. It's a feedback loop, not a one-shot process.
 
 ---
 
@@ -252,10 +327,15 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 
 **Formats:** CSV/JSON for data; HTML/JS for web visualisation
 
-**Open questions for Palermo team:**
-- What does the 3D visualisation component actually visualise?
-- What input format does it require?
-- Is it available for us to test?
+> 🎓 **Stage 5 in plain language: Making the results visible**
+>
+> Once the pipeline has found all the references, we need to display them in a way humans can actually understand and explore. Raw data in a spreadsheet isn't very illuminating. So we build:
+>
+> - **Frequency tables** — "Stöckel cites Romans 45 times, the Psalms 38 times, Augustine 27 times..." This immediately tells scholars something about how his theology was constructed.
+> - **Network graphs** — visual maps showing which sources are cited together. If Stöckel always cites Augustine and Paul in the same passages, that's a pattern worth investigating.
+> - **A searchable database** — so a scholar can type "Romans 3:28" and instantly see every passage across all of Stöckel's works where that verse appears.
+>
+> The Italian team also has a 3D visualisation tool that we haven't explored yet.
 
 ---
 
@@ -270,6 +350,12 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 - Confidence-based filtering (show only FACTUAL annotations, or include INTERPRETIVE)
 
 **This stage is downstream — not a priority during the fellowship.** But the data structures designed in Stages 3–5 must support these refinements.
+
+> 🎓 **Stage 6 in plain language: Asking better questions**
+>
+> Once the basic visualisations work, scholars start asking more sophisticated questions: "Did Stöckel's reliance on Augustine change over his career?" "Do the early works cite different confessional documents than the later ones?" "If I only look at the high-confidence annotations, does the pattern change?"
+>
+> This stage is about giving researchers the ability to filter, slice, and re-examine the data from different angles. We're not building this yet — it's future work — but we're designing the earlier stages so these questions will be answerable later.
 
 ---
 
@@ -301,6 +387,14 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 - Alignment with FAIR data principles and 5-Star Open Data
 
 **This stage is mostly WP4 of the APVV grant — long-term, not fellowship scope.**
+
+> 🎓 **Stage 7 in plain language: The finished product**
+>
+> The end goal is a **website** where researchers can browse Stöckel's works, see the original page images side by side with the computer-generated annotations, search for specific references, and download the data for their own research. Think of it as a specialised digital library — not just scanned pages, but pages that have been *read* and *understood* by the computer, with every Bible verse, every Church Father quotation, and every confessional reference highlighted and catalogued.
+>
+> The platform we plan to use (Omeka S) is designed for exactly this kind of cultural heritage presentation. It connects to a standard called **IIIF** ("Triple-I-F") that lets you link annotations directly to specific regions of page images — so you can click on a highlighted reference and see it in context on the original printed page.
+>
+> All the data will be freely available in standard formats, so other researchers can download it, remix it, and build on it. That's not just good practice — it's a requirement of our European funding.
 
 ---
 
@@ -338,6 +432,12 @@ Omeka S Platform
 Researchers, Libraries, RESILIENCE Network
 ```
 
+> 🎓 **The whole thing in one story:**
+>
+> Old books sit in Slovak libraries → they've already been photographed → a computer reads the photographs and turns them into text → we clean up the text and fix old spelling → human experts sit down and manually highlight references in a sample of pages → those highlighted samples become the "answer key" → the six-layer pipeline learns from the answer key and processes all the remaining pages → each annotation gets an honesty label (sure / less sure / ask a human) → the results get organised into searchable databases and visual maps → scholars explore them on a website.
+>
+> That's it. Everything else is details about *how* each step works. But this is the arc.
+
 ---
 
 ## Current Materials Status
@@ -352,6 +452,10 @@ Researchers, Libraries, RESILIENCE Network
 | Entity type schema proposal | ✅ DRAFT — in Stage 3 above; needs validation against samples | Table |
 | Zero-shot test | 🔧 NOT STARTED — blocked on sample text preparation | — |
 
+> 🎓 **Where are we right now?**
+>
+> The tools for reading and cleaning the text (Stages 1–2) are built and tested. The category definitions (Stage 3) are drafted but need validation against real samples. The pipeline itself (Stage 4) is installed but trained on the wrong domain — it knows Canon law, not Protestant theology. The very next step is to run a "zero-shot test" — feeding Stöckel's text through the existing Canon law pipeline *without any retraining* to see what happens. That will tell us exactly where the adaptation work needs to focus.
+
 ---
 
 ## Interoperability Commitments (per Marcello's guidance)
@@ -362,6 +466,10 @@ Researchers, Libraries, RESILIENCE Network
 | Version control | Git (this repo) |
 | FAIR data principles | Metadata, persistent identifiers, open formats |
 | Reproducibility | Pipeline scripts, configuration files, documented parameters |
+
+> 🎓 **What does "interoperability" mean here?**
+>
+> We've committed to using only open, standard file formats — no Microsoft Word documents or proprietary databases that lock people out. Everything is stored in formats that any researcher, anywhere, with free software, can open and use. We track every change using Git (a version control system that records the full history of who changed what and when). And we follow international principles called **FAIR** — data should be **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable. In practice, this means someone ten years from now should be able to download our data and pipeline, understand what we did, and reproduce our results.
 
 ---
 
@@ -375,4 +483,4 @@ Researchers, Libraries, RESILIENCE Network
 
 ---
 
-*This document maps to Marcello's Miro canvas framework. Next step: transfer the seven stages and data flow to the canvas for collaborative refinement.*
+*Original document maps to Marcello's Miro canvas framework. This annotated edition created February 13, 2026, for non-technical readers.*
