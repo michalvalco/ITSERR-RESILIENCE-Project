@@ -2,7 +2,7 @@
 
 **Prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 12 February 2026 (created) | 13 February 2026 (revised)  
+**Date:** 12 February 2026 (created) | 13 February 2026 (revised, incl. code inspection findings)  
 **Status:** Working draft — revised after Feb 12 meeting and code analysis. Ready for Miro transfer and collaborative refinement.
 
 ---
@@ -157,7 +157,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 | Section_header | Structural element | *Caput III: De fide* | Titolo / Capitolo |
 
 **Key decisions needed:**
-- Can the CRF handle all 7 types simultaneously, or do we train separate models?
+- Can the CRF handle all 7 types simultaneously, or do we train separate models? *Partially resolved (Feb 13 code inspection): the CRF is completely label-agnostic — `train_crfsuite.py` discovers labels dynamically from training data, so it will train on whatever types INCEpTION exports. The open question is empirical performance with 7 types vs. separate per-type models.*
 - What counts as a biblical "citation" vs. an "allusion" vs. a "paraphrase"?
 - How do we handle composite references (*Matt. 5,3 et Luc. 6,20*)?
 - Annotation boundary: the reference string only, or reference + framing context?
@@ -203,12 +203,15 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **The roundtrip:**
 
 ```
-INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
-    → cas_to_bioes.py → BIOES plaintext
-    → pipeline processing (6 layers)
+INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
+    → each annotate_*.py reads ZIP directly via read_cas_to_bioes()
+    → each writes independently to own output dir (*.bioes files)
+    → merge_annotations.py combines all *.bioes directories
     → bioes_to_cas.py → UIMA CAS XMI
     → import back to INCEpTION for expert review
 ```
+
+⚠️ **Code inspection note (Feb 13):** There is no raw `.txt` entry point. Every pipeline layer reads the INCEpTION ZIP independently — the ZIP is the single required input format. For the zero-shot test, we either import normalized text into INCEpTION first (recommended) or write a small `dkpro-cassis` script to generate a minimal ZIP from plaintext.
 
 **Epistemological classification** (connecting to TNA's philosophical framework):
 
@@ -224,6 +227,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 - Zero-shot test results will determine where to focus adaptation effort
 - Code analysis confirms the layered architecture is domain-agnostic (CRF is entity-type agnostic, merge logic is format-agnostic) — but would value Arianna's confirmation and any caveats from experience
 - Character-level features for orthographic variation — worth adding?
+- **`cas_to_bioes.py` bottleneck (Feb 13 finding):** Currently hardcodes `AN` as the only entity type — the `Tipo` field from INCEpTION is ignored. For multi-type annotation, this needs a ~20-line patch to read `Tipo` and map to type-specific BIOES labels (e.g., `B-BIBLICAL`, `B-PATRISTIC`). The CRF, merge, and inference scripts need zero changes. Was single-type `AN` a deliberate simplification for CIC, or was multi-type planned?
 
 ---
 

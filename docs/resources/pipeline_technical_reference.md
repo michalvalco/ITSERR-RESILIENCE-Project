@@ -2,7 +2,7 @@
 
 **Purpose:** Static reference card for Claude Project PKB. Quick-lookup for any technical conversation about the annotation pipeline and its adaptation for Protestant theological texts.  
 **Source:** Condensed from `CIC_annotation_Deep_Dive_Report.md` (567 lines), `workflow_diagram.md` (358 lines), `epistemic_modesty_framework.md`, and direct code inspection.  
-**Last updated:** February 13, 2026
+**Last updated:** February 13, 2026 (code inspection session: entry point, label handling, multi-type support)
 
 ---
 
@@ -54,7 +54,31 @@ INCEpTION export (ZIP-within-ZIP, UIMA CAS XMI + TypeSystem.xml)
 ✅ `cas_to_bioes.py`: Reads nested ZIP structure. Annotation type: `webanno.custom.Glossa`, feature `Tipo`. Handles per-user annotations (multi-annotator support).  
 ✅ `bioes_to_cas.py`: TypeSystem is **hardcoded in the script** (not loaded externally). Supports 4 entity types.
 
-### Current Input Format
+### Pipeline Entry Point (Confirmed Feb 13, 2026 — code inspection)
+
+⚠️ **There is no raw `.txt` entry point.** Every annotation script (`annotate_by_rule.py`, `annotate_by_crfsuite.py`, `annotate_by_match.py`) reads input exclusively through `read_cas_to_bioes(zip_file_path, username, AnnotationState.any)`. This function expects an **INCEpTION export ZIP** (ZIP-within-ZIP: UIMA CAS XMI + TypeSystem.xml).
+
+Each layer independently reads that ZIP, independently runs detection, and independently writes `.bioes` files to its own output directory. Then `merge_annotations.py` reads all `.bioes` directories and merges them:
+
+```
+INCEpTION ZIP
+    → read_cas_to_bioes() called independently by each annotate_*.py
+    → each writes to own dir: annotations_by_rule/*.bioes, annotations_crfsuite/*.bioes, etc.
+    → merge_annotations.py reads *.bioes from all directories
+    → writes annotations_merged/*.bioes
+```
+
+The `.bioes` file format: `token start end label` (space-separated, one token per line, blank lines between sentences). For unannotated text, `label` = `O`.
+
+### Zero-Shot Test Strategy
+
+Two paths for running the CIC pipeline on Stöckel text without retraining:
+
+**Path A (clean — recommended):** Import normalized text into INCEpTION as unannotated → export ZIP → run pipeline normally. This is how the system is designed to work and will be needed eventually anyway for the annotation workflow.
+
+**Path B (quick hack):** Write a small script using `dkpro-cassis` that creates a minimal CAS XMI ZIP from normalized plaintext — faking the INCEpTION export. Faster for a one-off zero-shot test, but produces a throwaway artifact.
+
+### Original CIC Input Format
 
 CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT from OCR. The DOCX is split by chapter headings via regex (`X N.N title`).  
 ✅ **For Stöckel:** ALTO XML → plaintext extraction pipeline built: `ocr_processor.py --format both` → `extract_alto.py` → `normalize_text.py` (78 tests passing). Located in `stockel_annotation/scripts/`.
@@ -73,6 +97,28 @@ CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT fr
 | Titolo (title) | `TITLE` | Layer 5 (`annotate_title.py`) |
 
 ✅ Only `AN` is ML-learned. `LEMMA`, `CHAPTER`, `TITLE` use structural regex.
+
+### Multi-Type Label Support (Confirmed Feb 13, 2026 — code inspection)
+
+⚠️ **`cas_to_bioes.py` hardcodes `AN` as the only entity type.** Lines 47–58: every `webanno.custom.Glossa` annotation becomes `B-AN`, `I-AN`, `E-AN`, or `S-AN` regardless of what the `Tipo` field contains. The `Tipo` field exists in the INCEpTION type system and is written by INCEpTION, but the reader ignores it. Similarly, `annotate_by_rule.py` hardcodes `RULE|B-AN`, `RULE|I-AN`, `RULE|E-AN`.
+
+✅ **The CRF itself is completely label-agnostic.** In `train_crfsuite.py`, labels are discovered dynamically: `labels = list(set([label for sent in y_train for label in sent]))`. Feature extraction (`word2features()`) operates purely on tokens — no label information enters feature computation. `annotate_by_crfsuite.py` just runs `model.predict()` and prefixes with `CRF|`. `merge_annotations.py` is also label-agnostic — merges whatever labels it finds.
+
+**Per-file modification requirements for multi-type support:**
+
+| File | Change Needed | Effort |
+|------|--------------|--------|
+| `cas_to_bioes.py` | Read `Tipo` field → map to label suffix (`-BIBLICAL`, `-PATRISTIC`, etc.) | Small (~20 lines) |
+| `annotate_by_rule.py` | New rule patterns with type-specific label suffixes | Medium (domain work) |
+| `annotate_by_abbreviations.py` | New dictionary entries with type-aware labels | Medium (domain work) |
+| `train_crfsuite.py` | **Nothing** — genuinely label-agnostic | Zero |
+| `annotate_by_crfsuite.py` | **Nothing** — runs prediction on whatever model learned | Zero |
+| `merge_annotations.py` | **Nothing** — label-agnostic | Zero |
+| `bioes_to_cas.py` | Needs update to write `Tipo` back with correct entity type | Small (verify) |
+
+✅ **Key insight:** Domain adaptation is concentrated at the pipeline edges (data entry, rules, abbreviations), not in the statistical engine. The ML core will learn whatever labels the training data contains.
+
+❓ **Question for Arianna:** Was single-type `AN` a deliberate simplification for CIC (where all ML annotations were one type — legal references), or was multi-type support planned but not implemented?
 
 ### Proposed Protestant Adaptation (7)
 
@@ -208,13 +254,13 @@ for token_marginals in sentence_marginals:
 | Multilingual handling | Latin/German/Czech code-switching within documents | High | 🔧 Not started |
 | OCR error impact | Unknown error rates on 16th-c. print | ❓ | Needs empirical testing |
 | 3D visualization | Mentioned in ITSERR docs; absent from CIC_annotation code | ❓ | Separate GNORM component? |
-| Multi-entity CRF | Current CRF handles only one ML entity type (AN) | ❓ | Ask Arianna |
+| Multi-entity CRF | `cas_to_bioes.py` hardcodes `AN`; CRF itself is label-agnostic. Need ~20-line patch to `cas_to_bioes.py` to read `Tipo` field + new rules/abbreviations per type. See Section 3 for full per-file breakdown. | Medium | 🔧 Confirmed scope (Feb 13 code inspection) |
 
 ---
 
 ## 8. Key Open Questions
 
-### ✅ Confirmed (from code analysis + Feb 12 meeting)
+### ✅ Confirmed (from code analysis + Feb 12 meeting + Feb 13 code inspection)
 
 - CRF library: `sklearn-crfsuite`
 - Output format: BIOES → UIMA CAS XMI
@@ -223,11 +269,16 @@ for token_marginals in sentence_marginals:
 - Post-processing: single "ff." rule
 - Pipeline architecture: 6-layer hybrid (not just CRF)
 - Workflow framework: Fry 2007 (Acquire → Parse → Filter → Mine → Represent → Refine → Interact)
+- **Pipeline entry point: INCEpTION ZIP only** — no raw `.txt` input path; all `annotate_*.py` scripts read via `read_cas_to_bioes()` (Feb 13)
+- **CRF is label-agnostic** — `train_crfsuite.py` discovers labels dynamically from training data; feature extraction is token-only; new labels (e.g., `B-BIBLICAL`) require zero changes to CRF code (Feb 13)
+- **`cas_to_bioes.py` hardcodes `AN`** — ignores `Tipo` field; needs ~20-line patch to support multiple entity types (Feb 13)
+- **`merge_annotations.py` is label-agnostic** — merges whatever labels it finds, no modification needed (Feb 13)
+- **`annotate_by_rule.py` hardcodes `RULE|B-AN`** — needs new patterns with type-specific suffixes for Protestant adaptation (Feb 13)
 
 ### ❓ Still TBD (for Arianna/Marcello meetings)
 
 - Zero-shot test on Stöckel sample (not yet conducted)
-- Multi-entity type CRF performance vs. separate models
+- ~~Multi-entity type CRF performance vs. separate models~~ — ✅ Partially resolved: CRF will handle multiple types without code changes; open question is *empirical performance* with 7 types vs. separate per-type models
 - Match model `pre_post_len = 3` — was this optimized?
 - ~~ALTO XML integration~~ — ✅ Resolved: `ocr_processor.py` → `extract_alto.py` → `normalize_text.py` (78 tests passing)
 - 3D visualization component — what does it expect as input?
@@ -253,7 +304,7 @@ for token_marginals in sentence_marginals:
 | `annotate_chapter.py` | Chapter structure detection | **HIGH** |
 | `annotate_title.py` | Title structure detection | **HIGH** |
 | `annotate_lemma.py` | Glossed lemma positioning | MODERATE |
-| `cas_to_bioes.py` | INCEpTION → BIOES | LOW |
+| `cas_to_bioes.py` | INCEpTION → BIOES | **HIGH** (hardcodes `AN`; needs multi-type patch) |
 | `bioes_to_cas.py` | BIOES → INCEpTION (hardcoded TypeSystem) | MODERATE |
 | `merge_annotations.py` | Multi-method merge | LOW |
 | `post_process.py` | Error correction ("ff." rule) | **HIGH** |
