@@ -89,7 +89,8 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Current state:**
 - Some materials have existing ABBYY FineReader OCR output (ALTO XML)
 - Other materials may need fresh OCR processing
-- **The ALTO XML → plaintext extraction step does not exist yet** — CIC_annotation uses `split_docx.py` for DOCX input
+- **Basic OCR/PDF text extraction is available** via Tesseract + Poppler (installed in prototype environment) — sufficient for initial text extraction from PDFs and images
+- **The ALTO XML → pipeline-format extraction step does not exist yet** — CIC_annotation uses `split_docx.py` for DOCX input; a script to parse ALTO XML structure (word-level bounding boxes, confidence scores) into one-token-per-line plaintext for the BIOES pipeline is still needed
 - No testing has been done on how OCR errors affect GNORM annotation accuracy
 
 **Formats:**
@@ -100,7 +101,8 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Tools:**
 - ABBYY FineReader (SNK standard) — works well on Antiqua (Latin script)
 - Transkribus or Kraken — needed for Fraktur (Gothic script) materials
-- Custom script needed: ALTO XML → plaintext extractor (preserving page/line structure)
+- Tesseract OCR + Poppler (installed in prototype) — available for basic PDF/image text extraction
+- Custom script needed: ALTO XML → pipeline-format extractor (preserving page/line structure, confidence scores)
 
 **Key technical challenges:**
 - Historical orthographic variation: ſ/s, ij/j, cz/č, w/v, ß/ss
@@ -299,7 +301,7 @@ DIKDA / Lyceum Libraries
 OCR Processing (ABBYY / Transkribus)
     │ (ALTO XML)
     ▼
-Text Extraction ← TO BE BUILT
+Text Extraction (Tesseract/Poppler available; ALTO XML → pipeline format TO BE BUILT)
     │ (clean plaintext)
     ▼
 INCEpTION (manual annotation for training data)
@@ -327,7 +329,7 @@ Researchers, Libraries, RESILIENCE Network
 
 | Item | Status | Format |
 |------|--------|--------|
-| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — need plaintext extraction from TIFF/PDF | Plaintext (.txt) |
+| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — Tesseract/Poppler available for extraction; need to run on sample pages | Plaintext (.txt) |
 | Preliminary abbreviation list | 🔧 TO COMPILE from Stöckel corpus conventions | CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
