@@ -96,6 +96,7 @@ extra:
 
 nav:
   - Home: index.md
+  - "Corpus Browser": prototype.md
   - Introduction (101 Guide): introduction-101.md
   - Strategic Pre-Fellowship Guide: introduction-101-strategic.md
   - Getting Started:

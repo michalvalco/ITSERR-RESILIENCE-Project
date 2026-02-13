@@ -1,0 +1,690 @@
+/* =============================================================================
+   ITSERR-RESILIENCE Corpus Browser — Styles
+   Inspired by the GNORM project interface (University of Palermo)
+   ============================================================================= */
+
+:root {
+  /* Sidebar */
+  --sidebar-bg: #1a1f36;
+  --sidebar-hover: #252b48;
+  --sidebar-active: #303a5c;
+  --sidebar-text: #b0b7d1;
+  --sidebar-text-active: #ffffff;
+  --sidebar-width: 300px;
+
+  /* Main */
+  --main-bg: #f8f9fa;
+  --content-bg: #ffffff;
+  --text-color: #2d3436;
+  --text-muted: #636e72;
+  --border-color: #dee2e6;
+
+  /* Entity colors */
+  --biblical: #2196F3;
+  --patristic: #9C27B0;
+  --reformation: #FF9800;
+  --classical: #607D8B;
+  --confessional: #4CAF50;
+
+  /* Epistemic colors */
+  --factual: #4CAF50;
+  --interpretive: #FF9800;
+  --deferred: #F44336;
+
+  /* UI */
+  --accent: #3f51b5;
+  --accent-light: #7986cb;
+  --radius: 6px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--main-bg);
+}
+
+/* =============================================================================
+   LAYOUT
+   ============================================================================= */
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* =============================================================================
+   SIDEBAR
+   ============================================================================= */
+
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-header h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sidebar-text-active);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.sidebar-header .subtitle {
+  font-size: 11px;
+  color: var(--sidebar-text);
+  opacity: 0.7;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 2px;
+}
+
+/* Chapter tree */
+.chapter-group {
+  margin-bottom: 2px;
+}
+
+.chapter-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px 8px 20px;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-size: 13px;
+  user-select: none;
+  gap: 8px;
+}
+
+.chapter-item:hover {
+  background: var(--sidebar-hover);
+}
+
+.chapter-item.active {
+  background: var(--sidebar-active);
+  color: var(--sidebar-text-active);
+}
+
+.chapter-item .expand-icon {
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.chapter-item.expanded .expand-icon {
+  transform: rotate(90deg);
+}
+
+.chapter-item .chapter-title {
+  flex: 1;
+  font-weight: 500;
+}
+
+.chapter-item .chapter-meta {
+  font-size: 10px;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* Page list under chapters */
+.page-list {
+  display: none;
+  padding-left: 44px;
+}
+
+.page-list.visible {
+  display: block;
+}
+
+.page-item {
+  padding: 4px 16px 4px 0;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.15s;
+  opacity: 0.6;
+}
+
+.page-item:hover {
+  opacity: 1;
+  color: var(--sidebar-text-active);
+}
+
+.page-item.active {
+  opacity: 1;
+  color: var(--accent-light);
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 10px;
+  opacity: 0.4;
+}
+
+/* =============================================================================
+   MAIN CONTENT AREA
+   ============================================================================= */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--content-bg);
+  border-bottom: 1px solid var(--border-color);
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 480px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  background: var(--main-bg);
+}
+
+.search-box input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.12);
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.search-results-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Filter toggles */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  background: var(--content-bg);
+  border-bottom: 1px solid var(--border-color);
+  gap: 8px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.filter-bar .filter-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 4px;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  gap: 4px;
+  user-select: none;
+}
+
+.filter-tag .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.filter-tag.active {
+  opacity: 1;
+}
+
+.filter-tag:not(.active) {
+  opacity: 0.35;
+}
+
+.filter-tag[data-type="biblical"] { background: rgba(33, 150, 243, 0.12); color: var(--biblical); }
+.filter-tag[data-type="biblical"] .dot { background: var(--biblical); }
+.filter-tag[data-type="patristic"] { background: rgba(156, 39, 176, 0.12); color: var(--patristic); }
+.filter-tag[data-type="patristic"] .dot { background: var(--patristic); }
+.filter-tag[data-type="reformation"] { background: rgba(255, 152, 0, 0.12); color: var(--reformation); }
+.filter-tag[data-type="reformation"] .dot { background: var(--reformation); }
+.filter-tag[data-type="classical"] { background: rgba(96, 125, 139, 0.12); color: var(--classical); }
+.filter-tag[data-type="classical"] .dot { background: var(--classical); }
+.filter-tag[data-type="confessional"] { background: rgba(76, 175, 80, 0.12); color: var(--confessional); }
+.filter-tag[data-type="confessional"] .dot { background: var(--confessional); }
+
+.filter-separator {
+  width: 1px;
+  height: 20px;
+  background: var(--border-color);
+  margin: 0 4px;
+}
+
+/* Epistemic filter tags */
+.filter-tag.epistemic[data-epistemic="FACTUAL"] { background: rgba(76, 175, 80, 0.12); color: var(--factual); }
+.filter-tag.epistemic[data-epistemic="FACTUAL"] .dot { background: var(--factual); }
+.filter-tag.epistemic[data-epistemic="INTERPRETIVE"] { background: rgba(255, 152, 0, 0.12); color: var(--interpretive); }
+.filter-tag.epistemic[data-epistemic="INTERPRETIVE"] .dot { background: var(--interpretive); }
+
+/* Content area */
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.content-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Info banner */
+.info-banner {
+  background: linear-gradient(135deg, #e8eaf6, #e3f2fd);
+  border: 1px solid #c5cae9;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.info-banner h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.info-banner p {
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.info-banner .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(63, 81, 181, 0.1);
+  color: var(--accent);
+}
+
+/* Chapter header in content */
+.chapter-header {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.chapter-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.chapter-header .chapter-en {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.chapter-header .chapter-stats {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.chapter-header .stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+}
+
+.chapter-header .stat .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Page block */
+.page-block {
+  margin-bottom: 24px;
+}
+
+.page-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* Text content */
+.text-content {
+  background: var(--content-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Annotation highlights */
+.ref-highlight {
+  padding: 1px 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  position: relative;
+}
+
+.ref-highlight:hover {
+  filter: brightness(0.92);
+}
+
+.ref-highlight[data-type="biblical"] {
+  background: rgba(33, 150, 243, 0.15);
+  border-bottom: 2px solid var(--biblical);
+}
+
+.ref-highlight[data-type="patristic"] {
+  background: rgba(156, 39, 176, 0.15);
+  border-bottom: 2px solid var(--patristic);
+}
+
+.ref-highlight[data-type="reformation"] {
+  background: rgba(255, 152, 0, 0.15);
+  border-bottom: 2px solid var(--reformation);
+}
+
+.ref-highlight[data-type="classical"] {
+  background: rgba(96, 125, 139, 0.15);
+  border-bottom: 2px solid var(--classical);
+}
+
+.ref-highlight[data-type="confessional"] {
+  background: rgba(76, 175, 80, 0.15);
+  border-bottom: 2px solid var(--confessional);
+}
+
+/* Search highlights */
+.search-highlight {
+  background: rgba(255, 235, 59, 0.5);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* Tooltip */
+.ref-tooltip {
+  display: none;
+  position: fixed;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text-active);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-family: 'Segoe UI', -apple-system, sans-serif;
+  line-height: 1.5;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  max-width: 280px;
+  pointer-events: none;
+}
+
+.ref-tooltip.visible {
+  display: block;
+}
+
+.ref-tooltip .tooltip-type {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.ref-tooltip .tooltip-text {
+  font-style: italic;
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+
+.ref-tooltip .tooltip-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ref-tooltip .tooltip-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ref-tooltip .tooltip-badge.factual {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+}
+
+.ref-tooltip .tooltip-badge.interpretive {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ffb74d;
+}
+
+/* Stats panel in sidebar */
+.stats-panel {
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.stats-panel h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 2px 0;
+}
+
+.stat-row .stat-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-row .stat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.stat-row .stat-value {
+  font-weight: 600;
+  color: var(--sidebar-text-active);
+}
+
+/* Welcome screen */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.welcome-screen h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.welcome-screen p {
+  font-size: 14px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+}
+
+/* =============================================================================
+   RESPONSIVE
+   ============================================================================= */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 250px;
+    min-width: 250px;
+  }
+
+  .topbar {
+    padding: 10px 16px;
+  }
+
+  .content-area {
+    padding: 16px;
+  }
+
+  .text-content {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+/* =============================================================================
+   LOADING STATE
+   ============================================================================= */
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+}
+
+.loading .spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

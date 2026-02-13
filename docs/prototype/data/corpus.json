@@ -1,0 +1,780 @@
+{
+  "metadata": {
+    "title": "Annotationes in Locos communes",
+    "title_full": "Annotationes in Philippi Melanchthonis Locos Praecipuos Theologicos",
+    "author": "Leonard Stöckel",
+    "date": 1561,
+    "language": "lat",
+    "pages_total": 57,
+    "publisher": "Ioannem Oporinum, Basel",
+    "source": "OCR extraction via Tesseract 5.3.4",
+    "pipeline": "ITSERR-RESILIENCE normalization + rule-based detection",
+    "generated": "2026-02-13T23:34:04.997457"
+  },
+  "stats": {
+    "total_references": 20,
+    "by_type": {
+      "biblical": 15,
+      "classical": 3,
+      "patristic": 2
+    },
+    "by_epistemic": {
+      "INTERPRETIVE": 9,
+      "FACTUAL": 11
+    },
+    "chapters": 9,
+    "pages_with_content": 57
+  },
+  "entity_types": [
+    {
+      "id": "biblical",
+      "label": "Biblical Citation",
+      "color": "#2196F3",
+      "description": "Direct reference to Scripture"
+    },
+    {
+      "id": "patristic",
+      "label": "Patristic Reference",
+      "color": "#9C27B0",
+      "description": "Reference to Church Fathers"
+    },
+    {
+      "id": "reformation",
+      "label": "Reformation Source",
+      "color": "#FF9800",
+      "description": "Reformation-era theological source"
+    },
+    {
+      "id": "classical",
+      "label": "Classical Reference",
+      "color": "#607D8B",
+      "description": "Greek/Roman classical source"
+    },
+    {
+      "id": "confessional",
+      "label": "Confessional Document",
+      "color": "#4CAF50",
+      "description": "Creedal or confessional reference"
+    }
+  ],
+  "epistemic_types": [
+    {
+      "id": "FACTUAL",
+      "label": "Factual",
+      "color": "#4CAF50",
+      "description": "High confidence: well-formed pattern with ≥2 confirming signals"
+    },
+    {
+      "id": "INTERPRETIVE",
+      "label": "Interpretive",
+      "color": "#FF9800",
+      "description": "Moderate confidence: single detection method, needs expert review"
+    },
+    {
+      "id": "DEFERRED",
+      "label": "Deferred",
+      "color": "#F44336",
+      "description": "Low confidence or ambiguous: requires human judgment"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "praefatio",
+      "title": "PRAEFATIO",
+      "title_en": "Preface",
+      "start_page": 2,
+      "end_page": 6,
+      "pages": [
+        {
+          "page": 2,
+          "chapter_id": "praefatio",
+          "text": "p t€-v— : ra MEET iar te M IR Me 1\n\". ; J LEONARDI STECKELTII\nIN LOCOS COMMVNES DO.\n) Cirínz Chríftíanze Prae\nfatío, CESTA omni. genere doctrine , tnica e& uia «d\n£2) CC eram et Jolid« m eius co gnittonent,et cer-\ne Sd 6 tun udtct de rebus que sunt cis proprie,\n: CIS 798 ed comparandum,ut Locos coniunes,qui fum\neV Ua mam totius doctrine continent, babcamus\ndefcriptos ifla metbodo et uia docendi, Sic enin, e nulla\nali ratione, licet itobis summam umufculufqs feieritie apud\n1 aninum informare : ad quam cum refpicimus , eo initia\n/ progrefstones et nietas doclrine rectius intelligimus. Intya\nbas quafi regiones et certa domicilia inclufe cogitatio nes,no\ntemere buc illuc t4 gantur : ut illi qut certa fede careites nuf- :\nquam babent locum, ubi confiflere, aut pedem suum tutó fice rc poJsint. Ex bis ueró locis certiz, fumitur iudicium de quali\nbet re, que intravcpiones doctrine continctuv. Denique bis\n; adiuti, prudenter alios et magno cum fructu, et minore cum\n\"cgocto docere po(Jumus. sic enim fingula lumen accipiunt,\nquando ad fios locos communes reclé accommodata fütit, eo brecepta cum exemplis erudite conferuntur,\nJ^ .. Sed nullo in eencre doctrine mágis nece Taria eft Loco:\nYum communium noticia, quám in ed que auinitus tradita cJE de illis my lerijs, que à. ullis sapientibus Inquiri potuerit\n1 abf; Jingulari reuelatione Det. Quio enim ves sunt grauo.\nYC$,c0 magts opus ejt hoc rudio,quo ad solidam carum noti.- ciam bomines ducuntur: ut non Iitelligant modó doctrinam, Merumcetid ubl opus est,tueri possint aduerfus calumnias cung humanas Boi diabolica: : Jine qua certitudine et conjtantid efauyus etcrme ute, quiim bac unica doctrina reconditua ) e/o teneri nullo modo potest, \" 4 à Traditur h",
+          "references": []
+        },
+        {
+          "page": 3,
+          "chapter_id": "praefatio",
+          "text": "A IN LOCOS COMMVNES$\nTraditur quidem bec forma doctrine etiam ii illis elemen H5, que proponuntur prime «tati, cum docetur dc Leoe, dc\nEuangelib,et officijs illorum qui per Euangelium sunt vena- ti. Sed tamen illi forme perfectior quedam addenda efL, cui L- prima illa elementa seruiunt, quo facilis percipi pofit. Eft enim in omni doctrina primum necessaria buiufmodi institu-\ntio, qua imperiti et rudiores craffa Nanerua enfüituti prepa-\nrantur, ad interiora quaft myteria doctrine melius ac facli- ciustractanda. —.Ad bec duo genera ludiorum ft collatio c-\nxcemplorum et' tu fus ipfe accedat, nibil amplius ad ueram do-\nétrinam deJiderari pote l. Dextre enàn et prudenter tudica- bit,quifquis ita intructus evit,de fingulis scripture locis: co- 4\nenata c similia coniuget,dissimilia diflinguet:deniq: paratus\ncrit ad contradicendum aduer arijs, quorum caput est Diabo s:quen ut umcere possimus, opus ct animo prefenti ex cer fo, et solide inflructo in doctrina. Talem uult Paulus in pri- :\nnis cffe Epifcopum im ecclefia, qui ct mfpector doctrine , ut\nsit didacticus:boc eft,ut non ipfe modo teneat doclrinant; te- vtm etiam ut norit cam per bicue et ordine traderc.sic ut in-\ntclligi pofiit. Non solum enim illi offendunt Eccleftam qui fal , a docentuerum etiam qui weraynon adhibito ordine et per»\nf picita ratione docendi.\nPriufquam autem. ad doctrinam Ecclefie Dci propriam\nV ueniamus,mirum im modum nece Taria eft distinctio,que oflen dit difcrimen inter aliarum artium precepta et ueram Tbeo logiam. Semper enim diabolus errores maximos inuebit in Ré A cleftam,partim per eos qui gencra doctrine confundunt; par tim per bomines indoclos , qui palàm uociferantur liberalenz\neruditionem non modo nibil prodefJe ad ecclefias docendas, ucrumetiam plurimum obeffe, et in cittam effe salutavem at^ que utilem ad pietatem. Qyua in opinione sunt nunc Anaba-\npile , er alij indocti; qui borrendam plane €» barbaricant\n- Sq pheolo- ' 4",
+          "references": []
+        },
+        {
+          "page": 4,
+          "chapter_id": "praefatio",
+          "text": "-a. DER ned RN\nPRAEFATIO. ,\n\"Theologiatt comiminifcitur, nec possunt erudiri aut corrigi:\ncuni boc sit fandamentum eorum precipuum, doctis et uere exuattis, qui doctrinam. ordine et diflincte tradunt, non e c\nercdendum. Hec barbaries placet uulgo, quod alioqui odit doctrinam, ac Jiernit uiam ad omnia diuina et bumana peut\n(us ex bominum memoria delenda.\nQuamobrem ut utrumqa: bunc errorem, quorum alter 4\ndoctis,alter ab indodlis proficiscitur, caucanus,nece e eft nos\nWerant teiere distincliouem doctrinarum. Ac primum cone\ntra uidoctos sciendum cj, necejJariam e Jc aliarum artium co\ngnittonen ad cecleftas et cholas vecté et oydine infituendas,\nM Opus est enim proprio € per bicuo genere fermonis : opus\ne L scientia d cfiniendi, diuidendi e rattocinandi:opus est elo\nquentia non mediocri, ad rerum dignitatem am plificandant,\n«à WWuentuter ex populum animandum, cafligandum,omtti busque modis incitandi que omma,ut apte fieri possint,aliun- de quám ex artibus dic ndinemo confequetur. Nece Jaria cft\netian docentibus cognitio rerum,que uv reliqua Philofophi\ncontinetur. Requivitur etiam exem plorum et bifloriarum no\n(icta, ad Ecclefie doctrinam prudenter tractandam. Atque ut a-\nlia exempla omittamus,ft nil aliud nifi de creatione rerum cf-\nfct dicendum, tamentotius nature imucftieatto necessa Yld cf fct; quemadmodum à Pbyficis authoribus c defcripta.\nSed obijciunt indocti, nibil ejJe necefTarium ad pictatent,\npreter illa que in Mo i,Propbetarum et A poftolorum litc-\nVA 95 continentur : artes ueró dicendi, et veyum que partim ad\nWature, partim ad bonefTarum actionum intellectum pertt-\nnent,non contineri un literis Moft, et alioyum tcflium dtulno Yum:ergo bis nibil opus effe ad pictatem. — Ad boc Yun Im, quo ifti fue infcitie patrocinantur, non pretati Chriflia e; priufauam vefbondeo, pauca de tera caufa illarum pate- ,\nfactionum qua i literis propheticis extant, moncbo, N eque 4 3 ciu i^",
+          "references": []
+        },
+        {
+          "page": 5,
+          "chapter_id": "praefatio",
+          "text": "6 IN LOCOS COMMVNES enim ideo tradidit Deus illam peculiarem sapientiant, ut e4z\nyum artium dignitati, que lam antea per fe note erant bomi-\nmnibus,aliquid detraberet. Sunt enim uná cum bomine create, et precipus in bomine dona,ad boc condita ex donata,ut fe»\n;4 wrent Deo,non diabolo: et: multo magis quá ulla alta do-\n' naque bomini accidere poffünt.Yn barum ipfarum artium no (cia unma fult facultas bominis ad mon lrandg ev celebran dum Deun:boc csb,in facultate dicendi,in numeroórü,in men furarum,in onorum,in motuum calejtium con fideratione,in «liorum operum noticia: e» maxime im illuftriintellettu bo- ;\nnestarum actionum, qué fole placent Deo. Heec tantam ba-\nbent uim, ut nift bomo per diabolum feductus e set,nibil am-\nplius d recte coram Deo uiuendum fucrit necessarium;llaa:\nofficia facienda ad que Deus bominem,omnium creaturarum Jibi charissimum, condiderat. Homo enim c» feipfum et alia\nopera Det uere intellexi set, atque ex bis diligentev.confidera-\ntis, interd; fe collatis, Deum conditorem uer agnouiffet ac\ncclebrafjet. lam refpondeo ad maiorem argumenti, que manifefte\nfl f 4 co inpia ejt. Quanquam enim profanarum artium noa\nticia non e E caufa ut fimus in gratia Det,c beredes uite &-\n(crie, (ad boc enimne Apoflolica quidem dona ualent: ) ta-\nmen falfum e E, eam non e Je utilem ac nece Jariam ad piet4-\nS (eme religionem Chriflisnam docendam.Si enim pro fuiffet\nn ttegra uta,quanto magts nunc prode L Quid autem má\n^ g 5 impium ey barb aricum efl, quám bas artes uocare pecca uv t4, quas Deus ipfe condidit, cx que precipuum unt bominis ornamentum (nter onmia qua contigerunt ei in creatione?\nNam cetera omnia sunt bomini cum brutis communia in qui bi utres corporis ex fenfaum externori atlioncs etiam cx- ecllunt utres bumanas:sed barum artium noticia,que in fcho-\n: lis boi ftde traduntur, est propria bominum, et necessarta",
+          "references": []
+        },
+        {
+          "page": 6,
+          "chapter_id": "praefatio",
+          "text": ", T— T M PRAEf ATIO. ?\nciam ad alia bumana officia adminidtranda, tum uero 4d boc\nmunus omntum maxim, per quod doctrina de Deo c7 re- bus dtuinis illuflrari debet, ut bomines cam ueré intelligant, 1\nample&lantur et* exerceant uero ludio, utque ad omnem po- Jleritatem propagetur. Qua in. re bomines sunt focij angelo-\nrun Stantium in con bectu Del,et buic uni ci uacantium;ut\nglorificent Deum : nulla aliave ad tantum officium inflructt, nift facultate dicendi, canendi, numcrandi o pera Det, et ud 4\nmagnitudine ponderandisiufli, anctiscafti. fortes, et.\ntl Nec magis uera c7 pia cU minor argumenti. Quanquam.\ncnim precepta aliarum artium non continentur in doctrina\nv À Ecclefte, tamen approbationes earum et exempla illustria\nsuntin eadem doclrina. Deus adbibet Mofi Aaronem, pro- pter eloquentiam maiorem. Nec clegit ad Propbeticum\nApoflolicum ministerii bomines dicendi imperitos. 1tà que A»\npojtolos, quorum fiit summum in Ecclefia officium, inftruxit\nnon solum illuftri intellectu my8eriorum in Mofc et Propbe tis sed etiam cognitione linguarum, ita ut qualibet lingua o-\nptime c elegautifsüme loquerentur. Sicut ergo Euangelium non fert leges politijs, et tamen probat eas quatenus sunt le-\ngittute : sic etiam non tradit aliav artium precepta, cum nil Opus fuerit sed ucbementer eas commendat, tanquam fin gu-\nlaria dona Det. Quarc nonimodo falfa, sed palàm im bia cdd )\n: opinio illorum qui fingunt, Ecclefie Dei non effe necessariic\nUlavum artiu fiudium, qu& prater libros Propbeticos in cho\nqi» lis vecte inflitutis docentur, fie quibus nece Te efI barbaricm et ujcitiam omnium bonarum rerum dominari in generc bu\nmago. Nibilautem minus eft Chriftianum, quàm immanitas\nC7 Igaorantia ifhtarum avtium, quibus uera bumanitas conti- '\netur . Sed tamen ita utendum e$t doctrina eloquettig,\nqus preterea artes propbani scriptores pro ftentuy, ut fer-\niunt doctrine Chriffiame, non doninentur. Hocnos monet\n2i 4 9. patulis",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 0,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-deo",
+      "title": "DE DEO",
+      "title_en": "On God",
+      "start_page": 6,
+      "end_page": 11,
+      "pages": [
+        {
+          "page": 6,
+          "chapter_id": "praefatio",
+          "text": ", T— T M PRAEf ATIO. ?\nciam ad alia bumana officia adminidtranda, tum uero 4d boc\nmunus omntum maxim, per quod doctrina de Deo c7 re- bus dtuinis illuflrari debet, ut bomines cam ueré intelligant, 1\nample&lantur et* exerceant uero ludio, utque ad omnem po- Jleritatem propagetur. Qua in. re bomines sunt focij angelo-\nrun Stantium in con bectu Del,et buic uni ci uacantium;ut\nglorificent Deum : nulla aliave ad tantum officium inflructt, nift facultate dicendi, canendi, numcrandi o pera Det, et ud 4\nmagnitudine ponderandisiufli, anctiscafti. fortes, et.\ntl Nec magis uera c7 pia cU minor argumenti. Quanquam.\ncnim precepta aliarum artium non continentur in doctrina\nv À Ecclefte, tamen approbationes earum et exempla illustria\nsuntin eadem doclrina. Deus adbibet Mofi Aaronem, pro- pter eloquentiam maiorem. Nec clegit ad Propbeticum\nApoflolicum ministerii bomines dicendi imperitos. 1tà que A»\npojtolos, quorum fiit summum in Ecclefia officium, inftruxit\nnon solum illuftri intellectu my8eriorum in Mofc et Propbe tis sed etiam cognitione linguarum, ita ut qualibet lingua o-\nptime c elegautifsüme loquerentur. Sicut ergo Euangelium non fert leges politijs, et tamen probat eas quatenus sunt le-\ngittute : sic etiam non tradit aliav artium precepta, cum nil Opus fuerit sed ucbementer eas commendat, tanquam fin gu-\nlaria dona Det. Quarc nonimodo falfa, sed palàm im bia cdd )\n: opinio illorum qui fingunt, Ecclefie Dei non effe necessariic\nUlavum artiu fiudium, qu& prater libros Propbeticos in cho\nqi» lis vecte inflitutis docentur, fie quibus nece Te efI barbaricm et ujcitiam omnium bonarum rerum dominari in generc bu\nmago. Nibilautem minus eft Chriftianum, quàm immanitas\nC7 Igaorantia ifhtarum avtium, quibus uera bumanitas conti- '\netur . Sed tamen ita utendum e$t doctrina eloquettig,\nqus preterea artes propbani scriptores pro ftentuy, ut fer-\niunt doctrine Chriffiame, non doninentur. Hocnos monet\n2i 4 9. patulis",
+          "references": []
+        },
+        {
+          "page": 7,
+          "chapter_id": "de-deo",
+          "text": ": DE DEO. ;\nPaulus Colo J-1. cum ait : Videte, ne quis uobis imponat peg Pbilofophi«m. Loquitur enim de tali Pbilofophia, qualis fuit Wwliant, Porphyrij et similium, qui iudicabant de uerbo Dei ;\nt ex philofophia : cum bec debeat non regina, sed ancilla e Je E 4 uerbi Dei, cui cedere oportet omnia. Sicut tuur Lutta dcci- pit lumen suum minus à fole:ita philofophia,que eft doctrina : rationis, e lumen inferius, regenda eft à lumine superiore,\nquod ejt uerbum Dei : 4 quo nor folun membra externa et\nali uires inferiores; sed ctiam mens ipfa gubernari debet cu» ius lumen est Pbilofopbia.\nT'emeanus ergo median utam,ut neque indoctis uulgo a fen I.\ntantibusneque doctis prepostere sentientibus concedamus: fcd v^\nmagnifaciamus doctrina artium,que cum vecta ratione corna )\ngruunt : caque non abutanur contra ueritatem Dei, sed recte Wtamur ad eius propagationem, Ya nibil bis avtibus erit.fecun dum uerbum Dei, alutarius. DE DEO, ? pz 2:71 Oct de Deo tractatur quidem et à philofo-\nB phis, sed admodum tenuiter. Etfi enim satis e-\n\n2 NR $33 rudité differunt contra Epicurcos , quod sit j vun Deus, cam; sententiam multis ac firmis ratto )\nnibus conftrmant:tamen in definitione Dei deficiunt, neque na\nturam e2 uoluntatem cius integre explicare po Junt, Qud- ) ^ quid «utem boc eJE quod inuefligarunt Pbilofo phi de Deo, id Y nequaquam c E contemnendum. Prodest enini uidere, quoufas t^^\nyátio bumana in doctrina de Deo progredi queat:et binc ti j dicare, quanta sit lux doctrine caleflis, 1 ad eam ille tenues\nfcintille philofophorum conferantur, Preterea ad arguenda bominum improbitatem, magnam babet uim bec ipfa doctri nascum ojfendat , bomines ne fue quidem. proprie rationi : afrentiri, Hinc ergo fumit Paulus grauijsimam illam vepre-\nben/tonem,",
+          "references": []
+        },
+        {
+          "page": 8,
+          "chapter_id": "de-deo",
+          "text": "wil — ÁN. prm 1 DE DEO. 9 benfionem, Aclorum X V 11 Lc7 Ront.T. quod gentes contra rationem infinitos Deos finxerunt,et creaturis diuinos bono À res tribuerit.Ademque fecerunt alij doctores, Deo mist, C.uo mius 4 nobis contemni decet banc qualemcun que noticia de\nDco,quam boni et eruditi uiri,extra ecclefiam Dei, duce na : Hiira e experientia admoutti, literis mandarunt: unde fluxc - Yunt boneflifime de Deo sententis, et o ptime leges in poli- tijs: quibus ipfis ft bomines obtempera sent, meliore in atu, quam nunc fuit, res bumane füifent. TeB&antur enim bifto- rie ,tunc maxinté floruiffe Wnperia,cum iuxta illas notici«s de l Dco c?' gubernatione diuina sunt admini lrata. v^ Quare tencamus illas vationes sapienter pbilofophantiiz, quibus offenditur e fe Deus, contra dubitationes Epicureas: W atque ex cadem doctrina colligamus, qualis sit Deus. Mens e- : niin iudicans recté. faciendum efJe, boc cft, uerttati wulicie,\nfortitudini,liberalitatiomod cftiee,caflitati et ali js wrtutibus im\ncumbendum effc:intelligit Deum quoque effe talem, qui menti\nbumane boc ipfum lumen indidit:et abborrerc À n endacios : ab iniujlicia et omni tuvpitudime. Nec afbernemur definitio -\nnem Dei 4 Platone traditam:Dceus et mens eterne, e caufa boniin natura, Docet enim multa de Deo fcitu dignissima.\nNaturam cius defcribit prior pars definitionis, offendes Dei Je essentiam incorporea et spiritualem,intelligentem,etey..\nnam,omnipotetem, Voluntatem exponit pavs po lerior. cum\nJj enim sit caufa boni im natura boc cft Wertatis Auflicie, clemert\nt^ tie,caflitatis, ordinis, et'c. multo magis ipfo conditore eft\n) amor borum bonorum omnium. In caden dcfinitione inc t , €7 illud, quód oporteat alium effe authorem malorum, quent\ntamen Plato oJlendere non potuit.Occafionem ueró dedit PLe\ntoni ad inueniendam banc definitioncim,aua melior ab bomi n€ Pbilofopho inueniri non potuit, Simonides:qui niil ueri- us c fateri, auod definire Deum non pofJet. — Cum autem",
+          "references": [
+            {
+              "start": 37,
+              "end": 47,
+              "text": "Aclorum X",
+              "type": "biblical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1190,
+              "end": 1197,
+              "text": "Platone",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1727,
+              "end": 1732,
+              "text": "Plato",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1873,
+              "end": 1882,
+              "text": "Simonides",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 9,
+          "chapter_id": "de-deo",
+          "text": "— \" hn 46 pE DEO.\nbec noticia, que ex Yatione bumana sunt bt ejt, H equaduam\nsufficiat ad Deum solide cognofcendum,c7 uere adorandum: oportet illam quoque «diungt, que colligitur ex fingularibus\ni teftimonijs immediate 4 Deo traditis. Heec entm non essent exhibita. fi iudicaffet Deus sufficere bomtnibus banc noticiam : e(sentie et uoluntatis fue, que potuit bumana indu Iria ttnue fligari. Nec Pauius Roi, docct, gentes potuiffe coram Dco\néuftificari,fi illam ip am noticiam tenuiffent: werum,quod mi»\nnus pecca Jent.\nVt igitur uere Deum agnofcamus, ipfis patefactiones or»\ndine sunt coJiderande. Wter quas pruma cst creatio, im quam\ntotis nature opera folo werbo ex nibilo condidit:atque ex bo- di\nYum operum prejLantiayordine,u fu, duration c uarietate,ute\ntellexerunt nature rationales, Deum effe e Jentiam piritua-\nlem, eternam immenfe potentie fapicntie, iuflicie c7 bont- tatis:quod que dignius e Jet talis conditor (immo bonorc,reue-\nventia , dile&lione c predicationc. Ad quent cultum uocatt\ncrant bomines per. primum mandatum, de fruc ibus arboris\nin medio Paradifi non attingendis.Sed po Iquam diabolus pri\nmia deinde buius fraude bomines quoque primam illam noti-\ntiam Dei peine onnent amififfcnt,nouts patefactionibus Deus\nbuimano generi fe veuclauit, — Huc pertinuit promifsto filij,\nolim affumpturt naturam humanam ex muliere, ad regnum\n^ ferpentis euertendum. Addidit et operum testinonia,cum\n' lorum uictimas,qui credebant in femen mulieris, tgnis de cac X lo del«pfus con umpfit : quemadmodum C7 in Elie facrificia p^ accidit. Hucveferatur c2 raptus Enocb, poeta dilusij cum.\npred icliotie elus ,et seruatio SN o«e.Pojted uero ualde infi ones\npatefacttones edite unt AbrabeMaac et Iaacob, Deinde per Iofepb, Mofc, Indices, Pro phetas. Sed nulle sunt illu Lrioves,\nquám ille que extant im ucybo noui Teflamenti : tn quo cumt filius Dei afJumpfiJet naturam bumana, admiranda testi-\nmontá",
+          "references": []
+        },
+        {
+          "page": 10,
+          "chapter_id": "de-deo",
+          "text": "DE DEO.\nmonia ctn angelorum tum bominum exbibita unt:in primis\n(ero iplius Domini, inde ufa; & Baptifmo ad Yordanem, ubi uox patris de caclo audita eI, uic esr rtt 1vs Mnv$ '\nDILECTVS, HVNC AVDITE.Btfbiritus sanctus in be^ cie columbe super eum apparuit. Idem; testimonium paulo dnte passionem cius renouatum e E in monte: ad quod potifst- mum reuocat Yobannes cap.s.e Petrus epiftola z.cap «a,\n- Hecte limonia diuine glorie in Yilio incarnato offenfa,\nmaxime ommum meditata e Je oportet omnibus,quibus uera\nnoticia Dei cJE cordi. Nece Je e E enim, filium ante onmia we- re apprebendi : deinde, it boc folo mentem et cogitationem\nT fixam cfJe.neque extra buius perfonam uagari.Propterea Cbrt\nflus reprehendit Philippun,qui extra cum quercbat Patrem, Bandemá; ab caufam totum Spiritus sancti miniJlerium eft in^\nfüitutum, ut filius per boc innotefcat bumano generi : n quo\nfilio,ut Paulus ait ad Colo JT. tota diuinitas inbabitat corpora Ü\nliter.Idque maxime apparet in doctrina Apoflolorum,qui boc unum fiudent, ut filius Dei per uerbum corum agnofcatur. Qui bunc nouerit, ij Deum quoque nouerüt.sicut ipfe inquit:\nQut uidet me,uidet e patrem. Mem Matt b.x LNeno nos uit filium nifi pater, neque patrcm nouit quifquam nift lius. Integra ergo Dei noticia,e7 ex omnibus patefactionibus eius\ncolle&ta,non solum fita efe in opere Creattonis;in quo non ita\nclare apparent per onavum difcrimina: uerum ettam in ope-\nre redemptionis, quod foli filio, ex in opere sanctificationis,\nT quod foli spiritui sancto afstgnatur.\nEx bis igitur omnibus,primum omnium inteova Dci defi-\nnitio efl petenda,in bunc modum: bgvg ssc cffentia fbi-\nYitualisjintelligen s, eterna, uerax,bona,puratu L4, omntpo- tens, liberyima, mifericors Pater, qui ab eterno filium genuit sibi cofub tantialen: et Filius imago patris coeterna:et Spt\nritus anctus, ab utro que procedens.qui Deus condtáit per ucr\nTERUEL bun,",
+          "references": []
+        },
+        {
+          "page": 11,
+          "chapter_id": "de-deo",
+          "text": "p . Í T DE DEO. '\nbun futt omnes creaturas, eafdem; coferuat iuxta uerbum\nsuum: cx in genere bumano colligit sibi eternam ecclcftam\nper minifteriun patrum, Prophetarum e7* Ap ojtolorum, ut\nab cain eternum celebretur:damnatis omnibus alijs cultibus; : quos extra bocuerbiuim bomines comminicuntur.\nNam quod Deus eft fab Lantia fpiriualis, ipfemet te Eatum Exodi X X X1I1, xefpondens MoJt:Faciem meam non ui-\ndebis. Et loannis 4 Anquit Chriflus: Deus ejt spiritus. Quod\nautein sit intelligens ejfentia;id docet Mofes, cum ait : Deum\nucrbo crea Je omnia.id enim cst pro prium natuy.e iitelligene\ntis. Et partim ex aliorum eff uium natura, partim ex bom \"n\nnis creatione certó colligi potet, eandem efJentiayt effe bo- nam,caftam, liberam, iustam,czc.Nam barum urtutum cere\nt4s noticias impressit Deus bomini, addita libertate: quaquam\nbec bona poflea per peccatum deformata sunt in bomine. Ex e4dem creatione sequitur,e potentiam Dei effe infinita,\nQuod autem in definitione dicitur de tribus perfonis, id qui-\ndenm tota Scriptura passim docet,maxime tamen illu tria sunt\nteflimonia in nouo TeLamento: atque in bocvuvfum clavissima\npatefactio trium per onarum facta eft in. baptifmo Chrifli. Havumd; per onarum commune opus efl creatio rerum, cox\nconferuatio. Seovfim autem obferuande sunt ille patefactio\nues, que unt note Ecclefie in teflimonijs de. Christo, — Po- firemó. sciendum est, quod omnia que tribuuntur Dco, unt\nipfa e Jentia Dei,non accidentia. Neque entm codeim modo pre dicantur bonitas iuflicie, et* alie uirtutes dc Dco;sicut de bo- mine, uelde angclo. Vfus buius defiitionis eft nece Jarius, quotiefcunque cum\nDeo acturi (unus,aut inuocando aut glorificando nomen e-\nÜ ius, Neque entm botefE imuocari aut coli, nifi mens eum, iuxta banc definitionem apprehendat.It4que non poteft inuocariab E (hnicis, Turcis Iudeis, Papiftis, et fimulibus,qui eum uel no\ntenent,",
+          "references": [
+            {
+              "start": 355,
+              "end": 363,
+              "text": "Exodi X",
+              "type": "biblical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
+        }
+      ],
+      "reference_counts": {
+        "biblical": 2,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 3,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-trinitate",
+      "title": "DE TRINITATE",
+      "title_en": "On the Trinity",
+      "start_page": 11,
+      "end_page": 16,
+      "pages": [
+        {
+          "page": 11,
+          "chapter_id": "de-deo",
+          "text": "p . Í T DE DEO. '\nbun futt omnes creaturas, eafdem; coferuat iuxta uerbum\nsuum: cx in genere bumano colligit sibi eternam ecclcftam\nper minifteriun patrum, Prophetarum e7* Ap ojtolorum, ut\nab cain eternum celebretur:damnatis omnibus alijs cultibus; : quos extra bocuerbiuim bomines comminicuntur.\nNam quod Deus eft fab Lantia fpiriualis, ipfemet te Eatum Exodi X X X1I1, xefpondens MoJt:Faciem meam non ui-\ndebis. Et loannis 4 Anquit Chriflus: Deus ejt spiritus. Quod\nautein sit intelligens ejfentia;id docet Mofes, cum ait : Deum\nucrbo crea Je omnia.id enim cst pro prium natuy.e iitelligene\ntis. Et partim ex aliorum eff uium natura, partim ex bom \"n\nnis creatione certó colligi potet, eandem efJentiayt effe bo- nam,caftam, liberam, iustam,czc.Nam barum urtutum cere\nt4s noticias impressit Deus bomini, addita libertate: quaquam\nbec bona poflea per peccatum deformata sunt in bomine. Ex e4dem creatione sequitur,e potentiam Dei effe infinita,\nQuod autem in definitione dicitur de tribus perfonis, id qui-\ndenm tota Scriptura passim docet,maxime tamen illu tria sunt\nteflimonia in nouo TeLamento: atque in bocvuvfum clavissima\npatefactio trium per onarum facta eft in. baptifmo Chrifli. Havumd; per onarum commune opus efl creatio rerum, cox\nconferuatio. Seovfim autem obferuande sunt ille patefactio\nues, que unt note Ecclefie in teflimonijs de. Christo, — Po- firemó. sciendum est, quod omnia que tribuuntur Dco, unt\nipfa e Jentia Dei,non accidentia. Neque entm codeim modo pre dicantur bonitas iuflicie, et* alie uirtutes dc Dco;sicut de bo- mine, uelde angclo. Vfus buius defiitionis eft nece Jarius, quotiefcunque cum\nDeo acturi (unus,aut inuocando aut glorificando nomen e-\nÜ ius, Neque entm botefE imuocari aut coli, nifi mens eum, iuxta banc definitionem apprehendat.It4que non poteft inuocariab E (hnicis, Turcis Iudeis, Papiftis, et fimulibus,qui eum uel no\ntenent,",
+          "references": [
+            {
+              "start": 355,
+              "end": 363,
+              "text": "Exodi X",
+              "type": "biblical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 12,
+          "chapter_id": "de-trinitate",
+          "text": "DE DEO, 1?\ntenent, uel furiofe veijcittt. Neque etiam cogitant de caufa mifi\nfilij,c* donati spiritus sancti. Efl preterea fons omnium con- folationum,quibus sancti fustentantur in omnibus uis certa- minibus in bac uita, Nunc sequitur,ut certa e firma teftimonia colliganus de unitate Del. Deinde, quod in bac unitate sint tres per on di- flincte:quód denique Jingule sint uere Deus. He perfone di- fcernuntur, quoties divinitas itva fefe defcribitur. Ceteram\nquando creaturis ap ponitu,tunctientio sit unius et eterne\nc/Jcntie:sicut ubique de Deo Scriptura diuinitus tradita loqui-\nà tuY.ut Deuteronomij o. Audi Ifrael; Dominus Deus ttiofley\nunus est Dominus. Nibil; fere aliud in toto opere illo docet\nMofes,quám quod bic unicus sic Deus,qui eduxit populum 1- fracl ex Acgypto,iuxta promissiones datas patribus. Et con-\nuenit bec doctrina cum primo precepto: Ego fum Dominus\nDeus tuus: Non babebis alios Deos preter me. — Ma pafiim 7\nexclufiue ponitur boc preceptum. Et Deuteronontij 52. Vi-\ndete quod ego folus fum Deus, nec est alius preter me; Efaie\n44. Ego fum primus et? nouissimus, eo* preter me non elt 1\nDeu. Et pofledcap. 46. fepe bocteflimonium repetitur.\nCám his teflibus confentiunt et Apofloli.nam 1. Corintb, e.\ninquit PaulussScimus quód nullus eff alius Deus, nifi unus. Et\nEphefiis 4. Vnus Deu e pater omniu, qui fupra omnes eft:\nHuc addenda sunt etiam totius Ecclefte te limonia i Symbo l lis:ut in fymbolo Niceno, in fymbolo Atbanaftj, in fymbolo\nAmbrofij et Auguflini, Sed de unitate Dei minus dubitant\nbomincs,cum multi etiam ex gentibus deteslati sint prodigio rn\nfam Dcorummultitudinem, et fenferint unam eternam men\n(em effe oportere, que sit prima et unica caufa rerit omnium, Sed boc praecipuum fludium e Je debet bomini Cbriftiano, ut de tribus per(onis in eadem c Jcntia diuima sit quam certif- fimus. Propter banc potiffimum doctrinam opus fuit tefHimo- i$ '",
+          "references": [
+            {
+              "start": 592,
+              "end": 603,
+              "text": "Deuteronomi",
+              "type": "biblical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1049,
+              "end": 1057,
+              "text": "Efaie\n44",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            },
+            {
+              "start": 1291,
+              "end": 1303,
+              "text": "Ephefiis 4.",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 13,
+          "chapter_id": "de-trinitate",
+          "text": "(d A S4\n: T bE DEO . 1 nijs c&leftium vetielationum. primum «uter fetendum eff quid significet wocabulum Perfonee in bac doctrina de. Dco, : K/E enim perfona in diuinitate, fubstantla indiuidua , intellt- gens,inconmmunicabilis:et tamennomn alius Deus, quán ce- tcre perjónz. Quod dutem sint tres perfone , ac neque plures\n\"cque pauciores, tà nultis quidem illu Jtribus argumentis de-\nmon&trari poteft: sed claviffmum teftimonium cJE im baptiJ-\nmo Chrifli editumi,ubi de bac perfona que affumpfcrat natu vam bumaná,et tunc baptizabatur d lobanne, loquitur alia perfona de caclo, manifeffa uoce o lendens fe esse Patrem, e bunc de quo loquebatur Filium. Atque ut clarius significaret 4\nP«ter de qua per(ona loqueretur, de cédit ter ta perfona Spi- vitus (ancti in uifibili pecie columbe, fedens super Yefunt,non.\nsuper Yobannem;qui poflea de bac perfonarà difnctione cla\nrifiime docuit. ut Ioan.s. Pater antat Filium, c2' omnta traat-\ndit in nanus eius, Qui. ergo credit in Yilium , is babet uttam\ne:ernam, — Etdetertia perfona : Pater rion iuxta men urant\ndcdit Filio Spiritum sanctum, Et cap.v: Ego wutdt Spiritum\nde cendentent sicut columbam de eaclo , et manere super co, cc. In bis uerbis diferte nominatur tres perfone, sicut etiant\nin mádato quod ApofTolis datum est:Baptizate gentes in no-\nminc Patris,c7 Filij, et Spiritus acli, Non sunt igitur plu-\nves per(one,ut Valentinianus finxit:neque una tantum, ut Ar« vius e Samofatenus . Q uum autem ex noui Te lamenti do-\nérina itm atis confirmatam babemus fidem de tribus perfo* \"\nNI nis,tunc utile eft conferre etiam te timonia Mofi et Propbe- tarumsqualia multa et infignia collegit Doctor Toutherus im expoJitione ultimorum uerborum Dauidis : quo Commenta\nvio uix ullus alius extat in Ecclefia in boc genere perfectior, .\" in conferendis et explicandis utrtu /qs Testamenti sententijs,\nde tribus perfonis in eadem efJentia diuina. $ic autem difinguuntur per one , Pater e E perfona now fate,",
+          "references": []
+        },
+        {
+          "page": 14,
+          "chapter_id": "de-trinitate",
+          "text": "B cum Ahn m \"€\n\nj DE FILIÓ, ré : nata, sed que genuit fibiab eterno filium, imaginem ui con-. substaniialem. — Filius est perfona genita à patre ab eterno, qii postea fub quintum mundi millenarium iuxta promiftio-\nes affmp it in utero uirginis naturam bumanam. Spiri\" r Lus Jainctus e perfona procedens d batre c7 filio ab eicrto, GC mittitur ad bomines sanctificandos:boc est,ad accenden- dan noue lucem in mentibus, e uoluntates impellendas ut «JJeniti«ntur, omnesqs uires totius Nature renouandas, in ijs\nquiobedtunt ministerio etus, quod administrat per uerbum\nC jacramenta. Hanc enirt admirandam apientiam non ex à prophanis animis, cortina; opitiionibus sed ex diuinis et cer\ntjsimis patefactionibus nos metiri oportet:audienda e& fim- pliciter uox Dei, feipfum in uerbo suo monf Irantis : €7* iuxta\nbanc reuclationem Deus apprebendendus mente qz uolunta\n(e, omnt inuecatione e gratiarumactione. DB T1LIÓ. E T/t ueró fingularum perfonaràü noticia fiece faria ct,\ntamen in primis oportét nos filium quattcertissimé co-\ngnofcere, Nat per bunc eft aditus ad patrem:sicut ipfe. docet multis uerbis cium alibi,tum lobannis 144Y gHCH$ Philippu LLLA\naliosá; discipulos, quód patrem extra suam.per(onam quere bant. Atque ideo Diabolus in boc maximé incumbit, ut ieram filij Dei noticiam bominibu extorqueat: id quod iam mille\n, modis tentauit per fuos miniftros, Arrios, Samofatenos,cc. Quanquam enim ex bis qui à Prophetarum ex: &poftolorit\ndoctrina difcedunt, nonnulli videntur non negare diuinitaté cus, ut PapifLe:tame reuera illam una manu porrigiit,altera \"Wrfum adimunt, cum ei detrabitt infinitam ueritatem co po- Feat, in werbo io preflando:iut negant banc e fc cius uo\nluntatem;giuaw im uerbo uo patefecitzaut affiymát c«m poffe Putnand RHthoritate mutari, ut Junima cum andacta contene\ndit ordg \"",
+          "references": []
+        },
+        {
+          "page": 15,
+          "chapter_id": "de-trinitate",
+          "text": "7 ió pE FILIO.\nV dit ordo Pontificius. Ex quo ucl uno teftimonio facile appa- UM vet,qualis sit ecclefia. : sicutigitur Diabolus contra filium Dei potiffimum om-\nnes fuas machinas divigu : sic tos contra maxine incumbere? oportet in boc tuduumt, ut eius deii quám certifsüma nottciant ki con equamur.YM&que propter bunc maxime uniuerfa scriptura\ncacleftis tradita eJE, neque extra bunc Deus ullo modo inuentrt potest, uunc Pater nobis audiendum commendauit, bunc o- fculandum, bunc inuocandum. Hunc cunder glorificat Spirt tus sanctus, bunc unum angeli predicaut. C7 humiliatum\nexaltatum, — Hocigitur cfL precipit totius Ecclefte Det i officium ut primum onum aguofcat filium Del,atque tn hoc . wno flatuat fe babere patrem e7 spiritum sanctum;neque aliter ^ — Qeumapprebendi po Je. Oportet autem filium sic 4enofci,ut primiam omnik perfo\nnam eius uere apprebendamuszd cinde de uoluntate eius recte\nsentiamus:atque boc utruque quevanus in hoc folo uerbo, quod 7e coelo traditum efT, cim per alios tejtes fidc dignissimos;tum.\nuerà per ipfum filium qui cft in finu patris, ommum longe\ncertissimum.Ex boc tgutur uerbo (atis conJLat,t perfota filij pei duas effe naturas imfeparabiliter unitas, diuinam c2 bu-\nmánam : quá unione nibil eit mirabilius in omnibus. diutnis mysterijs. Dium babet ab terno, ftcut pater € spiritus factus: bumana uero affianp sit suo tempore,cum opus re- demptionis aggre Jurus e Jet,Jficut of fictum mediatoris postie\nlabat. Atque ex bac altera natura Christi umur manifcstifsc-\nmum difc vimen per onayunt cum neque pater neque spiritus fcit étus a Jump ferit bumana naturan.\nNed; uero de natura bumana filij Det magina sunt certam na cum eius incarnatio,pajsto C7 mors id (atis probent,neqs\nid negat Diabolus ipe cum suis ministris : sed de diuina eus\nnatura, mdxitd eo acerumd cf dimicatto, Hatic cL ut detráe b4t Di4-",
+          "references": []
+        },
+        {
+          "page": 16,
+          "chapter_id": "de-trinitate",
+          "text": "s — € eeu c \"e\nA, DE FILIO. p? Ww bat. Diabolus,nibil non experitur fuarum artium. Q uare ut fimus quammaxime confirmati aduer (us eius prefüias, cer « Hjsima teffnonia in promptu babenda sunt de diuinitate Chrift : ad quam probandam lobannes Euangelifla totum\nAs suum Eunoelium scripfit, unà cum prüma Epiflola, non fo- lum contra Ebionem et Cherintbum , uerum ctiam contra\nWenturos olim bereticos,quos iam tum profbiciebat. n boc C180 Euangelio ualde illuflria sunt teftimonia, quale cft illud m ipfo ueflibulo Verbum erat à principio. Yem, Verbum crat\nDeus:Onmnia ter boc facta sunt,e sine eo nibil. vidimus glo Tlam etus,oloriam quajt unigeniti à patre. — Sed bomini ftu-\nd diofo facile eft tum ex codem capite,tum ex alijs omnibus,ma\ngnum borum teflimoniorum aceruum colligere, ex cum eis\ncetera conferre, ia Pfalmis, in Prophetis, in A pojtolis, quo- ruin omnium umma e in illa conféftione Petri Mattb. 16, Tues cunis Tvs filiu Dei tiui:non Jolum doctor infi-\ngnis; qualis fuit Ficlias; Hieremias aut Baptifla. :\nSecundum locum obtinent illa tcflimonia, quibus proprie í tates fiue officia diua nature tribuuntur Chrifla. Palam e^\n: nim átfcernitur à filijs Dei adoptiuis, et* uocatuy utieenitus filius Dei : ut Yobannis Pfalmo 2. et alibi. Nec potefE ef Je\ncreatura quantumuis excellens, ftcut Arrius finxit: cum ont- ..\nnes creature sint extra fübftantiam Dei, Filius icrà Dei ftt de. -\nfub tantia eterni Patris. Deinde infinita sunt. teftimonia. ..\n: Cz mandata, que precipiunt ut Cbriflo diuinos bonores tvi buamus, ut cum inuocemus e adorenus. Vnde rurfum nc- cc Jarió sequitur, eum uere cffe Deum. Horum multa colligit Paulus Rom, X V. ex Pfalmis e2* Efaia, Ytem Rom.X. Qu CYCdit im eum, non con Jundetur, De bomine autem mquit Fitremias: Ntaledictus bono;,qui confidit in bomine. Et Apo ftoli citant ditum lobelis de Chriflo : Quucung; tuocauerit nomcn Domini, bic faluus erit. — Porro im omniintocatione b tribuituy",
+          "references": [
+            {
+              "start": 1227,
+              "end": 1237,
+              "text": "Pfalmo 2.",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        }
+      ],
+      "reference_counts": {
+        "biblical": 5,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-spiritu-sancto",
+      "title": "DE SPIRITU SANCTO",
+      "title_en": "On the Holy Spirit",
+      "start_page": 16,
+      "end_page": 21,
+      "pages": [
+        {
+          "page": 16,
+          "chapter_id": "de-trinitate",
+          "text": "s — € eeu c \"e\nA, DE FILIO. p? Ww bat. Diabolus,nibil non experitur fuarum artium. Q uare ut fimus quammaxime confirmati aduer (us eius prefüias, cer « Hjsima teffnonia in promptu babenda sunt de diuinitate Chrift : ad quam probandam lobannes Euangelifla totum\nAs suum Eunoelium scripfit, unà cum prüma Epiflola, non fo- lum contra Ebionem et Cherintbum , uerum ctiam contra\nWenturos olim bereticos,quos iam tum profbiciebat. n boc C180 Euangelio ualde illuflria sunt teftimonia, quale cft illud m ipfo ueflibulo Verbum erat à principio. Yem, Verbum crat\nDeus:Onmnia ter boc facta sunt,e sine eo nibil. vidimus glo Tlam etus,oloriam quajt unigeniti à patre. — Sed bomini ftu-\nd diofo facile eft tum ex codem capite,tum ex alijs omnibus,ma\ngnum borum teflimoniorum aceruum colligere, ex cum eis\ncetera conferre, ia Pfalmis, in Prophetis, in A pojtolis, quo- ruin omnium umma e in illa conféftione Petri Mattb. 16, Tues cunis Tvs filiu Dei tiui:non Jolum doctor infi-\ngnis; qualis fuit Ficlias; Hieremias aut Baptifla. :\nSecundum locum obtinent illa tcflimonia, quibus proprie í tates fiue officia diua nature tribuuntur Chrifla. Palam e^\n: nim átfcernitur à filijs Dei adoptiuis, et* uocatuy utieenitus filius Dei : ut Yobannis Pfalmo 2. et alibi. Nec potefE ef Je\ncreatura quantumuis excellens, ftcut Arrius finxit: cum ont- ..\nnes creature sint extra fübftantiam Dei, Filius icrà Dei ftt de. -\nfub tantia eterni Patris. Deinde infinita sunt. teftimonia. ..\n: Cz mandata, que precipiunt ut Cbriflo diuinos bonores tvi buamus, ut cum inuocemus e adorenus. Vnde rurfum nc- cc Jarió sequitur, eum uere cffe Deum. Horum multa colligit Paulus Rom, X V. ex Pfalmis e2* Efaia, Ytem Rom.X. Qu CYCdit im eum, non con Jundetur, De bomine autem mquit Fitremias: Ntaledictus bono;,qui confidit in bomine. Et Apo ftoli citant ditum lobelis de Chriflo : Quucung; tuocauerit nomcn Domini, bic faluus erit. — Porro im omniintocatione b tribuituy",
+          "references": [
+            {
+              "start": 1227,
+              "end": 1237,
+              "text": "Pfalmo 2.",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 17,
+          "chapter_id": "de-spiritu-sancto",
+          "text": "p Sx\nEE 13 DEB FILIO.\ní tribuiur bic bonor, quod is qui inuocatur, bia; C? semper ^ prejto sit, quod sentiat gentitus cordium, quod exaudiat,ct-\nD rct,tuuet, defendat inuocantes : quee omnia sunt diuina. Hoc idem teftatur cy prima promiftio : Conteret caput ferpentis.\nVincere enim Diabolum, delere peccatum et mortem,omni-\nbus creaturis omnino c Limpossibile. — Huc pertinent tefli- monia miraculorum, que non solum offendunt doctrina e Je Wcran atque diuinam , sicut Nicodemus ait:terumctiam quod bec perfona que facit bec opera uirtute propria, non alic- n4, uercest cux i8 T V $, C7 filius Dei. Quamobrem ipfe probaturus suam diuinitatem,cr quod effet € a 1s v s: St\n(mquit ) mibi non creditis, operibus credite: boc cft, Si non habetis fidem uerbis meis,opera certe satis teflantur qui fim, ,\ncum cecis ulfum, furdis auditum mortuis uitam largiar, utto uerbo : quorum imile non. e$ in miraculis, que Diabolus\n, quoque facit ul imponat bominibus:ut cum augur Romanus co tem ecuit nouacula , c qualia multa recenfentur in fabulis dc Dijs egentium. Atque buctenus oftenfium eft. quod filius Dei eft perfona di- f'ncta à patre,et tamen equalis patri idemque Deus : quodque hanc winitatem e sentie non impediat a fumptio alterius natu\nre. sicut ipfe manifefle inquit ; Nemo acendit in cocum, nifi\nqui de cendit de coclo, filius bominis qui efl im coelo. Que om , nid ex uerbis Baptifmi manifeste apparent.In bis enim et di. , Jiinctio perfonarà cernitur,et quod unitas eft cjJentie. INant idem bonoy tribuitur per onis, et folenni pacto cofirmatur, : quod eque sit cófidendum patri, filio et piritui ancto:quod\neque sit inuocandus et* predicandus pater, filius c7 biritus fanc us. cut canit Eccl efta: Proprtet 45 Ut p erfor 1$, Ll 44 est . Cin ej entia: Male lag par e pote Las, decus, bonor, qué pcr OHLILET »\nANunc breuiter ad obiccliones quafdaim eft refbondendum.\nPrumo",
+          "references": []
+        },
+        {
+          "page": 18,
+          "chapter_id": "de-spiritu-sancto",
+          "text": "B7 n — ic €— ,- -4- — MÀ T 2 295292 \" \" A ». j\nDE FILIO, 19 4 \" Art AT . . L , Prühó enim obijcitur, Cbriflum idco non effe uere Deum, » quta dila nativa nec patitur , nec moritur. Hec obici\nC Iudatcd C7 Mabometica facile diluitur. Sunt enim in ChrifTo due naturse, non perfoua.sed proprietatibus distindte. Quod\n2 C20 unt nature proprium e Lid propter tjeparabilem uni\nonem in eadem perfona tribuitur toti perfone : ncc impedit,\n- : quo minus adfit altera natura. Vulnerari, pati , mort, (unt proprietates bumane nature. Propter quod Petrus diferte di xit, Chriflum bafJum cffe carne. Et Paulus Rom.1. Quod \"nas tus ef ex Dauidc secundum carncm. Interea tamen propter\nj Wntonei naturari imn eadem perfona infepavabiliter factam, recte dicitur: Deus ef conceptus, natus,pa Tus, e7c. quiatae 7 iis cHRISTVScÉ redemptor,non pars cius, j Atqui bic magna diligentia adhibenda efL, ut obfertemus\nqui nodi de filio Dei loquendi recepti int communi con fen- 1\nf» Ecclefie, Nam proprietates alterius nature de tota perfo-\ntia vecle dicuntur ti concreto, (ed nonin ab/lradto. Non ejt\nTeCtbta bec propofítio uel preátcatio,Diinitas eft bumanie t5, uel cotrá, Humanitas c$t diuinitas, Sed uere dicitur Deus\neft bomo, Verbum cft bomo,sicut Yobatnes ait: V erbum caro\nfactum eft, tem, Chrigus cft bomo: e rurfum, C briffus ef. Deus:D Cus tatis ect ex uirgtie:qiiia bac perfona, que fanul\net Deu cy baitosnafcitur, Patr, noritur. Sicut de cadem ^d perjona in toto zcutdo. articulo tales Junt predicationes, ut », ) pronum de ea preaicentur bumane nature proprietates,dee s ' ác diuitig: qu, tles sunt,refurgere à norte,afcendere in cot »J 1 los, fcdere ad dexty Det, e iudiccn cffe utuorum 4c mortua\nYum, N eque entm sunt due perfone, sed una in qua utraque nta Y4 eft unita. Sicut teitur dc perfona bec duoretté dicuntur,\nDes e bomo:ita C\" proprietates Dei e bominis rede di. cuntur de perfona im conc l'ero,per communicationem (ut uo tant) Idiomatuys 7 proprietatum. Sic uere ex ab Ec left4 b i approbat",
+          "references": [
+            {
+              "start": 596,
+              "end": 603,
+              "text": "Rom.1.",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 19,
+          "chapter_id": "de-spiritu-sancto",
+          "text": "E. £p 10 DE FILIO.\n; approbate propoJitiones unt, Verbum factum eft caro. fiue\n« bomo, Deus incepit effe bomo : sed veiecte sunt be, Verbum\nMN et creatura, Chriftus est creatura, feu Verbum cft creatum,\nls Chriftus ef. creatus. Prudenter enim uitata eft ambiguitas, \" propter infidias Arrij e similium, qui contendebant, prio- ren.naturam im Cbrifto effe conditam, ncc effc imaginem a- terni patris genitam ex eius. fubJtantia : sicut Ecclefia ca-\n/ nit, Lumen de lumine, Deum uerum de Deo uero, Genitum,\nnon factum.\nh Secundo ad dicta de bumilitate Chrifti vefpondetur, quód » mondefcribunt perfonam, sed officium patientis Cbri&i, quod dra dna ad tein pus durat , dunt Jatisfaceret pro culpa mundi, inte- seit hen: nea quat quiejcete natura diuina, sicut Ireneus ait:uel, ut Paus\npnmo Vr lus, exinanita. Calc cJe illud uerbum, Pater cjl maior me. Si- (manda c. &ilficabat enim prefentem. conditione, in qua tunc erat, e Je\n; non modo iufra patris conditionem, uerün ctiam omnium\nbominum. sed bac breui depofita, fore ut iret ad patrem, cid; per omnia equalis effet. Hanc effe sententia, totus fermo Cbrt\nJtt efE documento,uná cum integro euangelio Yobannis cuius\nfuiis efLoflendere quód Chriflus eft ueré Dcus, equalis patri. Sic efl re bondendum ad omnia ftmilta dica bumilis et abic- cli Chrifli, qui fenftt omnes dolores quos bomines in eternum pal Juri erant, nifi quod peccatum proprium nullum accefit.\nI Tu summis enim doloribus,quatos nulla mens cogitare potejl, Ni obtemperabat , non murmurans per impatientiam contra ul Deum irafcentem, sicut precatio elus in borto et cruce offen dit.Q tanquam enim banc quoque infirmitatem noflram tulit, ut magnam animt con ternationem senttret, clamans fe defey\ntum c Jc 4 Deo,tamen ultro fe f(ubmifit poene. Sed ad bas tan- (4s res aliquo modo intelligendas opus est animo. exercitatis\nin certaminibus spiritualibus,non pro fanis e fecuvis, quoric\nstudia prorfus aliena unt ab bis my lerijs, naximé reconditis\nin tot4",
+          "references": [
+            {
+              "start": 757,
+              "end": 764,
+              "text": "Ireneus",
+              "type": "patristic",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 20,
+          "chapter_id": "de-spiritu-sancto",
+          "text": "».j : e \" \" DE $PIRITV SANCTO. 1\nT. Ht ofa ceelefli doctrina. Cum enim articulus de Dco, de unita-\nn tc eus, C7 de tribus perfonis longiftme 1 ratione rerotus / it, n i boc codem articulo multo e$t mirabilior doclrina de filio\n5, Det nonmodo incarnato,uerum etiam ita bumiliato,ut in fra - omnes bomines, ufque ad infimas inferorum partes sit abiectus, \" DE SPIRITV SANCTO.\n. Miftis uarijs significationibus uocabuli , ciamus iit\ndoctrina de Dco per uocabulum Spiritus sancti in-\n2 telliei tertiam perc onam diutnee c Jentiee, procedcntem à p4-\n1 tre e fillo,im equali potentia per ominta:quemadmodum ite\n» : Yum ba ptifmus noter te Lis eft , c confessio totius Ecclefie,\n\" que parem bonorem tribuit patri et filio e piritui sancto.\n' Delectus igitur babendus ef teflimoniorum , ubi scriptura\n- loquatur de spiritu sancto;quem teftatur mitti primum in do-\n: ctorcs Euangelij:deinde per corum miniflerium in omnes qut í\n: credunt uoci eius , ut eos illuminet , uiuificet ac fancificet. :\n; Ac prater illa teflimonia que partim ex Chrifli partim ex no ftro baptifiuo fumuntur illud cft eximium, quod im noua Pett tecofle apparet miffus in. Apoflolos in pecie peculiari, quee\nnec patris erat,nec filij. Est igitur spiritus (anétus alia per o- na quam patris et filij. Et quia pari bonore afficitur, sequi- tur, eium, non solum uere. effe Deum , uerumetiam eundem Deum cum patre et filio, cum non sint plures Dei preter\nunum. Idà; etiá ex effectibus cognofcitur. Nam luccm noua\np mentibus credentium folo uerbo accendere, e per banc\nl'egenerare,uluificare c7 anctificave bonmin e5,denia; anima- ,\nTc aduerfus ingentes terrores mortis et inferorum, bac on- n4 sunt opera uere diuitia.\nSunt autem c7 alia teftimonia;prefertim in Yobanne, quód\nspiritus fanttus sit alia perfona quam patris et* filij, ut cap. 14156 Unteula: facile uidere licet. Nec parum eft autbori b a tatts un",
+          "references": []
+        },
+        {
+          "page": 21,
+          "chapter_id": "de-spiritu-sancto",
+          "text": "Wi 22 DE $PIRITV SANCTO.\nE satis in fymbolis, in quibus tota sanctorum ecclefta confitetur\n// dc spiritu ancto, quod credit in cum eque atque in patrem es\n* filumstribuita: ci officia diuine potentie, quod colligit ex ve\ngis totius mundi ecclefTam;: quam reddit certam de renujsta-\n: ne peccatorum,de refurreéHione et uita eterta.Sem perque fu^ tfe fbiritum sanctum cum Ecclefta inde Ufa; ab initio,tefLatuy Petrus Epijtola 2.cap.a. Mon hrat enim per suum minifteriu filium Del, et in boc patrem: sicut per Yobannem Baptistant dicito eum mon Tauit : J Icut antca bcr Prophetas, C7 po lea pcr Abol Tolos euidesi clarificauit per uerbum Euangclij et facramenta. Suam aeuigs prafenttan declarat mouendo cor-\nda credentium, et conjolando aduer us omnia mala tum coy\nporalia tum spiritualia. Hunc petit Ecclcfla sibi donari, cum orat, ut regnum Det adueniat. Eo donato, sequitur Intus C7\nforis uera obedientia cerea Deum: quam petunt sancti ; («unm\naddunt,Fiat uoluntas tua.\nH«c eft ftmplex et confentanea diuinis tcffimoniis dodfri nhá de Dco,e7 de tribus pev(onis:ad quam re biciendum efL ia lectione Propbetice ex Apojlolice Jeripture, ac uidendum\nubi loquatur de proprictatibus communibus toti diuinitati.\neg ubi de certe alicuius perfone prop rijs officiis : nec indul-\ngendum est humano ingenio ii mouendis qu&JHonibus, sed\nexercenda e E bac doctrina in affidua et* ardenti inuocatia-\ntte in qua cre cent anirii tum doctrine, tum pictate. potestque tnuocatio inJ&tut uel ad tres perfonas simul, uel ad unam, in\nNT qua tamen c alias cogitari oportet, Wn Knaquag: enim per o na integer et ndiuifus Deus inuocatur, EfL autem adbuc uta quseflio in boc loco, de uera Dei no-\nticia Eractanda, uon inanis, ut multe 4 propbanis bominibus\nagitari folent ; uerüm necessaría ad Deum uere inuenien- dum et apprebendendum, atque ad infidias Diaboli multipli»\n(e$ euugendas. Nam Turcis et Iudeis sic import, quod arbi-\nIrantue",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 2,
+        "patristic": 1,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-creatione",
+      "title": "DE CREATIONE",
+      "title_en": "On Creation",
+      "start_page": 23,
+      "end_page": 30,
+      "pages": [
+        {
+          "page": 23,
+          "chapter_id": "de-creatione",
+          "text": "3. 24. DE CREATIONE dÍ.^ I4acob, Yudam ey Dauidem. Quoticfcung; Ieiiuy noua data\ny, est promijstostoties bec quoque ad superiores per fidem adiun.\n^ genda fuit de uenturo Chriflo. Postquam uer exbibitus c,\nM sam oportet nos credere illas omnes impletas cfJe: et intelligi P\" dc bac perfona,qua regiante Augu lo nata cft ex M ara, C3* pal e refufcitata regnante Tiberio,et predicata per Apg flolos:ex quorum c» Pro bhetarum confentientibus teflimo- nijs perfecta noticia de filio Dei petenda e&t. quod in cadem\nperfona iuncta sit natura diuina ex bumana, et quod officia\nQM - nnelt sunt duosprünum Jacerdotalead placandam iram 1 Jet:'fe pi. J—mrXx: cundum Fegtunt., ad (aluandos onnes qui Euangelio. eiuso-\nbediunt.\nHec doctrina totius diuinitatis noticiam continet. Credens ; enim in filium, credit etiam in patrem : preterea tu spiritum .— 1 sanctum,quem mittit filius à patre,ut per eius minifterium in»\nnotefcat. Idem; bomo no dwuidit uerbum D ci, ut aliam pav-\ntem credat,aliam non credat, sicut Anabaptifle faciunt : cque\nconfundit doctrinam ueteris ex noui TefLamenti: sed retinet sententiam integram, fanam et inco rruptam de Dco,de natu\n\"4 Det, de tribus perfonis, de uoluntate Dei : et bec omnia precipue querit ex uerbo noui \"Teftam enti, quo facto uetus oniino est abrogatum. Ata; bactenus de pruuo loco sit di-\neium, quo eft fündamenti iactum totius doctrine diuinitus\ntraditee.In al j$ enim locis tlla contutentur, que de Dco,t4n- quam de fübiccto,recte predicari possunt. M DE CREATIONE, P Off doctrinam de Dco, redlé docet ecclefia de cveatio- . We,perquam primum coepit Deus alijs naturis à fc con atis innotejcere, cit antea nulli nifi fibijpfi notus fuerit-Tunc cnim quaft ex arcana fede prodiens, per aim plissimam totius nature ey puleberrünam máchütan,quam extra Íco E.",
+          "references": []
+        },
+        {
+          "page": 24,
+          "chapter_id": "de-creatione",
+          "text": "ziii$:—i\nMoms CUWIUISME , LO m ME VN 2S\n- ÀH DE CREATIONEF, \"^\nf co innotuit naturis rationalibus : que quidem 4d-boc sunt FU er Rex,\n- condiltut Deum partim.ex uerborum, partimexfaclorum oL, elus\n, tcfümonijs agnofcerent, cumque bonorcac reuercntia fusum ; dignint. iudicarent. Ac mifi bomines lumen: suum anufissent\n* PC\" peccatum, nullo alio libro fuiffet opus, quam ifla naturse contesiplatione. In boc et\" cogitandi c loquendi € «gen- di materian infinitam babwifent. — Nuncuero poft prifüi- nam lucem ucbementur obfcuratam, folis creationis teflimo\n; nia nequaquam sufficiunt ad parandam ueram Dei ntoticiam: cum prafertim deprauata sit doctrina de creatione. Stoicoriz : C Eptcurcorum erroribus.Cum autem alie patefacliones di\nune confiderande sint,ad illas utile c/I adiungere ctiam ucfti £4 Dei in creaturis,ad fidem noflram confirmandam. 4A 8 Summa ucro buius loci est, quód Deus eternus pater Do. * mint nojtri Iefu Cbrifti, unà cum filio suo untgenito € cot». terno, e cum fbiritu sancto, condidit ex nibilo coeli; ter-\nYam, C7 omnta que intra bec continentur, unà cum naturis spiritualibus,quales sunt an gclorum:quodque idem Deus ade t suis o peribus,non alligatus eis nece fario,ut Stoici fixerunt, : fcd libere, cum sit ipfe liberrimus. Ad boc tantum opusnullo«- alio inflrumento ufus et quám uerbo suo, quod efl infinite potentie,sicut Mofes in principio Genefis docet: cum quo co\nsentit uniuerfa scriptura. Sunt autem. ualde illuftria te lHimonia pafim in Pfalmis,\nut Pal. 55. Verbo Domini fundati sunt codli, et spirituforis\neius onnis militia corum. pfe contitet mare sicut in. utre:\nquidquid dicit,boc sit:et fi quid mandat,continuo pralo est. 1\nPal. 103. Tu extendis coclum,ut tapetem : tu fundafli terran cum fundamento suo, ec. Pfal.147 : Qui tegit coelum nubi. BE bus, c terye a reitur pluutan, Non solum autem res bonas omnes condidit Deis folo itcr bo. sed ctiam quód fubfitunt,boc totum eft Dei, Terra manet b s foceunda",
+          "references": [
+            {
+              "start": 1752,
+              "end": 1761,
+              "text": "Pfal.147",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 25,
+          "chapter_id": "de-creatione",
+          "text": "Á S VB. 16 DE CREATIONE. L, faccunda propter benedictionem Del. Sic animantia propa.\n/ gantur per uas qua; pecies : neque confanduntur opera na-\n;\" (ure, sed unumquodque in fo manct ordine. Heec nature admi tistratio ufttate nominatur à Tbeologis, actio Dei generalis:\nJj. que tamen 4 liberrima Dei uoluntate proficiscitur. Seruat, cun wudt, ordinem ul operis, ut nature suum cur um conce dat: interdum uero aliquid mitigat aut mutat piorum gratia,\ncontr nature ordinem. Q uod nift fieret, inanis effet omnis\nuocatio.. Reijcienda cst igitur Stotcorum infania,que pla-\nne irritam fcit ueram inuocationem,fingens Deum aliter 4- gcre non pofJe, nift ut mouent secunde caufee, Neque enim fuit alligatus ad naturam maris rubri, temporc Moft:nea; ad flu- xum Yordanis,et curfum folis,tempore lofua.Sic Elias impe-\ntrat suis precibus et ficcitatem e pluuiam, deinde ignem de coelo contra naturam. Nunc certe in mpltis trifLissimis fioni-\nficationibus que sunt in natura,neceJJe eft pios animos pete-\nre folatia ex bac doctrina,quod Deus non est obnoxius operi fio: sed quód omuia quecunque condita sunt, abnoxia effe co- guntur Opifici suo: quemadmodum miracula ipfa declarant,\nqua ucl in ueteri uel in nouo Te Famento reperiantur, C uant\nsententiam nece Je eb multis e manife Lis testimonijs confir-\nmari, quo mius ad defperationem ufa; indulgeamus dolori-\nbus nostris, quos capimus ex tristicia prefentium euentuun, C» futurorum. Y Ac prinim illa te Himonia sunt colligenda,que 4d ectierd lem actionem Dei pertinent qua curat atque fujtentat uniuer- fam naturam, Huiufmodi ejt illud Actorum 1. In ipfo uiui- mius ,rouemur,et fumus, ubi Paulus non tantum loquitur de\nfubflantia, motu eo uita piorum, sed ouium bominum. ad-\ndita; Deumita prope ade fe fingulis,pene ut manibus contre\nétari po sit. Ita Pfalno 104 €7' 14$ canitur, quód Deus pafcit\nomuia animalia, ne coruis quidem exceptis Memque teftatur ft lius Dci",
+          "references": [
+            {
+              "start": 1578,
+              "end": 1589,
+              "text": "Actorum 1.",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 26,
+          "chapter_id": "de-creatione",
+          "text": ", i — As dinis \" ds »\nMa iibi: DNE .- DE CREATIONE. 17 lius Del Mattb.c,ait enim,uolucres dli,€ evamenin dois ue\nftirnon cafu,ut Epicurcis detur, neque tantum per phyficas caufas feda Deo, — Tale cfE ev tllud:Eflote mifericordes, ft^ cuF C7 pater uefter mifericors eft, qui folem suum oriri finit super bonos et malos,czc. Ex boc genere fumuntur egregüe comjolationes,a mitiore ad maius ratiocinando, ut Cbriflus fa cit. Si enim passeres non cadunt im terram ftne uoluntate Det, quanto minus eo nolente nobis aliquid nali cueniet, quovun\nciam capilli omnes numerati fant? Wem, Pater cce cftis alit\nuolucres,cr ornat lilia, que tamen bodie flant, et cras perc-\nWnE:quanto magis uos et cure: c Lis? Secundum locum babere debent teflisonia de fbeciali gu bernatione Dei,qua tuetur et iuuat Ecclefiam suam fingula- ri cura. \"Talia multa sunt in Pfalmis.ut 35 : Oculi Domini fu- :\nper timentes eun, e qui bonitati eius confidunt, ut cripiat &\nmorte antmas corum;e7 alat eos it fame.Pfalmo 34: Angelíts Domui caftris cingit eos qui timent Dominum, ut cripiat cos.Cze. — Sed mullo in loco plures sunt promifiiones, quánt ii libro Prouerbiorum Salomonis: in quo plerumque commi- nationes contra impios, et promifstones ad con olandos pios conferuntuy, Tertio exempla f anctorum. confideravi debent, in quibus\nWerit4s promifstonum apparetzitema; impiorum exempla,\nquibus comminationum. ueritas con bicitur. — Mirabiliter\nalebantur Abrabam aac, Wacob,lofepb e» filij rael in de-\nferto : defendebatur Dauid in summa egeftate , cum intere\nSaul impius ex uitam et regnum amitterct, Quanquam autem Ecclefia noui Teflamenti magis ncgle\ne 4 e fe detur, quantum attinet ad bona corporalia, ut bene ficia buius noui federis alia effe cognofcamus : tamen etiana CO \"po Yum noj brorum curam gerit Deus,ut ea nutrtat, iuuct, ácjeidat, ut Pfali, 4. scriptum ^ quantum ufus e neccfsre e (a noftra",
+          "references": [
+            {
+              "start": 977,
+              "end": 986,
+              "text": "Pfalmo 34",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 27,
+          "chapter_id": "de-creatione",
+          "text": "m — ; —Ó'ÉE s e5 Bi 25 DE CREATIONFRE.\ny, tas noftra poflulat. Neque enim in abundantia corporalium bo\n^ norum fita efEnofera. beatitudo. Vaque v. ad Timotb.c. inquis\nht Paulus:Cum babemus uictum cy'amutum,bis contenti fimus,\nuA tec appetamus plura cum magno noftro malo. — Huc perti-\nnent miracula de-quing; e feptem panibus : quee offendunt, codem modo ali Ecclefiam noui Te famenti, non ex magno :\n/ acceruo,sed ex tenui penu,benedicente Domino:qui cum uelit\nfeiper effe in mundo aliquam Eccleftam, non poteft cam nó (ucri e7 seruare. ftcut orat patrem Iobatt. 17, lit seruet eam 4\ni malo:boc eft,ne concedat Diabolo e?' mundo infinitam licen\n: tiam gra Jandi in fuos,à quibus uere agnofcitur. Wem; petit\nex eius mandato Ecclefta in sua precatione, cum orat P aneng quotidianum atque ut seruetur d tentatione e omni malo.\n: Qu trto tenenda sunt c? mandata, in quibus uel maxime\ncommendat Deus uoluntatem suam. C uod enim ultro facien dum erat iuxta promifstones,ut confideremus Dco,ad boc c-\ntiam cogit nos mandato.Sic enim inquit Pfalm.ss: lacta curas tuas in Dominum , et' ipfe te per omnen. uitam nutrit, Et\nChriftus fepe interdicit discipulis,ne ftnt follicitt, c ne fe fru\ngra mnMacerent,cum sint Cue patri cale) li. Quantam autem uim babeat doctrina de creatione ,id ex-\ntra ufum intelligi ton poteft. Nam fecuri, qui nil sentiunt ma\nlorum,ctiamfi tenent doclrinam, tamen ufum clus minime 4-\nnimaduertunt. Qui uero exercentur rebus aduerfts;ij facilius\nY. experiuntur utilitatem buius doctrine, Tribus autem fere tentationibus exercentur atini,cum de cura et defenftone diuina sunt follicitt. Primum. enim dubi-\ntant, utrum fciat Deus omnia que ipfis cueniunt, tum bona\ntum mala. Nam sapientissini quique j omntant, Deum res ma- gnás tantum curaveparuas uero neglieerezculus imaginatio-\nnis exemplum capiunt & vebus bumanis, ubi veges maxima\ntantum curant: sicut et Mofen focer fuus docebat, ut minora\nnegoti",
+          "references": []
+        },
+        {
+          "page": 28,
+          "chapter_id": "de-creatione",
+          "text": "ho - - \" zv DE.CREATIONE 29\nnepotis 4d inferiores magiflratus veijceret, Huic tentationi B8\nmagna pars bominum fuccumbit, ac Jomniat de Dco, ftcut d-\npud Homerum de Ioue scriptum efl quod interdum fubducat\nfc 4 conftderatione bumanorum negotiorum in aliquem fe- cretum locum,ubi ocio et uoluptatib.suis indulgeat. Con» tra boc malum oportet nos firmam sententiam petere ex do- cirina De creatione, quod Deus adeJt omnib. creaturis, cái; curet atque fuflentetim primisque filios fuos, Q uod denique cogi-\ntationum et'cordium fcrutatoy c l;omniumque rerum confcius\nfucrit, priufquam res ipfas condidit. Propterea filius inquit:\nScit pater uefler quid uobis opus sit. Ytem:Capilli capitis ucftvà\nnumerati sunt. — Huius gencris teflimonia quamplurima ua promptu sunt babenda, ut certo Tatuamus, Deo nibilomni& rerum ignotum effe: imo quod melius nouit omnia,quám nos\nIft : ut predictioncs diuine ab initio tradite atis oflendunt,\ncum euentus ad amussim re bondeant.\nSecundum certamen eJt in animis de potentia Del, utrum. possit nos ex omnibus erumnis, quantumuis difficilibus, libe\nrare. Hoc etiam non. difficile modo, sed pror(us impofiibile eft carni et rationi bumane Q8atuerc : que non solum audax\nct in infinita sapientia detrabenda Dco, atque idco putat fc polJe celare Dewn que uult;uerim ctiam quod infinitam po-\ntentia ei adimit. teut Sentiacberib gloriabatur contra Hieru-\nfalem,quód ne Deus quidem banc urbem seruare pofiet. ve-\nrim eadem bec cogitatio andis quoque multum Jacit negotij,\ncim sunt in magna verum fuarum diffcultate,nec cernunt alt\nqueni exitum. benignum. — Iteyum ergo fides confirmanda Gbut credamus Deo nibil effe impofübile : ficuti angelus ad\nMarian ait. Idcina; cogit naturam.ut seruiat, non noceat fi- liis suis, Quam fidem mirifice confirmat exempla, que teftann\nIur Deum nibilnon poffe. iuxtailud Pfalmi ws. Dcw nofter\nUi ce:10, Omnia quecumque uult facit, Hune bonorem tribuunt «",
+          "references": []
+        },
+        {
+          "page": 29,
+          "chapter_id": "de-creatione",
+          "text": "» Miam i ensnpeprrrs - o\nES 3 30 DÉ CAVSA PECCATI 7 Dco puertin Babylone, credentes quód poftint 4 Deo etiam\ni wi mcdio gute seruari. Et centurio, eum ait : Tantum dic uer\n» bum, cy fanabitur puer meus.\nTertium autem certamen omnium maxinum cft. Nam ft L cilius ect tribiere Dco infinitam noticiam C potenti quá\nclementiam et uoluntatem iuuadi infinitam. Hic enim ob lat\nundignitas quam illimaxime sentiunt, qut affügitur. De bac\nIgitur in primis animos confirmari op ortet,quo minus dubi-\nl tent de uoluntate Det,qua etiam indignis et peccatoribus be\ntic cupit. Eitisque uoluntatis testis est untuería verum natu rd,\n: que certe seruit indignis, Sed multo certiora sunt teflimonia Vi Euangelio propofita.Q uale eft illud: Sic Deus dilexit mun\n: dunm;ut uum unigenitum filium daret. Vnde sequitur,nullum\nbeneficium bominibus clau um effe apud Deum. Nam cetera omnia Junt inferiora filio. Sicut iegitur noticia et potentia,sic\nC? bonitas infinita Deo tribuenda e L, ut credamus, nil ei no\nSirarum verum omnium ignotum ejfe, nibil eum non poffe,\nquoda; certó nos uelit iuuare.1d credere et sic inuocare Deis I ommbus periculis,eft uere uti doctrina de creatione,\nDE CAVSA PECCATI.\nTu doctritta de Deo,» de creatiotie,aliquid tamen bumaz\nna sapientia per fe intelligit:sicut ex doctrina philofopbo rum, qui quidem ucré e sapienter pbilo fopbati sunt, a bpa-\nNI rct. Colligunt enim multa et in fi gnia arg umenta, ut probent\nN effe Deum:eum que primum autborem totius natuy.e,et admi. nifirato rem.Sunt ej poemata tum Greca tum Latina, f enter\ntijs elegantissimis de Deo referta,quod diligat bomines uer.\nccs,lu/los,cajtos:e oderit flagitiofos, eofdema; puniat. Heec\npera sunt,et certa: quanquam nondum fu fft ad naturam\net uoluntatem Det, Item; 4d creationis doctrinam itelli-\ngendam.Jicut neceffe cb cam intelligi.",
+          "references": []
+        },
+        {
+          "page": 30,
+          "chapter_id": "de-creatione",
+          "text": "\"oW —ád\n. DE CAVSA PECCATE 1\nSed iti boc tertio loco dectrine Cbrifliane prorfus nila- liud prejLare bumana sapientia poteft, nifi ut miretur, unde m natura rationali omnium prestantifiima, orta sit borribi-\nlis confufto omnium uirium,acerrimum dissidium inter ratio\nnem €7 appetitus,tot (celera,tot calamitates tot morbi mors\ndeniq: ipfa, ex summorum bominum triftissimi exitus. — Et qut bec omnia suo ingenio explicare conantur incidunt in la byrintbos, quibus e fcipfos et alios impediunt, ita ut nuns\nquam expediri possint. Hinc alij in E picurcos,alij in Stoicos,\nalij tn Manicbeos errores coniedti (unt, ut uel temere omnid,\nucl necessario fieri fomniarent:uel duas primas caufas,duosqe\nDeos fingerent;alterum bonum, alterum malum, — Hoc ai tem po lremum delirium impium c Je, ex precedenti dodtri-\nna satis eft manifeflum:cum probatum fitjunicum e(fe Deum,\nconditorem totius Nature, e conferuatoven, Nunc uero boc (ciendum eft. bunc ipfum Deum nequaqua\ne Jc authorem. peccati, uel ullius mali operis. Id primum ex definitione e natura Dci probari potest. Cum enim fitbo- 1\n\n45 era X MSEU ftméluh yatque adeo ipfa bonitas ueritas, iufti cla, fanclitassimpofübile cft eum uelle aut probare mala ope-\n74 C7 peccata, multo minus impellit bomines ad peccandum. Cum boc argumento congruunt omnta teflimonia diuina ge\nborum et rerum. Teffatur enim Deus, fe ucbementifimé iva. fci peccato, primim uerbis, deinde cxem plis. In priore genere teflimoniorum eft prima lex , data primo: bomini: Qu tfocun que die comederis ex bac arbore, morte movie ris. Hanc edrdem uoluntatem multo magis declarauit Deus,\nPerfolennem promuleationem legis in monte Sina,quam suo\ntpfius d 'eito scripfit, fontem omnium leeum que placet Deo, Propterea primum e feorfim bopulo Yracl eam cum fimeue. laribus Prodiciis propojuit , ucluti communiter obligantem\nQ7 Iuó05 c7 alios bomines. Ceteras leges omnes in. eodem. loca '",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 3,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-providentia",
+      "title": "DE PROVIDENTIA",
+      "title_en": "On Divine Providence",
+      "start_page": 30,
+      "end_page": 34,
+      "pages": [
+        {
+          "page": 30,
+          "chapter_id": "de-creatione",
+          "text": "\"oW —ád\n. DE CAVSA PECCATE 1\nSed iti boc tertio loco dectrine Cbrifliane prorfus nila- liud prejLare bumana sapientia poteft, nifi ut miretur, unde m natura rationali omnium prestantifiima, orta sit borribi-\nlis confufto omnium uirium,acerrimum dissidium inter ratio\nnem €7 appetitus,tot (celera,tot calamitates tot morbi mors\ndeniq: ipfa, ex summorum bominum triftissimi exitus. — Et qut bec omnia suo ingenio explicare conantur incidunt in la byrintbos, quibus e fcipfos et alios impediunt, ita ut nuns\nquam expediri possint. Hinc alij in E picurcos,alij in Stoicos,\nalij tn Manicbeos errores coniedti (unt, ut uel temere omnid,\nucl necessario fieri fomniarent:uel duas primas caufas,duosqe\nDeos fingerent;alterum bonum, alterum malum, — Hoc ai tem po lremum delirium impium c Je, ex precedenti dodtri-\nna satis eft manifeflum:cum probatum fitjunicum e(fe Deum,\nconditorem totius Nature, e conferuatoven, Nunc uero boc (ciendum eft. bunc ipfum Deum nequaqua\ne Jc authorem. peccati, uel ullius mali operis. Id primum ex definitione e natura Dci probari potest. Cum enim fitbo- 1\n\n45 era X MSEU ftméluh yatque adeo ipfa bonitas ueritas, iufti cla, fanclitassimpofübile cft eum uelle aut probare mala ope-\n74 C7 peccata, multo minus impellit bomines ad peccandum. Cum boc argumento congruunt omnta teflimonia diuina ge\nborum et rerum. Teffatur enim Deus, fe ucbementifimé iva. fci peccato, primim uerbis, deinde cxem plis. In priore genere teflimoniorum eft prima lex , data primo: bomini: Qu tfocun que die comederis ex bac arbore, morte movie ris. Hanc edrdem uoluntatem multo magis declarauit Deus,\nPerfolennem promuleationem legis in monte Sina,quam suo\ntpfius d 'eito scripfit, fontem omnium leeum que placet Deo, Propterea primum e feorfim bopulo Yracl eam cum fimeue. laribus Prodiciis propojuit , ucluti communiter obligantem\nQ7 Iuó05 c7 alios bomines. Ceteras leges omnes in. eodem. loca '",
+          "references": []
+        },
+        {
+          "page": 31,
+          "chapter_id": "de-providentia",
+          "text": ": 12 DE CAVSA PECCATI 7 loco lat&t, foli populo Yfracl tulit : «c per manum. Moft, non M suam, fcribi uoluit. — 1n bac igitur lege palài Deus probi.\nbut peccatum, e precepit opera peccato contraria, Et quo s magis patefieret uoluntas etus, addidit proitifslones et com-\nE minationes. Vnde apparet, quantopere placeat ei tuflicia e 1 difbliceat iniuflicia. — I De bac uoluntate Dei canes Pfal.s. i alt Tues Deus, qui non uult iuiquitatem. Atque bec uoluntas 4b Imicto font in mundo,per uocem patrumzdcinde uoce e literis Propbetarum: pojlca per miniflerium Yobannis, Chri- $i, e Apojlolorum, per quos in omnibus lityouis cLimatum\n; cst in orbe terrarum contra peccatur : e48; uox adbuc fonat\nj y predicando, canendo c fcribendo uerba Apoflolorum is\nii warijs linguis: quo minus sit ignota bec dodi rid, quod Deus non sit caufa peccatt.\nPost uerborum teftimonia,colligit Scriptura et rerum ay\ngumenta.Nam propter peccatum, Diaboli (unt damnati: pro\npter idem, etiam untuer um genus bumanum maledictum c 4 Dco manenta; in maledictione cius omnes p cceatores,qui- ;\ncinque perfeuerantim peccato. — Sed ualde infignia exem pla sunt,pocna diluuij, poena Sodomorim, Acgypttorum, Cana-\nneorum,c maxime Iudeorum. Huc perturent euerftoncs o- mmum Imperiorun, que ideo tantum puniuntur. quod sunt\nnulla, c peccato , non tuflicie seruiunt.— Nullum autent\nT ommum exemplorum magis declarat ire Dei magnitudinem\nY aduerfis peccatum,quam quod unigenitus Dei filius pro alie no peccato,tam atroci upplicio etaffectus. — Inter bec tefüi\nmonta numerandi (unt omnes ordines diuinitus infituti. Nam\npreter minijlerium Jbirituale,in Ecclefia, culus primum edt officium arguere peccata, Politicus quoque C* Oecottomicus ordo efl institutus,ut peccatum probibeatur ac faltem exter-\nna membra coerceatur, quo minus fitmalorum exemplorum\n«d corrumpendam üuucntutem, Clamant igitur omnes ordi- tie$ dile",
+          "references": []
+        },
+        {
+          "page": 32,
+          "chapter_id": "de-providentia",
+          "text": "* - M: - topo ct 7n\nY — ce par \"A DE CAVSA PECCATI 23\ntcs diuini, probantá; Deum nequaquam effe autborem pec- cati, sed etus summum ho fem:qui facit omnia ,ut peccatum tol latur de terra.\nMulta quidem comniunifci folet bumana vatio, cotra banc\nl doctrütam:sed nibil tamen afferre poteft adeo firmwm;ut eant pofiit CHerterezac nibil aliud confequ tuy nifi ut oppugiando Veram ententiant, qua laus tufticie e bonitatis integré Deo tribuitur , magis Iagisqs suam impietatem prodat : on fo-\nlum non agnofcens culpam fuat, uerüm etiam im pudentifsi-\nme defendens, cum cam transfert in Deum, quo nibil eft fan-\neHus,ncque integrius:ficuti faciebant primi parentes, à quibus\nboc ueienum pofleri bauferunt. Vir enim in mulierem sibi da tam, mulier in ferpentem à. Dco conditum, facinoris fiit cau- fam transferebat,ac neuter feipfum arguebat, Aduerfus banc\ninipictatem tenenda e$t bec sententia coftantiffime, quód pec-\ncatum nequaquam conatum cfl 4Deo,sed contra uoluntate\nC ordimationem Dei bonam aliunde introductum. Si enim\n: ucimille obiectiones afferret bumata vatio contra banc fen-\n, tentiam tamen ea manet certa et immota. Quuecung; enim d 1\nDco condita sunt, ea sunt non bona folia, uerim efiam uat- '\nde bona : ut Mo fes de creatione docct. Idem: ex definitione,\nnatura;officijs Dei, totiusque caclestis doctrine testimoniis con\nformatur, adcoque ex ipfis mentis bumane fano iudicio : cui :\npalam contradicunt Stoici, et quicung; fingunt peccatum uo\nlente et impellente Deo fiericum fingulari contumclia Det, \"\nqualem ne bomo quidem bonus ferre bofJet. Quamobrem banc manifefte im piam opinionent dctefle D.\nmur,non solum religioni, uerum etiam moribus ac discipline\ncli noxiam:ac tueamur banc uerissimam doctrinam , quód Dcus nec uelit nec probet peccatis . EfL enim bonorifica Dco: C bominibus ad pietatem , offica; bwnanitatem utilis ac nece faria. Deutque ipfa peccati natura satis oftendit , quod C on",
+          "references": []
+        },
+        {
+          "page": 33,
+          "chapter_id": "de-providentia",
+          "text": "P. I s \" V 34. DE CAVSA PECCATI. Ht T non potest effe opus Dei,cum sit borribilis deftruclio operis V diuini. Pcr boc enim ulolata est imago in bomine,per boc Le- ditur gloria Dei, per boc ordo diuinitus inflitutus confandis\n(4 tur:per boc non utuntur bomines; sed abutitur omnibus Dei\nP creaturisquas Deus condiderat ad u um,nomabufum. — His a atque id genus alijs rationibus satis confirmantur piorum ati\" NI mi,ut certo JLatuant,peccatum nequaquam à Deo ortum efte;\nRI Quod cum sit maniffLi, iam id uperest, ut uere et proprie\n\"ü catifee peccati querantur, ignote omnibus qui cotleflcm do- cirinam non cogtouerunt, TejLatur ergo cocleftis doctrina, caufam primam peccati ; effe Diabolum. Id quanquam Mojcs non aperte docet; (difsi- : mulat euim, ftcut creationem angelorum, ita e lapfum malo rum) tamé ex cjfectibus oftendit. Nifi enim ferpens prius pec\ncajJet;non effet Jecuta bomini feduclio per ferpentem.Et Cbri tus Yobannis V Y1 Y palam docet, Diabolum ex proprijs lo-\nqui,cum falfa loquitur: Ergo ipfe eft 4utbor peccati fiti quod admifit, babetque id 4 feipfo,non a Deo:estque eo nequior quód\nuná fccum magnam et precipua partem aliorum spirituum\nauertit à Deo,totumque preterea genus buntanum. — Hinc ap- parct, prima caufam effe uoluntatem Diaboli, aui libere e sua fponte detrectaut illam obedientiam,quam debebat Deo:\ntantum; odium concepit aduerfus Deum,ut omncs fuos ner-\n) uos intendat ad gloriam eius impediendam. — 1d preter Mo-\nY fen ex Chriflum testatur e Ioannes,:.1041.5. Q ti facit (in-\nE quit ) peccati, is ex diabolo est, qui peccat ab initio:boc eft,\nbic primus cft autbor et inuctor peccati, omnisque inobedicn-\ntie aduer us Deum. Quoniam ante Diaboli contumacian, nulla ommno fuit in natura,que tota erat bona,et contenics\nbonitati conditoris.\nSecundum peccatum fecutum est in ea parte angelorunt,\nque confenfit Diabolo, impellentc ad contumaciam aduer us\nDcun,",
+          "references": []
+        },
+        {
+          "page": 34,
+          "chapter_id": "de-providentia",
+          "text": "\" \" TNUTIEEN EN\nb^ UU EREEENECO. 252 2E : j DE CAVSA PECCATI 25\nVis Detttit. 1n boc peccato die caue concurreruntiimpulho Dia £- boli, et yiala uoluntas aliorum malorit Jpirituum,qui et ipft ü\nlis liberi fe auerterunt à Deo,nec uolente,nec abprobante,multo )ei nuns inpedente, Q uoda; potuerunt non peccare, id facile Hs — y — dnteliguurex bonorum angclorum exemplo, qui in officio TP suo C\" obedientia manferant, Non Igitur necc Jario peccauit C: Diabolus cum biritibus sibi adiunctis, sed libere, abufus fito ie doo contra uoluntatem Dei: qu cum delectetur officio bono - V uad\n0» Yun augelorum,nequaquam probauit Jcelus Diaboli,et alio\nrum qui facti sunt vebelles,e7 propterea de coelo precipitatt,\niH ut jint precipuum exemplum ire e udicij Dei, borribiliter\n\" trafcetitis peccato,\nlo Tertium peccatum eft bomiüiis : in quo rurfum sunt due ec cau « essicientes, Voluntas Diaboli impcllentis , et uoluntas\n*» bominis confentientis, ftcut Genef. . clave scriptum eft, Nam ,\nas ferpens bortatur mulierem, ut ue catur fructibus arboris in-\nd (erdicte 4 Deo.Hulc fcelcrato ferpentis cofilio mulier obtem- d perat uolens,atque à nemine coacta, Conflat igitur, buius pec-\n- catt caufas ünmediatas effe, uoluntatem imnpellentis Diaboli, )- C uoluntatem obfequent 6 Eue, — Hoc peccatum traxit fe-\n- cim et tllud, quod bomo non solum à Diabolo, et sua ipfius\n» praua uolitate,uerum ctiam ab bomine im pulíus, vutt ij bec\n\" cátum, cotitra orátien diuinitus ifltutun, Adam cnim non $ inmediate à Diabolo, sicut tulier:sed per mulicrent, quse or-\n^ gauum Diaboli fata crat,cft deceptus. C uam dictindlionem à\n. C Moles palm facit,e Patilus: áentque Deus tpfe,qui e uer\ns borum c7 pone tcftinitonto grautus arguit siulicrem. quam 4\n, Wirum, ta nuncad pleraque peccata concurrunt be tres caue\n* fe:wolunta; Diaboli, print anpulforis: uoluntas bominis, quee patlitr fe impelli, «c dclc&tatuy peccato , oditque uoluntatem j Det, qitáqua jcit eam c(Ie bona, Etfi uero non extenuand&\nc est ullum peccati, niet tamen IL celerati sunt qui sunt a utbo : AED res",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 0,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-libero-arbitrio",
+      "title": "DE LIBERO ARBITRIO",
+      "title_en": "On Free Will",
+      "start_page": 34,
+      "end_page": 46,
+      "pages": [
+        {
+          "page": 34,
+          "chapter_id": "de-providentia",
+          "text": "\" \" TNUTIEEN EN\nb^ UU EREEENECO. 252 2E : j DE CAVSA PECCATI 25\nVis Detttit. 1n boc peccato die caue concurreruntiimpulho Dia £- boli, et yiala uoluntas aliorum malorit Jpirituum,qui et ipft ü\nlis liberi fe auerterunt à Deo,nec uolente,nec abprobante,multo )ei nuns inpedente, Q uoda; potuerunt non peccare, id facile Hs — y — dnteliguurex bonorum angclorum exemplo, qui in officio TP suo C\" obedientia manferant, Non Igitur necc Jario peccauit C: Diabolus cum biritibus sibi adiunctis, sed libere, abufus fito ie doo contra uoluntatem Dei: qu cum delectetur officio bono - V uad\n0» Yun augelorum,nequaquam probauit Jcelus Diaboli,et alio\nrum qui facti sunt vebelles,e7 propterea de coelo precipitatt,\niH ut jint precipuum exemplum ire e udicij Dei, borribiliter\n\" trafcetitis peccato,\nlo Tertium peccatum eft bomiüiis : in quo rurfum sunt due ec cau « essicientes, Voluntas Diaboli impcllentis , et uoluntas\n*» bominis confentientis, ftcut Genef. . clave scriptum eft, Nam ,\nas ferpens bortatur mulierem, ut ue catur fructibus arboris in-\nd (erdicte 4 Deo.Hulc fcelcrato ferpentis cofilio mulier obtem- d perat uolens,atque à nemine coacta, Conflat igitur, buius pec-\n- catt caufas ünmediatas effe, uoluntatem imnpellentis Diaboli, )- C uoluntatem obfequent 6 Eue, — Hoc peccatum traxit fe-\n- cim et tllud, quod bomo non solum à Diabolo, et sua ipfius\n» praua uolitate,uerum ctiam ab bomine im pulíus, vutt ij bec\n\" cátum, cotitra orátien diuinitus ifltutun, Adam cnim non $ inmediate à Diabolo, sicut tulier:sed per mulicrent, quse or-\n^ gauum Diaboli fata crat,cft deceptus. C uam dictindlionem à\n. C Moles palm facit,e Patilus: áentque Deus tpfe,qui e uer\ns borum c7 pone tcftinitonto grautus arguit siulicrem. quam 4\n, Wirum, ta nuncad pleraque peccata concurrunt be tres caue\n* fe:wolunta; Diaboli, print anpulforis: uoluntas bominis, quee patlitr fe impelli, «c dclc&tatuy peccato , oditque uoluntatem j Det, qitáqua jcit eam c(Ie bona, Etfi uero non extenuand&\nc est ullum peccati, niet tamen IL celerati sunt qui sunt a utbo : AED res",
+          "references": []
+        },
+        {
+          "page": 35,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "d j/ 36 DE CAVSA PECCATI\n/ resume ut Diabolus,et bomo,non solum per fe malus, ue-\nD rum etiam alios trabes fecum in candem fraudem.Propterea inquit Chriftus: V«e illi per quem candalum uenit. Et preci-\nT pit,ie Diabolo uel bomini «d peccandum iimpellenti ob equa\nmur, quum iubet oculos eru, manus aut pedes amputart, po-\nY Eus quam confentire talium miembrorun offen ftoii, E Hactenus ftmplex et minime perplexa doctrina tradita eat aba c ci de caufa peccati. Nunc supere t ut quedam obiectiones di met luantur,ad ueram sentétiam magis confirmandá. Ac primum. ufitatum eft admodà obijcere illud ex biftoria de Pbaraonejin\n1 qua Deus ad Mofen ait:Idurabo cov Pharaonis,nc populum / dimittat. Inde enim sequi putant , Pharaonem inuitum füiffe — ) talem,et pertinaciam ctus fuiffe 4Deo. Sed recta et gram-\nP náatica interpretatio uerborum , iuxta Hebraicam con uetu-\ndinent.facile oflendit malam ftrui confequentiam. Verbum e-\nnim Wdurvandt in boc loco significat non actionem cfficacent,\nsed permiffionem. ut sit sententia:Sinam enim prov is indura- vi, quando ita uult.sicut Pfalmo 109 fertptum eft: Benedictio-\nnen noluit,et recefcit ab co : maledictionem uoluit,et induit\nedm ueluti ueftimétum. Quum enim perfcuerat bomo in per-\ntinacia sua , e ex propofito feoffirmat , ne audiat uerbum. — Dci, sed ut per equatur illud quantum potcJt, permittit Deus\nut indure cat,e maturus fiat ad poenam. Va quum orant fan-\n&i, Neinducas nos in tentationem : non tribuunt bate acfio- i nem Deo, que propria Diaboli est (cest ciim tentatio. quim\nDiabolus conatur fiue per triftem , fiue per letam fortunam\nyctraberc sanctos in suam pote tatem) sed orant ne pater coc- leis tantam Diabolo potestaten concedat , ut cos penitus c-\nuertat. sicut Cbriflus orans pro Petro, repreftit Diabolum,ne\nPetrum eque ac Wdam, in suam poteftatem vetraberet. Hac\ninterpretatione passim opus est imtota Scriptura , ut in illo\nEfaia cap.ó. Excecatum cor populi buluicyc Nam exceca- ig",
+          "references": [
+            {
+              "start": 1074,
+              "end": 1085,
+              "text": "Pfalmo 109",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 36,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "LM oo ÁÉEÉ\nDE CAVSA. PECCATI. 37\nue- . tiocordium ejE proprium opus Diaboli , sicut teftatur parae :\nyos bola de emute. EJL igitur sententia : Si 1145 CXcé&cavt coy buius - popult.quia no uult utdereucl ut Chriftus ait Iohannis zu T amat lucem. ergo manet tit tenebris. Pfalmo 28 mquit Dauid:\nyat Ne dbripi4s me unà cum ümpijs , eg'c. boc est , ne concedas\nut abripiar. lid Ej; ton tenter factum , ut Scriptura sic loquatur. Vult \" enim nos pendere tantum ex Deo , in rebus tum secund is tum\nnl dduerjis:et cogitare null 4m cjJc poteftatem Diaboli e» alto- :\nus YuM oftium, quant Deus no pojsit impedire, Yn pedit utet,\n; \" quum eus auxilium um ploramus , C9 ex pecfamus luxta pro»\niffe nijstonem : Wuoca me ix dic tribulationis , et eriptan te. Yd. A quum ipij damnantur , quanquam boc fitoperate Diabolo, qut c E autbor damnationis et mortis : tamen in ignominiam LE\nm^ Diaboli ingularem fatemur damnationem impiorum à. iu lo ) J^ Det iudicio pro fectam e fe,ut ftue seruantur bi NIIT. danitan- ái tur ümpij, ex utrifa: Deus babeat suam gloriam, mifericordie\nd w jeruatis pijs, co iuJle ire m damnatis impijs, qui sunt uafa\n\"it we iuxta illud Salomonis: Deus facit omnia propter feipfunt, zs ettam impium ad diem malum:boc efL,ad poenam. Neque enim\ni bonorificunt e Jet Deo,fi e set uifericors exga.illas qui uuferi-\nuL cordiam cius pedibus uis conculcant. Horum poena inchoa- Ws tu ab illa duratione uel cecitate,de qua sit mentio un bijlo-\nT via Pharaonis. Hanc nibil est opus metuere,bis qui feduló au-\nvm fcultant uerbo Dei, toto pe&torc orantes ut magis magisque il- )\nUE Iuminentur.ut sint wa fa mifericordie,ut regnet i corum cor-\n: dibus Spiritus fanLus , ut sint aptiad faciendam woluntatent n Det.Sed exempla Pharaonis e milium propofita (unt,par-\nA UT. ad terrendos impios , ut refipifcant : partim ad confolan- bi dos pios, ut Jciant , non concedi tyrannis infinitam licenttam à graJJ.a ldi:e ofdenqs commonefaciendos,quo minus inu geát n carin t neelizendo uerbo Del,quum per boc arguutitur. INo\nÉ Co solum\nig g^",
+          "references": [
+            {
+              "start": 270,
+              "end": 280,
+              "text": "Pfalmo 28",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 37,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "Mi 33 — DE CAVSA PECCATI.\n\"n solum enimiapij et manifefti bofles Accu antur pev tterbum\nn Det,uerum etiam pij. sicut arguebatur Petrus Mattb. tc , dif-\nA fusdes Domit ne patereturzitem fil J Zeoedei,quum regna-\n(4 rc uellent.Sed pajsint multa excHtp lá oc CHY Yn,\nE Obücitur et illud quod Deus determinat contureentia: ergo acterminautt et peccatum.Sed sciendi cft.im gcis difcrt2\nAl mei cj c Witer ea que u ult Deus,et ea qu nol t ult. Preuidet\ndi delicta Saulis, decr aliorum : sed n eqs tmpellit uoluttaten\nI Corm, neque uult ut peccent. Permit autent,quia aliter facee lC ont, et pae tempus decere Hüic neg aquam fegut-\n) tur,quod bomines nece Jario peccent,aut quod mutetur in uo\nluntate bomüiis liber motus a geil. Neque plus firmi est in eo quoa atunt,atuyanm diuinitus sit.\n\"Nu fientavt. Neque entm tdeo ttoluntas peccantium non e : caufa\nfuarum actiontri. Efe enin libertas donum crei Otis, CC Lnt-\npedttur per füflentationé diuinam. Sicut pater alit et patitur\nfium illiberalent, quem propter ünpietateni minus diliettz nea; amen cft caufa illorum beccatorunt Ge Riu admittit.\nSed precipue gloriantur Stoici Theologi boc argumento,\nquod ab ordine caufavum fumitur:\nSecunda caja tton agit sine prima;\nVolintas Eug peccantis früt caufa secunda fui peccati: Eroo c7 prume Cau Íe &tcho accejsit.\n$ becto fa utdctur bec ratto: sed vudtores fcire d cbent,nibil\nY. &deó fplendide obijci poffe, ut sit concedendum propter ab-\ni furda que binc fequuntur:qucd uidelicet Deus sit z uthoz pec\ncatt, quod sit iniuftts in puriendo peccato , quod sit tyrannus\nqui delectetur periicic fuarum creaturarum : quod denique frustra ntocetur, H.ec borrenda fcelera fequuntur conce Jo\nargumento:ergo nullo modo est admittendum, c» opponcne\nda manifcJia teflimonia ex uerbo Dei, quód Deus non dcledte-\nfur peccato Q2\" morte. — Hac rejbonj 10 cst grajsissima, c7 ta-",
+          "references": []
+        },
+        {
+          "page": 38,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "DE CÁVSAÁA PECCATI 29 um hten nece Teri im beritioribus, ut captiofo argumento, quod if- ex bumana Unaginatione inuentum eft,opponant autborita- ld tem contrariam ex eo uerbo quod de coelo traditum cjJe con- ftat;cut certe debet omnis bumana sapientia merito cocederc. 14: Freter banc fo utionem per instantia, alij qui sunt erudi-\nri^ LOYCS e? banc meminerint,quod Deus non ejt alligatus cred\nlet tris uel caufis secundis,cum Jtt agens liberrimi:nec ita con- \"n diderit creaturas, ut ftt üllis fubtectus, sed ut omnes creature\n5 sint in eius pote Tate, sicut merctur dignitas opificis. Atque\nTA banc sententiam multis exemplis confirmat scriptura Prophe\nHo tarum e AhoJtolorum. Wnpediuit enim Deus plus quám.tri- ennio pluuiam in terra 1frael, c fubito dedit imbrem largif-\n2. fimum. Nec diluuium pepererunt secunde caufa, nec incen- (fa dium Sodomiticum, nec diufionem maris rubri et Yordanis,\n^ ncc aquam ex petra, nec panem de coclo:nec Save , Rebecce,\n;y Rachel, Anne, duse Santuelis frat, nec Blizabetb, nec Marie i partum. Hec enim omnta non modo finc adminiculo fecun»\n7 darum caufarum, uerum etiam contra illarum ordinem fecit\n0, Deus. Deni; multa quotidie sunt fingulari opere Dei, ubi fe cundarum caufarum pr«fidia dcficiunt.Sic enim secunde cau /\nf« uoluntarié agunt multa, non accedente diuina actione : ut cum inordinate agunt bomines, etiamfi Interea à Dco ful len-\n(antur, ^il Ex hoc fonte re bondendum eft admaiorem argumenti:\nb. Secunda caufa non agit füfe prima , fcilicet fuftrentante , non )\nEs semper adiuuante, Neque enin adiuuat prima caufa effectui,\n2 quem non probat : sed caufa eius efl tantum uoluntas auertes\nie f € 4 Deo, tcut uoluntas Eus fecit cofentiens uoluntati ferpen- \" o HS, Nec nimium eft indulgendum bumana curiofitati, qua 1-\n- oL Ipfis laqueos ne&tunt inexblicabiles, quicunque modutt ex« t- ceat m t bis difbutationibus, neque contenti sunt diuinis tefli-\nr- moni J5.9tcut enim cyeatio Ibf4, sic e füftentatio nature pl en4\njj C ow C;L :",
+          "references": []
+        },
+        {
+          "page": 39,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "n 4.0 DE LIBERO ARBITRIO, / cft admirationis, neque in bac uita intelligi omnino potcst, Mul\nr tum uero buic difbutationi lucis accedet ex doctrina de libe- ) ro arbitrio,qui locus buic proxime fubiungitur,\n1 DE LIBERO ARBITRIO.\nri M Jemper certamina füerunt in Ecclefia de libero i j axbitrio, precipue uero sententize sunttres. Prime c E Stoico Yit qui cum tollunt conttgentiam, culus caufa sunt\ni due ;,bertas in Deo,et libertas in bominis uoli tate. simul e- j tiam negant liberum arbitri, Nec mirum est, fi cum maximo\ndifcrimine discipline detrabunt bominibus omnem libertaté: :\ncum etiam Deum ipfum uinculis (uis, quantum m ipfis eft,co\n: nentur alligave secundis caufis. Secunda opinio eft illorum, 107 qii nimium tribuunt uiribus bumanis, quarum precipua c& potentta uudicatis, que ucl Metts uel Ratto uel Intellectus no- j munatuy. Secundum locum obtinet Voluntas, que uel eligit, uel reijcit lla que 4 vatione decreta sunt. Sub bac sunt appe- titiones fiue affectus que aliás congruut cum uoluntate, alis non congruunt, Ynfuna potentia eb motus exteriorum mem- brorum,uel totius corporis, Hie due opiniones meritó rcij-\ncituntur, cum ambze sint falfe ex abfurde. — \"Tertia sententia\neft uera, que media e L, ncque prorfus tolleis libertatem,neque\nnimium tribuens uiribus bumatnis:4c docet, quid nam reliquie L man ferit in natura bominis pofl lapfum;, et borribilem cor-\nY ruptionem que fequuta eft. 1d enifh fcire permultum untere E, N ad omnia officia tum ciuilia, tum piritualia, c intelligenda\net recte admüni lranda. ESL autem Liberum arbitrium,facultas quedam uolunta-\ntis in probandis uel improbandis 1s que monjlrantur im do- rina. Cumque disputatur de libero arbitrio, non boc queri\" 1 tuy utri nece Jario an contingenter fiant omnia:sed,an poJsit bono suis proprijs uiribus fatisfacere legi Det. Cumque ad banc",
+          "references": []
+        },
+        {
+          "page": 40,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "enm x DE LIBERO ARBITRIO. A4\n7, hanc queflionem negatiue refbonfum e&t , quia propter pec- - catum , quod naturaliter adberet bomini ex propagatione, tam prorfus impo sibilis ct impletio Lcg15, que Deum fupra om, C7 broximun eque 4c nos ipfos uult diligt: QUY, quatenius possit bomo legem Dei facere? 0 ^ Adbanc queftionem re bondetur,quod reliqua Jtt facultas à. ut uoluntate bominis ad eligenda ucl reijcienda externa c7 ci\njt Villa opera, que i iege precepta uel probibita sunt.Poteft i-\n- gitur bomo (uis uiribus, ctiam finc renouatione nature, ali-\nQ quo modo externa et cilia o bera lceis facere, (tque €2' Pat-\n: lus docet, ab bypocritis poffe boc eenus operum prejTari, fi-\nQ cut Cz ipfe prefliterat ante conuerfionem. Quod ini effet, fria 4\nz ftra omnino breciperetur disciplina it omni focietatc. Iniu-\np. ) fte ctiam essent poene dome tice, cholaflice, politice et di» 1\n3 We cum olatores externe disciplina puniuntur. — Sedin ;\n, bac ipfa disciplina preflanda, magna cs difficultas, propter :\nx duas potissimtum cati as:quarum una eft, nostra ipforum im- (s becillitas,nobifcum nata, fi pre ertim cducatio doctrine ex\n* ajjucfattio bonefla non &ccejstt. altera eft Diabol I5 dui ma- 1\n» torem babet poteflatem in cos qui nondum inferti sunt regno\n4 Chrifli. Propterea Jepe rukt bomines in maxima flagitia con Ij\nc tra suam 'pforum rationem , ut canant illud Medce carmen: 1\n\" Vidco meliora, proboque, Deteriora fequor. — Sed ta-\ns neninter becmagna impedimenta uperest aliquis dele us 1 dCtlonum,, ut atio dijceriat bonefla c7 turpia, c7 uoluntas , ex bis meliora eligere pofiit , menbraque exteriora co gere ad 1 €a perficienda. C) uod eo facilius procedit, fi natura non pror :\n: fus eft diflorta et monftro fa, ttec per indulgentiam, prauas fo : cietates e confuetudinem uitiofam deprauata. vt facilius ob-\n2 1 temperat Yátiott Scipio,cum ab linet ab. aliena fbonfa, pro— :\nt perea quód. natura erat procliuis ad ca titatem c2 conti 1 nenfbam:quam Canib »yfes,qui cum sua ipfius forore incetum ll\nC por Collie : i",
+          "references": []
+        },
+        {
+          "page": 41,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "OO WONIRDUUT COO À (C A EE REP E a y) 42 DE LIBERO AÁRBITRIO.\n/ conmifit: quia nec natura erat bona, co praua confuetudine\nM magis erat corrupta,et pror us perdita. Hec diligenter cogi\nÜ t41da suntut amemus disciplinam,c7 patiamur nos inde ufque\ni i ab ineunte etate recte a Jüefieri, ey uitia odiffe in tempore dt\nm fcanus. 4 Quod ad hunc gradum libertatis bumane attinet,commu nis cL omnibus tum pijs, tum ünpijs qut Junt extra Ecclefiam,\nE e tamen bonc Le uite fhudio afficiutur. Ac nift prefletur.fe-\nÓ ussimse tempe Lates oriuntur in ünperijs, atoqui tranquillis, dum incolumis eft legitima disciplina. Sed in Ecclefta Dei do-\n: cetur de perfectiore quadam wufüicia, que fcribarum quoque et Pharifeorum feuerissimam disciplinam longe antecellat.\nl Offendit enim cocle Lis doctrina, tantam obedientiam in lege Dei requiri, ut omnium uirium integritatem poJtulet, tan- tamqs puritatem quanta efLin angelis. Hec perfecta obedien\ni tia pror us non eft in facultate uirium bumanarum. Neque c- nim poteft natura bominis per Je intelligere faltem mentis ca\nf. liginem de rebus diuinis, nedum abijcere. — Preterea in uo- untate et corde sunt magni impetus cotra legem Dei. In boc\nj theatro cum uer amur tunc extenuanda precipue eJE libertas\nuoluntatis. Neque enim ullam babet facultatem. per fe tollendi\npeccatum et mortem, et satis aciendi legi diuine, ut diligat Deum ex onnibus suis uiribus, ac proximum ut feipfum.\n4 Quod fi qui arbitrantur in potestate bominum effe, ij pal.tnt\nI in faniunt,totumq, Euangeltum de filio Dei naturam bumana\nintaurante Writum faciunt. Tertio queritur de actionib. piritualibus, que sunt pro-\nprie renatorum bominum. In bis etft oportet conatum et di\nligentiam bumanam accedere,tamen banc ipfam diligentiam. € excitat et 4uget fbiritus sanctus in alijs cum malore,in a- ijs cum munore Impetu. Quare eo Coristus bia; precipit\nEcclefie fue,ut petat Spiritum ancti:et promittit eum uere\nWnuocati-",
+          "references": []
+        },
+        {
+          "page": 42,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "* zi\nDE LIBERO ARBITRIO. 4.3 Wuocantibus.ut cum ait : Si uos ves bonas datis filiis uestris,\nquanto mapis pater. cceleJtis dabit uobis spiritum fan&lut, t petetis? Rom.s. inquit Paulus : Qui spiritu Dei reguntur, ij\nsunt hij Det. boc c t, pol unt facere opera Jpirü ualta, que\nplacét Deo. Ac propterca semper clamat Ecclefia, Aducniat\nreonum tutmboc e 2, da nobis fbiritum ( anctum,qut per mi- nijferium Euangelii et facramentorum in nobis acccndat no uam lucere impellat uoluntatem cum alijs uiribus,ut obe- MH\nditt. Et Pfalm.si Cor mundum crea in me Deus, c piritwum sanctum tuum ne auferas à me,— Quid uerbis opus eft? Ad banc uitam foiritualem pertinet maxime illud dicium Cbrifü:\nSine me nibil poteflis facere. Propterea Paulus suis uiribus\ndetrabens ea que gefstt, trausfert cas in gratiam Det, qui cj- 1\nfundit spiritunt kunt in corda credentium, qui uocant cum abfque dubitatione, Q uod tunc sit, quando omnc fludium no- ^\nJtrum collocamus in uerbum Euangclij,per quod solum ope- ratur Spiritus sanctus in. animis nouos motus legi diuine conjentancos,\nlag; trescaufe ad actiones bpirituales feu Cbriflianas com»\ncurrunt ; Vox Euangelij incorrupta, una cum facramentiss, j/\nsuis: quod beneficium orant anti in uerbis, Sanciificetur no^. nentuum. — Spiritus (ancius essicax per boc ministerium à\nChrifto institutum: quera petunt sancti sibi donari, cum orát, Aüueintat egnumtuum. —O Etuoluntas non repugnans, sed at\ntenta c7 Jiudiofa:sicut primus Pfalmus docet. Hanc orant fan Ü\ncisut sibi contingat à patre coelefliin tevtio membro: Fiat uo\nluntas tua ftcut in coelo, sic etiam in terra, o ptát enim à Dco ;\nardenter sibi woluntateri donari in obedientia Dco pre lan\nda, ut fiant pares an gelis in cero. Cum ergo talem uoluntate\npetant sancti sibi donari , fatentur. diuinitus cam excitari. 4\nquanqua ueru efb, non omnino nibil agere uoluntatée,cum pt\nvii ando inouenti 19 repugnat; sed ei fe foruvanda prebct. li De his .",
+          "references": []
+        },
+        {
+          "page": 43,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "/ 44 — DE LIBERO ARBITRIO.\ny De his vebus hultissime iudicant ociofi c inexercitati ba-\nD mies, ut alij nimium ejferant uoluntatis facultatem : alij\nJ sentiant eaim mbil omnino agereyatque ideo nibil conantur. Ab\nutroque boc genere bominum nos dijJentire oportet, atque intel\ndy ligere, quod magnum sit difcrimen itcr naturam bumanant\nj c? alias naturas, uel brutas uel inanintatas, N eq. enim bomi-\nl nes sunt lapidum similes, quibusnulla eft caufa interior cius\n\" notus quo trabuntur. Nec debent effe similes brutis, ut nibil\nn\" proríus afficiantur doctrina. sicut P 4l.32. scriptum c8: No- lite feri ftcut equus e* mulus, in quibus non. eft intellectus,\nWu Hocmodo affecti sunt. Diaboli, ut ob Linaté sint mali. — Sed bomines debent fe accommodare doctrine, et* uolentes trabi,\nPropterea Deus instituit minlerium doctrine, per quod uo-\nPI cantur ad obedientian, ftcut conuiue inuitantur ad conuiuia. Attento igitur animo cognofcenda efl uocatio, cui autbori- atc HWOCAIlLIS, e\" caulis propter quas wocamur. Aut enim agt\ntuy de ulta,aut de morte eterna.Sic per uerbum impulfe uo- luntates non abborrentes à doctrina,magis demde accendun-\ntuy 4 Spiritu sancto, fi praefertim accedunt assidua. exercitia,\n€2' iuocatto non frigida:iuxta promijstonenm, Habenti dabi - tur, — Denique cire debemus,audiendam e Je uocem coclefles, Hunc 4udite:ià quod nequaquam ejt ceJJantis animi officium.\nNeque tamen pars aliqua no lris conatibus, pars uero diuinis actionibus tribuend.t e l : sed intcera gloria Dco pre Landa,\nY cum summa modejLia et bumilitate,ne quid nobis 4rro geimus.\n: Hec ucra e? rect effe , omnes pij in ufu ipfo animaduertunt.\nObtemperandum cjl enim uocanti Deo luxta mandatum: et\ntamen ex gratia eius fola pendendum, ut integer bonos tri-\nbuatur DeoUixta primum breccptum.\nE/L etian prudentia puedan nece Jarta Chrifli t5, t di» &is scriptur.e iudtcandis, que de electione uoluntatis loquat\nturco que doceant de Juccessibus bumanara actionum. Mul-\nta cnim",
+          "references": []
+        },
+        {
+          "page": 44,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "—aá A^ ue duin 1 — —M To\nY - xx € 7 DE LIBERO ARBITRIO. 45\n(4 enim eueniunt in ulta non solum impijs, uerüm ctiam fan- j &is,que mter deliberandum non profbexerunt:ut admoncan tur, ne uis confilijs,ctiam optimis, confidant: ed agant,quod\nim prefentia poflulat mandatum Dei, et euentum committat Dco sed tamen cum inuocáttonesut sit fortunatus. Huc per- titiet diclum Hieremie 1o. Scio Domine ; quod non eft bomi-\nnisWiacius erc. — Acmultifi ab initio profbicerent fuarum\nfunctionum labores c7 pericula;per defberationem abijccret\nofficia;potius quàm fufciperent : quod quidem multi ex falfo\nduntaxat timore faciunt. Baptifla Inquit : Nemo potet sibi\nfumere quidquam;nifi de ccelo datum.boc eft, nullius uocatio '\nfuccedit, que non e&t à Dco , largiente fucceffum et auxilia.\nHac eandem doctriná tradit Pfalmus 127, Nifi Dominus;ezc, Vigtlare enim e edificare sunt opera uoluntatis bumane, ?\nsed tamen fufcipienda ex mandato Dci. Vt autem edificatio\ne uigilantia sit fortunata, boc in Dei auxilio C7 actione fim 3\ngulari eft fitum. Ypfe, fi uellet;etiam abfas nofira opera posset essicere omnia:nos ueró,illo non Ittantesnibil poffumusynifi \"\ncorrumpere fi quid e$ boni,\nNeque uero bec doctrina tollit liberam electionem wolutita\nt5 in actionibus fufcipiendis. Sic iudicandi e$ de uerbis Pau. 0\nli: Non eff uolentis,neque currentis, sed mifcrentis Drei. Nea: c-\nnim nibil effe dicit uelle e curreve.sed uolütatem et curfum\nnoftrum mon effe caufant,ut fequatur euentus: prefertim ille \"\neximius, qui cfe uita eterna. Vica enim caufa efl, mifericor- í\ndia Del, que etiam in moucnda nostra uoluntate cft essicax «d salutem, fi nonvepugnet. — Hec doctrina duobus uitis /\"\nmedetur: primum ignauie,ctui plerique nimium indulgét, cum Ü\nplus lufto extehuatur facultas humane uoluntatis : dcinde i^\nnani fiducig, ne quid nobis arrogemus, sed bumili attimo fbc-\nCECHIUS atxilituyg Det, C7 petamus errores noftros corrigi e\nfanari, sicut eyroy Yona mirabiliter corrcétus c$t. Denique ut /\ncueitas",
+          "references": []
+        },
+        {
+          "page": 45,
+          "chapter_id": "de-libero-arbitrio",
+          "text": "\"P n 46 — DE LIBERO ARBITRIO. JA cucntus noftri gubernentur ad noftram aliorum qs salutent,\nr in primis uero ad gloriam Dei.\n( Qut ucro libero arbitrio nimium tribuunt, ij folent di-\ncwn Ecclefiaflici urgere : Deu reliquit botninem in manu\nE confilij fui , uL eligat bonum ucl malum. Hoc de Integra na- tura recte dictum effet. Habuit enim bomo donum libertatis\nY eximum:sed in bac imbecillitate natur cx maximis d ificul\n» tatibus, res ip a cogit banc Jententim ita accipi , ut tantüm ac externa disciplina intelligatur, in qua plus ualent buma- tna Jiudia,prefertim fi iuuentur à natura, doctrina eufu:aut\nft ad biritualem uitam accommodctur idem aum, senten-\nÀ (a crit , quod bomo pofiit fe auertere à Dco. Nam ad boc maxime procltuis e£ natura. Si tamen non alicia bror us eft\n731 d cogno cendo uerbo Dei,iutatuy à Spiritu faticto, cutus au\nxilio ftt magis libera;non foliau ia Cxterniz, uevum etiam pi\nL vitalibus actionibus essiciendis, Trabit enim Cz allicit Deus bomines per uerbum suum et: conue Jioncm, et in obfequen\ntibus cst essicax ad eos illuminandos et utficandos. Nant per uerbum veuclatum de ira et gratia sua , quaft eligendi\npote Latem permittit bominibus, ut alterum borum eligant:\ntit ucl agentes poenitentiam recipiantur in grattam , uel ma-\nneanb mira, Sed nibil aliud e& in bominum pote late, nift ut\nfc applicent uerbo Dei. Cetera omnia sunt opera Dei,;atque\n«deo ipfun uelle,sed tamen non coactum.O pus cst enim no- ftro studio, quanquam neceffe est boc ipfum excitari et ac\nE ccidt per uerbum Dei et assiduam (iuocationent, ftcut Pau-\n: us ait: Deus qui dedit ut uclitis,dabit etiam ut perficiatis.\nCitatur et dictum Hieronymi : Qui dicit iegem impofji.\nbilia preciperc,ftt atatbewa, Sed boc ipfemet int erbreta- (ur , quum inquit, Leocyi pofTe prajtari per gratiam, allu-\ndens ad uerba Pauli Rom. 5, 1 cgem stabilimus per fidem. Yd\nquod primum sit per in pulattonem,quia credétibusin Cbrie",
+          "references": [
+            {
+              "start": 1645,
+              "end": 1654,
+              "text": "Hieronymi",
+              "type": "patristic",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1821,
+              "end": 1830,
+              "text": "Rom. 5, 1",
+              "type": "biblical",
+              "confidence": 0.85,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            }
+          ]
+        },
+        {
+          "page": 46,
+          "chapter_id": "de-libero-arbitrio",
+          "text": ": j m A€ Me\nDE LIBERO ARBITRIO 4»\nSum non (nputatur peccatum, cd iuflicia Chrifli perft cta. Deinde pcy Spiritum fancium adiuti , oicipiunt ex animo obedtre Legi, c» crefcere m bac obedientia, ufque ad perfc- éioncm que cyit iy tita futura. Ef igitur utrunq: uerum,\nquod Lex e impossibilis , et quod cft pojsibilis, Ncque erinm potest fieri lex ab bac natura corrtpta , quod ad integram '\nomnium uirium obedientiam attinet: sed in ijs qui babent Spt\nritum fanétum , mens noua luce illutvatuy C uoluntas ac-\ncenditur, ut maiore impetu fludeat obcdiye Lcgi diuine,nor\nsolum in externa disciplina , uerum etiam in interioribus ui- 1/5 coercendis,et pre landis officiis fbiritualibus. \"\nHec feve sufficiunt ad iudicandum rctté de bac queftio- à\nne,quantum sit libertati bumane tribuendum fiquidem ufius\nbuius doctrine accedit:fie quo aamodum incptt sunt bomi. 1\nncs ctm ad alia omnia, tum «d int elligendam banc de libero\narbitrio difbutationem , ex qua fecuri et ociofi bomines ex- plicare fe nullo modo po j nt. Exercitati uerà cxperiuntuy \"\n\"c ipfa, opus cfJe omnino non mediocri fludio «c diligentia, etiam in alijs ebus multo leuioribus cám in bac omnium '\nlonge maxina,que pertinet ad gloriam Dct,et obedientiam\npreflandam. ld cnim fcrió precipit Deus , ut omnibus alijs 1\nYebus relictis , cumbamws uerbo clus, C7 inocationi nns quam cejJanti : e tamen nibil agayius fiducia noflre sapien.. ti ac diligcntiefed auxilium diuinitüs ex gratia promiffum\ncxpectemus.Hoc ft sit;tum demum intelligents Jiudia ezco-\nnatus noftros omnino cffe nccefTarios, c05que ron mediocres: »\nsed tamen omnia foli gratie et auxilio Dei accepta ferenda Lu.\nefje. \"runc enim Jiudia noflra sunt fortunata, auum diuinitus Clair neg; quidquam noftris utrib Wi guantumuls afia.\n: Aul. fupitus, Jcà omnia diuine eati ezatxilio tribui-. 1\nnus:sicut in omnium Janctorum excnt- jJ\nplis uidere licet,\n\" DE Wu",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 3,
+        "patristic": 1,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-peccato",
+      "title": "DE PECCATO",
+      "title_en": "On Sin",
+      "start_page": 47,
+      "end_page": 56,
+      "pages": [
+        {
+          "page": 47,
+          "chapter_id": "de-peccato",
+          "text": "Gi \"du DE PECCATO. n ed det Ek S T et bec propria sapientia Ecclefie Dei, de colo «c-\n^ , cepta, cum per alios tefles diuinitus milJos , tuya. uero T maxime per filium Det, ut fola iitelligat wm e magnitudi- 1 nem peccati, et propter boc etiam. quanta sit grauitas ive\nj 3 Dei. Multa sunt uolunina Pbilofopborum, et aliorum de ui-\nn tijs , que pugnant cum ulrtute Cz\" recta ratione : sed tanttm\nexterna quedam factae paucas cupiditates pugnantes cum\ndoctrina de moribus animaduertunt, precipuos autem mor-\nà bos e» caufas corum mequaquam intelligunt. Vtautem ordtamur à uocabuli proprietate,Peccatit prin- cipaliter significat reatum , feu quiddam reum. coram Deo,\na1 c7 afferens damnationem eternam;nifi ex gratia remittatur.\nI Hec uocabuli defcriptio conuenit utrique peccatosoriginali et actuali. Et quanquam non sufficit ad naturam eius intelligen\ndan, tamen obfcure monet de lege, qua reuelatur peccatum: c de Euangelio, per quod annunctatur remifiio omnibus\nqui boc uerbum integre c7 ferio amplectuntur. Extant au- tem uarie definitiones peccati , ex quibus tamen bec eft com.\nmodi fima:quod peccatum eft defectus in natura bomihis , uel\ninclinatio ucl actio pugnans cum lege Dei,qui offenfus evaui- er irafcitur et damnat autbores in eternunt, nift babeant ve\na di missio nem ex gratia. Cum appellatur defectus uel inclinatio\nN ntala,de peccato originis efE cogitandum , Actio uero pugnas\ncum lege Det, comprebenáit omncs notius e actiones gue Deo difplicent, tum interiores tut. exteriores, Vi ia; autent\ncommune est, quod puetiat cum lege Det. Preciputm autem\nin definitione cfl; quód per quodlibet peccatum ita offenditur\nDeus , ut pronunciet bomines dignos e Je morte eterna : id\nquod bumana ratio non agnofcit, atque adco plena eft caligi-\nnis,ut ca putet c Je optima;que coram Dco sunt pessima. —\nCorr :",
+          "references": []
+        },
+        {
+          "page": 48,
+          "chapter_id": "de-peccato",
+          "text": "T— i : \"us DB.PECCATO, 40 Li Congruit autem definitio peccati ad sententiam legis: Ma\nledictus omnis, quicunque non permanferit in omnibus que scripta sunt in libro legis, Hinc enim cquitur, péccatum effe inobedtentian eyga legem Dei,maledictam à Deo,(ic ut crca Eram pe «cato corruptam abijciat in poenas borvibiles atque ceteris: d quibus non po Junt bomines liberari, quod attinet dd legem, aue per banc tri lissimam sententiam omnibus bo- ii\nmunibus qui ab Adam naturali ordine propagati sunt, claudit J omnem aditum ad salutem, Primim enim requirit perfectissis mam obedientiam omnium Iiümsexteriorum ey interioriti\nque, ut in proximo loco diclum eL, in bac natura, que nma- gra uu rapitur contra legem Dei, sicut Paulus de sua quoque \"\nlatura conqueritur,omnino eft impofüibilis. Deinde ut maxi mc haberet bomo facultatem pre lande legis, tamen adbuc 1\ne Jet in. periculo , utrum perpetuó manere posset in bac obe- n\"\natenta perfecta, sic ut nunquam ünptigat in legem. Quam- primum enum ui minima faltem parte uiolaret legem;ilico fie FCEYeus maledictionis: sicut banc ipfam sententiam exponens Deus in Exechiele cap.a 9:S5,inquit, tufLus declinaucrit 4 ifti LL\neld sua, non amplius recordabor ultus, sed iuxta Wiufticiant\nquam operatur,iudicabo eua. \"\nReuclatur autem peccatum dupliciter. Primim per do&yi j\nnam celestem, que nequaquam leuiter arguit peccatum:ne- 4\nque est contenta poetis, quas bomines ab bominibus fumere\npojJumt, quantumuis atroces : multo minus probat ridiculas\nfatisfactiones,quas bomines superjüitiofi communifcuntur, c 1\nfomniant Deum idem Jentire quod ipfi sentiunt : sed minatur Wu\npreter poenas bumanas,etiam diuinas, priuatas e publicas, corporales eo* eternas, — Secundo Yeuelatur peccatum, e 1\npropter boc ira Dei, per calamitates maximas im genere bu- i\nWanosque sunt indicia eternorum quoque malorum in obflina\nH5,qui per corporales afflictiones in uiam reuocari non pof il\n: d — f unt.",
+          "references": []
+        },
+        {
+          "page": 49,
+          "chapter_id": "de-peccato",
+          "text": "E FA 5o DB: PECCATO.\n/ fuit, Sed ab externis poenis liberantur, quicunque , ut dextey\nul latro,agnofcunt fe merito plecti propter suum peccatum , et Y gratiam implorant.\nJd Est autein duplex peccatum : aliud originis,alind actuale.\nm Jllud ejt fons et caufa omnium malarum actionum ,be uero 1 L ex illo fequuntur. Varie autem sunt paffim definitiones pec-\ni 3 cati origuiis,pro pterca quod minus eji conbiciumt quá d-\nj f clualc. Sed ex dcfinitione generali, que ex partibus fumpta\ni feit, aliquo modo potest buius quoque beciei defcriptio inue» nirt:ut dicamus, Peccatum originis efJe priuationem iufticise\noriginalis,cum qua bomo conditus fuerat: e fucceftionem te\n1 ncorarum in mente,et prauarum mclinationum in uolunta-\nl (c C7 corde, pugnantium cum lege Det. Heec definitio col-\nJ lata cum tujticta ovrginali; fiet magis per bicua. Nam ab initio\na filfit eximium lumcn in mente bominis,ut ueré ac solide agno\nà; fccret Deum, et opera ab co codita,quodque ipfe ad bonorem\nDet eternum creatus efJct. — Huic lumini addit fiit libertas\nin uoluntate, cu facultas obediendi cum omnibus uiribus fe rioribus. Yiec omnta immutata sunt per peccatum primorum parentum,quo primian ipft corrupti sunt, deinde similes etia\nfilios genuerunt.\nVidendum ejt autem, ut definitio cotriuat cum teftümo- — nijs duanis, que extant tm literis Prophetarum et Apoflolo rum. Est autem infignis locus Rom. s.in bis uerbis: Vnius delt\na 6I &o omnes mortut Jumus. Cum; sint pares im poena cum Add,\nY f cquitur etta in cul pa c e equal C$, camo; culpá ? J Lrp e pro-\npagatam e Jeut manife le addit Paulus, Omnes peccaffe:boc ec,rcos effe. Acne quis bunc reatum exiflimet nudam impu-\ntattoncn c c, addit; Peccatum rcena J Je:boc CSt, essica X fuiffe\nin bominibus, ut rueret in borrédos Jurorcs contra Deunm,et propterea mors quoa; futtefficax in omnes — Sed adbuc illu Jhrius cft illud, quod Paulus non renatus solum, terim ctiam Apoltolus",
+          "references": []
+        },
+        {
+          "page": 50,
+          "chapter_id": "de-peccato",
+          "text": "T —. PIRE PDA : :\nzc Á HM —Ó —ÀÀ 0—\nDE PECCATO. 5f\nY ApojLolus, e plenus foiritu Jancto denique organum Dei eit 1\n7 clum, graulssimé queritur, quod babeat legem in carne sua tepugnantem legi mentis, que congruit cum mente diuina.\n; Hunc satis apparet, nequaquam octosum e Je illud wenenum,\n0 quod nafcentes ex natura parenti baufimus, Neque enim pre- - cipue conguerituy Paulus de peccatis actualibus, quibus ma- - &liopere repuenabat. adiutus auxilio Jpiritus sancti: sed de ui\n4 015 nature ucteris, et prauis incitnationibus, que per oriné\n7 batc uitam acerrime Puenant contra nouam et biritualent\nt Waturam im sanctis.Ma Ront.$.Senfus carnis uiuit,e t inni Ü\n€ citi aduer us Deum. Neque tievo loquitur de bruta natura, E.\na sed de summo bono in bominc:boc cjfL, de ui cogitanal et delE » berandi. Hec (onificat Paulus ita male affecta e e, ut boftili- \" (er pugnent aduerfus Deun.Et quanta sit barum sententiav& ni\n) graultas, cxtra ufum nullo modo 4gno ci poteft. Sic Ephef.:. ; t fcribit:Eramus naturà fili ir? Dcl. Ergo non «du solum pec 1\n$ catores Jtmus ,uerumctiam potentia, quam nafcentes afferi-\nD us in mundum.dem sequitur ex ditto Chrifii: Nifi quis rena UR\n1 (5 fuerit, non intrabit ii regnum coclorum. Cyuid enim opus E.\nt eJct l'egenerattone,ft prior natura non effet immunda? Et le\nquitur Chriftus non cum aliquo bomine ex uulgo , sed cum d summo uiro in populo Dei,\n: Cum bis t cfHimonijs congruunt ev dicta Mofi e Pro bhe-\nFarum,ut Genef.$. Cogitatio bominis prona eft ad malum à n pueritia. Pfali. si, Conceptus fum in Inguitatibus, e peccat i fo. Neque enim loauitur precipue de matris peccato, sed de suo,de quo tn toto Pfalmo conqueritur, Vla enim Ipfa mafJa, $4\nunde formatus eft Dauid, fuit impura. Hierem.iz. ratum c& a. Cor bominis, e nferutabile . Id quoque dictum cft de peccato (t natura berente, quod non eje accerfitum ufu et exemplis, gy\nfcd adeft quamprimum bomines fieriincipiunt. — Ex bis te- n\" 'imonijs congruentibus apparet, definitionem effe firmam:\nd» sed rl qu",
+          "references": []
+        },
+        {
+          "page": 51,
+          "chapter_id": "de-peccato",
+          "text": "P IUE Á MO cÓ aD MÀ Urn À a I $1 DE PECCATO.\n/ sed acri e afeiduo ludio opus efl in meditandis porderibis T borum dictork. E L enim res magna et arcana, nec facile ob. ua, praefertim bominib. profanis , quorum multi ne cogitant\nE quidem e Je tale peccatum:ut Pelagiani, Anabaptite,et fimi\n, 1 lcs. Multi sunt qui concedunt quidé, sed tamen extenuant ciun\nj 1 magno suo malo, c omnium illorum qui buic errori uf-\nl EI fragantur.\n4 Hactenus definitio peccati originis tradita eft, et declara- ta : deinde teflimonijs diuinis coprobata. Nunc ctiam aliquid dicendum cst de caufts, quo plus lucis accedat buic doctrine,\ni que non solum ignota cjl ijs qui sunt extra Ecclefiam uerum. etiam multis in Ecclefta. — Caufee eficientes suntmalicia, et aJtutia Diaboli : qui ut egre faceret Deo, corrupit opus Deo\na1 cbarifsümum,nempe bominem. Deinde uolitas bominis, qua\namplexa est confilium Diaboli,fuad; ponte fe aucvtit à man- dato Dei. Neque ueró tantum ad Adam et Euam referenda cft\nculpa , tametfi primi fuerunt qui peccarunt inter bomines. Quod enim deliquerunt illi, boc idem deliquiffent e ali \"Bs\nQuur impium,accufare primos paventes:et' pium;agnofceve\ntrifirmitatem, ut pro fe quifque cogitet, fe nibilo füturum fa-\niffe fortiorem in seruandis preceptis Det,quam fuit Adam ex\nEua. Subiectum peccati originis efL, anima cum potentijs\nsuis.In mente enim sunt tenebre non solum quod attinet ad i-\nIET gnorátiam Dei.sed etiam ad opera eiusque nibilo magis in-\n1 telligunt bomines. In uoluntate et: corde eft auer to á Dco, e7 odium Det,atque aliavum utrium wmgens confufio. Formd\nbutus morbi ejt ipfe reatus, quo perfona eft rea coram Deo.\nSed correlatiui buius reatus, feu fundamentum et materiale\nct morbus nobifcum nafcens,et omnium uirium con fufto,pu\nguans cum uera dilectione Det c7 proximi; de qua lex Det\nprecipit. Quodque bi defectus ey morbi non fubitó curentur,\nid woluit Deus ctiam in corporum curationibus oftendere.\nFuneg —",
+          "references": []
+        },
+        {
+          "page": 52,
+          "chapter_id": "de-peccato",
+          "text": "Pe — € - 2^ DÉ PECCATO. 53 ll.\nf Finales caufe sunt poene et ejféttus : inter quos prinum ira\nb, Dei collocanda efl, deinde maledictio profecta ex ira Dei,po nt flremo Dyrannis Diaboli, et mors eterna. Quanta auten\nui sit potejLas Diaboliin genus bumanum, boc aliquo modo cx :\nmn ijs cajtbus qui bominibus 4 Deo defertis accidunt, animaducr f- Ei poteft ' tamet/ l precipue pone que differuntur ad (Cm pus pojt banc uitam,non apparent. 4 Sed qui extenuant bec mgentta mala, primium abijciunt\nid uulgare dictum: Nibil ef peccatum nift woluntarium. H«c at \" tem sententia locum babet in tudicijs bumanis,non in iudicio \"t Det, qui iudicat banc naturam, quta corrupta e uitiofa esls\n\"e. etiamji bec bominibus difpliceret. — Huc etia pertinet, quod\n\"n aiunt naturam bonam efJe.1d quidem eft uerum, quatenus eft » opus 4 Deo conditum.Scd boc ipfum opus pojlea contamina- \"i\n2; tum et pcr peccatum. Et tamen diligenter fecernendae suntve j liquie prime nature, ab JS que per cotagtonem peccati sunt i4\ne. corrupta. Nam illa unt bona,que diuinitus sunt ordinata:ut\nf noticia numerorum ordinis e aliarum verum bonarum. Ita 'e C motus uoluntatis et cordis, qui congruunt cum lege Dei, \"\nE sunt boni per e..— Sicut autem in mentemulte noticie sunt\n? «mijJe.et cetera ob curiores facte:sic ctiam in corde non fo\n? lum mali et inordinati sunt motusuerkm ctiam fi qut boni fu \"\nÀ perfunt, extra terminos uagantur.ut sunt Iorge erga natos, n\ny p«rentes,contuges, cognatos, C7'c.que aut frigidiores sunt iu- 8\n\" Jlo,aut nimis ardentes ita ut superet dilectionem erga Deum.\nd Quod cum sit,tunc ifti quoque affectus qui sunt opera Dci, de- \"\nJ. &cherant in opera Diaboli, — Quare primum feparádi sunt\n? ajJe us per fc mali et probibiti : deindc boni quoque reges i Ti\nà di, ne limites fuos cgrediantur , cum bretermijstone timoris /\n: C charitatis que Dco debetur fupra omnia : sicut in ntcgra »Ü\n; nacura bomines feciffent, atque ut eflituta facturi sunt. Hos\n«(Icd us Iagnis defiderijs petunt sancticum orantzFiat uolun il",
+          "references": []
+        },
+        {
+          "page": 53,
+          "chapter_id": "de-peccato",
+          "text": "Neff — À—' tic M À— Pipnen a 4 \"A I & 4. DE PECCATO,\n// : tas tuasftcut in Cocco, C7\" Uo Cera, Na Angeli murum n odi \" dolent,ciumn J0nties offend Deum: Imago quodam Kc\n^ lo inátgnantur Diabolis et Organs eum, quod (HYroci ordt-\nnem diuinis in ltutum, eg lurcnter refi) lat Deo, Ac ru t (t\nirtfice gaudent angeli, cum bomines in uiam veucr i uere fer\n21 Wut Deo:eofdemque incredibili amore compleétuntur, sicut\nj i Chr. stus mquit ; Aitgeli gaudent TL celo (uber HNuo peccatore\nE penitentiam agente, — Quare deteffanda efe Anabaptiftarü\ni pnpietas aut omues 4ffecl us damnant,more Stoicorum: quod\ncum faciunt, angelos quoque,atque adco Deum ipfum damnant. - . Poslremo queritur et illud, Vtrum maneat boc peccatum\npoji Baptifmum. Ad bác qu«&flionieim propbant bomines vc- f boüdere non possunt. Cecienim unt, ac ne de ülis quident\n71 ycbus vecle iudicant que oculis cernuntur: quanto mtagis cre\nYaut ia bis,quibus nibileftarcanius. — Sanctis au Cin,qui no\n» runt teffimonia Probpbetarum et Abo lolorum;et reipfa uim\ndaprauate nature sentiunt,nequaquam dubium c t, quin 114 neat peccatum un bominibus ctiam poft remissionem. Hinc ea\nnim oriuntur naxima. certamina ii antmis sanctorum, inter\ncarte et piritunt. Manet ergo morbus : sed culpa fiue vea- (us ejt venif us baptizatis, et\" credentibus Euágelio. Sed tame uis iorot in adultis pev quotidiana exercitia paulatim extin-\nguitur.ft nó remittant fidi uerbi Dei,inuocatione, et cert\nLET men cotra libidinem naturale, Sic magis magisd; cognofcunt\nY. ufu. qua \" feua 4D : tyraántdé caro et'uctus natura exerceat\npcr omne DAnc ulta,tit nouum et fbiritualem bomine. Quod non fieret, fi morbus originis non maneret üi enatis. Oui ue-\nro manent carnales , ij nibilo melius de bis vebus , quàm ceci de coloribus iudicare polTunt,quantumuis sunt sapientes, — De peccatis a&dualibus, Actualia peccata ab oviginali sic differunt uteffotus à — caufa. Nam illud e$t fons omnium malarum actionum:boc cft.\nedligo ip mcuteauerfto á Deo in oluntate, ex praue inclina \"m",
+          "references": []
+        },
+        {
+          "page": 54,
+          "chapter_id": "de-peccato",
+          "text": "po e v vor : t Mel\nXm O RR I. IB PECORIS, 55 \"\nIT .— tiones ut corde bariunt peccat« actualia omnis eeneris;tnte- : '\n(- riora QJ exteriora, Primumin mente, quse cum deberet ejJe - gubernatrix aliarum uirium ad gloriam Dei, miferc aberat\n\"t ab hoc sine. efluat enim afeiduis dubitationibus de Deo,ita ut\nY nc ilis auidem noticijs, qu um cintille adbuc relique sunt Ir\nt Ut C4, ferio affentiatur. Scd multo grauiora sunt alia, ut cun j : ens capit confilia manifcfte pugnantia curi uerbo Det, nec\nn repugnat ijs.fedimdulget. — Deindemulto maiores sunt con- 1 fufiones in aliis uiribus, ut in uoluntate fecuritas et contem- \"n\nT ptus Det, ut uelit et probet ea que Deus tnprobat, dc repu 1\n\" dict ea quie Deus fieri poflulat. Scd longe maxime aberrant 4\n» uerbo Deimotus in corde, partim bofliliter pugiantes contra\n't legem Dei, partim non congruentes cum. veoula mentis diut- 1\n» ne. Hiüncdefinitio peccati actualis colltei potefE buiufmo-\no di* Peccatunt actuale eft, effec us feu fructus peccati originis: MW\nT ut unt actiones mentis uoluntatis cordis C7' extertorà mcm :\ni brorum,pugnantes cum lege Dci. Huic definitioni non admo 4 dum dissimilis e& illa uulgaris: Peccatum actuale ejt cogitatit, j dictum, factu, contra legem Dei. Quanquam autem inna- I.\n- turis liberalioribus nonnibil frenátur bec mala. ft prefertin ?\"\ne accedat recta inflitutio:tamen illa que sunt precipua,nc intel i\nd ligunt quidem. bomines abjqs Euangelio, tantu abeft ut ca- Hl\n, uere possint. Magne quidem füerunt uirtutes quorundam infi WM\nÉ gnium beroum inter gentes c fingularia dona Dei. nece Tat\nt Yi 4d politias recté guberiandas:tamen bec ipfa dona uitia- ,\nl ta sunt in eis per borribilem idololatriá , boc ejl ignoratione PC uoluntatis ciu de,altaque T genus peccata uere mnorta-\n; a: citfmodi sunt osania illori qui cavet uera noticia Cbrifi.\nIE Ac multi ex illis oloviaver geftarum fafcinati , fe in tuvpif. l nores coiecerat. ex quib.facile apparuit quales intus fucrint : INOTI Igitur exp gerande fant nimium Etbuicorum uirtu M es, de quibus ipfimet fal «iudicarunt, cum Deum autborcm I 3 d Igor - me",
+          "references": []
+        },
+        {
+          "page": 55,
+          "chapter_id": "de-peccato",
+          "text": "(^b 46 DE PECCATO.\n/ f (gnorarent,neque ad ueros fines conferrent sua dona. Tales o-\nÁ mnes babct peccata mortalia, necpo fünt placere Deo, duá- tumuis babent preftantia dona c magnos fucceffus, Fin-\nE gere igitur, bos fuiffe cbaros Deopropter bec dona, e£ ma- 1\" nifcsta blafpbemia et contumelia aduerfus Chriftum:in cuius\ntu pntus nominc placent Deo, quick; placent, Atque ex buiufino\nM dt exemplis follicitudinem concipiamus, ut fimus uteilantio-\nj rcs it nojbris noribus regendis. Nam fi prestantifsuni quique iri reifciuttur à Deo,utfi norint atque adorent filium:quid de Wobis füturun cft,fi Etbnicis erimus deteriores? EJE enim de- erctum Det immutabile:C ui non credit in filium,is uitam no babct, sed ira Dei manet in eo.ltem Yoann, s.Siin me non cre»\naltis, moriemini in peccatis uc tris. 731 Sca in ijs qui credunt in Chriftum, peccata fiunt uenialia: boc efl emittuntur ex gratia: et per venmifstonem fiunt inno\ni xta, ne afferant mortent eternam, Hinc autem non e$ exte- muatto fumenda, quafi ueniale peccatum per fe ftt leuius mor- tali. Efe enim sua natura quodlibet peccatum mortale, ftcut\nPaulus ait:Stipendium peccati mors eft, Scd magnitudo pre-\ncij c? fatisfactionis,per quam redempti sunt bomines,ex am- plitudo gratie Dei erga illos qut obediunt Euangelio, et cre aunt in filium Dei,cfficit ut cadem peccata fiant uenialia cre dentibus, que in alijs omnibus sunt mortalia, Sciondum cft\n1l autem, cum ca fide que in nomine Cbrifli accipit remifioné, —\nY. semper effe coniunctam poenitentiant, et odium peccati, ey\npmgens certamen, quo non indulgetur peccato, sed l'epugra- tur. Neque poteJI efle in eodem bomine simul fides et fecuritas, fcu fludium peccandi. It4q: €9' reconciltati cu sunt fecuri, c; indulgent peccato contra confcientiá;jita offcndunt Deum\nut gratiam etus antittant:sicut rcx Saul mifit. Identa; accidit Dutdi:sed is vcáijt in ulam,cum à Propbeta effet admonitus.\nGic in fumina grati eraut bruni parentes 4pud Deum, f ed propter",
+          "references": []
+        },
+        {
+          "page": 56,
+          "chapter_id": "de-peccato",
+          "text": "2 ote - LO\nPEN — UU — RE : '\nDE PECCATO. 5» Nn\nà propter peccatiz exciderüt ex gratia, fibia; e uniuevoe pojle T i vitatiborribile iram accerfiuerüt.Huiufmodi exempla multa à sunt in facris biflorijs:ut de Aarone summo potifice, cii cedes p ia firort Populi, cultum Acgypttorun mflituitAtent lone, Eze» 5 ebte,c7 c. Qyuulbusexem plis et fecuritati carnali medendum\n) eji » C7 defberationi.Redeuntibus enim ad pacnitentiam Deus lu\n(gnofcit Peccatum. ESE igitur necessarium difcrimen inter illa peccata , que\n: boffunt fTlare cum fide, et que fidem unà cum spiritu an L elo excutiunt : ita tamen, ut pateat reditus ad paenitentiam im\n: bac uita. ft prefertim non diu perfeuerent bomines in pecca? )\n: I5 contra confcientiam admifcis. Cyuod ne faciant,nece fe eft animum adbibere uerbo Dei, caftiganti fecuritaté,e uocan- Di\nti ad poenitentiam. Multum. «utem ualent exempla in boc ge nere, ut ex alieno malo veddamur cautiores. Admoniti e- 'u Yant Adam C7 Eua, ne uefcerentur fructu probibite arboris )d\nm medio paradifi e poene grauitate deterriti:sed contra con (*\nscientiam ruentes in peceatit, sibi et pofleris borribilem iram '* Detconciliarunt. — Cain quoque admonitus efl;ne indulgeret ; odio aduerfus fratrem: qua admonitione fprceta, cum fratrem )\noccidiffet,manfit in eterna ira Dei. Hoc idem multis sancto-. \" Yun filijs accidit,cum à doctrina patrum ad impiorum eccle. \" ftam defeciffent. Hinc ratiocinatur Petrus, quod multo qmi aW\ne nus nos impune feremus peccata noftra. fi tanta ira Dei in pri Id mum mundum effu a est. Paulus auten proporit exempli populi Dei,borribiliter reiecti propter peccatum:unde sequi Ü Oir, multo magis nos poenas daturos effe, fi minus obfeque- Im\nmuy Werbo Dei Cumbis ueteribus exemplis coniunganua Hi\n: (7 recentior, Nam quante clades et calamitates fequantuy\ncontemptum uerbi Dei, boc iampridem omnium imperioria yulte tefLantuy. NW\nHi5 rationibus frenanda eff carnis libido:quanquam nibil — 7 I ' 8 7 pene ,\n\"^ l t i iu",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 0,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
+    {
+      "id": "de-lege",
+      "title": "DE LEGE",
+      "title_en": "On the Law",
+      "start_page": 57,
+      "end_page": 58,
+      "pages": [
+        {
+          "page": 57,
+          "chapter_id": "de-lege",
+          "text": "z\" yl 95 — DE LEGE.\nui pene satis 2L 4d hanc coercendai, cum res sunt secunde ficu\nÁ Un summis uris Dauide et S4tomone apparet. Quare no ma\nle cum illis agitur, qui uarijs periculis et laboribus exercen-\n1 tur, 1 modo querunt remedia ex uerbo Dei, fea; totos Deo 1 committunt, — Meditari ergo pericula debemus, in quibus\nj uer antur bomines etiam pojl regenerationem : et cautioyes\nj 1 cic 4duer us candal omnis generis,que prebent occafione\nB peccanat: et ciamus acerrima militia opus effe cum ls more\ni bis,qui beret in natura,ne iuxta caruem uiuentes Inortamur: fcd spiritu facta carnis mortificantes, uiuamus, ut Paulus do-\nÀ cct R.om.$. Sed que ad difcrimem peccati mortalis et* uenia- lis pertinent,item ad peccata quie non excutit fidem, et que\n\" simul cum ca cxiffere 19i poffit ,de bis alio inloco iterum\na dicendum erit.\nl. DE LEGIÓ Omen Legis ambieuk eit. Primim cnim de omnium\n: INO preceptis ufurpari folet , propterea quod\nWuxta illas egt oporteat acliones artium. Significat enim Lex\nbutufmodt sententiam rationi confentienten, iuxta quam a«\n&io inflitut4non aberrat, — Secund 0,dceipitur pro sententia\nad mores pertinete, qualibet focietate, culus autbores sunt\nij qut prefunt: ftquide cst confentanea recte vationi,et pro-\na 1l dest ad incolumitatent communem, Nulla enim focictas, neq:\n1 infLitui recte ftue certis leg ibus,neque gubernari potefI. Ter-\ntio idem nomen significat legem nature,que eft fons et prin cipium omnium aliarum legum bumnanarum.Neque enim po f-\nsunt ullorum bominum leges babere autboritatem , \"ft cons\nsentiant cum lege nature , que continet reliquias quaflar\nillius lucis , cum. qua bono conditus fuit ad imaginem Dei. Nm fi natura bominis integra e set , nibil omnino inter le-\ngein nature qz legem diuinam intereffet, ^ Quarto, ni\ntm,",
+          "references": []
+        }
+      ],
+      "reference_counts": {
+        "biblical": 0,
+        "patristic": 0,
+        "reformation": 0,
+        "classical": 0,
+        "confessional": 0
+      }
+    }
+  ]
+}
