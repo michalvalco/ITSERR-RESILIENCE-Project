@@ -210,6 +210,7 @@ def _is_encoding_error(error: etree.XMLSyntaxError) -> bool:
         "unknown encoding",
         "unsupported encoding",
         "invalid byte",
+        "bytes cannot be decoded",
         "bytes can not be decoded",
         "cannot decode byte",
         "encoder error",
@@ -636,19 +637,25 @@ def main():
     if args.input.is_dir():
         if args.confidence:
             logger.warning(
-                "--confidence path is ignored in batch mode; "
-                "CSV files are generated alongside each .txt output. "
-                "Use --export-confidence to enable batch CSV export."
+                "--confidence path is ignored in batch mode. "
+                "Use --export-confidence to generate per-file CSVs "
+                "alongside each .txt output."
             )
         process_batch(
             input_dir=args.input,
             output_dir=args.output,
             recursive=args.recursive,
-            confidence_csv=args.confidence is not None or args.export_confidence,
+            confidence_csv=args.export_confidence,
             page_range=page_range,
             confidence_threshold=args.min_confidence,
         )
     elif args.input.is_file():
+        if args.export_confidence:
+            logger.warning(
+                "--export-confidence is for batch mode. "
+                "Use --confidence <path> to specify a CSV output path."
+            )
+
         try:
             text = extract_text_from_alto(
                 args.input,
