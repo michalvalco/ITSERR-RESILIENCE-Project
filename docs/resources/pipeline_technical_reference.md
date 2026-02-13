@@ -203,7 +203,7 @@ for token_marginals in sentence_marginals:
 
 | Gap | Description | Effort | Status |
 |---|---|---|---|
-| ALTO XML → plaintext | CIC starts from DOCX; our sources are TIFF + ALTO XML | Medium | 🔧 Not started |
+| ALTO XML → plaintext | CIC starts from DOCX; our sources are TIFF + ALTO XML | Medium | ✅ Built (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`; 78 tests passing) |
 | Character-level features | Historical orthographic variation (ſ/s, cz/č, etc.) | Medium | 🔧 Not started |
 | Multilingual handling | Latin/German/Czech code-switching within documents | High | 🔧 Not started |
 | OCR error impact | Unknown error rates on 16th-c. print | ❓ | Needs empirical testing |
@@ -229,7 +229,7 @@ for token_marginals in sentence_marginals:
 - Zero-shot test on Stöckel sample (not yet conducted)
 - Multi-entity type CRF performance vs. separate models
 - Match model `pre_post_len = 3` — was this optimized?
-- ALTO XML integration — any prior attempts?
+- ~~ALTO XML integration~~ — ✅ Resolved: `ocr_processor.py` → `extract_alto.py` → `normalize_text.py` (78 tests passing)
 - 3D visualization component — what does it expect as input?
 - Gospel passage detection examples from CIC paper (empirical anchor for adaptation thesis)
 - Minimum training set size for acceptable CRF performance
@@ -259,7 +259,7 @@ for token_marginals in sentence_marginals:
 | `post_process.py` | Error correction ("ff." rule) | **HIGH** |
 | `build_annotations_index.py` | Cross-reference index builder | **HIGH** |
 | `statistics.py` | Annotation count reports | LOW |
-| `split_docx.py` | DOCX preprocessing | **HIGH** (replace with ALTO XML) |
+| `split_docx.py` | DOCX preprocessing | **HIGH** (replaced by `ocr_processor.py` → `extract_alto.py` → `normalize_text.py` for Stöckel path) |
 | `trie.py` | Trie data structure (utility) | NONE |
 
 ---

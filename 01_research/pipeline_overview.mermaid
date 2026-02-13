@@ -15,10 +15,10 @@ flowchart TD
     %% ===== STAGE 2: PARSE =====
     subgraph S2["<b>STAGE 2: PARSE</b>"]
         direction TB
-        B1["⚙️ OCR Processing<br/><b>ABBYY FineReader</b> → Antiqua<br/><b>Transkribus/Kraken</b> → Fraktur"]
-        B2["📄 ALTO XML<br/><i>Word-level bounding boxes<br/>+ confidence scores</i>"]
-        B3["🔧 Text Extraction<br/><b>⚠️ TO BE BUILT</b><br/><i>ALTO XML → plaintext<br/>(replaces split_docx.py)</i>"]
-        B4["📝 Clean Plaintext<br/><i>Preserving page/line structure<br/>Handling: ſ/s, ij/j, cz/č, ß/ss</i>"]
+        B1["⚙️ OCR Processing<br/><b>ocr_processor.py --format both</b><br/><i>Tesseract + Poppler (PDF/TIFF/JPG/PNG)<br/>Also: ABBYY FineReader (SNK standard)<br/>Transkribus/Kraken for Fraktur</i>"]
+        B2["📄 ALTO XML + Clean Plaintext<br/><i>Dual output in one step<br/>data/alto/*.xml + data/cleaned/*.txt</i>"]
+        B3["📊 Confidence Extraction<br/><b>✅ extract_alto.py</b><br/><i>Parses ALTO XML (Tesseract or ABBYY)<br/>→ plaintext + per-word confidence CSV</i>"]
+        B4["📝 Normalized Plaintext<br/><b>✅ normalize_text.py</b><br/><i>Orthographic normalization:<br/>ſ/s, ij/j, cz/č, w/v, ß/ss</i>"]
         B1 --> B2
         B2 --> B3
         B3 --> B4
