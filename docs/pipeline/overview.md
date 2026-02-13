@@ -81,27 +81,105 @@ python -m pytest tests/ -v
 
 ## Dependencies
 
-| Package | Purpose | Required For |
-|---------|---------|-------------|
-| `pytesseract` >= 0.3.8 | Python Tesseract wrapper | OCR processor (ALTO requires 0.3.8+) |
-| `pdf2image` | PDF to image conversion | OCR processor |
-| `Pillow` | Image processing | OCR processor |
-| `lxml` | XML parsing | ALTO parser |
-| `tesseract-ocr` | OCR engine (system package) | OCR processor |
-| `tesseract-ocr-lat` | Latin language data | OCR processor |
+The OCR pipeline requires both **Python packages** and **system applications**. The system applications (Tesseract, Poppler) must be installed first since the Python packages are only wrappers around them.
 
-Install Python dependencies:
+!!! tip "Tests run without system dependencies"
+    All 163 tests mock the OCR engine and run without Tesseract or Poppler installed. You only need the system packages to process actual PDFs.
+
+### Step 1: Install System Applications
+
+#### Tesseract OCR (required for `ocr_processor.py`)
+
+=== "Windows"
+
+    1. Download the installer from [UB Mannheim Tesseract builds](https://github.com/UB-Mannheim/tesseract/wiki)
+    2. Run the `.exe` installer
+    3. During setup, expand **Additional language data** and check **Latin** (`lat`)
+    4. Note the install path (default: `C:\Program Files\Tesseract-OCR`)
+    5. Add Tesseract to your system PATH:
+        - Open **Settings** → **System** → **About** → **Advanced system settings** → **Environment Variables**
+        - Under **Path**, click **Edit** → **New** → add `C:\Program Files\Tesseract-OCR`
+    6. Verify: open a new terminal and run `tesseract --version`
+
+    !!! note "Alternative: set path in Python"
+        If you don't want to modify PATH, you can set it per-script:
+        ```python
+        import pytesseract
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+        ```
+
+=== "Ubuntu/Debian"
+
+    ```bash
+    sudo apt-get update
+    sudo apt-get install tesseract-ocr tesseract-ocr-lat
+    ```
+
+=== "macOS"
+
+    ```bash
+    brew install tesseract
+    brew install tesseract-lang  # Includes Latin and other language packs
+    ```
+
+#### Poppler (required for `pdf2image` in `ocr_processor.py`)
+
+Poppler converts PDF pages to images. The Python `pdf2image` package requires it.
+
+=== "Windows"
+
+    **Option A: Conda (recommended if you use Anaconda/Miniconda)**
+    ```bash
+    conda install -c conda-forge poppler
+    ```
+
+    **Option B: Manual install**
+
+    1. Download the latest release from [poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases)
+    2. Extract the archive (e.g., to `C:\poppler`)
+    3. Add the `bin\` folder to your system PATH (e.g., `C:\poppler\Library\bin`)
+    4. Verify: open a new terminal and run `pdfinfo -v`
+
+=== "Ubuntu/Debian"
+
+    ```bash
+    sudo apt-get install poppler-utils
+    ```
+
+=== "macOS"
+
+    ```bash
+    brew install poppler
+    ```
+
+### Step 2: Install Python Packages
+
+From the `03_prototype` directory:
 
 ```bash
+cd 03_prototype
 pip install pytesseract pdf2image Pillow lxml
 ```
 
-Install Tesseract (system package):
+| Package | Version | Purpose |
+|---------|---------|---------|
+| `pytesseract` | >= 0.3.8 | Python Tesseract wrapper (ALTO XML requires 0.3.8+) |
+| `pdf2image` | any | PDF to image conversion (requires Poppler) |
+| `Pillow` | any | Image processing |
+| `lxml` | any | XML parsing for `extract_alto.py` |
+
+### Step 3: Verify Installation
 
 ```bash
-# Ubuntu/Debian
-sudo apt-get install tesseract-ocr tesseract-ocr-lat
+# Check Tesseract is available
+tesseract --version
 
-# macOS
-brew install tesseract tesseract-lang
+# Check Latin language pack is installed
+tesseract --list-langs | grep lat
+
+# Check Poppler is available
+pdfinfo -v
+
+# Quick Python check
+python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
 ```

@@ -138,7 +138,19 @@ Ensure your API key is valid and has sufficient credits:
 python -c "from openai import OpenAI; OpenAI().models.list()"
 ```
 
+## OCR Pipeline Dependencies (Optional)
+
+If you plan to run the OCR pipeline on actual PDF scans (e.g., for the Stöckel corpus), you need additional system applications and Python packages. These are **not required** for the AI agent itself or for running tests.
+
+```bash
+# Python packages (from 03_prototype/ directory)
+pip install pytesseract pdf2image Pillow lxml
+```
+
+You also need **Tesseract OCR** (with Latin language data) and **Poppler** installed as system applications. See the [OCR Pipeline installation guide](../pipeline/overview.md#dependencies) for detailed platform-specific instructions (Windows, macOS, Linux).
+
 ## Next Steps
 
 - [Quick Start Guide](quickstart.md) - Start using the agent
 - [Configuration Reference](configuration.md) - All configuration options
+- [OCR Pipeline](../pipeline/overview.md) - Set up the OCR pipeline for PDF processing
