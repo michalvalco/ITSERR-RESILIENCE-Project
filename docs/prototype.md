@@ -50,3 +50,5 @@ Stage 7: INTERACT   ⚡  This prototype
 2. **CRF training** — adapt the GNORM CRF pipeline for Protestant theological texts
 3. **Enhanced detection** — integrate CRF predictions into the corpus browser
 4. **Citation network visualization** — D3.js graphs showing citation relationships
+
+*Last updated: 2026-02-13*

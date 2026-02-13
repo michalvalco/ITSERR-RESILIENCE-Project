@@ -17,7 +17,6 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
-from dataclasses import dataclass, field
 
 
 DEFAULT_INPUT_DIR = Path(__file__).parent.parent / "data" / "normalized"
@@ -26,12 +25,12 @@ DEFAULT_OUTPUT = Path(__file__).parent.parent.parent.parent / "docs" / "prototyp
 # Chapter metadata with page ranges and descriptions
 CHAPTERS = [
     {"id": "praefatio", "title": "PRAEFATIO", "title_en": "Preface", "start_page": 2, "end_page": 6},
-    {"id": "de-deo", "title": "DE DEO", "title_en": "On God", "start_page": 6, "end_page": 11},
-    {"id": "de-trinitate", "title": "DE TRINITATE", "title_en": "On the Trinity", "start_page": 11, "end_page": 16},
-    {"id": "de-spiritu-sancto", "title": "DE SPIRITU SANCTO", "title_en": "On the Holy Spirit", "start_page": 16, "end_page": 21},
+    {"id": "de-deo", "title": "DE DEO", "title_en": "On God", "start_page": 7, "end_page": 11},
+    {"id": "de-trinitate", "title": "DE TRINITATE", "title_en": "On the Trinity", "start_page": 12, "end_page": 16},
+    {"id": "de-spiritu-sancto", "title": "DE SPIRITU SANCTO", "title_en": "On the Holy Spirit", "start_page": 17, "end_page": 22},
     {"id": "de-creatione", "title": "DE CREATIONE", "title_en": "On Creation", "start_page": 23, "end_page": 30},
-    {"id": "de-providentia", "title": "DE PROVIDENTIA", "title_en": "On Divine Providence", "start_page": 30, "end_page": 34},
-    {"id": "de-libero-arbitrio", "title": "DE LIBERO ARBITRIO", "title_en": "On Free Will", "start_page": 34, "end_page": 46},
+    {"id": "de-providentia", "title": "DE PROVIDENTIA", "title_en": "On Divine Providence", "start_page": 31, "end_page": 34},
+    {"id": "de-libero-arbitrio", "title": "DE LIBERO ARBITRIO", "title_en": "On Free Will", "start_page": 35, "end_page": 46},
     {"id": "de-peccato", "title": "DE PECCATO", "title_en": "On Sin", "start_page": 47, "end_page": 56},
     {"id": "de-lege", "title": "DE LEGE", "title_en": "On the Law", "start_page": 57, "end_page": 58},
 ]
