@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITSERR-RESILIENCE — Corpus Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Stöckel Corpus</h1>
+        <div class="subtitle">Annotationes in Locos communes (1561)</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="loading">
+          <div class="spinner"></div>
+          Loading...
+        </div>
+      </nav>
+
+      <div class="stats-panel"></div>
+
+      <div class="sidebar-footer">
+        ITSERR-RESILIENCE Project<br>
+        TNA Fellowship 2026 — Layer 1 Prototype
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <!-- Top bar with search -->
+      <div class="topbar">
+        <div class="search-box">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" placeholder="Search the corpus (e.g. Paulus, peccatum, Deus)..." />
+        </div>
+        <span class="search-results-count"></span>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="filter-bar">
+        <span class="filter-label">Loading filters...</span>
+      </div>
+
+      <!-- Content -->
+      <div class="content-area">
+        <div class="loading">
+          <div class="spinner"></div>
+          Loading corpus data...
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Tooltip -->
+  <div class="ref-tooltip"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
