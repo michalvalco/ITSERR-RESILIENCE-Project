@@ -57,15 +57,15 @@ ITSERR_LOG_STRUCTURED=true
 
 === "OpenAI"
 
-    - `gpt-4-turbo-preview` - Best quality
-    - `gpt-4` - Stable, reliable
-    - `gpt-3.5-turbo` - Faster, cheaper
+    - `gpt-4o` - Best quality, multimodal
+    - `gpt-4-turbo` - Stable, reliable
+    - `gpt-4o-mini` - Faster, cheaper
 
 === "Anthropic"
 
-    - `claude-3-opus-20240229` - Highest capability
-    - `claude-3-sonnet-20240229` - Balanced
-    - `claude-3-haiku-20240307` - Fast and efficient
+    - `claude-opus-4-6` - Highest capability
+    - `claude-sonnet-4-5-20250929` - Balanced (recommended)
+    - `claude-haiku-4-5-20251001` - Fast and efficient
 
 ### Embedding Settings
 

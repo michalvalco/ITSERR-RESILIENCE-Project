@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** January 26, 2026 (Unit tests added, IGNORECASE for abbreviations)
+**Last Updated:** February 13, 2026 (ALTO XML pipeline, extract_alto.py, comprehensive tests)
 
 ---
 
@@ -14,8 +14,8 @@
 | Text Selection & Preparation | 6/6 tasks | Feb 7 |
 | Annotation Work | 1/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
-| Testing & Quality | 1/1 tasks | Feb 9 |
-| **Overall** | **16/19 tasks (84%)** | **Feb 9** |
+| Testing & Quality | 3/3 tasks | Feb 9 |
+| **Overall** | **20/21 tasks (95%)** | **Feb 9** |
 
 ---
 
@@ -119,6 +119,31 @@
   - [x] Tests for case-insensitive matching with case-preserving replacement
   - Test file: `03_prototype/tests/test_normalize_text.py`
   - Date completed: Jan 26, 2026
+
+- [x] **ALTO XML extraction pipeline**
+  - [x] Extended `ocr_processor.py` with `--format {txt|alto|both}` flag
+  - [x] Created `extract_alto.py` for ALTO XML → plaintext + confidence
+  - [x] Supports ALTO v2.x and v3.x namespaces
+  - [x] Hyphenation handling (HypPart1/HypPart2 reconstruction)
+  - [x] Per-word OCR confidence extraction to CSV
+  - [x] Batch processing with `--recursive` and `--export-confidence`
+  - [x] Encoding fallback (UTF-8 → Latin-1) for non-standard files
+  - Date completed: Feb 13, 2026
+
+- [x] **Unit tests for OCR processor**
+  - [x] Created 34 tests covering text, ALTO, and dual extraction
+  - [x] Tests for backward compatibility, version guard, ALTO directory handling
+  - [x] All dependencies mocked (no Tesseract installation required)
+  - Test file: `03_prototype/tests/test_ocr_processor.py`
+  - Date completed: Feb 13, 2026
+
+- [x] **Unit tests for ALTO parser**
+  - [x] Created 55 tests for extract_alto.py
+  - [x] Tests for namespace detection, parsing, text assembly, hyphenation
+  - [x] Tests for confidence extraction, batch processing, malformed XML
+  - [x] Tests for encoding error detection and CLI flag semantics
+  - Test file: `03_prototype/tests/test_extract_alto.py`
+  - Date completed: Feb 13, 2026
 
 - [x] **Mark structural elements**
   - [x] Chapter breaks (8 chapters identified: PRAEFATIO through DE LEGE)
@@ -262,19 +287,44 @@
 
 ### Week of February 3, 2026
 
-**Focus:** ___
+**Focus:** ALTO XML pipeline, extract_alto.py development
 
 **Completed:**
--
+- Created `extract_alto.py` — ALTO XML parser with plaintext extraction and confidence scores
+- Supports ALTO v2.x, v3.x, and no-namespace schemas
+- Implemented hyphenation handling (HypPart1/HypPart2 reconstruction with SUBS_CONTENT)
+- Added per-word OCR confidence extraction to CSV
+- Batch processing with `--recursive` and `--export-confidence` flags
+- Encoding fallback (UTF-8 → Latin-1) for non-standard ALTO files
+- Page range filtering for selective extraction
+- 55 unit tests for `extract_alto.py` (all passing)
 
 **In Progress:**
--
+- Integration of ALTO pipeline with downstream annotation workflow
+
+---
+
+### Week of February 10, 2026
+
+**Focus:** Fellowship begins; ALTO integration with OCR processor, review feedback
+
+**Completed:**
+- Extended `ocr_processor.py` with `--format {txt|alto|both}` CLI flag
+- Added `extract_alto_from_pdf()` and `extract_both_from_pdf()` functions
+- Optimized dual extraction (single PDF-to-image conversion)
+- Conditional text cleaning (plaintext only, not ALTO)
+- Chapter analysis only when plaintext available
+- pytesseract version guard for `image_to_alto_xml`
+- 34 unit tests for `ocr_processor.py` including version guard tests
+- Addressed Copilot code review feedback (6 of 7 suggestions implemented)
+- Updated documentation to reflect ALTO pipeline
+
+**In Progress:**
+- Manual annotation work in INCEpTION
+- Integration testing with live GNORM API
 
 **Blockers:**
--
-
-**Final Push Items:**
--
+- None currently
 
 ---
 
@@ -321,6 +371,17 @@ Use this section to record important decisions, insights, and issues encountered
 | Jan 26, 2026 | Case preservation | Abbreviation expansions now preserve original case of first character |
 | Jan 26, 2026 | Unit tests | Created 74 unit tests for normalize_text.py (all passing) |
 | Jan 26, 2026 | Test coverage | Tests cover OCR noise, abbreviations, long-s, structure, references |
+| Feb 7, 2026 | extract_alto.py | Created ALTO XML parser with v2/v3 namespace support |
+| Feb 7, 2026 | Hyphenation | Implemented HypPart1/HypPart2 reconstruction with SUBS_CONTENT |
+| Feb 7, 2026 | Confidence scores | Per-word WC attribute extraction to CSV; batch --export-confidence |
+| Feb 7, 2026 | Encoding fallback | UTF-8 → Latin-1 fallback for non-standard ALTO encodings |
+| Feb 7, 2026 | ALTO tests | 55 unit tests for extract_alto.py (all passing) |
+| Feb 13, 2026 | OCR ALTO support | Extended ocr_processor.py with --format {txt\|alto\|both} |
+| Feb 13, 2026 | Dual extraction | extract_both_from_pdf() optimized for single PDF conversion |
+| Feb 13, 2026 | Version guard | pytesseract >= 0.3.8 check for image_to_alto_xml |
+| Feb 13, 2026 | OCR tests | 34 unit tests for ocr_processor.py (all passing) |
+| Feb 13, 2026 | Copilot review | Addressed 6 of 7 review suggestions; declined 1 (--export-confidence is correct) |
+| Feb 13, 2026 | Total tests | 163 tests across 3 test suites (74 + 55 + 34), all passing |
 
 ---
 
