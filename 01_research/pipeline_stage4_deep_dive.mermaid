@@ -1,0 +1,109 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#fce4ec', 'primaryTextColor': '#1a1a2e', 'primaryBorderColor': '#c62828', 'lineColor': '#0f3460', 'secondaryColor': '#e8f5e9', 'tertiaryColor': '#e3f2fd', 'noteBkgColor': '#fff9c4', 'noteTextColor': '#333', 'noteBorderColor': '#f9a825'}}}%%
+
+flowchart TD
+
+    %% ===== INPUT =====
+    subgraph INPUT["<b>Pipeline Input</b>"]
+        IN1["📥 BIOES-tagged plaintext<br/><b>cas_to_bioes.py</b><br/><i>Source: INCEpTION export (ZIP-in-ZIP)<br/>Format: UIMA CAS XMI → one token/line<br/>Annotation type: webanno.custom.Glossa<br/>Feature: Tipo field</i>"]
+    end
+
+    %% ===== LAYER 1: RULES =====
+    subgraph L1["<b>Layer 1: Rule-Based Detection</b><br/>annotate_by_rule.py"]
+        R1["🔍 Trie + Regex Engine<br/><i>Pattern matching for structured references</i>"]
+        R1A["<b>CIC patterns:</b><br/><i>NUM.q.NUM, — canon law format</i>"]
+        R1B["<b>Protestant patterns 🔧:</b><br/><i>Matt. NUM,NUM — biblical<br/>Aug. de civ. Dei NUM.NUM — patristic<br/>CA Art. NUM — confessional</i>"]
+        R1 --- R1A
+        R1 --- R1B
+    end
+
+    %% ===== LAYER 2: ABBREVIATIONS =====
+    subgraph L2["<b>Layer 2: Abbreviation Dictionary</b><br/>annotate_by_abbreviations.py"]
+        AB1["📖 Dictionary Lookup<br/><i>Known abbreviation sequences<br/>matched against token stream</i>"]
+        AB1A["<b>CIC dictionary:</b><br/><i>C. = Causa, X = Liber Extra,<br/>D. = Distinctio, etc.</i>"]
+        AB1B["<b>Protestant dictionary 🔧:</b><br/><i>Matt. = Matthaeus, Aug. = Augustinus,<br/>CA = Confessio Augustana,<br/>CS = Cithara Sanctorum, etc.</i>"]
+        AB1 --- AB1A
+        AB1 --- AB1B
+    end
+
+    %% ===== LAYER 3: MATCH =====
+    subgraph L3["<b>Layer 3: Trie Match + Statistical Gap Prediction</b><br/>annotate_by_match.py"]
+        M1["🌳 Trie Exact Match<br/><i>Previously seen patterns<br/>from training data</i>"]
+        M2["📊 PREPOST Gap Prediction<br/><i>Fills gaps within mean ± 2σ<br/>of known pattern lengths<br/>pre_post_len = 3 tokens</i>"]
+        M1 --> M2
+    end
+
+    %% ===== LAYER 4: CRF =====
+    subgraph L4["<b>Layer 4: CRF Machine Learning</b><br/>annotate_by_crfsuite.py"]
+        direction TB
+        CRF1["🤖 CRF Model<br/><b>sklearn-crfsuite</b><br/><i>Algorithm: L-BFGS<br/>CV: 5-fold, 100 iterations<br/>Scoring: F1 macro<br/>Model size: 1.1 MB (pickle)</i>"]
+        CRF2["<b>Feature window: ±6 tokens</b><br/><i>Per token: bias, raw, lowercase,<br/>isupper, istitle, isdigit,<br/>BOS/EOS markers, NUM normalisation<br/>N-grams: bi+tri+skip over 13 tokens</i>"]
+        CRF3["⚠️ <b>No character-level features</b><br/><i>Gap for historical orthography:<br/>ſ/s, ij/j, cz/č, w/v, ß/ss<br/>🔧 Proposed addition for adaptation</i>"]
+        CRF4["📊 Marginal Probabilities<br/><i>predict_marginals() →<br/>per-token confidence scores<br/>⚠️ May need calibration<br/>(Platt scaling / isotonic regression)</i>"]
+        CRF1 --- CRF2
+        CRF2 --- CRF3
+        CRF1 --> CRF4
+    end
+
+    %% ===== LAYER 5: STRUCTURE =====
+    subgraph L5["<b>Layer 5: Structural Parsing</b><br/>annotate_chapter.py / annotate_title.py / annotate_lemma.py"]
+        ST1["📑 Chapter Detection<br/><i>Regex for document structure<br/>CIC: 'X N.N title' pattern<br/>🔧 Protestant: 'Caput N: ...' etc.</i>"]
+        ST2["📌 Title Detection<br/><i>Section headers, rubrics</i>"]
+        ST3["✏️ Lemma Detection<br/><i>Glossed terms positioned<br/>relative to commentary text</i>"]
+        ST1 --- ST2 --- ST3
+    end
+
+    %% ===== MERGE =====
+    subgraph MERGE["<b>Layer 6: Merge + Post-Process</b><br/>merge_annotations.py + post_process.py"]
+        MG1["🔀 <b>First-Method-Wins Merge</b><br/><i>Priority: L1 > L2 > L3 > L4<br/>Rules override CRF by design<br/>= Precision over recall</i>"]
+        MG2["🏷️ <b>mark_source Provenance</b><br/><i>Every annotation tagged:<br/>RULE| · ABBREVIATION| · MATCH|<br/>PREPOST| · CRF| · SOURCE|</i><br/><i>Preserved in INCEpTION Tipo field</i>"]
+        MG3["🔧 Post-Processing<br/><i>CIC: single 'ff.' correction<br/>🔧 Protestant: TBD from error analysis</i>"]
+        MG1 --> MG2 --> MG3
+    end
+
+    %% ===== EPISTEMOLOGICAL CLASSIFICATION =====
+    subgraph EPIST["<b>Epistemological Classification</b><br/><i>Dual-path: method consensus + CRF confidence</i>"]
+        direction TB
+        EP0["<b>Path A: Method Consensus</b><br/><i>How many layers detected<br/>the same annotation?</i>"]
+        EP1["<b>Path B: CRF Confidence</b><br/><i>predict_marginals() →<br/>max probability per token</i>"]
+        EP0 --- EP1
+
+        F1["✅ <b>FACTUAL</b><br/><i>≥2 methods agree<br/>OR exact MATCH<br/>AND CRF ≥ 0.85</i><br/><b>→ Accept for public dataset</b>"]
+        I1["🔍 <b>INTERPRETIVE</b><br/><i>CRF alone<br/>OR PREPOST (statistical)<br/>Confidence 0.70–0.85</i><br/><b>→ Flag for expert review</b>"]
+        D1["👤 <b>DEFERRED</b><br/><i>Methods disagree<br/>OR confidence < 0.70<br/>OR theological judgment</i><br/><b>→ Route to human annotator</b>"]
+
+        EP1 --> F1
+        EP1 --> I1
+        EP1 --> D1
+    end
+
+    %% ===== OUTPUT =====
+    subgraph OUTPUT["<b>Pipeline Output</b>"]
+        OUT1["📤 Annotated BIOES<br/><i>bioes_to_cas.py →<br/>UIMA CAS XMI<br/>TypeSystem hardcoded in script<br/>→ INCEpTION for review</i>"]
+        OUT2["📊 Cross-Reference Index<br/><i>build_annotations_index.py<br/>→ LegalReferences.csv (CIC)<br/>🔧 → TheologicalReferences.csv</i>"]
+        OUT3["📈 Statistics<br/><i>statistics.py<br/>Annotation counts by type,<br/>source, confidence</i>"]
+        OUT1 --- OUT2 --- OUT3
+    end
+
+    %% ===== CONNECTIONS =====
+    INPUT --> L1
+    L1 -->|"RULE| prefix"| L2
+    L2 -->|"ABBREVIATION| prefix"| L3
+    L3 -->|"MATCH| · PREPOST| prefix"| L4
+    L4 -->|"CRF| prefix"| L5
+    L5 --> MERGE
+    MERGE --> EPIST
+    EPIST --> OUTPUT
+
+    %% ===== INCEpTION ROUNDTRIP =====
+    OUTPUT -. "Back to INCEpTION<br/>for expert review<br/>(iterative refinement)" .-> INPUT
+
+    %% ===== STYLING =====
+    style INPUT fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style L1 fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style L2 fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style L3 fill:#fff8e1,stroke:#f9a825,stroke-width:2px
+    style L4 fill:#fce4ec,stroke:#ad1457,stroke-width:3px
+    style L5 fill:#f1f8e9,stroke:#558b2f,stroke-width:2px
+    style MERGE fill:#e8eaf6,stroke:#283593,stroke-width:2px
+    style EPIST fill:#f3e5f5,stroke:#6a1b9a,stroke-width:3px
+    style OUTPUT fill:#e0f2f1,stroke:#00695c,stroke-width:2px
