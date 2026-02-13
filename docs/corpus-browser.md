@@ -8,7 +8,7 @@
 <div style="margin: 24px 0; padding: 20px; background: linear-gradient(135deg, #e8eaf6, #e3f2fd); border-radius: 8px; border: 1px solid #c5cae9;">
   <h3 style="margin-top: 0; color: #3f51b5;">Stöckel Corpus Browser</h3>
   <p>Browse Leonard Stöckel's <em>Annotationes in Locos communes</em> (1561) with rule-based entity annotations.</p>
-  <p><a href="prototype/" style="display: inline-block; padding: 8px 20px; background: #3f51b5; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Open Corpus Browser &rarr;</a></p>
+  <p><a href="../prototype/" style="display: inline-block; padding: 8px 20px; background: #3f51b5; color: white; border-radius: 4px; text-decoration: none; font-weight: 500;">Open Corpus Browser &rarr;</a></p>
 </div>
 
 ## What This Prototype Demonstrates
@@ -50,3 +50,5 @@ Stage 7: INTERACT   ⚡  This prototype
 2. **CRF training** — adapt the GNORM CRF pipeline for Protestant theological texts
 3. **Enhanced detection** — integrate CRF predictions into the corpus browser
 4. **Citation network visualization** — D3.js graphs showing citation relationships
+
+*Last updated: 2026-02-13*

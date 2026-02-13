@@ -29,7 +29,7 @@
       contentArea.innerHTML = `
         <div class="no-results">
           <h3>Failed to load corpus data</h3>
-          <p>${err.message}</p>
+          <p>${escapeHtml(err.message)}</p>
           <p style="margin-top:12px;font-size:12px;">Make sure <code>data/corpus.json</code> exists. Run <code>build_corpus_json.py</code> to generate it.</p>
         </div>`;
     }
@@ -58,18 +58,18 @@
       const pageRange = `pp. ${ch.start_page}–${ch.end_page}`;
 
       html += `
-        <div class="chapter-group" data-chapter="${ch.id}">
-          <div class="chapter-item" data-chapter="${ch.id}">
+        <div class="chapter-group" data-chapter="${escapeAttr(ch.id)}">
+          <div class="chapter-item" data-chapter="${escapeAttr(ch.id)}">
             <span class="expand-icon">&#9654;</span>
-            <span class="chapter-title">${ch.title}</span>
-            <span class="chapter-meta">${pageRange}</span>
+            <span class="chapter-title">${escapeHtml(ch.title)}</span>
+            <span class="chapter-meta">${escapeHtml(pageRange)}</span>
           </div>
           <div class="page-list">`;
 
       for (const pg of ch.pages) {
         const pgRefs = pg.references.length;
         const refBadge = pgRefs > 0 ? ` (${pgRefs})` : '';
-        html += `<div class="page-item" data-page="${pg.page}" data-chapter="${ch.id}">p. ${pg.page}${refBadge}</div>`;
+        html += `<div class="page-item" data-page="${pg.page}" data-chapter="${escapeAttr(ch.id)}">p. ${pg.page}${refBadge}</div>`;
       }
 
       html += `</div></div>`;
@@ -88,7 +88,7 @@
       if (count > 0) {
         html += `
           <div class="stat-row">
-            <span class="stat-label"><span class="stat-dot" style="background:${t.color}"></span>${t.label}</span>
+            <span class="stat-label"><span class="stat-dot" style="background:${escapeAttr(t.color)}"></span>${escapeHtml(t.label)}</span>
             <span class="stat-value">${count}</span>
           </div>`;
       }
@@ -115,7 +115,7 @@
       const count = corpus.stats.by_type[t.id] || 0;
       if (count > 0) {
         const isActive = activeFilters.has(t.id);
-        html += `<span class="filter-tag ${isActive ? 'active' : ''}" data-type="${t.id}"><span class="dot"></span>${t.label} (${count})</span>`;
+        html += `<span class="filter-tag ${isActive ? 'active' : ''}" data-type="${escapeAttr(t.id)}"><span class="dot"></span>${escapeHtml(t.label)} (${count})</span>`;
       }
     }
 
@@ -125,7 +125,7 @@
       const count = corpus.stats.by_epistemic[e.id] || 0;
       if (count > 0) {
         const isActive = activeEpistemicFilters.has(e.id);
-        html += `<span class="filter-tag epistemic ${isActive ? 'active' : ''}" data-epistemic="${e.id}"><span class="dot"></span>${e.label} (${count})</span>`;
+        html += `<span class="filter-tag epistemic ${isActive ? 'active' : ''}" data-epistemic="${escapeAttr(e.id)}"><span class="dot"></span>${escapeHtml(e.label)} (${count})</span>`;
       }
     }
 
@@ -182,14 +182,14 @@
     for (const [type, count] of Object.entries(refCounts)) {
       const entityType = corpus.entity_types.find(t => t.id === type);
       if (entityType) {
-        statsHtml += `<span class="stat"><span class="dot" style="background:${entityType.color}"></span>${entityType.label}: ${count}</span>`;
+        statsHtml += `<span class="stat"><span class="dot" style="background:${escapeAttr(entityType.color)}"></span>${escapeHtml(entityType.label)}: ${count}</span>`;
       }
     }
 
     let html = `
       <div class="chapter-header">
-        <h2>${ch.title}</h2>
-        <div class="chapter-en">${ch.title_en} — Pages ${ch.start_page}–${ch.end_page}</div>
+        <h2>${escapeHtml(ch.title)}</h2>
+        <div class="chapter-en">${escapeHtml(ch.title_en)} — Pages ${ch.start_page}–${ch.end_page}</div>
         <div class="chapter-stats">${statsHtml}</div>
       </div>`;
 
@@ -286,7 +286,7 @@
 
       if (ins.type === 'ref-open') {
         const r = ins.ref;
-        result += `<span class="ref-highlight" data-type="${r.type}" data-confidence="${r.confidence}" data-epistemic="${r.epistemic}" data-text="${escapeAttr(r.text)}" data-method="${r.method}">`;
+        result += `<span class="ref-highlight" data-type="${escapeAttr(r.type)}" data-confidence="${escapeAttr(String(r.confidence))}" data-epistemic="${escapeAttr(r.epistemic)}" data-text="${escapeAttr(r.text)}" data-method="${escapeAttr(r.method)}">`;
       } else if (ins.type === 'ref-close') {
         result += '</span>';
       } else if (ins.type === 'search-open') {
@@ -360,12 +360,21 @@
 
     for (const { chapter, count } of chapterMatches) {
       html += `
-        <div class="page-block" style="cursor:pointer" onclick="document.querySelector('[data-chapter=${chapter.id}] .chapter-item').click()">
-          <div class="page-label">${chapter.title} — ${chapter.title_en} (${count} matches)</div>
+        <div class="page-block search-result" style="cursor:pointer" data-chapter-id="${escapeAttr(chapter.id)}">
+          <div class="page-label">${escapeHtml(chapter.title)} — ${escapeHtml(chapter.title_en)} (${count} matches)</div>
         </div>`;
     }
 
     contentArea.innerHTML = html;
+
+    // Bind click handlers via event delegation (not inline onclick)
+    contentArea.querySelectorAll('.search-result').forEach(block => {
+      block.addEventListener('click', () => {
+        const chapterId = block.dataset.chapterId;
+        const navItem = document.querySelector(`[data-chapter="${chapterId}"] .chapter-item`);
+        if (navItem) navItem.click();
+      });
+    });
   }
 
   // ============================================================================
@@ -386,13 +395,13 @@
     const epistemicClass = epistemic === 'FACTUAL' ? 'factual' : 'interpretive';
 
     tooltip.innerHTML = `
-      <div class="tooltip-type" style="color:${typeColor}">${typeLabel}</div>
-      <div class="tooltip-text">"${text}"</div>
+      <div class="tooltip-type" style="color:${escapeAttr(typeColor)}">${escapeHtml(typeLabel)}</div>
+      <div class="tooltip-text">"${escapeHtml(text)}"</div>
       <div class="tooltip-meta">
-        <span class="tooltip-badge ${epistemicClass}">${epistemic}</span>
+        <span class="tooltip-badge ${escapeAttr(epistemicClass)}">${escapeHtml(epistemic)}</span>
         <span style="opacity:0.6;font-size:10px">Confidence: ${Math.round(confidence * 100)}%</span>
       </div>
-      <div style="margin-top:4px;font-size:10px;opacity:0.5">Detection: ${method}</div>`;
+      <div style="margin-top:4px;font-size:10px;opacity:0.5">Detection: ${escapeHtml(method)}</div>`;
 
     // Position tooltip
     const rect = tooltip.getBoundingClientRect();
