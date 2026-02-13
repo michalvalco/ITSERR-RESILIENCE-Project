@@ -14,7 +14,7 @@ without a Tesseract installation.
 
 import sys
 from pathlib import Path
-from unittest.mock import MagicMock, patch, call
+from unittest.mock import MagicMock, patch
 
 import pytest
 
@@ -27,6 +27,7 @@ from ocr_processor import (
     extract_both_from_pdf,
     extract_text_from_pdf,
     identify_chapters,
+    main,
     save_alto,
     save_text,
 )
@@ -176,7 +177,7 @@ class TestExtractTextFromPDF:
         """Should pass lang='lat' to pytesseract."""
         extract_text_from_pdf(Path("dummy.pdf"), start_page=1, end_page=2)
         call_kwargs = mock_tesseract.image_to_string.call_args
-        assert call_kwargs[1]["lang"] == "lat" or call_kwargs.kwargs["lang"] == "lat"
+        assert call_kwargs[1]["lang"] == "lat"
 
 
 # =============================================================================
@@ -287,7 +288,7 @@ class TestAltoNotCleaned:
         """ALTO extraction should return raw bytes, not cleaned text."""
         result = extract_alto_from_pdf(Path("dummy.pdf"), start_page=1, end_page=2)
         # The raw ALTO bytes should be identical to what pytesseract returned
-        assert result[1] is SAMPLE_ALTO_XML
+        assert result[1] == SAMPLE_ALTO_XML
 
     def test_clean_ocr_text_not_called_for_alto(self, mock_convert, mock_tesseract):
         """clean_ocr_text should not be called on ALTO data."""
@@ -372,3 +373,39 @@ class TestBackwardCompatibility:
         text = "In DE PECCATO ORIGINIS we find DE IUSTIFICATIONE"
         chapters = identify_chapters(text)
         assert len(chapters) == 2
+
+
+# =============================================================================
+# Version Guard Tests
+# =============================================================================
+
+
+class TestVersionGuard:
+    """Tests for the pytesseract version guard on image_to_alto_xml."""
+
+    def test_alto_format_without_image_to_alto_xml(self):
+        """Should exit with error when image_to_alto_xml is unavailable."""
+        # Create a mock pytesseract that lacks image_to_alto_xml
+        mock_pt = MagicMock(spec=["image_to_string", "get_tesseract_version"])
+        mock_pt.get_tesseract_version.return_value = "4.0.0"
+
+        with patch("ocr_processor.pytesseract", mock_pt), \
+             patch("ocr_processor.PDF_PATH") as mock_pdf, \
+             patch("sys.argv", ["ocr_processor", "--format", "alto"]):
+            mock_pdf.exists.return_value = True
+
+            with pytest.raises(SystemExit):
+                main()
+
+    def test_both_format_without_image_to_alto_xml(self):
+        """Should also exit for --format both when image_to_alto_xml missing."""
+        mock_pt = MagicMock(spec=["image_to_string", "get_tesseract_version"])
+        mock_pt.get_tesseract_version.return_value = "4.0.0"
+
+        with patch("ocr_processor.pytesseract", mock_pt), \
+             patch("ocr_processor.PDF_PATH") as mock_pdf, \
+             patch("sys.argv", ["ocr_processor", "--format", "both"]):
+            mock_pdf.exists.return_value = True
+
+            with pytest.raises(SystemExit):
+                main()
