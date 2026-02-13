@@ -319,11 +319,12 @@ def main():
         parser.error(f"PDF file not found at {PDF_PATH}")
 
     # Check that image_to_alto_xml is available when needed
-    if args.output_format in ('alto', 'both') and not hasattr(pytesseract, 'image_to_alto_xml'):
-        parser.error(
-            "pytesseract.image_to_alto_xml() not available. "
-            "Upgrade pytesseract: pip install --upgrade pytesseract>=0.3.8"
-        )
+    if args.output_format in ('alto', 'both'):
+        if pytesseract is None or not hasattr(pytesseract, 'image_to_alto_xml'):
+            parser.error(
+                "pytesseract.image_to_alto_xml() not available. "
+                "Upgrade pytesseract: pip install --upgrade pytesseract>=0.3.8"
+            )
 
     print(f"OCR Processing: Stöckel Annotationes")
     print(f"Pages: {start}-{end}")
@@ -404,7 +405,7 @@ def main():
     # -------------------------------------------------------------------------
 
     print(f"\nSummary:")
-    num_pages = len(page_texts) or len(page_altos)
+    num_pages = max(len(page_texts), len(page_altos))
     print(f"  Pages processed: {num_pages}")
 
     if cleaned_texts:
