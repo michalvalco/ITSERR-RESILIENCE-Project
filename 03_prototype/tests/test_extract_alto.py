@@ -11,6 +11,7 @@ Tests cover:
 """
 
 import csv
+import logging
 import sys
 from pathlib import Path
 
@@ -20,12 +21,14 @@ import pytest
 sys.path.insert(0, str(Path(__file__).parent.parent / "stockel_annotation" / "scripts"))
 
 from extract_alto import (
+    _is_encoding_error,
     assemble_text,
     collect_word_confidence,
     compute_stats,
     detect_namespace,
     extract_confidence_from_alto,
     extract_text_from_alto,
+    main,
     parse_alto_file,
     parse_page_range,
     process_batch,
@@ -824,3 +827,121 @@ class TestIntegration:
         # normalize_text.py protects [Page N] and [PAGE BREAK] markers
         assert "[Page 1]" in text
         assert "[PAGE BREAK]" in text
+
+
+# =============================================================================
+# Encoding Error Detection Tests
+# =============================================================================
+
+
+class TestIsEncodingError:
+    """Tests for the _is_encoding_error heuristic."""
+
+    def test_detects_encoding_error_message(self):
+        """Should detect messages containing 'encoding error'."""
+        err = etree.XMLSyntaxError("encoding error: output conversion failed", 0, 0, 0)
+        assert _is_encoding_error(err) is True
+
+    def test_detects_bytes_cannot_be_decoded(self):
+        """Should detect 'bytes cannot be decoded' variant."""
+        err = etree.XMLSyntaxError("input bytes cannot be decoded", 0, 0, 0)
+        assert _is_encoding_error(err) is True
+
+    def test_detects_bytes_can_not_be_decoded(self):
+        """Should detect 'bytes can not be decoded' variant (alternate spelling)."""
+        err = etree.XMLSyntaxError("bytes can not be decoded using encoding", 0, 0, 0)
+        assert _is_encoding_error(err) is True
+
+    def test_detects_invalid_byte(self):
+        """Should detect 'invalid byte' messages."""
+        err = etree.XMLSyntaxError("invalid byte sequence", 0, 0, 0)
+        assert _is_encoding_error(err) is True
+
+    def test_rejects_non_encoding_error(self):
+        """Should return False for non-encoding XML errors."""
+        err = etree.XMLSyntaxError("Opening and ending tag mismatch", 0, 0, 0)
+        assert _is_encoding_error(err) is False
+
+    def test_rejects_generic_syntax_error(self):
+        """Should return False for generic XML syntax errors."""
+        err = etree.XMLSyntaxError("StartTag: invalid element name", 0, 0, 0)
+        assert _is_encoding_error(err) is False
+
+
+# =============================================================================
+# CLI Flag Regression Tests
+# =============================================================================
+
+
+class TestCLIBatchConfidenceFlags:
+    """Regression tests for --confidence vs --export-confidence in batch mode."""
+
+    def test_confidence_flag_does_not_create_csv_in_batch(self, tmp_path, caplog):
+        """--confidence path should be ignored in batch mode (no CSV created)."""
+        input_dir = tmp_path / "input"
+        output_dir = tmp_path / "output"
+        input_dir.mkdir()
+        (input_dir / "file1.xml").write_text(ALTO_V3_BASIC, encoding="utf-8")
+
+        csv_path = tmp_path / "should_not_exist.csv"
+        sys.argv = [
+            "extract_alto",
+            str(input_dir),
+            "-o", str(output_dir),
+            "--confidence", str(csv_path),
+        ]
+
+        with caplog.at_level(logging.WARNING):
+            main()
+
+        # The CSV specified by --confidence should NOT be created
+        assert not csv_path.exists()
+        # No per-file confidence CSVs should exist either
+        assert not list(output_dir.glob("*.confidence.csv"))
+        # Should warn the user
+        assert "--confidence" in caplog.text
+
+    def test_export_confidence_creates_csv_in_batch(self, tmp_path):
+        """--export-confidence should create per-file CSVs in batch mode."""
+        input_dir = tmp_path / "input"
+        output_dir = tmp_path / "output"
+        input_dir.mkdir()
+        (input_dir / "file1.xml").write_text(ALTO_V3_BASIC, encoding="utf-8")
+
+        sys.argv = [
+            "extract_alto",
+            str(input_dir),
+            "-o", str(output_dir),
+            "--export-confidence",
+        ]
+        main()
+
+        assert (output_dir / "file1.txt").exists()
+        assert (output_dir / "file1.confidence.csv").exists()
+
+
+class TestCLISingleFileExportConfidence:
+    """Tests for --export-confidence warning in single-file mode."""
+
+    def test_export_confidence_warns_in_single_file_mode(self, alto_file, tmp_path, caplog):
+        """--export-confidence in single-file mode should emit a warning."""
+        path = alto_file(ALTO_V3_BASIC)
+        out = tmp_path / "output.txt"
+
+        sys.argv = [
+            "extract_alto",
+            str(path),
+            "-o", str(out),
+            "--export-confidence",
+        ]
+
+        with caplog.at_level(logging.WARNING):
+            main()
+
+        # Output text should still be generated
+        assert out.exists()
+        assert "De Peccato" in out.read_text(encoding="utf-8")
+        # Should warn that --export-confidence is for batch mode
+        assert "--export-confidence" in caplog.text
+        # No CSV should be generated (no --confidence path was provided)
+        assert not list(tmp_path.glob("*.csv"))
