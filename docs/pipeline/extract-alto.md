@@ -36,7 +36,7 @@ python scripts/extract_alto.py data/alto/ -o data/cleaned/ --recursive --export-
 | `-o`, `--output` | Output file (single mode) or directory (batch mode) |
 | `--confidence` | CSV file path for per-word confidence scores (single mode) |
 | `--export-confidence` | Generate per-file confidence CSVs (batch mode) |
-| `--min-confidence` | Minimum confidence threshold for flagging (default: none) |
+| `--min-confidence` | Minimum confidence threshold for flagging (default: 0.7) |
 | `--pages` | Page range filter (e.g., `1-10`) |
 | `--recursive` | Process subdirectories in batch mode |
 
