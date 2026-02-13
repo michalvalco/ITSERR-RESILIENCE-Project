@@ -20,8 +20,6 @@ import pytest
 sys.path.insert(0, str(Path(__file__).parent.parent / "stockel_annotation" / "scripts"))
 
 from extract_alto import (
-    ExtractionStats,
-    WordInfo,
     assemble_text,
     collect_word_confidence,
     compute_stats,
@@ -454,8 +452,22 @@ class TestHyphenation:
         text = assemble_text(pages)
         # Without SUBS_CONTENT, HypPart1 uses its raw CONTENT
         assert "Origi" in text
-        # HypPart2 should still be skipped
+        # HypPart2 is still skipped because HypPart1 was present
         assert "nali" not in text
+
+    def test_orphaned_hyppart2_emits_content(self):
+        """Orphaned HypPart2 (no preceding HypPart1) should emit its content."""
+        from extract_alto import WordInfo, _assemble_block
+        # Simulate a block whose first line starts with an orphaned HypPart2
+        # (e.g., page-range extraction that starts mid-hyphenation)
+        lines = [[
+            WordInfo(content="nali", confidence=0.88, page=2, line_id="l1",
+                     subs_type="HypPart2", subs_content="Originali"),
+            WordInfo(content="Caput", confidence=0.97, page=2, line_id="l1"),
+        ]]
+        result = _assemble_block(lines)
+        assert "nali" in result[0]
+        assert "Caput" in result[0]
 
 
 # =============================================================================

@@ -202,20 +202,38 @@ def parse_alto_file(
     return pages_data, ns
 
 
+def _is_encoding_error(error: etree.XMLSyntaxError) -> bool:
+    """Check whether an XMLSyntaxError is likely caused by an encoding issue."""
+    msg = str(error).lower()
+    encoding_indicators = [
+        "encoding error",
+        "unknown encoding",
+        "unsupported encoding",
+        "invalid byte",
+        "bytes can not be decoded",
+        "cannot decode byte",
+        "encoder error",
+        "switching encoding",
+    ]
+    return any(indicator in msg for indicator in encoding_indicators)
+
+
 def _parse_xml(file_path: Path) -> etree._ElementTree:
     """
     Parse an XML file with encoding fallback.
 
-    Tries UTF-8 first, falls back to Latin-1 on encoding errors.
+    Tries the default parse first, falls back to Latin-1 only on
+    encoding-related errors. Non-encoding XML syntax errors are re-raised.
     """
     try:
         return etree.parse(str(file_path))
-    except etree.XMLSyntaxError:
-        # Try with explicit Latin-1 encoding
-        logger.debug("UTF-8 parse failed for %s, trying Latin-1", file_path)
-        with open(file_path, "r", encoding="latin-1") as f:
-            content = f.read()
-        return etree.fromstring(content.encode("utf-8")).getroottree()
+    except etree.XMLSyntaxError as e:
+        if not _is_encoding_error(e):
+            raise
+        logger.debug("Parse failed for %s due to encoding; trying Latin-1", file_path)
+        parser = etree.XMLParser(encoding="latin-1")
+        with open(file_path, "rb") as f:
+            return etree.parse(f, parser)
 
 
 def _parse_string_element(el: etree._Element, page_num: int, line_id: str) -> WordInfo | None:
@@ -268,52 +286,61 @@ def assemble_text(
         page_num = page_offset + page_idx + 1
 
         if page_idx > 0:
-            output_parts.append("\n[PAGE BREAK]\n")
-        output_parts.append(f"[Page {page_num}]\n")
+            output_parts.append("")
+            output_parts.append("[PAGE BREAK]")
+            output_parts.append("")
+        output_parts.append(f"[Page {page_num}]")
 
         for block_idx, lines in enumerate(blocks):
             if block_idx > 0:
                 output_parts.append("")  # Blank line between TextBlocks
 
-            for line in lines:
-                line_text = _assemble_line(line)
-                output_parts.append(line_text)
+            block_lines = _assemble_block(lines)
+            output_parts.extend(block_lines)
 
     return "\n".join(output_parts)
 
 
-def _assemble_line(words: list[WordInfo]) -> str:
+def _assemble_block(lines: list[list[WordInfo]]) -> list[str]:
     """
-    Assemble a single TextLine's words into a string.
+    Assemble a TextBlock's lines into a list of text strings.
 
-    Handles hyphenation: when a word has SUBS_TYPE="HypPart1", use
-    SUBS_CONTENT for the full word and skip the corresponding HypPart2.
+    Handles cross-line hyphenation: HypPart1 at the end of line N causes
+    the corresponding HypPart2 at the start of line N+1 to be skipped
+    (the full word comes from SUBS_CONTENT on HypPart1).
     """
-    parts: list[str] = []
+    result: list[str] = []
+    # Track whether the previous line ended with HypPart1
     skip_next_hyp2 = False
 
-    for word in words:
-        if skip_next_hyp2 and word.subs_type == "HypPart2":
-            skip_next_hyp2 = False
-            continue
+    for words in lines:
+        parts: list[str] = []
 
-        if word.subs_type == "HypPart1":
-            # Use the substitution content (full rejoined word) if available
-            if word.subs_content:
-                parts.append(word.subs_content)
-            else:
-                # Fallback: just use the content as-is (will include trailing hyphen)
+        for word in words:
+            if skip_next_hyp2 and word.subs_type == "HypPart2":
+                skip_next_hyp2 = False
+                continue
+
+            if word.subs_type == "HypPart1":
+                # Use the substitution content (full rejoined word) if available
+                if word.subs_content:
+                    parts.append(word.subs_content)
+                else:
+                    # Fallback: just use the content as-is
+                    parts.append(word.content)
+                skip_next_hyp2 = True
+            elif word.subs_type == "HypPart2":
+                # Orphaned HypPart2 without a preceding HypPart1 (e.g., page-range
+                # extraction starting mid-hyphenation, or malformed ALTO). Emit the
+                # content rather than silently dropping it.
+                logger.debug("Orphaned HypPart2 '%s' with no preceding HypPart1", word.content)
                 parts.append(word.content)
-            skip_next_hyp2 = True
-        elif word.subs_type == "HypPart2":
-            # If we reach HypPart2 without a preceding HypPart1 (shouldn't happen
-            # in well-formed ALTO, but handle gracefully), just skip it since the
-            # full word was already emitted from HypPart1
-            continue
-        else:
-            parts.append(word.content)
+            else:
+                parts.append(word.content)
 
-    return " ".join(parts)
+        result.append(" ".join(parts))
+
+    return result
 
 
 # =============================================================================
@@ -510,15 +537,20 @@ def process_batch(
 
         logger.info("Processing: %s", xml_file.name)
         try:
-            text = extract_text_from_alto(
-                xml_file, page_range=page_range, confidence_threshold=confidence_threshold,
-            )
+            # Parse once and reuse for both text and confidence extraction
+            pages, _ = parse_alto_file(xml_file, page_range=page_range)
+            page_offset = (page_range[0] - 1) if page_range else 0
+
+            stats = compute_stats(pages, confidence_threshold, page_offset=page_offset)
+            log_stats(stats, confidence_threshold)
+
+            text = assemble_text(pages, page_offset=page_offset)
             out_txt.write_text(text, encoding="utf-8")
             logger.info("  → %s", out_txt.name)
 
             if confidence_csv:
                 out_csv = out_txt.with_suffix(".confidence.csv")
-                rows = extract_confidence_from_alto(xml_file, page_range=page_range)
+                rows = collect_word_confidence(pages, page_offset=page_offset)
                 write_confidence_csv(rows, out_csv)
         except etree.XMLSyntaxError as e:
             logger.error("Malformed XML in %s: %s", xml_file.name, e)
@@ -561,7 +593,11 @@ def main():
     )
     parser.add_argument(
         "--confidence", type=Path, default=None,
-        help="Output confidence CSV file (single-file mode)"
+        help="Output confidence CSV file path (single-file mode only)"
+    )
+    parser.add_argument(
+        "--export-confidence", action="store_true",
+        help="Generate per-file confidence CSVs alongside output (batch mode)"
     )
     parser.add_argument(
         "--min-confidence", type=float, default=0.7,
@@ -598,11 +634,17 @@ def main():
 
     # Batch vs single-file mode
     if args.input.is_dir():
+        if args.confidence:
+            logger.warning(
+                "--confidence path is ignored in batch mode; "
+                "CSV files are generated alongside each .txt output. "
+                "Use --export-confidence to enable batch CSV export."
+            )
         process_batch(
             input_dir=args.input,
             output_dir=args.output,
             recursive=args.recursive,
-            confidence_csv=args.confidence is not None,
+            confidence_csv=args.confidence is not None or args.export_confidence,
             page_range=page_range,
             confidence_threshold=args.min_confidence,
         )
