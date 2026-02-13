@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 13, 2026 (Day 4 of 14)
-**Active work:** Integrated research synthesis — completing [C] source integration, bibliography searches done, outline updated with 6 new sources. PKB and Project Instructions cleanup/reorganization.
-**Next:** Create pipeline technical reference for PKB. Begin Section 1 drafting of integrated synthesis. Prepare materials for next in-person meeting with Arianna/Marcello.
+**Active work:** Created `pipeline_technical_reference.md` (~230 lines) for Claude Project PKB. Condensed Deep Dive, workflow diagram, epistemic framework, and code inspection into quick-lookup reference card.
+**Next:** Upload `pipeline_technical_reference.md` to Claude Project PKB. Begin Section 1 drafting of integrated synthesis. Prepare materials for next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
 ---
@@ -133,7 +133,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 |------|---------|----------------|
 | `Ethically-Grounded_AI_Agents...md` | Source A: 142-source literature landscape, five-gap analysis | Literature questions, citation lookups, gap framing |
 | `itserr_reference_mapping.md` | Prototype architecture snapshot (Jan 25) | Agent code architecture, test coverage, technical debt |
-| *(planned)* `pipeline_technical_reference.md` | CIC/GNORM pipeline essentials for adaptation | Any technical pipeline work, entity schemas, BIOES format |
+| `pipeline_technical_reference.md` | CIC/GNORM pipeline essentials for adaptation | Any technical pipeline work, entity schemas, BIOES format |
 
 These are static snapshots. For current status, always read this HUB file and `integrated_report_strategy.md` from the filesystem.
 

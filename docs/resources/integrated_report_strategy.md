@@ -286,6 +286,12 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 - **Updated this strategy document** with [C] references, new Phase 1b, completed search results, session log
 - **Next session should:** Execute PROMPT_integrate_chat_report.md — deep read [C], assess, update outline, then proceed to Phase 2 drafting
 
+### Session 4 — February 13, 2026 (later)
+- **What happened:** Created `pipeline_technical_reference.md` (~230 lines) for Claude Project PKB. Read CIC_annotation Deep Dive (567 lines), workflow diagram (358 lines), epistemic modesty framework, and confirmed source code structure. Condensed into quick-lookup reference card covering: 6-layer pipeline architecture, BIOES format, entity types (current 4 + proposed 7), CRF feature engineering, source tracking → epistemological classification mapping, dependencies, adaptation gaps, and open questions.
+- **Files created:** `docs/resources/pipeline_technical_reference.md`
+- **HUB updates:** Current Status updated; PKB Contents table updated (removed "planned" marker).
+- **Next session should:** Upload `pipeline_technical_reference.md` to Claude Project PKB. Then resume synthesis work — execute PROMPT_integrate_chat_report.md.
+
 ---
 
 ## 9. FILE LOCATIONS

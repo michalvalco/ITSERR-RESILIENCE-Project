@@ -2,8 +2,8 @@
 
 **Prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 12 February 2026  
-**Status:** Working draft — to be refined collaboratively on Miro canvas
+**Date:** 12 February 2026 (created) | 13 February 2026 (revised)  
+**Status:** Working draft — revised after Feb 12 meeting and code analysis. Ready for Miro transfer and collaborative refinement.
 
 ---
 
@@ -21,7 +21,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 |-------|-------------|
 | **Church historians** (Valčo, Hanus, Kowalská) | Domain expertise: identifying citation patterns, validating annotations, building abbreviation dictionaries, creating training data in INCEpTION |
 | **Library scientists** (Kollárová, SNK/Glončák) | Source materials: providing digitised images, ALTO XML metadata, bibliographic records |
-| **GNORM team** (Pavone, Imperia) | Technical methodology: the annotation pipeline, CRF models, architectural expertise |
+| **GNORM/WP3 team** (Pavone, Ravasco, Imperia, Esuli, Puccetti) | Technical methodology: the annotation pipeline, CRF models, architectural expertise |
 | **Annotators** (Hanus, Kollárová + doctoral student) | Manual annotation in INCEpTION to create training data |
 
 ### Who Consumes Value
@@ -68,7 +68,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 
 **Open questions for Palermo team:**
 - Does GNORM assume any particular image quality or resolution threshold?
-- Is there a standard acquisition checklist we should follow?
+- Any standard acquisition checklist beyond this workflow? (This document serves as our working checklist.)
 
 ---
 
@@ -111,7 +111,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Open questions for Palermo team:**
 - Should we preserve ALTO word-level confidence scores for downstream filtering?
 - Recommendations for handling OCR noise — post-processing rules or noisy training data?
-- Marcello mentioned Transkribus for handwriting recognition — relevant for marginalia?
+- Marcello suggested Transkribus for handwriting recognition — to be explored for marginalia if encountered
 
 ---
 
@@ -137,7 +137,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 | Biblical_citation | Direct reference to Scripture | *Matt. 5,3–12* | Allegazione normativa |
 | Patristic_reference | Reference to Church Fathers | *Aug. de civ. Dei XIV.28* | Allegazione normativa |
 | Confessional_reference | Reference to Reformation documents | *CA Art. IV* | Allegazione normativa |
-| Hymnological_reference | Reference to hymns/liturgical texts | *Cithara Sanctorum No. 42* | (new) |
+| Hymnological_reference | Reference to hymns/liturgical texts | *Cithara Sanctorum No. 42* (Tranovský, 1636 — Czech text; tests pipeline on non-Latin scripts) | (new) |
 | Cross_reference | Internal reference to other works | *vid. supra cap. III* | (new) |
 | Glossed_term | Theological term being defined | *iustificatio, fides* | Lemma glossato |
 | Section_header | Structural element | *Caput III: De fide* | Titolo / Capitolo |
@@ -204,9 +204,11 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 | INTERPRETIVE | CRF alone, or confidence 0.70–0.85 | Flag for expert review |
 | DEFERRED | Methods disagree, or confidence <0.70, or requires theological judgment | Route to human annotator |
 
+**Design note:** This dual-path approach — method consensus across pipeline layers *plus* CRF marginal probabilities within the ML layer — is more robust than either mechanism alone, and represents a methodological extension beyond the original CIC_annotation design.
+
 **Open questions for Palermo team:**
 - Zero-shot test results will determine where to focus adaptation effort
-- Is the layered architecture transferable, or is it CIC-specific?
+- Code analysis confirms the layered architecture is domain-agnostic (CRF is entity-type agnostic, merge logic is format-agnostic) — but would value Arianna's confirmation and any caveats from experience
 - Character-level features for orthographic variation — worth adding?
 
 ---
@@ -321,15 +323,17 @@ Researchers, Libraries, RESILIENCE Network
 
 ---
 
-## What We Bring to Palermo (Concrete Materials)
+## Current Materials Status
 
 | Item | Status | Format |
 |------|--------|--------|
-| Stöckel sample texts (20–30pp) | TO PREPARE | Plaintext (.txt), not .docx |
-| Preliminary abbreviation list | TO COMPILE | CSV or Markdown table |
-| This workflow document | DRAFT | Markdown (to transfer to Miro) |
-| CIC_annotation code analysis | COMPLETE | Markdown (in APVV repo) |
-| Entity type schema proposal | DRAFT | Table in this document |
+| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — need plaintext extraction from TIFF/PDF | Plaintext (.txt) |
+| Preliminary abbreviation list | 🔧 TO COMPILE from Stöckel corpus conventions | CSV or Markdown table |
+| This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
+| CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
+| Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |
+| Entity type schema proposal | ✅ DRAFT — in Stage 3 above; needs validation against samples | Table |
+| Zero-shot test | 🔧 NOT STARTED — blocked on sample text preparation | — |
 
 ---
 
@@ -354,4 +358,4 @@ Researchers, Libraries, RESILIENCE Network
 
 ---
 
-*This document maps to Marcello's Miro canvas framework. Transfer the seven stages and data flow to the canvas, even as rough notes, before the next in-person meeting.*
+*This document maps to Marcello's Miro canvas framework. Next step: transfer the seven stages and data flow to the canvas for collaborative refinement.*
