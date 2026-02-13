@@ -10,12 +10,12 @@
 
 | Category | Progress | Deadline |
 |----------|----------|----------|
-| GNORM Environment | 4/4 tasks | Feb 9 |
-| Text Selection & Preparation | 6/6 tasks | Feb 7 |
+| GNORM Environment | 5/5 tasks | Feb 9 |
+| Text Selection & Preparation | 5/7 tasks | Feb 7 |
 | Annotation Work | 1/4 tasks | Feb 9 |
 | Documentation & Communication | 4/4 tasks | Feb 9 |
 | Testing & Quality | 3/3 tasks | Feb 9 |
-| **Overall** | **20/21 tasks (95%)** | **Feb 9** |
+| **Overall** | **18/23 tasks (78%)** | **Feb 9** |
 
 ---
 

@@ -38,6 +38,14 @@
 
     [:octicons-arrow-right-24: Learn more](architecture/gnorm-integration.md)
 
+-   :material-text-recognition:{ .lg .middle } __OCR Pipeline__
+
+    ---
+
+    Two-stage OCR pipeline for 16th-century Latin texts with ALTO XML and confidence scoring
+
+    [:octicons-arrow-right-24: Learn more](pipeline/overview.md)
+
 </div>
 
 ## Project Overview
