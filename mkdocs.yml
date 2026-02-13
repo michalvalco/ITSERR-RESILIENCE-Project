@@ -107,6 +107,12 @@ nav:
     - Epistemic Indicators: concepts/epistemic-indicators.md
     - Narrative Memory: concepts/narrative-memory.md
     - Tool Patterns: concepts/tool-patterns.md
+  - OCR Pipeline:
+    - Overview: pipeline/overview.md
+    - OCR Processor: pipeline/ocr-processor.md
+    - ALTO XML Parser: pipeline/extract-alto.md
+    - Text Normalization: pipeline/normalize-text.md
+    - "Stöckel Pilot Study": pipeline/stockel-pilot.md
   - Architecture:
     - System Design: architecture/system-design.md
     - Memory Architecture: architecture/memory-architecture.md

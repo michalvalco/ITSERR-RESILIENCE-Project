@@ -328,9 +328,31 @@ registry.register(gnorm_tool)
 # User confirmation required (EXTERNAL category)
 ```
 
+## OCR Preprocessing Pipeline
+
+Before text reaches GNORM, it passes through a dedicated [OCR pipeline](../pipeline/overview.md) that handles the specific challenges of 16th-century Latin sources:
+
+```mermaid
+graph LR
+    PDF[PDF Scan] --> OCR[ocr_processor.py]
+    OCR --> ALTO[ALTO XML]
+    OCR --> TXT[Plaintext]
+    ALTO --> Parser[extract_alto.py]
+    Parser --> Confidence[Confidence CSV]
+    TXT --> Norm[normalize_text.py]
+    Norm --> Clean[Normalized Text]
+    Clean --> GNORM[GNORM Annotation]
+    Confidence --> QA[Quality Audit]
+```
+
+The ALTO XML stage preserves per-word OCR confidence scores (`WC` attribute), which can inform the epistemic confidence framework: words with low OCR confidence produce inherently less reliable annotations, regardless of the CRF model's own confidence.
+
+See the [Stöckel Pilot Study](../pipeline/stockel-pilot.md) for the practical application of this pipeline to Reformation-era theological texts.
+
 ## Future Enhancements
 
 - [ ] Batch annotation support
 - [ ] Caching for repeated texts
 - [ ] Custom entity type configuration
 - [ ] Integration with memory system (store annotations as research notes)
+- [ ] Feed OCR confidence scores into epistemic indicator thresholds
