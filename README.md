@@ -23,6 +23,18 @@ This project bridges twenty years of theological hermeneutics with AI agent deve
 4. **Final Presentation:** For ITSERR consortium partners
 5. **Blog Post:** For ITSERR/RESILIENCE website (due March 2026)
 
+## Documentation & Webpage
+
+- Live site: https://michalvalco.github.io/ITSERR-RESILIENCE-Project/
+- Source: `docs/` (MkDocs Material). Preview locally with:
+
+  ```bash
+  pip install -e "03_prototype/.[dev]"
+  mkdocs serve
+  ```
+
+The same MkDocs site powers the repository webpage on GitHub Pages.
+
 ## Repository Structure
 
 ```
@@ -35,12 +47,23 @@ This project bridges twenty years of theological hermeneutics with AI agent deve
 ├── 03_prototype/          # AI agent prototype
 │   ├── architecture/      # Design documents
 │   └── code_notes/        # Technical decisions log
+├── docs/                  # MkDocs site for the public-facing webpage
 ├── 04_presentations/      # Presentation materials
 │   └── consortium/        # Final presentation for ITSERR
 └── 05_admin/              # Administrative documents
     ├── correspondence/    # Communication drafts
     └── timeline/          # Scheduling and milestones
 ```
+
+## Quick Start (CLI)
+
+```bash
+cd 03_prototype
+pip install -e ".[dev]"
+ITSERR_ANTHROPIC_API_KEY="your-key" itserr-agent chat
+```
+
+Use `itserr-agent demo` for a guided walkthrough (no API key required). See the [installation guide](docs/getting-started/installation.md) for configuration details.
 
 ## Technical Stack
 
