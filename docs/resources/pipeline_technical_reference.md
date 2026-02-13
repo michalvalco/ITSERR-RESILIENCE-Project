@@ -57,7 +57,7 @@ INCEpTION export (ZIP-within-ZIP, UIMA CAS XMI + TypeSystem.xml)
 ### Current Input Format
 
 CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT from OCR. The DOCX is split by chapter headings via regex (`X N.N title`).  
-🔧 **For Stöckel:** Need ALTO XML → plaintext extractor (does not exist yet).
+✅ **For Stöckel:** ALTO XML → plaintext extraction pipeline built: `ocr_processor.py --format both` → `extract_alto.py` → `normalize_text.py` (78 tests passing). Located in `stockel_annotation/scripts/`.
 
 ---
 

@@ -77,21 +77,27 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Question:** How do we convert images into machine-readable text?
 
 ```
-[TIFF/JPEG2000 images]
+[TIFF/JPEG2000 images or PDFs]
         ↓ (OCR)
-[ALTO XML with word-level data]
-        ↓ (extraction — TO BE BUILT)
-[Clean plaintext]
-        ↓ (existing CIC_annotation script)
-[BIOES-tagged sequences for pipeline input]
+[ocr_processor.py --format both]
+        ↓                    ↓
+[ALTO XML]          [Clean plaintext]
+[data/alto/*.xml]   [data/cleaned/*.txt]
+        ↓
+[extract_alto.py → confidence scores.csv]
+        ↓
+[normalize_text.py]
+        ↓
+[data/normalized/*.txt → BIOES tagging for pipeline input]
 ```
 
 **Current state:**
-- Some materials have existing ABBYY FineReader OCR output (ALTO XML)
-- Other materials may need fresh OCR processing
-- **Basic OCR/PDF text extraction is available** via Tesseract + Poppler (installed in prototype environment) — sufficient for initial text extraction from PDFs and images
-- **The ALTO XML → pipeline-format extraction step does not exist yet** — CIC_annotation uses `split_docx.py` for DOCX input; a script to parse ALTO XML structure (word-level bounding boxes, confidence scores) into one-token-per-line plaintext for the BIOES pipeline is still needed
-- No testing has been done on how OCR errors affect GNORM annotation accuracy
+- ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
+- ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
+- ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion)
+- ✅ 78 tests passing across both extraction and OCR modules
+- Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
+- No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 
 **Formats:**
 - Input: TIFF/JPEG2000
@@ -99,10 +105,11 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - Target: Clean plaintext → BIOES-tagged sequences
 
 **Tools:**
-- ABBYY FineReader (SNK standard) — works well on Antiqua (Latin script)
+- ABBYY FineReader (SNK standard) — works well on Antiqua (Latin script); DIKDA materials may already have ALTO XML from this
 - Transkribus or Kraken — needed for Fraktur (Gothic script) materials
-- Tesseract OCR + Poppler (installed in prototype) — available for basic PDF/image text extraction
-- Custom script needed: ALTO XML → pipeline-format extractor (preserving page/line structure, confidence scores)
+- ✅ Tesseract OCR + Poppler — installed; `ocr_processor.py` handles PDF/image → ALTO XML + plaintext
+- ✅ `extract_alto.py` — parses ALTO XML (both Tesseract and ABBYY output) into plaintext + confidence CSV
+- ✅ `normalize_text.py` — orthographic normalization for historical text
 
 **Key technical challenges:**
 - Historical orthographic variation: ſ/s, ij/j, cz/č, w/v, ß/ss
@@ -296,13 +303,16 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 
 ```
 DIKDA / Lyceum Libraries
-    │ (TIFF/JPEG2000 images)
+    │ (TIFF/JPEG2000 images, PDFs)
     ▼
-OCR Processing (ABBYY / Transkribus)
-    │ (ALTO XML)
+OCR Processing — ocr_processor.py --format both
+    │ (ALTO XML + clean plaintext)          ✅ BUILT
     ▼
-Text Extraction (Tesseract/Poppler available; ALTO XML → pipeline format TO BE BUILT)
-    │ (clean plaintext)
+Confidence Extraction — extract_alto.py
+    │ (confidence scores CSV)               ✅ BUILT
+    ▼
+Normalization — normalize_text.py
+    │ (normalized plaintext)                ✅ BUILT
     ▼
 INCEpTION (manual annotation for training data)
     │ (UIMA CAS XMI)
@@ -329,7 +339,7 @@ Researchers, Libraries, RESILIENCE Network
 
 | Item | Status | Format |
 |------|--------|--------|
-| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — Tesseract/Poppler available for extraction; need to run on sample pages | Plaintext (.txt) |
+| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — extraction pipeline ready (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`); need to run on sample pages | Plaintext (.txt) |
 | Preliminary abbreviation list | 🔧 TO COMPILE from Stöckel corpus conventions | CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
