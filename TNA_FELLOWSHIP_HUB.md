@@ -1,68 +1,152 @@
+# TNA Fellowship Hub
 
-### Where Things Actually Live
+**Fellowship:** ITSERR TNA, University of Palermo, Feb 10–27, 2026
+**Fellow:** Prof. Michal Valčo (ELTF, Comenius University Bratislava)
+**Last updated:** February 13, 2026
+
+---
+
+## Current Status (overwrite after each session)
+
+**Date:** Feb 13, 2026 (Day 4 of 14)
+**Active work:** Integrated research synthesis — completing [C] source integration, bibliography searches done, outline updated with 6 new sources. PKB and Project Instructions cleanup/reorganization.
+**Next:** Create pipeline technical reference for PKB. Begin Section 1 drafting of integrated synthesis. Prepare materials for next in-person meeting with Arianna/Marcello.
+**Blockers:** None currently.
+
+---
+
+## The Pivot (Feb 12 — Foundational Context)
+
+The TNA application promised an **AI agent prototype with personalist ethics framework**. After the first meeting with Arianna and Marcello (Feb 12), the focus shifted to **GNORM pipeline adaptation for the Stöckel corpus**, with the personalist philosophical framework as the bridging contribution.
+
+These are not contradictory — the epistemological classification (FACTUAL/INTERPRETIVE/DEFERRED) bridges them — but the emphasis has shifted substantially toward hands-on digital humanities methodology.
+
+**For hosts:** Frame as: "The ethical framework I proposed requires concrete technical grounding. Rather than building abstract principles, I'm testing them against a real adaptation challenge — applying your GNORM pipeline to a new domain. The epistemic modesty indicators I proposed map directly onto the `mark_source` mechanism in your pipeline."
+
+**For ITSERR reporting:** The blog post and final report should show both dimensions — the philosophical framing AND the technical adaptation work.
+
+---
+
+## Active Workstreams
+
+| # | Workstream | Tracked In | Status |
+|---|-----------|-----------|--------|
+| 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | Phase 2 searches complete; integrating Source [C]; outline at 622 lines with paragraph-level notes |
+| 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
+| 3 | **Writing & Deliverables** | `02_writing/` | Working paper sections drafted (pre-pivot). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
+| 4 | **Prototype** | `03_prototype/` | Functional but secondary to pipeline work. Agent, memory, epistemic modules all pass tests |
+
+---
+
+## Where Things Live
+
+### Repositories
+
+| Repo | Path | Role |
+|------|------|------|
+| **ITSERR-RESILIENCE-Project** | `GitHub\ITSERR-RESILIENCE-Project\` | Primary fellowship workspace: research, writing, prototype, presentations |
+| **APVV-2026-Religiozne-Dedicstvo** | `GitHub\APVV-2026-Religiozne-Dedicstvo\` | Grant-specific: CIC Deep Dive, SNK correspondence, team CVs, GNORM audit |
+| **CIC_annotation** | `GitHub\CIC_annotation\` | Source pipeline code (Esuli et al.). Do not modify; fork if needed |
+| **Claude_Protocols** | `GitHub\Claude_Protocols\` | General collaboration infrastructure: research paper protocol, quality standards, decision framework |
+
+### Working Directory (local, not in any repo)
+
+`C:\Users\valco\OneDrive\Documents\04 Projekty\2025 ITSERR - Resilience Project\`
+
+| Content | Subfolder |
+|---------|-----------|
+| Source reports for synthesis (.docx) | `Resources\` |
+| Synthesis outline & strategy (also synced to ITSERR repo) | `Resources\` |
+| Source PDFs (academic papers) | `Resources\` |
+| Meeting transcripts | Root |
+| TNA application materials | `TNA Application\` |
+| Collaborator profiles | `TNA Collaborators Profiles\` |
+| Travel logistics | `TNA Logistics\` |
+| Marcello's Miro workflow screenshot | Root |
+
+### Key Documents by Purpose
 
 #### Technical Documentation (GNORM / Pipeline)
 
 | Document | Location | Notes |
 |----------|----------|-------|
-| CIC_annotation Deep Dive (line-by-line code analysis) | `APVV repo: 06_technologie/CIC_annotation_Deep_Dive_Report.md` | Comprehensive. Authoritative reference for pipeline architecture. |
-| GNORM Technical Audit for SNK | `APVV repo: 06_technologie/GNORM_Technical_Audit_for_SNK.md` | Written for SNK audience; useful for interoperability questions |
-| SNK Response (Glončák) | `APVV repo: 06_technologie/Odpoved_Gloncak_SNK.md` | Infrastructure constraints and integration requirements |
-| Beginner's Guide for team | `APVV repo: 08_zdroje/Beginners_Guide_GNORM_Adaptation.md` | For Hanus, Kowalská, Kollárová — non-technical overview |
-| Epistemic Modesty Framework | `This repo: 01_research/epistemic_modesty_framework.md` | FACTUAL/INTERPRETIVE/DEFERRED classification |
-| CIC_annotation source code | `CIC_annotation repo` (all .py files) | The actual pipeline. Do not modify; fork if needed. |
-| Stöckel pilot workspace | `This repo: 03_prototype/stockel_annotation/` | Where zero-shot test and adaptations will live |
+| CIC_annotation Deep Dive (line-by-line code analysis) | `APVV repo: 06_technologie/CIC_annotation_Deep_Dive_Report.md` | 567 lines. Authoritative reference for pipeline architecture |
+| GNORM Technical Audit for SNK | `APVV repo: 06_technologie/GNORM_Technical_Audit_for_SNK.md` | Written for SNK audience |
+| SNK Response (Glončák) | `APVV repo: 06_technologie/Odpoved_Gloncak_SNK.md` | Infrastructure constraints |
+| Beginner's Guide for team | `APVV repo: 08_zdroje/Beginners_Guide_GNORM_Adaptation.md` | For Hanus, Kowalská, Kollárová |
+| Epistemic Modesty Framework | `ITSERR repo: 01_research/epistemic_modesty_framework.md` | FACTUAL/INTERPRETIVE/DEFERRED classification |
+| Workflow Diagram (7 stages) | `ITSERR repo: 01_research/workflow_diagram.md` | Based on Marcello's Fry 2007 framework |
+| CIC_annotation source code | `CIC_annotation repo` (all .py files) | The actual pipeline |
+| Stöckel pilot workspace | `ITSERR repo: 03_prototype/stockel_annotation/` | Where zero-shot test and adaptations will live |
 
-#### Fellowship Planning
-
-| Document | Location | Notes |
-|----------|----------|-------|
-| **TNA Working Agenda & Questions** (32 questions, 6 work items) | `APVV repo: 06_technologie/TNA Fellowship Working Agenda and Questions.md` AND `Local: 04 Projekty/ITSERR/TNA Fellowship Working Agenda and Questions.md` | ⚠️ DUPLICATE. APVV repo version is canonical. Hold this document — send to Arianna *after* next week's meeting, not before. |
-| Meeting transcript (Arianna + Marcello, 12 Feb) | `Local: 04 Projekty/ITSERR/Transcript - Arianna Pavone and Marcello Costa meeting Feb 12 - summarized.docx` | Key takeaways: workflow-first approach, Miro canvas, format interoperability |
-| Collaborator profiles | `Local: 04 Projekty/ITSERR/TNA Collaborators Profiles/` | Background on Arianna, Marcello, Andrea |
-| TNA Application (original) | `Local: 04 Projekty/ITSERR/TNA Application/` | The original proposal. Context for what hosts expect vs. what we're actually doing. |
-| Marcello's workflow template | `Local: 04 Projekty/ITSERR/Workflow Draft - on Miro - from Marcello.png` | Screenshot of the Miro framework. Basis for our workflow diagram. |
-
-#### APVV Grant (Reference)
+#### Research Synthesis
 
 | Document | Location | Notes |
 |----------|----------|-------|
-| Submitted application | `APVV repo: 01_ziadost/komplet/application-APVV-25-0349.pdf` | Final submitted version. 198,220 EUR, 48 months. |
-| English research plan | `APVV repo: 01_ziadost/komplet/vecny-zamer-en-1243-2026-2-06.pdf` | Use this when explaining the project to Palermo team |
-| Status file | `APVV repo: STATUS.md` | Post-submission state, team, budget, timeline |
-| Project stages and milestones | `APVV repo: 01_ziadost/komplet/05_etapy_projektu.md` | 4-year plan with WP structure |
+| Source A: Claude Report (~142 sources) | PKB + `Resources\Ethically-Grounded AI Agents...` | Comprehensive literature landscape |
+| Source B: GEM Report (~33 sources) | `Resources\AI Agents for Religious Studies (GEM) Report.docx` | V4 infrastructure, theological metaphors |
+| Source C: Chat Report | `Resources\Report (CHAT) - Towards an Ethically-Grounded AI Research Assistant.docx` | Third source, integration pending |
+| Integration strategy & session log | `ITSERR repo: docs/resources/integrated_report_strategy.md` | Also synced to `Resources\` |
+| Detailed outline (622 lines) | `ITSERR repo: docs/resources/integrated_report_detailed_outline.md` | Also synced to `Resources\` |
+| Integration prompt for [C] | `Resources\PROMPT_integrate_chat_report.md` | Handoff prompt for fresh context window |
+
+#### Fellowship Planning & Meetings
+
+| Document | Location | Notes |
+|----------|----------|-------|
+| TNA Working Agenda & Questions (32 questions) | `APVV repo: 06_technologie/TNA Fellowship Working Agenda and Questions.md` | ⚠️ Hold — send to Arianna after trust established, not before |
+| Meeting transcript (Arianna + Marcello, 12 Feb) | `Local: Transcript - Arianna Pavone and Marcello Costa meeting Feb 12 - summarized.docx` | Key takeaways: workflow-first, Miro, format interoperability |
+| Collaborator profiles | `Local: TNA Collaborators Profiles\` | Background on Arianna, Marcello, Andrea |
+| TNA Application (original) | `Local: TNA Application\` | What hosts expect vs. what we're actually doing |
+| Marcello's workflow template | `Local: Workflow Draft - on Miro - from Marcello.png` | Miro framework screenshot |
 
 #### Stöckel Source Materials
 
 | Resource | Location | Notes |
 |----------|----------|-------|
-| Stöckel digitised works | `Local: 06 Resources/Dejiny/Domace cirkevne dejiny/Leonard Stoeckel/Diela Stoeckela/` | Raw source materials — TIFFs and PDFs |
-| KEGA Stöckel project materials | `Local: 04 Projekty/2021 KEGA Stockel/` | Earlier project; may contain transcriptions |
-| Stöckel annotation pilot | `This repo: 03_prototype/stockel_annotation/` | Pipeline test workspace |
+| Stöckel digitised works | `06 Resources/Dejiny/Domace cirkevne dejiny/Leonard Stoeckel/Diela Stoeckela/` | Raw TIFFs and PDFs |
+| KEGA Stöckel project materials | `04 Projekty/2021 KEGA Stockel/` | Earlier project; may contain transcriptions |
+| Stöckel annotation pilot | `ITSERR repo: 03_prototype/stockel_annotation/` | Pipeline test workspace |
 
----
+#### APVV Grant (Reference)
 
-## The Pivot: Bridging TNA Application and Actual Work
-
-The TNA application promised an **AI agent prototype with personalist ethics framework**. The actual work focuses on **GNORM pipeline adaptation for Stöckel corpus**. These are not contradictory — the epistemological classification (FACTUAL/INTERPRETIVE/DEFERRED) bridges them — but the emphasis has shifted substantially toward hands-on digital humanities methodology.
-
-**For hosts:** Frame this as: "The ethical framework I proposed requires concrete technical grounding. Rather than building abstract principles, I'm testing them against a real adaptation challenge — applying your GNORM pipeline to a new domain. The epistemic modesty indicators I proposed map directly onto the `mark_source` mechanism in your pipeline."
-
-**For ITSERR reporting:** The blog post and final report should show both dimensions — the philosophical framing AND the technical adaptation work. The prototype in `03_prototype/` can evolve to demonstrate both.
+| Document | Location | Notes |
+|----------|----------|-------|
+| Submitted application | `APVV repo: 01_ziadost/komplet/application-APVV-25-0349.pdf` | 198,220 EUR, 48 months |
+| English research plan | `APVV repo: 01_ziadost/komplet/vecny-zamer-en-1243-2026-2-06.pdf` | Use when explaining project to Palermo team |
+| Project stages and milestones | `APVV repo: 01_ziadost/komplet/05_etapy_projektu.md` | 4-year plan with WP structure |
 
 ---
 
 ## Marcello's Key Requirements (from 12 Feb meeting)
 
-Marcello was clear about what he needs from you before productive collaboration can happen:
+1. **Workflow diagram** — using his Acquire → Parse → Filter → Mine → Represent → Refine → Interact framework. ✅ Done: `01_research/workflow_diagram.md`
+2. **Data format commitment** — Markdown, CSV, JSON, XML only. No .docx for working documents.
+3. **Target users defined** — who generates value, who consumes it, domain context. ✅ Done: in workflow diagram.
+4. **Rough draft on Miro canvas** — populate his template. Basis for next in-person meeting.
 
-1. **Workflow diagram** — using his Acquire → Parse → Filter → Mine → Represent → Refine → Interact framework. Not a technology list; a process map. → See `01_research/workflow_diagram.md`
+---
 
-2. **Data format commitment** — stop using .docx for working documents. Use Markdown, CSV, JSON, XML. Marcello was explicit: Word and PDF are interoperability dead ends.
+## Claude Project PKB Contents (static reference files)
 
-3. **Target users defined** — who generates value, who consumes it, what is the domain context?
+| File | Purpose | When to consult |
+|------|---------|----------------|
+| `Ethically-Grounded_AI_Agents...md` | Source A: 142-source literature landscape, five-gap analysis | Literature questions, citation lookups, gap framing |
+| `itserr_reference_mapping.md` | Prototype architecture snapshot (Jan 25) | Agent code architecture, test coverage, technical debt |
+| *(planned)* `pipeline_technical_reference.md` | CIC/GNORM pipeline essentials for adaptation | Any technical pipeline work, entity schemas, BIOES format |
 
-4. **Rough draft on Miro canvas** — populate his template with your ideas, even if rough. This becomes the basis for next week's in-person meeting.
+These are static snapshots. For current status, always read this HUB file and `integrated_report_strategy.md` from the filesystem.
+
+---
+
+## Interoperability Commitments
+
+| Principle | Implementation |
+|-----------|---------------|
+| No proprietary formats for working documents | Markdown, CSV, JSON, XML only (per Marcello) |
+| Version control | Git (ITSERR and APVV repos) |
+| FAIR data principles | Metadata, persistent identifiers, open formats |
+| Reproducibility | Pipeline scripts, configuration files, documented parameters |
 
 ---
 
@@ -70,22 +154,22 @@ Marcello was clear about what he needs from you before productive collaboration 
 
 | Date | Decision | Rationale |
 |------|----------|-----------|
-| 12 Feb 2026 | Pivot TNA focus from AI agent prototype to GNORM adaptation | Aligns with APVV grant core methodology; more concrete deliverables; directly serves Stöckel corpus work |
-| 12 Feb 2026 | Designate ITSERR repo as primary TNA workspace | Prevents further fragmentation across APVV repo and local folders |
-| 12 Feb 2026 | Hold Working Agenda document until after first in-person meeting | Marcello wants workflow-first approach; 32 questions would overwhelm before trust is established |
-| 12 Feb 2026 | Adopt interoperable formats (Markdown, CSV, JSON) for all new work | Per Marcello's explicit guidance; aligns with FAIR principles |
+| 12 Feb 2026 | Pivot TNA focus from AI agent prototype to GNORM pipeline adaptation | Aligns with APVV grant core methodology; more concrete deliverables; directly serves Stöckel corpus work |
+| 12 Feb 2026 | Designate ITSERR repo as primary TNA workspace | Prevents fragmentation across repos and local folders |
+| 12 Feb 2026 | Hold Working Agenda document until after trust established | Marcello wants workflow-first approach; 32 questions would overwhelm before relationship built |
+| 12 Feb 2026 | Adopt interoperable formats (Markdown, CSV, JSON) for all new work | Per Marcello's explicit guidance; FAIR principles |
+| 13 Feb 2026 | Reorganize Claude Project: PKB for static references only, Instructions point to filesystem for current state | Prevents stale status info; HUB and strategy doc always read fresh from disk |
+| 13 Feb 2026 | Replace daily_log.md with lean status section in HUB | Empty 613-line template wasn't being used; session log in strategy doc serves as detailed record |
+| 13 Feb 2026 | Plan pipeline_technical_reference.md for PKB | Condensed CIC/GNORM essentials (~200 lines) for quick context in every technical conversation |
 
 ---
 
-## How to Use This Document
+## Session End Protocol
 
-**Starting a work session:** Open this file. Check Timeline and Deliverables. Identify what's next. Navigate to the linked document/folder.
-
-**After a significant meeting or work session:** Update the Decision Log and deliverable status. Note anything that changes the resource map.
-
-**When confused about where something is:** Check the Resource Map. If it's not listed, it either doesn't exist yet or it's been missed — add it.
-
-**When creating new files:** Put them in this repo unless they're pure logistics (travel, correspondence → local folder) or protocol-level (→ Claude_Protocols).
+1. **If synthesis work done:** Append session entry to `integrated_report_strategy.md` Section 8
+2. **Always:** Overwrite the "Current Status" section at top of this file
+3. **If strategic decisions made:** Append to Decision Log above
+4. **New files:** Place in correct repo/directory per topology above
 
 ---
 
