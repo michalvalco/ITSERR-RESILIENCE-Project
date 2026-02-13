@@ -25,7 +25,7 @@ python scripts/ocr_processor.py --format both --output-dir data/cleaned/ --alto-
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--pages` | `1-57` | Page range (e.g., `1-10`, `5-20`) |
+| `--pages` | `1-58` | Page range (e.g., `1-10`, `5-20`) |
 | `--output-dir` | `data/cleaned/` | Directory for plaintext output |
 | `--alto-dir` | `data/alto/` | Directory for ALTO XML output |
 | `--format` | `txt` | Output format: `txt`, `alto`, or `both` |
