@@ -34,7 +34,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | Phase 2 searches complete; integrating Source [C]; outline at 622 lines with paragraph-level notes |
 | 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Working paper sections drafted (pre-pivot). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
-| 4 | **Prototype** | `03_prototype/` | Functional but secondary to pipeline work. Agent, memory, epistemic modules all pass tests |
+| 4 | **Prototype** | `03_prototype/` + `TECHNOLOGY_INVENTORY.md` | Functional but secondary to pipeline work. Full inventory of scripts, tests (163 passing), OCR results, and quality assessment in `TECHNOLOGY_INVENTORY.md` |
 
 ---
 
@@ -78,6 +78,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | Workflow Diagram (7 stages) | `ITSERR repo: 01_research/workflow_diagram.md` | Based on Marcello's Fry 2007 framework |
 | CIC_annotation source code | `CIC_annotation repo` (all .py files) | The actual pipeline |
 | Stöckel pilot workspace | `ITSERR repo: 03_prototype/stockel_annotation/` | Where zero-shot test and adaptations will live |
+| **Technology Inventory** | `ITSERR repo: 03_prototype/TECHNOLOGY_INVENTORY.md` | **Definitive reference for what's built and tested in 03_prototype/.** All scripts, test results (163 tests), OCR quality assessment, data flow, dependencies. Consult when asking "what do we have?" or "does X work?" |
 
 #### Research Synthesis
 
@@ -161,6 +162,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 13 Feb 2026 | Reorganize Claude Project: PKB for static references only, Instructions point to filesystem for current state | Prevents stale status info; HUB and strategy doc always read fresh from disk |
 | 13 Feb 2026 | Replace daily_log.md with lean status section in HUB | Empty 613-line template wasn't being used; session log in strategy doc serves as detailed record |
 | 13 Feb 2026 | Plan pipeline_technical_reference.md for PKB | Condensed CIC/GNORM essentials (~200 lines) for quick context in every technical conversation |
+| 13 Feb 2026 | Create `03_prototype/TECHNOLOGY_INVENTORY.md` as detailed reference | Too granular for HUB (per-script docs, 163 test results, OCR quality specifics). Lives alongside the code it documents; HUB points to it in Key Documents and Workstream 4 |
 
 ---
 

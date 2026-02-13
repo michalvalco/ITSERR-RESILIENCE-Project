@@ -68,6 +68,19 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+annotation = [
+    # OCR extraction (ocr_processor.py)
+    "pytesseract>=0.3.8",   # Tesseract wrapper; requires Tesseract 5.x installed on system
+    "pdf2image>=1.16.0",    # PDF → PIL images; requires poppler-utils on system
+    "Pillow>=10.0.0",       # Image handling (pdf2image dependency, pinned for clarity)
+
+    # GNORM/CIC pipeline adaptation
+    "dkpro-cassis>=0.9.0",  # UIMA CAS XMI processing (INCEpTION roundtrip)
+    "scikit-learn>=1.4.0",  # ML infrastructure for CRF training
+    "sklearn-crfsuite>=0.3.6",  # CRF implementation (unmaintained since 2017 — see TECHNOLOGY_INVENTORY.md)
+    "python-docx>=1.0.0",   # DOCX parsing (CIC split_docx.py; not needed for Stöckel ALTO path)
+]
+
 dev = [
     # Testing
     "pytest>=8.0.0",
