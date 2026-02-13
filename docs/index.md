@@ -93,6 +93,23 @@ itserr-agent chat
 
 [:octicons-arrow-right-24: Full installation guide](getting-started/installation.md)
 
+## Repository Guide
+
+- `03_prototype/` — Python agent and tests (`pip install -e ".[dev]"`, then `pytest`)
+- `docs/` — MkDocs source for this webpage (`mkdocs serve` to preview locally)
+- `01_research/` — Research materials and workflow diagrams
+- `02_writing/` — Working paper and blog post drafts
+- `04_presentations/` — Final fellowship presentation assets
+
+!!! tip "Preview the site locally"
+
+    From the repository root:
+
+    ```bash
+    pip install -e "03_prototype/.[dev]"
+    mkdocs serve
+    ```
+
 ## Key Deliverables
 
 1. **Working Paper:** "Personalist Foundations for AI-Assisted Theological Research"
@@ -140,4 +157,5 @@ This research is supported by the ITSERR Transnational Access Fellowship program
 
 ---
 
+*Last updated: February 13, 2026*  
 *Part of the [RESILIENCE Research Infrastructure](https://www.resilience-ri.eu/)*
