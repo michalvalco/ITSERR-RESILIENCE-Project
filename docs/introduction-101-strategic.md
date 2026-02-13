@@ -71,11 +71,12 @@ From your existing digitized Stöckel materials:
 
 **Step 2: Create Digital Text Files**
 
-The GNORM pipeline expects plain text input. For each text:
-1. OCR if not already digitized (use Transkribus or ABBYY)
-2. Clean the text: normalize spelling variants, expand abbreviations consistently
-3. Mark structural elements: chapter breaks, lemma boundaries, gloss markers
-4. Save in UTF-8 plain text format
+The GNORM pipeline expects plain text input. The project includes a full OCR pipeline:
+1. Extract text from PDF using `ocr_processor.py` (Tesseract with Latin language pack, `--format txt` or `--format both` for ALTO XML)
+2. Optionally parse ALTO XML with `extract_alto.py` for per-word confidence scores
+3. Normalize text with `normalize_text.py`: spelling variants, abbreviation expansion, long-s correction
+4. Mark structural elements: chapter breaks, lemma boundaries, gloss markers
+5. Save in UTF-8 plain text format
 
 **Step 3: Define Annotation Schema**
 
@@ -145,19 +146,25 @@ The GNORM pipeline can likely transfer with minimal changes:
 Proposed directory structure:
 ```
 03_prototype/
+├── tests/                     # Test suites (163 tests)
 └── stockel_annotation/
     ├── README.md              # Project description
+    ├── PROGRESS.md            # Detailed progress tracking
     ├── data/
-    │   ├── raw/               # Original OCR output
-    │   ├── cleaned/           # Preprocessed text
+    │   ├── raw/               # Original PDF and OCR output
+    │   ├── cleaned/           # Preprocessed, normalized plain text
+    │   ├── alto/              # ALTO XML output (per-page, with confidence)
+    │   ├── normalized/        # Text after normalization pipeline
     │   └── annotations/       # INCEpTION exports
     ├── models/
     │   ├── gnorm_baseline/    # Reference model
     │   └── stockel_crf/       # Domain-adapted model
     ├── scripts/
-    │   ├── preprocess.py      # Text cleaning
-    │   ├── train_crf.py       # Model training
-    │   └── evaluate.py        # Performance metrics
+    │   ├── ocr_processor.py   # Tesseract OCR (txt, ALTO XML, or both)
+    │   ├── extract_alto.py    # ALTO XML → plaintext + confidence
+    │   └── normalize_text.py  # Text normalization (abbreviations, long-s)
+    ├── tools/
+    │   └── inception/         # INCEpTION setup and annotation config
     └── results/
         └── experiments.md     # Documented findings
 ```
@@ -295,5 +302,5 @@ Create teaching materials showing:
 
 *This guide integrates information from the COMPREHENSIVE_GUIDE_TO_GNORM.md, Andrea Esuli et al.'s "Automatic Annotation of Legal References" (IRCDL 2025), and the ITSERR Project Instructions and Strategy document.*
 
-*Last updated: January 25, 2026*
+*Last updated: February 13, 2026*
 *Part of the ITSERR Transnational Access Fellowship project*

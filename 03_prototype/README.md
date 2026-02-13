@@ -8,6 +8,7 @@ AI agent prototype development for the ITSERR/RESILIENCE project.
 03_prototype/
 ├── architecture/         # Design documents
 ├── code_notes/           # Technical decisions log
+├── tests/                # Test suites (163 tests total)
 └── stockel_annotation/   # Stöckel corpus pilot study (GNORM adaptation)
 ```
 
@@ -44,9 +45,13 @@ Testing GNORM's CRF-based annotation approach on 16th-century Reformation theolo
 
 | Component | Purpose |
 |-----------|---------|
-| `data/raw/` | Original OCR output from Stöckel texts |
+| `data/raw/` | Original PDF and OCR output from Stöckel texts |
 | `data/cleaned/` | Preprocessed, normalized plain text |
+| `data/alto/` | ALTO XML output from Tesseract (per-page, with confidence) |
 | `data/annotations/` | INCEpTION exports (manual annotations) |
+| `scripts/ocr_processor.py` | Tesseract OCR extraction (txt, ALTO XML, or both) |
+| `scripts/extract_alto.py` | ALTO XML parser: plaintext + confidence scores |
+| `scripts/normalize_text.py` | Text normalization (abbreviations, long-s, structure) |
 | `models/` | Trained CRF models (when available) |
 | `results/experiments.md` | Documented findings |
 
@@ -61,6 +66,8 @@ Testing GNORM's CRF-based annotation approach on 16th-century Reformation theolo
 - **Model Context Protocol (MCP)** — Tool integration
 - **ChromaDB** — Vector database for semantic memory
 - **CRFsuite** — Sequence labeling for Stöckel annotation
+- **Tesseract OCR** — PDF text extraction with Latin language support
+- **pytesseract** — Python wrapper for Tesseract (ALTO XML via `image_to_alto_xml`)
 
 ## Architecture Documents (`architecture/`)
 
