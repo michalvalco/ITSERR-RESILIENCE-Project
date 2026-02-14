@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** All 8 deep read additions applied to live reference docs. `pipeline_technical_reference.md` updated with: ATON Framework identification (§7), tokenization alignment warning (§2), sparse training data note (§4), network scale (§1), Pavone & Imperia Talmud cross-domain precedent (§1), updated §8 TBD list. `workflow_diagram.md` updated with: Omeka S / W3C Web Annotation technical integration path (Stage 7), `digitaldecretals.com` reference (Stage 5). Both files verified clean.
-**Next:** Resume integrated synthesis — execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting. Prepare for next in-person meeting with Arianna/Marcello. Two PKB-only items remain as TODOs for synthesis drafting: (1) Pavone & Imperia Talmud paper addition to literature synthesis, (2) full Pavone visualization chapter citation.
+**Active work:** Source [C] (ChatGPT report) fully integrated into detailed outline. All three source reports now merged into single 680+ line outline with [A]/[B]/[C] attribution tags throughout. Assessment document created (`chat_report_assessment.md`). ~9 new sources added to bibliography assembly notes. Both working directory and GitHub copies synced.
+**Next:** Phase 2 drafting of synthesis sections (begin with §2, §3, §6 as highest priority). Prepare for next in-person meeting with Arianna/Marcello. Two PKB-only items remain as TODOs for synthesis drafting: (1) Pavone & Imperia Talmud paper addition to literature synthesis, (2) full Pavone visualization chapter citation.
 **Blockers:** None currently.
 
 ---
@@ -31,7 +31,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 
 | # | Workstream | Tracked In | Status |
 |---|-----------|-----------|--------|
-| 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | Phase 2 searches complete; integrating Source [C]; outline at 622 lines with paragraph-level notes |
+| 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ Phase 1 complete (all three sources integrated). Outline at ~680 lines with [A]/[B]/[C] tags. ~160–170 sources catalogued. Ready for Phase 2 section drafting. |
 | 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Working paper sections drafted (pre-pivot). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
 | 4 | **Prototype** | `03_prototype/` + `TECHNOLOGY_INVENTORY.md` | Functional but secondary to pipeline work. Full inventory of scripts, tests (163 passing), OCR results, and quality assessment in `TECHNOLOGY_INVENTORY.md` |
@@ -86,10 +86,10 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 |----------|----------|-------|
 | Source A: Claude Report (~142 sources) | PKB + `Resources\Ethically-Grounded AI Agents...` | Comprehensive literature landscape |
 | Source B: GEM Report (~33 sources) | `Resources\AI Agents for Religious Studies (GEM) Report.docx` | V4 infrastructure, theological metaphors |
-| Source C: Chat Report | `Resources\Report (CHAT) - Towards an Ethically-Grounded AI Research Assistant.docx` | Third source, integration pending |
+| Source C: Chat Report | `Resources\Report (CHAT) - Towards an Ethically-Grounded AI Research Assistant.docx` | Third source, ✅ integrated Feb 14 |
 | Integration strategy & session log | `ITSERR repo: docs/resources/integrated_report_strategy.md` | Also synced to `Resources\` |
-| Detailed outline (622 lines) | `ITSERR repo: docs/resources/integrated_report_detailed_outline.md` | Also synced to `Resources\` |
-| Integration prompt for [C] | `Resources\PROMPT_integrate_chat_report.md` | Handoff prompt for fresh context window |
+| Detailed outline (~680 lines) | `ITSERR repo: docs/resources/integrated_report_detailed_outline.md` | Also synced to `Resources\` |
+| Integration prompt for [C] | `Resources\PROMPT_integrate_chat_report.md` | Handoff prompt for fresh context window — ✅ executed Feb 14 |
 
 #### Fellowship Planning & Meetings
 
@@ -166,6 +166,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 14 Feb 2026 | Deep read analysis of GEM + CHAT reports | ~70% overlap with existing knowledge confirmed. New findings: ATON Framework identification (unconfirmed), Omeka S/IIIF integration details, Pavone & Imperia Talmud paper as cross-domain precedent. No corrections needed. 8 surgical additions queued for live docs. |
 | 14 Feb 2026 | Upload `deep_read_GEM_CHAT_analysis.md` to PKB | Provides cross-report analysis as persistent context for all sessions |
 | 14 Feb 2026 | Apply all 8 deep read additions to live docs | `pipeline_technical_reference.md` (6 edits) and `workflow_diagram.md` (2 edits). PKB copies remain as static snapshots — live docs on filesystem are now ahead of PKB. |
+| 14 Feb 2026 | Source [C] integration complete | ChatGPT report assessed (~70% redundant, ~15–18 genuinely new sources) and integrated into detailed outline. Key additions: Caffagni et al. (BERT for biblical refs), Detweiler (Protestant computational hermeneutics), Adeboye et al. (cross-religious reductionism), Zimmermann (personalist tech ethics), Tripitaka Koreana 3D viz. Assessment saved as `chat_report_assessment.md`. Phase 1 of synthesis now complete. |
 
 ---
 
