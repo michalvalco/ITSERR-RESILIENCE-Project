@@ -441,22 +441,90 @@ def identify_lemma_boundaries(text: str, stats: NormalizationStats) -> str:
     """
 
     # Biblical reference patterns
+    # Comprehensive list covering the full biblical canon as abbreviated in
+    # 16th-century Latin theological texts (Stöckel, Melanchthon, etc.).
+    # Includes attested forms from the Postilla transcriptions and expected
+    # standard Reformation-era abbreviations.
+    # Note: [.:] allows for the period/colon separator inconsistency
+    # documented in abbreviation_dictionary_notes.md.
     bible_patterns = [
-        r'\b(Gen(?:esis|ef)?\.?\s*\d+)',
-        r'\b(Exod(?:us)?\.?\s*\d+)',
-        r'\b(Psalm\.?\s*\d+)',
-        r'\b(Pfal(?:m)?\.?\s*\d+)',  # OCR variant
-        r'\b(Psal(?:m)?\.?\s*\d+)',
-        r'\b(Rom(?:anos)?\.?\s*\d+)',
-        r'\b(Matt?h?(?:aeus)?\.?\s*\d+)',
-        r'\b(Ioan(?:nem)?\.?\s*\d+)',
-        r'\b(Iohan(?:nem)?\.?\s*\d+)',
-        r'\b(Act(?:orum)?\.?\s*\d+)',
-        r'\b(Ephe[sf]\.?\s*\d+)',
-        r'\b(Galat\.?\s*\d+)',
-        r'\b(Hierem\.?\s*\d+)',
-        r'\b(Isa(?:iae)?\.?\s*\d+)',
-        r'\b(Ezech(?:iele)?\.?\s*\d+)',
+        # --- Old Testament: Pentateuch ---
+        r'\b(Gen(?:e[sf](?:is|eos)?)?[.:]\s*\d+)',
+        r'\b(Exod(?:us|i)?[.:]\s*\d+)',
+        r'\b(Levit(?:icus|ici)?[.:]\s*\d+)',
+        r'\b(Num(?:eri)?[.:]\s*\d+)',
+        r'\b(Deut(?:eronom(?:ium|ii)?)?[.:]\s*\d+)',
+        # --- Old Testament: Historical Books ---
+        r'\b(Iosu[ae]?[.:]\s*\d+)',
+        r'\b(Iudic(?:um)?[.:]\s*\d+)',
+        r'\b(Ruth[.:]\s*\d+)',
+        # 1-4 Regum / 1-2 Samuel / 1-2 Regum (Vulgate numbering)
+        r'\b([1-4]\.?\s*Reg(?:um)?[.:]\s*\d+)',
+        r'\b([12]\.?\s*Sam(?:uel(?:is)?)?[.:]\s*\d+)',
+        # 1-2 Paralipomenon (Chronicles)
+        r'\b([12]\.?\s*Paral(?:ipomenon)?[.:]\s*\d+)',
+        r'\b([12]\.?\s*Chron(?:icorum)?[.:]\s*\d+)',
+        r'\b(Esdr(?:ae)?[.:]\s*\d+)',
+        r'\b(Nehem(?:iae)?[.:]\s*\d+)',
+        r'\b(Esther[.:]\s*\d+)',
+        # --- Old Testament: Wisdom Literature ---
+        r'\b(Iob[.:]\s*\d+)',
+        r'\b(Psalm[.:]\s*\d+)',
+        r'\b(Pfal(?:m(?:o)?)?[.:]\s*\d+)',       # OCR variant (long-s)
+        r'\b(Psal(?:m(?:o)?)?[.:]\s*\d+)',
+        r'\b(Prov(?:erb(?:iorum)?)?[.:]\s*\d+)',
+        r'\b(Eccles(?:iast(?:es|ae)?)?[.:]\s*\d+)',
+        r'\b(Cant(?:ic(?:um|a)?)?[.:]\s*\d+)',
+        # --- Old Testament: Major Prophets ---
+        r'\b(Isa(?:iae)?[.:]\s*\d+)',
+        r'\b(Hierem(?:iae)?[.:]\s*\d+)',
+        r'\b(Ier(?:emiae)?[.:]\s*\d+)',           # alternate abbreviation
+        r'\b(Thren(?:orum)?[.:]\s*\d+)',           # Lamentations
+        r'\b(Ezech(?:iel(?:is|e)?)?[.:]\s*\d+)',
+        r'\b(Dan(?:iel(?:is)?)?[.:]\s*\d+)',
+        # --- Old Testament: Minor Prophets ---
+        r'\b(Ose[ae]?[.:]\s*\d+)',                 # Hosea
+        r'\b(Ioel(?:is)?[.:]\s*\d+)',
+        r'\b(Amos[.:]\s*\d+)',
+        r'\b(Abd(?:ias|iae)?[.:]\s*\d+)',          # Obadiah
+        r'\b(Ion(?:ae)?[.:]\s*\d+)',               # Jonah
+        r'\b(Mich(?:aeae)?[.:]\s*\d+)',
+        r'\b(Nahum[.:]\s*\d+)',
+        r'\b(Habac(?:uc)?[.:]\s*\d+)',
+        r'\b(Sophon(?:iae)?[.:]\s*\d+)',           # Zephaniah
+        r'\b(Agg(?:ae)?[.:]\s*\d+)',               # Haggai
+        r'\b(Zachar(?:iae)?[.:]\s*\d+)',
+        r'\b(Malach(?:iae)?[.:]\s*\d+)',
+        # --- New Testament: Gospels ---
+        r'\b(Matt?h?(?:aei|aeus)?[.:]\s*\d+)',
+        r'\b(Marc(?:i)?[.:]\s*\d+)',
+        r'\b(Luc(?:ae|a)?[.:]\s*\d+)',
+        r'\b(Lucæ[.:]\s*\d+)',                     # ligature variant
+        r'\b(Ioan(?:n(?:is|em))?[.:]\s*\d+)',
+        r'\b(Iohan(?:n(?:is|em))?[.:]\s*\d+)',
+        r'\b(Ioh[.:]\s*\d+)',                      # short abbreviation
+        # --- New Testament: Acts ---
+        r'\b(Act(?:or(?:um)?)?[.:]\s*\d+)',
+        # --- New Testament: Pauline Epistles ---
+        r'\b(Rom(?:an(?:os|orum))?[.:]\s*\d+)',
+        r'\b([12]\.?\s*Cor(?:inth(?:ios|:)?)?[.:]\s*\d+)',
+        r'\b(Galat(?:as)?[.:]\s*\d+)',
+        r'\b(Ephe[sf](?:ios)?[.:]\s*\d+)',
+        r'\b(Philip(?:p(?:enses)?)?[.:]\s*\d+)',
+        r'\b(Coloss(?:enses)?[.:]\s*\d+)',
+        r'\b([12]\.?\s*Thess(?:alonicenses)?[.:]\s*\d+)',
+        r'\b([12]\.?\s*Tim(?:oth(?:eum)?)?[.:]\s*\d+)',
+        r'\b(Tit(?:um)?[.:]\s*\d+)',
+        r'\b(Philem(?:onem)?[.:]\s*\d+)',
+        r'\b(Hebr(?:aeos)?[.:]\s*\d+)',
+        # --- New Testament: Catholic Epistles ---
+        r'\b([12]\.?\s*Petr(?:i)?[.:]\s*\d+)',
+        r'\b(Iac(?:obi)?[.:]\s*\d+)',             # James
+        r'\b([123]\.?\s*Ioan(?:n(?:is)?)?[.:]\s*\d+)',
+        r'\b(Iud(?:ae)?[.:]\s*\d+)',              # Jude
+        # --- New Testament: Revelation ---
+        r'\b(Apocal(?:yps(?:is|eos)?)?[.:]\s*\d+)',
+        r'\b(Apoc[.:]\s*\d+)',                     # short abbreviation
     ]
 
     for pattern in bible_patterns:

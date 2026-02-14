@@ -445,6 +445,236 @@ class TestIdentifyLemmaBoundaries:
         result = identify_lemma_boundaries(text, stats)
         assert '<ref type="biblical">' in result
 
+    # --- Expanded OT Pentateuch ---
+
+    def test_identifies_exodus_reference(self, stats):
+        """Should identify Exodus references."""
+        text = "sicut in Exod. 20"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_leviticus_reference(self, stats):
+        """Should identify Leviticus references."""
+        text = "ut Levit. 19"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_numeri_reference(self, stats):
+        """Should identify Numbers references."""
+        text = "Num. 14"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_deuteronomium_reference(self, stats):
+        """Should identify Deuteronomy references."""
+        text = "Deut. 6"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded OT Historical Books ---
+
+    def test_identifies_regum_reference(self, stats):
+        """Should identify numbered Kings references (Vulgate numbering)."""
+        text = "2. Reg. 12"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_samuel_reference(self, stats):
+        """Should identify Samuel references."""
+        text = "1. Sam. 17"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_paralipomenon_reference(self, stats):
+        """Should identify Chronicles (Paralipomenon) references."""
+        text = "1. Paral. 29"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded OT Wisdom Literature ---
+
+    def test_identifies_iob_reference(self, stats):
+        """Should identify Job references."""
+        text = "Iob. 19"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_proverbs_reference(self, stats):
+        """Should identify Proverbs references."""
+        text = "Prov. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_ecclesiastes_reference(self, stats):
+        """Should identify Ecclesiastes references."""
+        text = "Eccles. 12"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded OT Major Prophets ---
+
+    def test_identifies_daniel_reference(self, stats):
+        """Should identify Daniel references."""
+        text = "Dan. 7"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_ieremiae_reference(self, stats):
+        """Should identify Jeremiah with alternate abbreviation."""
+        text = "Ier. 31"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_threnorum_reference(self, stats):
+        """Should identify Lamentations references."""
+        text = "Thren. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded OT Minor Prophets ---
+
+    def test_identifies_zacharias_reference(self, stats):
+        """Should identify Zechariah references."""
+        text = "Zachar. 9"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_malachi_reference(self, stats):
+        """Should identify Malachi references."""
+        text = "Malach. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_micah_reference(self, stats):
+        """Should identify Micah references."""
+        text = "Mich. 5"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_habacuc_reference(self, stats):
+        """Should identify Habakkuk references."""
+        text = "Habac. 2"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_osea_reference(self, stats):
+        """Should identify Hosea references."""
+        text = "Ose. 6"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded NT: Gospels ---
+
+    def test_identifies_marci_reference(self, stats):
+        """Should identify Mark references (Marci)."""
+        text = "Marc. 10"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_lucae_reference(self, stats):
+        """Should identify Luke references (Lucae)."""
+        text = "Luc. 15"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_ioh_short_reference(self, stats):
+        """Should identify short John abbreviation (Ioh.)."""
+        text = "Ioh. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded NT: Pauline Epistles ---
+
+    def test_identifies_corinthians_reference(self, stats):
+        """Should identify numbered Corinthians references."""
+        text = "1. Cor. 13"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_2_corinthians_reference(self, stats):
+        """Should identify 2 Corinthians references."""
+        text = "2. Cor. 5"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_philippenses_reference(self, stats):
+        """Should identify Philippians references."""
+        text = "Philip. 2"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_colossenses_reference(self, stats):
+        """Should identify Colossians references."""
+        text = "Coloss. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_thessalonicenses_reference(self, stats):
+        """Should identify Thessalonians references."""
+        text = "1. Thess. 4"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_timotheus_reference(self, stats):
+        """Should identify Timothy references."""
+        text = "2. Tim. 3"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_hebraeos_reference(self, stats):
+        """Should identify Hebrews references."""
+        text = "Hebr. 11"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded NT: Catholic Epistles ---
+
+    def test_identifies_petri_reference(self, stats):
+        """Should identify Peter references."""
+        text = "1. Petr. 2"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_iacobi_reference(self, stats):
+        """Should identify James references."""
+        text = "Iac. 2"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_ioannis_epistles_reference(self, stats):
+        """Should identify numbered John epistles."""
+        text = "1. Ioan. 4"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Expanded NT: Revelation ---
+
+    def test_identifies_apocalypsis_reference(self, stats):
+        """Should identify Revelation (Apocalypsis) references."""
+        text = "Apocal. 21"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_apoc_short_reference(self, stats):
+        """Should identify short Revelation abbreviation (Apoc.)."""
+        text = "Apoc. 1"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    # --- Separator inconsistency tests (colon vs period) ---
+
+    def test_identifies_reference_with_colon_separator(self, stats):
+        """Should handle colon separator (Actor: 20) per abbreviation notes."""
+        text = "Actor: 20"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
+    def test_identifies_reference_with_mixed_separators(self, stats):
+        """Should handle mixed separator patterns (1. Cor: 16)."""
+        text = "1. Cor: 16"
+        result = identify_lemma_boundaries(text, stats)
+        assert '<ref type="biblical">' in result
+
     # -------------------------------------------------------------------------
     # Patristic References
     # -------------------------------------------------------------------------
