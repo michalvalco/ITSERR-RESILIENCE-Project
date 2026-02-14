@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** Corpus Browser enhanced (dashboard, three-column layout, 31 references across 5 entity types). Abbreviation provenance architecture implemented (expansion_log bridges Stage 2→Stage 4 Layer 2). XML tag pollution fixed in zero-shot CRF experiment. Comprehensive documentation audit completed across all repo docs. 393 tests passing.
-**Next:** (1) Revision pass on working paper — citation verification, redundancy removal. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
+**Active work:** Bibliography verification pass on working paper complete. Replaced 3 unverifiable sources (Adeboye → Lewis et al. 2025; unnamed Qur'anic stylistics → Ahmad & Ahmad Ghafar 2025; Piotrowski 2026 → Piotrowski 2012). Corrected Vatican citation (Humanae Dignitatis → Dignitas Infinita 2024, added Antiqua et Nova 2025). Fixed Manuscriptorium statistics. Removed Somanunnithan named citation. Added 13 new verified bibliography entries (Ahmad & Ahmad Ghafar, Dignitas Infinita, Antiqua et Nova, Lewis et al., Mellerin, Newman, Pope Leo XIV, Puccetti et al. ERCIM, Sefaria MCP, Straka et al., Valleriani et al., Vesanto et al., Wu et al.). Cleaned DOI verification section (3 items resolved, 3 remain: Zimmermann, Campbell, Le Duc). All edits applied directly to `tna_working_paper_draft.md`.
+**Next:** (1) Full revision pass — redundancy, voice, flow. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
 ---
@@ -173,6 +173,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 14 Feb 2026 | Abbreviation provenance: `expansion_log` on NormalizationStats | Resolves the "Abbreviation Logic Conflict" between Stage 2 (PARSE) and Stage 4 (MINE). `normalize_text.py` expands abbreviations (dñs→dominus etc.) for clean text, but now logs each expansion with original form, expanded form, character offset, and regex pattern. Stage 4 Layer 2 can consume this log directly as "detected via abbreviation dictionary" evidence without re-scanning expanded text. Documented in `workflow_diagram.md` Stage 2 and Stage 4 sections. |
 | 14 Feb 2026 | XML tag stripping in zero-shot CRF experiment | `normalize_text.py` injects `<ref type="...">` tags into output; `zero_shot_crf_experiment.py` was tokenising these as garbage tokens polluting the CRF context window. Added `strip_ref_tags()` before tokenisation (same pattern as `build_corpus_json.py`). |
 | 14 Feb 2026 | Comprehensive documentation audit | Cross-referenced all 8+ documentation files against actual repo state. Fixed outdated test counts (163/296→389), missing scripts, incorrect statuses, phantom TECHNOLOGY_INVENTORY.md reference, and missing Corpus Browser features across README, HUB, PROGRESS.md, pipeline/overview.md, corpus-browser.md, and index.md. |
+| 14 Feb 2026 | Bibliography verification pass complete | Systematic verification of all sources in `tna_working_paper_draft.md`. Replaced 3 unverifiable sources with web-search-verified alternatives (Lewis et al. 2025 *AI & Society*; Ahmad & Ahmad Ghafar 2025 *IJASS*; Piotrowski 2012 monograph). Corrected Vatican documents (Dignitas Infinita 2024, added Antiqua et Nova 2025). Added 13 new bibliography entries. Cleaned DOI verification section (6→3 items). Citation verification phase of revision pass now complete. |
 
 ---
 

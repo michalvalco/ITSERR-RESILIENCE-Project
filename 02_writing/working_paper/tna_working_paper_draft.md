@@ -568,6 +568,10 @@ Valčo, M. (forthcoming). "Beyond Algorethics: Toward a Personalist Critique of 
 
 Valčo, M. & Bírová, J. (2024). "Freedom and Responsibility in Jean-Paul Sartre's Existentialist Philosophy: A Christian Personalist Critique." *Philosophia* 25(1). DOI: 10.46992/pijp.25.1.a.1.
 
+Valleriani, M., Federau, L., & Nicolaescu, O. (2019). "The Emergence of Epistemic Communities in the *Sphaera* Corpus: Mechanisms of Knowledge Evolution." *Journal of Historical Network Research* 3(1): 50–91. DOI: 10.25517/jhnr.v3i1.63.
+
+Vesanto, A., Nivala, A., Salakoski, T., Salmi, H., & Ginter, F. (2017). "Applying BLAST to Text Reuse Detection in Finnish Newspapers and Journals, 1771–1910." In *Proceedings of the NoDaLiDa 2017 Workshop on Processing Historical Language* (pp. 54–58). Linköping University Electronic Press.
+
 Dicastery for the Doctrine of the Faith. (2024). *Dignitas Infinita: Declaration on Human Dignity* (2 April 2024). Vatican.va. Retrieved 14 February 2026 from https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240402_dignitas-infinita_en.html
 
 Dicastery for the Doctrine of the Faith & Dicastery for Culture and Education. (2025). *Antiqua et Nova*. Vatican.va.
@@ -610,10 +614,7 @@ Sefaria: A Living Library of Jewish Texts. https://www.sefaria.org
 
 The following sources, drawn primarily from Source [C] (ChatGPT report), could not be fully verified during the synthesis period. They are cited in the text on the basis of the source report's descriptions and require independent bibliographic confirmation:
 
-- **Adeboye, A., et al. (2025)** — AI and indigenous African religion, encoding oral divination verses. Venue and DOI unconfirmed.
-- **"AI as Interpretive Aid in Qur'anic Stylistics" (2025)** — Referenced in Section 5.3 for the *i'jaz* doctrine discussion. Author(s), venue, and DOI unconfirmed. Not included in the bibliography pending verification.
 - **Zimmermann, N. (2021)** — Volume and page numbers for *Christian Scholar's Review* require confirmation.
 - **Campbell, H.A. (2025)** — Conference presentation; no published paper identified.
 - **Le Duc, A. (2026)** — Keynote address; no published paper from this specific event identified.
-- **Somanunnithan (2025)** — Grey literature (CrewAI demonstration); referenced in draft text but not included in bibliography as it lacks peer-reviewed publication status.
 
