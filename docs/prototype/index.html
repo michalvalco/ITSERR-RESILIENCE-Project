@@ -210,6 +210,19 @@ html, body {
 .ref-tooltip .tooltip-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; text-transform: uppercase; }
 .ref-tooltip .tooltip-badge.factual { background: rgba(76,175,80,0.2); color: #81c784; }
 .ref-tooltip .tooltip-badge.interpretive { background: rgba(255,152,0,0.2); color: #ffb74d; }
+.ref-tooltip .tooltip-badge.deferred { background: rgba(244,67,54,0.2); color: #e57373; }
+.ref-tooltip .tooltip-badge.consensus { background: rgba(33,150,243,0.2); color: #64b5f6; }
+.consensus-badge {
+  display: inline-block; padding: 1px 6px; border-radius: 3px;
+  font-size: 9px; font-weight: 600; text-transform: uppercase;
+  background: rgba(33,150,243,0.15); color: var(--biblical); letter-spacing: 0.3px;
+}
+.method-tag {
+  display: inline-block; padding: 1px 5px; border-radius: 3px;
+  font-size: 9px; font-weight: 500; background: rgba(0,0,0,0.06);
+  color: var(--text-muted); margin-right: 3px;
+}
+.ref-highlight.consensus-highlight { box-shadow: 0 0 0 1.5px var(--biblical); }
 
 .stats-panel { padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.08); }
 .stats-panel h3 { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; opacity: 0.5; }
@@ -704,7 +717,14 @@ html, body {
         '<p>This prototype demonstrates <strong>rule-based entity detection</strong> (Stage 4, Layer 1 of the GNORM adaptation pipeline) applied to Leonard St\u00f6ckel\u2019s <em>Annotationes in Locos communes</em> (1561).</p>' +
         '<p style="margin-top:8px">' +
           '<span class="badge">Layer 1 \u2014 Rule-based detection</span> ' +
-          '<span class="badge">Pre-CRF prototype</span>' +
+          '<span class="badge">Pre-CRF prototype</span> ' +
+          (stats.consensus_count > 0
+            ? '<span class="badge" style="background:rgba(33,150,243,0.1);color:#2196F3;">' + stats.consensus_count + ' consensus annotations</span> '
+            : '') +
+        '</p>' +
+        '<p style="margin-top:6px;font-size:12px;color:var(--text-muted);">Detection methods: ' +
+          Object.keys(stats.by_method || {}).map(function(m) { return m + ' (' + stats.by_method[m] + ')'; }).join(', ') +
+          (stats.consensus_count > 0 ? '. Annotations where Rule + CRF agree are marked with a <strong>Consensus</strong> badge.' : '. When CRF output is integrated, annotations where multiple methods agree will be marked with a <strong>Consensus</strong> badge.') +
         '</p>' +
       '</div>' +
       '<div class="dashboard">' +
@@ -868,7 +888,10 @@ html, body {
 
       if (ins.type === 'ref-open') {
         let rr = ins.ref;
-        result += '<span class="ref-highlight" data-type="' + escapeAttr(rr.type) + '" data-confidence="' + escapeAttr(String(rr.confidence)) + '" data-epistemic="' + escapeAttr(rr.epistemic) + '" data-text="' + escapeAttr(rr.text) + '" data-method="' + escapeAttr(rr.method) + '">';
+        let methods = rr.methods ? rr.methods.join(', ') : (rr.method || 'rule-based');
+        let isConsensus = rr.consensus || (rr.methods && rr.methods.length > 1);
+        let consensusCls = isConsensus ? ' consensus-highlight' : '';
+        result += '<span class="ref-highlight' + consensusCls + '" data-type="' + escapeAttr(rr.type) + '" data-confidence="' + escapeAttr(String(rr.confidence)) + '" data-epistemic="' + escapeAttr(rr.epistemic) + '" data-text="' + escapeAttr(rr.text) + '" data-method="' + escapeAttr(rr.method || methods) + '" data-methods="' + escapeAttr(methods) + '" data-consensus="' + escapeAttr(String(!!isConsensus)) + '">';
       } else if (ins.type === 'ref-close') {
         result += '</span>';
       } else if (ins.type === 'search-open') {
@@ -972,6 +995,8 @@ html, body {
     let epistemic = el.dataset.epistemic;
     let text = el.dataset.text;
     let method = el.dataset.method;
+    let methods = el.dataset.methods || method;
+    let isConsensus = el.dataset.consensus === 'true';
 
     let entityType = null;
     for (let i = 0; i < corpus.entity_types.length; i++) {
@@ -980,16 +1005,28 @@ html, body {
     let typeLabel = entityType ? entityType.label : type;
     let typeColor = entityType ? entityType.color : '#999';
 
-    let epistemicClass = epistemic === 'FACTUAL' ? 'factual' : 'interpretive';
+    let epistemicClass = epistemic === 'FACTUAL' ? 'factual' : (epistemic === 'DEFERRED' ? 'deferred' : 'interpretive');
+
+    // Build "Detected by" method tags
+    let methodList = methods.split(', ');
+    let methodHtml = '';
+    for (let mi = 0; mi < methodList.length; mi++) {
+      methodHtml += '<span class="method-tag">' + escapeHtml(methodList[mi].trim()) + '</span>';
+    }
+
+    let consensusHtml = isConsensus
+      ? ' <span class="tooltip-badge consensus">Consensus</span>'
+      : '';
 
     tooltip.innerHTML =
       '<div class="tooltip-type" style="color:' + escapeAttr(typeColor) + '">' + escapeHtml(typeLabel) + '</div>' +
       '<div class="tooltip-text">\u201c' + escapeHtml(text) + '\u201d</div>' +
       '<div class="tooltip-meta">' +
         '<span class="tooltip-badge ' + escapeAttr(epistemicClass) + '">' + escapeHtml(epistemic) + '</span>' +
+        consensusHtml +
         '<span style="opacity:0.6;font-size:10px">Confidence: ' + Math.round(confidence * 100) + '%</span>' +
       '</div>' +
-      '<div style="margin-top:4px;font-size:10px;opacity:0.5">Detection: ' + escapeHtml(method) + '</div>';
+      '<div style="margin-top:4px;font-size:10px;opacity:0.7">Detected by: ' + methodHtml + '</div>';
 
     let maxX = window.innerWidth - 300;
     let maxY = window.innerHeight - 120;
@@ -1117,13 +1154,25 @@ html, body {
       if (corpus.epistemic_types[j].id === data.epistemic) { epistemicType = corpus.epistemic_types[j]; break; }
     }
 
+    // Build detected-by method tags and consensus badge for detail panel
+    let detailMethods = data.methods || data.method || 'rule-based';
+    let detailMethodList = detailMethods.split(', ');
+    let detailMethodHtml = '';
+    for (let dmi = 0; dmi < detailMethodList.length; dmi++) {
+      detailMethodHtml += '<span class="method-tag">' + escapeHtml(detailMethodList[dmi].trim()) + '</span>';
+    }
+    let detailConsensus = data.consensus === 'true' || data.consensus === true;
+    let detailConsensusHtml = detailConsensus
+      ? ' <span class="consensus-badge">Consensus</span>'
+      : '';
+
     let html = '<div class="rp-section-title" style="color:' + escapeAttr(typeColor) + '">' + escapeHtml(typeLabel) + '</div>' +
       '<div class="rp-ref-text" style="border-left-color:' + escapeAttr(typeColor) + '">' + escapeHtml(data.text) + '</div>' +
       '<dl class="rp-meta">' +
         '<dt>Category</dt><dd>' + escapeHtml(typeDesc) + '</dd>' +
         '<dt>Confidence</dt><dd>' + Math.round(data.confidence * 100) + '% \u2014 ' +
           escapeHtml(data.epistemic) + (epistemicType ? ' (' + escapeHtml(epistemicType.description) + ')' : '') + '</dd>' +
-        '<dt>Detection</dt><dd>' + escapeHtml(data.method) + '</dd>' +
+        '<dt>Detected by</dt><dd>' + detailMethodHtml + detailConsensusHtml + '</dd>' +
         '<dt>Location</dt><dd>Page ' + escapeHtml(String(data.page)) + '</dd>' +
       '</dl>';
 
@@ -1325,6 +1374,8 @@ html, body {
         confidence: parseFloat(ref.dataset.confidence),
         epistemic: ref.dataset.epistemic,
         method: ref.dataset.method,
+        methods: ref.dataset.methods || ref.dataset.method,
+        consensus: ref.dataset.consensus,
         page: pageBlock ? pageBlock.id.replace('page-', '') : '?'
       });
     });
