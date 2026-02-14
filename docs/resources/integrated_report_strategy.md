@@ -329,6 +329,19 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 - **Phase 1 status:** ✅ COMPLETE. All three source reports integrated. Outline at ~680 lines. ~160–170 sources catalogued.
 - **Next session should:** Begin Phase 2 section drafting. Priority sections: §2 (Agent Architectures), §3 (Epistemic Modesty), §6 (Personalism → Architecture).
 
+### Sessions 7–9 — February 14, 2026 (Phase 2 drafting + bibliography + integration pass)
+- **What happened across multiple sessions:** Phase 2 drafting of all 9 sections (§1–§9, ~15,500 words total). Bibliography assembled and appended (~71 scholarly entries + 8 institutional references + 6 unverified sources flagged). Integration pass performed:
+  - Source count corrected: "142 primary sources" → "over eighty sources" (matching actual bibliography)
+  - Orphan citation resolved: Wang et al. (2024) agent survey added to §2.2; Puccetti 2024 ERCIM removed as redundant with Esuli 2025
+  - All internal cross-references verified consistent: five-gap threading confirmed through §1→§2→§4→§5→§6→§9
+  - Hermeneutical circle metaphor continuity confirmed (§2.2 → §2.3 → §8.1)
+  - Voice consistency confirmed throughout (scholarly-accessible, personalist tone)
+  - No missing citations identified; all in-text refs have bibliography entries
+  - Draft status header updated to "integration pass complete"
+- **Files modified:** `02_writing/working_paper/tna_working_paper_draft.md`, `TNA_FELLOWSHIP_HUB.md`, this strategy document
+- **Phase 2 status:** ✅ DRAFTING + INTEGRATION PASS COMPLETE
+- **Next session should:** Revision pass — citation verification against original sources, redundancy removal, section-level word count balancing. Or shift to consortium presentation prep (Feb 25) or zero-shot test.
+
 ---
 
 ## 9. FILE LOCATIONS

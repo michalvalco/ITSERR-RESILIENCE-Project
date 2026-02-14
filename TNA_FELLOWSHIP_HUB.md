@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** DRAFTING COMPLETE. All 9 sections of integrated research synthesis drafted (~16,000–17,000 words). §1–§6 drafted in prior session; §7 (European Infrastructure), §8 (Operational Roadmap), §9 (Conclusion) drafted this session. File: `02_writing/working_paper/tna_working_paper_draft.md` (~100KB).
-**Next:** (1) Consolidated bibliography assembly (~160–170 sources). (2) Full integration pass — voice, flow, cross-references between sections. (3) Revision pass — citation verification, redundancy removal, word count adjustments. (4) Prepare for next in-person meeting with Arianna/Marcello.
+**Active work:** INTEGRATION PASS COMPLETE. Working paper draft (~15,500 words, 9 sections + bibliography) has passed integrity check: cross-references verified, orphan citations resolved, source count corrected, voice consistency confirmed. File: `02_writing/working_paper/tna_working_paper_draft.md`.
+**Next:** (1) Revision pass — citation verification against originals, redundancy removal, section-level word count balancing. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
 ---
@@ -31,7 +31,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 
 | # | Workstream | Tracked In | Status |
 |---|-----------|-----------|--------|
-| 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ DRAFTING COMPLETE. All 9 sections drafted (~16–17K words). Next: bibliography assembly, integration pass, revision pass. |
+| 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ INTEGRATION PASS COMPLETE. Draft (~15.5K words, 9 sections + 80 bibliography entries) integrity-checked. Next: revision pass. |
 | 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Full synthesis draft complete (`tna_working_paper_draft.md`). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
 | 4 | **Prototype** | `03_prototype/` + `TECHNOLOGY_INVENTORY.md` | Functional but secondary to pipeline work. Full inventory of scripts, tests (163 passing), OCR results, and quality assessment in `TECHNOLOGY_INVENTORY.md` |
@@ -169,6 +169,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 14 Feb 2026 | Apply all 8 deep read additions to live docs | `pipeline_technical_reference.md` (6 edits) and `workflow_diagram.md` (2 edits). PKB copies remain as static snapshots — live docs on filesystem are now ahead of PKB. |
 | 14 Feb 2026 | Source [C] integration complete | ChatGPT report assessed (~70% redundant, ~15–18 genuinely new sources) and integrated into detailed outline. Key additions: Caffagni et al. (BERT for biblical refs), Detweiler (Protestant computational hermeneutics), Adeboye et al. (cross-religious reductionism), Zimmermann (personalist tech ethics), Tripitaka Koreana 3D viz. Assessment saved as `chat_report_assessment.md`. Phase 1 of synthesis now complete. |
 | 14 Feb 2026 | Synthesis drafting complete (§1–§9) | All 9 sections drafted (~16–17K words) in `tna_working_paper_draft.md`. Renamed from `integrated_research_synthesis.md` to avoid confusion with Source [A] PKB file. Next: bibliography assembly, integration pass, revision pass. |
+| 14 Feb 2026 | Integration pass complete | Full integrity check performed: (1) source count corrected (142→"over 80" — actual bibliography entries); (2) orphan citation resolved (Wang et al. 2024 added to §2.2; Puccetti 2024 ERCIM removed as redundant); (3) all cross-references verified consistent; (4) five-gap threading confirmed across §1→§2→§4→§5→§6→§9; (5) voice consistency confirmed throughout. Draft status updated to "integration pass complete." |
 
 ---
 
