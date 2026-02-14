@@ -367,7 +367,7 @@
 
     contentArea.innerHTML = html;
 
-    // Bind click handlers via event delegation (not inline onclick)
+    // Bind click handlers in JS (not via inline onclick attributes)
     contentArea.querySelectorAll('.search-result').forEach(block => {
       block.addEventListener('click', () => {
         const chapterId = block.dataset.chapterId;
@@ -525,7 +525,7 @@
   }
 
   function escapeAttr(str) {
-    return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
   function escapeRegex(str) {
