@@ -110,6 +110,7 @@ The `--feature-demo` mode works without sklearn-crfsuite.
 48 unit tests cover all core components:
 
 ```bash
+cd 03_prototype
 python -m pytest tests/test_zero_shot_crf.py -v
 ```
 

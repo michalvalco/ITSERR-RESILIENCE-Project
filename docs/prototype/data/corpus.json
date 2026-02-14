@@ -9,7 +9,7 @@
     "publisher": "Ioannem Oporinum, Basel",
     "source": "OCR extraction via Tesseract 5.3.4",
     "pipeline": "ITSERR-RESILIENCE normalization + rule-based detection",
-    "generated": "2026-02-13T23:46:35.314008"
+    "generated": "2026-02-14T01:50:30.680137"
   },
   "stats": {
     "total_references": 18,
