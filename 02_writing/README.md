@@ -12,6 +12,8 @@ Written deliverables for the ITSERR/RESILIENCE project.
 
 ## Working Paper (`working_paper/`)
 
+> **⚠️ PRE-PIVOT STATUS (Feb 14, 2026):** These drafts were written before the Feb 12 meeting with Arianna and Marcello shifted the fellowship focus from AI agent prototype to GNORM pipeline adaptation. The personalist anthropology and design principles content (§§2, 4) remains valid and maps to §6 of the integrated synthesis outline, but the implementation section (§5) foregrounds the standalone agent prototype rather than the pipeline work. The references.md is a generic placeholder superseded by the synthesis bibliography (~160–170 sources). **Do not draft into these files yet.** Finish the synthesis first (`docs/resources/integrated_report_detailed_outline.md`), then revise this structure to reflect what the fellowship actually produced. The working paper will likely be a focused companion to the synthesis, targeting *Open Theology* or *Religions*.
+
 **Title:** "Personalist Foundations for AI-Assisted Theological Research"
 
 ### Planned Sections

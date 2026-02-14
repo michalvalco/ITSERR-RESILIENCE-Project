@@ -306,6 +306,42 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 - **PKB note:** PKB copies of `pipeline_technical_reference.md` and `workflow_diagram.md` are now behind their filesystem versions. The PKB snapshots still serve as context but the live docs have the deep read additions.
 - **Next session should:** Execute `PROMPT_integrate_chat_report.md` in a fresh context window — read Source [C], assess unique material, update outline with [C] tags. Then Phase 2 drafting begins.
 
+### Session 6 — February 14, 2026 (Source [C] integration)
+- **What happened:** Executed `PROMPT_integrate_chat_report.md`. Deep read of Source [C] (ChatGPT report, ~77K chars, ~155 refs). Created `chat_report_assessment.md` documenting: overall character (most conversational of 3 reports, heavy grey literature base), ~50–55 unique sources of which 15–18 genuinely new, no structural changes warranted, ~70% redundant with [A]/[B]. Integrated [C] material into outline across 6 sections:
+  - §2.2.1: "Scope–Research–Write" framework from Open Deep Research
+  - §2.2.2: Somanunnithan (2025) CrewAI demo (flagged as grey lit)
+  - §2.2.3: "critical reviewer" agent pattern
+  - §2.3.1: "research brief" pattern + agent "backstory" concept
+  - §2.4: Gap confirmation + Alsayed (2024) Reading prototype
+  - §3.1.1: "epidemic of penalized uncertainty" framing + critic agent
+  - §4.1.3: Medieval Latin NER (BiLSTM+CRF matching transformer)
+  - §4.2.1: Caffagni et al. (BERT for biblical refs), BLAST method, BiblIndex
+  - §4.2.3: Detweiler (2025) "Old Wine in New Wineskins"; Melanchthon Academy
+  - §4.3.2: INCEpTION reference (Klie et al. 2018); Tripitaka Koreana 3D viz
+  - §5.4.2: Adeboye et al. (African indigenous religion); Qur'anic stylistics; reductionism framing
+  - §6.1.2: Alsayed HITL detail
+  - §6.3.1: Vatican "Humanae Dignitatis" (2023)
+  - §6.3.2: Zimmermann (2021) personalist tech ethics
+  - Bibliography: 9 new sources with section targets and DOI verification notes
+- **Sources added:** Caffagni et al. (2025), Detweiler (2025), Adeboye et al. (2025), Qur'anic stylistics paper, Zimmermann (2021), Klie et al. (2018), Alsayed (2024), Vatican "Humanae Dignitatis" (2023), Tripitaka Koreana viz
+- **Files created:** `chat_report_assessment.md` (working dir + GitHub copy)
+- **Files modified:** `integrated_report_detailed_outline.md` (both copies synced), `TNA_FELLOWSHIP_HUB.md`, this strategy document
+- **Phase 1 status:** ✅ COMPLETE. All three source reports integrated. Outline at ~680 lines. ~160–170 sources catalogued.
+- **Next session should:** Begin Phase 2 section drafting. Priority sections: §2 (Agent Architectures), §3 (Epistemic Modesty), §6 (Personalism → Architecture).
+
+### Sessions 7–9 — February 14, 2026 (Phase 2 drafting + bibliography + integration pass)
+- **What happened across multiple sessions:** Phase 2 drafting of all 9 sections (§1–§9, ~15,500 words total). Bibliography assembled and appended (~71 scholarly entries + 8 institutional references + 6 unverified sources flagged). Integration pass performed:
+  - Source count corrected: "142 primary sources" → "over eighty sources" (matching actual bibliography)
+  - Orphan citation resolved: Wang et al. (2024) agent survey added to §2.2; Puccetti 2024 ERCIM removed as redundant with Esuli 2025
+  - All internal cross-references verified consistent: five-gap threading confirmed through §1→§2→§4→§5→§6→§9
+  - Hermeneutical circle metaphor continuity confirmed (§2.2 → §2.3 → §8.1)
+  - Voice consistency confirmed throughout (scholarly-accessible, personalist tone)
+  - No missing citations identified; all in-text refs have bibliography entries
+  - Draft status header updated to "integration pass complete"
+- **Files modified:** `02_writing/working_paper/tna_working_paper_draft.md`, `TNA_FELLOWSHIP_HUB.md`, this strategy document
+- **Phase 2 status:** ✅ DRAFTING + INTEGRATION PASS COMPLETE
+- **Next session should:** Revision pass — citation verification against original sources, redundancy removal, section-level word count balancing. Or shift to consortium presentation prep (Feb 25) or zero-shot test.
+
 ---
 
 ## 9. FILE LOCATIONS
@@ -319,6 +355,7 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 | **[C] Chat Report** | `C:\Users\valco\...\Resources\Report (CHAT) - Towards an Ethically-Grounded AI Research Assistant.docx` |
 | **Integration prompt** | `C:\Users\valco\...\Resources\PROMPT_integrate_chat_report.md` |
 | **GitHub outline** | `C:\Users\valco\...\GitHub\ITSERR-RESILIENCE-Project\docs\resources\integrated_report_detailed_outline.md` |
+| **Working paper draft** | `C:\Users\valco\...\GitHub\ITSERR-RESILIENCE-Project\02_writing\working_paper\tna_working_paper_draft.md` |
 
 *(All paths abbreviated; full prefix: `C:\Users\valco\OneDrive\Documents\04 Projekty\2025 ITSERR - Resilience Project\Resources\`)*
 

@@ -1,0 +1,595 @@
+# Designing Ethically-Grounded AI Agents for Religious Studies Research: A Comprehensive Research Synthesis
+
+**Author:** Prof. Michal Valčo  
+**Affiliation:** Evangelical Lutheran Theological Faculty, Comenius University in Bratislava, Slovakia  
+**Fellowship context:** ITSERR Transnational Access Fellowship, University of Palermo (February 2026)  
+**Draft status:** Complete draft; integration pass complete  
+**Target venues:** *AI & Society* (theoretical framework) / *Digital Scholarship in the Humanities* (technical companion)
+
+---
+
+## 1. Introduction: The Theological Turn in Artificial Intelligence
+
+For decades, the Digital Humanities operated primarily as a discipline of digitisation and retrieval. Scholars scanned manuscripts, built databases, tagged corpora, and made texts searchable — an immense labour that transformed access to primary sources but left the interpretive work essentially untouched. The humanist still read, still wrestled with meaning, still argued over translations and theological implications. The computer helped *find* things. It did not pretend to *understand* them.
+
+That settlement is now breaking down. The advent of agentic AI — systems capable of autonomous reasoning, tool use, persistent memory, and multi-step workflow orchestration — has fundamentally altered the research landscape. We are no longer merely digitising texts; we are building systems that plan research strategies, summarise arguments, identify intertextual connections, and generate synthetic analyses across vast corpora. LangGraph, CrewAI, and AutoGen provide production-ready frameworks for orchestrating such agents. The Model Context Protocol, adopted by every major AI provider within months of its 2024 release, enables these agents to connect with scholarly databases, annotation tools, and institutional repositories in real time. The infrastructure exists. The question is no longer *whether* AI agents will enter humanities research, but *what kind* of agents — and on whose terms.
+
+This transition is not merely technical. It is epistemological. When a scholar encounters a text — say, Luther's exposition of Romans 3:28, or a passage from Leonard Stöckel's *De oboedientia politica* — the encounter involves what Gadamer called a *Horizontverschmelzung*, a fusion of horizons: the horizon of the text (its historical, linguistic, and theological situatedness) meets the horizon of the interpreter (shaped by training, confession, existential concerns, and scholarly tradition). When an AI agent mediates this encounter, it introduces what we might call a *third horizon* — one constituted not by tradition or lived experience, but by statistical probability and training weights. The agent has a "training distribution." It does not have *tradition* in Gadamer's sense. It processes tokens. It does not *dwell* in a hermeneutical community.
+
+The implications are substantial. Elrod (2024) has demonstrated empirically that large language models queried with Hebrew Bible texts privilege progressive and broadly Christian interpretive frames, losing hermeneutical nuance in the process. A system that presents the results of statistical inference with the confidence of scholarly judgment does not merely make errors — it performs a kind of epistemic violence against the text and the traditions that have carried it. An agent for theological research must be designed with explicit awareness of this danger: it must know the difference between retrieving a fact and interpreting a passage, and it must never confuse the two.
+
+This synthesis maps the territory where such an agent could be built. Developed during an ITSERR Transnational Access Fellowship at the University of Palermo (February 2026), in direct collaboration with the GNORM project team, it covers 2020–2026 literature across five domains: (1) AI agent architectures that support interpretive humanities work, with particular attention to memory systems and orchestration frameworks; (2) computational approaches to religious and legal texts, from Latin NLP to patristic databases to the conspicuous underrepresentation of Protestant theological corpora; (3) the philosophy of AI and hermeneutics, tracing the genealogy from Capurro's digital hermeneutics through the techno-gnosticism critique to digital theology as a distinct disciplinary space; (4) human-centred AI design, where Christian personalist anthropology meets graduated autonomy taxonomies and the Model Context Protocol; and (5) European research infrastructure for religious studies, including the RESILIENCE and ITSERR projects and the fragmented but substantial digitisation landscape of Central and Eastern Europe. Across these five domains, the synthesis draws on over eighty sources spanning peer-reviewed scholarship, technical documentation, and institutional grey literature.
+
+The claim is not modest, but it is precise. Five distinct literature gaps converge at a point that, taken together, defines a genuinely novel contribution space. No agentic system for theological research exists — current tools are simple chatbots or search interfaces, not systems with planning, memory, and calibrated confidence. Personalist anthropology has never been translated into AI architecture — the Rome Call for AI Ethics and Catholic Social Teaching provide principles, but no one has shown how relational ontology, narrative identity, or subsidiarity map to specific design decisions in an agent framework. Protestant theological corpora are computationally underserved — the Reformation is studied through social networks and print culture, not through NLP analysis of doctrinal texts. Epistemic modesty for interpretive domains is untheorised — all existing confidence calibration targets factual correctness, not the spectrum from historical fact to scholarly consensus to confessional interpretation. And ITSERR's emerging tools — CRITERION, GNORM, DaMSym, YASMINE — await agentic orchestration, having been built as standalone capabilities that could be unified through an integrated agent workflow.
+
+The infrastructure exists. What is missing is the bridge.
+
+---
+
+## 2. AI Agent Architectures for Interpretive Humanities Work
+
+### 2.1 Computational Hermeneutics as an Emerging Paradigm
+
+The most significant theoretical development for situating AI agents within humanities research is the emergence of *computational hermeneutics* as a framework for evaluating generative AI systems in cultural and interpretive contexts. Kommers, Ahnert, Antoniak, and thirty-four additional co-authors from major digital humanities centres, writing from the Alan Turing Institute in 2025, propose that generative AI systems are fundamentally "context machines" that must address three interpretive challenges: *situatedness* (meaning emerges in context, not in isolation), *plurality* (multiple valid interpretations coexist for any text of complexity), and *ambiguity* (interpretations naturally conflict, and the conflict is itself productive). Their three evaluation principles — that benchmarks should be iterative, should include people, and should measure cultural context — translate directly into design requirements for any agent intended to assist theological research. This is not a niche concern. The leading computational humanities research institution in the Anglophone world has identified interpretive evaluation as the central challenge for generative AI in cultural domains.
+
+The intellectual genealogy runs deeper than this 2025 synthesis. Mohr, Wagner-Pacifici, and Breiger defined computational hermeneutics as early as 2015 as the use of all available text analysis tools in pursuit of a theory of reading — a formulation that already anticipated the integration of machine learning into interpretive workflows. More recently, Piotrowski (2026) has reconceptualised interpretation itself as the construction of explicit, formalisable models, arguing that computational hermeneutics demands structured representations of interpretive processes rather than mere automation of textual analysis. This is a critical distinction: the point is not to automate hermeneutics but to *model* it — to make interpretive reasoning explicit enough that its assumptions can be examined, contested, and refined. Henrickson and Meroño-Peñuela (2023) take the practical step of introducing "hermeneuticity" as a measurable quality of AI outputs, demonstrating that prompt engineering strategies can increase it. If hermeneuticity can be measured, it can be designed for.
+
+Directly relevant to the question of theological bias, Elrod's 2024 study queries five large language models (GPT-4 Turbo, Claude 2, Llama 2, Zephyr 7B, PaLM 2) with passages from the Hebrew Bible and demonstrates that these systems consistently privilege progressive and broadly Christian interpretive frames, systematically losing hermeneutical nuance. Meanwhile, work in *EPJ Data Science* (2025) presents a hybrid human-LLM workflow for qualitative coding that explicitly preserves what the authors call "hermeneutic value" while scaling analysis — demonstrating that chain-of-thought prompting and iterative code refinement can maintain interpretive rigour when the workflow is designed with such rigour in mind. These are not abstract concerns. They are measured empirical findings. An agent for theological research must be designed with awareness of specific directional biases — not merely the possibility of error, but the *kind* of error, the systematic direction in which the system tends to distort.
+
+### 2.2 Comparative Analysis of Agent Orchestration Frameworks
+
+Among current multi-agent orchestration frameworks — surveyed comprehensively by Wang et al. (2024) in what has become the definitive mapping of LLM-based autonomous agent architectures — three have reached sufficient maturity to warrant serious consideration for a theological research agent prototype. Each embodies a different metaphor for intelligence, and each carries different implications for the kind of interpretive work the system can support.
+
+**LangGraph** (LangChain, Inc.) models agent workflows as directed graphs — nodes representing processing steps and edges representing transitions between them. This architecture is a natural fit for representing the hermeneutical circle, where understanding of parts informs understanding of the whole and understanding of the whole reshapes interpretation of the parts. The graph is traversed iteratively, not linearly. LangGraph provides built-in statefulness, human-in-the-loop checkpoints at arbitrary nodes, both short-term and long-term memory, and modular tool integration via the Model Context Protocol. The "Open Deep Research" agent demonstrates a supervisor-researcher multi-agent architecture with a three-phase workflow — *Scope* (define the research question and decompose it into sub-queries), *Research* (execute each sub-query through tool calls, web searches, and database lookups), and *Write* (synthesise findings into a coherent report) — that maps with almost uncanny directness onto theological research practice. A scholar investigating Stöckel's doctrine of political obedience would scope the question (what are Stöckel's key claims? what sources does he cite? how does his position relate to Luther's *Von weltlicher Obrigkeit* and to the *Confessio Augustana* Article XVI?), research each sub-question through targeted retrieval from annotated corpora and scholarly databases, and synthesise the findings into an argued interpretation. The agent mirrors this workflow, with the critical addition that human-in-the-loop checkpoints can be placed at the transition between each phase — the scholar approves the scope before research begins, reviews retrieved materials before synthesis starts, and evaluates the final synthesis before it enters the research record.
+
+The State object in LangGraph deserves particular attention. It is not merely a collection of variables passed between nodes; it is the *locus* of the hermeneutical act. When the agent processes a passage and updates its state with a new interpretive finding — say, identifying that Stöckel's citation of Augustine's *De civitate Dei* XIV.28 echoes a specific argumentative pattern from the *Confessio Augustana* — that finding persists in the state, available to all subsequent nodes. The state accumulates the evolving interpretation. In religious studies, this matters because a hallucinated citation is not merely a software bug; it is a falsification of tradition. The graph's auditability — every node visit, every state mutation, every human checkpoint — provides the transparency that interpretive scholarship demands.
+
+**CrewAI** offers a complementary role-based metaphor: agents are assigned roles, goals, and backstories, then collaborate on tasks. The roles map naturally onto a theological research workflow — one might configure a "Philologist Agent" tasked with textual analysis, a "Systematic Theologian Agent" responsible for doctrinal coherence checking, a "Historical Contextualiser" providing socio-political framing, and a "Cross-Reference Specialist" tracing intertextual networks. Somanunnithan's 2025 demonstration of a three-agent crew (search, summariser, fact-checker) confirms the practical viability of modular multi-agent design, showing that such architectures prove "more transparent and maintainable than a single all-in-one model." The role metaphor is accessible and pedagogically useful. But it carries a warning: the anthropomorphic framing risks obscuring the fact that these "agents" have no understanding of theology, no formation in a confessional tradition, no capacity for the *Verstehen* that theological interpretation requires. If multiple agents reinforce each other's outputs without external grounding, the result may be a sophisticated form of groupthink — hallucinations amplified by apparent consensus.
+
+**Microsoft AutoGen** excels at open-ended, conversation-driven collaboration between agents, which makes it suitable for modelling scholarly debate. One could, in principle, program a "Thomist Agent" and a "Scotist Agent" to debate a contested theological question — a kind of digital *disputatio* that mirrors the scholastic method. The conversational paradigm permits emergent positions and unexpected syntheses. Yet it also introduces the risk of context drift: over extended exchanges, agents may wander into irrelevant theological speculation, producing outputs that feel profound but lack grounding. AutoGen's UserProxyAgent, which represents the human researcher in the conversation, provides a mechanism for periodic reality checks, though the burden of monitoring falls entirely on the scholar.
+
+The comparison can be summarised across dimensions that matter specifically for theological and religious studies work:
+
+| Dimension | LangGraph | CrewAI | AutoGen |
+|-----------|-----------|--------|----------|
+| **Control paradigm** | Graph-based, explicit state transitions | Role-based task delegation | Conversational emergence |
+| **Interpretive metaphor** | Hermeneutical circle (iterative, accumulative) | Research team (division of labour) | Scholarly *disputatio* (dialectical) |
+| **Human-in-the-loop** | Native checkpoint support at any node | Task-level approval; less granular | UserProxyAgent; monitoring burden on scholar |
+| **Memory architecture** | Built-in short-term and long-term state | Agent "backstory" + shared context | Conversation history; limited persistence |
+| **Tool integration** | Native MCP support | Custom tool binding | Function calling via agents |
+| **Auditability** | Full graph traversal logging | Task completion reports | Conversation transcripts |
+| **Hallucination risk** | Controllable via grounded tool calls | Multi-agent consensus may amplify | Context drift in extended exchanges |
+| **Theological suitability** | Strong: graph models interpretive accumulation; HITL enforces scholarly authority | Moderate: role metaphor is pedagogically clear but risks anthropomorphism | Moderate: dialectical model is intellectually rich but requires heavy monitoring |
+
+The final row — theological suitability — deserves emphasis because it is absent from every existing framework comparison in the literature. No published evaluation of agent orchestration frameworks considers the requirements of interpretive scholarship at all, let alone the specific demands of theological research. The dimensions that matter for software engineering (code generation accuracy, test coverage, deployment speed) are largely orthogonal to those that matter for hermeneutical work (interpretive auditability, tradition-awareness, epistemic modesty, human interpretive authority). A framework optimised for one may be actively counterproductive for the other. This lacuna is itself evidence of the first convergent gap identified in this synthesis.
+
+The comparison yields a clear recommendation. For a theological research agent requiring auditability, interpretive control, and integration with existing scholarly infrastructure, LangGraph's graph-based architecture is the strongest candidate. Its state management naturally models the accumulative character of hermeneutical understanding; its human-in-the-loop checkpoints respect the scholar's interpretive authority; and its native support for the Model Context Protocol enables connection to precisely the kind of domain-specific tools (GNORM, IxTheo, Sefaria) that ground agent outputs in authoritative sources rather than open-web inference. This does not render CrewAI and AutoGen irrelevant — a production system might well use CrewAI's role definitions within LangGraph nodes, or AutoGen's conversational patterns for specific sub-tasks — but LangGraph provides the structural backbone that interpretive scholarship demands.
+
+### 2.3 Narrative Memory: Beyond Factual Recall
+
+A religious studies researcher may spend years on a single corpus. Interpretive insights accumulate slowly — a connection between two passages noticed in March reshapes the reading of a third passage encountered in November. Theological understanding is not a database lookup; it is the cultivation of what Newman called an *illative sense*, a capacity for judgment that develops through sustained, patient engagement with texts and traditions. Early AI implementations suffered from what might be called catastrophic forgetting: each conversation began from zero, with no trace of prior interactions. For a researcher who has spent three sessions building toward a nuanced reading of Stöckel's use of Melanchthon, starting over is not merely inconvenient — it is destructive of the very interpretive continuity that constitutes scholarly work.
+
+Current memory architectures for AI agents have matured rapidly, though they remain oriented toward factual recall rather than interpretive continuity. **MemGPT** (Packer et al., 2023), now the commercial Letta framework, introduces an operating-system-inspired hierarchy: *core memory* (maintained in-context, analogous to RAM) stores the most essential ongoing information; *archival memory* (a vector database, analogous to disk) preserves the full record of past interactions and consulted materials; and *recall memory* captures complete conversation histories for retrieval. The agent self-manages memory through function calls, deciding what to promote from archival to core memory as relevance shifts. For a theological agent, the mapping is suggestive: core memory could store the scholar's evolving interpretive framework — the working hypotheses, the key disputed questions, the confessional commitments that shape reading; archival memory maintains the consulted corpus and prior analyses; recall memory preserves the trail of inquiry.
+
+**A-MEM** (Xu et al., 2025) introduces something more evocative: a Zettelkasten-inspired system where memories are interconnected "notes" with keywords, tags, and embeddings, linked through LLM-driven semantic analysis. The Zettelkasten — Luhmann's famous slip-box method — is not merely a storage system; it is a method for *thinking*, for building networks of interconnected insights that generate new ideas through unexpected juxtaposition. For theological research, where the connections between a patristic commentary, a Reformation confession, and a modern systematic treatment may be precisely what constitutes a scholarly contribution, A-MEM's architecture is directly relevant. It is superior to MemGPT for open-ended tasks because its linking mechanism mirrors how interpretive scholarship actually works — not through hierarchical filing but through lateral association and cumulative cross-reference.
+
+**Zep** (Rasmussen et al., 2025) adds a temporal dimension through knowledge graphs that track how entities and relationships evolve over time. For tracking *Wirkungsgeschichte* — the reception history of theological concepts and texts across centuries — temporal knowledge graphs offer a natural computational substrate. How has the interpretation of Romans 3:28 shifted from Augustine through Luther through Barth? Zep's architecture could, in principle, model such trajectories, though the challenge of curating reliable theological knowledge graphs (as distinct from general-purpose knowledge bases) remains largely unaddressed.
+
+A deeper tension underlies all memory architecture decisions. Li and Wu (2025), analysing generative agent-based models through four components — profile, memory, planning, and action — identify a fundamental dilemma: over-controlling an agent's memory and prompts produces predictable but brittle behaviour that fails to capture the organic development of research insight, while under-specifying them produces creative but unreliable outputs that may hallucinate connections the scholar never intended. For theological research, where the scholar's interpretive framework is simultaneously the most important thing to preserve and the most difficult thing to formalise, this dilemma is acute. The agent must remember enough to maintain interpretive continuity but not so rigidly that it prevents the scholar from changing their mind. Memory, in other words, must support not just recall but *revision* — the capacity to update, qualify, or abandon prior interpretive commitments in light of new textual evidence.
+
+Yet none of these systems addresses what might be called *narrative memory* — the capacity to maintain a coherent interpretive narrative across sessions, tracking not just facts but evolving understanding, interpretive commitments, and unresolved tensions. A theological research agent would need memory that captures the scholar's hermeneutical framework (not merely their search history), records how specific texts have been analysed (not merely that they were accessed), notes which traditions have been consulted (and which have been deliberately excluded), and maintains a register of open questions — the productive uncertainties that drive continued inquiry. This kind of memory is architecturally novel. No existing system implements it.
+
+Two practical design patterns point toward a solution. The first is the principle of *atomic memories* — each stored memory unit should be single (one claim or insight per entry), verifiable (traceable to a source or interaction), grounded (connected to specific textual evidence), and scoped (tagged with the interpretive context in which it was generated). An atomic memory might read: "Stöckel's *De oboedientia politica* III.7 cites Rom. 13:1–7, framed through the lens of CA XVI on civil government. Noted Feb 14; not yet cross-checked against Luther's own use of the same passage in *Von weltlicher Obrigkeit*." This granularity prevents the kind of interpretive drift where vague summaries gradually lose their connection to the textual evidence that generated them.
+
+The second pattern is the *rolling summary* — a structured narrative document, updated after every substantial interaction, that captures the current state of the research project in the scholar's own interpretive terms rather than in the system's internal representation. Unlike a database of atomic memories, the rolling summary preserves argumentative structure: it tracks not just what has been found but how findings relate to each other and to the scholar's evolving thesis. The agent drafts it; the scholar corrects and refines it. Over time, it becomes the shared memory of the research relationship — a collaborative artefact that neither party produced alone.
+
+### 2.4 The Critical Gap
+
+No published work applies multi-agent orchestration frameworks to theological or religious studies research. The gap is comprehensive. Existing applications of LangGraph, CrewAI, and AutoGen target software engineering, finance, marketing, and general-purpose research. The CUNY Graduate Center launched the first known dedicated digital humanities graduate course on agentic AI in Spring 2025, signalling the field's emerging awareness. Two early exceptions push against the boundary: the University of Reading prototype (Alsayed, 2024) applies LangChain with fine-tuned LLMs to linguistic corpus annotation with iterative human review, and multi-agent architectures have been considered (though not yet published in peer-reviewed form) for multimodal historical data analysis. But peer-reviewed literature on applying agent frameworks specifically to humanities research — let alone theological research — remains essentially empty.
+
+This is the first of five convergent gaps. It is also, in some respects, the most straightforward to address: the frameworks exist, the tools are mature, and what is required is not a technical breakthrough but a domain-specific application guided by appropriate philosophical commitments. The difficulty lies not in the engineering but in the design — in knowing what a theological research agent should *refuse* to do as clearly as what it should accomplish.
+
+The key research groups working at this intersection — the Alan Turing Institute (Drew Hemment's computational hermeneutics evaluation programme), UC Berkeley (Joseph Gonzalez's lab, which produced MemGPT/Letta), Oxford's OATML group (Yarin Gal's semantic entropy and hallucination detection work), the University of Washington/Allen AI (the LLM abstention survey), and CUNY Graduate Center (Michelle McSweeney's pioneering DH agentic AI course) — represent different facets of the problem. None of them is working on theological applications specifically. The convergence of their separate contributions into a coherent architecture for interpretive scholarship remains, as of early 2026, an open problem.
+
+---
+
+## 3. Epistemic Modesty and Calibrated Confidence
+
+### 3.1 Why Epistemic Modesty Requires Its Own Architecture
+
+Current AI evaluation metrics reward confidence. Systems are penalised for hedging, rewarded for decisive answers, optimised to produce fluent, authoritative-sounding prose regardless of whether the underlying claim is a verified historical fact or a contested theological interpretation. The result is what one might call an epidemic of penalised uncertainty — systems trained to never say "I'm not sure," even when uncertainty is the only epistemically honest response.
+
+For theological research, this is not a minor calibration problem. It is a fundamental design flaw. If the person is constituted by narrative and relational encounter — as personalist anthropology insists — then an AI that feigns certainty distorts the relational encounter between scholar and text. The agent's confident prose becomes a screen between the researcher and the productive uncertainty that drives genuine inquiry. A hermeneutical tradition stretching from Augustine's *De doctrina Christiana* through Gadamer's *Truth and Method* has insisted that *not knowing* — the awareness of one's own prejudices, the willingness to be surprised by the text — is not a deficiency but a precondition of understanding. An ethically grounded agent must be designed to confront what might be called its shadow: its hallucinations and biases, its systematic tendency to present statistical inference as interpretive insight. It should not mask uncertainty with confident prose. It should make uncertainty visible.
+
+Practical implementations of this principle are beginning to emerge. One approach involves a secondary "critic" agent that evaluates the primary agent's outputs, toning down unwarranted certainty and flagging claims that exceed the epistemic warrant of the underlying sources. Jenkins et al. (2025) introduce the concept of "epistemic friction" — the productive resistance that qualitative researchers encounter when their interpretive frameworks meet recalcitrant data. An agent designed for theological research should preserve, even cultivate, such friction rather than smoothing it away.
+
+It is precisely the lack of such friction that makes current AI systems epistemologically dangerous for theological work. Gadamer insisted that understanding always proceeds from *Vorurteile* — pre-judgments, legitimate prejudices shaped by tradition — and that the hermeneutical task is not to eliminate these prejudices but to bring them into play, to test them against the text's resistance. The scholar who approaches Stöckel's work brings a specific formation: Lutheran confessional commitments, knowledge of the Reformation context in Upper Hungary, familiarity with the Wittenberg curriculum. These are not biases to be corrected but horizons to be risked — put into conversation with the text in a way that may confirm, challenge, or transform them. An AI system that presents a confident, tradition-flattening summary of the same text does not assist this process. It short-circuits it. The scholar receives an answer instead of encountering a question. Hornby (2024) is right that generative AI cannot function as a genuine dialogue partner in Gadamer's sense — it lacks moral awareness, emotional engagement, and epistemological depth — but it might serve as a "digital form of Gadamerian text," something to be *read* rather than *conversed with*, provided it honestly represents its own limitations.
+
+The technical landscape for uncertainty estimation in LLMs is now substantial, though almost entirely oriented toward factual domains. Wen et al. (2025), writing in *Transactions of the Association for Computational Linguistics*, provide the definitive survey on LLM abstention — the refusal to answer when uncertain — examining query characteristics, model capabilities, and alignment with human values. Kuhn, Gal, and Farquhar (2023) introduce *semantic entropy* for uncertainty estimation that accounts for linguistic invariance: the same meaning can be expressed in many ways, and genuine uncertainty should be distinguished from mere paraphrastic variation. This work, extended to hallucination detection in *Nature* (Farquhar et al., 2024), provides the most rigorous available method for identifying when an LLM is generating content untethered from its training data. For factual claims — "Paul wrote Romans around 57 CE" — semantic entropy offers a principled confidence measure.
+
+But here is precisely the gap. All existing calibration work targets factual question-answering. The entire apparatus assumes a single dimension: correct versus incorrect, confident versus uncertain. Theological research operates on a fundamentally different epistemic terrain — one where multiple valid answers coexist by design, where "correct" is often meaningless, and where the system's task is not to resolve uncertainty but to map it.
+
+### 3.2 A Four-Tier Epistemic Classification
+
+What is needed is not better calibration on a single dimension but a multi-dimensional classification framework that distinguishes qualitatively different *kinds* of knowledge claims. We propose four tiers:
+
+**Tier 1 — Factual/Historical:** Claims that are empirically verifiable and have determinate truth values. "Paul wrote Romans around 57 CE." "The Diet of Augsburg took place in 1530." "Leonard Stöckel studied at Wittenberg from 1530 to 1534." At this tier, the agent can present claims with standard confidence measures, cite sources, and flag disagreements among historians where they exist. Semantic entropy methods apply directly.
+
+**Tier 2 — Scholarly Consensus:** Claims where a dominant scholarly position exists but acknowledged disagreement persists. "Most scholars date Mark as the earliest Gospel." "The *sola fide* formulation is generally attributed to Luther's reading of Romans, though its precise genealogy is debated." At this tier, the agent should present the consensus position with "according to" framing, explicitly flag the existence and nature of dissent, and never present a majority view as settled fact.
+
+**Tier 3 — Interpretive/Confessional:** Claims where multiple valid readings coexist within recognised hermeneutical or confessional traditions. "This passage has been read as affirming double predestination (Reformed tradition), as emphasising the universality of grace (Lutheran tradition), and as compatible with libertarian free will (Arminian tradition)." At this tier, the agent must present multiple readings without selecting one. It maps the interpretive landscape. It never adjudicates.
+
+**Tier 4 — Matters of Faith and Doctrine:** Questions where the system must defer entirely to human judgment. "What does this text mean for the Christian life?" "Is this doctrine true?" "How should a congregation respond to this teaching?" At this tier, the agent refuses to generate an answer. It may offer to retrieve relevant authorities — confessional documents, magisterial statements, theological commentaries — but the act of interpretation, application, and commitment belongs to the human person. This is the tier where the *inviolable dignity* of the person as interpreter is architecturally enforced.
+
+Each tier maps to specific agent behaviours. The graduated response — from confident presentation through hedged framing through multi-perspective mapping through outright deferral — constitutes a machine-readable epistemic modesty that has no precedent in the current literature. All existing confidence calibration operates within Tier 1. Tiers 2 through 4 are uncharted.
+
+### 3.3 Implementation Pathways
+
+The prototype under development implements a belt-and-suspenders approach: the system prompt instructs the LLM to add epistemic tier tags inline (a lightweight first pass), while a dedicated classifier validates and adds missing tags based on sentence-level analysis. The classifier pipeline runs through a sequence: sentence classification based on linguistic markers, citation density checking, theological term detection, confidence scoring, and fallback rules. The approach is deliberately redundant — prompt-level guidance catches most cases; the classifier catches what the prompt misses.
+
+Integration with the GNORM pipeline provides a second, independent confidence signal. The CIC_annotation system's `mark_source` mechanism tracks which pipeline layer produced each annotation: `RULE|` for rule-based regex detection, `ABBREVIATION|` for dictionary lookup, `MATCH|` for exact trie matching, `PREPOST|` for statistical gap prediction, and `CRF|` for the machine learning model. This provenance metadata, preserved through the INCEpTION roundtrip via the `Tipo` field, enables a dual-path epistemological classification that combines *method consensus* across pipeline layers with *CRF marginal probabilities* within the machine learning layer:
+
+| Classification | Method Consensus Criterion | CRF Confidence | Agent Behaviour |
+|---|---|---|---|
+| **FACTUAL** | ≥2 methods agree, OR exact pattern match | ≥ 0.85 | Accept; present with citation; include in public dataset |
+| **INTERPRETIVE** | CRF alone, OR statistical gap prediction | 0.70–0.85 | Flag for expert review; present with hedged framing |
+| **DEFERRED** | Methods disagree, OR ambiguous context | < 0.70, OR theological judgment required | Route to human annotator; agent refuses to classify |
+
+The dual-path approach is more robust than either mechanism alone. A rule-based detection confirmed by the CRF is almost certainly correct — two independent methods, operating on different principles, have converged. A CRF-only detection with marginal probability of 0.78 might be correct but warrants a second opinion. A case where the rule-based layer and the CRF disagree signals genuine ambiguity that only a domain expert can resolve. This architecture — where the *method of detection itself* carries epistemological weight — represents a methodological extension beyond the original CIC_annotation design, which used `mark_source` for provenance tracking but did not map it to a confidence classification scheme.
+
+The CRF's `predict_marginals()` function provides per-token probability distributions over label classes, enabling fine-grained confidence assessment. A known limitation is that these marginal probabilities may be poorly calibrated — a reported confidence of 0.80 may not correspond to an 80% empirical accuracy rate. Platt scaling or isotonic regression against a held-out validation set will likely be needed to bring reported confidence into alignment with actual performance. This calibration work requires annotated theological texts — precisely the training data that the INCEpTION annotation workflow is designed to produce.
+
+The LLM verification step — where semantic entropy methods would be integrated for ambiguous cases falling between tiers — remains to be implemented. It represents the most technically ambitious component of the epistemic modesty architecture. The design envisions routing borderline cases (those near the 0.70 or 0.85 thresholds, or cases where the sentence-level classifier and the GNORM pipeline disagree) to an LLM that applies semantic entropy analysis: generating multiple completions, clustering them semantically, and measuring the entropy of the resulting distribution. High semantic entropy — many distinct completions, semantically divergent — signals genuine uncertainty and triggers escalation to Tier 3 or Tier 4 treatment. This verification step requires careful calibration against theological domain experts' judgments rather than generic factual benchmarks, and its development constitutes a primary goal for the post-fellowship research programme.
+
+---
+
+## 4. Computational Approaches to Religious and Legal Texts
+
+The epistemic modesty framework developed in Section 3 addresses how an agent should *handle* its outputs. But the quality of those outputs depends, in the first instance, on the computational tools available for processing the texts themselves. What can current NLP systems actually do with religious and legal texts in Latin, Greek, and other historical languages? The answer, it turns out, varies dramatically by tradition, period, and genre.
+
+### 4.1 Latin NLP: From Classical to Medieval
+
+The field of computational Latin has undergone a decisive shift to transformer-based architectures, with implications that reach directly into the feasibility of automated annotation for historical theological texts. **Latin BERT** (Bamman & Burns, 2020), trained on 642.7 million words spanning the Classical era to the 21st century, set new state-of-the-art results for part-of-speech tagging across all three Universal Dependencies Latin datasets. **LaBERTa and PhilBERTa** (Riemenschneider & Frank, 2023), presented at ACL, advanced further with monolingual Latin and classical trilingual models. The EvaLatin 2024 competition winner, **LatinPipe** from ÚFAL at Charles University, Prague, achieves its results through fine-tuned concatenation of LaBERTa, PhilBERTa, and XLM-RoBERTa large with BiLSTM stacking — an ensemble approach that pushes performance boundaries on standard benchmarks.
+
+Medieval Latin, however, presents a different challenge entirely. The eFontes project reports significant accuracy drops when models trained on classical Latin are applied to medieval texts: POS tagging falls to 83.29%, lemmatisation to 92.60%, compared to above-95% performance on classical material. Domain adaptation from classical to medieval Latin remains an unsolved problem. The DISSINET project at Masaryk University, Brno, addresses this by applying Computer-Assisted Semantic Text Modelling (CASTEMO) for knowledge-graph building from medieval Latin inquisition records — building a lexico-semantic network that complements the Latin WordNet. But the general point stands: the further one moves from classical Latin toward the medieval and early modern registers in which Reformation-era theological texts were written, the less reliable current NLP tools become.
+
+This raises a pragmatic question about methodology. When do simpler models outperform large language models? For highly structured annotation tasks with well-defined tagsets on constrained corpora — precisely the kind of work involved in detecting citation patterns in theological texts — classical Conditional Random Fields and Hidden Markov Models remain competitive in training efficiency and interpretability. The GNORM pipeline's CRF achieves 97.8% accuracy on legal reference annotation in the *Liber Extra*, compared to Latin BERT's 92.4% on the same task. The CRF trains in 21 minutes on a desktop CPU and produces a 1.1 MB model; BERT requires GPU infrastructure and vastly more computational resources. For cross-genre, cross-temporal generalisation and for tasks requiring contextual understanding — word sense disambiguation, text infilling for lacunae — transformer-based models dominate. But for structured, formulaic annotation in domain-specific corpora, lighter models can be both more accurate and more sustainable.
+
+It is precisely because this pragmatic choice matters that the GNORM pipeline's design philosophy — right tool for the right task, sustainability over spectacle — deserves attention beyond its immediate application to canon law.
+
+### 4.2 Computational Analysis of Religious Corpora
+
+The landscape of computational religious text analysis is strikingly uneven. Some traditions are well-served; others are almost entirely absent.
+
+Patristic scholarship leads. The **PASSIM Project** (Patristic Sermons in the Middle Ages), an ERC-funded initiative at Radboud University Nijmegen led by Shari Boodts, represents the most developed computational approach to early Christian texts. PASSIM's database contains over 5,000 late-antique Latin sermons and 12,000 medieval manuscripts, with network visualisation of textual relationships between sermon variants, manuscript collections, and pseudo-epigraphic attributions (Macchioro, 2021; Boodts & Denis, 2023). Authorship verification of the pseudo-Chrysostomian corpus using Siamese networks achieves AUC-ROC of 0.855 (Clérice & Glaise, 2023). More recently, Caffagni et al. (2025) have fine-tuned BERT for detecting biblical references in patristic literature — specifically Augustine's *De Genesi ad Litteram* — using "hard negative" training examples to distinguish genuine citations from similar-sounding but non-referential passages. This is directly relevant to the challenge of adapting the CIC_annotation pipeline for Protestant texts: the same annotation problem (distinguishing true references from surface resemblance) arises with different content.
+
+The **BiblIndex** project at Lyon provides a comprehensive index of biblical quotations in patristic literature, offering both a potential data source and a validation resource for any citation detection system. Cross-disciplinary methodological transfer has also proven fruitful: BLAST, a bioinformatics sequence-alignment method, has been applied to patristic text reuse detection, tracing how sermon passages migrated into medieval compilations — a reminder that computational humanities can draw productively on methods from very different fields.
+
+Talmudic computational scholarship is remarkably advanced. Waxman's graph database (2021) maps 630 rabbis and 1,217 unique interactions in the Babylonian Talmud into a social network, demonstrating how commentary tradition networks can be computationally represented. **Sefaria**, the open-source digital library of Jewish texts with 775,000 monthly users, has developed an MCP server (2025) enabling AI assistants to query authoritative texts in real time — a direct model for grounding LLMs in canonical religious text APIs. The theological research agent envisioned in this synthesis could learn as much from Sefaria's design decisions as from any comparable Christian project, precisely because no comparable Christian project exists at this level of technical maturity.
+
+Protestant theological corpus computational analysis is significantly underrepresented. No major project systematically applies NLP to Luther's complete works, Melanchthon's *Loci Communes*, or the Book of Concord. The Reformation is studied computationally almost exclusively through social and historical lenses — network analysis of correspondence networks, print culture diffusion patterns (Valleriani's work at the Max Planck Institute for the History of Science), sociological adoption models — rather than through theological textual analysis of doctrinal development and intertextual argumentation. Detweiler (2025), in a rare exception, applies computational methods to New Testament hermeneutics in *Religions*, but the field remains thin. The Melanchthon Academy in Bretten, identified as a RESILIENCE partner with interest in digital Reformation research, represents a potential institutional ally, but the gap between institutional interest and operational computational infrastructure is wide.
+
+This is the third convergent gap, and it is directly aligned with the pilot case that grounds this synthesis. The Leonard Stöckel corpus — 16th-century Latin and German theological texts from the Kingdom of Hungary — falls precisely into this underserved space. Adapting the GNORM pipeline for Protestant citation patterns is not merely a technical exercise; it addresses a structural absence in the computational study of Christianity's second-largest historical tradition.
+
+### 4.3 GNORM and 3D Visualisation
+
+Religious and legal texts are rarely linear. They are stratified — a central text surrounded by glosses, themselves surrounded by super-glosses, the whole constituting what might be called a *topology of authority* where proximity to the canonical text signals interpretive weight. The GNORM project (Generative Narrative Ontology for Religious Manuscripts), developed within ITSERR WP3 at the University of Palermo, addresses this spatiality directly through 3D visualisation of citation networks.
+
+The technical foundation is the CIC_annotation pipeline (Esuli, Imperia, & Puccetti, 2025), which detects legal references in the medieval *Liber Extra* — the central collection of canon law compiled for Pope Gregory IX in 1234 — using a six-layer hybrid architecture combining rule-based regex patterns, abbreviation dictionaries, trie matching with statistical gap prediction, CRF machine learning, and structural parsing. The pipeline processes 41,784 legal references across approximately 1,795 distinct canonical source nodes, with the CRF achieving 97.8% accuracy. The resulting citation network is then visualised in three dimensions, rendering the *Liber Extra*'s dense intertextual web as a navigable structure. Code is available under CC BY 4.0 at github.com/aesuli/CIC_annotation.
+
+Three features of GNORM's design philosophy are particularly relevant for this project. First, the pragmatic methodological selection — CRFs over transformers for this specific task — demonstrates that domain-specific accuracy often trumps general-purpose sophistication. Second, the treatment of *allegationes* (citations to other legal sources) as *performative acts* rather than mere references — each citation does something within the argumentative structure of the gloss, not simply points elsewhere — parallels the concern, running throughout this synthesis, about preserving hermeneutical complexity. Third, the low-resource reproducibility: a small team, desktop hardware, open-source code, 21-minute training time. For a 48-month research project in Slovakia operating without GPU infrastructure, this accessibility is not incidental but essential.
+
+Crucially, Pavone and Imperia (2025) have already conceptualised extending the GNORM framework beyond canon law to the Babylonian Talmud, demonstrating that the team views the methodology as transferable across religious corpora. This cross-domain precedent directly supports the adaptation to Protestant theological texts proposed here. The INCEpTION annotation platform (Klie et al., 2018) provides the standard interface for the human annotation workflow, enabling expert review and correction of pipeline outputs through a web-based collaborative environment.
+
+### 4.4 OCR and Handwritten Text Recognition
+
+Two platforms dominate the recognition of historical manuscript and print text. **Transkribus** (READ-COOP SCE; Muehlberger et al., 2019) offers specialised Latin models including the Carolingian Minuscule Model trained on 46 manuscripts (9th–11th century) and the transformer-based Text Titan I *ter* "Super Model." **eScriptorium + Kraken** (Stokes et al., 2021) provides the open-source alternative, with script-agnostic baseline-based layout analysis used extensively for Hebrew Geniza manuscripts (Princeton Geniza Lab) and Syriac, Arabic, and multilingual religious texts. The CREMMA Medii Aevi dataset (Clérice et al., 2023) provides over one million characters of medieval manuscript ground truth. A tailored medieval Latin HTR system from the Bavarian Academy achieves a character error rate of 0.015 — superior to Google Cloud Vision — using a Swin Transformer encoder with GPT-2 decoder (Koch et al., 2023).
+
+HTR functions, in effect, as a "rough draft generator" — the role of the human philologist remains essential for the final 5% of accuracy, particularly for abbreviations, damaged characters, and scribal idiosyncrasies. For the Stöckel corpus, the challenge is somewhat different: these are 16th-century printed texts, not manuscripts, which means OCR rather than HTR. Layout analysis still matters, particularly for marginal glosses and annotations that may accompany the main text. The existing extraction pipeline (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`, with 78 tests passing) handles the conversion from TIFF/ALTO XML to normalised plaintext, but OCR error rates on 16th-century print — with its historical orthographic variation (ſ/s, ij/j, cz/č, w/v, ß/ss) and mixed Antiqua/Fraktur typography — remain to be empirically tested.
+
+The key research groups working in this space — CIRCSE at Università Cattolica, Milan (Sprugnoli, Passarotti); ALMAnaCH at Inria Paris; ÚFAL at Charles University, Prague; DISSINET at Masaryk University, Brno; PASSIM at Radboud University, Nijmegen; eScripta/AOROC at EPHE–PSL, Paris; and Waxman's lab at Yeshiva University — represent different facets of a maturing field. The computational infrastructure for processing religious and legal texts exists. What does not yet exist is the integration of these capabilities into agentic workflows — systems that do not merely process texts but plan research strategies, maintain interpretive context, and collaborate with scholars across extended projects.
+
+---
+
+## 5. Philosophy of AI and Hermeneutics
+
+The preceding sections have surveyed the technical landscape — agent frameworks, confidence calibration, NLP pipelines, annotation systems. But technical capability without philosophical orientation produces tools that are powerful and directionless. The question is not only *what can we build* but *what should we build*, and the answer requires engagement with the hermeneutical tradition that has shaped how humanists think about interpretation itself.
+
+### 5.1 Digital Hermeneutics: A Genealogy
+
+The philosophical engagement with AI and interpretation follows a clear intellectual lineage that has not yet been translated into agent design. Rafael Capurro (2010) defined digital hermeneutics as the encounter between hermeneutics and digital technology, introducing the distinction between "digital ontology" (viewing the world as computable) and "digital metaphysics" (recognising the limits of computation), drawing on Heidegger and Vattimo. Romele, Severo, and Furia (2020) provided the definitive synthesis in *AI & Society*, distinguishing two traditions: the Dreyfus/Winograd/Flores tradition of using hermeneutics to *critique* AI limitations, and the Mohr/Wagner-Pacifici/Breiger tradition of *embracing* computational methods for textual analysis. They also map a fundamental divide: Gadamer's method-versus-truth alternative (one must choose between methodological rigour and genuine understanding) versus Ricoeur's integration of explanation and understanding (the two can be combined in a productive arc from naïve reading through structural analysis to critical appropriation).
+
+For agent design, the Gadamer/Ricoeur divide has direct architectural consequences. A Gadamerian agent would be designed to *resist* methodological reduction — to preserve the irreducibility of the interpretive encounter, to present texts as questions rather than answers, to model the researcher's *Vorurteile* (pre-judgments) as constitutive rather than eliminable. A Ricoeurian agent, by contrast, could embrace computational analysis as one moment in the interpretive arc — structural analysis (statistical patterns, citation networks, lexical frequencies) serving as the "explanatory" phase that enriches a subsequent "understanding" phase conducted by the scholar. The prototype under development leans Ricoeurian: the GNORM pipeline provides rigorous structural analysis (citation detection, confidence scoring, network mapping); the scholar performs the interpretive appropriation. But the Gadamerian warning remains operative: the agent must never present its structural analysis *as* interpretation.
+
+Post-ChatGPT, the most thorough Gadamerian evaluation comes from Hornby (2024), who concludes that generative AI cannot function as a proxy dialogue partner — lacking moral awareness, emotions, and epistemological depth — but may serve as a "digital form of Gadamerian text." His warning that AI risks inhibiting hermeneutical understanding through greater access to summarised knowledge reinforces the design commitment argued in Section 3.1: the agent must enhance rather than shortcut interpretive engagement. Picca et al. (2024), arguing from a Diltheyan perspective, contend that AI lacks *Verstehen* entirely due to the absence of self-awareness and subjective experience. The ELIZA effect — the human tendency to project understanding onto sophisticated pattern-matching — makes this distinction psychologically difficult to maintain, which is precisely why it must be architecturally enforced.
+
+### 5.2 Techno-Gnosticism: A Theological Diagnostic for AI Design
+
+The concept that technological transcendence mirrors ancient Gnostic impulses has developed from cultural criticism into a substantive theological diagnostic with concrete design implications. Erik Davis (1998/2015) coined "TechGnosis" in his study of how mystical and religious narratives permeate technological culture. David Pence (2017), writing in *Religions*, provides the strongest peer-reviewed articulation: transhumanism replicates the ancient Gnostic vision of escaping the body, and using Merleau-Ponty's embodiment philosophy, Pence argues that consciousness originates from complex body-environment interactions that cannot be replicated in non-organic forms. A 2025 article in *Religions* proposes "divine ethics" as evaluative grammar for distinguishing "idolatrous re-enchantment" (salvation-by-escalation, where more technology solves the problems created by technology) from "relational re-enchantment" (grounded in limits, accountability, and care). Coeckelbergh (2025) argues that digitalisation produces a "Digital Trinity" (datafication, algorithmisation, platformisation) functioning as a transhumanism-shaped techno-religion.
+
+Donati's concept of the Digital Technological Matrix as a "Generator of Diversity" — decoupling communication from moral matrices, creating hybrids that resist classification within traditional ethical frameworks — adds sociological depth to the theological diagnosis. His antidote, "Relational Realism," insists that the "person" is an ontological category distinct from the "processor." No amount of computational sophistication transforms a data-processing system into a personal agent in the philosophical sense.
+
+For agent design, the techno-gnosticism critique yields three concrete anti-patterns — tendencies the system must be designed to *resist*:
+
+First, **resist disembodiment.** Texts are not pure data divorced from liturgical, communal, and material contexts. A sermon by Stöckel was preached to a congregation in Bardejov; its meaning is inseparable from that context of proclamation. The agent should present contextual metadata (date, occasion, audience, liturgical setting) alongside textual analysis, never reducing the text to a decontextualised string of tokens.
+
+Second, **resist decontextualisation.** Do not extract propositions from their hermeneutical traditions. A citation of Romans 3:28 in a Lutheran confessional text carries different hermeneutical weight than the same citation in a Tridentine decree. The annotation system must preserve tradition-markers, not strip them.
+
+Third, **resist epistemic gnosticism** — the assumption that more data automatically produces better understanding. It does not. Understanding requires judgment, and judgment requires formation, and formation requires time and community. The agent can provide data. It cannot provide wisdom.
+
+### 5.3 Digital Theology as a Distinct Space
+
+Peter Phillips at the CODEC Research Centre, Durham University — the world's only dedicated digital theology research centre — provides the field-defining taxonomy. Phillips, Schiefelbein-Guerrero, and Kurlberg (2019) distinguish four types of digital theological work and separate digital theology from both digital humanities and digital religion. The Bible read on screen, fragmented by search algorithms, faces what Phillips calls a "crisis of authority" — when anyone can search for a verse and receive an AI-generated interpretation, the structures of interpretive authority (confessional traditions, trained clergy, scholarly communities) are bypassed, not engaged.
+
+Anthony Le Duc, SVD, Executive Director of the Asian Research Center for Religion and Social Communication, represents the most active contemporary voice on AI and theological method. His February 2026 keynote argues that "technology is never neutral" and warns of "algorithmic mediation" governing human choice. Heidi Campbell (Texas A&M) frames religious AI tools as "charismatic technologies" — a concept directly relevant to understanding how such tools accrue authority that may or may not be warranted.
+
+The reductionism concern is not culturally parochial. Adeboye et al. (2025) document that encoding oral divination verses of indigenous African religion into a binary AI model failed to capture the spiritual intent — demonstrating that the flattening of sacred meaning by computational systems is an ecumenical problem. Work on AI as interpretive aid in Qur'anic stylistics encounters the theological barrier of *i'jaz* (the inimitability doctrine), which posits that the Qur'an's linguistic form is itself miraculous and therefore resistant to computational reduction in ways that have no precise parallel in Protestant hermeneutics. These cross-religious cases strengthen the argument that design anti-patterns (resist decontextualisation, resist epistemic gnosticism) are not Western Christian concerns projected onto other traditions but responses to a structural feature of how computational systems interact with sacred meaning.
+
+### 5.4 The Under-Theorised Connection
+
+Five gaps define the philosophical contribution space. No systematic framework integrates Gadamerian or Ricoeurian hermeneutics with AI agent architecture for religious studies. Personalist philosophy — Wojtyła, Scheler, Maritain — is absent from AI agent design specifically, despite its rich resources for thinking about human dignity, relational ontology, and the non-reducibility of persons. Scarce empirical research measures what hermeneutical complexity is actually lost when AI processes sacred texts. The techno-gnosticism critique has not been translated into practical design anti-patterns until now. And limited comparative religious perspectives inform computational hermeneutics, with most work remaining within Christian or Western frameworks.
+
+These gaps are not independent. They converge at a specific point: the absence of a philosophically grounded, theologically informed design framework for AI agents in religious studies. Prof. Valčo's existing work provides strong foundations — his analysis of AI algorithms' impact on human values through echo chambers and mimetic desire (Valčo, 2024), his "Beyond Algorethics" preprint drawing on Pope Francis and Benanti's *algorethics* framework, and his Christian personalist philosophical work engaging Kierkegaard's agape personalism, Bonhoeffer, Scheler, and Wojtyła (Valčo & Bírová, 2024) — but the synthesis into a design framework remains the task before us.
+
+---
+
+## 6. Human-Centred AI Design: Christian Personalism and Technical Standards
+
+### 6.1 The AI-in-the-Loop Reframing
+
+A critical conceptual distinction has emerged from recent human-AI interaction research that reframes the entire design conversation. Natarajan et al. (2024) observe that many systems labelled "human-in-the-loop" are actually **AI-in-the-loop** (AI²L) — the human remains in control, with AI providing support within a human-directed workflow, rather than AI systems that occasionally consult a human oracle. The distinction is not merely semantic. It determines architectural decisions about who initiates actions, who sets interpretive direction, and where approval gates sit.
+
+For a religious studies research agent, the AI²L framing is not just preferable but theologically necessary. The scholar is the controlling intelligence. The agent is an assistive instrument. This reflects a deep commitment within personalist anthropology: the human person is not a node in an information-processing network but an irreducible centre of judgment, creativity, and moral responsibility. When the agent retrieves a patristic commentary, it is performing a service. When the scholar reads that commentary and discerns its bearing on the question at hand, *that* is the interpretive act — and it belongs inalienably to the person.
+
+Practical implementations of AI²L design in scholarly contexts are beginning to appear. The ExtracTable system (John et al., 2026) combines LLMs with user-defined schemas for structuring publications into the Open Research Knowledge Graph — the scholar defines the schema, the agent populates it, the scholar validates. The AutoLit systematic literature review system reports 50% time savings in abstract screening and 70–80% in qualitative extraction while maintaining that "AI tools have inherent limitations and are not a replacement for expert judgment." The University of Reading prototype (Alsayed, 2024) applies LangChain with fine-tuned LLMs to linguistic corpus annotation, implementing an iterative loop where LLM-suggested tags are reviewed and corrected by the scholar before being fed back as refined training data. In each case, the pattern is the same: the agent accelerates retrieval and preliminary classification; the human performs interpretation and validation. The CUNY Graduate Center's "data ethics of care" framework (2025) connects this pattern to relational ethics and epistemic justice — language that resonates directly with personalist commitments to the dignity of the knowing subject.
+
+Tuppal et al. (2025), writing in the *Scandinavian Journal of Caring Sciences*, provide perhaps the most theoretically grounded treatment of this reframing. Using hermeneutic methodology, they identify three dimensions for understanding human beings in an AI-mediated world: relational ontology, ethical integration, and philosophical foundations. Their argument that AI systems must be designed within a relational understanding of the human person — not as autonomous rational agents but as beings constituted by their relationships with others, with tradition, and with the transcendent — aligns precisely with the personalist anthropology that grounds this project.
+
+### 6.2 Graduated Autonomy for Religious Studies
+
+If the scholar controls and the agent assists, the next question is: how much autonomy should the agent have for different kinds of tasks? Huang et al. (2025), writing from the Knight First Amendment Institute at Columbia University, define five levels of AI agent autonomy that provide a useful general taxonomy:
+
+- **L1 (Operator):** The user makes all decisions; the agent acts only on direct command.
+- **L2 (Collaborator):** User and agent share planning and execution.
+- **L3 (Consultant):** The agent takes the lead, consulting the user for expertise and preferences.
+- **L4 (Approver):** The agent operates independently, seeking approval only for high-risk cases.
+- **L5 (Observer):** Full agent autonomy; the user monitors but does not direct.
+
+Shneiderman's two-dimensional HCAI framework (2020, 2022) adds a crucial insight: automation and human control are not zero-sum. A system can have both *high automation* and *high human control* simultaneously — his "Supertool" concept, where the system performs powerful operations but the human retains fine-grained oversight. His design metaphors — Supertool, Control Centre, Active Appliance, Tele-operated device — provide vocabulary for what a theological research agent should be: a *Supertool with Control Centre oversight* for sensitive interpretive tasks.
+
+The domain-specific gap is clear. No one has developed a task-specific autonomy mapping for religious studies. Yet the mapping practically writes itself once the epistemic tier framework from Section 3 is applied:
+
+| Research Task | Autonomy Level | Epistemic Tier Engaged | Rationale |
+|---|---|---|---|
+| Bibliographic search and source retrieval | L3–L4 (Agent leads) | Tier 1 (Factual) | Low interpretive risk; high volume; agent excels at recall |
+| Source summarisation and metadata extraction | L2–L3 (Shared) | Tier 1–2 | Summaries risk flattening nuance; scholar validates |
+| Cross-reference identification in commentary traditions | L2 (Collaborative) | Tier 2–3 | Identifying allusions vs. citations requires judgment |
+| Tradition identification and bias auditing | L2 (Agent flags, scholar evaluates) | Tier 3 | Agent detects patterns; only scholar can assess confessional framing |
+| Theological interpretation and hermeneutical synthesis | L1 (Scholar controls entirely) | Tier 3–4 | The interpretive act itself; non-delegable |
+
+To put it slightly differently: the autonomy gradient follows the epistemic gradient. Where claims are factual, the agent can lead. Where claims are interpretive, the agent assists. Where claims are theological, the agent defers. The correspondence is not accidental — it follows from the nature of the subject matter. Formatting a bibliography is a mechanical task; translating a dogma is an act of theological judgment that no algorithm can perform and no responsible system should pretend to perform.
+
+### 6.3 Christian Personalism as Design Ethic
+
+The Rome Call for AI Ethics (Pontifical Academy for Life, 2020), signed initially by Microsoft, IBM, and FAO, and subsequently expanded to representatives of all three Abrahamic faiths (2023) and additional technology companies, establishes six principles: Transparency, Inclusion, Responsibility, Impartiality, Reliability, and Security/Privacy. The Vatican's follow-up document *Humanae Dignitatis* (2023) expanded these principles, and the 2025 *Linee Guida in Materia di Intelligenza Artificiale* defines AI as "a gift of human creativity, which itself is a gift from God" while prohibiting subliminal manipulation and discriminatory inferences. Pope Leo XIV stated that "access to data must not be confused with intelligence" and that AI must account for "the well-being of the human person not only materially, but also intellectually and spiritually."
+
+These principles are admirable. They are also, as architectural guidance, almost entirely abstract. "Transparency" does not tell an engineer where to place a human-in-the-loop checkpoint. "Inclusion" does not specify how an agent should handle conflicting confessional interpretations of the same passage. The TRUST framework (McGrath et al., 2025) — Theological alignment, Relational impact, Utility and justice, Stewardship and sustainability, Transparency and accountability — gets closer, as does the IEEE paper by Laracy et al. (2025) mapping Catholic Social Teaching principles to AI design guidelines. But the translation from principle to architecture remains unachieved.
+
+This, in turn, has far-reaching implications for the project's distinctive contribution. Personalist ontology — the person as inherently relational, constituted by narrative, inviolably dignified — can be mapped to specific agent behaviours in ways that generic ethical principles cannot. The mapping we propose:
+
+**Relational ontology → interpretive narrative continuity.** If the person is constituted by relationships — with others, with tradition, with God — then the research process is itself a relational encounter between scholar and text. The agent must preserve the continuity of this encounter across sessions. This is not a storage problem; it is a *relational fidelity* problem. The narrative memory architecture described in Section 2.3 — atomic memories, rolling summaries, Zettelkasten-style linking — is the technical instantiation of this commitment.
+
+**Inviolable dignity → non-substitution of judgment.** If human dignity is inviolable and irreducible, then the agent must never substitute its "judgment" for the researcher's on questions of meaning, value, or theological truth. This is not a soft preference but a hard architectural constraint. The four-tier epistemic classification (Section 3.2), with its explicit deferral at Tier 4, enforces this constraint at the system level. The agent *cannot* generate a theological interpretation and present it as its own — the architecture literally does not permit it.
+
+**Narrative constitution → memory that tracks evolving understanding.** John Paul II's *Laborem Exercens* (1981) argued that work has a "subjective dimension" — it forms the person who performs it, not merely the product it creates. If an AI "does the reading for us," it robs the scholar of this subjective formation. The memory architecture must therefore track the scholar's evolving *story of understanding* — not just the conclusions reached but the path taken, the dead ends explored, the moments of surprise and revision. Fioravante and Vaccaro (2025) provide additional grounding here, mapping personalist categories of uniqueness, relationality, and unpredictability to ethical guidelines for generative AI deployment.
+
+**Subsidiarity → decisions at the most proximate level.** The Catholic Social Teaching principle of subsidiarity — that decisions should be made at the lowest competent level, not centralised upward — translates directly into the graduated autonomy mapping of Section 6.2. Interpretation belongs to the scholar. Retrieval can be delegated to the agent. Classification can be shared. The system's architecture should enforce this distribution, not merely recommend it.
+
+Zimmermann (2021), in *Christian Scholar's Review*, provides the philosophical bridge between the Scheler/Wojtyła personalist tradition and concrete technology ethics decisions — arguing that personalism is not a post-hoc ethical overlay on already-designed systems but a foundational orientation that shapes what gets built in the first place. The point is not to apply ethics as a checklist to a finished product. It is to derive architecture from ontology — to let an understanding of what the human person *is* determine what the system *does*.
+
+A bridge is needed, however, between this theologically grounded design ethic and the secular AI ethics frameworks that dominate the technical literature. Floridi and Cowls (2019), in what has become the most widely cited secular AI ethics framework, identify five principles: beneficence, non-maleficence, autonomy, justice, and — crucially — **explicability**, a novel fifth principle combining intelligibility (how does the system work?) with accountability (who is responsible when it fails?). Explicability resonates deeply with personalist commitments. If the person is an agent constituted by rational self-determination, then a system that operates as a black box — producing outputs whose provenance and reasoning cannot be inspected — undermines the very agency it is supposed to serve. The agent must not only *be* transparent but *make its reasoning inspectable* so that the scholar can evaluate whether to trust a particular output. In the prototype, this translates to a "transparency over efficiency" principle: the system logs every tool call, every source consulted, every confidence score, every tier classification — even when the scholar does not request it. The audit trail exists by default, not by exception.
+
+Laitinen and Sahlgren (2021) extend this insight by arguing that autonomy in AI ethics must be understood *relationally* rather than merely individually — embedded in social relations rather than reduced to individual rational choice. This relational autonomy maps directly onto the personalist understanding of the person as constituted by relationships. The scholar's autonomy is not diminished by using an agent; it is exercised *through* the agent, provided the agent respects the relational structure of the encounter. The agent is not an autonomous reasoner that happens to consult a human; it is an instrument within a relationship of scholarly inquiry, accountable to the person who wields it.
+
+### 6.4 The Model Context Protocol as Relational Infrastructure
+
+The Model Context Protocol (MCP), released by Anthropic in November 2024 and rapidly adopted by OpenAI, Google DeepMind, and Microsoft (now hosted by The Linux Foundation), provides the technical infrastructure for a design vision that personalist principles demand but could not, until recently, implement. MCP's core primitives — **Tools** (callable functions), **Resources** (data sources), and **Prompts** (templated interactions) — use JSON-RPC 2.0 over transport-agnostic protocols, enabling any AI agent to connect to external services through a standardised interface. By late 2025, approximately 16,000 community MCP servers existed, with SDKs in Python, TypeScript, Java, Kotlin, C#, Go, and Ruby.
+
+The theological significance is this: an LLM without MCP is, as it were, a brain in a jar. It knows only what its training data contained, and it has no way to verify, update, or ground its outputs in authoritative sources. It is an isolated intelligence — precisely the kind of disembodied, decontextualised cognition that the techno-gnosticism critique developed in Section 5.2 warns against. MCP allows the agent to connect to *specific, curated, authoritative* sources: a GNORM server exposing annotated legal and religious texts, an IxTheo server providing bibliographic access to the Index Theologicus, a Sefaria server grounding queries in canonical Jewish texts. The agent's knowledge is constituted by its connections — a relational ontology for the AI itself.
+
+The Sefaria MCP server (2025), enabling Claude and ChatGPT to query the open-source library of Jewish texts with 775,000 monthly users, demonstrates this pattern directly in a religious studies context. It is, as far as the literature reveals, the only MCP integration currently operating in religious studies. Connecting similar servers to the Thesaurus Linguae Graecae, the Patrologia databases, IxTheo, or ITSERR's own tools (CRITERION, GNORM, DaMSym, YASMINE) would be genuinely novel and would constitute a concrete application of the relational infrastructure vision.
+
+For sacred texts, the distinction between *grounded* and *ungrounded* agent outputs carries weight beyond the merely technical. An agent that generates a paraphrase of Augustine from its training data may produce something plausible but unfaithful. An agent that retrieves the specific passage from a curated digital edition through an MCP tool call produces something verifiable and citable. The theological significance of *authoritative sources* — the difference between a critical edition and a web scrape, between a confessional document and a blog post — maps directly onto MCP's trust model, where the researcher controls which servers are connected and what permissions are granted. The agent's epistemic horizon is defined not by its training data but by its sanctioned connections.
+
+MCP has not yet been applied to humanities research infrastructure. This is the fifth convergent gap — or rather, one face of it. The tools exist (GNORM, CRITERION, DaMSym); the protocol exists (MCP); the frameworks exist (LangGraph with native MCP support). What is missing is the integration work and, more importantly, the design philosophy that would guide it. Connecting these components is not merely a plumbing exercise. It is an act of scholarly infrastructure design that determines what the agent can know, how it knows it, and how transparently it reports its sources.
+
+---
+
+## 7. European Research Infrastructure for Religious Studies: The 2026 Landscape
+
+The design philosophy articulated in Section 6 — personalist grounding, graduated autonomy, MCP-based relational infrastructure — presupposes an institutional ecosystem capable of hosting it. Philosophical commitments that cannot be implemented within existing infrastructure remain, at best, aspirational. The question becomes: what does the European research infrastructure landscape for religious studies actually look like in 2026, and where are the gaps that a Slovak contribution could address?
+
+### 7.1 RESILIENCE and ITSERR: From ESFRI Roadmap to Operational Infrastructure
+
+The institutional infrastructure for digital religious studies in Europe has matured considerably over the past five years, though unevenly. The flagship initiative is **RESILIENCE** (REligious Studies Infrastructure: tooLs, Innovation, Experts, conNections and Centres in Europe), which entered the ESFRI Roadmap in 2021 and is completing its Preparatory Phase (2022–2026), funded under Horizon Europe (Grant Agreement No. 101079792). Led by FSCIRE (Fondazione per le Scienze Religiose Giovanni XXIII) in Bologna, the consortium includes thirteen partners from eleven countries. During the Preparatory Phase, RESILIENCE has drafted its Financial Sustainability Plan and Service Strategy, produced a FAIR data and RDM best practices study, established its Transnational Access Fellowship Programme — the programme that supports the present fellowship — and deployed data hub tools including IxTheo (Index Theologicus, University Library Tübingen) and RelReSearch. The planned lifecycle spans approximately thirty-five years: a four-year Preparatory Phase giving way to an eight-year Implementation Phase, then a twenty-year Operation Phase, and finally a two-year Termination Phase. The ERIC (European Research Infrastructure Consortium) legal entity procedures are planned for the upcoming Implementation Phase.
+
+RESILIENCE participates in the SSH Open Cluster Governing Board, connecting it to CESSDA, CLARIN, DARIAH, EHRI, E-RIHS, OPERAS, ESS ERIC, and SHARE ERIC. This positioning within the broader European research infrastructure ecosystem is strategically important: it signals that religious studies is no longer a disciplinary island but an integral participant in the shared infrastructure for social sciences and humanities.
+
+**ITSERR** (Italian Strengthening of the ESFRI RI RESILIENCE) provides the national dimension, a €22.1 million project funded under Italy's NRRP (National Recovery and Resilience Plan), Mission 4 "Education and Research." Led by CNR and conceived by FSCIRE in collaboration with the Universities of Turin, Modena & Reggio Emilia, Naples "L'Orientale," and Palermo, ITSERR aims to transform Religious Studies from passive technology consumers to "drivers of a new match with AI/BD/HPC." Its eleven work packages span the full range from project management to specific technical tools.
+
+The work packages most directly relevant to the present project are: **WP3 (T-ReS)**, which develops CRITERION for critical editions and GNORM for automatic analysis of religious normative sources via data mining and 3D visualisation — the pipeline whose adaptation for Protestant theological texts forms one strand of this fellowship's practical work; **WP4 (DaMSym)**, applying deep learning to semantic analysis of Nicene-Constantinopolitan Creed translations across languages and traditions; **WP8 (UbiQuity)**, conducting intertextual analysis of Bible and Qur'ān commentaries as "places of memory" in exegetical traditions; and **WP9 (TAURUS)**, building 3D visualisation toolkits including EnLil for cuneiform tablets and MiRAr for mixed reality archaeology. The ITSERR Gateway on D4Science provides the virtual research environment, and ITSERR has published Latin text embeddings on HuggingFace.
+
+The University of Palermo — host of this fellowship — contributes through five departments (Cultures and Societies, Law, Engineering, Architecture, Mathematics & Computer Science) and houses the Giorgio La Pira Library, specialised in Islam with over 21,000 volumes, approximately 900,000 digital works, and more than 270,000 manuscripts, as well as the Fondo Moncada Paternò, comprising 2,536 volumes spanning 1500 to the modern era.
+
+Related infrastructures offer complementary but as yet unintegrated services. **CLARIN ERIC** provides NLP tools, corpora, and language processing services applicable to religious texts; the Dutch CLARIAH-PLUS project explicitly covers religious studies among its humanities disciplines, and LINDAT/CLARIAH-CZ connects ten Czech institutions for open-access digitised data resources. **DARIAH ERIC** provides broader digital humanities tools and services; the DARIAH Annual Event 2026 is hosted by CNR in Rome (May 26–29), directly connecting with ITSERR's lead partner. The integration gap remains significant: while RESILIENCE participates in the SSH Open Cluster alongside CLARIN and DARIAH, specific technical interoperability — shared metadata standards, federated search across platforms — appears to be still in development rather than operational.
+
+### 7.2 Central and Eastern European Religious Heritage: Fragmented but Substantial
+
+The digitisation landscape of Central and Eastern Europe presents a paradox: extraordinary richness of religious heritage material coexisting with fragmented, institution-specific access points and limited integration into pan-European infrastructure.
+
+The **Czech Republic's Manuscriptorium** stands as the flagship: over 360,000 descriptive records, 33 million digitised pages, and 130,000 digitised documents from more than 180 institutions in approximately twenty countries, encompassing extensive religious content. Winner of the inaugural UNESCO Jikji Prize (2005), Manuscriptorium serves as a licensed Europeana domain aggregator and represents the most comprehensive CEE-based digital manuscript infrastructure.
+
+**Poland's** Polona portal aggregates over four million digital objects; the POLIN Museum's Jewish Heritage digitisation project represents a significant denominational contribution. In **Hungary**, the National Széchényi Library holds approximately 700 codices and 1,000 codex fragments. The MOMENTUM Digital Music Fragmentology Research Group (Hungarian Academy of Sciences, led by Zsuzsa Czagány) has described more than 170 notated manuscript fragments across ten collections (Czagány, 2020). The Hungaricana Portal contains 200,000 digitised medieval documents including religious and administrative materials from the Kingdom of Hungary.
+
+In **Slovakia**, the Slovak National Library has pioneered digitisation of the "Illuminated Codices of the Bratislava Chapter Library" since 1995; the Antiphonary of Bratislava II is inscribed on the UNESCO Memory of the World Register. The Fragmentarium partner project "Manuscript Fragments in Slovakia" (led by Eduard Lazorík, Slovak Academy of Sciences / Masaryk University) researches over 800 surviving medieval fragments — a remarkable number when compared to only 18 complete codices preserving plainchant. The Cantus.sk project researches medieval musical sources from the late eleventh to early sixteenth century. FamilySearch has digitised 1.6 million Slovak church records, representing the most extensive current access point for religious archival material, though the collections remain fragmented across multiple institutional types: Catholic diocesan archives, Protestant church archives, state repositories, and academic institutions.
+
+Tóth (2020) provides the scholarly overview of digitisation organisation and funding across the Visegrád countries, and the Visegrad Fund-supported project "Mapping and Boosting Digital Humanities in the Visegrad Region" (digihum.cspk.eu) has mapped DH tools and initiatives across V4 countries.
+
+### 7.3 Infrastructure Gaps as Strategic Opportunities
+
+Five gaps are particularly relevant for the positioning of this project within the broader European landscape.
+
+First, **CEE underrepresentation in RESILIENCE**: no V4 country appears as a core consortium partner, despite the extraordinary richness of Central European religious heritage spanning Western and Eastern Christian, Jewish, and Ottoman-period Islamic traditions. This is a structural omission, not a reflection of the region's scholarly capacity or material holdings.
+
+Second, **Protestant and Reformation heritage lacks dedicated digital infrastructure** in the V4 region, despite Slovakia's significant Lutheran heritage — directly relevant to the Leonard Stöckel corpus that serves as this project's pilot case. The Reformation is studied computationally almost exclusively through social and historical lenses (correspondence networks, print culture, sociological adoption patterns), not through theological textual analysis. The Melanchthon Academy in Bretten, identified as a RESILIENCE partner with interest in digital Reformation research, represents a potential institutional ally for addressing this gap.
+
+Third, **non-Latin alphabet support beyond Arabic** is underdeveloped: Church Slavonic, Old Hungarian, and other CEE scripts used in religious texts need further infrastructure attention, though ITSERR's DIACU dataset for Church Slavonic analysis is a promising early initiative.
+
+Fourth, **no unified CEE-level portal exists specifically for religious heritage**, despite the substantial national-level digitisation efforts catalogued above.
+
+Fifth — and this is where the present project enters — **ITSERR's tools await agentic integration**. CRITERION, GNORM, DaMSym, and YASMINE are being developed as standalone tools rather than as components of an orchestrated AI agent workflow. The pipeline adaptation and MCP integration work described in this synthesis addresses precisely this gap.
+
+Slovakia's positioning within this landscape is both challenging and opportune. The ELTF at Comenius University brings Central European expertise, access to regional archives, a UNESCO IRCAI connection, and a concrete pilot project (the Stöckel corpus) that demonstrates how GNORM methodology could extend to new textual domains. The RESILIENCE Observer Agreement pathway — with its benefits of priority invitations, General Assembly attendance, and access to open-source infrastructure resources — provides a realistic mechanism for formalising this engagement. The Bologna General Assembly (May 11–12, 2026) represents the immediate target for advancing this institutional relationship.
+
+---
+
+## 8. Operational Roadmap: From Synthesis to Prototype
+
+The gaps identified across Sections 2–7 are not merely academic observations. They define a work programme. What follows traces how the research synthesised above translates into concrete architectural decisions, a fellowship work plan, and a post-fellowship development pipeline.
+
+### 8.1 Architecture Decisions Following from the Research
+
+The prototype architecture emerges not from a priori engineering preferences but from the cumulative force of the research synthesised in Sections 2–6. Each major architectural decision can be traced to a specific scholarly finding or philosophical commitment:
+
+**LangGraph for orchestration.** The graph-based architecture models the hermeneutical circle naturally — understanding of parts informs understanding of the whole and vice versa, and the graph's node-edge structure represents this reciprocal movement between textual elements, interpretive frames, and scholarly conclusions. LangGraph's built-in statefulness, human-in-the-loop checkpoints, and native MCP support make it the strongest available candidate (Section 2.2).
+
+**MemGPT/Letta-style hierarchical memory adapted for theological research.** Core memory stores the scholar's evolving interpretive framework — the questions driving the inquiry, the confessional commitments informing the reading, the provisional conclusions reached so far. Archival memory maintains the consulted corpus and prior analyses. A-MEM-inspired Zettelkasten linking builds interpretive connections between texts, modelling the web of associations that characterises mature theological scholarship (Section 2.3).
+
+**Four-tier epistemic classification with explicit markers.** Every agent output is tagged: Factual/Historical (Tier 1), Scholarly Consensus (Tier 2), Interpretive/Confessional (Tier 3), or Matters of Faith and Doctrine (Tier 4, deferred entirely to human judgment). The classification draws on semantic entropy methods for Tier 1 confidence estimation and GNORM's pipeline provenance tracking for Tiers 1–2. This framework has no precedent in the literature and constitutes a standalone methodological contribution (Section 3).
+
+**Human-in-the-loop at all interpretive decision points.** Following Shneiderman's Supertool-with-Control-Centre model and the domain-specific autonomy mapping developed in Section 6.2: the agent leads on retrieval (L3–L4), collaborates on classification (L2–L3), and defers entirely on theological interpretation (L1). The architecture enforces this through approval gates, not merely through guidelines.
+
+**MCP-based tool integration** connecting ITSERR services (GNORM, CRITERION, DaMSym), IxTheo, and standard scholarly databases (JSTOR, ATLA Religion Database, Zotero). The Sefaria MCP server for Jewish texts provides the closest existing model (Section 6.4).
+
+### 8.2 The Fellowship Work Plan
+
+The 2.5-week fellowship window (February 10–27, 2026) demanded prioritisation. Following the February 12 meeting with the GNORM project team, the work plan crystallised around two parallel tracks: the integrated research synthesis (this document) and the GNORM pipeline adaptation for the Stöckel corpus.
+
+**Week 1 (February 10–16): Orientation, listening, and synthesis.** Initial meetings with Arianna Pavone (WP3/GNORM coordinator) and Marcello Costa (WP8/UX) established the pivot from abstract agent prototype to concrete pipeline adaptation. Code inspection of the CIC_annotation repository confirmed the six-layer hybrid architecture and identified the critical technical finding: the CRF engine is label-agnostic, meaning domain adaptation concentrates at the pipeline edges (data entry, rules, abbreviation dictionaries) rather than in the statistical core. The integrated research synthesis — drawing on three independent source reports totalling approximately 25,000 words — was assembled during this week.
+
+**Week 2 (February 17–23): Conceptual framework and prototyping.** Working paper draft: the personalist foundations for AI-assisted theological research, grounding the epistemic modesty framework and graduated autonomy mapping in Wojtyła, Scheler, and Catholic Social Teaching. Implementation work: concrete tool definitions, MCP integration stubs, testing against GNORM API endpoints if available from the WP3 team. The workflow diagram for the Stöckel adaptation — mapping the seven-stage data processing pipeline (Fry, 2007) from acquisition through OCR/normalisation, entity schema definition, pipeline processing, visualisation, refinement, and interaction — was refined collaboratively.
+
+**Days 13–17 (February 24–27): Demonstration and documentation.** A seminar on "Medieval hermeneutics and artificial intelligence" (February 25) provides the occasion for presenting the philosophical framework to the broader consortium. Preparation of the consortium presentation connects the fellowship's specific technical contributions (pipeline adaptation, epistemic classification, MCP integration design) to ITSERR's strategic goals. Final documentation with philosophical annotations ensures that the design rationale — why each architectural choice was made, and what personalist commitment it instantiates — accompanies the technical output.
+
+### 8.3 Post-Fellowship Pipeline
+
+The fellowship produces seeds, not harvest. The post-fellowship pipeline extends across several months and connects to broader institutional strategies:
+
+**Immediate outputs (March 2026):** Blog post for the ITSERR website documenting the fellowship's findings and the cross-domain adaptation methodology. Public release of the code repository, including the OCR-to-normalisation pipeline (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`, 78 tests passing), entity schema proposals, and design documentation. Final results report to the TNA Programme.
+
+**Academic outputs (April–September 2026):** Faculty seminar at Comenius University (April). Conference presentation at DH2026 or European Academy of Religion meeting (May–June). Journal article targeting *AI & Society* for the theoretical framework (personalism → architecture translation) or *Open Theology* for the digital theology contribution. Technical companion paper for *Digital Scholarship in the Humanities* or *Computational Humanities Research* (CHR), focusing on the GNORM adaptation methodology and epistemic classification system.
+
+**Institutional strategy:** Continued pursuit of RESILIENCE Observer status for Slovakia through the ELTF, with the Bologna General Assembly (May 11–12, 2026) as the next milestone in coordination with Francesca Cadeddu (RESILIENCE General Director). The APVV grant application (198,220 EUR, 48 months) for mapping Slovak archives of religious heritage, developed with Mgr. Radoslav Hanus and PhDr. Eva Kowalská, would — if successful — provide the resources for systematic digitisation and annotation of the Stöckel corpus and related Reformation-era texts, scaling the pilot methodology demonstrated during this fellowship to a multi-year research programme.
+
+**Technical development:** The zero-shot test of the CIC_annotation pipeline on Stöckel sample text — blocked during the fellowship by the need for INCEpTION import formatting — represents the critical next empirical step. Its results will determine where adaptation effort should concentrate: if the CRF performs reasonably on biblical citations (structurally similar to legal citations), the priority shifts to patristic and confessional reference types; if performance degrades substantially, the priority shifts to character-level feature engineering for historical orthographic variation.
+
+---
+
+## 9. Conclusion: Towards a Relational AI for Theology
+
+This synthesis has mapped a territory defined by convergence. Five distinct literature gaps — each significant in isolation — meet at a point that only becomes visible when they are viewed together.
+
+First: no agentic system for theological research exists. The tools are mature — LangGraph, CrewAI, AutoGen, MemGPT — but their application has been confined to software engineering, finance, marketing, and general research assistance. Religious studies has been left out entirely, not because the field lacks computational ambition (PASSIM, Sefaria, DISSINET, and ITSERR demonstrate otherwise) but because no one has yet brought agent orchestration frameworks into conversation with the interpretive demands of theological scholarship.
+
+Second: personalist anthropology has never been translated into AI architecture. The Rome Call for AI Ethics, Catholic Social Teaching, and the TRUST framework provide principles — transparency, dignity, subsidiarity, stewardship — but principles that float above implementation leave no trace in the systems people actually use. The mapping proposed in Section 6.3 — from relational ontology to narrative memory continuity, from inviolable dignity to the non-substitution of interpretive judgment, from subsidiarity to graduated autonomy — demonstrates that it is possible to derive architecture from ontology. The point is not to append an ethics statement to a technical paper. It is to show that the philosophy *changes what gets built*.
+
+Third: Protestant theological corpora remain computationally underserved. The Reformation is studied through correspondence networks and print culture diffusion — legitimate and valuable work — but not through systematic NLP analysis of doctrinal argumentation, intertextual citation patterns, or confessional reference networks. The Leonard Stöckel corpus, with its dense web of biblical, patristic, and confessional citations in sixteenth-century Latin, provides a concrete test case for redressing this imbalance, and the GNORM pipeline — originally designed for medieval canon law — offers a surprisingly direct adaptation path, given the structural parallels between legal and theological citation practices.
+
+Fourth: epistemic modesty for interpretive domains is untheorised. All existing confidence calibration targets factual Q&A — did the model get the right answer? — but theological research operates across a spectrum from datable historical claims ("Paul wrote Romans around 57 CE") through scholarly consensus with acknowledged disagreement ("Most scholars date Mark as the earliest Gospel") to interpretive claims where multiple valid traditions coexist ("This passage has been read as...") to matters of faith and doctrine where computational systems must defer entirely to human judgment. The four-tier epistemic classification developed in Section 3 addresses this gap directly and constitutes, we believe, a genuinely novel contribution to AI system design beyond the religious studies context.
+
+Fifth: ITSERR's emerging tools await agentic orchestration. CRITERION, GNORM, DaMSym, and YASMINE are being built as standalone capabilities. The Model Context Protocol provides the means to unify them within a single agent framework, and the philosophical commitments articulated here — transparency, grounded authority, relational fidelity — provide the design rationale for how that unification should proceed.
+
+These gaps are not independent. They converge at a specific point: the absence of a philosophically grounded, theologically informed, technically feasible design framework for AI agents in religious studies. The recommended prototype architecture — LangGraph for orchestration, MemGPT-style hierarchical memory, A-MEM Zettelkasten linking, semantic entropy for calibrated confidence, four-tier epistemic classification, human-in-the-loop at all interpretive decision points, and MCP-based tool integration with ITSERR services — has no precedent in the literature. It would constitute a contribution to digital humanities, AI agent research, and theological methodology simultaneously.
+
+We are moving, it seems, from the *digitisation* of texts to the *agentification* of research. The question that will determine whether this transition serves or diminishes scholarship is not primarily technical. It is anthropological. What kind of agent do we build — and for what kind of scholar? The answer proposed here is an agent that respects the sacredness of the text it handles and the dignity of the person who reads it. An agent that knows the difference between a fact and an interpretation, between a citation and a confession, between what it can calculate and what it must defer. An agent that is, in the end, not intelligent but *instrumental* — a tool in the hands of a person who reads, who questions, who wrestles with meaning, and who bears the irreducible responsibility of understanding.
+
+---
+
+*This synthesis was developed during an ITSERR Transnational Access Fellowship at the University of Palermo, February 2026. The author thanks Dr. Arianna Pavone (WP3/GNORM coordinator), Marcello Costa (WP8), and the Palermo team for their collaboration, and acknowledges the support of the ITSERR Transnational Access Programme funded under Italy's National Recovery and Resilience Plan.*
+
+---
+
+## References
+
+Adeboye, A., et al. (2025). [AI and Indigenous African Religion: Computational Approaches to Oral Divination Traditions]. *[Venue unconfirmed — requires DOI verification]*.
+
+Alsayed, A.A.A. (2024). "Developing AI-based Agents for Automating Linguistic Research Workflows: Fine-tuning Corpus Annotators as an Example." University of Reading Digital Humanities Hub. Available at: https://research.reading.ac.uk/digitalhumanities/
+
+Bamman, D. & Burns, P.J. (2020). "Latin BERT: A Contextual Language Model for Classical Philology." arXiv:2009.10053.
+
+"Beyond Modern Dualisms: Divine Ethics as Evaluative Grammar for AI Imaginaries" (2025). *Religions* 17(2): 190.
+
+Boodts, S. & Denis, P. (2023). "The PASSIM Project: Network Visualisation of Patristic Sermon Traditions." *Journal of Historical Network Research* 9: 1–35.
+
+Caffagni, N., et al. (2025). "BERT Fine-tuned for Detecting Biblical References in Patristic Literature." *CEUR Workshop Proceedings* Vol. 3937.
+
+Campbell, H.A. (2025). "Religious AI Tools as Charismatic Technologies." Presentation at the ARC International Roundtable, Payap University, Chiang Mai.
+
+Capurro, R. (2010). "Digital Hermeneutics: An Outline." *AI & Society* 25(1): 35–42. DOI: 10.1007/s00146-009-0255-9.
+
+Clérice, T. & Glaise, A. (2023). "Twenty-One* Pseudo-Chrysostoms and More: Authorship Verification of the Pseudo-Chrysostomian Corpus." In *Proceedings of the Computational Humanities Research Conference (CHR 2023)*.
+
+Clérice, T., et al. (2023). "CREMMA Medii Aevi: Literary Manuscript Text Recognition in Latin and Old French." *Journal of Open Humanities Data*. DOI: 10.5334/johd.97.
+
+Coeckelbergh, M. (2025). "Digitalization, AI and the Rise of Techno-Religion." *Telecommunications Policy*.
+
+Czagány, Z. (2020). "Fragmenta Manuscriptorum Musicalium Hungariae Mediaevalis." In *Disiecta Membra Musicae: Studies in Musical Fragmentology*, edited by G. Varelli, pp. 301–322. De Gruyter.
+
+Davis, E. (1998/2015). *TechGnosis: Myth, Magic, and Mysticism in the Age of Information*. Revised edition. North Atlantic Books.
+
+Detweiler, C.N. (2025). "Old Wine in New Wineskins: Computational Methods in New Testament Hermeneutics." *Religions* 16(1): 28. MDPI.
+
+Donati, P. (2021). "How the Digital Technological Matrix Redefines Human Identities and Relations." In D.E. Viganò (ed.), *Changing Media in a Changing World*, Studia Selecta 7, pp. 37–62. Vatican City: Pontifical Academy of Social Sciences.
+
+Elrod, A.G. (2024). "Uncovering Theological and Ethical Biases in LLMs: An Integrated Hermeneutical Approach Employing Texts from the Hebrew Bible." *HIPHIL Novum* 9(1).
+
+Esuli, A., Imperia, R., & Puccetti, G. (2025). "Automatic Annotation of Legal References in the *Liber Extra*." *CEUR Workshop Proceedings* Vol. 3937 (IRCDL 2025).
+
+Farquhar, S., Kossen, J., Kuhn, L., & Gal, Y. (2024). "Detecting Hallucinations in Large Language Models Using Semantic Entropy." *Nature* 630: 625–630. DOI: 10.1038/s41586-024-07421-0.
+
+Fioravante, R. & Vaccaro, A. (2025). "Personalism in Generative AI Deployment: Deciding Ethically When Human Creative Expression is at Stake." *Humanistic Management Journal* 10: 387–409. DOI: 10.1007/s41463-024-00193-9.
+
+Floridi, L. & Cowls, J. (2019). "A Unified Framework of Five Principles for AI in Society." *Harvard Data Science Review* 1(1). DOI: 10.1162/99608f92.8cd550d1.
+
+Fry, B. (2007). *Visualizing Data*. O'Reilly Media.
+
+Henrickson, L. & Meroño-Peñuela, A. (2023). "Prompting Meaning: A Hermeneutic Approach to Optimising Prompt Engineering with ChatGPT." *AI & Society*. DOI: 10.1007/s00146-023-01752-8.
+
+Hornby, R. (2024). "Is Generative AI Ready to Join the Conversation That We Are? Gadamer's Hermeneutics after ChatGPT." *Technophany* 3(1).
+
+Huang, J., et al. (2025). "Levels of Autonomy for AI Agents." Knight First Amendment Institute, Columbia University. arXiv:2506.12469.
+
+Jenkins, D.M., Cleverley-Thompson, S., Erikson, D., Blankenbaker, A., & Brown-Saracino, B. (2025). "Prompting for Meaning: Exploring Generative AI Tools for Qualitative Data Analysis in Leadership Research." *Journal of Leadership Studies* 19(3). DOI: 10.1002/jls.70014.
+
+John, L., et al. (2026). "ExtracTable: Human-in-the-Loop Transformation of Scientific Corpora into Structured Knowledge." Springer.
+
+John Paul II (1981). *Laborem Exercens*. Encyclical Letter. Vatican City.
+
+Klie, J.-C., Bugert, M., Boullosa, B., de Castilho, R.E., & Gurevych, I. (2018). "The INCEpTION Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation." In *Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations (COLING 2018)*, pp. 5–9.
+
+Koch, G., et al. (2023). "A Tailored Handwritten-Text-Recognition System for Medieval Latin." In *Proceedings of the ALP Workshop 2023*.
+
+Kommers, C., Ahnert, R., Antoniak, M., et al. (2025). "Computational Hermeneutics: Evaluating Generative AI as a Cultural Technology." *Frontiers in Artificial Intelligence* / SSRN preprint. DOI: 10.2139/ssrn.5409144.
+
+Kuhn, L., Gal, Y., & Farquhar, S. (2023). "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation." In *Proceedings of the International Conference on Learning Representations (ICLR 2023)*. arXiv:2302.09664.
+
+Laitinen, A. & Sahlgren, O. (2021). "AI Systems and Respect for Human Autonomy." *Frontiers in Artificial Intelligence* 4: 705164. DOI: 10.3389/frai.2021.705164.
+
+Laracy, J.R., Kirova, V.D., Ku, C.S., & Marlowe, T.J. (2025). "Human Dignity and the Ethics of Artificial Intelligence: A Framework for Responsible Design and Use from the Perspective of Catholic Social Teaching." IEEE Conference Publication. 979-8-3315-3228-4/25.
+
+Le Duc, A. (2026). "Technology Is Never Neutral: AI and Algorithmic Mediation." Keynote address, Catholic Bishops' Conference of Thailand, February 2026.
+
+Le Duc, A. (n.d.). "Towards a Cybertheology: Theology in the Digital Milieu." SSRN: 4337184.
+
+Li, Z. & Wu, Q. (2025). "Let It Go or Control It All? The Dilemma of Prompt Engineering in Generative Agent-Based Models." *System Dynamics Review* 41(3). DOI: 10.1002/sdr.70008.
+
+Macchioro, R. (2021). "The PASSIM Project: Patristic Sermons in the Middle Ages." *Classics@* 18.
+
+McGrath, et al. (2025). "The TRUST Framework: Theological Alignment, Relational Impact, Utility and Justice, Stewardship and Sustainability, Transparency and Accountability." SSRN: 5405165.
+
+Mohr, J.W., Wagner-Pacifici, R., & Breiger, R.L. (2015). "Toward a Computational Hermeneutics." *Big Data & Society* 2(2). DOI: 10.1177/2053951715613809.
+
+Muehlberger, G., et al. (2019). "Transforming Scholarship in the Archives through Handwritten Text Recognition: Transkribus as a Case Study." *Journal of Documentation* 75(5): 954–976. DOI: 10.1108/JD-07-2018-0114.
+
+Natarajan, S., et al. (2024). "AI-in-the-Loop: Rethinking Human-in-the-Loop for AI-Assisted Decision Making." arXiv:2412.14232.
+
+Nowak, K., Ziębura, J., Wróbel, K., & Smywiński-Pohl, A. (2024). "eFontes: Part of Speech Tagging and Lemmatization of Medieval Latin Texts — A Cross-Genre Survey." arXiv:2407.00418.
+
+Packer, C., Wooders, S., Lin, K., Fang, V., Patil, S.G., Stoica, I., & Gonzalez, J.E. (2023). "MemGPT: Towards LLMs as Operating Systems." arXiv:2310.08560.
+
+Pavone, A. & Imperia, V. (2025). "GNORM: Challenges and Potential of a 3D Visualisation of the Babylonian Talmud." In *The Digital Turn in Religious Studies*. OA: http://hdl.handle.net/10447/695218.
+
+Pence, D. (2017). "The Disappearing Human: Gnostic Dreams in a Transhumanist World." *Religions* 8(5): 81. DOI: 10.3390/rel8050081.
+
+Phillips, P.M. (2018). "The Pixelated Text: Reading the Bible within Digital Culture." *Theology* 121(6): 403–412.
+
+Phillips, P.M., Schiefelbein-Guerrero, K., & Kurlberg, J. (2019). "Defining Digital Theology: Digital Humanities, Digital Religion and the Particular Work of Digital Theology." *Open Theology* 5(1): 29–43. DOI: 10.1515/opth-2019-0003.
+
+Picca, D., et al. (2024). "Emotional Hermeneutics: Exploring the Limits of AI from a Diltheyan Perspective." In *Proceedings of ACM Hypertext '24*. DOI: 10.1145/3648188.3680255.
+
+Piotrowski, M. (2026). "Model, Corpus, Interpretation: Elements of Computational Hermeneutics." In *Digital Hermeneutics II*, LNCS 14566. Springer. DOI: 10.1007/978-3-032-08697-6_2.
+
+Pontifical Academy for Life (2020). "Rome Call for AI Ethics." Available at: https://romecall.org.
+
+
+Rasmussen, P., et al. (2025). "Zep: A Temporal Knowledge Graph Architecture for Agent Memory." arXiv:2501.13956.
+
+Riemenschneider, F. & Frank, A. (2023). "Exploring Large Language Models for Classical Philology." In *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023)*, pp. 15181–15199.
+
+Romele, A., Severo, M., & Furia, P. (2020). "Digital Hermeneutics: From Interpreting with Machines to Interpretational Machines." *AI & Society* 35(1): 73–86. DOI: 10.1007/s00146-018-0856-2.
+
+"Scaling Hermeneutics: A Guide to Qualitative Coding with LLMs for Reflexive Content Analysis" (2025). *EPJ Data Science*. DOI: 10.1140/epjds/s13688-025-00548-8.
+
+Shneiderman, B. (2020). "Human-Centered Artificial Intelligence: Reliable, Safe & Trustworthy." *International Journal of Human-Computer Interaction* 36(6): 495–504. DOI: 10.1080/10447318.2020.1741118.
+
+Shneiderman, B. (2022). *Human-Centered AI*. Oxford University Press.
+
+Stokes, P.A., Kiessling, B., Stökl Ben Ezra, D., et al. (2021). "The eScriptorium VRE for Manuscript Cultures." *Classics@* 18.
+
+Tóth, M. (2020). "Organization and Funding of Digitization in the Visegrád Countries." In *Libraries, Archives and Museums as Democratic Spaces in a Digital Age*, edited by R. Audunson et al., pp. 111–132. De Gruyter Saur. DOI: 10.1515/9783110636628-006.
+
+Tuppal, C.P., Tuppal, S.M., Tuppal, S.M., & Ninobla, M.M. (2025). "Towards a Relational Understanding of Human Beings in an AI-Mediated World: A Hermeneutical Reading." *Scandinavian Journal of Caring Sciences* 39(3). DOI: 10.1111/scs.70097.
+
+Valčo, M. (2024). "Impact of Social Media Platforms' AI Algorithms on Human Values." *Vietnamese Journal of Philosophy* 4(70): 53–64.
+
+Valčo, M. (forthcoming). "Beyond Algorethics: Toward a Personalist Critique of AI Recommender Systems." arXiv:2507.16430.
+
+Valčo, M. & Bírová, J. (2024). "Freedom and Responsibility in Jean-Paul Sartre's Existentialist Philosophy: A Christian Personalist Critique." *Philosophia* 25(1). DOI: 10.46992/pijp.25.1.a.1.
+
+Vatican (2023). *Humanae Dignitatis*. Follow-up document to the Rome Call for AI Ethics. Vatican City.
+
+Vatican (2025). *Linee Guida in Materia di Intelligenza Artificiale*. Vatican City.
+
+Wang, L., Ma, C., Feng, X., et al. (2024). "A Survey on Large Language Model based Autonomous Agents." *Frontiers of Computer Science* 18(6): 186345. DOI: 10.1007/s11704-024-40231-1.
+
+Waxman, J. (2021). "A Graph Database of Scholastic Relationships in the Babylonian Talmud." *Digital Scholarship in the Humanities* 36(Suppl. 2): ii277–ii289. DOI: 10.1093/llc/fqab015.
+
+Wen, B., et al. (2025). "Know Your Limits: A Survey of Abstention in Large Language Models." *Transactions of the Association for Computational Linguistics* 13: 529–556. DOI: 10.1162/tacl_a_00754.
+
+Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X., Zhang, S., Liu, J., Awadallah, A.H., White, R.W., Burger, D., & Wang, C. (2023). "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation." arXiv:2308.08155.
+
+Xu, Z., et al. (2025). "A-MEM: Agentic Memory for LLM Agents." arXiv:2502.12110.
+
+Zimmermann, N. (2021). "Christian Personalism and Technological Ethics." *Christian Scholar's Review*. *[Volume and page numbers require verification]*.
+
+
+### Institutional and Infrastructure References
+
+CLARIN ERIC. https://www.clarin.eu
+
+DARIAH ERIC. https://www.dariah.eu
+
+Europeana. https://www.europeana.eu
+
+ITSERR (Italian Strengthening of the ESFRI RI RESILIENCE). https://www.itserr.it
+
+Manuscriptorium. Czech National Library. https://www.manuscriptorium.com
+
+Model Context Protocol Specification (2024–2025). Anthropic / The Linux Foundation. https://modelcontextprotocol.io
+
+RESILIENCE (REligious Studies Infrastructure). https://www.resilience-ri.eu
+
+Sefaria: A Living Library of Jewish Texts. https://www.sefaria.org
+
+
+### Sources Requiring DOI Verification
+
+The following sources, drawn primarily from Source [C] (ChatGPT report), could not be fully verified during the synthesis period. They are cited in the text on the basis of the source report's descriptions and require independent bibliographic confirmation:
+
+- **Adeboye, A., et al. (2025)** — AI and indigenous African religion, encoding oral divination verses. Venue and DOI unconfirmed.
+- **"AI as Interpretive Aid in Qur'anic Stylistics" (2025)** — Referenced in Section 5.3 for the *i'jaz* doctrine discussion. Author(s), venue, and DOI unconfirmed. Not included in the bibliography pending verification.
+- **Zimmermann, N. (2021)** — Volume and page numbers for *Christian Scholar's Review* require confirmation.
+- **Campbell, H.A. (2025)** — Conference presentation; no published paper identified.
+- **Le Duc, A. (2026)** — Keynote address; no published paper from this specific event identified.
+- **Somanunnithan (2025)** — Grey literature (CrewAI demonstration); referenced in draft text but not included in bibliography as it lacks peer-reviewed publication status.
+
