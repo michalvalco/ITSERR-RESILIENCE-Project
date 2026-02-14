@@ -4,7 +4,7 @@ flowchart TD
 
     %% ===== INPUT =====
     subgraph INPUT["<b>Pipeline Input</b>"]
-        IN1["📥 BIOES-tagged plaintext<br/><b>cas_to_bioes.py</b><br/><i>Source: INCEpTION export (ZIP-in-ZIP)<br/>Format: UIMA CAS XMI → one token/line<br/>Multi-type labels: BIB, PAT, REF, AN, ...<br/>Feature: Tipo field → get_annotation_type_label()</i>"]
+        IN1["📥 BIOES-tagged plaintext<br/><b>cas_to_bioes.py (adapted)</b><br/><i>Source: INCEpTION export (ZIP-in-ZIP)<br/>Format: UIMA CAS XMI → one token/line<br/>Multi-type labels: BIB, PAT, REF, AN, ...<br/>Feature: Tipo field → get_annotation_type_label()<br/>⚠️ Original CIC version hardcodes AN only</i>"]
     end
 
     %% ===== LAYER 1: RULES =====
@@ -67,7 +67,7 @@ flowchart TD
         EP1["<b>Path B: Pattern Quality + Confidence</b><br/><i>CRF: predict_marginals() → confidence<br/>Rules: pattern specificity<br/>(biblical+verse vs. name-only)</i>"]
         EP0 --- EP1
 
-        F1["✅ <b>FACTUAL</b><br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern ≥ 0.85<br/>(biblical+verse, confessional)</i><br/><b>→ Accept for public dataset</b>"]
+        F1["✅ <b>FACTUAL</b><br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern<br/>(biblical+verse ≥ 0.85,<br/>confessional ≥ 0.80)</i><br/><b>→ Accept for public dataset</b>"]
         I1["🔍 <b>INTERPRETIVE</b><br/><i>Single method<br/>Confidence 0.70–0.85<br/>(name-only match, CRF-only)</i><br/><b>→ Flag for expert review</b>"]
         D1["👤 <b>DEFERRED</b><br/><i>Methods disagree on type<br/>OR confidence < 0.70<br/>OR theological judgment</i><br/><b>→ Route to human annotator</b>"]
 

@@ -43,7 +43,7 @@ flowchart TD
     %% ===== STAGE 4: MINE =====
     subgraph S4["<b>STAGE 4: MINE</b><br/><i>CIC_annotation Pipeline (adapted)</i>"]
         direction TB
-        D0["📥 BIOES Input<br/><i>cas_to_bioes.py<br/>Multi-type: BIB, PAT, REF, AN, ...</i>"]
+        D0["📥 BIOES Input<br/><i>cas_to_bioes.py (adapted)<br/>Multi-type: BIB, PAT, REF, AN, ...</i>"]
         DL["<b>Layers 1–5</b> (each reads input ZIP independently)<br/><i>1. Rules · 2. Abbreviations · 3. Match<br/>4. CRF · 5. Structure<br/>Each writes to own output dir</i>"]
         D6["🔀 Merge + Post-process<br/><i>merge_annotations.py<br/>First-method-wins priority<br/>(L1 > L2 > L3 > L4 > L5)<br/>+ mark_source provenance</i>"]
         D0 --> DL --> D6
@@ -52,7 +52,7 @@ flowchart TD
     %% ===== STAGE 4b: EPISTEMOLOGICAL CLASSIFICATION =====
     subgraph S4b["<b>Epistemological Classification</b>"]
         direction TB
-        E1["✅ FACTUAL<br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern ≥ 0.85</i>"]
+        E1["✅ FACTUAL<br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern<br/>(biblical+verse ≥ 0.85,<br/>confessional ≥ 0.80)</i>"]
         E2["🔍 INTERPRETIVE<br/><i>Single method<br/>conf. 0.70–0.85</i>"]
         E3["👤 DEFERRED<br/><i>Methods disagree on type<br/>conf. < 0.70<br/>or theological judgment</i>"]
     end
