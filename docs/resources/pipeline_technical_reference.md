@@ -2,7 +2,7 @@
 
 **Purpose:** Static reference card for Claude Project PKB. Quick-lookup for any technical conversation about the annotation pipeline and its adaptation for Protestant theological texts.  
 **Source:** Condensed from `CIC_annotation_Deep_Dive_Report.md` (567 lines), `workflow_diagram.md` (358 lines), `epistemic_modesty_framework.md`, and direct code inspection.  
-**Last updated:** February 14, 2026 (deep read additions applied: ATON identification, tokenization warning, Talmud precedent, network scale, sparse training note)
+**Last updated:** February 14, 2026 (cross-document alignment pass: cas_to_bioes.py multi-type confirmed, FACTUAL criteria OR logic, parallel architecture, test count 413)
 
 ---
 
@@ -102,9 +102,11 @@ CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT fr
 
 ✅ Only `AN` is ML-learned. `LEMMA`, `CHAPTER`, `TITLE` use structural regex.
 
-### Multi-Type Label Support (Confirmed Feb 13, 2026 — code inspection)
+### Multi-Type Label Support (Confirmed Feb 13–14, 2026 — code inspection)
 
-⚠️ **`cas_to_bioes.py` hardcodes `AN` as the only entity type.** Lines 47–58: every `webanno.custom.Glossa` annotation becomes `B-AN`, `I-AN`, `E-AN`, or `S-AN` regardless of what the `Tipo` field contains. The `Tipo` field exists in the INCEpTION type system and is written by INCEpTION, but the reader ignores it. Similarly, `annotate_by_rule.py` hardcodes `RULE|B-AN`, `RULE|I-AN`, `RULE|E-AN`.
+✅ **`cas_to_bioes.py` already supports multiple entity types** via `get_annotation_type_label()`, which reads the `Tipo` field and falls back through `value`, `label`, `NamedEntityType`, then type name. Supported labels include: AN (GNORM legal), BIB (biblical), PAT (patristic), REF (reformation), LEMMA, CHAPTER, TITLE, NE. *(Note: the Feb 13 inspection initially found hardcoded `AN`; the Feb 14 re-inspection confirmed multi-type support was implemented — see `get_annotation_type_label()` function.)*
+
+Similarly, `annotate_by_rule.py` currently hardcodes `RULE|B-AN`, `RULE|I-AN`, `RULE|E-AN` — new rule patterns with type-specific suffixes are needed for Protestant adaptation.
 
 ✅ **The CRF itself is completely label-agnostic.** In `train_crfsuite.py`, labels are discovered dynamically: `labels = list(set([label for sent in y_train for label in sent]))`. Feature extraction (`word2features()`) operates purely on tokens — no label information enters feature computation. `annotate_by_crfsuite.py` just runs `model.predict()` and prefixes with `CRF|`. `merge_annotations.py` is also label-agnostic — merges whatever labels it finds.
 
@@ -112,7 +114,7 @@ CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT fr
 
 | File | Change Needed | Effort |
 |------|--------------|--------|
-| `cas_to_bioes.py` | Read `Tipo` field → map to label suffix (`-BIBLICAL`, `-PATRISTIC`, etc.) | Small (~20 lines) |
+| `cas_to_bioes.py` | ✅ **Already supports multi-type** via `get_annotation_type_label()` | Done |
 | `annotate_by_rule.py` | New rule patterns with type-specific label suffixes | Medium (domain work) |
 | `annotate_by_abbreviations.py` | New dictionary entries with type-aware labels | Medium (domain work) |
 | `train_crfsuite.py` | **Nothing** — genuinely label-agnostic | Zero |
@@ -262,7 +264,7 @@ for token_marginals in sentence_marginals:
 | Multilingual handling | Latin/German/Czech code-switching within documents | High | 🔧 Not started |
 | OCR error impact | Unknown error rates on 16th-c. print | ❓ | Needs empirical testing |
 | 3D visualization | Probable: **ATON Framework** (CNR ISPC, Bruno Fanini). Three.js frontend, Node.js backend, glTF/3D Tiles input, JSON config with SPARQL queries. GitHub: `phoenixbf/aton`. Also possible: 3DHOP/Nexus from CNR Visual Computing Lab. | ❓ | **Unconfirmed** — inferred from E-RIHS service listings and institutional alignment (GEM report triangulation). CHAT report suggests custom Three.js/WebGL may be more likely. Needs verification with Arianna. |
-| Multi-entity CRF | `cas_to_bioes.py` hardcodes `AN`; CRF itself is label-agnostic. Need ~20-line patch to `cas_to_bioes.py` to read `Tipo` field + new rules/abbreviations per type. See Section 3 for full per-file breakdown. | Medium | 🔧 Confirmed scope (Feb 13 code inspection) |
+| Multi-entity CRF | ✅ `cas_to_bioes.py` already supports multi-type via `get_annotation_type_label()`; CRF is label-agnostic. Remaining work: new rules/abbreviations per type. See Section 3 for full per-file breakdown. | Medium | ✅ Reader done; 🔧 rules/abbrev needed |
 
 ---
 
@@ -279,7 +281,7 @@ for token_marginals in sentence_marginals:
 - Workflow framework: Fry 2007 (Acquire → Parse → Filter → Mine → Represent → Refine → Interact)
 - **Pipeline entry point: INCEpTION ZIP only** — no raw `.txt` input path; all `annotate_*.py` scripts read via `read_cas_to_bioes()` (Feb 13)
 - **CRF is label-agnostic** — `train_crfsuite.py` discovers labels dynamically from training data; feature extraction is token-only; new labels (e.g., `B-BIBLICAL`) require zero changes to CRF code (Feb 13)
-- **`cas_to_bioes.py` hardcodes `AN`** — ignores `Tipo` field; needs ~20-line patch to support multiple entity types (Feb 13)
+- **`cas_to_bioes.py` supports multiple entity types** — `get_annotation_type_label()` reads `Tipo` field with fallback chain; supports AN, BIB, PAT, REF, LEMMA, CHAPTER, TITLE, NE (confirmed Feb 14)
 - **`merge_annotations.py` is label-agnostic** — merges whatever labels it finds, no modification needed (Feb 13)
 - **`annotate_by_rule.py` hardcodes `RULE|B-AN`** — needs new patterns with type-specific suffixes for Protestant adaptation (Feb 13)
 
@@ -312,7 +314,7 @@ for token_marginals in sentence_marginals:
 | `annotate_chapter.py` | Chapter structure detection | **HIGH** |
 | `annotate_title.py` | Title structure detection | **HIGH** |
 | `annotate_lemma.py` | Glossed lemma positioning | MODERATE |
-| `cas_to_bioes.py` | INCEpTION → BIOES | **HIGH** (hardcodes `AN`; needs multi-type patch) |
+| `cas_to_bioes.py` | INCEpTION → BIOES | LOW (✅ multi-type already supported via `get_annotation_type_label()`) |
 | `bioes_to_cas.py` | BIOES → INCEpTION (hardcoded TypeSystem) | MODERATE |
 | `merge_annotations.py` | Multi-method merge | LOW |
 | `post_process.py` | Error correction ("ff." rule) | **HIGH** |
