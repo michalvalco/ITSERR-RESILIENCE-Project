@@ -192,12 +192,13 @@ This means Layer 2 does not need to re-scan already-expanded text to find abbrev
 
 ```
 [BIOES-tagged plaintext]
-        ↓ Layer 1: Rule-based detection (regex patterns for Protestant citations)
-        ↓ Layer 2: Abbreviation dictionary lookup (theological abbreviations)
-        ↓ Layer 3: Trie matching + statistical gap prediction
-        ↓ Layer 4: CRF machine learning (trained on our annotated data)
-        ↓ Layer 5: Structural parsing (section headers, chapter markers)
-        ↓ Merge with priority + post-processing
+        ↓ (each layer reads input ZIP independently)
+        ├─ Layer 1: Rule-based detection (regex patterns for Protestant citations)
+        ├─ Layer 2: Abbreviation dictionary lookup (theological abbreviations)
+        ├─ Layer 3: Trie matching + statistical gap prediction
+        ├─ Layer 4: CRF machine learning (trained on our annotated data)
+        └─ Layer 5: Structural parsing (section headers, chapter markers)
+        ↓ Merge with priority (L1 > L2 > L3 > L4 > L5) + post-processing
 [Annotated output with source tracking]
 ```
 
@@ -385,8 +386,8 @@ INCEpTION (manual annotation for training data)
     │ (UIMA CAS XMI)
     ▼
 CIC_annotation Pipeline (adapted)
-    │ Rules → Abbreviations (← expansion_log) → Match → CRF → Structure → Merge
-    │ (annotated output with source tracking)
+    │ Parallel: Rules · Abbreviations (← expansion_log) · Match · CRF · Structure
+    │ → Merge (first-method-wins) → annotated output with source tracking
     ▼
 Epistemological Classification
     │ FACTUAL / INTERPRETIVE / DEFERRED

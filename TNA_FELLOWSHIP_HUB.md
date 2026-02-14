@@ -9,7 +9,7 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** Corpus Browser enhanced (dashboard, three-column layout, 31 references across 5 entity types). Abbreviation provenance architecture implemented (expansion_log bridges Stage 2→Stage 4 Layer 2). XML tag pollution fixed in zero-shot CRF experiment. Comprehensive documentation audit completed across all repo docs. 393 tests passing.
+**Active work:** Corpus Browser enhanced (dashboard, three-column layout, 31 references across 5 entity types). Abbreviation provenance architecture implemented (expansion_log bridges Stage 2→Stage 4 Layer 2). XML tag pollution fixed in zero-shot CRF experiment. Comprehensive documentation audit completed across all repo docs. 413 tests passing (incl. 21 for build_corpus_json.py consensus/epistemic logic).
 **Next:** (1) Revision pass on working paper — citation verification, redundancy removal. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
