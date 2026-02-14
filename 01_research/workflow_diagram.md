@@ -290,7 +290,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 | Aspect | Detail |
 |--------|--------|
 | **Input** | Normalized text files from `data/normalized/` (output of `normalize_text.py`) |
-| **Detection** | Enhanced regex patterns: ~58 biblical, ~18 patristic/classical, 4 reformation, 2 confessional — with OCR-variant handling |
+| **Detection** | Enhanced regex patterns: 58 biblical, 18 patristic/classical, 4 reformation, 2 confessional — with OCR-variant handling |
 | **Epistemic logic** | Biblical + number → FACTUAL (0.85); Confessional → FACTUAL (0.80); Others → INTERPRETIVE (0.75); Multi-method consensus → FACTUAL |
 | **Output** | `docs/prototype/data/corpus.json` — chapters, pages, references with type/confidence/epistemic/method fields |
 | **Consumers** | Corpus Browser (index.html), future Omeka S integration |

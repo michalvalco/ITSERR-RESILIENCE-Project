@@ -230,7 +230,7 @@ def detect_references(text, crf_entities=None):
                     # Prefer a CRF entity that matches the rule-based type
                     matching = [e for e in overlapping if e.get("type") == ref_type]
                     if matching:
-                        best = matching[0]
+                        best = max(matching, key=lambda e: e.get("confidence", 0))
                         consensus = True
                         confidence = max(confidence, best.get("confidence", 0.80))
                         confidence = min(round(confidence + 0.05, 2), 0.99)
