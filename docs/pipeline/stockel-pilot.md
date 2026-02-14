@@ -86,6 +86,9 @@ graph TB
     BIOES --> CRF[CRF Training]
     Clean --> ZeroShot["zero_shot_crf_experiment.py<br>(GNORM model transfer)"]
     ZeroShot --> Report[Experiment Report]
+    Clean --> Builder["build_corpus_json.py<br>(82 detection patterns)"]
+    Builder --> CorpusJSON["corpus.json"]
+    CorpusJSON --> Browser["Corpus Browser<br>(docs/prototype/)"]
     Confidence --> QA[Quality Audit]
 ```
 

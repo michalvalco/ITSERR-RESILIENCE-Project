@@ -214,7 +214,7 @@ The pipeline is being tested on Leonard Stöckel's *Annotationes in Locos commun
 
     **658** long-s corrections
 
-    **84** reference detection patterns
+    **82** reference detection patterns
 
 -   :material-test-tube:{ .lg .middle } __Quality__
 

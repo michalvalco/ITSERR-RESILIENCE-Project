@@ -305,5 +305,5 @@ Create teaching materials showing:
 
 *This guide integrates information from the COMPREHENSIVE_GUIDE_TO_GNORM.md, Andrea Esuli et al.'s "Automatic Annotation of Legal References" (IRCDL 2025), and the ITSERR Project Instructions and Strategy document.*
 
-*Last updated: February 13, 2026*
+*Last updated: February 14, 2026*
 *Part of the ITSERR Transnational Access Fellowship project*
