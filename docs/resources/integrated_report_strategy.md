@@ -292,6 +292,14 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 - **HUB updates:** Current Status updated; PKB Contents table updated (removed "planned" marker).
 - **Next session should:** Upload `pipeline_technical_reference.md` to Claude Project PKB. Then resume synthesis work — execute PROMPT_integrate_chat_report.md.
 
+### Session 5 — February 14, 2026
+- **What happened:** Deep read analysis of GEM and CHAT reports (~782 + ~893 lines) against all PKB documents. Produced `deep_read_GEM_CHAT_analysis.md` (saved to `docs/resources/` and uploaded to PKB). Identified 8 surgical additions for live reference docs, confirmed ~70% overlap with existing knowledge, found no corrections needed. Three genuinely new findings: ATON Framework identification (unconfirmed), Omeka S/IIIF integration architecture, Pavone & Imperia Talmud cross-domain precedent.
+- **Files created:** `docs/resources/deep_read_GEM_CHAT_analysis.md`, `docs/resources/PROMPT_apply_deep_read_additions.md`
+- **PKB updated:** `deep_read_GEM_CHAT_analysis.md` uploaded to PKB by user.
+- **HUB updates:** Current Status, Decision Log updated.
+- **Session froze** before applying edits to live reference docs. Handoff prompt written.
+- **Next session should:** Execute `PROMPT_apply_deep_read_additions.md` — apply 8 edits to `pipeline_technical_reference.md` and `workflow_diagram.md`. Then resume synthesis — either execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting.
+
 ---
 
 ## 9. FILE LOCATIONS

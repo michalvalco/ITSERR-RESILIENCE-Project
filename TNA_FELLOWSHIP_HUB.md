@@ -2,15 +2,15 @@
 
 **Fellowship:** ITSERR TNA, University of Palermo, Feb 10–27, 2026
 **Fellow:** Prof. Michal Valčo (ELTF, Comenius University Bratislava)
-**Last updated:** February 13, 2026
+**Last updated:** February 14, 2026
 
 ---
 
 ## Current Status (overwrite after each session)
 
-**Date:** Feb 13, 2026 (Day 4 of 14)
-**Active work:** Created `pipeline_technical_reference.md` (~230 lines) for Claude Project PKB. Condensed Deep Dive, workflow diagram, epistemic framework, and code inspection into quick-lookup reference card.
-**Next:** Upload `pipeline_technical_reference.md` to Claude Project PKB. Begin Section 1 drafting of integrated synthesis. Prepare materials for next in-person meeting with Arianna/Marcello.
+**Date:** Feb 14, 2026 (Day 5 of 14)
+**Active work:** Deep read analysis of GEM and CHAT reports complete (`docs/resources/deep_read_GEM_CHAT_analysis.md`, also uploaded to PKB). Identified 8 surgical additions for live reference docs. Handoff prompt written for applying edits (`docs/resources/PROMPT_apply_deep_read_additions.md`).
+**Next:** Execute PROMPT_apply_deep_read_additions.md (apply 8 edits to `pipeline_technical_reference.md` and `workflow_diagram.md`). Then resume integrated synthesis — execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting. Prepare for next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
 ---
@@ -163,6 +163,8 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 13 Feb 2026 | Replace daily_log.md with lean status section in HUB | Empty 613-line template wasn't being used; session log in strategy doc serves as detailed record |
 | 13 Feb 2026 | Plan pipeline_technical_reference.md for PKB | Condensed CIC/GNORM essentials (~200 lines) for quick context in every technical conversation |
 | 13 Feb 2026 | Create `03_prototype/TECHNOLOGY_INVENTORY.md` as detailed reference | Too granular for HUB (per-script docs, 163 test results, OCR quality specifics). Lives alongside the code it documents; HUB points to it in Key Documents and Workstream 4 |
+| 14 Feb 2026 | Deep read analysis of GEM + CHAT reports | ~70% overlap with existing knowledge confirmed. New findings: ATON Framework identification (unconfirmed), Omeka S/IIIF integration details, Pavone & Imperia Talmud paper as cross-domain precedent. No corrections needed. 8 surgical additions queued for live docs. |
+| 14 Feb 2026 | Upload `deep_read_GEM_CHAT_analysis.md` to PKB | Provides cross-report analysis as persistent context for all sessions |
 
 ---
 
