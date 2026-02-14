@@ -29,15 +29,19 @@ Leonard Stöckel's *Annotationes in Locos communes* (1561) is an ideal test case
 - [x] Full OCR extraction (57 pages, 18,912 words) via [`ocr_processor.py`](ocr-processor.md)
 - [x] ALTO XML output with per-word confidence scores
 - [x] Text normalization (long-s, abbreviations, structural marking) via [`normalize_text.py`](normalize-text.md)
+- [x] Expanded biblical reference detection (~70 patterns covering the full canon) with period/colon separator support
 - [x] 8 chapters identified: PRAEFATIO through DE LEGE
 - [x] INCEpTION annotation tool configured with custom layers
-- [x] 163 unit tests across all pipeline components
+- [x] [`cas_to_bioes.py`](cas-to-bioes.md) — CAS XMI → BIOES converter for CRF training
+- [x] [`zero_shot_crf_experiment.py`](zero-shot-experiment.md) — Cross-domain CRF experiment framework
+- [x] 296 unit tests across all pipeline components
 
 ### In Progress
 
 - [ ] Manual annotation in INCEpTION (target: 100+ references)
 - [ ] Integration testing with live GNORM API
 - [ ] Annotation schema formalization
+- [ ] Running zero-shot CRF experiment with trained GNORM model
 
 ### Planned Experiments
 
@@ -72,11 +76,15 @@ graph TB
     OCR --> ALTO[ALTO XML]
     ALTO --> Parser[extract_alto.py]
     Parser --> Confidence[Confidence CSV]
-    TXT --> Norm[normalize_text.py]
+    TXT --> Norm["normalize_text.py<br>(~70 biblical ref patterns)"]
     Norm --> Clean[Normalized Text]
     Clean --> INCEpTION[Manual Annotation]
-    INCEpTION --> Export[WebAnno TSV]
-    Export --> CRF[CRF Training]
+    INCEpTION --> CASExport[CAS XMI Export]
+    CASExport --> Converter[cas_to_bioes.py]
+    Converter --> BIOES[BIOES Files]
+    BIOES --> CRF[CRF Training]
+    Clean --> ZeroShot["zero_shot_crf_experiment.py<br>(GNORM model transfer)"]
+    ZeroShot --> Report[Experiment Report]
     Confidence --> QA[Quality Audit]
 ```
 

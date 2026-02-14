@@ -113,6 +113,8 @@ nav:
     - OCR Processor: pipeline/ocr-processor.md
     - ALTO XML Parser: pipeline/extract-alto.md
     - Text Normalization: pipeline/normalize-text.md
+    - "CAS → BIOES Converter": pipeline/cas-to-bioes.md
+    - Zero-Shot CRF Experiment: pipeline/zero-shot-experiment.md
     - "Stöckel Pilot Study": pipeline/stockel-pilot.md
   - Architecture:
     - System Design: architecture/system-design.md

@@ -335,12 +335,13 @@ def run_experiment(
                 continue
 
             entities = extract_entities(tokens, labels)
+
+            # Count tokens that are part of entities (non-"O" labels) once per paragraph
+            stats.entity_tokens += sum(1 for l in labels if l != "O")
+
             for entity_text, entity_label, start, end in entities:
                 context = get_context(para, start, end)
                 file_entities.append((entity_text, entity_label, context))
-                stats.entity_tokens += sum(
-                    1 for l in labels if l != "O"
-                )
 
         stats.files_processed += 1
         stats.total_entities += len(file_entities)
