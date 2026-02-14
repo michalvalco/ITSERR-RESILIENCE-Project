@@ -2,7 +2,7 @@
 
 **Prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 12 February 2026 (created) | 13 February 2026 (revised, incl. code inspection findings)  
+**Date:** 12 February 2026 (created) | 13 February 2026 (revised, incl. code inspection findings) | 14 February 2026 (updated: abbreviation provenance, test counts)
 **Status:** Working draft — revised after Feb 12 meeting and code analysis. Ready for Miro transfer and collaborative refinement.
 
 ---
@@ -87,8 +87,11 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 [extract_alto.py → confidence scores.csv]
         ↓
 [normalize_text.py]
-        ↓
-[data/normalized/*.txt → Pre-annotated plaintext with XML-like tags]
+        ↓                          ↓
+[data/normalized/*.txt]    [expansion_log in NormalizationStats]
+[Pre-annotated plaintext]  [Provenance: which abbreviations were
+ with XML-like tags]        expanded, where, and by which pattern
+                            → feeds Stage 4 Layer 2]
         ↓
 [Import to INCEpTION for manual annotation / training data creation]
         ↓
@@ -98,11 +101,26 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Current state:**
 - ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
 - ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
-- ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion)
-- ✅ 78 tests passing across both extraction and OCR modules
+- ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion) and abbreviation expansion with provenance logging
+- ✅ 389 tests passing across all pipeline and agent modules
 - Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
 - No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 - ⚠️ **Important:** `normalize_text.py` outputs pre-annotated plaintext (XML-like `<ref>` and `<chapter>` tags), NOT BIOES sequences. The BIOES conversion happens later: normalized text → INCEpTION (human annotation) → `cas_to_bioes.py` → pipeline. This human annotation loop is the bridge between Stage 2 (Parse) and Stage 4 (Mine).
+
+**Abbreviation expansion and Layer 2 provenance:**
+
+`normalize_text.py` expands Latin abbreviations (e.g., `dñs` → `dominus`, `xpi` → `christi`) during normalization so that downstream consumers — both human annotators in INCEpTION and the CRF model — see clean, standard Latin. However, the original abbreviated forms are valuable evidence: they signal that a theological term was present and can inform Stage 4 Layer 2 (Abbreviation Dictionary).
+
+To preserve this provenance without complicating the text output, `expand_abbreviations()` records every expansion in a structured `expansion_log` on `NormalizationStats`. Each entry captures:
+
+| Field | Purpose | Example |
+|-------|---------|---------|
+| `original` | The abbreviation as it appeared in the OCR text | `dñs` |
+| `expanded` | What it was expanded to | `dominus` |
+| `offset` | Character position in the pre-expansion text | `42` |
+| `pattern` | The regex pattern that matched | `\bdñs\b` |
+
+This means Layer 2 does not need to re-scan already-expanded text to find abbreviation-based evidence. Instead, it can consume the expansion log directly, annotating each logged expansion as "detected via abbreviation dictionary" with full positional information. The expansion still happens at Stage 2 (where it belongs — it is text normalization), but the provenance data flows forward to Stage 4.
 
 **Formats:**
 - Input: TIFF/JPEG2000
@@ -194,7 +212,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 | Layer | Current (CIC) | Needed (Protestant) | Effort |
 |-------|---------------|---------------------|--------|
 | Rules | Legal citation regex patterns | Biblical/patristic/confessional regex patterns | Medium — requires domain knowledge |
-| Abbreviations | Canon law abbreviation dictionary | Protestant theological abbreviation dictionary | Medium — we can compile this |
+| Abbreviations | Canon law abbreviation dictionary | Protestant theological abbreviation dictionary | Medium — partially addressed: `normalize_text.py` already expands 15 theological abbreviation patterns (Tironian et, christological, ecclesiastical) and logs each expansion with offset and pattern in `expansion_log`. Layer 2 can consume this log directly. Remaining work: compile a broader dictionary covering less common abbreviations not handled by Stage 2 normalization |
 | Match model | Trained on CIC patterns | Retrain on Protestant patterns | Low — once training data exists |
 | CRF | Trained on CIC annotations | Retrain; possibly add character-level features | Medium-High — core technical work |
 | Structural | CIC document structure | 16th-c. printed book structure (chapters, marginalia) | Medium |
@@ -334,13 +352,13 @@ Confidence Extraction — extract_alto.py
     │ (confidence scores CSV)               ✅ BUILT
     ▼
 Normalization — normalize_text.py
-    │ (normalized plaintext)                ✅ BUILT
+    │ (normalized plaintext + expansion_log) ✅ BUILT
     ▼
 INCEpTION (manual annotation for training data)
     │ (UIMA CAS XMI)
     ▼
 CIC_annotation Pipeline (adapted)
-    │ Rules → Abbreviations → Match → CRF → Structure → Merge
+    │ Rules → Abbreviations (← expansion_log) → Match → CRF → Structure → Merge
     │ (annotated output with source tracking)
     ▼
 Epistemological Classification
@@ -362,7 +380,7 @@ Researchers, Libraries, RESILIENCE Network
 | Item | Status | Format |
 |------|--------|--------|
 | Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — extraction pipeline ready (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`); need to run on sample pages | Plaintext (.txt) |
-| Preliminary abbreviation list | 🔧 TO COMPILE from Stöckel corpus conventions | CSV or Markdown table |
+| Preliminary abbreviation list | 🔧 PARTIALLY DONE — `normalize_text.py` contains 15 abbreviation patterns (Tironian et, christological, ecclesiastical) with `expansion_log` provenance. Broader dictionary (less common abbreviations) still needed | Python dict + CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
 | Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |
