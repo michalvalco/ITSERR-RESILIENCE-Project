@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** February 14, 2026 (expansion_log case-preservation fix, 393 tests)
+**Last Updated:** February 14, 2026 (expansion_log case-preservation fix, 414 tests across 11 suites)
 
 ---
 
@@ -413,7 +413,7 @@ Use this section to record important decisions, insights, and issues encountered
 | Feb 14, 2026 | Abbreviation provenance | Added `expansion_log` to NormalizationStats — records original, expanded, offset, pattern for each abbreviation expansion. Resolves abbreviation logic conflict for future Layer 2 |
 | Feb 14, 2026 | XML tag stripping | Added `strip_ref_tags()` to zero_shot_crf_experiment.py — prevents XML tag pollution in CRF feature context window |
 | Feb 14, 2026 | expansion_log fix | `expanded` field now stores actual case-preserved text (e.g., "Dominus" not "dominus") and resolves backreferences. 4 new tests for expanded-field verification |
-| Feb 14, 2026 | Total tests | **393 tests across 10 test suites**, all passing |
+| Feb 14, 2026 | Total tests | **414 tests across 11 test suites**, all passing |
 | Feb 14, 2026 | Layer 1 feedback | Implemented prototype feedback: consensus visualization, multi-method detection tracking, epistemic logic clarification, workflow documentation of build_corpus_json.py |
 
 ---

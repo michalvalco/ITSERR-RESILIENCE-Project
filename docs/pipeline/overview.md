@@ -1,6 +1,6 @@
 # OCR Pipeline Overview
 
-The project includes a two-stage OCR pipeline for extracting structured text from 16th-century PDF scans, designed specifically for Latin theological texts.
+The project includes a six-script pipeline for extracting, normalizing, annotating, and visualizing structured text from 16th-century PDF scans, designed specifically for Latin theological texts.
 
 ## Pipeline Architecture
 
@@ -24,6 +24,7 @@ graph LR
         TXT --> Norm[normalize_text.py]
         PlainOut --> Norm
         Norm --> Clean[Normalized Text]
+        Norm --> ExpLog[expansion_log]
     end
 
     Clean --> Annotation[INCEpTION / GNORM]
@@ -35,11 +36,18 @@ graph LR
         Train --> Model["CRF Model"]
         Model --> ZeroShot["zero_shot_crf_experiment.py"]
     end
+
+    subgraph "Stage 5: Visualization"
+        Clean --> Builder["build_corpus_json.py"]
+        ExpLog --> Builder
+        Builder --> Corpus["corpus.json"]
+        Corpus --> Browser["Corpus Browser"]
+    end
 ```
 
-## Why Two Stages?
+## Why Multiple Stages?
 
-The pipeline separates OCR extraction from ALTO parsing for several reasons:
+The pipeline separates OCR extraction from subsequent stages for several reasons:
 
 1. **Flexibility** — Run OCR once, parse ALTO multiple times with different settings (page ranges, confidence thresholds)
 2. **Confidence data** — ALTO XML preserves per-word OCR confidence scores that plaintext discards
@@ -55,6 +63,7 @@ The pipeline separates OCR extraction from ALTO parsing for several reasons:
 | [`normalize_text.py`](normalize-text.md) | Plaintext | Normalized text | Latin-specific normalization |
 | [`cas_to_bioes.py`](cas-to-bioes.md) | CAS XMI (ZIP) | `.bioes` files | INCEpTION export → BIOES for CRF |
 | [`zero_shot_crf_experiment.py`](zero-shot-experiment.md) | CRF model + text | Report + TSV | Cross-domain transfer experiment |
+| [`build_corpus_json.py`](stockel-pilot.md) | Normalized text | `corpus.json` | Corpus Browser data with detection provenance |
 
 ## Quick Start
 
@@ -76,18 +85,19 @@ python scripts/normalize_text.py
 All pipeline components have comprehensive test suites that run without external dependencies (Tesseract, PDF files):
 
 | Test Suite | Tests | File |
-|------------|-------|------|
+|------------|------:|------|
 | Text normalizer | 121 | `tests/test_normalize_text.py` |
-| ALTO parser | 55 | `tests/test_extract_alto.py` |
 | Zero-shot CRF experiment | 56 | `tests/test_zero_shot_crf.py` |
+| ALTO parser | 55 | `tests/test_extract_alto.py` |
 | CAS → BIOES converter | 48 | `tests/test_cas_to_bioes.py` |
 | OCR processor | 34 | `tests/test_ocr_processor.py` |
+| Corpus builder | 21 | `tests/test_build_corpus_json.py` |
 | GNORM client | 18 | `tests/test_gnorm.py` |
 | Integration | 17 | `tests/test_integration.py` |
 | Memory streams | 17 | `tests/test_streams.py` |
 | Reflection | 14 | `tests/test_reflection.py` |
 | Epistemic classifier | 13 | `tests/test_epistemic.py` |
-| **Total** | **393** | |
+| **Total** | **414** | |
 
 Run all tests:
 
@@ -101,7 +111,7 @@ python -m pytest tests/ -v
 The OCR pipeline requires both **Python packages** and **system applications**. The system applications (Tesseract, Poppler) must be installed first since the Python packages are only wrappers around them.
 
 !!! tip "Tests run without system dependencies"
-    All 393 tests run without Tesseract or Poppler installed. The OCR processor tests mock the OCR engine; the ALTO, normalization, CRF, and BIOES tests operate on sample data and do not require system OCR tools. You only need the system packages to process actual PDFs.
+    All 414 tests run without Tesseract or Poppler installed. The OCR processor tests mock the OCR engine; the ALTO, normalization, CRF, and BIOES tests operate on sample data and do not require system OCR tools. You only need the system packages to process actual PDFs.
 
 ### Step 1: Install System Applications
 
