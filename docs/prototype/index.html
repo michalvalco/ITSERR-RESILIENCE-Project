@@ -4,7 +4,242 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITSERR-RESILIENCE — Corpus Browser</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+/* =============================================================================
+   ITSERR-RESILIENCE Corpus Browser — Styles
+   Inspired by the GNORM project interface (University of Palermo)
+   ============================================================================= */
+
+:root {
+  --sidebar-bg: #1a1f36;
+  --sidebar-hover: #252b48;
+  --sidebar-active: #303a5c;
+  --sidebar-text: #b0b7d1;
+  --sidebar-text-active: #ffffff;
+  --sidebar-width: 300px;
+  --main-bg: #f8f9fa;
+  --content-bg: #ffffff;
+  --text-color: #2d3436;
+  --text-muted: #636e72;
+  --border-color: #dee2e6;
+  --biblical: #2196F3;
+  --patristic: #9C27B0;
+  --reformation: #FF9800;
+  --classical: #607D8B;
+  --confessional: #4CAF50;
+  --factual: #4CAF50;
+  --interpretive: #FF9800;
+  --deferred: #F44336;
+  --accent: #3f51b5;
+  --accent-light: #7986cb;
+  --radius: 6px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--main-bg);
+}
+
+.app { display: flex; height: 100vh; overflow: hidden; }
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width); min-width: var(--sidebar-width);
+  background: var(--sidebar-bg); color: var(--sidebar-text);
+  display: flex; flex-direction: column; overflow: hidden; z-index: 10;
+}
+.sidebar-header { padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.sidebar-header h1 {
+  font-size: 14px; font-weight: 600; color: var(--sidebar-text-active);
+  letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px;
+}
+.sidebar-header .subtitle { font-size: 11px; color: var(--sidebar-text); opacity: 0.7; }
+.sidebar-nav { flex: 1; overflow-y: auto; padding: 8px 0; }
+.sidebar-nav::-webkit-scrollbar { width: 4px; }
+.sidebar-nav::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+.chapter-group { margin-bottom: 2px; }
+.chapter-item {
+  display: flex; align-items: center; padding: 8px 16px 8px 20px;
+  cursor: pointer; transition: background 0.15s; font-size: 13px;
+  user-select: none; gap: 8px;
+}
+.chapter-item:hover { background: var(--sidebar-hover); }
+.chapter-item.active { background: var(--sidebar-active); color: var(--sidebar-text-active); }
+.chapter-item .expand-icon {
+  width: 16px; height: 16px; font-size: 10px;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.2s; opacity: 0.5; flex-shrink: 0;
+}
+.chapter-item.expanded .expand-icon { transform: rotate(90deg); }
+.chapter-item .chapter-title { flex: 1; font-weight: 500; }
+.chapter-item .chapter-meta { font-size: 10px; opacity: 0.5; flex-shrink: 0; }
+
+.page-list { display: none; padding-left: 44px; }
+.page-list.visible { display: block; }
+.page-item { padding: 4px 16px 4px 0; font-size: 12px; cursor: pointer; transition: color 0.15s; opacity: 0.6; }
+.page-item:hover { opacity: 1; color: var(--sidebar-text-active); }
+.page-item.active { opacity: 1; color: var(--accent-light); }
+
+.sidebar-footer { padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 10px; opacity: 0.4; }
+
+/* Main content */
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+.topbar {
+  display: flex; align-items: center; padding: 12px 24px;
+  background: var(--content-bg); border-bottom: 1px solid var(--border-color);
+  gap: 16px; flex-shrink: 0;
+}
+.search-box { flex: 1; max-width: 480px; position: relative; }
+.search-box input {
+  width: 100%; padding: 8px 12px 8px 36px;
+  border: 1px solid var(--border-color); border-radius: var(--radius);
+  font-size: 13px; outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s; background: var(--main-bg);
+}
+.search-box input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(63,81,181,0.12); }
+.search-box .search-icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--text-muted); font-size: 14px;
+}
+.search-results-count { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+
+.filter-bar {
+  display: flex; align-items: center; padding: 8px 24px;
+  background: var(--content-bg); border-bottom: 1px solid var(--border-color);
+  gap: 8px; flex-shrink: 0; flex-wrap: wrap;
+}
+.filter-bar .filter-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px; }
+.filter-tag {
+  display: inline-flex; align-items: center; padding: 3px 10px;
+  border-radius: 12px; font-size: 11px; font-weight: 500;
+  cursor: pointer; transition: opacity 0.15s; gap: 4px; user-select: none;
+}
+.filter-tag .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.filter-tag.active { opacity: 1; }
+.filter-tag:not(.active) { opacity: 0.35; }
+
+.filter-tag[data-type="biblical"] { background: rgba(33,150,243,0.12); color: var(--biblical); }
+.filter-tag[data-type="biblical"] .dot { background: var(--biblical); }
+.filter-tag[data-type="patristic"] { background: rgba(156,39,176,0.12); color: var(--patristic); }
+.filter-tag[data-type="patristic"] .dot { background: var(--patristic); }
+.filter-tag[data-type="reformation"] { background: rgba(255,152,0,0.12); color: var(--reformation); }
+.filter-tag[data-type="reformation"] .dot { background: var(--reformation); }
+.filter-tag[data-type="classical"] { background: rgba(96,125,139,0.12); color: var(--classical); }
+.filter-tag[data-type="classical"] .dot { background: var(--classical); }
+.filter-tag[data-type="confessional"] { background: rgba(76,175,80,0.12); color: var(--confessional); }
+.filter-tag[data-type="confessional"] .dot { background: var(--confessional); }
+
+.filter-separator { width: 1px; height: 20px; background: var(--border-color); margin: 0 4px; }
+
+.filter-tag.epistemic[data-epistemic="FACTUAL"] { background: rgba(76,175,80,0.12); color: var(--factual); }
+.filter-tag.epistemic[data-epistemic="FACTUAL"] .dot { background: var(--factual); }
+.filter-tag.epistemic[data-epistemic="INTERPRETIVE"] { background: rgba(255,152,0,0.12); color: var(--interpretive); }
+.filter-tag.epistemic[data-epistemic="INTERPRETIVE"] .dot { background: var(--interpretive); }
+
+.content-area { flex: 1; overflow-y: auto; padding: 24px; }
+.content-area::-webkit-scrollbar { width: 8px; }
+.content-area::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+
+.info-banner {
+  background: linear-gradient(135deg, #e8eaf6, #e3f2fd);
+  border: 1px solid #c5cae9; border-radius: var(--radius);
+  padding: 16px 20px; margin-bottom: 24px; font-size: 13px; line-height: 1.6;
+}
+.info-banner h2 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--accent); }
+.info-banner p { margin-bottom: 6px; color: var(--text-muted); }
+.info-banner .badge {
+  display: inline-block; padding: 2px 8px; border-radius: 3px;
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px; background: rgba(63,81,181,0.1); color: var(--accent);
+}
+
+.chapter-header { margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--accent); }
+.chapter-header h2 { font-size: 20px; font-weight: 700; color: var(--accent); margin-bottom: 2px; }
+.chapter-header .chapter-en { font-size: 14px; color: var(--text-muted); font-style: italic; }
+.chapter-header .chapter-stats { margin-top: 8px; display: flex; gap: 12px; font-size: 11px; }
+.chapter-header .stat { display: flex; align-items: center; gap: 4px; color: var(--text-muted); }
+.chapter-header .stat .dot { width: 6px; height: 6px; border-radius: 50%; }
+
+.page-block { margin-bottom: 24px; }
+.page-label {
+  font-size: 11px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+  display: flex; align-items: center; gap: 8px;
+}
+.page-label::after { content: ''; flex: 1; height: 1px; background: var(--border-color); }
+
+.text-content {
+  background: var(--content-bg); border: 1px solid var(--border-color);
+  border-radius: var(--radius); padding: 20px 24px; box-shadow: var(--shadow);
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', serif;
+  font-size: 15px; line-height: 1.8; color: #333; white-space: pre-wrap; word-wrap: break-word;
+}
+
+.ref-highlight { padding: 1px 4px; border-radius: 3px; cursor: pointer; transition: background-color 0.15s; position: relative; }
+.ref-highlight:hover { filter: brightness(0.92); }
+.ref-highlight[data-type="biblical"] { background: rgba(33,150,243,0.15); border-bottom: 2px solid var(--biblical); }
+.ref-highlight[data-type="patristic"] { background: rgba(156,39,176,0.15); border-bottom: 2px solid var(--patristic); }
+.ref-highlight[data-type="reformation"] { background: rgba(255,152,0,0.15); border-bottom: 2px solid var(--reformation); }
+.ref-highlight[data-type="classical"] { background: rgba(96,125,139,0.15); border-bottom: 2px solid var(--classical); }
+.ref-highlight[data-type="confessional"] { background: rgba(76,175,80,0.15); border-bottom: 2px solid var(--confessional); }
+
+.search-highlight { background: rgba(255,235,59,0.5); border-radius: 2px; padding: 0 1px; }
+
+.ref-tooltip {
+  display: none; position: fixed; background: var(--sidebar-bg);
+  color: var(--sidebar-text-active); padding: 10px 14px; border-radius: var(--radius);
+  font-size: 12px; font-family: 'Segoe UI', -apple-system, sans-serif;
+  line-height: 1.5; box-shadow: var(--shadow-lg); z-index: 1000; max-width: 280px; pointer-events: none;
+}
+.ref-tooltip.visible { display: block; }
+.ref-tooltip .tooltip-type { font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; margin-bottom: 4px; }
+.ref-tooltip .tooltip-text { font-style: italic; margin-bottom: 4px; opacity: 0.9; }
+.ref-tooltip .tooltip-meta { display: flex; gap: 8px; margin-top: 6px; }
+.ref-tooltip .tooltip-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 9px; font-weight: 600; text-transform: uppercase; }
+.ref-tooltip .tooltip-badge.factual { background: rgba(76,175,80,0.2); color: #81c784; }
+.ref-tooltip .tooltip-badge.interpretive { background: rgba(255,152,0,0.2); color: #ffb74d; }
+
+.stats-panel { padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.08); }
+.stats-panel h3 { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; opacity: 0.5; }
+.stat-row { display: flex; justify-content: space-between; align-items: center; font-size: 11px; padding: 2px 0; }
+.stat-row .stat-label { display: flex; align-items: center; gap: 6px; }
+.stat-row .stat-dot { width: 6px; height: 6px; border-radius: 50%; }
+.stat-row .stat-value { font-weight: 600; color: var(--sidebar-text-active); }
+
+.welcome-screen {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  height: 100%; text-align: center; padding: 40px;
+}
+.welcome-screen h2 { font-size: 24px; font-weight: 300; color: var(--text-muted); margin-bottom: 8px; }
+.welcome-screen p { font-size: 14px; color: var(--text-muted); max-width: 500px; margin-bottom: 20px; }
+
+.no-results { text-align: center; padding: 40px; color: var(--text-muted); }
+
+@media (max-width: 768px) {
+  .sidebar { width: 250px; min-width: 250px; }
+  .topbar { padding: 10px 16px; }
+  .content-area { padding: 16px; }
+  .text-content { padding: 16px; font-size: 14px; }
+}
+
+.loading { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text-muted); }
+.loading .spinner {
+  width: 24px; height: 24px; border: 2px solid var(--border-color);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin 0.8s linear infinite; margin-right: 12px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 </head>
 <body>
   <div class="app">
@@ -61,6 +296,525 @@
   <!-- Tooltip -->
   <div class="ref-tooltip"></div>
 
-  <script src="app.js"></script>
+  <script>
+/* =============================================================================
+   ITSERR-RESILIENCE Corpus Browser — Application Logic
+   ============================================================================= */
+
+(function () {
+  'use strict';
+
+  // State
+  let corpus = null;
+  let activeChapterId = null;
+  let activeFilters = new Set(['biblical', 'patristic', 'reformation', 'classical', 'confessional']);
+  let activeEpistemicFilters = new Set(['FACTUAL', 'INTERPRETIVE']);
+  let searchQuery = '';
+
+  // DOM references (assigned after DOMContentLoaded)
+  let sidebarNav, contentArea, searchInput, searchCount, tooltip;
+
+  // ============================================================================
+  // DATA LOADING
+  // ============================================================================
+
+  async function loadCorpus() {
+    try {
+      const resp = await fetch('data/corpus.json');
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      corpus = await resp.json();
+      init();
+    } catch (err) {
+      contentArea.innerHTML =
+        '<div class="no-results">' +
+          '<h3>Failed to load corpus data</h3>' +
+          '<p>' + escapeHtml(err.message) + '</p>' +
+          '<p style="margin-top:12px;font-size:12px;">Make sure <code>data/corpus.json</code> exists. Run <code>build_corpus_json.py</code> to generate it.</p>' +
+        '</div>';
+    }
+  }
+
+  // ============================================================================
+  // INITIALIZATION
+  // ============================================================================
+
+  function init() {
+    renderSidebar();
+    renderStats();
+    renderFilters();
+    renderWelcome();
+    bindEvents();
+  }
+
+  // ============================================================================
+  // SIDEBAR
+  // ============================================================================
+
+  function renderSidebar() {
+    var html = '';
+    for (var i = 0; i < corpus.chapters.length; i++) {
+      var ch = corpus.chapters[i];
+      var pageRange = 'pp. ' + ch.start_page + '\u2013' + ch.end_page;
+
+      html += '<div class="chapter-group" data-chapter="' + escapeAttr(ch.id) + '">' +
+        '<div class="chapter-item" data-chapter="' + escapeAttr(ch.id) + '">' +
+          '<span class="expand-icon">&#9654;</span>' +
+          '<span class="chapter-title">' + escapeHtml(ch.title) + '</span>' +
+          '<span class="chapter-meta">' + escapeHtml(pageRange) + '</span>' +
+        '</div>' +
+        '<div class="page-list">';
+
+      for (var j = 0; j < ch.pages.length; j++) {
+        var pg = ch.pages[j];
+        var pgRefs = pg.references.length;
+        var refBadge = pgRefs > 0 ? ' (' + pgRefs + ')' : '';
+        html += '<div class="page-item" data-page="' + pg.page + '" data-chapter="' + escapeAttr(ch.id) + '">p. ' + pg.page + refBadge + '</div>';
+      }
+
+      html += '</div></div>';
+    }
+    sidebarNav.innerHTML = html;
+  }
+
+  function renderStats() {
+    var statsPanel = document.querySelector('.stats-panel');
+    if (!statsPanel || !corpus) return;
+
+    var types = corpus.entity_types;
+    var html = '<h3>Detected References</h3>';
+    for (var i = 0; i < types.length; i++) {
+      var t = types[i];
+      var count = corpus.stats.by_type[t.id] || 0;
+      if (count > 0) {
+        html += '<div class="stat-row">' +
+          '<span class="stat-label"><span class="stat-dot" style="background:' + escapeAttr(t.color) + '"></span>' + escapeHtml(t.label) + '</span>' +
+          '<span class="stat-value">' + count + '</span>' +
+        '</div>';
+      }
+    }
+    html += '<div class="stat-row" style="margin-top:8px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.08)">' +
+      '<span class="stat-label">Total</span>' +
+      '<span class="stat-value">' + corpus.stats.total_references + '</span>' +
+    '</div>';
+    statsPanel.innerHTML = html;
+  }
+
+  // ============================================================================
+  // FILTERS
+  // ============================================================================
+
+  function renderFilters() {
+    var filterBar = document.querySelector('.filter-bar');
+    if (!filterBar || !corpus) return;
+
+    var html = '<span class="filter-label">Entity type</span>';
+
+    for (var i = 0; i < corpus.entity_types.length; i++) {
+      var t = corpus.entity_types[i];
+      var count = corpus.stats.by_type[t.id] || 0;
+      if (count > 0) {
+        var isActive = activeFilters.has(t.id);
+        html += '<span class="filter-tag ' + (isActive ? 'active' : '') + '" data-type="' + escapeAttr(t.id) + '"><span class="dot"></span>' + escapeHtml(t.label) + ' (' + count + ')</span>';
+      }
+    }
+
+    html += '<span class="filter-separator"></span><span class="filter-label">Confidence</span>';
+
+    for (var j = 0; j < corpus.epistemic_types.length; j++) {
+      var e = corpus.epistemic_types[j];
+      var ecount = corpus.stats.by_epistemic[e.id] || 0;
+      if (ecount > 0) {
+        var eActive = activeEpistemicFilters.has(e.id);
+        html += '<span class="filter-tag epistemic ' + (eActive ? 'active' : '') + '" data-epistemic="' + escapeAttr(e.id) + '"><span class="dot"></span>' + escapeHtml(e.label) + ' (' + ecount + ')</span>';
+      }
+    }
+
+    filterBar.innerHTML = html;
+  }
+
+  // ============================================================================
+  // CONTENT RENDERING
+  // ============================================================================
+
+  function renderWelcome() {
+    contentArea.innerHTML =
+      '<div class="info-banner">' +
+        '<h2>ITSERR-RESILIENCE Corpus Browser</h2>' +
+        '<p>Exploring annotated 16th-century theological texts from the Kingdom of Hungary.</p>' +
+        '<p>This prototype demonstrates <strong>rule-based entity detection</strong> (Stage 4, Layer 1 of the GNORM adaptation pipeline) applied to Leonard St\u00f6ckel\u2019s <em>Annotationes in Locos communes</em> (1561).</p>' +
+        '<p style="margin-top:8px">' +
+          '<span class="badge">Layer 1 \u2014 Rule-based detection</span> ' +
+          '<span class="badge">Pre-CRF prototype</span>' +
+        '</p>' +
+      '</div>' +
+      '<div class="welcome-screen">' +
+        '<h2>Select a chapter to begin</h2>' +
+        '<p>Choose a chapter from the sidebar to browse the annotated text. Detected references are highlighted with color-coded annotations. Use the search bar to find specific terms across the corpus.</p>' +
+      '</div>';
+  }
+
+  function renderChapter(chapterId) {
+    activeChapterId = chapterId;
+
+    var ch = null;
+    for (var i = 0; i < corpus.chapters.length; i++) {
+      if (corpus.chapters[i].id === chapterId) { ch = corpus.chapters[i]; break; }
+    }
+    if (!ch) return;
+
+    // Update sidebar
+    document.querySelectorAll('.chapter-item').forEach(function(el) {
+      el.classList.toggle('active', el.dataset.chapter === chapterId);
+      el.classList.toggle('expanded', el.dataset.chapter === chapterId);
+    });
+    document.querySelectorAll('.page-list').forEach(function(el) {
+      el.classList.toggle('visible', el.parentElement.dataset.chapter === chapterId);
+    });
+
+    // Compute filtered ref counts
+    var refCounts = {};
+    for (var p = 0; p < ch.pages.length; p++) {
+      var pg = ch.pages[p];
+      for (var r = 0; r < pg.references.length; r++) {
+        var ref = pg.references[r];
+        if (activeFilters.has(ref.type) && activeEpistemicFilters.has(ref.epistemic)) {
+          refCounts[ref.type] = (refCounts[ref.type] || 0) + 1;
+        }
+      }
+    }
+
+    var statsHtml = '';
+    var types = Object.keys(refCounts);
+    for (var ti = 0; ti < types.length; ti++) {
+      var type = types[ti];
+      var count = refCounts[type];
+      var entityType = null;
+      for (var ei = 0; ei < corpus.entity_types.length; ei++) {
+        if (corpus.entity_types[ei].id === type) { entityType = corpus.entity_types[ei]; break; }
+      }
+      if (entityType) {
+        statsHtml += '<span class="stat"><span class="dot" style="background:' + escapeAttr(entityType.color) + '"></span>' + escapeHtml(entityType.label) + ': ' + count + '</span>';
+      }
+    }
+
+    var html =
+      '<div class="chapter-header">' +
+        '<h2>' + escapeHtml(ch.title) + '</h2>' +
+        '<div class="chapter-en">' + escapeHtml(ch.title_en) + ' \u2014 Pages ' + ch.start_page + '\u2013' + ch.end_page + '</div>' +
+        '<div class="chapter-stats">' + statsHtml + '</div>' +
+      '</div>';
+
+    if (ch.pages.length === 0) {
+      html += '<div class="no-results">No content available for this chapter.</div>';
+    } else {
+      for (var pi = 0; pi < ch.pages.length; pi++) {
+        html += renderPage(ch.pages[pi]);
+      }
+    }
+
+    contentArea.innerHTML = html;
+    contentArea.scrollTop = 0;
+  }
+
+  function renderPage(pg) {
+    var annotatedText = applyAnnotations(pg.text, pg.references);
+    return '<div class="page-block" id="page-' + pg.page + '">' +
+      '<div class="page-label">Page ' + pg.page + '</div>' +
+      '<div class="text-content">' + annotatedText + '</div>' +
+    '</div>';
+  }
+
+  function applyAnnotations(text, references) {
+    var filteredRefs = [];
+    for (var i = 0; i < references.length; i++) {
+      var r = references[i];
+      if (activeFilters.has(r.type) && activeEpistemicFilters.has(r.epistemic)) {
+        filteredRefs.push(r);
+      }
+    }
+
+    if (filteredRefs.length === 0 && !searchQuery) {
+      return escapeHtml(text);
+    }
+
+    var insertions = [];
+
+    for (var fi = 0; fi < filteredRefs.length; fi++) {
+      var ref = filteredRefs[fi];
+      var idx = text.indexOf(ref.text, Math.max(0, ref.start - 10));
+      if (idx === -1) continue;
+
+      insertions.push({ pos: idx, end: idx + ref.text.length, type: 'ref-open', ref: ref });
+      insertions.push({ pos: idx + ref.text.length, end: idx + ref.text.length, type: 'ref-close', ref: ref });
+    }
+
+    if (searchQuery && searchQuery.length >= 2) {
+      var regex = new RegExp(escapeRegex(searchQuery), 'gi');
+      var match;
+      while ((match = regex.exec(text)) !== null) {
+        insertions.push({ pos: match.index, end: match.index + match[0].length, type: 'search-open' });
+        insertions.push({ pos: match.index + match[0].length, end: match.index + match[0].length, type: 'search-close' });
+      }
+    }
+
+    insertions.sort(function(a, b) {
+      if (a.pos !== b.pos) return a.pos - b.pos;
+      var aOrder = a.type.indexOf('close') !== -1 ? 0 : 1;
+      var bOrder = b.type.indexOf('close') !== -1 ? 0 : 1;
+      return aOrder - bOrder;
+    });
+
+    var result = '';
+    var lastIdx = 0;
+
+    for (var ii = 0; ii < insertions.length; ii++) {
+      var ins = insertions[ii];
+      if (ins.pos > lastIdx) {
+        result += escapeHtml(text.slice(lastIdx, ins.pos));
+      }
+
+      if (ins.type === 'ref-open') {
+        var rr = ins.ref;
+        result += '<span class="ref-highlight" data-type="' + escapeAttr(rr.type) + '" data-confidence="' + escapeAttr(String(rr.confidence)) + '" data-epistemic="' + escapeAttr(rr.epistemic) + '" data-text="' + escapeAttr(rr.text) + '" data-method="' + escapeAttr(rr.method) + '">';
+      } else if (ins.type === 'ref-close') {
+        result += '</span>';
+      } else if (ins.type === 'search-open') {
+        result += '<span class="search-highlight">';
+      } else if (ins.type === 'search-close') {
+        result += '</span>';
+      }
+
+      lastIdx = ins.pos;
+    }
+
+    if (lastIdx < text.length) {
+      result += escapeHtml(text.slice(lastIdx));
+    }
+
+    return result;
+  }
+
+  // ============================================================================
+  // SEARCH
+  // ============================================================================
+
+  function performSearch(query) {
+    searchQuery = query.trim();
+
+    if (!searchQuery || searchQuery.length < 2) {
+      searchCount.textContent = '';
+      if (activeChapterId) renderChapter(activeChapterId);
+      return;
+    }
+
+    var regex = new RegExp(escapeRegex(searchQuery), 'gi');
+    var totalMatches = 0;
+    var chapterMatches = [];
+
+    for (var i = 0; i < corpus.chapters.length; i++) {
+      var ch = corpus.chapters[i];
+      var chMatches = 0;
+      for (var j = 0; j < ch.pages.length; j++) {
+        var matches = ch.pages[j].text.match(regex);
+        if (matches) chMatches += matches.length;
+      }
+      if (chMatches > 0) {
+        totalMatches += chMatches;
+        chapterMatches.push({ chapter: ch, count: chMatches });
+      }
+    }
+
+    searchCount.textContent = totalMatches > 0
+      ? totalMatches + ' match' + (totalMatches !== 1 ? 'es' : '') + ' in ' + chapterMatches.length + ' chapter' + (chapterMatches.length !== 1 ? 's' : '')
+      : 'No matches';
+
+    if (activeChapterId) {
+      renderChapter(activeChapterId);
+    } else if (chapterMatches.length > 0) {
+      renderSearchResults(chapterMatches, totalMatches);
+    }
+  }
+
+  function renderSearchResults(chapterMatches, totalMatches) {
+    var html =
+      '<div class="info-banner">' +
+        '<h2>Search Results: \u201c' + escapeHtml(searchQuery) + '\u201d</h2>' +
+        '<p>' + totalMatches + ' matches found across ' + chapterMatches.length + ' chapters. Click a chapter to view the matches in context.</p>' +
+      '</div>';
+
+    for (var i = 0; i < chapterMatches.length; i++) {
+      var chapter = chapterMatches[i].chapter;
+      var count = chapterMatches[i].count;
+      html += '<div class="page-block search-result" style="cursor:pointer" data-chapter-id="' + escapeAttr(chapter.id) + '">' +
+        '<div class="page-label">' + escapeHtml(chapter.title) + ' \u2014 ' + escapeHtml(chapter.title_en) + ' (' + count + ' matches)</div>' +
+      '</div>';
+    }
+
+    contentArea.innerHTML = html;
+
+    contentArea.querySelectorAll('.search-result').forEach(function(block) {
+      block.addEventListener('click', function() {
+        var chapterId = block.dataset.chapterId;
+        var navItem = document.querySelector('[data-chapter="' + chapterId + '"] .chapter-item');
+        if (navItem) navItem.click();
+      });
+    });
+  }
+
+  // ============================================================================
+  // TOOLTIP
+  // ============================================================================
+
+  function showTooltip(el, x, y) {
+    var type = el.dataset.type;
+    var confidence = el.dataset.confidence;
+    var epistemic = el.dataset.epistemic;
+    var text = el.dataset.text;
+    var method = el.dataset.method;
+
+    var entityType = null;
+    for (var i = 0; i < corpus.entity_types.length; i++) {
+      if (corpus.entity_types[i].id === type) { entityType = corpus.entity_types[i]; break; }
+    }
+    var typeLabel = entityType ? entityType.label : type;
+    var typeColor = entityType ? entityType.color : '#999';
+
+    var epistemicClass = epistemic === 'FACTUAL' ? 'factual' : 'interpretive';
+
+    tooltip.innerHTML =
+      '<div class="tooltip-type" style="color:' + escapeAttr(typeColor) + '">' + escapeHtml(typeLabel) + '</div>' +
+      '<div class="tooltip-text">\u201c' + escapeHtml(text) + '\u201d</div>' +
+      '<div class="tooltip-meta">' +
+        '<span class="tooltip-badge ' + escapeAttr(epistemicClass) + '">' + escapeHtml(epistemic) + '</span>' +
+        '<span style="opacity:0.6;font-size:10px">Confidence: ' + Math.round(confidence * 100) + '%</span>' +
+      '</div>' +
+      '<div style="margin-top:4px;font-size:10px;opacity:0.5">Detection: ' + escapeHtml(method) + '</div>';
+
+    var maxX = window.innerWidth - 300;
+    var maxY = window.innerHeight - 120;
+
+    tooltip.style.left = Math.min(x + 12, maxX) + 'px';
+    tooltip.style.top = Math.min(y + 12, maxY) + 'px';
+    tooltip.classList.add('visible');
+  }
+
+  function hideTooltip() {
+    tooltip.classList.remove('visible');
+  }
+
+  // ============================================================================
+  // EVENTS
+  // ============================================================================
+
+  function bindEvents() {
+    sidebarNav.addEventListener('click', function (e) {
+      var chapterItem = e.target.closest('.chapter-item');
+      var pageItem = e.target.closest('.page-item');
+
+      if (chapterItem) {
+        renderChapter(chapterItem.dataset.chapter);
+      } else if (pageItem) {
+        var chId = pageItem.dataset.chapter;
+        var pageNum = pageItem.dataset.page;
+        if (activeChapterId !== chId) renderChapter(chId);
+        setTimeout(function() {
+          var pageEl = document.getElementById('page-' + pageNum);
+          if (pageEl) {
+            pageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelectorAll('.page-item').forEach(function(el) { el.classList.remove('active'); });
+            pageItem.classList.add('active');
+          }
+        }, 50);
+      }
+    });
+
+    var searchTimeout;
+    searchInput.addEventListener('input', function () {
+      var self = this;
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(function() { performSearch(self.value); }, 250);
+    });
+
+    searchInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { this.value = ''; performSearch(''); }
+    });
+
+    document.querySelector('.filter-bar').addEventListener('click', function (e) {
+      var tag = e.target.closest('.filter-tag');
+      if (!tag) return;
+
+      if (tag.classList.contains('epistemic')) {
+        var eid = tag.dataset.epistemic;
+        if (activeEpistemicFilters.has(eid)) {
+          if (activeEpistemicFilters.size > 1) activeEpistemicFilters.delete(eid);
+        } else {
+          activeEpistemicFilters.add(eid);
+        }
+      } else {
+        var tid = tag.dataset.type;
+        if (activeFilters.has(tid)) {
+          if (activeFilters.size > 1) activeFilters.delete(tid);
+        } else {
+          activeFilters.add(tid);
+        }
+      }
+
+      renderFilters();
+      if (activeChapterId) renderChapter(activeChapterId);
+    });
+
+    contentArea.addEventListener('mouseover', function (e) {
+      var ref = e.target.closest('.ref-highlight');
+      if (ref) showTooltip(ref, e.clientX, e.clientY);
+    });
+
+    contentArea.addEventListener('mousemove', function (e) {
+      var ref = e.target.closest('.ref-highlight');
+      if (ref && tooltip.classList.contains('visible')) {
+        var maxX = window.innerWidth - 300;
+        var maxY = window.innerHeight - 120;
+        tooltip.style.left = Math.min(e.clientX + 12, maxX) + 'px';
+        tooltip.style.top = Math.min(e.clientY + 12, maxY) + 'px';
+      }
+    });
+
+    contentArea.addEventListener('mouseout', function (e) {
+      if (e.target.closest('.ref-highlight')) hideTooltip();
+    });
+  }
+
+  // ============================================================================
+  // HELPERS
+  // ============================================================================
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function escapeAttr(str) {
+    return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // ============================================================================
+  // BOOT
+  // ============================================================================
+
+  document.addEventListener('DOMContentLoaded', function () {
+    sidebarNav = document.querySelector('.sidebar-nav');
+    contentArea = document.querySelector('.content-area');
+    searchInput = document.querySelector('.search-box input');
+    searchCount = document.querySelector('.search-results-count');
+    tooltip = document.querySelector('.ref-tooltip');
+
+    loadCorpus();
+  });
+})();
+  </script>
 </body>
 </html>
