@@ -239,6 +239,74 @@ html, body {
   animation: spin 0.8s linear infinite; margin-right: 12px;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* Dashboard */
+.dashboard { display: grid; gap: 20px; margin-top: 20px; }
+.dashboard-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px;
+}
+.stat-card {
+  background: var(--content-bg); border: 1px solid var(--border-color);
+  border-radius: var(--radius); padding: 16px 12px; text-align: center;
+  box-shadow: var(--shadow); transition: transform 0.15s, box-shadow 0.15s;
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.stat-card .stat-number { font-size: 28px; font-weight: 700; line-height: 1.2; }
+.stat-card .stat-desc {
+  font-size: 10px; color: var(--text-muted); text-transform: uppercase;
+  letter-spacing: 0.5px; margin-top: 4px;
+}
+
+.dashboard-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 900px) { .dashboard-charts { grid-template-columns: 1fr; } }
+
+.chart-panel {
+  background: var(--content-bg); border: 1px solid var(--border-color);
+  border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow);
+}
+.chart-panel.full-width { grid-column: 1 / -1; }
+.chart-panel h3 {
+  font-size: 12px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;
+}
+
+/* Horizontal bar chart */
+.bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.bar-label {
+  font-size: 12px; width: 130px; text-align: right; color: var(--text-color);
+  flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.bar-track { flex: 1; height: 22px; background: var(--main-bg); border-radius: 4px; overflow: hidden; }
+.bar-fill {
+  height: 100%; border-radius: 4px; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 2px;
+}
+.bar-value { font-size: 12px; font-weight: 600; width: 28px; color: var(--text-color); text-align: right; }
+
+/* Chapter density heatmap */
+.heatmap-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 4px;
+  cursor: pointer; padding: 5px 4px; border-radius: 4px; transition: background 0.15s;
+}
+.heatmap-row:hover { background: rgba(63,81,181,0.06); }
+.heatmap-label {
+  font-size: 11px; width: 170px; text-align: right; color: var(--text-muted);
+  flex-shrink: 0; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.heatmap-track {
+  flex: 1; height: 22px; background: var(--main-bg); border-radius: 4px;
+  overflow: hidden; display: flex;
+}
+.heatmap-segment { height: 100%; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+.heatmap-total {
+  font-size: 11px; font-weight: 600; width: 24px; color: var(--text-muted); text-align: right;
+}
+.heatmap-empty { font-size: 10px; color: var(--text-muted); opacity: 0.4; padding: 0 8px; line-height: 22px; }
+
+/* Legend */
+.chart-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border-color); }
+.legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text-muted); }
+.legend-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
   </style>
 </head>
 <body>
@@ -437,6 +505,104 @@ html, body {
   // ============================================================================
 
   function renderWelcome() {
+    let stats = corpus.stats;
+    let meta = corpus.metadata;
+
+    // --- Summary stat cards ---
+    let cardsHtml =
+      '<div class="dashboard-stats">' +
+        statCard(meta.pages_total, 'Pages scanned', 'var(--accent)') +
+        statCard(stats.total_references, 'References found', '#e91e63') +
+        statCard(stats.chapters, 'Chapters', '#00bcd4') +
+        statCard(Object.keys(stats.by_type).length, 'Entity types', '#ff9800') +
+      '</div>';
+
+    // --- Reference type bar chart ---
+    let maxTypeCount = 0;
+    for (let i = 0; i < corpus.entity_types.length; i++) {
+      let c = stats.by_type[corpus.entity_types[i].id] || 0;
+      if (c > maxTypeCount) maxTypeCount = c;
+    }
+
+    let typeChartHtml = '';
+    for (let i = 0; i < corpus.entity_types.length; i++) {
+      let t = corpus.entity_types[i];
+      let count = stats.by_type[t.id] || 0;
+      let pct = maxTypeCount > 0 ? (count / maxTypeCount * 100) : 0;
+      typeChartHtml +=
+        '<div class="bar-row">' +
+          '<span class="bar-label">' + escapeHtml(t.label) + '</span>' +
+          '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + escapeAttr(t.color) + '"></div></div>' +
+          '<span class="bar-value">' + count + '</span>' +
+        '</div>';
+    }
+
+    // --- Epistemic confidence bar chart ---
+    let maxEpCount = 0;
+    for (let i = 0; i < corpus.epistemic_types.length; i++) {
+      let c = stats.by_epistemic[corpus.epistemic_types[i].id] || 0;
+      if (c > maxEpCount) maxEpCount = c;
+    }
+
+    let epChartHtml = '';
+    for (let i = 0; i < corpus.epistemic_types.length; i++) {
+      let e = corpus.epistemic_types[i];
+      let count = stats.by_epistemic[e.id] || 0;
+      let pct = maxEpCount > 0 ? (count / maxEpCount * 100) : 0;
+      epChartHtml +=
+        '<div class="bar-row">' +
+          '<span class="bar-label">' + escapeHtml(e.label) + '</span>' +
+          '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + escapeAttr(e.color) + '"></div></div>' +
+          '<span class="bar-value">' + count + '</span>' +
+        '</div>';
+    }
+
+    // --- Chapter density heatmap ---
+    let maxChRefs = 0;
+    for (let i = 0; i < corpus.chapters.length; i++) {
+      let rc = corpus.chapters[i].reference_counts;
+      let total = 0;
+      for (let k in rc) { if (rc.hasOwnProperty(k)) total += rc[k]; }
+      if (total > maxChRefs) maxChRefs = total;
+    }
+
+    let heatmapHtml = '';
+    for (let i = 0; i < corpus.chapters.length; i++) {
+      let ch = corpus.chapters[i];
+      let rc = ch.reference_counts;
+      let total = 0;
+      for (let k in rc) { if (rc.hasOwnProperty(k)) total += rc[k]; }
+
+      let segHtml = '';
+      if (total > 0) {
+        for (let j = 0; j < corpus.entity_types.length; j++) {
+          let t = corpus.entity_types[j];
+          let c = rc[t.id] || 0;
+          if (c > 0) {
+            let segPct = maxChRefs > 0 ? (c / maxChRefs * 100) : 0;
+            segHtml += '<div class="heatmap-segment" style="width:' + segPct + '%;background:' + escapeAttr(t.color) + '" title="' + escapeAttr(t.label + ': ' + c) + '"></div>';
+          }
+        }
+      } else {
+        segHtml = '<span class="heatmap-empty">no references detected</span>';
+      }
+
+      heatmapHtml +=
+        '<div class="heatmap-row" data-chapter-id="' + escapeAttr(ch.id) + '">' +
+          '<span class="heatmap-label">' + escapeHtml(ch.title) + '</span>' +
+          '<div class="heatmap-track">' + segHtml + '</div>' +
+          '<span class="heatmap-total">' + (total > 0 ? total : '\u2014') + '</span>' +
+        '</div>';
+    }
+
+    // Legend for heatmap
+    let legendHtml = '<div class="chart-legend">';
+    for (let i = 0; i < corpus.entity_types.length; i++) {
+      let t = corpus.entity_types[i];
+      legendHtml += '<span class="legend-item"><span class="legend-dot" style="background:' + escapeAttr(t.color) + '"></span>' + escapeHtml(t.label) + '</span>';
+    }
+    legendHtml += '</div>';
+
     contentArea.innerHTML =
       '<div class="info-banner">' +
         '<h2>ITSERR-RESILIENCE Corpus Browser</h2>' +
@@ -447,10 +613,28 @@ html, body {
           '<span class="badge">Pre-CRF prototype</span>' +
         '</p>' +
       '</div>' +
-      '<div class="welcome-screen">' +
-        '<h2>Select a chapter to begin</h2>' +
-        '<p>Choose a chapter from the sidebar to browse the annotated text. Detected references are highlighted with color-coded annotations. Use the search bar to find specific terms across the corpus.</p>' +
+      '<div class="dashboard">' +
+        cardsHtml +
+        '<div class="dashboard-charts">' +
+          '<div class="chart-panel"><h3>Reference Types</h3>' + typeChartHtml + '</div>' +
+          '<div class="chart-panel"><h3>Detection Confidence</h3>' + epChartHtml + '</div>' +
+        '</div>' +
+        '<div class="chart-panel full-width"><h3>Reference Density by Chapter</h3><p style="font-size:12px;color:var(--text-muted);margin:-8px 0 16px">Click a chapter to browse its annotated text</p>' + heatmapHtml + legendHtml + '</div>' +
       '</div>';
+
+    // Make heatmap rows clickable
+    contentArea.querySelectorAll('.heatmap-row[data-chapter-id]').forEach(function(row) {
+      row.addEventListener('click', function() {
+        renderChapter(row.dataset.chapterId);
+      });
+    });
+  }
+
+  function statCard(value, label, color) {
+    return '<div class="stat-card">' +
+      '<div class="stat-number" style="color:' + escapeAttr(color) + '">' + value + '</div>' +
+      '<div class="stat-desc">' + escapeHtml(label) + '</div>' +
+    '</div>';
   }
 
   function renderChapter(chapterId) {
