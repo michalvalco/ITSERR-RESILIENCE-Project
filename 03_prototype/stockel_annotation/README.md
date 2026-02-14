@@ -148,7 +148,7 @@ Features: hyphenation handling, namespace auto-detection, encoding fallback (UTF
 | Memory streams | 17 | `tests/test_streams.py` |
 | Reflection | 14 | `tests/test_reflection.py` |
 | Epistemic classifier | 13 | `tests/test_epistemic.py` |
-| **Total** | **389** | |
+| **Total** | **393** | |
 
 ---
 

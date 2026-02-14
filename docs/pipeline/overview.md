@@ -87,7 +87,7 @@ All pipeline components have comprehensive test suites that run without external
 | Memory streams | 17 | `tests/test_streams.py` |
 | Reflection | 14 | `tests/test_reflection.py` |
 | Epistemic classifier | 13 | `tests/test_epistemic.py` |
-| **Total** | **389** | |
+| **Total** | **393** | |
 
 Run all tests:
 
