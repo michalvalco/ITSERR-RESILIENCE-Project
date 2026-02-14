@@ -220,22 +220,25 @@ def detect_references(text, crf_entities=None):
 
             # Check for CRF consensus if CRF entities are provided
             if crf_entities:
-                for crf_ent in crf_entities:
-                    # Check for overlapping span with matching type
-                    crf_s, crf_e = crf_ent["start"], crf_ent["end"]
-                    if (start <= crf_s < end or crf_s <= start < crf_e):
-                        methods.append("CRF")
-                        if crf_ent.get("type") == ref_type:
-                            # Methods agree on type — consensus
-                            consensus = True
-                            confidence = max(confidence, crf_ent.get("confidence", 0.80))
-                            confidence = min(round(confidence + 0.05, 2), 0.99)
-                            epistemic = "FACTUAL"
-                        else:
-                            # Methods disagree on type — deferred
-                            epistemic = "DEFERRED"
-                            confidence = min(confidence, 0.65)
-                        break
+                overlapping = [
+                    crf_ent for crf_ent in crf_entities
+                    if (start <= crf_ent["start"] < end
+                        or crf_ent["start"] <= start < crf_ent["end"])
+                ]
+                if overlapping:
+                    methods.append("CRF")
+                    # Prefer a CRF entity that matches the rule-based type
+                    matching = [e for e in overlapping if e.get("type") == ref_type]
+                    if matching:
+                        best = matching[0]
+                        consensus = True
+                        confidence = max(confidence, best.get("confidence", 0.80))
+                        confidence = min(round(confidence + 0.05, 2), 0.99)
+                        epistemic = "FACTUAL"
+                    else:
+                        # Methods disagree on type — deferred
+                        epistemic = "DEFERRED"
+                        confidence = min(confidence, 0.65)
 
             refs.append({
                 "start": start,
@@ -267,7 +270,7 @@ def detect_references(text, crf_entities=None):
                     "text": crf_ent.get("text", text[crf_s:crf_e]),
                     "type": crf_ent.get("type", "unknown"),
                     "confidence": round(crf_conf, 2),
-                    "epistemic": "FACTUAL" if crf_conf >= 0.85 else "INTERPRETIVE",
+                    "epistemic": "FACTUAL" if crf_conf >= 0.85 else ("INTERPRETIVE" if crf_conf >= 0.70 else "DEFERRED"),
                     "methods": ["CRF"],
                     "method": "CRF",
                     "consensus": False

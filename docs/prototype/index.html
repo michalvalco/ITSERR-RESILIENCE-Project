@@ -722,10 +722,14 @@ html, body {
             ? '<span class="badge" style="background:rgba(33,150,243,0.1);color:#2196F3;">' + stats.consensus_count + ' consensus annotations</span> '
             : '') +
         '</p>' +
-        '<p style="margin-top:6px;font-size:12px;color:var(--text-muted);">Detection methods: ' +
-          Object.keys(stats.by_method || {}).map(function(m) { return m + ' (' + stats.by_method[m] + ')'; }).join(', ') +
-          (stats.consensus_count > 0 ? '. Annotations where Rule + CRF agree are marked with a <strong>Consensus</strong> badge.' : '. When CRF output is integrated, annotations where multiple methods agree will be marked with a <strong>Consensus</strong> badge.') +
-        '</p>' +
+        (function() {
+          var methodKeys = Object.keys(stats.by_method || {});
+          if (methodKeys.length === 0) return '<p style="margin-top:6px;font-size:12px;color:var(--text-muted);">No detection methods active yet. When CRF output is integrated, annotations where multiple methods agree will be marked with a <strong>Consensus</strong> badge.</p>';
+          return '<p style="margin-top:6px;font-size:12px;color:var(--text-muted);">Detection methods: ' +
+            methodKeys.map(function(m) { return m + ' (' + stats.by_method[m] + ')'; }).join(', ') +
+            (stats.consensus_count > 0 ? '. Annotations where Rule + CRF agree are marked with a <strong>Consensus</strong> badge.' : '. When CRF output is integrated, annotations where multiple methods agree will be marked with a <strong>Consensus</strong> badge.') +
+          '</p>';
+        })() +
       '</div>' +
       '<div class="dashboard">' +
         cardsHtml +
@@ -889,7 +893,8 @@ html, body {
       if (ins.type === 'ref-open') {
         let rr = ins.ref;
         let methods = rr.methods ? rr.methods.join(', ') : (rr.method || 'rule-based');
-        let isConsensus = rr.consensus || (rr.methods && rr.methods.length > 1);
+        let hasExplicitConsensus = (typeof rr.consensus === 'boolean');
+        let isConsensus = hasExplicitConsensus ? rr.consensus : !!(rr.methods && rr.methods.length > 1);
         let consensusCls = isConsensus ? ' consensus-highlight' : '';
         result += '<span class="ref-highlight' + consensusCls + '" data-type="' + escapeAttr(rr.type) + '" data-confidence="' + escapeAttr(String(rr.confidence)) + '" data-epistemic="' + escapeAttr(rr.epistemic) + '" data-text="' + escapeAttr(rr.text) + '" data-method="' + escapeAttr(rr.method || methods) + '" data-methods="' + escapeAttr(methods) + '" data-consensus="' + escapeAttr(String(!!isConsensus)) + '">';
       } else if (ins.type === 'ref-close') {
@@ -1008,10 +1013,10 @@ html, body {
     let epistemicClass = epistemic === 'FACTUAL' ? 'factual' : (epistemic === 'DEFERRED' ? 'deferred' : 'interpretive');
 
     // Build "Detected by" method tags
-    let methodList = methods.split(', ');
+    let methodList = parseMethodList(methods);
     let methodHtml = '';
     for (let mi = 0; mi < methodList.length; mi++) {
-      methodHtml += '<span class="method-tag">' + escapeHtml(methodList[mi].trim()) + '</span>';
+      methodHtml += '<span class="method-tag">' + escapeHtml(methodList[mi]) + '</span>';
     }
 
     let consensusHtml = isConsensus
@@ -1156,10 +1161,10 @@ html, body {
 
     // Build detected-by method tags and consensus badge for detail panel
     let detailMethods = data.methods || data.method || 'rule-based';
-    let detailMethodList = detailMethods.split(', ');
+    let detailMethodList = parseMethodList(detailMethods);
     let detailMethodHtml = '';
     for (let dmi = 0; dmi < detailMethodList.length; dmi++) {
-      detailMethodHtml += '<span class="method-tag">' + escapeHtml(detailMethodList[dmi].trim()) + '</span>';
+      detailMethodHtml += '<span class="method-tag">' + escapeHtml(detailMethodList[dmi]) + '</span>';
     }
     let detailConsensus = data.consensus === 'true' || data.consensus === true;
     let detailConsensusHtml = detailConsensus
@@ -1408,6 +1413,10 @@ html, body {
 
   function escapeRegex(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function parseMethodList(str) {
+    return str.split(/\s*[,+]\s*/).filter(Boolean);
   }
 
   // ============================================================================

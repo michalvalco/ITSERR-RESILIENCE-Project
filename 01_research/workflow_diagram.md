@@ -271,7 +271,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 - ✅ **`build_corpus_json.py`** bridges the gap between the normalization pipeline output and the web prototype. It reads normalized text files from `data/normalized/`, applies enhanced rule-based reference detection (extending `normalize_text.py`'s patterns with OCR-variant handling), and produces `docs/prototype/data/corpus.json` — the structured input consumed by the Corpus Browser
 - ✅ **Corpus Browser** (`docs/prototype/index.html`) provides an interactive three-column interface with dashboard, full-text search, entity/epistemic filtering, reference highlighting, and contextual detail panels
 - ✅ **Epistemic classification** is applied at build time: each reference is tagged `FACTUAL`, `INTERPRETIVE`, or `DEFERRED` based on pattern quality and detection method(s)
-- ✅ **Detection provenance** is tracked per reference: every annotation records which method(s) detected it (rule-based, abbreviation, trie, CRF, structural) for transparency and consensus visualisation
+- ✅ **Detection provenance** is tracked per reference: every annotation records which method(s) detected it (currently rule-based; CRF when integrated) for transparency and consensus visualisation
 - CIC_annotation produces a `LegalReferences.csv` cross-reference index (on Zenodo)
 - GNORM has a 3D visualisation component (mentioned in ITSERR docs, not yet seen)
 - Arianna demonstrated the GNORM prototype web interface at ariannapavone.com/gnorm/
@@ -282,7 +282,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 | Aspect | Detail |
 |--------|--------|
 | **Input** | Normalized text files from `data/normalized/` (output of `normalize_text.py`) |
-| **Detection** | Enhanced regex patterns: 104 biblical, 26 patristic/classical, 5 reformation, 2 confessional — with OCR-variant handling |
+| **Detection** | Enhanced regex patterns: ~58 biblical, ~18 patristic/classical, 4 reformation, 2 confessional — with OCR-variant handling |
 | **Epistemic logic** | Biblical + number → FACTUAL (0.85); Confessional → FACTUAL (0.80); Others → INTERPRETIVE (0.75); Multi-method consensus → FACTUAL |
 | **Output** | `docs/prototype/data/corpus.json` — chapters, pages, references with type/confidence/epistemic/method fields |
 | **Consumers** | Corpus Browser (index.html), future Omeka S integration |
