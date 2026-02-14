@@ -20,6 +20,7 @@ from zero_shot_crf_experiment import (
     extract_entities,
     get_context,
     is_likely_biblical_ref,
+    strip_ref_tags,
     ExperimentStats,
 )
 
@@ -459,3 +460,47 @@ class TestFeatureEntityIntegration:
         entity_text, label, start, end = entities[0]
         assert text[start:end] == "Rom. 5"
         assert label == "AN"
+
+
+# =============================================================================
+# Tag Stripping Tests
+# =============================================================================
+
+
+class TestStripRefTags:
+    """Tests for strip_ref_tags — removes XML-like tags injected by normalize_text.py."""
+
+    def test_biblical_ref_tag(self):
+        """Biblical ref tags should be stripped, leaving the text content."""
+        text = 'Paulus ait <ref type="biblical">Rom. 5</ref>, legem stabilimus.'
+        assert strip_ref_tags(text) == "Paulus ait Rom. 5, legem stabilimus."
+
+    def test_patristic_ref_tag(self):
+        """Patristic ref tags should be stripped."""
+        text = 'Citatur dictum <ref type="patristic">Hieronymi</ref> de lege.'
+        assert strip_ref_tags(text) == "Citatur dictum Hieronymi de lege."
+
+    def test_reformation_ref_tag(self):
+        """Reformation ref tags should be stripped."""
+        text = 'LIPPI <ref type="reformation">MELANCHTHONIS</ref>, Pert'
+        assert strip_ref_tags(text) == "LIPPI MELANCHTHONIS, Pert"
+
+    def test_chapter_comment_tag(self):
+        """HTML comment chapter markers should be stripped."""
+        text = "<!-- CHAPTER: DE DEO -->\nIncipit locus de Deo."
+        assert strip_ref_tags(text) == "Incipit locus de Deo."
+
+    def test_chapter_element_tag(self):
+        """XML chapter element should be stripped."""
+        text = '<chapter title="DE DEO">\nIncipit locus.'
+        assert strip_ref_tags(text) == "Incipit locus."
+
+    def test_no_tags(self):
+        """Text without tags should pass through unchanged."""
+        text = "Sicut ait Dominus, haec sunt vera."
+        assert strip_ref_tags(text) == text
+
+    def test_multiple_tags(self):
+        """Multiple ref tags in one text should all be stripped."""
+        text = '<ref type="biblical">Rom. 5</ref> et <ref type="patristic">Augustini</ref>'
+        assert strip_ref_tags(text) == "Rom. 5 et Augustini"
