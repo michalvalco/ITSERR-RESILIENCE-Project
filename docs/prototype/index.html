@@ -514,7 +514,7 @@ html, body {
         statCard(meta.pages_total, 'Pages scanned', 'var(--accent)') +
         statCard(stats.total_references, 'References found', '#e91e63') +
         statCard(stats.chapters, 'Chapters', '#00bcd4') +
-        statCard(Object.keys(stats.by_type).length, 'Entity types', '#ff9800') +
+        statCard(corpus.entity_types.length, 'Entity types', '#ff9800') +
       '</div>';
 
     // --- Reference type bar chart ---
@@ -624,15 +624,25 @@ html, body {
 
     // Make heatmap rows clickable
     contentArea.querySelectorAll('.heatmap-row[data-chapter-id]').forEach(function(row) {
+      row.setAttribute('role', 'button');
+      row.setAttribute('tabindex', '0');
+
       row.addEventListener('click', function() {
         renderChapter(row.dataset.chapterId);
+      });
+
+      row.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          renderChapter(row.dataset.chapterId);
+        }
       });
     });
   }
 
   function statCard(value, label, color) {
     return '<div class="stat-card">' +
-      '<div class="stat-number" style="color:' + escapeAttr(color) + '">' + value + '</div>' +
+      '<div class="stat-number" style="color:' + escapeAttr(color) + '">' + escapeHtml(String(value)) + '</div>' +
       '<div class="stat-desc">' + escapeHtml(label) + '</div>' +
     '</div>';
   }
