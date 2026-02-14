@@ -165,10 +165,28 @@ def strip_existing_ref_tags(text):
     return text
 
 
-def detect_references(text):
+def detect_references(text, crf_entities=None):
     """
     Find all references in a text segment.
-    Returns list of {start, end, text, type, confidence, epistemic}.
+    Returns list of {start, end, text, type, confidence, epistemic, methods, consensus}.
+
+    Args:
+        text: The text to scan for references.
+        crf_entities: Optional list of CRF-detected entities, each a dict with
+            {start, end, text, type, confidence}. When provided, references
+            detected by both rule-based and CRF methods receive a "consensus"
+            flag and higher epistemic confidence.
+
+    Epistemic status assignment logic:
+        - FACTUAL: ≥2 methods agree (consensus), OR well-formed biblical pattern
+          with chapter/verse number (confidence ≥0.85), OR confessional document
+          reference (confidence ≥0.80).
+        - INTERPRETIVE: Single detection method with moderate confidence (0.70–0.85).
+          Rule-based match of a name pattern without verse numbers, or CRF-only
+          detection.
+        - DEFERRED: Methods disagree on type, or confidence <0.70. Requires human
+          annotator review. (Not yet generated — will appear when CRF layer is
+          integrated and produces conflicting classifications.)
     """
     refs = []
     seen_spans = set()
@@ -185,10 +203,12 @@ def detect_references(text):
             if any(s <= start < e or s < end <= e for s, e in seen_spans):
                 continue
 
-            # Assign epistemic indicator based on detection method
-            # Rule-based detection = moderate confidence
+            # Assign epistemic indicator based on detection quality
+            # Rule-based detection alone = moderate confidence
             confidence = 0.75
             epistemic = "INTERPRETIVE"
+            methods = ["rule-based"]
+            consensus = False
 
             # Higher confidence for well-formed patterns with numbers
             if ref_type == "biblical" and re.search(r'\d', matched):
@@ -198,6 +218,25 @@ def detect_references(text):
                 confidence = 0.80
                 epistemic = "FACTUAL"
 
+            # Check for CRF consensus if CRF entities are provided
+            if crf_entities:
+                for crf_ent in crf_entities:
+                    # Check for overlapping span with matching type
+                    crf_s, crf_e = crf_ent["start"], crf_ent["end"]
+                    if (start <= crf_s < end or crf_s <= start < crf_e):
+                        methods.append("CRF")
+                        if crf_ent.get("type") == ref_type:
+                            # Methods agree on type — consensus
+                            consensus = True
+                            confidence = max(confidence, crf_ent.get("confidence", 0.80))
+                            confidence = min(round(confidence + 0.05, 2), 0.99)
+                            epistemic = "FACTUAL"
+                        else:
+                            # Methods disagree on type — deferred
+                            epistemic = "DEFERRED"
+                            confidence = min(confidence, 0.65)
+                        break
+
             refs.append({
                 "start": start,
                 "end": end,
@@ -205,9 +244,35 @@ def detect_references(text):
                 "type": ref_type,
                 "confidence": round(confidence, 2),
                 "epistemic": epistemic,
-                "method": "rule-based"
+                "methods": methods,
+                "method": " + ".join(methods),
+                "consensus": consensus
             })
             seen_spans.add(span_key)
+
+    # Also include CRF-only detections not covered by rules
+    if crf_entities:
+        for crf_ent in crf_entities:
+            crf_s, crf_e = crf_ent["start"], crf_ent["end"]
+            # Check if already covered by a rule-based match
+            already_covered = any(
+                s <= crf_s < e or crf_s <= s < crf_e
+                for s, e in seen_spans
+            )
+            if not already_covered:
+                crf_conf = crf_ent.get("confidence", 0.75)
+                refs.append({
+                    "start": crf_s,
+                    "end": crf_e,
+                    "text": crf_ent.get("text", text[crf_s:crf_e]),
+                    "type": crf_ent.get("type", "unknown"),
+                    "confidence": round(crf_conf, 2),
+                    "epistemic": "FACTUAL" if crf_conf >= 0.85 else "INTERPRETIVE",
+                    "methods": ["CRF"],
+                    "method": "CRF",
+                    "consensus": False
+                })
+                seen_spans.add((crf_s, crf_e))
 
     # Sort by position
     refs.sort(key=lambda r: r["start"])
@@ -331,6 +396,15 @@ def build_corpus(input_dir):
         e = ref["epistemic"]
         epistemic_counts[e] = epistemic_counts.get(e, 0) + 1
 
+    # Detection method statistics
+    method_counts = {}
+    consensus_count = 0
+    for ref in all_refs:
+        for m in ref.get("methods", [ref.get("method", "rule-based")]):
+            method_counts[m] = method_counts.get(m, 0) + 1
+        if ref.get("consensus", False):
+            consensus_count += 1
+
     corpus = {
         "metadata": {
             "title": "Annotationes in Locos communes",
@@ -348,6 +422,8 @@ def build_corpus(input_dir):
             "total_references": len(all_refs),
             "by_type": ref_type_counts,
             "by_epistemic": epistemic_counts,
+            "by_method": method_counts,
+            "consensus_count": consensus_count,
             "chapters": len(chapters),
             "pages_with_content": len(pages),
         },

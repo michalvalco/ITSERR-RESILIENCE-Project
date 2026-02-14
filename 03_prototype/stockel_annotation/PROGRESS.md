@@ -414,6 +414,48 @@ Use this section to record important decisions, insights, and issues encountered
 | Feb 14, 2026 | XML tag stripping | Added `strip_ref_tags()` to zero_shot_crf_experiment.py — prevents XML tag pollution in CRF feature context window |
 | Feb 14, 2026 | expansion_log fix | `expanded` field now stores actual case-preserved text (e.g., "Dominus" not "dominus") and resolves backreferences. 4 new tests for expanded-field verification |
 | Feb 14, 2026 | Total tests | **393 tests across 10 test suites**, all passing |
+| Feb 14, 2026 | Layer 1 feedback | Implemented prototype feedback: consensus visualization, multi-method detection tracking, epistemic logic clarification, workflow documentation of build_corpus_json.py |
+
+---
+
+## Next Steps: Layer 1 → Multi-Layer Integration
+
+Based on review feedback on the Layer 1 (rule-based) prototype, the following roadmap connects the current working prototype to the full multi-layer pipeline:
+
+### Priority 1: Integrate CRF Output (Layer 4 → JSON)
+
+Merge the zero-shot CRF experiment output into the JSON structure consumed by the Corpus Browser. `build_corpus_json.py` already supports a `crf_entities` parameter in `detect_references()` — the integration path is:
+
+1. Run `zero_shot_crf_experiment.py` on normalized text → produces `zero_shot_entities.tsv`
+2. Parse TSV into CRF entity list (start, end, text, type, confidence)
+3. Pass to `detect_references(text, crf_entities=crf_list)` during JSON build
+4. The corpus JSON will then include both rule-based and CRF-detected references with per-reference method provenance
+
+### Priority 2: Consensus Visualization (Already Implemented in UI)
+
+The Corpus Browser now supports consensus visualization:
+- Each reference tooltip shows "Detected by: [Rule] [CRF]" method tags
+- When multiple methods agree on the same span and type, a **Consensus** badge appears
+- Consensus references receive elevated epistemic status (FACTUAL)
+- Disagreements between methods produce DEFERRED status (routed to human review)
+
+This directly visualises the dual-path epistemology (Method Consensus) from the theoretical framework.
+
+### Priority 3: Automate JSON Build
+
+Integrate `build_corpus_json.py` into the GitHub Actions workflow:
+- Trigger on changes to `data/normalized/` or pipeline scripts
+- Auto-regenerate `docs/prototype/data/corpus.json`
+- Deploy updated Corpus Browser via GitHub Pages
+
+### Priority 4: Epistemic Status Refinement
+
+Current epistemic logic:
+- **FACTUAL**: ≥2 methods agree (consensus), OR well-formed biblical pattern with verse number (≥0.85), OR confessional reference (≥0.80)
+- **INTERPRETIVE**: Single method, moderate confidence (0.70–0.85)
+- **DEFERRED**: Methods disagree on type, or confidence <0.70 (requires human review)
+
+When CRF output is available, refine thresholds based on empirical precision/recall analysis on the INCEpTION-annotated gold standard.
 
 ---
 

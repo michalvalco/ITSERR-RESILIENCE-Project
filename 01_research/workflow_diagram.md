@@ -254,21 +254,40 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 **Question:** How do we initially visualise what the pipeline has found?
 
 ```
-[Annotated output]
+[Annotated output (from Stage 4 layers)]
         ↓
+[build_corpus_json.py]
+        ↓ (converts pipeline annotations → structured JSON)
+[docs/prototype/data/corpus.json]
+        ↓
+[Corpus Browser — docs/prototype/index.html]
+        ↓ (interactive web-based exploration)
 [Citation index / cross-reference database]
         ↓
 [Basic visualisations: frequency tables, citation networks]
 ```
 
 **Current state:**
+- ✅ **`build_corpus_json.py`** bridges the gap between the normalization pipeline output and the web prototype. It reads normalized text files from `data/normalized/`, applies enhanced rule-based reference detection (extending `normalize_text.py`'s patterns with OCR-variant handling), and produces `docs/prototype/data/corpus.json` — the structured input consumed by the Corpus Browser
+- ✅ **Corpus Browser** (`docs/prototype/index.html`) provides an interactive three-column interface with dashboard, full-text search, entity/epistemic filtering, reference highlighting, and contextual detail panels
+- ✅ **Epistemic classification** is applied at build time: each reference is tagged `FACTUAL`, `INTERPRETIVE`, or `DEFERRED` based on pattern quality and detection method(s)
+- ✅ **Detection provenance** is tracked per reference: every annotation records which method(s) detected it (rule-based, abbreviation, trie, CRF, structural) for transparency and consensus visualisation
 - CIC_annotation produces a `LegalReferences.csv` cross-reference index (on Zenodo)
 - GNORM has a 3D visualisation component (mentioned in ITSERR docs, not yet seen)
 - Arianna demonstrated the GNORM prototype web interface at ariannapavone.com/gnorm/
 - Additionally, `digitaldecretals.com` appears associated with the GNORM project (possibly the text corpus or prototype interface; not yet verified)
-- We have no visualisation infrastructure set up yet
 
-**Planned initial representations:**
+**The `build_corpus_json.py` bridge script:**
+
+| Aspect | Detail |
+|--------|--------|
+| **Input** | Normalized text files from `data/normalized/` (output of `normalize_text.py`) |
+| **Detection** | Enhanced regex patterns: 104 biblical, 26 patristic/classical, 5 reformation, 2 confessional — with OCR-variant handling |
+| **Epistemic logic** | Biblical + number → FACTUAL (0.85); Confessional → FACTUAL (0.80); Others → INTERPRETIVE (0.75); Multi-method consensus → FACTUAL |
+| **Output** | `docs/prototype/data/corpus.json` — chapters, pages, references with type/confidence/epistemic/method fields |
+| **Consumers** | Corpus Browser (index.html), future Omeka S integration |
+
+**Planned representations (beyond Corpus Browser):**
 - Citation frequency tables (which sources does Stöckel cite most?)
 - Co-citation analysis (which sources appear together?)
 - Simple network graphs (D3.js or similar)
@@ -364,6 +383,13 @@ CIC_annotation Pipeline (adapted)
 Epistemological Classification
     │ FACTUAL / INTERPRETIVE / DEFERRED
     ▼
+build_corpus_json.py (Stage 5 bridge)                 ✅ BUILT
+    │ (normalized text → structured JSON with
+    │  detection provenance and consensus tracking)
+    ▼
+Corpus Browser — docs/prototype/index.html             ✅ BUILT
+    │ (interactive exploration with epistemic filters)
+    ▼
 Cross-Reference Index + Citation Database
     │ (CSV / JSON)
     ▼
@@ -379,13 +405,15 @@ Researchers, Libraries, RESILIENCE Network
 
 | Item | Status | Format |
 |------|--------|--------|
-| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — extraction pipeline ready (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`); need to run on sample pages | Plaintext (.txt) |
+| Stöckel sample texts (57pp) | ✅ COMPLETE — 12 normalized files in `data/normalized/`, 18,912 words | Plaintext (.txt) |
 | Preliminary abbreviation list | 🔧 PARTIALLY DONE — `normalize_text.py` contains 17 abbreviation patterns (Tironian et, christological, ecclesiastical, que-enclitic, etc.) with `expansion_log` provenance. Broader dictionary (less common abbreviations) still needed | Python dict + CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
 | Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |
 | Entity type schema proposal | ✅ DRAFT — in Stage 3 above; needs validation against samples | Table |
-| Zero-shot test | 🔧 NOT STARTED — blocked on sample text preparation | — |
+| Zero-shot test script | ✅ READY — `zero_shot_crf_experiment.py` with 56 tests; awaiting CRF model | Python |
+| Corpus Browser (prototype) | ✅ LIVE — `docs/prototype/index.html` with dashboard, search, consensus visualization | HTML/JS |
+| JSON build bridge | ✅ BUILT — `build_corpus_json.py` converts pipeline → `corpus.json` with multi-method support | Python |
 
 ---
 
@@ -397,6 +425,28 @@ Researchers, Libraries, RESILIENCE Network
 | Version control | Git (this repo) |
 | FAIR data principles | Metadata, persistent identifiers, open formats |
 | Reproducibility | Pipeline scripts, configuration files, documented parameters |
+
+---
+
+## Next Steps: From Layer 1 Prototype to Multi-Layer Pipeline
+
+The Layer 1 (rule-based) prototype is functional and demonstrates the full pipeline from OCR through visualization. The following steps connect it to the complete six-layer detection pipeline:
+
+### 1. Integrate CRF Output (Layer 4 → Corpus Browser)
+
+Merge CRF predictions from `zero_shot_crf_experiment.py` into the JSON structure so the Corpus Browser can display side-by-side comparison of rule-based vs. ML-based annotations. `build_corpus_json.py` already supports a `crf_entities` parameter — the remaining work is to parse the CRF TSV output and feed it into the build process.
+
+### 2. Consensus Visualization (Implemented)
+
+The Corpus Browser now displays a "Detected by: [Rule] [CRF]" indicator on every annotation tooltip and detail panel. When both methods agree on the same span and type, a **Consensus** badge appears and the annotation is marked as FACTUAL. When methods disagree, the annotation receives DEFERRED status for human review. This directly visualises the dual-path epistemology (Method Consensus) described in the theoretical framework.
+
+### 3. Automate JSON Build (CI/CD)
+
+Integrate `build_corpus_json.py` into the GitHub Actions workflow to auto-update the Corpus Browser when new texts are processed or pipeline scripts are modified. Target: `on push` to `data/normalized/` or `scripts/` triggers regeneration of `corpus.json` and deployment via GitHub Pages.
+
+### 4. Epistemic Status Calibration
+
+Refine the FACTUAL/INTERPRETIVE/DEFERRED thresholds based on empirical evaluation against the INCEpTION-annotated gold standard once manual annotation reaches 100+ references. Current thresholds are based on theoretical expectations; CRF performance data will allow data-driven calibration.
 
 ---
 

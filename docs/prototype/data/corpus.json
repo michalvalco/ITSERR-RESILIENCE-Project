@@ -9,7 +9,7 @@
     "publisher": "Ioannem Oporinum, Basel",
     "source": "OCR extraction via Tesseract 5.3.4",
     "pipeline": "ITSERR-RESILIENCE normalization + rule-based detection",
-    "generated": "2026-02-14T02:30:00.011466"
+    "generated": "2026-02-14T11:22:46.976662"
   },
   "stats": {
     "total_references": 31,
@@ -24,6 +24,10 @@
       "INTERPRETIVE": 19,
       "FACTUAL": 12
     },
+    "by_method": {
+      "rule-based": 31
+    },
+    "consensus_count": 0,
     "chapters": 10,
     "pages_with_content": 57
   },
@@ -99,7 +103,11 @@
               "type": "reformation",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         }
@@ -177,7 +185,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -193,7 +205,11 @@
               "type": "biblical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1190,
@@ -202,7 +218,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1727,
@@ -211,7 +231,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1873,
@@ -220,7 +244,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -248,7 +276,11 @@
               "type": "biblical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         }
@@ -280,7 +312,11 @@
               "type": "biblical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1049,
@@ -289,7 +325,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1291,
@@ -298,7 +338,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1415,
@@ -307,7 +351,11 @@
               "type": "confessional",
               "confidence": 0.8,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1434,
@@ -316,7 +364,11 @@
               "type": "confessional",
               "confidence": 0.8,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1467,
@@ -325,7 +377,11 @@
               "type": "patristic",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1479,
@@ -334,7 +390,11 @@
               "type": "patristic",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -368,7 +428,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         }
@@ -406,7 +470,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -422,7 +490,11 @@
               "type": "patristic",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -478,7 +550,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1197,
@@ -487,7 +563,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1752,
@@ -496,7 +576,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -512,7 +596,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -528,7 +616,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -562,7 +654,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         }
@@ -600,7 +696,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -644,7 +744,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -660,7 +764,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -676,7 +784,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -698,7 +810,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -744,7 +860,11 @@
               "type": "patristic",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             },
             {
               "start": 1821,
@@ -753,7 +873,11 @@
               "type": "biblical",
               "confidence": 0.85,
               "epistemic": "FACTUAL",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
@@ -827,7 +951,11 @@
               "type": "classical",
               "confidence": 0.75,
               "epistemic": "INTERPRETIVE",
-              "method": "rule-based"
+              "methods": [
+                "rule-based"
+              ],
+              "method": "rule-based",
+              "consensus": false
             }
           ]
         },
