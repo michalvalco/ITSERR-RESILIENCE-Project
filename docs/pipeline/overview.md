@@ -101,7 +101,7 @@ python -m pytest tests/ -v
 The OCR pipeline requires both **Python packages** and **system applications**. The system applications (Tesseract, Poppler) must be installed first since the Python packages are only wrappers around them.
 
 !!! tip "Tests run without system dependencies"
-    All 393 tests mock external dependencies and run without Tesseract, Poppler, dkpro-cassis, or sklearn-crfsuite installed. You only need the optional packages to process actual data.
+    All 393 tests run without Tesseract or Poppler installed. The OCR processor tests mock the OCR engine; the ALTO, normalization, CRF, and BIOES tests operate on sample data and do not require system OCR tools. You only need the system packages to process actual PDFs.
 
 ### Step 1: Install System Applications
 
@@ -154,7 +154,7 @@ Poppler converts PDF pages to images. The Python `pdf2image` package requires it
 
     1. Download the latest release from [poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases)
     2. Extract the archive (e.g., to `C:\poppler`)
-    3. Add the `bin\` folder to your system PATH (e.g., `C:\poppler\Library\bin`)
+    3. Add the folder containing `pdfinfo`/`pdftoppm` to your system PATH (e.g., `C:\poppler\Library\bin`)
     4. Verify: open a new terminal and run `pdfinfo -v`
 
 === "Ubuntu/Debian"
@@ -187,16 +187,50 @@ pip install pytesseract pdf2image Pillow lxml
 
 ### Step 3: Verify Installation
 
-```bash
-# Check Tesseract is available
-tesseract --version
+=== "Ubuntu/Debian / macOS"
 
-# Check Latin language pack is installed
-tesseract --list-langs | grep lat
+    ```bash
+    # Check Tesseract is available
+    tesseract --version
 
-# Check Poppler is available
-pdfinfo -v
+    # Check Latin language pack is installed
+    tesseract --list-langs | grep lat
 
-# Quick Python check
-python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
-```
+    # Check Poppler is available
+    pdfinfo -v
+
+    # Quick Python check
+    python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+    ```
+
+=== "Windows (PowerShell)"
+
+    ```powershell
+    # Check Tesseract is available
+    tesseract --version
+
+    # Check Latin language pack is installed
+    tesseract --list-langs | Select-String lat
+
+    # Check Poppler is available
+    pdfinfo -v
+
+    # Quick Python check
+    python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+    ```
+
+=== "Windows (CMD)"
+
+    ```cmd
+    REM Check Tesseract is available
+    tesseract --version
+
+    REM Check Latin language pack is installed
+    tesseract --list-langs | findstr lat
+
+    REM Check Poppler is available
+    pdfinfo -v
+
+    REM Quick Python check
+    python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+    ```
