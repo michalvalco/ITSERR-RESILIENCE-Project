@@ -351,10 +351,10 @@ html, body {
   // ============================================================================
 
   function renderSidebar() {
-    var html = '';
-    for (var i = 0; i < corpus.chapters.length; i++) {
-      var ch = corpus.chapters[i];
-      var pageRange = 'pp. ' + ch.start_page + '\u2013' + ch.end_page;
+    let html = '';
+    for (let i = 0; i < corpus.chapters.length; i++) {
+      let ch = corpus.chapters[i];
+      let pageRange = 'pp. ' + ch.start_page + '\u2013' + ch.end_page;
 
       html += '<div class="chapter-group" data-chapter="' + escapeAttr(ch.id) + '">' +
         '<div class="chapter-item" data-chapter="' + escapeAttr(ch.id) + '">' +
@@ -364,10 +364,10 @@ html, body {
         '</div>' +
         '<div class="page-list">';
 
-      for (var j = 0; j < ch.pages.length; j++) {
-        var pg = ch.pages[j];
-        var pgRefs = pg.references.length;
-        var refBadge = pgRefs > 0 ? ' (' + pgRefs + ')' : '';
+      for (let j = 0; j < ch.pages.length; j++) {
+        let pg = ch.pages[j];
+        let pgRefs = pg.references.length;
+        let refBadge = pgRefs > 0 ? ' (' + pgRefs + ')' : '';
         html += '<div class="page-item" data-page="' + pg.page + '" data-chapter="' + escapeAttr(ch.id) + '">p. ' + pg.page + refBadge + '</div>';
       }
 
@@ -377,14 +377,14 @@ html, body {
   }
 
   function renderStats() {
-    var statsPanel = document.querySelector('.stats-panel');
+    let statsPanel = document.querySelector('.stats-panel');
     if (!statsPanel || !corpus) return;
 
-    var types = corpus.entity_types;
-    var html = '<h3>Detected References</h3>';
-    for (var i = 0; i < types.length; i++) {
-      var t = types[i];
-      var count = corpus.stats.by_type[t.id] || 0;
+    let types = corpus.entity_types;
+    let html = '<h3>Detected References</h3>';
+    for (let i = 0; i < types.length; i++) {
+      let t = types[i];
+      let count = corpus.stats.by_type[t.id] || 0;
       if (count > 0) {
         html += '<div class="stat-row">' +
           '<span class="stat-label"><span class="stat-dot" style="background:' + escapeAttr(t.color) + '"></span>' + escapeHtml(t.label) + '</span>' +
@@ -404,27 +404,27 @@ html, body {
   // ============================================================================
 
   function renderFilters() {
-    var filterBar = document.querySelector('.filter-bar');
+    let filterBar = document.querySelector('.filter-bar');
     if (!filterBar || !corpus) return;
 
-    var html = '<span class="filter-label">Entity type</span>';
+    let html = '<span class="filter-label">Entity type</span>';
 
-    for (var i = 0; i < corpus.entity_types.length; i++) {
-      var t = corpus.entity_types[i];
-      var count = corpus.stats.by_type[t.id] || 0;
+    for (let i = 0; i < corpus.entity_types.length; i++) {
+      let t = corpus.entity_types[i];
+      let count = corpus.stats.by_type[t.id] || 0;
       if (count > 0) {
-        var isActive = activeFilters.has(t.id);
+        let isActive = activeFilters.has(t.id);
         html += '<span class="filter-tag ' + (isActive ? 'active' : '') + '" data-type="' + escapeAttr(t.id) + '"><span class="dot"></span>' + escapeHtml(t.label) + ' (' + count + ')</span>';
       }
     }
 
     html += '<span class="filter-separator"></span><span class="filter-label">Confidence</span>';
 
-    for (var j = 0; j < corpus.epistemic_types.length; j++) {
-      var e = corpus.epistemic_types[j];
-      var ecount = corpus.stats.by_epistemic[e.id] || 0;
+    for (let j = 0; j < corpus.epistemic_types.length; j++) {
+      let e = corpus.epistemic_types[j];
+      let ecount = corpus.stats.by_epistemic[e.id] || 0;
       if (ecount > 0) {
-        var eActive = activeEpistemicFilters.has(e.id);
+        let eActive = activeEpistemicFilters.has(e.id);
         html += '<span class="filter-tag epistemic ' + (eActive ? 'active' : '') + '" data-epistemic="' + escapeAttr(e.id) + '"><span class="dot"></span>' + escapeHtml(e.label) + ' (' + ecount + ')</span>';
       }
     }
@@ -456,8 +456,8 @@ html, body {
   function renderChapter(chapterId) {
     activeChapterId = chapterId;
 
-    var ch = null;
-    for (var i = 0; i < corpus.chapters.length; i++) {
+    let ch = null;
+    for (let i = 0; i < corpus.chapters.length; i++) {
       if (corpus.chapters[i].id === chapterId) { ch = corpus.chapters[i]; break; }
     }
     if (!ch) return;
@@ -472,24 +472,24 @@ html, body {
     });
 
     // Compute filtered ref counts
-    var refCounts = {};
-    for (var p = 0; p < ch.pages.length; p++) {
-      var pg = ch.pages[p];
-      for (var r = 0; r < pg.references.length; r++) {
-        var ref = pg.references[r];
+    let refCounts = {};
+    for (let p = 0; p < ch.pages.length; p++) {
+      let pg = ch.pages[p];
+      for (let r = 0; r < pg.references.length; r++) {
+        let ref = pg.references[r];
         if (activeFilters.has(ref.type) && activeEpistemicFilters.has(ref.epistemic)) {
           refCounts[ref.type] = (refCounts[ref.type] || 0) + 1;
         }
       }
     }
 
-    var statsHtml = '';
-    var types = Object.keys(refCounts);
-    for (var ti = 0; ti < types.length; ti++) {
-      var type = types[ti];
-      var count = refCounts[type];
-      var entityType = null;
-      for (var ei = 0; ei < corpus.entity_types.length; ei++) {
+    let statsHtml = '';
+    let types = Object.keys(refCounts);
+    for (let ti = 0; ti < types.length; ti++) {
+      let type = types[ti];
+      let count = refCounts[type];
+      let entityType = null;
+      for (let ei = 0; ei < corpus.entity_types.length; ei++) {
         if (corpus.entity_types[ei].id === type) { entityType = corpus.entity_types[ei]; break; }
       }
       if (entityType) {
@@ -497,7 +497,7 @@ html, body {
       }
     }
 
-    var html =
+    let html =
       '<div class="chapter-header">' +
         '<h2>' + escapeHtml(ch.title) + '</h2>' +
         '<div class="chapter-en">' + escapeHtml(ch.title_en) + ' \u2014 Pages ' + ch.start_page + '\u2013' + ch.end_page + '</div>' +
@@ -507,7 +507,7 @@ html, body {
     if (ch.pages.length === 0) {
       html += '<div class="no-results">No content available for this chapter.</div>';
     } else {
-      for (var pi = 0; pi < ch.pages.length; pi++) {
+      for (let pi = 0; pi < ch.pages.length; pi++) {
         html += renderPage(ch.pages[pi]);
       }
     }
@@ -517,7 +517,7 @@ html, body {
   }
 
   function renderPage(pg) {
-    var annotatedText = applyAnnotations(pg.text, pg.references);
+    let annotatedText = applyAnnotations(pg.text, pg.references);
     return '<div class="page-block" id="page-' + pg.page + '">' +
       '<div class="page-label">Page ' + pg.page + '</div>' +
       '<div class="text-content">' + annotatedText + '</div>' +
@@ -525,9 +525,9 @@ html, body {
   }
 
   function applyAnnotations(text, references) {
-    var filteredRefs = [];
-    for (var i = 0; i < references.length; i++) {
-      var r = references[i];
+    let filteredRefs = [];
+    for (let i = 0; i < references.length; i++) {
+      let r = references[i];
       if (activeFilters.has(r.type) && activeEpistemicFilters.has(r.epistemic)) {
         filteredRefs.push(r);
       }
@@ -537,11 +537,11 @@ html, body {
       return escapeHtml(text);
     }
 
-    var insertions = [];
+    let insertions = [];
 
-    for (var fi = 0; fi < filteredRefs.length; fi++) {
-      var ref = filteredRefs[fi];
-      var idx = text.indexOf(ref.text, Math.max(0, ref.start - 10));
+    for (let fi = 0; fi < filteredRefs.length; fi++) {
+      let ref = filteredRefs[fi];
+      let idx = text.indexOf(ref.text, Math.max(0, ref.start - 10));
       if (idx === -1) continue;
 
       insertions.push({ pos: idx, end: idx + ref.text.length, type: 'ref-open', ref: ref });
@@ -549,8 +549,8 @@ html, body {
     }
 
     if (searchQuery && searchQuery.length >= 2) {
-      var regex = new RegExp(escapeRegex(searchQuery), 'gi');
-      var match;
+      let regex = new RegExp(escapeRegex(searchQuery), 'gi');
+      let match;
       while ((match = regex.exec(text)) !== null) {
         insertions.push({ pos: match.index, end: match.index + match[0].length, type: 'search-open' });
         insertions.push({ pos: match.index + match[0].length, end: match.index + match[0].length, type: 'search-close' });
@@ -559,22 +559,22 @@ html, body {
 
     insertions.sort(function(a, b) {
       if (a.pos !== b.pos) return a.pos - b.pos;
-      var aOrder = a.type.indexOf('close') !== -1 ? 0 : 1;
-      var bOrder = b.type.indexOf('close') !== -1 ? 0 : 1;
+      let aOrder = a.type.indexOf('close') !== -1 ? 0 : 1;
+      let bOrder = b.type.indexOf('close') !== -1 ? 0 : 1;
       return aOrder - bOrder;
     });
 
-    var result = '';
-    var lastIdx = 0;
+    let result = '';
+    let lastIdx = 0;
 
-    for (var ii = 0; ii < insertions.length; ii++) {
-      var ins = insertions[ii];
+    for (let ii = 0; ii < insertions.length; ii++) {
+      let ins = insertions[ii];
       if (ins.pos > lastIdx) {
         result += escapeHtml(text.slice(lastIdx, ins.pos));
       }
 
       if (ins.type === 'ref-open') {
-        var rr = ins.ref;
+        let rr = ins.ref;
         result += '<span class="ref-highlight" data-type="' + escapeAttr(rr.type) + '" data-confidence="' + escapeAttr(String(rr.confidence)) + '" data-epistemic="' + escapeAttr(rr.epistemic) + '" data-text="' + escapeAttr(rr.text) + '" data-method="' + escapeAttr(rr.method) + '">';
       } else if (ins.type === 'ref-close') {
         result += '</span>';
@@ -607,15 +607,15 @@ html, body {
       return;
     }
 
-    var regex = new RegExp(escapeRegex(searchQuery), 'gi');
-    var totalMatches = 0;
-    var chapterMatches = [];
+    let regex = new RegExp(escapeRegex(searchQuery), 'gi');
+    let totalMatches = 0;
+    let chapterMatches = [];
 
-    for (var i = 0; i < corpus.chapters.length; i++) {
-      var ch = corpus.chapters[i];
-      var chMatches = 0;
-      for (var j = 0; j < ch.pages.length; j++) {
-        var matches = ch.pages[j].text.match(regex);
+    for (let i = 0; i < corpus.chapters.length; i++) {
+      let ch = corpus.chapters[i];
+      let chMatches = 0;
+      for (let j = 0; j < ch.pages.length; j++) {
+        let matches = ch.pages[j].text.match(regex);
         if (matches) chMatches += matches.length;
       }
       if (chMatches > 0) {
@@ -636,15 +636,15 @@ html, body {
   }
 
   function renderSearchResults(chapterMatches, totalMatches) {
-    var html =
+    let html =
       '<div class="info-banner">' +
         '<h2>Search Results: \u201c' + escapeHtml(searchQuery) + '\u201d</h2>' +
         '<p>' + totalMatches + ' matches found across ' + chapterMatches.length + ' chapters. Click a chapter to view the matches in context.</p>' +
       '</div>';
 
-    for (var i = 0; i < chapterMatches.length; i++) {
-      var chapter = chapterMatches[i].chapter;
-      var count = chapterMatches[i].count;
+    for (let i = 0; i < chapterMatches.length; i++) {
+      let chapter = chapterMatches[i].chapter;
+      let count = chapterMatches[i].count;
       html += '<div class="page-block search-result" style="cursor:pointer" data-chapter-id="' + escapeAttr(chapter.id) + '">' +
         '<div class="page-label">' + escapeHtml(chapter.title) + ' \u2014 ' + escapeHtml(chapter.title_en) + ' (' + count + ' matches)</div>' +
       '</div>';
@@ -654,8 +654,8 @@ html, body {
 
     contentArea.querySelectorAll('.search-result').forEach(function(block) {
       block.addEventListener('click', function() {
-        var chapterId = block.dataset.chapterId;
-        var navItem = document.querySelector('[data-chapter="' + chapterId + '"] .chapter-item');
+        let chapterId = block.dataset.chapterId;
+        let navItem = document.querySelector('[data-chapter="' + chapterId + '"] .chapter-item');
         if (navItem) navItem.click();
       });
     });
@@ -666,20 +666,20 @@ html, body {
   // ============================================================================
 
   function showTooltip(el, x, y) {
-    var type = el.dataset.type;
-    var confidence = el.dataset.confidence;
-    var epistemic = el.dataset.epistemic;
-    var text = el.dataset.text;
-    var method = el.dataset.method;
+    let type = el.dataset.type;
+    let confidence = el.dataset.confidence;
+    let epistemic = el.dataset.epistemic;
+    let text = el.dataset.text;
+    let method = el.dataset.method;
 
-    var entityType = null;
-    for (var i = 0; i < corpus.entity_types.length; i++) {
+    let entityType = null;
+    for (let i = 0; i < corpus.entity_types.length; i++) {
       if (corpus.entity_types[i].id === type) { entityType = corpus.entity_types[i]; break; }
     }
-    var typeLabel = entityType ? entityType.label : type;
-    var typeColor = entityType ? entityType.color : '#999';
+    let typeLabel = entityType ? entityType.label : type;
+    let typeColor = entityType ? entityType.color : '#999';
 
-    var epistemicClass = epistemic === 'FACTUAL' ? 'factual' : 'interpretive';
+    let epistemicClass = epistemic === 'FACTUAL' ? 'factual' : 'interpretive';
 
     tooltip.innerHTML =
       '<div class="tooltip-type" style="color:' + escapeAttr(typeColor) + '">' + escapeHtml(typeLabel) + '</div>' +
@@ -690,8 +690,8 @@ html, body {
       '</div>' +
       '<div style="margin-top:4px;font-size:10px;opacity:0.5">Detection: ' + escapeHtml(method) + '</div>';
 
-    var maxX = window.innerWidth - 300;
-    var maxY = window.innerHeight - 120;
+    let maxX = window.innerWidth - 300;
+    let maxY = window.innerHeight - 120;
 
     tooltip.style.left = Math.min(x + 12, maxX) + 'px';
     tooltip.style.top = Math.min(y + 12, maxY) + 'px';
@@ -708,17 +708,17 @@ html, body {
 
   function bindEvents() {
     sidebarNav.addEventListener('click', function (e) {
-      var chapterItem = e.target.closest('.chapter-item');
-      var pageItem = e.target.closest('.page-item');
+      let chapterItem = e.target.closest('.chapter-item');
+      let pageItem = e.target.closest('.page-item');
 
       if (chapterItem) {
         renderChapter(chapterItem.dataset.chapter);
       } else if (pageItem) {
-        var chId = pageItem.dataset.chapter;
-        var pageNum = pageItem.dataset.page;
+        let chId = pageItem.dataset.chapter;
+        let pageNum = pageItem.dataset.page;
         if (activeChapterId !== chId) renderChapter(chId);
         setTimeout(function() {
-          var pageEl = document.getElementById('page-' + pageNum);
+          let pageEl = document.getElementById('page-' + pageNum);
           if (pageEl) {
             pageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
             document.querySelectorAll('.page-item').forEach(function(el) { el.classList.remove('active'); });
@@ -728,9 +728,9 @@ html, body {
       }
     });
 
-    var searchTimeout;
+    let searchTimeout;
     searchInput.addEventListener('input', function () {
-      var self = this;
+      let self = this;
       clearTimeout(searchTimeout);
       searchTimeout = setTimeout(function() { performSearch(self.value); }, 250);
     });
@@ -740,18 +740,18 @@ html, body {
     });
 
     document.querySelector('.filter-bar').addEventListener('click', function (e) {
-      var tag = e.target.closest('.filter-tag');
+      let tag = e.target.closest('.filter-tag');
       if (!tag) return;
 
       if (tag.classList.contains('epistemic')) {
-        var eid = tag.dataset.epistemic;
+        let eid = tag.dataset.epistemic;
         if (activeEpistemicFilters.has(eid)) {
           if (activeEpistemicFilters.size > 1) activeEpistemicFilters.delete(eid);
         } else {
           activeEpistemicFilters.add(eid);
         }
       } else {
-        var tid = tag.dataset.type;
+        let tid = tag.dataset.type;
         if (activeFilters.has(tid)) {
           if (activeFilters.size > 1) activeFilters.delete(tid);
         } else {
@@ -764,15 +764,15 @@ html, body {
     });
 
     contentArea.addEventListener('mouseover', function (e) {
-      var ref = e.target.closest('.ref-highlight');
+      let ref = e.target.closest('.ref-highlight');
       if (ref) showTooltip(ref, e.clientX, e.clientY);
     });
 
     contentArea.addEventListener('mousemove', function (e) {
-      var ref = e.target.closest('.ref-highlight');
+      let ref = e.target.closest('.ref-highlight');
       if (ref && tooltip.classList.contains('visible')) {
-        var maxX = window.innerWidth - 300;
-        var maxY = window.innerHeight - 120;
+        let maxX = window.innerWidth - 300;
+        let maxY = window.innerHeight - 120;
         tooltip.style.left = Math.min(e.clientX + 12, maxX) + 'px';
         tooltip.style.top = Math.min(e.clientY + 12, maxY) + 'px';
       }
@@ -788,7 +788,7 @@ html, body {
   // ============================================================================
 
   function escapeHtml(str) {
-    var div = document.createElement('div');
+    let div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
   }
