@@ -35,6 +35,8 @@
   --radius: 6px;
   --shadow: 0 2px 8px rgba(0,0,0,0.08);
   --shadow-lg: 0 4px 24px rgba(0,0,0,0.12);
+  --right-panel-width: 360px;
+  --right-panel-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -225,11 +227,13 @@ html, body {
 
 .no-results { text-align: center; padding: 40px; color: var(--text-muted); }
 
+@media (max-width: 1100px) { :root { --right-panel-width: 300px; } }
 @media (max-width: 768px) {
   .sidebar { width: 250px; min-width: 250px; }
   .topbar { padding: 10px 16px; }
   .content-area { padding: 16px; }
   .text-content { padding: 16px; font-size: 14px; }
+  .right-panel { position: fixed; top: 0; right: 0; height: 100vh; z-index: 20; box-shadow: var(--shadow-lg); }
 }
 
 .loading { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text-muted); }
@@ -307,6 +311,77 @@ html, body {
 .chart-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border-color); }
 .legend-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text-muted); }
 .legend-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+
+/* Right context panel */
+.right-panel {
+  width: 0; min-width: 0; overflow: hidden;
+  background: var(--content-bg); display: flex; flex-direction: column;
+  border-left: 0px solid var(--border-color); flex-shrink: 0;
+  transition: width var(--right-panel-transition), min-width var(--right-panel-transition),
+              border-left-width var(--right-panel-transition);
+}
+.right-panel.open { width: var(--right-panel-width); min-width: var(--right-panel-width); border-left-width: 1px; }
+
+.right-panel-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px; border-bottom: 1px solid var(--border-color); flex-shrink: 0;
+  min-width: var(--right-panel-width);
+}
+.right-panel-title {
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--text-muted); white-space: nowrap;
+}
+.right-panel-close {
+  background: none; border: 1px solid var(--border-color); border-radius: var(--radius);
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: var(--text-muted); display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, color 0.15s; flex-shrink: 0;
+}
+.right-panel-close:hover { background: var(--main-bg); color: var(--text-color); }
+
+.right-panel-body {
+  flex: 1; overflow-y: auto; overflow-x: hidden; padding: 16px;
+  min-width: var(--right-panel-width);
+}
+.right-panel-body::-webkit-scrollbar { width: 6px; }
+.right-panel-body::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+
+/* Right panel toggle button */
+.right-panel-toggle {
+  background: none; border: 1px solid var(--border-color); border-radius: var(--radius);
+  padding: 6px 12px; font-size: 12px; cursor: pointer; color: var(--text-muted);
+  transition: background 0.15s, color 0.15s; white-space: nowrap;
+}
+.right-panel-toggle:hover { background: var(--main-bg); color: var(--text-color); }
+
+/* Right panel content components */
+.rp-section-title {
+  font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.5px; margin-bottom: 8px; color: var(--text-muted);
+}
+.rp-ref-text {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-style: italic; font-size: 14px; line-height: 1.6; padding: 12px;
+  background: var(--main-bg); border-radius: var(--radius);
+  border-left: 3px solid var(--accent); margin-bottom: 12px;
+}
+.rp-meta { font-size: 12px; color: var(--text-muted); }
+.rp-meta dt { font-weight: 600; margin-top: 8px; }
+.rp-meta dd { margin-left: 0; margin-bottom: 4px; }
+.rp-list { list-style: none; padding: 0; }
+.rp-list-item {
+  padding: 8px 10px; margin-bottom: 4px; border-radius: var(--radius);
+  font-size: 12px; cursor: pointer; transition: background 0.15s;
+  border-left: 3px solid transparent;
+}
+.rp-list-item:hover { background: var(--main-bg); }
+.rp-search-chapter { padding: 10px 0; border-bottom: 1px solid var(--border-color); cursor: pointer; }
+.rp-search-chapter:hover { background: var(--main-bg); margin: 0 -16px; padding: 10px 16px; }
+.rp-search-chapter-title { font-size: 13px; font-weight: 600; }
+.rp-search-chapter-count { font-size: 11px; color: var(--text-muted); }
+.rp-search-snippet { font-size: 12px; color: var(--text-muted); margin-top: 4px; line-height: 1.5; max-height: 3em; overflow: hidden; }
+.rp-stat-row { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding: 4px 0; }
+.rp-stat-row .dot { width: 8px; height: 8px; border-radius: 50%; }
   </style>
 </head>
 <body>
@@ -343,6 +418,7 @@ html, body {
           <input type="text" placeholder="Search the corpus (e.g. Paulus, peccatum, Deus)..." />
         </div>
         <span class="search-results-count"></span>
+        <button class="right-panel-toggle" id="rightPanelToggle" aria-label="Toggle details panel" title="Toggle details panel" style="display:none;">&#9776; Details</button>
       </div>
 
       <!-- Filter bar -->
@@ -358,6 +434,15 @@ html, body {
         </div>
       </div>
     </main>
+
+    <!-- Right context panel -->
+    <aside class="right-panel" id="rightPanel">
+      <div class="right-panel-header">
+        <span class="right-panel-title">Details</span>
+        <button class="right-panel-close" id="rightPanelClose" aria-label="Close panel" title="Close panel">&times;</button>
+      </div>
+      <div class="right-panel-body" id="rightPanelBody"></div>
+    </aside>
 
   </div>
 
@@ -379,8 +464,12 @@ html, body {
   let activeEpistemicFilters = new Set(['FACTUAL', 'INTERPRETIVE']);
   let searchQuery = '';
 
+  // Right panel state
+  let rightPanelState = { open: false, context: null, data: null, dismissedByUser: false };
+
   // DOM references (assigned after DOMContentLoaded)
   let sidebarNav, contentArea, searchInput, searchCount, tooltip;
+  let rightPanel, rightPanelBody, rightPanelTitle, rightPanelToggle;
 
   // ============================================================================
   // DATA LOADING
@@ -505,6 +594,11 @@ html, body {
   // ============================================================================
 
   function renderWelcome() {
+    closeRightPanel(false);
+    rightPanelState.context = null;
+    rightPanelState.dismissedByUser = false;
+    rightPanelToggle.style.display = 'none';
+
     let stats = corpus.stats;
     let meta = corpus.metadata;
 
@@ -708,6 +802,11 @@ html, body {
 
     contentArea.innerHTML = html;
     contentArea.scrollTop = 0;
+
+    // Open chapter summary in right panel (unless user dismissed it)
+    if (!rightPanelState.dismissedByUser || rightPanelState.context === 'search') {
+      openRightPanel('chapter-summary', ch);
+    }
   }
 
   function renderPage(pg) {
@@ -797,6 +896,7 @@ html, body {
 
     if (!searchQuery || searchQuery.length < 2) {
       searchCount.textContent = '';
+      if (rightPanelState.context === 'search') closeRightPanel(false);
       if (activeChapterId) renderChapter(activeChapterId);
       return;
     }
@@ -821,6 +921,13 @@ html, body {
     searchCount.textContent = totalMatches > 0
       ? totalMatches + ' match' + (totalMatches !== 1 ? 'es' : '') + ' in ' + chapterMatches.length + ' chapter' + (chapterMatches.length !== 1 ? 's' : '')
       : 'No matches';
+
+    // Open search results in right panel
+    if (chapterMatches.length > 0 && !rightPanelState.dismissedByUser) {
+      openRightPanel('search', chapterMatches);
+    } else if (chapterMatches.length === 0) {
+      closeRightPanel(false);
+    }
 
     if (activeChapterId) {
       renderChapter(activeChapterId);
@@ -894,6 +1001,210 @@ html, body {
 
   function hideTooltip() {
     tooltip.classList.remove('visible');
+  }
+
+  // ============================================================================
+  // RIGHT PANEL
+  // ============================================================================
+
+  function openRightPanel(context, data) {
+    rightPanelState.open = true;
+    rightPanelState.context = context;
+    rightPanelState.data = data;
+    rightPanelState.dismissedByUser = false;
+
+    rightPanel.classList.add('open');
+    rightPanelToggle.style.display = 'none';
+
+    let titles = { 'search': 'Search Results', 'reference': 'Reference Detail', 'chapter-summary': 'Chapter Summary' };
+    rightPanelTitle.textContent = titles[context] || 'Details';
+
+    if (context === 'search') renderRightPanelSearch(data);
+    else if (context === 'reference') renderRightPanelReference(data);
+    else if (context === 'chapter-summary') renderRightPanelChapterSummary(data);
+  }
+
+  function closeRightPanel(userDismissed) {
+    rightPanelState.open = false;
+    rightPanel.classList.remove('open');
+    if (userDismissed) {
+      rightPanelState.dismissedByUser = true;
+      if (rightPanelState.context) rightPanelToggle.style.display = '';
+    } else {
+      rightPanelToggle.style.display = 'none';
+    }
+  }
+
+  function toggleRightPanel() {
+    if (rightPanelState.open) closeRightPanel(true);
+    else if (rightPanelState.context) openRightPanel(rightPanelState.context, rightPanelState.data);
+  }
+
+  // --- Search results panel ---
+  function renderRightPanelSearch(chapterMatches) {
+    let html = '<div style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">' +
+      'Chapters matching \u201c' + escapeHtml(searchQuery) + '\u201d</div>';
+
+    for (let i = 0; i < chapterMatches.length; i++) {
+      let cm = chapterMatches[i];
+      let ch = cm.chapter;
+
+      // Extract a snippet from the first matching page
+      let snippet = '';
+      let regex = new RegExp(escapeRegex(searchQuery), 'gi');
+      for (let j = 0; j < ch.pages.length; j++) {
+        let match = regex.exec(ch.pages[j].text);
+        if (match) {
+          let start = Math.max(0, match.index - 40);
+          let end = Math.min(ch.pages[j].text.length, match.index + match[0].length + 60);
+          snippet = (start > 0 ? '\u2026' : '') +
+            ch.pages[j].text.slice(start, end).replace(/\n/g, ' ') +
+            (end < ch.pages[j].text.length ? '\u2026' : '');
+          break;
+        }
+      }
+
+      html += '<div class="rp-search-chapter" data-chapter-id="' + escapeAttr(ch.id) + '">' +
+        '<div class="rp-search-chapter-title">' + escapeHtml(ch.title) + '</div>' +
+        '<div class="rp-search-chapter-count">' + cm.count + ' match' + (cm.count !== 1 ? 'es' : '') +
+          ' \u00b7 pp.\u00a0' + ch.start_page + '\u2013' + ch.end_page + '</div>' +
+        (snippet ? '<div class="rp-search-snippet">' + highlightSnippet(snippet, searchQuery) + '</div>' : '') +
+      '</div>';
+    }
+
+    rightPanelBody.innerHTML = html;
+
+    rightPanelBody.querySelectorAll('.rp-search-chapter').forEach(function(el) {
+      el.addEventListener('click', function() { renderChapter(el.dataset.chapterId); });
+    });
+  }
+
+  function highlightSnippet(snippet, query) {
+    let regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
+    return escapeHtml(snippet).replace(regex, '<mark class="search-highlight">$1</mark>');
+  }
+
+  // --- Reference detail panel ---
+  function renderRightPanelReference(data) {
+    let entityType = null;
+    for (let i = 0; i < corpus.entity_types.length; i++) {
+      if (corpus.entity_types[i].id === data.type) { entityType = corpus.entity_types[i]; break; }
+    }
+    let typeLabel = entityType ? entityType.label : data.type;
+    let typeColor = entityType ? entityType.color : '#999';
+    let typeDesc = entityType ? entityType.description : '';
+
+    let epistemicType = null;
+    for (let j = 0; j < corpus.epistemic_types.length; j++) {
+      if (corpus.epistemic_types[j].id === data.epistemic) { epistemicType = corpus.epistemic_types[j]; break; }
+    }
+
+    let html = '<div class="rp-section-title" style="color:' + escapeAttr(typeColor) + '">' + escapeHtml(typeLabel) + '</div>' +
+      '<div class="rp-ref-text" style="border-left-color:' + escapeAttr(typeColor) + '">' + escapeHtml(data.text) + '</div>' +
+      '<dl class="rp-meta">' +
+        '<dt>Category</dt><dd>' + escapeHtml(typeDesc) + '</dd>' +
+        '<dt>Confidence</dt><dd>' + Math.round(data.confidence * 100) + '% \u2014 ' +
+          escapeHtml(data.epistemic) + (epistemicType ? ' (' + escapeHtml(epistemicType.description) + ')' : '') + '</dd>' +
+        '<dt>Detection</dt><dd>' + escapeHtml(data.method) + '</dd>' +
+        '<dt>Location</dt><dd>Page ' + escapeHtml(String(data.page)) + '</dd>' +
+      '</dl>';
+
+    // Related references of the same type in this chapter
+    let ch = null;
+    for (let ci = 0; ci < corpus.chapters.length; ci++) {
+      if (corpus.chapters[ci].id === activeChapterId) { ch = corpus.chapters[ci]; break; }
+    }
+    if (ch) {
+      let related = [];
+      for (let pi = 0; pi < ch.pages.length; pi++) {
+        let pg = ch.pages[pi];
+        for (let ri = 0; ri < pg.references.length; ri++) {
+          let ref = pg.references[ri];
+          if (ref.text !== data.text && ref.type === data.type) {
+            related.push({ text: ref.text, page: pg.page });
+          }
+        }
+      }
+      if (related.length > 0) {
+        html += '<div style="margin-top:20px;"><div class="rp-section-title">Related in this chapter</div><ul class="rp-list">';
+        for (let rr = 0; rr < related.length; rr++) {
+          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(typeColor) + '">' +
+            escapeHtml(related[rr].text) + ' <span style="color:var(--text-muted);font-size:11px">(p.\u00a0' + related[rr].page + ')</span></li>';
+        }
+        html += '</ul></div>';
+      }
+
+      // All references on this page
+      let samePage = [];
+      for (let sp = 0; sp < ch.pages.length; sp++) {
+        if (String(ch.pages[sp].page) === String(data.page)) { samePage = ch.pages[sp].references; break; }
+      }
+      if (samePage.length > 1) {
+        html += '<div style="margin-top:20px;"><div class="rp-section-title">All on page ' + escapeHtml(String(data.page)) + '</div><ul class="rp-list">';
+        for (let ap = 0; ap < samePage.length; ap++) {
+          let sr = samePage[ap];
+          let srType = null;
+          for (let sti = 0; sti < corpus.entity_types.length; sti++) {
+            if (corpus.entity_types[sti].id === sr.type) { srType = corpus.entity_types[sti]; break; }
+          }
+          let srColor = srType ? srType.color : '#999';
+          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(srColor) + '">' +
+            escapeHtml(sr.text) + ' <span style="color:var(--text-muted);font-size:11px">(' + escapeHtml(srType ? srType.label : sr.type) + ')</span></li>';
+        }
+        html += '</ul></div>';
+      }
+    }
+
+    rightPanelBody.innerHTML = html;
+  }
+
+  // --- Chapter summary panel ---
+  function renderRightPanelChapterSummary(ch) {
+    let html = '<div style="font-size:14px;font-weight:600;margin-bottom:4px;">' + escapeHtml(ch.title) + '</div>' +
+      '<div style="font-size:12px;color:var(--text-muted);margin-bottom:16px;">' +
+        escapeHtml(ch.title_en) + ' \u2014 pp.\u00a0' + ch.start_page + '\u2013' + ch.end_page + '</div>';
+
+    let rc = ch.reference_counts;
+    let totalRefs = 0;
+    for (let k in rc) { if (rc.hasOwnProperty(k)) totalRefs += rc[k]; }
+
+    html += '<div class="rp-section-title">References by type</div>';
+    if (totalRefs === 0) {
+      html += '<div style="font-size:12px;color:var(--text-muted);padding:8px 0;">No references detected.</div>';
+    } else {
+      for (let i = 0; i < corpus.entity_types.length; i++) {
+        let t = corpus.entity_types[i];
+        let count = rc[t.id] || 0;
+        if (count > 0) {
+          html += '<div class="rp-stat-row">' +
+            '<span style="display:flex;align-items:center;gap:6px;"><span class="dot" style="background:' + escapeAttr(t.color) + '"></span>' + escapeHtml(t.label) + '</span>' +
+            '<span style="font-weight:600;">' + count + '</span></div>';
+        }
+      }
+      html += '<div class="rp-stat-row" style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border-color);">' +
+        '<span>Total</span><span style="font-weight:600;">' + totalRefs + '</span></div>';
+    }
+
+    html += '<div style="margin-top:20px;"><div class="rp-section-title">Pages</div>';
+    for (let pi = 0; pi < ch.pages.length; pi++) {
+      let pg = ch.pages[pi];
+      let pgRefs = pg.references.length;
+      html += '<div class="rp-list-item" data-page="' + pg.page + '" style="display:flex;justify-content:space-between;">' +
+        '<span>Page ' + pg.page + '</span>' +
+        '<span style="color:var(--text-muted);font-size:11px;">' + pgRefs + ' ref' + (pgRefs !== 1 ? 's' : '') + '</span></div>';
+    }
+    html += '</div>';
+
+    rightPanelBody.innerHTML = html;
+
+    // Page items scroll to that page in main content
+    rightPanelBody.querySelectorAll('.rp-list-item[data-page]').forEach(function(el) {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', function() {
+        let pageEl = document.getElementById('page-' + el.dataset.page);
+        if (pageEl) pageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
   }
 
   // ============================================================================
@@ -975,6 +1286,32 @@ html, body {
     contentArea.addEventListener('mouseout', function (e) {
       if (e.target.closest('.ref-highlight')) hideTooltip();
     });
+
+    // Click a reference highlight to open detail in right panel
+    contentArea.addEventListener('click', function (e) {
+      let ref = e.target.closest('.ref-highlight');
+      if (!ref) return;
+      let pageBlock = ref.closest('.page-block');
+      openRightPanel('reference', {
+        type: ref.dataset.type,
+        text: ref.dataset.text,
+        confidence: parseFloat(ref.dataset.confidence),
+        epistemic: ref.dataset.epistemic,
+        method: ref.dataset.method,
+        page: pageBlock ? pageBlock.id.replace('page-', '') : '?'
+      });
+    });
+
+    // Right panel controls
+    document.getElementById('rightPanelClose').addEventListener('click', function () {
+      closeRightPanel(true);
+    });
+    rightPanelToggle.addEventListener('click', function () {
+      toggleRightPanel();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && rightPanelState.open) closeRightPanel(true);
+    });
   }
 
   // ============================================================================
@@ -1005,6 +1342,10 @@ html, body {
     searchInput = document.querySelector('.search-box input');
     searchCount = document.querySelector('.search-results-count');
     tooltip = document.querySelector('.ref-tooltip');
+    rightPanel = document.getElementById('rightPanel');
+    rightPanelBody = document.getElementById('rightPanelBody');
+    rightPanelTitle = document.querySelector('.right-panel-title');
+    rightPanelToggle = document.getElementById('rightPanelToggle');
 
     loadCorpus();
   });
