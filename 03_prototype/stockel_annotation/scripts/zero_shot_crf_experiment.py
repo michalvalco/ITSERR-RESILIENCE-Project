@@ -49,6 +49,21 @@ DEFAULT_INPUT_DIR = Path(__file__).parent.parent / "data" / "normalized"
 DEFAULT_OUTPUT_DIR = Path(__file__).parent.parent / "data" / "zero_shot_results"
 
 
+def strip_ref_tags(text: str) -> str:
+    """Remove <ref type="...">...</ref> and structural XML tags from normalised text.
+
+    normalize_text.py injects XML-like tags (e.g. <ref type="biblical">Rom. 5</ref>)
+    into the normalised output.  These tags are useful for human readers but must be
+    stripped before CRF tokenisation — otherwise the tokeniser produces garbage tokens
+    (<, ref, type=, ", biblical, ", >) that pollute the CRF feature context window.
+    """
+    text = re.sub(r'<ref type="[^"]*">', '', text)
+    text = re.sub(r'</ref>', '', text)
+    text = re.sub(r'<!-- CHAPTER: [^>]* -->\n?', '', text)
+    text = re.sub(r'<chapter title="[^"]*">\n?', '', text)
+    return text
+
+
 @dataclass
 class ExperimentStats:
     """Track experiment statistics."""
@@ -317,6 +332,10 @@ def run_experiment(
         content_lines = [l for l in lines if not l.startswith("#")]
         text = "\n".join(content_lines)
 
+        # Strip XML-like ref tags injected by normalize_text.py so the CRF
+        # tokeniser sees clean Latin text, not tag fragments.
+        text = strip_ref_tags(text)
+
         file_entities = []
         paragraphs = sentences_from_text(text)
 
@@ -380,6 +399,7 @@ def run_feature_demo(input_dir: Path) -> None:
     lines = text.split("\n")
     content_lines = [l for l in lines if not l.startswith("#")]
     text = "\n".join(content_lines)
+    text = strip_ref_tags(text)
 
     paragraphs = sentences_from_text(text)
     if not paragraphs:
