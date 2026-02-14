@@ -27,6 +27,14 @@ graph LR
     end
 
     Clean --> Annotation[INCEpTION / GNORM]
+
+    subgraph "Stage 4: ML Pipeline"
+        Annotation --> CAS["cas_to_bioes.py"]
+        CAS --> BIOES["BIOES Files"]
+        BIOES --> Train["CRF Training"]
+        Train --> Model["CRF Model"]
+        Model --> ZeroShot["zero_shot_crf_experiment.py"]
+    end
 ```
 
 ## Why Two Stages?
@@ -45,6 +53,8 @@ The pipeline separates OCR extraction from ALTO parsing for several reasons:
 | [`ocr_processor.py`](ocr-processor.md) | PDF | `.txt` and/or `.xml` | Tesseract OCR with Latin support |
 | [`extract_alto.py`](extract-alto.md) | ALTO XML | `.txt` + `.csv` | Parse structured XML, extract confidence |
 | [`normalize_text.py`](normalize-text.md) | Plaintext | Normalized text | Latin-specific normalization |
+| [`cas_to_bioes.py`](cas-to-bioes.md) | CAS XMI (ZIP) | `.bioes` files | INCEpTION export → BIOES for CRF |
+| [`zero_shot_crf_experiment.py`](zero-shot-experiment.md) | CRF model + text | Report + TSV | Cross-domain transfer experiment |
 
 ## Quick Start
 
@@ -69,8 +79,10 @@ All pipeline components have comprehensive test suites that run without external
 |------------|-------|------|
 | OCR processor | 34 | `tests/test_ocr_processor.py` |
 | ALTO parser | 55 | `tests/test_extract_alto.py` |
-| Text normalizer | 74 | `tests/test_normalize_text.py` |
-| **Total** | **163** | |
+| Text normalizer | 111 | `tests/test_normalize_text.py` |
+| CAS → BIOES converter | 48 | `tests/test_cas_to_bioes.py` |
+| Zero-shot CRF experiment | 48 | `tests/test_zero_shot_crf.py` |
+| **Total** | **296** | |
 
 Run all tests:
 
@@ -84,7 +96,7 @@ python -m pytest tests/ -v
 The OCR pipeline requires both **Python packages** and **system applications**. The system applications (Tesseract, Poppler) must be installed first since the Python packages are only wrappers around them.
 
 !!! tip "Tests run without system dependencies"
-    All 163 tests mock the OCR engine and run without Tesseract or Poppler installed. You only need the system packages to process actual PDFs.
+    All 296 tests mock external dependencies and run without Tesseract, Poppler, dkpro-cassis, or sklearn-crfsuite installed. You only need the optional packages to process actual data.
 
 ### Step 1: Install System Applications
 

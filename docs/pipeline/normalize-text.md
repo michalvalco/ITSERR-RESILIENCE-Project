@@ -70,8 +70,9 @@ In early modern Latin printing, `v` and `u` were often interchangeable. Common p
 Identifies and marks structural boundaries in the text:
 
 - **Chapter breaks** — Detected via `DE [TOPIC]` patterns (e.g., `DE PECCATO ORIGINIS`)
-- **Lemma boundaries** — Biblical, patristic, and Reformation references tagged
-- **Gloss markers** — Citation reference patterns identified
+- **Biblical references** — ~70 patterns covering the full biblical canon (OT Pentateuch through Revelation), including numbered books (e.g., `1. Cor. 13`, `2. Reg. 12`) and period/colon separator variants (`Rom. 5` and `Actor: 20`)
+- **Patristic references** — Augustine, Jerome, Chrysostom, Ambrose, Cyprian
+- **Reformation references** — Luther, Melanchthon, Calvin
 
 ### 7. Whitespace Normalization
 
@@ -88,10 +89,10 @@ Normalized files are written to `data/normalized/` with a detailed report:
 
 ## Test Suite
 
-74 comprehensive tests cover all normalization functions:
+111 comprehensive tests cover all normalization functions:
 
 ```bash
 python -m pytest tests/test_normalize_text.py -v
 ```
 
-Tests cover OCR noise removal, abbreviation expansion, long-s correction, structural marking, lemma boundaries, and case-preserving replacement.
+Tests cover OCR noise removal, abbreviation expansion, long-s correction, structural marking, biblical references (all canon sections including OT/NT, numbered books, separator variants), patristic references, reformation references, and case-preserving replacement.
