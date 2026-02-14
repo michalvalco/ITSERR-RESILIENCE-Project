@@ -146,23 +146,26 @@ The GNORM pipeline can likely transfer with minimal changes:
 Proposed directory structure:
 ```
 03_prototype/
-├── tests/                     # Test suites (163 tests)
+├── tests/                     # 11 test suites (414 tests)
 └── stockel_annotation/
     ├── README.md              # Project description
-    ├── PROGRESS.md            # Detailed progress tracking
+    ├── PROGRESS.md            # Detailed progress tracking (18/23 tasks, 78%)
     ├── data/
     │   ├── raw/               # Original PDF and OCR output
-    │   ├── cleaned/           # Preprocessed, normalized plain text
+    │   ├── cleaned/           # Preprocessed plain text (12 files)
     │   ├── alto/              # ALTO XML output (per-page, with confidence)
-    │   ├── normalized/        # Text after normalization pipeline
+    │   ├── normalized/        # Text after normalization pipeline (~18,900 words)
     │   └── annotations/       # INCEpTION exports
     ├── models/
     │   ├── gnorm_baseline/    # Reference model
     │   └── stockel_crf/       # Domain-adapted model
-    ├── scripts/
+    ├── scripts/               # 6 scripts, 3,603 LOC
     │   ├── ocr_processor.py   # Tesseract OCR (txt, ALTO XML, or both)
     │   ├── extract_alto.py    # ALTO XML → plaintext + confidence
-    │   └── normalize_text.py  # Text normalization (abbreviations, long-s)
+    │   ├── normalize_text.py  # Text normalization (abbreviations, long-s)
+    │   ├── cas_to_bioes.py    # INCEpTION CAS XMI → BIOES sequences
+    │   ├── zero_shot_crf_experiment.py  # Cross-domain CRF transfer
+    │   └── build_corpus_json.py  # Corpus Browser data generator
     ├── tools/
     │   └── inception/         # INCEpTION setup and annotation config
     └── results/

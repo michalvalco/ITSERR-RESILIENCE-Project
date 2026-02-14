@@ -34,7 +34,8 @@ Leonard Stöckel's *Annotationes in Locos communes* (1561) is an ideal test case
 - [x] INCEpTION annotation tool configured with custom layers
 - [x] [`cas_to_bioes.py`](cas-to-bioes.md) — CAS XMI → BIOES converter for CRF training
 - [x] [`zero_shot_crf_experiment.py`](zero-shot-experiment.md) — Cross-domain CRF experiment framework
-- [x] 296 unit tests across all pipeline components
+- [x] `build_corpus_json.py` — Corpus Browser data generator with detection provenance and epistemic classification
+- [x] 414 unit tests across 11 test suites
 
 ### In Progress
 
