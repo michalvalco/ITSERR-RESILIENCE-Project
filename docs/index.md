@@ -76,7 +76,7 @@ This project bridges **twenty years of theological hermeneutics** with **AI agen
 
 ### The Core Challenge
 
-We are adapting the **GNORM/CIC_annotation pipeline** -- originally built for detecting legal citations in medieval Canon law -- to **detect theological citations** (biblical, patristic, confessional) in 16th--18th century religious texts from the Kingdom of Hungary, starting with the works of Leonard Stöckel.
+We are adapting the **GNORM/CIC_annotation pipeline** -- originally built for detecting legal citations in medieval Canon law -- to **detect theological citations** (biblical, patristic, confessional) in 16th--18th century religious texts from the Kingdom of Hungary as a long-term goal, with the current pilot focusing on a 16th-century text by Leonard Stöckel.
 
 The philosophical question: *How should AI handle texts where some claims are verifiable, others require interpretation, and still others touch matters of faith that no algorithm can adjudicate?*
 
@@ -108,7 +108,7 @@ graph LR
 
 ### Stage 2: The OCR Pipeline (Built and Tested)
 
-Six production scripts process digitised pages into pipeline-ready annotated sequences:
+Six production scripts process digitized pages into pipeline-ready annotated sequences:
 
 | Script | LOC | Tests | Purpose |
 |--------|----:|------:|---------|
