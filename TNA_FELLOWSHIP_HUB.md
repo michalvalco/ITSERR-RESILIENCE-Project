@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** Deep read analysis of GEM and CHAT reports complete (`docs/resources/deep_read_GEM_CHAT_analysis.md`, also uploaded to PKB). Identified 8 surgical additions for live reference docs. Handoff prompt written for applying edits (`docs/resources/PROMPT_apply_deep_read_additions.md`).
-**Next:** Execute PROMPT_apply_deep_read_additions.md (apply 8 edits to `pipeline_technical_reference.md` and `workflow_diagram.md`). Then resume integrated synthesis — execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting. Prepare for next in-person meeting with Arianna/Marcello.
+**Active work:** All 8 deep read additions applied to live reference docs. `pipeline_technical_reference.md` updated with: ATON Framework identification (§7), tokenization alignment warning (§2), sparse training data note (§4), network scale (§1), Pavone & Imperia Talmud cross-domain precedent (§1), updated §8 TBD list. `workflow_diagram.md` updated with: Omeka S / W3C Web Annotation technical integration path (Stage 7), `digitaldecretals.com` reference (Stage 5). Both files verified clean.
+**Next:** Resume integrated synthesis — execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting. Prepare for next in-person meeting with Arianna/Marcello. Two PKB-only items remain as TODOs for synthesis drafting: (1) Pavone & Imperia Talmud paper addition to literature synthesis, (2) full Pavone visualization chapter citation.
 **Blockers:** None currently.
 
 ---
@@ -165,6 +165,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 13 Feb 2026 | Create `03_prototype/TECHNOLOGY_INVENTORY.md` as detailed reference | Too granular for HUB (per-script docs, 163 test results, OCR quality specifics). Lives alongside the code it documents; HUB points to it in Key Documents and Workstream 4 |
 | 14 Feb 2026 | Deep read analysis of GEM + CHAT reports | ~70% overlap with existing knowledge confirmed. New findings: ATON Framework identification (unconfirmed), Omeka S/IIIF integration details, Pavone & Imperia Talmud paper as cross-domain precedent. No corrections needed. 8 surgical additions queued for live docs. |
 | 14 Feb 2026 | Upload `deep_read_GEM_CHAT_analysis.md` to PKB | Provides cross-report analysis as persistent context for all sessions |
+| 14 Feb 2026 | Apply all 8 deep read additions to live docs | `pipeline_technical_reference.md` (6 edits) and `workflow_diagram.md` (2 edits). PKB copies remain as static snapshots — live docs on filesystem are now ahead of PKB. |
 
 ---
 

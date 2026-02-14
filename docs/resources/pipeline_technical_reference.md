@@ -2,7 +2,7 @@
 
 **Purpose:** Static reference card for Claude Project PKB. Quick-lookup for any technical conversation about the annotation pipeline and its adaptation for Protestant theological texts.  
 **Source:** Condensed from `CIC_annotation_Deep_Dive_Report.md` (567 lines), `workflow_diagram.md` (358 lines), `epistemic_modesty_framework.md`, and direct code inspection.  
-**Last updated:** February 13, 2026 (code inspection session: entry point, label handling, multi-type support)
+**Last updated:** February 14, 2026 (deep read additions applied: ATON identification, tokenization warning, Talmud precedent, network scale, sparse training note)
 
 ---
 
@@ -20,8 +20,10 @@ The CIC_annotation pipeline is a **six-layer hybrid system**, not a monolithic C
 | 6 | `merge_annotations.py` + `post_process.py` | Merge + correction | Unified output with `mark_source` provenance labels |
 
 ✅ **Key insight:** Rules and dictionaries override the CRF when they fire — precision over recall by design.  
-✅ **Performance:** 97.8% accuracy (CRF rich config), 41,784 legal references, 1.1 MB model, 21 min training on desktop CPU.  
+✅ **Performance:** 97.8% accuracy (CRF rich config), 41,784 legal references, 1.1 MB model, 21 min training on desktop CPU. The resulting citation network contains ~1,795 unique legal source nodes and ~41,784 reference edges — a scale that requires filtering/clustering for interactive visualization.  
 ✅ **Codebase:** ~1,200 lines Python across 16 files. CC BY 4.0 license.
+
+✅ **Cross-domain precedent:** Pavone & Imperia (2025), "GNORM: Challenges and Potential of a 3D Visualisation of the Babylonian Talmud" (in *The Digital Turn in Religious Studies*), demonstrates the GNORM team has already conceptualized extending the framework to non-canon-law religious corpora. This directly supports our adaptation to Protestant theological texts. OA link: `http://hdl.handle.net/10447/695218`.
 
 ---
 
@@ -77,6 +79,8 @@ Two paths for running the CIC pipeline on Stöckel text without retraining:
 **Path A (clean — recommended):** Import normalized text into INCEpTION as unannotated → export ZIP → run pipeline normally. This is how the system is designed to work and will be needed eventually anyway for the annotation workflow.
 
 **Path B (quick hack):** Write a small script using `dkpro-cassis` that creates a minimal CAS XMI ZIP from normalized plaintext — faking the INCEpTION export. Faster for a one-off zero-shot test, but produces a throwaway artifact.
+
+⚠️ **Tokenization alignment critical:** Whatever tokenization method the bridge script uses *must replicate* the tokenization behavior of `cas_to_bioes.py` / UIMA CAS XMI. If training data splits punctuation as separate tokens (standard CAS behavior), inference input must match. Use NLTK `WordPunctTokenizer` or inspect `cas_to_bioes.py`'s tokenization logic directly. Mismatch between training and inference tokenization will degrade CRF accuracy even on in-domain text.
 
 ### Original CIC Input Format
 
@@ -168,6 +172,10 @@ CIC pipeline starts from **manually transcribed DOCX** (`split_docx.py`), NOT fr
 | Transitions | `all_possible_transitions: [True, False]` |
 | States | `all_possible_states: [True, False]` |
 
+### Note on Sparse Training Data
+
+When training multi-type models where some label transitions may not appear in training data (e.g., no example of `B-HYMN → I-HYMN`), consider setting `CRF(all_possible_states=True, all_possible_transitions=True)` in `train_crfsuite.py`. This allows the model to learn zero-initialized weights for unseen transitions rather than treating them as impossible. Relevant for our 7-type schema with inevitably small per-type training sets. These parameters are already in the hyperparameter search space above (`[True, False]`), but should be forced to `True` when training data is sparse.
+
 ### Library
 
 ✅ `sklearn-crfsuite` wrapping `python-crfsuite` (CRFsuite by Okazaki).  
@@ -253,7 +261,7 @@ for token_marginals in sentence_marginals:
 | Character-level features | Historical orthographic variation (ſ/s, cz/č, etc.) | Medium | 🔧 Not started |
 | Multilingual handling | Latin/German/Czech code-switching within documents | High | 🔧 Not started |
 | OCR error impact | Unknown error rates on 16th-c. print | ❓ | Needs empirical testing |
-| 3D visualization | Mentioned in ITSERR docs; absent from CIC_annotation code | ❓ | Separate GNORM component? |
+| 3D visualization | Probable: **ATON Framework** (CNR ISPC, Bruno Fanini). Three.js frontend, Node.js backend, glTF/3D Tiles input, JSON config with SPARQL queries. GitHub: `phoenixbf/aton`. Also possible: 3DHOP/Nexus from CNR Visual Computing Lab. | ❓ | **Unconfirmed** — inferred from E-RIHS service listings and institutional alignment (GEM report triangulation). CHAT report suggests custom Three.js/WebGL may be more likely. Needs verification with Arianna. |
 | Multi-entity CRF | `cas_to_bioes.py` hardcodes `AN`; CRF itself is label-agnostic. Need ~20-line patch to `cas_to_bioes.py` to read `Tipo` field + new rules/abbreviations per type. See Section 3 for full per-file breakdown. | Medium | 🔧 Confirmed scope (Feb 13 code inspection) |
 
 ---
@@ -281,7 +289,7 @@ for token_marginals in sentence_marginals:
 - ~~Multi-entity type CRF performance vs. separate models~~ — ✅ Partially resolved: CRF will handle multiple types without code changes; open question is *empirical performance* with 7 types vs. separate per-type models
 - Match model `pre_post_len = 3` — was this optimized?
 - ~~ALTO XML integration~~ — ✅ Resolved: `ocr_processor.py` → `extract_alto.py` → `normalize_text.py` (78 tests passing)
-- 3D visualization component — what does it expect as input?
+- 3D visualization component — GEM report identifies **ATON Framework** (CNR ISPC, Bruno Fanini) as probable technology; CHAT report suggests custom Three.js/WebGL. **Ask Arianna:** Is the GNORM visualization built on ATON, 3DHOP, or a custom Three.js application? What input format (JSON config, SPARQL, static data)?
 - Gospel passage detection examples from CIC paper (empirical anchor for adaptation thesis)
 - Minimum training set size for acceptable CRF performance
 - `predict_marginals()` calibration quality

@@ -247,6 +247,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 - CIC_annotation produces a `LegalReferences.csv` cross-reference index (on Zenodo)
 - GNORM has a 3D visualisation component (mentioned in ITSERR docs, not yet seen)
 - Arianna demonstrated the GNORM prototype web interface at ariannapavone.com/gnorm/
+- Additionally, `digitaldecretals.com` appears associated with the GNORM project (possibly the text corpus or prototype interface; not yet verified)
 - We have no visualisation infrastructure set up yet
 
 **Planned initial representations:**
@@ -303,6 +304,18 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 - Output compatible with SNK's DIKDA/Kramerius 7
 - Metadata exportable in Dublin Core and MARC21
 - Alignment with FAIR data principles and 5-Star Open Data
+
+### Technical Integration Path (from GEM/CHAT report analysis, to be validated)
+
+Pipeline output → conversion script (`inference_to_csv.py` or `inference_to_iiif.py`) → two pathways:
+
+**Path 1: CSV Import (simpler).** Create CSV with columns mapped to W3C Web Annotation properties: `oa:hasTarget` (Omeka item ID or IIIF Canvas URI with `#xywh=` fragment for spatial selector), `oa:hasBody` (citation text or authority URI), `oa:motivatedBy` (e.g., `oa:identifying`). Import using Omeka S CSV Import module with the “Annotation” resource template. Requires Annotate module (Daniel Berthereau). Limitation: one body, one target per annotation.
+
+**Path 2: IIIF Annotation Lists (richer).** Generate JSON-LD files following IIIF Presentation API 3.0 — each page gets an AnnotationPage with Annotation items containing TextualBody and Canvas target with xywh selector. Requires IIIF Server module. More elegant for visual annotation overlay.
+
+**Decision needed:** Path 1 is simpler for bulk import; Path 2 is better for visual rendering. Can combine both (CSV for metadata, IIIF for visual layer).
+
+**Modules required:** Annotate, CSV Import, IIIF Server, IIIF Presentation. Omeka S v3.1+.
 
 **This stage is mostly WP4 of the APVV grant — long-term, not fellowship scope.**
 
