@@ -269,6 +269,55 @@ class TestExpandAbbreviations:
         expand_abbreviations(text, stats)
         assert stats.et_normalized >= 2
 
+    # -------------------------------------------------------------------------
+    # Expansion Log Tests (provenance for downstream Stage 4 Layer 2)
+    # -------------------------------------------------------------------------
+
+    def test_expansion_log_records_theological_abbreviation(self, stats):
+        """Expansion log should record theological abbreviation with original text."""
+        text = "dñs dixit"
+        expand_abbreviations(text, stats)
+        originals = [e["original"] for e in stats.expansion_log]
+        assert "dñs" in originals
+
+    def test_expansion_log_records_offset(self, stats):
+        """Expansion log entries should include character offset."""
+        text = "praefatio dñs dixit"
+        expand_abbreviations(text, stats)
+        dns_entries = [e for e in stats.expansion_log if e["original"] == "dñs"]
+        assert len(dns_entries) == 1
+        assert dns_entries[0]["offset"] == 10
+
+    def test_expansion_log_records_pattern(self, stats):
+        """Expansion log entries should include the regex pattern used."""
+        text = "corpus xpi"
+        expand_abbreviations(text, stats)
+        xpi_entries = [e for e in stats.expansion_log if e["original"] == "xpi"]
+        assert len(xpi_entries) == 1
+        assert xpi_entries[0]["pattern"] == r'\bxpi\b'
+
+    def test_expansion_log_records_tironian_et(self, stats):
+        """Tironian et expansions should also appear in the log."""
+        text = "hoc ez illud"
+        expand_abbreviations(text, stats)
+        originals = [e["original"] for e in stats.expansion_log]
+        assert "ez" in originals
+
+    def test_expansion_log_multiple_entries(self, stats):
+        """Multiple expansions in one text should each get a log entry."""
+        text = "Dñs et Xpi"
+        expand_abbreviations(text, stats)
+        assert len(stats.expansion_log) >= 2
+        originals = {e["original"] for e in stats.expansion_log}
+        assert "Dñs" in originals or "dñs" in originals
+        assert "Xpi" in originals or "xpi" in originals
+
+    def test_expansion_log_empty_for_no_matches(self, stats):
+        """No abbreviations means empty log."""
+        text = "plain Latin text without abbreviations"
+        expand_abbreviations(text, stats)
+        assert stats.expansion_log == []
+
 
 # =============================================================================
 # Long S Correction Tests
@@ -859,3 +908,4 @@ class TestConfiguration:
         assert stats.lemma_markers == 0
         assert stats.total_words_before == 0
         assert stats.total_words_after == 0
+        assert stats.expansion_log == []

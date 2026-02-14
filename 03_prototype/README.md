@@ -9,7 +9,7 @@ AI agent prototype development for the ITSERR/RESILIENCE project.
 ├── architecture/         # Design documents
 ├── code_notes/           # Technical decisions log
 ├── src/                  # Python agent source code (itserr_agent package)
-├── tests/                # Test suites (376 tests across 10 files)
+├── tests/                # Test suites (389 tests across 10 files)
 └── stockel_annotation/   # Stöckel corpus pilot study (GNORM adaptation)
 ```
 

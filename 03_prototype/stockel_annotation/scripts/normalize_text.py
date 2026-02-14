@@ -33,6 +33,9 @@ class NormalizationStats:
     lemma_markers: int = 0
     total_words_before: int = 0
     total_words_after: int = 0
+    # Structured log of every abbreviation expansion, for downstream provenance.
+    # Each entry: {"original": str, "expanded": str, "offset": int, "pattern": str}
+    expansion_log: list = field(default_factory=list)
 
 
 # =============================================================================
@@ -223,6 +226,18 @@ def expand_abbreviations(text: str, stats: NormalizationStats) -> str:
         return repl
 
     for pattern, expansion in ABBREVIATIONS.items():
+        # Log each match before substitution so offsets refer to the input text.
+        # This structured log enables downstream provenance tracking (e.g. Stage 4
+        # Layer 2 can record "detected via abbreviation dictionary" without
+        # re-scanning the already-expanded text).
+        for m in re.finditer(pattern, text, re.IGNORECASE):
+            stats.expansion_log.append({
+                "original": m.group(0),
+                "expanded": expansion,
+                "offset": m.start(),
+                "pattern": pattern,
+            })
+
         matches = len(re.findall(pattern, text, re.IGNORECASE))
 
         if pattern in tironian_patterns:

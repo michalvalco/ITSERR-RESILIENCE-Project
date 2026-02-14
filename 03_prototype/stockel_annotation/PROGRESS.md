@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** February 14, 2026 (cas_to_bioes, zero_shot_crf, build_corpus_json, corpus browser dashboard, 376 tests)
+**Last Updated:** February 14, 2026 (abbreviation expansion log, XML tag stripping, 389 tests)
 
 ---
 
@@ -113,7 +113,7 @@
   - Date completed: Jan 26, 2026
 
 - [x] **Unit tests for normalization script**
-  - [x] Created comprehensive test suite (111 tests)
+  - [x] Created comprehensive test suite (117 tests)
   - [x] Tests for OCR noise removal, abbreviation expansion, long-s correction
   - [x] Tests for structural element marking and lemma boundary identification
   - [x] Tests for case-insensitive matching with case-preserving replacement
@@ -335,15 +335,17 @@
 
 **Completed:**
 - Created `cas_to_bioes.py` — CAS XMI → BIOES converter for CRF training (48 tests)
-- Created `zero_shot_crf_experiment.py` — cross-domain transfer experiment script (49 tests)
-- Expanded `normalize_text.py` test suite from 74 → 111 tests (biblical books, patristic patterns)
+- Created `zero_shot_crf_experiment.py` — cross-domain transfer experiment script (56 tests)
+- Expanded `normalize_text.py` test suite from 74 → 117 tests (biblical books, patristic patterns, expansion log)
 - Created `build_corpus_json.py` — generates `corpus.json` with OCR-variant regex patterns
 - Corpus Browser: added dashboard (stat cards, reference type bar chart, chapter heatmap)
 - Corpus Browser: added three-column layout with collapsible right panel (search results, reference details, chapter summaries)
 - Entity detection: 31 references across 5 types (biblical, classical, patristic, confessional, reformation)
 - OCR-variant patterns added for patristic names (Auguflini, Ambrofij), confessional long-s (fymbolo), classical (Stoic, Epicurean)
 - Comprehensive documentation audit and update across all docs
-- **Total tests: 376 across 10 test files (all passing)**
+- Added `expansion_log` to NormalizationStats for abbreviation provenance tracking (Stage 4 Layer 2 readiness)
+- Fixed XML tag pollution in zero_shot_crf_experiment.py (strip_ref_tags before tokenisation)
+- **Total tests: 389 across 10 test files (all passing)**
 
 ---
 
@@ -403,11 +405,13 @@ Use this section to record important decisions, insights, and issues encountered
 | Feb 13, 2026 | Total tests | 163 tests across 3 test suites (74 + 55 + 34), all passing |
 | Feb 14, 2026 | cas_to_bioes.py | Created CAS XMI → BIOES converter with 48 unit tests |
 | Feb 14, 2026 | zero_shot_crf | Created cross-domain transfer experiment script with 49 unit tests |
-| Feb 14, 2026 | normalize_text tests | Expanded from 74 to 111 tests (biblical book detection, patristic, reformation patterns) |
+| Feb 14, 2026 | normalize_text tests | Expanded from 74 to 117 tests (biblical book detection, patristic, reformation patterns, expansion log) |
 | Feb 14, 2026 | build_corpus_json | Created corpus browser data generator with OCR-variant regex patterns |
 | Feb 14, 2026 | Corpus Browser | Dashboard with stat cards, bar charts, heatmap; three-column layout with collapsible detail panel |
 | Feb 14, 2026 | Entity detection | 31 references detected across 5 types: 13 biblical, 11 classical, 4 patristic, 2 confessional, 1 reformation |
-| Feb 14, 2026 | Total tests | **376 tests across 10 test suites**, all passing |
+| Feb 14, 2026 | Abbreviation provenance | Added `expansion_log` to NormalizationStats — records original, expanded, offset, pattern for each abbreviation expansion. Resolves abbreviation logic conflict for future Layer 2 |
+| Feb 14, 2026 | XML tag stripping | Added `strip_ref_tags()` to zero_shot_crf_experiment.py — prevents XML tag pollution in CRF feature context window |
+| Feb 14, 2026 | Total tests | **389 tests across 10 test suites**, all passing |
 
 ---
 
