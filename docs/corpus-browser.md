@@ -69,4 +69,4 @@ Stage 7: INTERACT   ⚡  This prototype
 3. **Enhanced detection** — integrate CRF predictions into the corpus browser
 4. **Citation network visualization** — D3.js graphs showing citation relationships
 
-*Last updated: 2026-02-14*
+*Last updated: February 14, 2026*
