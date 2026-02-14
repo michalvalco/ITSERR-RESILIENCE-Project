@@ -533,7 +533,11 @@ Picca, D., et al. (2024). "Emotional Hermeneutics: Exploring the Limits of AI fr
 
 Piotrowski, M. (2012). *Natural Language Processing for Historical Texts*. Synthesis Lectures on Human Language Technologies. Morgan & Claypool. Springer reprint: https://doi.org/10.1007/978-3-031-02146-6.
 
+Pope Leo XIV. (2025, 17 June). "Message to Participants in the Second Annual Conference on Artificial Intelligence, Ethics, and Corporate Governance." Vatican.va. Retrieved 14 February 2026 from https://www.vatican.va/content/leo-xiv/en/messages/pont-messages/2025/documents/20250617-messaggio-ia.html
+
 Pontifical Academy for Life (2020). "Rome Call for AI Ethics." Available at: https://romecall.org.
+
+Puccetti, G., Imperia, R., & Esuli, A. (2024). "GNORM Overview." *ERCIM News* 141.
 
 
 Rasmussen, P., et al. (2025). "Zep: A Temporal Knowledge Graph Architecture for Agent Memory." arXiv:2501.13956.
@@ -541,6 +545,10 @@ Rasmussen, P., et al. (2025). "Zep: A Temporal Knowledge Graph Architecture for 
 Riemenschneider, F. & Frank, A. (2023). "Exploring Large Language Models for Classical Philology." In *Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023)*, pp. 15181–15199.
 
 Romele, A., Severo, M., & Furia, P. (2020). "Digital Hermeneutics: From Interpreting with Machines to Interpretational Machines." *AI & Society* 35(1): 73–86. DOI: 10.1007/s00146-018-0856-2.
+
+Sefaria. (2024–2025). "Sefaria MCP Server: FastMCP Server for Sefaria." GitHub repository. Retrieved 14 February 2026 from https://github.com/Sefaria/sefaria-mcp
+
+Straka, M., Straková, J., & Gamba, F. (2024). "ÚFAL LatinPipe at EvaLatin 2024: Morphosyntactic Analysis of Latin." In *Proceedings of the Third Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA) @ LREC-COLING-2024* (pp. 207–214). ELRA and ICCL. arXiv:2404.05839.
 
 "Scaling Hermeneutics: A Guide to Qualitative Coding with LLMs for Reflexive Content Analysis" (2025). *EPJ Data Science*. DOI: 10.1140/epjds/s13688-025-00548-8.
 
@@ -559,6 +567,10 @@ Valčo, M. (2024). "Impact of Social Media Platforms' AI Algorithms on Human Val
 Valčo, M. (forthcoming). "Beyond Algorethics: Toward a Personalist Critique of AI Recommender Systems." arXiv:2507.16430.
 
 Valčo, M. & Bírová, J. (2024). "Freedom and Responsibility in Jean-Paul Sartre's Existentialist Philosophy: A Christian Personalist Critique." *Philosophia* 25(1). DOI: 10.46992/pijp.25.1.a.1.
+
+Valleriani, M., Federau, L., & Nicolaescu, O. (2019). "The Emergence of Epistemic Communities in the *Sphaera* Corpus: Mechanisms of Knowledge Evolution." *Journal of Historical Network Research* 3(1): 50–91. DOI: 10.25517/jhnr.v3i1.63.
+
+Vesanto, A., Nivala, A., Salakoski, T., Salmi, H., & Ginter, F. (2017). "Applying BLAST to Text Reuse Detection in Finnish Newspapers and Journals, 1771–1910." In *Proceedings of the NoDaLiDa 2017 Workshop on Processing Historical Language* (pp. 54–58). Linköping University Electronic Press.
 
 Dicastery for the Doctrine of the Faith. (2024). *Dignitas Infinita: Declaration on Human Dignity* (2 April 2024). Vatican.va. Retrieved 14 February 2026 from https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240402_dignitas-infinita_en.html
 
@@ -602,10 +614,7 @@ Sefaria: A Living Library of Jewish Texts. https://www.sefaria.org
 
 The following sources, drawn primarily from Source [C] (ChatGPT report), could not be fully verified during the synthesis period. They are cited in the text on the basis of the source report's descriptions and require independent bibliographic confirmation:
 
-- **Adeboye, A., et al. (2025)** — AI and indigenous African religion, encoding oral divination verses. Venue and DOI unconfirmed.
-- **"AI as Interpretive Aid in Qur'anic Stylistics" (2025)** — Referenced in Section 5.3 for the *i'jaz* doctrine discussion. Author(s), venue, and DOI unconfirmed. Not included in the bibliography pending verification.
 - **Zimmermann, N. (2021)** — Volume and page numbers for *Christian Scholar's Review* require confirmation.
 - **Campbell, H.A. (2025)** — Conference presentation; no published paper identified.
 - **Le Duc, A. (2026)** — Keynote address; no published paper from this specific event identified.
-- **Somanunnithan (2025)** — Grey literature (CrewAI demonstration); referenced in draft text but not included in bibliography as it lacks peer-reviewed publication status.
 
