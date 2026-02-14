@@ -312,6 +312,38 @@ class TestExpandAbbreviations:
         assert "Dñs" in originals or "dñs" in originals
         assert "Xpi" in originals or "xpi" in originals
 
+    def test_expansion_log_expanded_lowercase(self, stats):
+        """Expanded field should contain canonical lowercase form for lowercase input."""
+        text = "dñs dixit"
+        expand_abbreviations(text, stats)
+        dns_entries = [e for e in stats.expansion_log if e["original"] == "dñs"]
+        assert len(dns_entries) == 1
+        assert dns_entries[0]["expanded"] == "dominus"
+
+    def test_expansion_log_expanded_case_preserved(self, stats):
+        """Expanded field should contain case-preserved form for uppercase input."""
+        text = "Dñs dixit"
+        expand_abbreviations(text, stats)
+        dns_entries = [e for e in stats.expansion_log if e["original"] == "Dñs"]
+        assert len(dns_entries) == 1
+        assert dns_entries[0]["expanded"] == "Dominus"
+
+    def test_expansion_log_expanded_christi(self, stats):
+        """Expanded field should contain 'Christi' for uppercase 'Xpi'."""
+        text = "corpus Xpi"
+        expand_abbreviations(text, stats)
+        xpi_entries = [e for e in stats.expansion_log if e["original"] == "Xpi"]
+        assert len(xpi_entries) == 1
+        assert xpi_entries[0]["expanded"] == "Christi"
+
+    def test_expansion_log_expanded_tironian(self, stats):
+        """Expanded field for Tironian et should be 'et'."""
+        text = "hoc ez illud"
+        expand_abbreviations(text, stats)
+        ez_entries = [e for e in stats.expansion_log if e["original"] == "ez"]
+        assert len(ez_entries) == 1
+        assert ez_entries[0]["expanded"] == "et"
+
     def test_expansion_log_empty_for_no_matches(self, stats):
         """No abbreviations means empty log."""
         text = "plain Latin text without abbreviations"

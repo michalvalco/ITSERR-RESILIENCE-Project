@@ -2,7 +2,7 @@
 
 **Purpose:** Track progress on pre-fellowship preparation for the Stöckel annotation pilot study
 **Deadline:** February 10, 2026 (Fellowship start)
-**Last Updated:** February 14, 2026 (abbreviation expansion log, XML tag stripping, 389 tests)
+**Last Updated:** February 14, 2026 (expansion_log case-preservation fix, 393 tests)
 
 ---
 
@@ -113,7 +113,7 @@
   - Date completed: Jan 26, 2026
 
 - [x] **Unit tests for normalization script**
-  - [x] Created comprehensive test suite (117 tests)
+  - [x] Created comprehensive test suite (121 tests)
   - [x] Tests for OCR noise removal, abbreviation expansion, long-s correction
   - [x] Tests for structural element marking and lemma boundary identification
   - [x] Tests for case-insensitive matching with case-preserving replacement
@@ -336,7 +336,7 @@
 **Completed:**
 - Created `cas_to_bioes.py` — CAS XMI → BIOES converter for CRF training (48 tests)
 - Created `zero_shot_crf_experiment.py` — cross-domain transfer experiment script (56 tests)
-- Expanded `normalize_text.py` test suite from 74 → 117 tests (biblical books, patristic patterns, expansion log)
+- Expanded `normalize_text.py` test suite from 74 → 121 tests (biblical books, patristic patterns, expansion log, expanded-field verification)
 - Created `build_corpus_json.py` — generates `corpus.json` with OCR-variant regex patterns
 - Corpus Browser: added dashboard (stat cards, reference type bar chart, chapter heatmap)
 - Corpus Browser: added three-column layout with collapsible right panel (search results, reference details, chapter summaries)
@@ -345,7 +345,8 @@
 - Comprehensive documentation audit and update across all docs
 - Added `expansion_log` to NormalizationStats for abbreviation provenance tracking (Stage 4 Layer 2 readiness)
 - Fixed XML tag pollution in zero_shot_crf_experiment.py (strip_ref_tags before tokenisation)
-- **Total tests: 389 across 10 test files (all passing)**
+- Fixed `expansion_log` to store actual case-preserved and backreference-resolved expansions (not canonical form)
+- **Total tests: 393 across 10 test files (all passing)**
 
 ---
 
@@ -411,7 +412,8 @@ Use this section to record important decisions, insights, and issues encountered
 | Feb 14, 2026 | Entity detection | 31 references detected across 5 types: 13 biblical, 11 classical, 4 patristic, 2 confessional, 1 reformation |
 | Feb 14, 2026 | Abbreviation provenance | Added `expansion_log` to NormalizationStats — records original, expanded, offset, pattern for each abbreviation expansion. Resolves abbreviation logic conflict for future Layer 2 |
 | Feb 14, 2026 | XML tag stripping | Added `strip_ref_tags()` to zero_shot_crf_experiment.py — prevents XML tag pollution in CRF feature context window |
-| Feb 14, 2026 | Total tests | **389 tests across 10 test suites**, all passing |
+| Feb 14, 2026 | expansion_log fix | `expanded` field now stores actual case-preserved text (e.g., "Dominus" not "dominus") and resolves backreferences. 4 new tests for expanded-field verification |
+| Feb 14, 2026 | Total tests | **393 tests across 10 test suites**, all passing |
 
 ---
 

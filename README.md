@@ -46,7 +46,7 @@ The same MkDocs site powers the repository webpage on GitHub Pages.
 ├── 02_writing/               # Written deliverables
 │   ├── working_paper/        # Draft sections
 │   └── blog_post/            # ITSERR blog content
-├── 03_prototype/             # AI agent prototype (389 tests)
+├── 03_prototype/             # AI agent prototype (393 tests)
 │   ├── src/                  # Python agent source (itserr_agent package)
 │   ├── tests/                # 10 test suites
 │   ├── architecture/         # Design documents
