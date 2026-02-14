@@ -1075,13 +1075,31 @@ html, body {
     rightPanelBody.innerHTML = html;
 
     rightPanelBody.querySelectorAll('.rp-search-chapter').forEach(function(el) {
+      el.setAttribute('role', 'button');
+      el.setAttribute('tabindex', '0');
       el.addEventListener('click', function() { renderChapter(el.dataset.chapterId); });
+      el.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          renderChapter(el.dataset.chapterId);
+        }
+      });
     });
   }
 
   function highlightSnippet(snippet, query) {
-    let regex = new RegExp('(' + escapeRegex(query) + ')', 'gi');
-    return escapeHtml(snippet).replace(regex, '<mark class="search-highlight">$1</mark>');
+    if (!query) return escapeHtml(snippet);
+    let regex = new RegExp(escapeRegex(query), 'gi');
+    let result = '';
+    let lastIndex = 0;
+    let match;
+    while ((match = regex.exec(snippet)) !== null) {
+      result += escapeHtml(snippet.slice(lastIndex, match.index));
+      result += '<mark class="search-highlight">' + escapeHtml(match[0]) + '</mark>';
+      lastIndex = match.index + match[0].length;
+    }
+    result += escapeHtml(snippet.slice(lastIndex));
+    return result;
   }
 
   // --- Reference detail panel ---
@@ -1128,7 +1146,7 @@ html, body {
       if (related.length > 0) {
         html += '<div style="margin-top:20px;"><div class="rp-section-title">Related in this chapter</div><ul class="rp-list">';
         for (let rr = 0; rr < related.length; rr++) {
-          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(typeColor) + '">' +
+          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(typeColor) + ';cursor:default;">' +
             escapeHtml(related[rr].text) + ' <span style="color:var(--text-muted);font-size:11px">(p.\u00a0' + related[rr].page + ')</span></li>';
         }
         html += '</ul></div>';
@@ -1148,7 +1166,7 @@ html, body {
             if (corpus.entity_types[sti].id === sr.type) { srType = corpus.entity_types[sti]; break; }
           }
           let srColor = srType ? srType.color : '#999';
-          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(srColor) + '">' +
+          html += '<li class="rp-list-item" style="border-left-color:' + escapeAttr(srColor) + ';cursor:default;">' +
             escapeHtml(sr.text) + ' <span style="color:var(--text-muted);font-size:11px">(' + escapeHtml(srType ? srType.label : sr.type) + ')</span></li>';
         }
         html += '</ul></div>';
@@ -1199,10 +1217,19 @@ html, body {
 
     // Page items scroll to that page in main content
     rightPanelBody.querySelectorAll('.rp-list-item[data-page]').forEach(function(el) {
+      el.setAttribute('role', 'button');
+      el.setAttribute('tabindex', '0');
       el.style.cursor = 'pointer';
-      el.addEventListener('click', function() {
+      function scrollToPage() {
         let pageEl = document.getElementById('page-' + el.dataset.page);
         if (pageEl) pageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      el.addEventListener('click', scrollToPage);
+      el.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          scrollToPage();
+        }
       });
     });
   }
