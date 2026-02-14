@@ -11,11 +11,11 @@
 [![Documentation](https://img.shields.io/badge/docs-MkDocs%20Material-blue.svg)](https://michalvalco.github.io/ITSERR-RESILIENCE-Project/)
 [![Tests](https://img.shields.io/badge/tests-414%20passing-brightgreen.svg)](#test-coverage)
 [![Python](https://img.shields.io/badge/python-3.11+-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Fellowship](https://img.shields.io/badge/ITSERR%20TNA-UniPa%202026-blueviolet.svg)](#fellowship)
+[![Fellowship](https://img.shields.io/badge/ITSERR%20TNA-UniPa%202026-blueviolet.svg)](#at-a-glance)
 
 ---
 
-**Adapting the GNORM/CIC annotation pipeline** — originally built for detecting legal citations in medieval Canon law — **to detect theological citations** (biblical, patristic, confessional) **in 16th--18th century religious texts from the Kingdom of Hungary**, starting with the works of Leonard Stockel.
+**Adapting the GNORM/CIC annotation pipeline** — originally built for detecting legal citations in medieval Canon law — **to detect theological citations** (biblical, patristic, confessional) **in 16th--18th century religious texts from the Kingdom of Hungary** as a long-term goal, with the current pilot focusing on a 16th-century text by Leonard Stockel.
 
 </div>
 
@@ -29,7 +29,7 @@
 | **Period** | February 10--27, 2026 |
 | **Fellow** | Prof. Michal Valco (Comenius University Bratislava, ELTF) |
 | **Hosts** | Dr. Arianna Maria Pavone & Marcello Costa (UniPa Software Lab) |
-| **Status** | Day 5 of 14 -- Pipeline documentation complete, working paper drafted |
+| **Status** | Day 5 of 18 -- Pipeline documentation complete, working paper drafted |
 | **Live Docs** | [michalvalco.github.io/ITSERR-RESILIENCE-Project](https://michalvalco.github.io/ITSERR-RESILIENCE-Project/) |
 
 ---
@@ -68,7 +68,7 @@ The core technical contribution follows Marcello Costa's data processing framewo
 
 ### Stage 2: Parse -- The OCR Pipeline (Built and Tested)
 
-Six production scripts process digitised pages into pipeline-ready annotated sequences:
+Six production scripts process digitized pages into pipeline-ready annotated sequences:
 
 | Script | LOC | Tests | Purpose |
 |--------|----:|------:|---------|
