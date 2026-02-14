@@ -17,11 +17,25 @@ This is a **Layer 1 prototype** — the first stage of the GNORM adaptation pipe
 
 | Feature | Description |
 |---------|-------------|
-| **Hierarchical navigation** | Browse by chapter (*locus*): PRAEFATIO, DE DEO, DE TRINITATE, etc. |
-| **Rule-based entity detection** | Biblical, patristic, reformation, classical, and confessional references |
+| **Interactive dashboard** | Stat cards, reference type bar chart, and chapter reference density heatmap on the welcome screen |
+| **Three-column layout** | Text in the center, chapter navigation on the left, collapsible detail panel on the right |
+| **Hierarchical navigation** | Browse by chapter (*locus*): title page, PRAEFATIO, DE DEO, DE TRINITATE, etc. (10 chapters) |
+| **Rule-based entity detection** | 31 references across 5 types with OCR-variant pattern matching |
 | **Epistemic indicators** | FACTUAL / INTERPRETIVE confidence levels on each detected reference |
-| **Full-text search** | Search across the entire corpus with result highlighting |
+| **Full-text search** | Search across the entire corpus with result highlighting and right-panel detail view |
 | **Entity type filtering** | Toggle visibility of different reference types |
+| **Reference detail panel** | Click any reference to see context, metadata, and related references in the right panel |
+
+### Detection Statistics
+
+| Entity Type | Count | Examples |
+|-------------|-------|----------|
+| Biblical | 13 | Psalm, Rom., Matth., Gen., Ioann. |
+| Classical | 11 | Stoicorum, Epicureorum, Aristotle |
+| Patristic | 4 | Augustini (incl. OCR variant Auguflini), Ambrosij |
+| Confessional | 2 | in Symbolo Niceno, in Symbolo Athanasij |
+| Reformation | 1 | Melanchthonis |
+| **Total** | **31** | |
 
 ## Pipeline Stage
 
@@ -39,9 +53,13 @@ Stage 7: INTERACT   ⚡  This prototype
 
 ## Technical Details
 
-- **Pure HTML/CSS/JS** — no build step, no framework dependencies
+- **Pure HTML/CSS/JS** — no build step, no framework dependencies, zero external libraries
 - **Client-side rendering** — all data loaded from a single `corpus.json` file
+- **CSS-only visualizations** — dashboard charts use CSS custom properties and flexbox (no D3/Chart.js)
+- **OCR-variant patterns** — regex accounts for 16th-century long-s OCR artifacts (e.g., `Auguflini` → Augustini, `fymbolo` → symbolo)
 - **Data generation** — `build_corpus_json.py` parses normalized text files with enhanced regex patterns
+- **Keyboard accessible** — heatmap rows, search results, and panel items support keyboard navigation
+- **XSS-safe** — all dynamic content escaped before innerHTML insertion
 - **Hosted on GitHub Pages** — alongside the MkDocs documentation
 
 ## Next Steps
@@ -51,4 +69,4 @@ Stage 7: INTERACT   ⚡  This prototype
 3. **Enhanced detection** — integrate CRF predictions into the corpus browser
 4. **Citation network visualization** — D3.js graphs showing citation relationships
 
-*Last updated: 2026-02-13*
+*Last updated: 2026-02-14*

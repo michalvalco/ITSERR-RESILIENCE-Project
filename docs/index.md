@@ -46,6 +46,14 @@
 
     [:octicons-arrow-right-24: Learn more](pipeline/overview.md)
 
+-   :material-book-search:{ .lg .middle } __Corpus Browser__
+
+    ---
+
+    Interactive prototype for browsing Stöckel's *Annotationes* with 31 detected references across 5 entity types
+
+    [:octicons-arrow-right-24: Try it](corpus-browser.md)
+
 </div>
 
 ## Project Overview
@@ -157,5 +165,5 @@ This research is supported by the ITSERR Transnational Access Fellowship program
 
 ---
 
-*Last updated: February 13, 2026*  
+*Last updated: February 14, 2026*
 *Part of the [RESILIENCE Research Infrastructure](https://www.resilience-ri.eu/)*

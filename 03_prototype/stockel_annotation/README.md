@@ -43,6 +43,9 @@ stockel_annotation/
 │   ├── ocr_processor.py   # Tesseract OCR extraction (txt, ALTO XML, or both)
 │   ├── extract_alto.py    # ALTO XML parser → plaintext + confidence scores
 │   ├── normalize_text.py  # Text normalization (abbreviations, long-s, structure)
+│   ├── cas_to_bioes.py    # INCEpTION CAS XMI → BIOES token tags for CRF
+│   ├── zero_shot_crf_experiment.py  # Cross-domain transfer experiment
+│   ├── build_corpus_json.py  # Generates corpus.json for Corpus Browser
 │   └── GNORM_PIPELINE_ANALYSIS.md  # Analysis of GNORM's CRF pipeline
 ├── tools/
 │   └── inception/         # INCEpTION setup and annotation configuration
@@ -56,7 +59,7 @@ stockel_annotation/
 
 | Text | Date | Genre | Citation Density | Status |
 |------|------|-------|------------------|--------|
-| *Annotationes in Locos communes* (2-3 chapters) | 1561 | Commentary | High | Pending selection |
+| *Annotationes in Locos communes* (3 chapters) | 1561 | Commentary | High | Selected (De Peccato Originis, De Iustificatione, De Lege et Evangelio) |
 | *Catechesis* | 1556 | Catechism | Medium | Baseline comparison |
 | *Postilla* (selected passages) | 1598 | Homiletical | Variable | Genre comparison |
 
@@ -135,9 +138,17 @@ Features: hyphenation handling, namespace auto-detection, encoding fallback (UTF
 
 | Test Suite | Tests | File |
 |------------|-------|------|
-| OCR processor | 34 | `tests/test_ocr_processor.py` |
+| Text normalizer | 111 | `tests/test_normalize_text.py` |
 | ALTO parser | 55 | `tests/test_extract_alto.py` |
-| Text normalizer | 74 | `tests/test_normalize_text.py` |
+| Zero-shot CRF experiment | 49 | `tests/test_zero_shot_crf.py` |
+| CAS → BIOES converter | 48 | `tests/test_cas_to_bioes.py` |
+| OCR processor | 34 | `tests/test_ocr_processor.py` |
+| GNORM client | 18 | `tests/test_gnorm.py` |
+| Integration | 17 | `tests/test_integration.py` |
+| Memory streams | 17 | `tests/test_streams.py` |
+| Reflection | 14 | `tests/test_reflection.py` |
+| Epistemic classifier | 13 | `tests/test_epistemic.py` |
+| **Total** | **376** | |
 
 ---
 
@@ -157,4 +168,4 @@ See **[PROGRESS.md](PROGRESS.md)** for detailed checklist and status updates.
 ---
 
 *Part of the ITSERR Transnational Access Fellowship project*
-*Last updated: February 13, 2026*
+*Last updated: February 14, 2026*

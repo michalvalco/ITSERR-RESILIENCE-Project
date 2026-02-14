@@ -77,12 +77,17 @@ All pipeline components have comprehensive test suites that run without external
 
 | Test Suite | Tests | File |
 |------------|-------|------|
-| OCR processor | 34 | `tests/test_ocr_processor.py` |
-| ALTO parser | 55 | `tests/test_extract_alto.py` |
 | Text normalizer | 111 | `tests/test_normalize_text.py` |
+| ALTO parser | 55 | `tests/test_extract_alto.py` |
+| Zero-shot CRF experiment | 49 | `tests/test_zero_shot_crf.py` |
 | CAS → BIOES converter | 48 | `tests/test_cas_to_bioes.py` |
-| Zero-shot CRF experiment | 48 | `tests/test_zero_shot_crf.py` |
-| **Total** | **296** | |
+| OCR processor | 34 | `tests/test_ocr_processor.py` |
+| GNORM client | 18 | `tests/test_gnorm.py` |
+| Integration | 17 | `tests/test_integration.py` |
+| Memory streams | 17 | `tests/test_streams.py` |
+| Reflection | 14 | `tests/test_reflection.py` |
+| Epistemic classifier | 13 | `tests/test_epistemic.py` |
+| **Total** | **376** | |
 
 Run all tests:
 
@@ -96,7 +101,7 @@ python -m pytest tests/ -v
 The OCR pipeline requires both **Python packages** and **system applications**. The system applications (Tesseract, Poppler) must be installed first since the Python packages are only wrappers around them.
 
 !!! tip "Tests run without system dependencies"
-    All 296 tests mock external dependencies and run without Tesseract, Poppler, dkpro-cassis, or sklearn-crfsuite installed. You only need the optional packages to process actual data.
+    All 376 tests mock external dependencies and run without Tesseract, Poppler, dkpro-cassis, or sklearn-crfsuite installed. You only need the optional packages to process actual data.
 
 ### Step 1: Install System Applications
 
