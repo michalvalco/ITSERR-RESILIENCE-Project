@@ -129,7 +129,6 @@ PATRISTIC_PATTERNS = [
 REFORMATION_PATTERNS = [
     (r'\b(Luther(?:us|i|o)?\.?)', 'reformation'),
     (r'\b(Melanchthon(?:is|em)?\.?)', 'reformation'),
-    (r'\b(MELANCHTHONIS)', 'reformation'),  # Uppercase variant on title page
     (r'\b(Caluin(?:us|i|o)?\.?)', 'reformation'),
     (r'\b(Zwingl(?:ius|ii)?\.?)', 'reformation'),
 ]
@@ -153,10 +152,7 @@ def assign_chapter(page_num):
     for ch in CHAPTERS:
         if ch["start_page"] <= page_num <= ch["end_page"]:
             return ch["id"]
-    # Page 1 is title page
-    if page_num == 1:
-        return "title-page"
-    # Pages between chapters (e.g., 22)
+    # Pages between chapters (e.g., 22) — not assigned to any chapter
     return None
 
 
