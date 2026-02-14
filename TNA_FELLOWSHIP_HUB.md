@@ -9,8 +9,8 @@
 ## Current Status (overwrite after each session)
 
 **Date:** Feb 14, 2026 (Day 5 of 14)
-**Active work:** INTEGRATION PASS COMPLETE. Working paper draft (~15,500 words, 9 sections + bibliography) has passed integrity check: cross-references verified, orphan citations resolved, source count corrected, voice consistency confirmed. File: `02_writing/working_paper/tna_working_paper_draft.md`.
-**Next:** (1) Revision pass — citation verification against originals, redundancy removal, section-level word count balancing. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
+**Active work:** Corpus Browser enhanced (dashboard, three-column layout, 31 references across 5 entity types). Abbreviation provenance architecture implemented (expansion_log bridges Stage 2→Stage 4 Layer 2). XML tag pollution fixed in zero-shot CRF experiment. Comprehensive documentation audit completed across all repo docs. 389 tests passing.
+**Next:** (1) Revision pass on working paper — citation verification, redundancy removal. (2) Prepare consortium presentation materials (Feb 25). (3) Zero-shot test on Stöckel sample. (4) Next in-person meeting with Arianna/Marcello.
 **Blockers:** None currently.
 
 ---
@@ -32,9 +32,9 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | # | Workstream | Tracked In | Status |
 |---|-----------|-----------|--------|
 | 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ INTEGRATION PASS COMPLETE. Draft (~15.5K words, 9 sections + 80 bibliography entries) integrity-checked. Next: revision pass. |
-| 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
+| 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages) with abbreviation provenance architecture (Stage 2 → Stage 4 Layer 2 data flow). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Full synthesis draft complete (`tna_working_paper_draft.md`). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
-| 4 | **Prototype** | `03_prototype/` + `stockel_annotation/PROGRESS.md` | OCR pipeline (5 scripts), ML pipeline (cas_to_bioes, zero_shot_crf), Corpus Browser with dashboard and 31 detected references. 389 tests passing across 10 suites. See `PROGRESS.md` for detailed tracker |
+| 4 | **Prototype** | `03_prototype/` + `stockel_annotation/PROGRESS.md` | OCR pipeline (6 scripts incl. build_corpus_json), ML pipeline (cas_to_bioes, zero_shot_crf), Corpus Browser with dashboard and 31 detected references. Abbreviation expansion provenance logging for Stage 4 Layer 2. 389 tests passing across 10 suites. See `PROGRESS.md` for detailed tracker |
 
 ---
 
@@ -170,6 +170,9 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 14 Feb 2026 | Source [C] integration complete | ChatGPT report assessed (~70% redundant, ~15–18 genuinely new sources) and integrated into detailed outline. Key additions: Caffagni et al. (BERT for biblical refs), Detweiler (Protestant computational hermeneutics), Adeboye et al. (cross-religious reductionism), Zimmermann (personalist tech ethics), Tripitaka Koreana 3D viz. Assessment saved as `chat_report_assessment.md`. Phase 1 of synthesis now complete. |
 | 14 Feb 2026 | Synthesis drafting complete (§1–§9) | All 9 sections drafted (~16–17K words) in `tna_working_paper_draft.md`. Renamed from `integrated_research_synthesis.md` to avoid confusion with Source [A] PKB file. Next: bibliography assembly, integration pass, revision pass. |
 | 14 Feb 2026 | Integration pass complete | Full integrity check performed: (1) source count corrected (142→"over 80" — actual bibliography entries); (2) orphan citation resolved (Wang et al. 2024 added to §2.2; Puccetti 2024 ERCIM removed as redundant); (3) all cross-references verified consistent; (4) five-gap threading confirmed across §1→§2→§4→§5→§6→§9; (5) voice consistency confirmed throughout. Draft status updated to "integration pass complete." |
+| 14 Feb 2026 | Abbreviation provenance: `expansion_log` on NormalizationStats | Resolves the "Abbreviation Logic Conflict" between Stage 2 (PARSE) and Stage 4 (MINE). `normalize_text.py` expands abbreviations (dñs→dominus etc.) for clean text, but now logs each expansion with original form, expanded form, character offset, and regex pattern. Stage 4 Layer 2 can consume this log directly as "detected via abbreviation dictionary" evidence without re-scanning expanded text. Documented in `workflow_diagram.md` Stage 2 and Stage 4 sections. |
+| 14 Feb 2026 | XML tag stripping in zero-shot CRF experiment | `normalize_text.py` injects `<ref type="...">` tags into output; `zero_shot_crf_experiment.py` was tokenising these as garbage tokens polluting the CRF context window. Added `strip_ref_tags()` before tokenisation (same pattern as `build_corpus_json.py`). |
+| 14 Feb 2026 | Comprehensive documentation audit | Cross-referenced all 8+ documentation files against actual repo state. Fixed outdated test counts (163/296→389), missing scripts, incorrect statuses, phantom TECHNOLOGY_INVENTORY.md reference, and missing Corpus Browser features across README, HUB, PROGRESS.md, pipeline/overview.md, corpus-browser.md, and index.md. |
 
 ---
 
