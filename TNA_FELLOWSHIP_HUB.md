@@ -34,7 +34,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ INTEGRATION PASS COMPLETE. Draft (~15.5K words, 9 sections + 80 bibliography entries) integrity-checked. Next: revision pass. |
 | 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Full synthesis draft complete (`tna_working_paper_draft.md`). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
-| 4 | **Prototype** | `03_prototype/` + `stockel_annotation/PROGRESS.md` | OCR pipeline (5 scripts), ML pipeline (cas_to_bioes, zero_shot_crf), Corpus Browser with dashboard and 31 detected references. 376 tests passing across 10 suites. See `PROGRESS.md` for detailed tracker |
+| 4 | **Prototype** | `03_prototype/` + `stockel_annotation/PROGRESS.md` | OCR pipeline (5 scripts), ML pipeline (cas_to_bioes, zero_shot_crf), Corpus Browser with dashboard and 31 detected references. 389 tests passing across 10 suites. See `PROGRESS.md` for detailed tracker |
 
 ---
 
@@ -78,7 +78,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | Workflow Diagram (7 stages) | `ITSERR repo: 01_research/workflow_diagram.md` | Based on Marcello's Fry 2007 framework |
 | CIC_annotation source code | `CIC_annotation repo` (all .py files) | The actual pipeline |
 | Stöckel pilot workspace | `ITSERR repo: 03_prototype/stockel_annotation/` | Where zero-shot test and adaptations will live |
-| **Progress Tracker** | `ITSERR repo: 03_prototype/stockel_annotation/PROGRESS.md` | **Definitive reference for what's built and tested.** All scripts, test results (376 tests across 10 suites), OCR quality assessment, data flow, dependencies. Consult when asking "what do we have?" or "does X work?" |
+| **Progress Tracker** | `ITSERR repo: 03_prototype/stockel_annotation/PROGRESS.md` | **Definitive reference for what's built and tested.** All scripts, test results (389 tests across 10 suites), OCR quality assessment, data flow, dependencies. Consult when asking "what do we have?" or "does X work?" |
 
 #### Research Synthesis
 
