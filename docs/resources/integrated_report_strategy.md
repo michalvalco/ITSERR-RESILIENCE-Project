@@ -342,6 +342,7 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 | **[C] Chat Report** | `C:\Users\valco\...\Resources\Report (CHAT) - Towards an Ethically-Grounded AI Research Assistant.docx` |
 | **Integration prompt** | `C:\Users\valco\...\Resources\PROMPT_integrate_chat_report.md` |
 | **GitHub outline** | `C:\Users\valco\...\GitHub\ITSERR-RESILIENCE-Project\docs\resources\integrated_report_detailed_outline.md` |
+| **Working paper draft** | `C:\Users\valco\...\GitHub\ITSERR-RESILIENCE-Project\02_writing\working_paper\tna_working_paper_draft.md` |
 
 *(All paths abbreviated; full prefix: `C:\Users\valco\OneDrive\Documents\04 Projekty\2025 ITSERR - Resilience Project\Resources\`)*
 

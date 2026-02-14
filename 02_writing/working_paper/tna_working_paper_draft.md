@@ -301,3 +301,115 @@ MCP has not yet been applied to humanities research infrastructure. This is the 
 
 ---
 
+## 7. European Research Infrastructure for Religious Studies: The 2026 Landscape
+
+### 7.1 RESILIENCE and ITSERR: From ESFRI Roadmap to Operational Infrastructure
+
+The institutional infrastructure for digital religious studies in Europe has matured considerably over the past five years, though unevenly. The flagship initiative is **RESILIENCE** (REligious Studies Infrastructure: tooLs, Innovation, Experts, conNections and Centres in Europe), which entered the ESFRI Roadmap in 2021 and is completing its Preparatory Phase (2022–2026), funded under Horizon Europe (Grant Agreement No. 101079792). Led by FSCIRE (Fondazione per le Scienze Religiose Giovanni XXIII) in Bologna, the consortium includes thirteen partners from eleven countries. During the Preparatory Phase, RESILIENCE has drafted its Financial Sustainability Plan and Service Strategy, produced a FAIR data and RDM best practices study, established its Transnational Access Fellowship Programme — the programme that supports the present fellowship — and deployed data hub tools including IxTheo (Index Theologicus, University Library Tübingen) and RelReSearch. The planned lifecycle spans approximately thirty-five years: a four-year Preparatory Phase giving way to an eight-year Implementation Phase, then a twenty-year Operation Phase, and finally a two-year Termination Phase. The ERIC (European Research Infrastructure Consortium) legal entity procedures are planned for the upcoming Implementation Phase.
+
+RESILIENCE participates in the SSH Open Cluster Governing Board, connecting it to CESSDA, CLARIN, DARIAH, EHRI, E-RIHS, OPERAS, ESS ERIC, and SHARE ERIC. This positioning within the broader European research infrastructure ecosystem is strategically important: it signals that religious studies is no longer a disciplinary island but an integral participant in the shared infrastructure for social sciences and humanities.
+
+**ITSERR** (Italian Strengthening of the ESFRI RI RESILIENCE) provides the national dimension, a €22.1 million project funded under Italy's NRRP (National Recovery and Resilience Plan), Mission 4 "Education and Research." Led by CNR and conceived by FSCIRE in collaboration with the Universities of Turin, Modena & Reggio Emilia, Naples "L'Orientale," and Palermo, ITSERR aims to transform Religious Studies from passive technology consumers to "drivers of a new match with AI/BD/HPC." Its eleven work packages span the full range from project management to specific technical tools.
+
+The work packages most directly relevant to the present project are: **WP3 (T-ReS)**, which develops CRITERION for critical editions and GNORM for automatic analysis of religious normative sources via data mining and 3D visualisation — the pipeline whose adaptation for Protestant theological texts forms one strand of this fellowship's practical work; **WP4 (DaMSym)**, applying deep learning to semantic analysis of Nicene-Constantinopolitan Creed translations across languages and traditions; **WP8 (UbiQuity)**, conducting intertextual analysis of Bible and Qur'ān commentaries as "places of memory" in exegetical traditions; and **WP9 (TAURUS)**, building 3D visualisation toolkits including EnLil for cuneiform tablets and MiRAr for mixed reality archaeology. The ITSERR Gateway on D4Science provides the virtual research environment, and ITSERR has published Latin text embeddings on HuggingFace.
+
+The University of Palermo — host of this fellowship — contributes through five departments (Cultures and Societies, Law, Engineering, Architecture, Mathematics & Computer Science) and houses the Giorgio La Pira Library, specialised in Islam with over 21,000 volumes, approximately 900,000 digital works, and more than 270,000 manuscripts, as well as the Fondo Moncada Paternò, comprising 2,536 volumes spanning 1500 to the modern era.
+
+Related infrastructures offer complementary but as yet unintegrated services. **CLARIN ERIC** provides NLP tools, corpora, and language processing services applicable to religious texts; the Dutch CLARIAH-PLUS project explicitly covers religious studies among its humanities disciplines, and LINDAT/CLARIAH-CZ connects ten Czech institutions for open-access digitised data resources. **DARIAH ERIC** provides broader digital humanities tools and services; the DARIAH Annual Event 2026 is hosted by CNR in Rome (May 26–29), directly connecting with ITSERR's lead partner. The integration gap remains significant: while RESILIENCE participates in the SSH Open Cluster alongside CLARIN and DARIAH, specific technical interoperability — shared metadata standards, federated search across platforms — appears to be still in development rather than operational.
+
+### 7.2 Central and Eastern European Religious Heritage: Fragmented but Substantial
+
+The digitisation landscape of Central and Eastern Europe presents a paradox: extraordinary richness of religious heritage material coexisting with fragmented, institution-specific access points and limited integration into pan-European infrastructure.
+
+The **Czech Republic's Manuscriptorium** stands as the flagship: over 360,000 descriptive records, 33 million digitised pages, and 130,000 digitised documents from more than 180 institutions in approximately twenty countries, encompassing extensive religious content. Winner of the inaugural UNESCO Jikji Prize (2005), Manuscriptorium serves as a licensed Europeana domain aggregator and represents the most comprehensive CEE-based digital manuscript infrastructure.
+
+**Poland's** Polona portal aggregates over four million digital objects; the POLIN Museum's Jewish Heritage digitisation project represents a significant denominational contribution. In **Hungary**, the National Széchényi Library holds approximately 700 codices and 1,000 codex fragments. The MOMENTUM Digital Music Fragmentology Research Group (Hungarian Academy of Sciences, led by Zsuzsa Czagány) has described more than 170 notated manuscript fragments across ten collections (Czagány, 2020). The Hungaricana Portal contains 200,000 digitised medieval documents including religious and administrative materials from the Kingdom of Hungary.
+
+In **Slovakia**, the Slovak National Library has pioneered digitisation of the "Illuminated Codices of the Bratislava Chapter Library" since 1995; the Antiphonary of Bratislava II is inscribed on the UNESCO Memory of the World Register. The Fragmentarium partner project "Manuscript Fragments in Slovakia" (led by Eduard Lazorík, Slovak Academy of Sciences / Masaryk University) researches over 800 surviving medieval fragments — a remarkable number when compared to only 18 complete codices preserving plainchant. The Cantus.sk project researches medieval musical sources from the late eleventh to early sixteenth century. FamilySearch has digitised 1.6 million Slovak church records, representing the most extensive current access point for religious archival material, though the collections remain fragmented across multiple institutional types: Catholic diocesan archives, Protestant church archives, state repositories, and academic institutions.
+
+Tóth (2020) provides the scholarly overview of digitisation organisation and funding across the Visegrád countries, and the Visegrad Fund-supported project "Mapping and Boosting Digital Humanities in the Visegrad Region" (digihum.cspk.eu) has mapped DH tools and initiatives across V4 countries.
+
+### 7.3 Infrastructure Gaps as Strategic Opportunities
+
+Five gaps are particularly relevant for the positioning of this project within the broader European landscape.
+
+First, **CEE underrepresentation in RESILIENCE**: no V4 country appears as a core consortium partner, despite the extraordinary richness of Central European religious heritage spanning Western and Eastern Christian, Jewish, and Ottoman-period Islamic traditions. This is a structural omission, not a reflection of the region's scholarly capacity or material holdings.
+
+Second, **Protestant and Reformation heritage lacks dedicated digital infrastructure** in the V4 region, despite Slovakia's significant Lutheran heritage — directly relevant to the Leonard Stöckel corpus that serves as this project's pilot case. The Reformation is studied computationally almost exclusively through social and historical lenses (correspondence networks, print culture, sociological adoption patterns), not through theological textual analysis. The Melanchthon Academy in Bretten, identified as a RESILIENCE partner with interest in digital Reformation research, represents a potential institutional ally for addressing this gap.
+
+Third, **non-Latin alphabet support beyond Arabic** is underdeveloped: Church Slavonic, Old Hungarian, and other CEE scripts used in religious texts need further infrastructure attention, though ITSERR's DIACU dataset for Church Slavonic analysis is a promising early initiative.
+
+Fourth, **no unified CEE-level portal exists specifically for religious heritage**, despite the substantial national-level digitisation efforts catalogued above.
+
+Fifth — and this is where the present project enters — **ITSERR's tools await agentic integration**. CRITERION, GNORM, DaMSym, and YASMINE are being developed as standalone tools rather than as components of an orchestrated AI agent workflow. The pipeline adaptation and MCP integration work described in this synthesis addresses precisely this gap.
+
+Slovakia's positioning within this landscape is both challenging and opportune. The ELTF at Comenius University brings Central European expertise, access to regional archives, a UNESCO IRCAI connection, and a concrete pilot project (the Stöckel corpus) that demonstrates how GNORM methodology could extend to new textual domains. The RESILIENCE Observer Agreement pathway — with its benefits of priority invitations, General Assembly attendance, and access to open-source infrastructure resources — provides a realistic mechanism for formalising this engagement. The Bologna General Assembly (May 11–12, 2026) represents the immediate target for advancing this institutional relationship.
+
+---
+
+## 8. Operational Roadmap: From Synthesis to Prototype
+
+### 8.1 Architecture Decisions Following from the Research
+
+The prototype architecture emerges not from a priori engineering preferences but from the cumulative force of the research synthesised in Sections 2–6. Each major architectural decision can be traced to a specific scholarly finding or philosophical commitment:
+
+**LangGraph for orchestration.** The graph-based architecture models the hermeneutical circle naturally — understanding of parts informs understanding of the whole and vice versa, and the graph's node-edge structure represents this reciprocal movement between textual elements, interpretive frames, and scholarly conclusions. LangGraph's built-in statefulness, human-in-the-loop checkpoints, and native MCP support make it the strongest available candidate (Section 2.2).
+
+**MemGPT/Letta-style hierarchical memory adapted for theological research.** Core memory stores the scholar's evolving interpretive framework — the questions driving the inquiry, the confessional commitments informing the reading, the provisional conclusions reached so far. Archival memory maintains the consulted corpus and prior analyses. A-MEM-inspired Zettelkasten linking builds interpretive connections between texts, modelling the web of associations that characterises mature theological scholarship (Section 2.3).
+
+**Four-tier epistemic classification with explicit markers.** Every agent output is tagged: Factual/Historical (Tier 1), Scholarly Consensus (Tier 2), Interpretive/Confessional (Tier 3), or Matters of Faith and Doctrine (Tier 4, deferred entirely to human judgment). The classification draws on semantic entropy methods for Tier 1 confidence estimation and GNORM's pipeline provenance tracking for Tiers 1–2. This framework has no precedent in the literature and constitutes a standalone methodological contribution (Section 3).
+
+**Human-in-the-loop at all interpretive decision points.** Following Shneiderman's Supertool-with-Control-Centre model and the domain-specific autonomy mapping developed in Section 6.2: the agent leads on retrieval (L3–L4), collaborates on classification (L2–L3), and defers entirely on theological interpretation (L1). The architecture enforces this through approval gates, not merely through guidelines.
+
+**MCP-based tool integration** connecting ITSERR services (GNORM, CRITERION, DaMSym), IxTheo, and standard scholarly databases (JSTOR, ATLA Religion Database, Zotero). The Sefaria MCP server for Jewish texts provides the closest existing model (Section 6.4).
+
+### 8.2 The Fellowship Work Plan
+
+The 2.5-week fellowship window (February 10–27, 2026) demanded prioritisation. Following the February 12 meeting with the GNORM project team, the work plan crystallised around two parallel tracks: the integrated research synthesis (this document) and the GNORM pipeline adaptation for the Stöckel corpus.
+
+**Week 1 (February 10–16): Orientation, listening, and synthesis.** Initial meetings with Arianna Pavone (WP3/GNORM coordinator) and Marcello Costa (WP8/UX) established the pivot from abstract agent prototype to concrete pipeline adaptation. Code inspection of the CIC_annotation repository confirmed the six-layer hybrid architecture and identified the critical technical finding: the CRF engine is label-agnostic, meaning domain adaptation concentrates at the pipeline edges (data entry, rules, abbreviation dictionaries) rather than in the statistical core. The integrated research synthesis — drawing on three independent source reports totalling approximately 25,000 words — was assembled during this week.
+
+**Week 2 (February 17–23): Conceptual framework and prototyping.** Working paper draft: the personalist foundations for AI-assisted theological research, grounding the epistemic modesty framework and graduated autonomy mapping in Wojtyła, Scheler, and Catholic Social Teaching. Implementation work: concrete tool definitions, MCP integration stubs, testing against GNORM API endpoints if available from the WP3 team. The workflow diagram for the Stöckel adaptation — mapping the seven-stage data processing pipeline (Fry, 2007) from acquisition through OCR/normalisation, entity schema definition, pipeline processing, visualisation, refinement, and interaction — was refined collaboratively.
+
+**Days 13–17 (February 24–27): Demonstration and documentation.** A seminar on "Medieval hermeneutics and artificial intelligence" (February 25) provides the occasion for presenting the philosophical framework to the broader consortium. Preparation of the consortium presentation connects the fellowship's specific technical contributions (pipeline adaptation, epistemic classification, MCP integration design) to ITSERR's strategic goals. Final documentation with philosophical annotations ensures that the design rationale — why each architectural choice was made, and what personalist commitment it instantiates — accompanies the technical output.
+
+### 8.3 Post-Fellowship Pipeline
+
+The fellowship produces seeds, not harvest. The post-fellowship pipeline extends across several months and connects to broader institutional strategies:
+
+**Immediate outputs (March 2026):** Blog post for the ITSERR website documenting the fellowship's findings and the cross-domain adaptation methodology. Public release of the code repository, including the OCR-to-normalisation pipeline (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`, 78 tests passing), entity schema proposals, and design documentation. Final results report to the TNA Programme.
+
+**Academic outputs (April–September 2026):** Faculty seminar at Comenius University (April). Conference presentation at DH2026 or European Academy of Religion meeting (May–June). Journal article targeting *AI & Society* for the theoretical framework (personalism → architecture translation) or *Open Theology* for the digital theology contribution. Technical companion paper for *Digital Scholarship in the Humanities* or *Computational Humanities Research* (CHR), focusing on the GNORM adaptation methodology and epistemic classification system.
+
+**Institutional strategy:** Continued pursuit of RESILIENCE Observer status for Slovakia through the ELTF, with the Bologna General Assembly (May 11–12, 2026) as the next milestone in coordination with Francesca Cadeddu (RESILIENCE General Director). The APVV grant application (198,220 EUR, 48 months) for mapping Slovak archives of religious heritage, developed with Mgr. Radoslav Hanus and PhDr. Eva Kowalská, would — if successful — provide the resources for systematic digitisation and annotation of the Stöckel corpus and related Reformation-era texts, scaling the pilot methodology demonstrated during this fellowship to a multi-year research programme.
+
+**Technical development:** The zero-shot test of the CIC_annotation pipeline on Stöckel sample text — blocked during the fellowship by the need for INCEpTION import formatting — represents the critical next empirical step. Its results will determine where adaptation effort should concentrate: if the CRF performs reasonably on biblical citations (structurally similar to legal citations), the priority shifts to patristic and confessional reference types; if performance degrades substantially, the priority shifts to character-level feature engineering for historical orthographic variation.
+
+---
+
+## 9. Conclusion: Towards a Relational AI for Theology
+
+This synthesis has mapped a territory defined by convergence. Five distinct literature gaps — each significant in isolation — meet at a point that only becomes visible when they are viewed together.
+
+First: no agentic system for theological research exists. The tools are mature — LangGraph, CrewAI, AutoGen, MemGPT — but their application has been confined to software engineering, finance, marketing, and general research assistance. Religious studies has been left out entirely, not because the field lacks computational ambition (PASSIM, Sefaria, DISSINET, and ITSERR demonstrate otherwise) but because no one has yet brought agent orchestration frameworks into conversation with the interpretive demands of theological scholarship.
+
+Second: personalist anthropology has never been translated into AI architecture. The Rome Call for AI Ethics, Catholic Social Teaching, and the TRUST framework provide principles — transparency, dignity, subsidiarity, stewardship — but principles that float above implementation leave no trace in the systems people actually use. The mapping proposed in Section 6.3 — from relational ontology to narrative memory continuity, from inviolable dignity to the non-substitution of interpretive judgment, from subsidiarity to graduated autonomy — demonstrates that it is possible to derive architecture from ontology. The point is not to append an ethics statement to a technical paper. It is to show that the philosophy *changes what gets built*.
+
+Third: Protestant theological corpora remain computationally underserved. The Reformation is studied through correspondence networks and print culture diffusion — legitimate and valuable work — but not through systematic NLP analysis of doctrinal argumentation, intertextual citation patterns, or confessional reference networks. The Leonard Stöckel corpus, with its dense web of biblical, patristic, and confessional citations in sixteenth-century Latin, provides a concrete test case for redressing this imbalance, and the GNORM pipeline — originally designed for medieval canon law — offers a surprisingly direct adaptation path, given the structural parallels between legal and theological citation practices.
+
+Fourth: epistemic modesty for interpretive domains is untheorised. All existing confidence calibration targets factual Q&A — did the model get the right answer? — but theological research operates across a spectrum from datable historical claims ("Paul wrote Romans around 57 CE") through scholarly consensus with acknowledged disagreement ("Most scholars date Mark as the earliest Gospel") to interpretive claims where multiple valid traditions coexist ("This passage has been read as...") to matters of faith and doctrine where computational systems must defer entirely to human judgment. The four-tier epistemic classification developed in Section 3 addresses this gap directly and constitutes, we believe, a genuinely novel contribution to AI system design beyond the religious studies context.
+
+Fifth: ITSERR's emerging tools await agentic orchestration. CRITERION, GNORM, DaMSym, and YASMINE are being built as standalone capabilities. The Model Context Protocol provides the means to unify them within a single agent framework, and the philosophical commitments articulated here — transparency, grounded authority, relational fidelity — provide the design rationale for how that unification should proceed.
+
+These gaps are not independent. They converge at a specific point: the absence of a philosophically grounded, theologically informed, technically feasible design framework for AI agents in religious studies. The recommended prototype architecture — LangGraph for orchestration, MemGPT-style hierarchical memory, A-MEM Zettelkasten linking, semantic entropy for calibrated confidence, four-tier epistemic classification, human-in-the-loop at all interpretive decision points, and MCP-based tool integration with ITSERR services — has no precedent in the literature. It would constitute a contribution to digital humanities, AI agent research, and theological methodology simultaneously.
+
+We are moving, it seems, from the *digitisation* of texts to the *agentification* of research. The question that will determine whether this transition serves or diminishes scholarship is not primarily technical. It is anthropological. What kind of agent do we build — and for what kind of scholar? The answer proposed here is an agent that respects the sacredness of the text it handles and the dignity of the person who reads it. An agent that knows the difference between a fact and an interpretation, between a citation and a confession, between what it can calculate and what it must defer. An agent that is, in the end, not intelligent but *instrumental* — a tool in the hands of a person who reads, who questions, who wrestles with meaning, and who bears the irreducible responsibility of understanding.
+
+---
+
+*This synthesis was developed during an ITSERR Transnational Access Fellowship at the University of Palermo, February 2026. The author thanks Dr. Arianna Pavone (WP3/GNORM coordinator), Marcello Costa (WP8), and the Palermo team for their collaboration, and acknowledges the support of the ITSERR Transnational Access Programme funded under Italy's National Recovery and Resilience Plan.*
+
+---
+
+**[CONSOLIDATED BIBLIOGRAPHY TO BE ASSEMBLED — ~160–170 sources from three integrated source reports]**
+
