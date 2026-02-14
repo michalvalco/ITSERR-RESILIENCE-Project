@@ -99,6 +99,7 @@ pip install 'itserr-agent[annotation]'
 48 unit tests cover all core logic without requiring dkpro-cassis:
 
 ```bash
+cd 03_prototype
 python -m pytest tests/test_cas_to_bioes.py -v
 ```
 

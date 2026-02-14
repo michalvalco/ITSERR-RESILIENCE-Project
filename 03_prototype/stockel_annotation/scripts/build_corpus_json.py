@@ -36,68 +36,70 @@ CHAPTERS = [
 ]
 
 # Enhanced biblical reference patterns (broader than normalize_text.py)
+# Uses [.:]? instead of \.? to handle both period and colon separators
+# found in Stöckel's text (e.g., "Rom. 5" and "Actor: 20")
 BIBLICAL_PATTERNS = [
     # Old Testament
-    (r'\b(Gen(?:esis|es|ef)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Exod(?:us|i)?\.?\s*(?:X+V*I*V*X*\.?\s*\d*))', 'biblical'),
-    (r'\b(Levit(?:icus)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Numer\.?\s*\d+)', 'biblical'),
-    (r'\b(Deut(?:eronomij|eronom(?:ij)?)?\.?\s*(?:\d+|[XVI]+\.?))', 'biblical'),
-    (r'\b(Ios(?:ue)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Iudic(?:um)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Ruth\.?\s*\d+)', 'biblical'),
-    (r'\b((?:1|2|I|II)\.?\s*(?:Sam(?:uel)?|Reg(?:um)?)\.?\s*\d+)', 'biblical'),
-    (r'\b((?:1|2|I|II)\.?\s*Paralip\.?\s*\d+)', 'biblical'),
-    (r'\b(Esdr(?:ae)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Iob\.?\s*\d+)', 'biblical'),
-    (r'\b(Psal(?:m|mo)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Pfal(?:m|mo)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),  # OCR variant
-    (r'\b(Prou(?:erb)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Eccles(?:iastes)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Cant(?:ica)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Isa(?:iae|ie)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Esai(?:ae|e)?\.?\s*\d+)', 'biblical'),  # Variant spelling
-    (r'\b(Hierem(?:iae)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Ezech(?:iel(?:is|e)?)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Dan(?:iel(?:is)?)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Osee\.?\s*\d+)', 'biblical'),
-    (r'\b(Ioel\.?\s*\d+)', 'biblical'),
-    (r'\b(Amos\.?\s*\d+)', 'biblical'),
-    (r'\b(Mich(?:aeae)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Zachar(?:iae)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Malach(?:iae)?\.?\s*\d+)', 'biblical'),
+    (r'\b(Gen(?:esis|es|ef)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Exod(?:us|i)?[.:]?\s*(?:X+V*I*V*X*[.:]?\s*\d*))', 'biblical'),
+    (r'\b(Levit(?:icus)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Numer[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Deut(?:eronomij|eronom(?:ij)?)?[.:]?\s*(?:\d+|[XVI]+[.:]?))', 'biblical'),
+    (r'\b(Ios(?:ue)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Iudic(?:um)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Ruth[.:]?\s*\d+)', 'biblical'),
+    (r'\b((?:1|2|I|II)[.:]?\s*(?:Sam(?:uel)?|Reg(?:um)?)[.:]?\s*\d+)', 'biblical'),
+    (r'\b((?:1|2|I|II)[.:]?\s*Paralip[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Esdr(?:ae)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Iob[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Psal(?:m|mo)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Pfal(?:m|mo)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),  # OCR variant
+    (r'\b(Prou(?:erb)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Eccles(?:iastes)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Cant(?:ica)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Isa(?:iae|ie)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Esai(?:ae|e)?[.:]?\s*\d+)', 'biblical'),  # Variant spelling
+    (r'\b(Hierem(?:iae)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Ezech(?:iel(?:is|e)?)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Dan(?:iel(?:is)?)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Osee[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Ioel[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Amos[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Mich(?:aeae)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Zachar(?:iae)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Malach(?:iae)?[.:]?\s*\d+)', 'biblical'),
     # New Testament
-    (r'\b(Matt?h?(?:aei|ei)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Marc(?:i)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Luc(?:ae|a)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Ioan(?:nis|nem|n)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Iohan(?:nis|nem|n)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Act(?:orum|or)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Aclorum\.?\s*(?:X+V*I*V*X*\.?\s*\d*))', 'biblical'),  # OCR variant
-    (r'\b(Rom(?:anos|an)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Ront\.?\s*\d+)', 'biblical'),  # OCR variant
-    (r'\b(Genef\.?\s*\d+)', 'biblical'),  # OCR variant of Genesis
-    (r'\b(Genefi\.?\s*\d+)', 'biblical'),  # OCR variant
-    (r'\b(Efaie\.?\s*\d+)', 'biblical'),  # OCR variant of Isaiae
+    (r'\b(Matt?h?(?:aei|ei)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Marc(?:i)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Luc(?:ae|a)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Ioan(?:nis|nem|n)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Iohan(?:nis|nem|n)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Act(?:orum|or)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Aclorum[.:]?\s*(?:X+V*I*V*X*[.:]?\s*\d*))', 'biblical'),  # OCR variant
+    (r'\b(Rom(?:anos|an)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Ront[.:]?\s*\d+)', 'biblical'),  # OCR variant
+    (r'\b(Genef[.:]?\s*\d+)', 'biblical'),  # OCR variant of Genesis
+    (r'\b(Genefi[.:]?\s*\d+)', 'biblical'),  # OCR variant
+    (r'\b(Efaie[.:]?\s*\d+)', 'biblical'),  # OCR variant of Isaiae
     # Roman numeral citations (very common in this text)
     (r'\b(Exodi\s+X+V*I*V*X*)', 'biblical'),
     (r'\b(Deuteronomij\s+\d+)', 'biblical'),
     (r'\b(Iohannis\s+\d+)', 'biblical'),
     (r'\b(Ioannis\s+\d+)', 'biblical'),
-    (r'\b(Corint[bh]\.?\s*\d+)', 'biblical'),  # Corinthians variant
-    (r'\b((?:1|2|I|II)\.?\s*Cor(?:inth)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Galat(?:as)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Ephe[sf](?:ios|iis)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Philip(?:penses)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Colo[sf](?:senses)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b((?:1|2|I|II)\.?\s*Thess(?:alonicenses)?\.?\s*\d+)', 'biblical'),
-    (r'\b((?:1|2|I|II)\.?\s*Tim(?:otheum)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Tit(?:um)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Hebr(?:aeos)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b(Iacob(?:i)?\.?\s*\d+)', 'biblical'),
-    (r'\b((?:1|2|I|II)\.?\s*Petr(?:i)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
-    (r'\b((?:1|2|3|I|II|III)\.?\s*Ioan(?:nis)?\.?\s*\d+)', 'biblical'),
-    (r'\b(Apoc(?:al(?:ypsin)?)?\.?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Corint[bh][.:]?\s*\d+)', 'biblical'),  # Corinthians variant
+    (r'\b((?:1|2|I|II)[.:]?\s*Cor(?:inth)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Galat(?:as)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Ephe[sf](?:ios|iis)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Philip(?:penses)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Colo[sf](?:senses)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b((?:1|2|I|II)[.:]?\s*Thess(?:alonicenses)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b((?:1|2|I|II)[.:]?\s*Tim(?:otheum)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Tit(?:um)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Hebr(?:aeos)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b(Iacob(?:i)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b((?:1|2|I|II)[.:]?\s*Petr(?:i)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
+    (r'\b((?:1|2|3|I|II|III)[.:]?\s*Ioan(?:nis)?[.:]?\s*\d+)', 'biblical'),
+    (r'\b(Apoc(?:al(?:ypsin)?)?[.:]?\s*\d+[\.,]?\s*\d*)', 'biblical'),
 ]
 
 # Patristic references

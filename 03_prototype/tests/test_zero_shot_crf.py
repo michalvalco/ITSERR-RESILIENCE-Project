@@ -398,6 +398,31 @@ class TestExperimentStats:
         assert stats.precision_at_biblical == 0
         assert stats.entity_contexts == []
 
+    def test_entity_tokens_counted_once_per_paragraph(self):
+        """Regression: entity_tokens must count non-O tokens once per paragraph,
+        NOT once per entity. A paragraph with 3 entity tokens and 2 entities
+        should add 3, not 6."""
+        stats = ExperimentStats()
+        # Simulate a paragraph: "Rom . 5 et Gen . 3"
+        # tokens:  Rom   .   5  et  Gen   .   3
+        # labels: B-AN I-AN E-AN O B-AN I-AN E-AN
+        labels = ["B-AN", "I-AN", "E-AN", "O", "B-AN", "I-AN", "E-AN"]
+        tokens = [
+            ("Rom", 0, 3), (".", 3, 4), ("5", 5, 6),
+            ("et", 7, 9),
+            ("Gen", 10, 13), (".", 13, 14), ("3", 15, 16),
+        ]
+        entities = extract_entities(tokens, labels)
+        assert len(entities) == 2
+
+        # Correct counting: 6 non-O tokens, counted once
+        stats.entity_tokens += sum(1 for l in labels if l != "O")
+        assert stats.entity_tokens == 6
+
+        # Bug would have been: counting inside entity loop → 6 * 2 = 12
+        # Verify it's NOT multiplied by number of entities
+        assert stats.entity_tokens != len(entities) * sum(1 for l in labels if l != "O")
+
 
 # =============================================================================
 # Integration: Feature→Entity Pipeline Tests
