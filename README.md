@@ -38,21 +38,28 @@ The same MkDocs site powers the repository webpage on GitHub Pages.
 ## Repository Structure
 
 ```
-├── 01_research/           # Research materials and literature
-│   ├── sources/           # Markdown files for key sources
-│   └── literature_notes/  # Annotated bibliographies
-├── 02_writing/            # Written deliverables
-│   ├── working_paper/     # Draft sections
-│   └── blog_post/         # ITSERR blog content
-├── 03_prototype/          # AI agent prototype
-│   ├── architecture/      # Design documents
-│   └── code_notes/        # Technical decisions log
-├── docs/                  # MkDocs site for the public-facing webpage
-├── 04_presentations/      # Presentation materials
-│   └── consortium/        # Final presentation for ITSERR
-└── 05_admin/              # Administrative documents
-    ├── correspondence/    # Communication drafts
-    └── timeline/          # Scheduling and milestones
+├── 01_research/              # Research materials and literature
+│   ├── sources/              # Markdown files for key sources
+│   ├── literature_notes/     # Annotated bibliographies
+│   ├── workflow_diagram.md   # 7-stage GNORM adaptation pipeline
+│   └── epistemic_modesty_framework.md
+├── 02_writing/               # Written deliverables
+│   ├── working_paper/        # Draft sections
+│   └── blog_post/            # ITSERR blog content
+├── 03_prototype/             # AI agent prototype (376 tests)
+│   ├── src/                  # Python agent source (itserr_agent package)
+│   ├── tests/                # 10 test suites
+│   ├── architecture/         # Design documents
+│   ├── code_notes/           # Technical decisions log
+│   └── stockel_annotation/   # Stöckel corpus pilot study (OCR pipeline + scripts)
+├── docs/                     # MkDocs site for the public-facing webpage
+│   ├── prototype/            # Corpus Browser (interactive HTML app)
+│   └── pipeline/             # OCR pipeline documentation
+├── 04_presentations/         # Presentation materials
+│   └── consortium/           # Final presentation for ITSERR
+└── 05_admin/                 # Administrative documents
+    ├── correspondence/       # Communication drafts
+    └── timeline/             # Scheduling and milestones
 ```
 
 ## Quick Start (CLI)

@@ -34,7 +34,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | 1 | **Integrated Research Synthesis** | `docs/resources/integrated_report_strategy.md` | ✅ INTEGRATION PASS COMPLETE. Draft (~15.5K words, 9 sections + 80 bibliography entries) integrity-checked. Next: revision pass. |
 | 2 | **GNORM/Stöckel Workflow** | `01_research/workflow_diagram.md` | Workflow diagram complete (7 stages). Next: zero-shot test, entity schema validation |
 | 3 | **Writing & Deliverables** | `02_writing/` | Full synthesis draft complete (`tna_working_paper_draft.md`). Blog post skeleton exists. Consortium presentation TBD (Feb 25/27) |
-| 4 | **Prototype** | `03_prototype/` + `TECHNOLOGY_INVENTORY.md` | Functional but secondary to pipeline work. Full inventory of scripts, tests (163 passing), OCR results, and quality assessment in `TECHNOLOGY_INVENTORY.md` |
+| 4 | **Prototype** | `03_prototype/` + `stockel_annotation/PROGRESS.md` | OCR pipeline (5 scripts), ML pipeline (cas_to_bioes, zero_shot_crf), Corpus Browser with dashboard and 31 detected references. 376 tests passing across 10 suites. See `PROGRESS.md` for detailed tracker |
 
 ---
 
@@ -78,7 +78,7 @@ These are not contradictory — the epistemological classification (FACTUAL/INTE
 | Workflow Diagram (7 stages) | `ITSERR repo: 01_research/workflow_diagram.md` | Based on Marcello's Fry 2007 framework |
 | CIC_annotation source code | `CIC_annotation repo` (all .py files) | The actual pipeline |
 | Stöckel pilot workspace | `ITSERR repo: 03_prototype/stockel_annotation/` | Where zero-shot test and adaptations will live |
-| **Technology Inventory** | `ITSERR repo: 03_prototype/TECHNOLOGY_INVENTORY.md` | **Definitive reference for what's built and tested in 03_prototype/.** All scripts, test results (163 tests), OCR quality assessment, data flow, dependencies. Consult when asking "what do we have?" or "does X work?" |
+| **Progress Tracker** | `ITSERR repo: 03_prototype/stockel_annotation/PROGRESS.md` | **Definitive reference for what's built and tested.** All scripts, test results (376 tests across 10 suites), OCR quality assessment, data flow, dependencies. Consult when asking "what do we have?" or "does X work?" |
 
 #### Research Synthesis
 
@@ -163,7 +163,7 @@ These are static snapshots. For current status, always read this HUB file and `i
 | 13 Feb 2026 | Reorganize Claude Project: PKB for static references only, Instructions point to filesystem for current state | Prevents stale status info; HUB and strategy doc always read fresh from disk |
 | 13 Feb 2026 | Replace daily_log.md with lean status section in HUB | Empty 613-line template wasn't being used; session log in strategy doc serves as detailed record |
 | 13 Feb 2026 | Plan pipeline_technical_reference.md for PKB | Condensed CIC/GNORM essentials (~200 lines) for quick context in every technical conversation |
-| 13 Feb 2026 | Create `03_prototype/TECHNOLOGY_INVENTORY.md` as detailed reference | Too granular for HUB (per-script docs, 163 test results, OCR quality specifics). Lives alongside the code it documents; HUB points to it in Key Documents and Workstream 4 |
+| 13 Feb 2026 | Use `stockel_annotation/PROGRESS.md` as detailed prototype reference | Too granular for HUB (per-script docs, test results, OCR quality specifics). Lives alongside the code it documents; HUB points to it in Key Documents and Workstream 4 |
 | 14 Feb 2026 | Deep read analysis of GEM + CHAT reports | ~70% overlap with existing knowledge confirmed. New findings: ATON Framework identification (unconfirmed), Omeka S/IIIF integration details, Pavone & Imperia Talmud paper as cross-domain precedent. No corrections needed. 8 surgical additions queued for live docs. |
 | 14 Feb 2026 | Upload `deep_read_GEM_CHAT_analysis.md` to PKB | Provides cross-report analysis as persistent context for all sessions |
 | 14 Feb 2026 | Apply all 8 deep read additions to live docs | `pipeline_technical_reference.md` (6 edits) and `workflow_diagram.md` (2 edits). PKB copies remain as static snapshots — live docs on filesystem are now ahead of PKB. |
