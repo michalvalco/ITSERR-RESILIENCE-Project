@@ -4,7 +4,7 @@ flowchart TD
 
     %% ===== INPUT =====
     subgraph INPUT["<b>Pipeline Input</b>"]
-        IN1["📥 BIOES-tagged plaintext<br/><b>cas_to_bioes.py</b><br/><i>Source: INCEpTION export (ZIP-in-ZIP)<br/>Format: UIMA CAS XMI → one token/line<br/>Annotation type: webanno.custom.Glossa<br/>Feature: Tipo field</i>"]
+        IN1["📥 BIOES-tagged plaintext<br/><b>cas_to_bioes.py</b><br/><i>Source: INCEpTION export (ZIP-in-ZIP)<br/>Format: UIMA CAS XMI → one token/line<br/>Multi-type labels: BIB, PAT, REF, AN, ...<br/>Feature: Tipo field → get_annotation_type_label()</i>"]
     end
 
     %% ===== LAYER 1: RULES =====
@@ -20,7 +20,7 @@ flowchart TD
     subgraph L2["<b>Layer 2: Abbreviation Dictionary</b><br/>annotate_by_abbreviations.py"]
         AB1["📖 Dictionary Lookup<br/><i>Known abbreviation sequences<br/>matched against token stream</i>"]
         AB1A["<b>CIC dictionary:</b><br/><i>C. = Causa, X = Liber Extra,<br/>D. = Distinctio, etc.</i>"]
-        AB1B["<b>Protestant dictionary 🔧:</b><br/><i>Matt. = Matthaeus, Aug. = Augustinus,<br/>CA = Confessio Augustana,<br/>CS = Cithara Sanctorum, etc.</i>"]
+        AB1B["<b>Protestant dictionary 🔧:</b><br/><i>Matt. = Matthaeus, Aug. = Augustinus,<br/>CA = Confessio Augustana,<br/>CS = Cithara Sanctorum, etc.<br/>← expansion_log from normalize_text.py</i>"]
         AB1 --- AB1A
         AB1 --- AB1B
     end
@@ -54,22 +54,22 @@ flowchart TD
 
     %% ===== MERGE =====
     subgraph MERGE["<b>Layer 6: Merge + Post-Process</b><br/>merge_annotations.py + post_process.py"]
-        MG1["🔀 <b>First-Method-Wins Merge</b><br/><i>Priority: L1 > L2 > L3 > L4<br/>Rules override CRF by design<br/>= Precision over recall</i>"]
+        MG1["🔀 <b>First-Method-Wins Merge</b><br/><i>Priority: L1 > L2 > L3 > L4 > L5<br/>Rules override CRF by design<br/>= Precision over recall</i>"]
         MG2["🏷️ <b>mark_source Provenance</b><br/><i>Every annotation tagged:<br/>RULE| · ABBREVIATION| · MATCH|<br/>PREPOST| · CRF| · SOURCE|</i><br/><i>Preserved in INCEpTION Tipo field</i>"]
         MG3["🔧 Post-Processing<br/><i>CIC: single 'ff.' correction<br/>🔧 Protestant: TBD from error analysis</i>"]
         MG1 --> MG2 --> MG3
     end
 
     %% ===== EPISTEMOLOGICAL CLASSIFICATION =====
-    subgraph EPIST["<b>Epistemological Classification</b><br/><i>Dual-path: method consensus + CRF confidence</i>"]
+    subgraph EPIST["<b>Epistemological Classification</b><br/><i>Dual-path: method consensus + pattern quality</i>"]
         direction TB
         EP0["<b>Path A: Method Consensus</b><br/><i>How many layers detected<br/>the same annotation?</i>"]
-        EP1["<b>Path B: CRF Confidence</b><br/><i>predict_marginals() →<br/>max probability per token</i>"]
+        EP1["<b>Path B: Pattern Quality + Confidence</b><br/><i>CRF: predict_marginals() → confidence<br/>Rules: pattern specificity<br/>(biblical+verse vs. name-only)</i>"]
         EP0 --- EP1
 
-        F1["✅ <b>FACTUAL</b><br/><i>≥2 methods agree<br/>OR exact MATCH<br/>AND CRF ≥ 0.85</i><br/><b>→ Accept for public dataset</b>"]
-        I1["🔍 <b>INTERPRETIVE</b><br/><i>CRF alone<br/>OR PREPOST (statistical)<br/>Confidence 0.70–0.85</i><br/><b>→ Flag for expert review</b>"]
-        D1["👤 <b>DEFERRED</b><br/><i>Methods disagree<br/>OR confidence < 0.70<br/>OR theological judgment</i><br/><b>→ Route to human annotator</b>"]
+        F1["✅ <b>FACTUAL</b><br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern ≥ 0.85<br/>(biblical+verse, confessional)</i><br/><b>→ Accept for public dataset</b>"]
+        I1["🔍 <b>INTERPRETIVE</b><br/><i>Single method<br/>Confidence 0.70–0.85<br/>(name-only match, CRF-only)</i><br/><b>→ Flag for expert review</b>"]
+        D1["👤 <b>DEFERRED</b><br/><i>Methods disagree on type<br/>OR confidence < 0.70<br/>OR theological judgment</i><br/><b>→ Route to human annotator</b>"]
 
         EP1 --> F1
         EP1 --> I1
@@ -85,12 +85,19 @@ flowchart TD
     end
 
     %% ===== CONNECTIONS =====
+    %% Architecture: each layer reads the INCEpTION ZIP independently
+    %% and writes to its own output directory. Merge combines all outputs
+    %% using first-method-wins priority (L1 > L2 > L3 > L4 > L5).
     INPUT --> L1
-    L1 -->|"RULE| prefix"| L2
-    L2 -->|"ABBREVIATION| prefix"| L3
-    L3 -->|"MATCH| · PREPOST| prefix"| L4
-    L4 -->|"CRF| prefix"| L5
-    L5 --> MERGE
+    INPUT --> L2
+    INPUT --> L3
+    INPUT --> L4
+    INPUT --> L5
+    L1 -->|"RULE| prefix · Priority 1"| MERGE
+    L2 -->|"ABBREVIATION| prefix · Priority 2"| MERGE
+    L3 -->|"MATCH| · PREPOST| prefix · Priority 3"| MERGE
+    L4 -->|"CRF| prefix · Priority 4"| MERGE
+    L5 -->|"SOURCE| prefix · Priority 5"| MERGE
     MERGE --> EPIST
     EPIST --> OUTPUT
 

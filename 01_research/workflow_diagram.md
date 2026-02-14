@@ -2,7 +2,7 @@
 
 **Prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 12 February 2026 (created) | 13 February 2026 (revised, incl. code inspection findings) | 14 February 2026 (updated: abbreviation provenance, test counts)
+**Date:** 12 February 2026 (created) | 13 February 2026 (revised, incl. code inspection findings) | 14 February 2026 (updated: abbreviation provenance, test counts, cross-document alignment with mermaid diagrams)
 **Status:** Working draft — revised after Feb 12 meeting and code analysis. Ready for Miro transfer and collaborative refinement.
 
 ---
@@ -102,7 +102,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
 - ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
 - ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion) and abbreviation expansion with provenance logging
-- ✅ 393 tests passing across all pipeline and agent modules
+- ✅ 413 tests passing across all pipeline and agent modules
 - Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
 - No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 - ⚠️ **Important:** `normalize_text.py` outputs pre-annotated plaintext (XML-like `<ref>` and `<chapter>` tags), NOT BIOES sequences. The BIOES conversion happens later: normalized text → INCEpTION (human annotation) → `cas_to_bioes.py` → pipeline. This human annotation loop is the bridge between Stage 2 (Parse) and Stage 4 (Mine).
@@ -235,9 +235,9 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 
 | Classification | Criteria | Action |
 |----------------|----------|--------|
-| FACTUAL | ≥2 pipeline methods agree AND CRF confidence ≥0.85 | Accept; include in public dataset |
-| INTERPRETIVE | CRF alone, or confidence 0.70–0.85 | Flag for expert review |
-| DEFERRED | Methods disagree, or confidence <0.70, or requires theological judgment | Route to human annotator |
+| FACTUAL | ≥2 methods agree on same span and type (consensus); OR single method with structurally unambiguous pattern (biblical + chapter/verse ≥ 0.85, confessional ≥ 0.80) | Accept; include in public dataset |
+| INTERPRETIVE | Single method, moderate confidence (0.70–0.85); e.g., name-only patristic match or CRF-only detection | Flag for expert review |
+| DEFERRED | Methods disagree on type, or confidence < 0.70, or requires theological judgment | Route to human annotator |
 
 **Design note:** This dual-path approach — method consensus across pipeline layers *plus* CRF marginal probabilities within the ML layer — is more robust than either mechanism alone, and represents a methodological extension beyond the original CIC_annotation design.
 
@@ -245,7 +245,7 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 - Zero-shot test results will determine where to focus adaptation effort
 - Code analysis confirms the layered architecture is domain-agnostic (CRF is entity-type agnostic, merge logic is format-agnostic) — but would value Arianna's confirmation and any caveats from experience
 - Character-level features for orthographic variation — worth adding?
-- **`cas_to_bioes.py` bottleneck (Feb 13 finding):** Currently hardcodes `AN` as the only entity type — the `Tipo` field from INCEpTION is ignored. For multi-type annotation, this needs a ~20-line patch to read `Tipo` and map to type-specific BIOES labels (e.g., `B-BIBLICAL`, `B-PATRISTIC`). The CRF, merge, and inference scripts need zero changes. Was single-type `AN` a deliberate simplification for CIC, or was multi-type planned?
+- **`cas_to_bioes.py` multi-type support (updated Feb 14):** Now handles multiple entity types via `get_annotation_type_label()`, which reads the `Tipo` field (and falls back through `value`, `label`, `NamedEntityType`, then type name). Supported labels include AN (GNORM legal), BIB (biblical), PAT (patristic), REF (reformation), LEMMA, CHAPTER, TITLE, NE. The CRF, merge, and inference scripts need zero changes — they are label-agnostic.
 
 ---
 
@@ -254,18 +254,26 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI + TypeSystem.xml)
 **Question:** How do we initially visualise what the pipeline has found?
 
 ```
-[Annotated output (from Stage 4 layers)]
-        ↓
-[build_corpus_json.py]
-        ↓ (converts pipeline annotations → structured JSON)
-[docs/prototype/data/corpus.json]
-        ↓
-[Corpus Browser — docs/prototype/index.html]
-        ↓ (interactive web-based exploration)
-[Citation index / cross-reference database]
-        ↓
-[Basic visualisations: frequency tables, citation networks]
+                 CURRENT PROTOTYPE PATH          FUTURE FULL-PIPELINE PATH
+                 ─────────────────────          ─────────────────────────
+[data/normalized/*.txt]              [Annotated output (from Stage 4 layers)]
+  (Stage 2 output)                      (BIOES + mark_source provenance)
+        ↓                                        ↓
+        └──────────┐               ┌─────────────┘
+                   ▼               ▼
+            [build_corpus_json.py]
+              ↓ (converts → structured JSON with
+              ↓  detection provenance and consensus tracking)
+            [docs/prototype/data/corpus.json]
+              ↓
+            [Corpus Browser — docs/prototype/index.html]
+              ↓ (interactive web-based exploration)
+            [Citation index / cross-reference database]
+              ↓
+            [Basic visualisations: frequency tables, citation networks]
 ```
+
+> **Note:** The current prototype reads directly from Stage 2 normalized text and applies its own rule-based detection. When the full CIC_annotation pipeline (Stage 4) is operational, `build_corpus_json.py` will consume its annotated output instead — the `crf_entities` parameter is already implemented for this.
 
 **Current state:**
 - ✅ **`build_corpus_json.py`** bridges the gap between the normalization pipeline output and the web prototype. It reads normalized text files from `data/normalized/`, applies enhanced rule-based reference detection (extending `normalize_text.py`'s patterns with OCR-variant handling), and produces `docs/prototype/data/corpus.json` — the structured input consumed by the Corpus Browser
