@@ -9,20 +9,22 @@
     "publisher": "Ioannem Oporinum, Basel",
     "source": "OCR extraction via Tesseract 5.3.4",
     "pipeline": "ITSERR-RESILIENCE normalization + rule-based detection",
-    "generated": "2026-02-14T01:50:30.680137"
+    "generated": "2026-02-14T02:15:25.092650"
   },
   "stats": {
-    "total_references": 18,
+    "total_references": 31,
     "by_type": {
+      "reformation": 1,
+      "classical": 11,
       "biblical": 13,
-      "classical": 3,
-      "patristic": 2
+      "confessional": 2,
+      "patristic": 4
     },
     "by_epistemic": {
-      "INTERPRETIVE": 8,
-      "FACTUAL": 10
+      "INTERPRETIVE": 19,
+      "FACTUAL": 12
     },
-    "chapters": 9,
+    "chapters": 10,
     "pages_with_content": 57
   },
   "entity_types": [
@@ -78,6 +80,38 @@
     }
   ],
   "chapters": [
+    {
+      "id": "title-page",
+      "title": "TITULUS",
+      "title_en": "Title Page",
+      "start_page": 1,
+      "end_page": 1,
+      "pages": [
+        {
+          "page": 1,
+          "chapter_id": "title-page",
+          "text": "a ANNOTATIO- n. ' AS. nesLocorumcommu nium doctrine Chriftianze P H IL\n1l LIPPI MELANCHTHONIS, Pert\n5 LEONARDVM STECKELIVM\nDartphenfis scholz Rectorem\ny conícrípta TN p e, P RÀ Blavhmi Jersm aont \"Án mecs p 4 RE éa - r \" Jj» WM s, ' Tue. Jebanir orgy obuz. Ü\nm , Mtis, à es :\ni\" Y VUA rn\n4 E NA PN\nm nc Eum (n Spy\n' BeS5slEE.ZE 9?.ER loannem Oporinum.",
+          "references": [
+            {
+              "start": 80,
+              "end": 93,
+              "text": "MELANCHTHONIS",
+              "type": "reformation",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
+        }
+      ],
+      "reference_counts": {
+        "biblical": 0,
+        "patristic": 0,
+        "reformation": 1,
+        "classical": 0,
+        "confessional": 0
+      }
+    },
     {
       "id": "praefatio",
       "title": "PRAEFATIO",
@@ -135,7 +169,17 @@
           "page": 7,
           "chapter_id": "de-deo",
           "text": ": DE DEO. ;\nPaulus Colo J-1. cum ait : Videte, ne quis uobis imponat peg Pbilofophi«m. Loquitur enim de tali Pbilofophia, qualis fuit Wwliant, Porphyrij et similium, qui iudicabant de uerbo Dei ;\nt ex philofophia : cum bec debeat non regina, sed ancilla e Je E 4 uerbi Dei, cui cedere oportet omnia. Sicut tuur Lutta dcci- pit lumen suum minus à fole:ita philofophia,que eft doctrina : rationis, e lumen inferius, regenda eft à lumine superiore,\nquod ejt uerbum Dei : 4 quo nor folun membra externa et\nali uires inferiores; sed ctiam mens ipfa gubernari debet cu» ius lumen est Pbilofopbia.\nT'emeanus ergo median utam,ut neque indoctis uulgo a fen I.\ntantibusneque doctis prepostere sentientibus concedamus: fcd v^\nmagnifaciamus doctrina artium,que cum vecta ratione corna )\ngruunt : caque non abutanur contra ueritatem Dei, sed recte Wtamur ad eius propagationem, Ya nibil bis avtibus erit.fecun dum uerbum Dei, alutarius. DE DEO, ? pz 2:71 Oct de Deo tractatur quidem et à philofo-\nB phis, sed admodum tenuiter. Etfi enim satis e-\n\n2 NR $33 rudité differunt contra Epicurcos , quod sit j vun Deus, cam; sententiam multis ac firmis ratto )\nnibus conftrmant:tamen in definitione Dei deficiunt, neque na\nturam e2 uoluntatem cius integre explicare po Junt, Qud- ) ^ quid «utem boc eJE quod inuefligarunt Pbilofo phi de Deo, id Y nequaquam c E contemnendum. Prodest enini uidere, quoufas t^^\nyátio bumana in doctrina de Deo progredi queat:et binc ti j dicare, quanta sit lux doctrine caleflis, 1 ad eam ille tenues\nfcintille philofophorum conferantur, Preterea ad arguenda bominum improbitatem, magnam babet uim bec ipfa doctri nascum ojfendat , bomines ne fue quidem. proprie rationi : afrentiri, Hinc ergo fumit Paulus grauijsimam illam vepre-\nben/tonem,",
-          "references": []
+          "references": [
+            {
+              "start": 1067,
+              "end": 1076,
+              "text": "Epicurcos",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         },
         {
           "page": 8,
@@ -213,7 +257,7 @@
         "biblical": 2,
         "patristic": 0,
         "reformation": 0,
-        "classical": 3,
+        "classical": 4,
         "confessional": 0
       }
     },
@@ -255,6 +299,42 @@
               "confidence": 0.85,
               "epistemic": "FACTUAL",
               "method": "rule-based"
+            },
+            {
+              "start": 1415,
+              "end": 1432,
+              "text": "in fymbolo Niceno",
+              "type": "confessional",
+              "confidence": 0.8,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            },
+            {
+              "start": 1434,
+              "end": 1454,
+              "text": "in fymbolo Atbanaftj",
+              "type": "confessional",
+              "confidence": 0.8,
+              "epistemic": "FACTUAL",
+              "method": "rule-based"
+            },
+            {
+              "start": 1467,
+              "end": 1475,
+              "text": "Ambrofij",
+              "type": "patristic",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1479,
+              "end": 1488,
+              "text": "Auguflini",
+              "type": "patristic",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
             }
           ]
         },
@@ -295,10 +375,10 @@
       ],
       "reference_counts": {
         "biblical": 4,
-        "patristic": 0,
+        "patristic": 2,
         "reformation": 0,
         "classical": 0,
-        "confessional": 0
+        "confessional": 2
       }
     },
     {
@@ -392,6 +472,24 @@
           "text": "ziii$:—i\nMoms CUWIUISME , LO m ME VN 2S\n- ÀH DE CREATIONEF, \"^\nf co innotuit naturis rationalibus : que quidem 4d-boc sunt FU er Rex,\n- condiltut Deum partim.ex uerborum, partimexfaclorum oL, elus\n, tcfümonijs agnofcerent, cumque bonorcac reuercntia fusum ; dignint. iudicarent. Ac mifi bomines lumen: suum anufissent\n* PC\" peccatum, nullo alio libro fuiffet opus, quam ifla naturse contesiplatione. In boc et\" cogitandi c loquendi € «gen- di materian infinitam babwifent. — Nuncuero poft prifüi- nam lucem ucbementur obfcuratam, folis creationis teflimo\n; nia nequaquam sufficiunt ad parandam ueram Dei ntoticiam: cum prafertim deprauata sit doctrina de creatione. Stoicoriz : C Eptcurcorum erroribus.Cum autem alie patefacliones di\nune confiderande sint,ad illas utile c/I adiungere ctiam ucfti £4 Dei in creaturis,ad fidem noflram confirmandam. 4A 8 Summa ucro buius loci est, quód Deus eternus pater Do. * mint nojtri Iefu Cbrifti, unà cum filio suo untgenito € cot». terno, e cum fbiritu sancto, condidit ex nibilo coeli; ter-\nYam, C7 omnta que intra bec continentur, unà cum naturis spiritualibus,quales sunt an gclorum:quodque idem Deus ade t suis o peribus,non alligatus eis nece fario,ut Stoici fixerunt, : fcd libere, cum sit ipfe liberrimus. Ad boc tantum opusnullo«- alio inflrumento ufus et quám uerbo suo, quod efl infinite potentie,sicut Mofes in principio Genefis docet: cum quo co\nsentit uniuerfa scriptura. Sunt autem. ualde illuftria te lHimonia pafim in Pfalmis,\nut Pal. 55. Verbo Domini fundati sunt codli, et spirituforis\neius onnis militia corum. pfe contitet mare sicut in. utre:\nquidquid dicit,boc sit:et fi quid mandat,continuo pralo est. 1\nPal. 103. Tu extendis coclum,ut tapetem : tu fundafli terran cum fundamento suo, ec. Pfal.147 : Qui tegit coelum nubi. BE bus, c terye a reitur pluutan, Non solum autem res bonas omnes condidit Deis folo itcr bo. sed ctiam quód fubfitunt,boc totum eft Dei, Terra manet b s foceunda",
           "references": [
             {
+              "start": 666,
+              "end": 672,
+              "text": "Stoico",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
+              "start": 1197,
+              "end": 1203,
+              "text": "Stoici",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            },
+            {
               "start": 1752,
               "end": 1761,
               "text": "Pfal.147",
@@ -456,14 +554,24 @@
           "page": 30,
           "chapter_id": "de-creatione",
           "text": "\"oW —ád\n. DE CAVSA PECCATE 1\nSed iti boc tertio loco dectrine Cbrifliane prorfus nila- liud prejLare bumana sapientia poteft, nifi ut miretur, unde m natura rationali omnium prestantifiima, orta sit borribi-\nlis confufto omnium uirium,acerrimum dissidium inter ratio\nnem €7 appetitus,tot (celera,tot calamitates tot morbi mors\ndeniq: ipfa, ex summorum bominum triftissimi exitus. — Et qut bec omnia suo ingenio explicare conantur incidunt in la byrintbos, quibus e fcipfos et alios impediunt, ita ut nuns\nquam expediri possint. Hinc alij in E picurcos,alij in Stoicos,\nalij tn Manicbeos errores coniedti (unt, ut uel temere omnid,\nucl necessario fieri fomniarent:uel duas primas caufas,duosqe\nDeos fingerent;alterum bonum, alterum malum, — Hoc ai tem po lremum delirium impium c Je, ex precedenti dodtri-\nna satis eft manifeflum:cum probatum fitjunicum e(fe Deum,\nconditorem totius Nature, e conferuatoven, Nunc uero boc (ciendum eft. bunc ipfum Deum nequaqua\ne Jc authorem. peccati, uel ullius mali operis. Id primum ex definitione e natura Dci probari potest. Cum enim fitbo- 1\n\n45 era X MSEU ftméluh yatque adeo ipfa bonitas ueritas, iufti cla, fanclitassimpofübile cft eum uelle aut probare mala ope-\n74 C7 peccata, multo minus impellit bomines ad peccandum. Cum boc argumento congruunt omnta teflimonia diuina ge\nborum et rerum. Teffatur enim Deus, fe ucbementifimé iva. fci peccato, primim uerbis, deinde cxem plis. In priore genere teflimoniorum eft prima lex , data primo: bomini: Qu tfocun que die comederis ex bac arbore, morte movie ris. Hanc edrdem uoluntatem multo magis declarauit Deus,\nPerfolennem promuleationem legis in monte Sina,quam suo\ntpfius d 'eito scripfit, fontem omnium leeum que placet Deo, Propterea primum e feorfim bopulo Yracl eam cum fimeue. laribus Prodiciis propojuit , ucluti communiter obligantem\nQ7 Iuó05 c7 alios bomines. Ceteras leges omnes in. eodem. loca '",
-          "references": []
+          "references": [
+            {
+              "start": 560,
+              "end": 567,
+              "text": "Stoicos",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         }
       ],
       "reference_counts": {
         "biblical": 3,
         "patristic": 0,
         "reformation": 0,
-        "classical": 0,
+        "classical": 3,
         "confessional": 0
       }
     },
@@ -484,7 +592,17 @@
           "page": 32,
           "chapter_id": "de-providentia",
           "text": "* - M: - topo ct 7n\nY — ce par \"A DE CAVSA PECCATI 23\ntcs diuini, probantá; Deum nequaquam effe autborem pec- cati, sed etus summum ho fem:qui facit omnia ,ut peccatum tol latur de terra.\nMulta quidem comniunifci folet bumana vatio, cotra banc\nl doctrütam:sed nibil tamen afferre poteft adeo firmwm;ut eant pofiit CHerterezac nibil aliud confequ tuy nifi ut oppugiando Veram ententiant, qua laus tufticie e bonitatis integré Deo tribuitur , magis Iagisqs suam impietatem prodat : on fo-\nlum non agnofcens culpam fuat, uerüm etiam im pudentifsi-\nme defendens, cum cam transfert in Deum, quo nibil eft fan-\neHus,ncque integrius:ficuti faciebant primi parentes, à quibus\nboc ueienum pofleri bauferunt. Vir enim in mulierem sibi da tam, mulier in ferpentem à. Dco conditum, facinoris fiit cau- fam transferebat,ac neuter feipfum arguebat, Aduerfus banc\ninipictatem tenenda e$t bec sententia coftantiffime, quód pec-\ncatum nequaquam conatum cfl 4Deo,sed contra uoluntate\nC ordimationem Dei bonam aliunde introductum. Si enim\n: ucimille obiectiones afferret bumata vatio contra banc fen-\n, tentiam tamen ea manet certa et immota. Quuecung; enim d 1\nDco condita sunt, ea sunt non bona folia, uerim efiam uat- '\nde bona : ut Mo fes de creatione docct. Idem: ex definitione,\nnatura;officijs Dei, totiusque caclestis doctrine testimoniis con\nformatur, adcoque ex ipfis mentis bumane fano iudicio : cui :\npalam contradicunt Stoici, et quicung; fingunt peccatum uo\nlente et impellente Deo fiericum fingulari contumclia Det, \"\nqualem ne bomo quidem bonus ferre bofJet. Quamobrem banc manifefte im piam opinionent dctefle D.\nmur,non solum religioni, uerum etiam moribus ac discipline\ncli noxiam:ac tueamur banc uerissimam doctrinam , quód Dcus nec uelit nec probet peccatis . EfL enim bonorifica Dco: C bominibus ad pietatem , offica; bwnanitatem utilis ac nece faria. Deutque ipfa peccati natura satis oftendit , quod C on",
-          "references": []
+          "references": [
+            {
+              "start": 1413,
+              "end": 1419,
+              "text": "Stoici",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         },
         {
           "page": 33,
@@ -503,7 +621,7 @@
         "biblical": 0,
         "patristic": 0,
         "reformation": 0,
-        "classical": 0,
+        "classical": 1,
         "confessional": 0
       }
     },
@@ -550,7 +668,17 @@
           "page": 37,
           "chapter_id": "de-libero-arbitrio",
           "text": "Mi 33 — DE CAVSA PECCATI.\n\"n solum enimiapij et manifefti bofles Accu antur pev tterbum\nn Det,uerum etiam pij. sicut arguebatur Petrus Mattb. tc , dif-\nA fusdes Domit ne patereturzitem fil J Zeoedei,quum regna-\n(4 rc uellent.Sed pajsint multa excHtp lá oc CHY Yn,\nE Obücitur et illud quod Deus determinat contureentia: ergo acterminautt et peccatum.Sed sciendi cft.im gcis difcrt2\nAl mei cj c Witer ea que u ult Deus,et ea qu nol t ult. Preuidet\ndi delicta Saulis, decr aliorum : sed n eqs tmpellit uoluttaten\nI Corm, neque uult ut peccent. Permit autent,quia aliter facee lC ont, et pae tempus decere Hüic neg aquam fegut-\n) tur,quod bomines nece Jario peccent,aut quod mutetur in uo\nluntate bomüiis liber motus a geil. Neque plus firmi est in eo quoa atunt,atuyanm diuinitus sit.\n\"Nu fientavt. Neque entm tdeo ttoluntas peccantium non e : caufa\nfuarum actiontri. Efe enin libertas donum crei Otis, CC Lnt-\npedttur per füflentationé diuinam. Sicut pater alit et patitur\nfium illiberalent, quem propter ünpietateni minus diliettz nea; amen cft caufa illorum beccatorunt Ge Riu admittit.\nSed precipue gloriantur Stoici Theologi boc argumento,\nquod ab ordine caufavum fumitur:\nSecunda caja tton agit sine prima;\nVolintas Eug peccantis früt caufa secunda fui peccati: Eroo c7 prume Cau Íe &tcho accejsit.\n$ becto fa utdctur bec ratto: sed vudtores fcire d cbent,nibil\nY. &deó fplendide obijci poffe, ut sit concedendum propter ab-\ni furda que binc fequuntur:qucd uidelicet Deus sit z uthoz pec\ncatt, quod sit iniuftts in puriendo peccato , quod sit tyrannus\nqui delectetur periicic fuarum creaturarum : quod denique frustra ntocetur, H.ec borrenda fcelera fequuntur conce Jo\nargumento:ergo nullo modo est admittendum, c» opponcne\nda manifcJia teflimonia ex uerbo Dei, quód Deus non dcledte-\nfur peccato Q2\" morte. — Hac rejbonj 10 cst grajsissima, c7 ta-",
-          "references": []
+          "references": [
+            {
+              "start": 1111,
+              "end": 1117,
+              "text": "Stoici",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         },
         {
           "page": 38,
@@ -562,7 +690,17 @@
           "page": 39,
           "chapter_id": "de-libero-arbitrio",
           "text": "n 4.0 DE LIBERO ARBITRIO, / cft admirationis, neque in bac uita intelligi omnino potcst, Mul\nr tum uero buic difbutationi lucis accedet ex doctrina de libe- ) ro arbitrio,qui locus buic proxime fubiungitur,\n1 DE LIBERO ARBITRIO.\nri M Jemper certamina füerunt in Ecclefia de libero i j axbitrio, precipue uero sententize sunttres. Prime c E Stoico Yit qui cum tollunt conttgentiam, culus caufa sunt\ni due ;,bertas in Deo,et libertas in bominis uoli tate. simul e- j tiam negant liberum arbitri, Nec mirum est, fi cum maximo\ndifcrimine discipline detrabunt bominibus omnem libertaté: :\ncum etiam Deum ipfum uinculis (uis, quantum m ipfis eft,co\n: nentur alligave secundis caufis. Secunda opinio eft illorum, 107 qii nimium tribuunt uiribus bumanis, quarum precipua c& potentta uudicatis, que ucl Metts uel Ratto uel Intellectus no- j munatuy. Secundum locum obtinet Voluntas, que uel eligit, uel reijcit lla que 4 vatione decreta sunt. Sub bac sunt appe- titiones fiue affectus que aliás congruut cum uoluntate, alis non congruunt, Ynfuna potentia eb motus exteriorum mem- brorum,uel totius corporis, Hie due opiniones meritó rcij-\ncituntur, cum ambze sint falfe ex abfurde. — \"Tertia sententia\neft uera, que media e L, ncque prorfus tolleis libertatem,neque\nnimium tribuens uiribus bumatnis:4c docet, quid nam reliquie L man ferit in natura bominis pofl lapfum;, et borribilem cor-\nY ruptionem que fequuta eft. 1d enifh fcire permultum untere E, N ad omnia officia tum ciuilia, tum piritualia, c intelligenda\net recte admüni lranda. ESL autem Liberum arbitrium,facultas quedam uolunta-\ntis in probandis uel improbandis 1s que monjlrantur im do- rina. Cumque disputatur de libero arbitrio, non boc queri\" 1 tuy utri nece Jario an contingenter fiant omnia:sed,an poJsit bono suis proprijs uiribus fatisfacere legi Det. Cumque ad banc",
-          "references": []
+          "references": [
+            {
+              "start": 340,
+              "end": 346,
+              "text": "Stoico",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         },
         {
           "page": 40,
@@ -630,7 +768,7 @@
         "biblical": 3,
         "patristic": 1,
         "reformation": 0,
-        "classical": 0,
+        "classical": 2,
         "confessional": 0
       }
     },
@@ -681,7 +819,17 @@
           "page": 53,
           "chapter_id": "de-peccato",
           "text": "Neff — À—' tic M À— Pipnen a 4 \"A I & 4. DE PECCATO,\n// : tas tuasftcut in Cocco, C7\" Uo Cera, Na Angeli murum n odi \" dolent,ciumn J0nties offend Deum: Imago quodam Kc\n^ lo inátgnantur Diabolis et Organs eum, quod (HYroci ordt-\nnem diuinis in ltutum, eg lurcnter refi) lat Deo, Ac ru t (t\nirtfice gaudent angeli, cum bomines in uiam veucr i uere fer\n21 Wut Deo:eofdemque incredibili amore compleétuntur, sicut\nj i Chr. stus mquit ; Aitgeli gaudent TL celo (uber HNuo peccatore\nE penitentiam agente, — Quare deteffanda efe Anabaptiftarü\ni pnpietas aut omues 4ffecl us damnant,more Stoicorum: quod\ncum faciunt, angelos quoque,atque adco Deum ipfum damnant. - . Poslremo queritur et illud, Vtrum maneat boc peccatum\npoji Baptifmum. Ad bác qu«&flionieim propbant bomines vc- f boüdere non possunt. Cecienim unt, ac ne de ülis quident\n71 ycbus vecle iudicant que oculis cernuntur: quanto mtagis cre\nYaut ia bis,quibus nibileftarcanius. — Sanctis au Cin,qui no\n» runt teffimonia Probpbetarum et Abo lolorum;et reipfa uim\ndaprauate nature sentiunt,nequaquam dubium c t, quin 114 neat peccatum un bominibus ctiam poft remissionem. Hinc ea\nnim oriuntur naxima. certamina ii antmis sanctorum, inter\ncarte et piritunt. Manet ergo morbus : sed culpa fiue vea- (us ejt venif us baptizatis, et\" credentibus Euágelio. Sed tame uis iorot in adultis pev quotidiana exercitia paulatim extin-\nguitur.ft nó remittant fidi uerbi Dei,inuocatione, et cert\nLET men cotra libidinem naturale, Sic magis magisd; cognofcunt\nY. ufu. qua \" feua 4D : tyraántdé caro et'uctus natura exerceat\npcr omne DAnc ulta,tit nouum et fbiritualem bomine. Quod non fieret, fi morbus originis non maneret üi enatis. Oui ue-\nro manent carnales , ij nibilo melius de bis vebus , quàm ceci de coloribus iudicare polTunt,quantumuis sunt sapientes, — De peccatis a&dualibus, Actualia peccata ab oviginali sic differunt uteffotus à — caufa. Nam illud e$t fons omnium malarum actionum:boc cft.\nedligo ip mcuteauerfto á Deo in oluntate, ex praue inclina \"m",
-          "references": []
+          "references": [
+            {
+              "start": 581,
+              "end": 587,
+              "text": "Stoico",
+              "type": "classical",
+              "confidence": 0.75,
+              "epistemic": "INTERPRETIVE",
+              "method": "rule-based"
+            }
+          ]
         },
         {
           "page": 54,
@@ -706,7 +854,7 @@
         "biblical": 0,
         "patristic": 0,
         "reformation": 0,
-        "classical": 0,
+        "classical": 1,
         "confessional": 0
       }
     },
