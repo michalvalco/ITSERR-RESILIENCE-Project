@@ -226,7 +226,7 @@
 #### ¶4.2.2 — Talmudic computational scholarship
 - [A] Waxman (2021) — graph database: 630 rabbis, 1,217 unique interactions in the Babylonian Talmud
 - [A] Sefaria MCP server (2025) — Claude/ChatGPT querying authoritative Jewish texts in real-time → directly relevant model
-- [NEW] Note connection to GNORM's Talmud expansion (Marco Papasidero's work at Palermo)
+- [NEW/DR] Pavone, A. & Imperia, V. (2025). "GNORM: Challenges and Potential of a 3D Visualisation of the Babylonian Talmud." In *The Digital Turn in Religious Studies*. — The GNORM team has already conceptualized extending the framework to non-canon-law religious corpora. This directly strengthens the cross-domain adaptation thesis for Protestant theological texts. (Surfaced in deep read analysis of CHAT annotation report, Feb 14.)
 
 #### ¶4.2.3 — The Protestant gap
 - [A] "Protestant theological corpus computational analysis is significantly underrepresented."
@@ -611,6 +611,10 @@
 - Tuppal, C.P., Tuppal, S.M., Tuppal, S.M., & Ninobla, M.M. (2025). "Towards a Relational Understanding of Human Beings in an AI-Mediated World: A Hermeneutical Reading." *Scandinavian Journal of Caring Sciences* 39(3). DOI: 10.1111/scs.70097.
 - Li, Z. & Wu, Q. (2025). "Let It Go or Control It All? The Dilemma of Prompt Engineering in Generative Agent-Based Models." *System Dynamics Review* 41(3). DOI: 10.1002/sdr.70008. — Four-component analysis (profile, memory, planning, action); over-control vs. authenticity dilemma directly relevant to §2.3 (narrative memory) and §6.2 (graduated autonomy).
 - Jenkins, D.M., Cleverley-Thompson, S., Erikson, D., Blankenbaker, A., & Brown-Saracino, B. (2025). "Prompting for Meaning: Exploring Generative AI Tools for Qualitative Data Analysis in Leadership Research." *Journal of Leadership Studies* 19(3). DOI: 10.1002/jls.70014. — Introduces "epistemic friction" concept; GenAI for qualitative coding with human oversight for interpretive depth. Candidate for §3.
+
+### New sources from deep read analysis (Feb 14, 2026)
+- Pavone, A. & Imperia, V. (2025). "GNORM: Challenges and Potential of a 3D Visualisation of the Babylonian Talmud." In *The Digital Turn in Religious Studies*. ResearchGate: 10.xxxx/398385581. — Cross-domain precedent: GNORM team extending framework beyond canon law. For §4.2.2.
+- Pavone, A. & Imperia, V. (2025). "Challenges and Potential of a 3D Visualisation of the Corpus Iuris Canonici." In *The Digital Turn in Religious Studies*. OA: http://hdl.handle.net/10447/695218. — Theoretical/technological foundations of GNORM 3D visualization. For §4.3.1.
 
 ### Search notes (Feb 13, 2026)
 Two additional Scholar Gateway searches (epistemic uncertainty in interpretive domains; DH agentic workflows) confirmed rather than filled the gap: no peer-reviewed work applies agentic AI to humanities or theological research. This strengthens Gap 1 in the five-gap convergence analysis.

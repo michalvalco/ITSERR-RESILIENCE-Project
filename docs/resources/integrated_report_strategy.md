@@ -300,6 +300,12 @@ These topics appear in both [A] and [B] and need merging (not duplication):
 - **Session froze** before applying edits to live reference docs. Handoff prompt written.
 - **Next session should:** Execute `PROMPT_apply_deep_read_additions.md` — apply 8 edits to `pipeline_technical_reference.md` and `workflow_diagram.md`. Then resume synthesis — either execute PROMPT_integrate_chat_report.md or begin Phase 2 drafting.
 
+### Session 5b — February 14, 2026 (continued)
+- **What happened:** Applied all 8 deep read additions to live reference docs via Filesystem tools. `pipeline_technical_reference.md`: 6 edits (network scale, Talmud precedent, tokenization warning, sparse training note, ATON Framework, updated TBD list). `workflow_diagram.md`: 2 edits (digitaldecretals.com, Omeka S/IIIF integration path). Also added 2 Pavone & Imperia citations to `integrated_report_detailed_outline.md` §4.2.2 and bibliography (both GitHub and Resources copies synced). HUB updated with completion status and decision log entry.
+- **Files modified:** `docs/resources/pipeline_technical_reference.md`, `01_research/workflow_diagram.md`, `docs/resources/integrated_report_detailed_outline.md` (+ Resources copy), `TNA_FELLOWSHIP_HUB.md`
+- **PKB note:** PKB copies of `pipeline_technical_reference.md` and `workflow_diagram.md` are now behind their filesystem versions. The PKB snapshots still serve as context but the live docs have the deep read additions.
+- **Next session should:** Execute `PROMPT_integrate_chat_report.md` in a fresh context window — read Source [C], assess unique material, update outline with [C] tags. Then Phase 2 drafting begins.
+
 ---
 
 ## 9. FILE LOCATIONS
