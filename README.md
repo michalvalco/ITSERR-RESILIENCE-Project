@@ -30,6 +30,7 @@ This project bridges twenty years of theological hermeneutics with AI agent deve
 
   ```bash
   pip install -e "03_prototype/.[dev]"
+  # From the repository root (where mkdocs.yml lives):
   mkdocs serve
   ```
 

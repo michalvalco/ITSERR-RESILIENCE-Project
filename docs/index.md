@@ -103,7 +103,7 @@ itserr-agent chat
 
 ## Repository Guide
 
-- `03_prototype/` — Python agent and tests (`pip install -e ".[dev]"`, then `pytest`)
+- `03_prototype/` — Python agent and tests (`pip install -e "03_prototype/.[dev]"`, then `pytest 03_prototype/`)
 - `docs/` — MkDocs source for this webpage (`mkdocs serve` to preview locally)
 - `01_research/` — Research materials and workflow diagrams
 - `02_writing/` — Working paper and blog post drafts
