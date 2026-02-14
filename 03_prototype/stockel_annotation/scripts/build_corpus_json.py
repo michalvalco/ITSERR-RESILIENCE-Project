@@ -24,6 +24,7 @@ DEFAULT_OUTPUT = Path(__file__).parent.parent.parent.parent / "docs" / "prototyp
 
 # Chapter metadata with page ranges and descriptions
 CHAPTERS = [
+    {"id": "title-page", "title": "TITULUS", "title_en": "Title Page", "start_page": 1, "end_page": 1},
     {"id": "praefatio", "title": "PRAEFATIO", "title_en": "Preface", "start_page": 2, "end_page": 6},
     {"id": "de-deo", "title": "DE DEO", "title_en": "On God", "start_page": 7, "end_page": 11},
     {"id": "de-trinitate", "title": "DE TRINITATE", "title_en": "On the Trinity", "start_page": 12, "end_page": 16},
@@ -105,9 +106,11 @@ BIBLICAL_PATTERNS = [
 # Patristic references
 PATRISTIC_PATTERNS = [
     (r'\b(August(?:inus|ini|ino)?\.?(?:\s+de\s+\w+(?:\s+\w+)?)?)', 'patristic'),
+    (r'\b(Auguf[lt](?:inus|ini|ino)?\.?)', 'patristic'),  # OCR: fl/ft for st
     (r'\b(Hieronym(?:us|i|o)?\.?)', 'patristic'),
     (r'\b(Chrysostom(?:us|i|o)?\.?)', 'patristic'),
     (r'\b(Ambros(?:ius|ii|io)?\.?)', 'patristic'),
+    (r'\b(Ambrof(?:ius|ij|io)?\.?)', 'patristic'),  # OCR: f for s
     (r'\b(Cyprian(?:us|i|o)?\.?)', 'patristic'),
     (r'\b(Basilius\.?)', 'patristic'),
     (r'\b(Athanas(?:ius|ii|ij)?\.?)', 'patristic'),
@@ -118,19 +121,23 @@ PATRISTIC_PATTERNS = [
     (r'\b(Aristotel(?:es|is)?)', 'classical'),
     (r'\b(Cicero(?:nis)?)', 'classical'),
     (r'\b(Simonides)', 'classical'),
+    (r'\b(Stoic(?:i|os|o|orum|is))', 'classical'),   # Stoic school
+    (r'\b(Epicur(?:eos|eorum|cos|corum))', 'classical'),  # Epicurean school
 ]
 
 # Reformation references
 REFORMATION_PATTERNS = [
     (r'\b(Luther(?:us|i|o)?\.?)', 'reformation'),
     (r'\b(Melanchthon(?:is|em)?\.?)', 'reformation'),
+    (r'\b(MELANCHTHONIS)', 'reformation'),  # Uppercase variant on title page
     (r'\b(Caluin(?:us|i|o)?\.?)', 'reformation'),
     (r'\b(Zwingl(?:ius|ii)?\.?)', 'reformation'),
 ]
 
 # Confessional document references
+# Uses [Ssf] to handle OCR long-s variant (fymbolo for symbolo)
 CONFESSIONAL_PATTERNS = [
-    (r'\b((?:in\s+)?[Ss]ymbolo\s+(?:Niceno|Athanasij|Ambrosij|Apostolorum))', 'confessional'),
+    (r'\b((?:in\s+)?[Ssf]ymbolo\s+(?:Niceno|Athanasij|Atbanaftj|Ambrosij|Ambrofij|Apostolorum))', 'confessional'),
     (r'\b(Confessio(?:nem|nis|ne)?\s+August(?:anam|anae)?)', 'confessional'),
 ]
 
