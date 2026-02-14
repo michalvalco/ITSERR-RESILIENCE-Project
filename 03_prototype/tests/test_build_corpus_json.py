@@ -159,6 +159,20 @@ class TestCRFOverlapPreference:
         # Should use the matching entity's confidence
         assert ref["confidence"] == 0.90  # max(0.75, 0.85) + 0.05
 
+    def test_selects_highest_confidence_matching_entity(self):
+        """When multiple CRF entities match on type, pick the highest confidence."""
+        text = "See Augustinus in the letter."
+        crf = [
+            {"start": 4, "end": 15, "text": "Augustinus", "type": "patristic", "confidence": 0.70},
+            {"start": 4, "end": 15, "text": "Augustinus", "type": "patristic", "confidence": 0.92},
+            {"start": 4, "end": 15, "text": "Augustinus", "type": "patristic", "confidence": 0.80},
+        ]
+        refs = detect_references(text, crf_entities=crf)
+        ref = _find_ref(refs, "Augustinus")
+        assert ref["consensus"] is True
+        # Should use best confidence: max(0.75, 0.92) + 0.05 = 0.97
+        assert ref["confidence"] == 0.97
+
     def test_disagreement_when_no_type_matches(self):
         text = "See Augustinus in the letter."
         # All overlapping CRF entities disagree on type

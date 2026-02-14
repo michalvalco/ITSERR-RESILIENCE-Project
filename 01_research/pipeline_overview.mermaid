@@ -18,7 +18,7 @@ flowchart TD
         B1["⚙️ OCR Processing<br/><b>ocr_processor.py --format both</b><br/><i>Tesseract + Poppler (PDF/TIFF/JPG/PNG)<br/>Also: ABBYY FineReader (SNK standard)<br/>Transkribus/Kraken for Fraktur</i>"]
         B2["📄 ALTO XML + Clean Plaintext<br/><i>Dual output in one step<br/>data/alto/*.xml + data/cleaned/*.txt</i>"]
         B3["📊 Confidence Extraction<br/><b>✅ extract_alto.py</b><br/><i>Parses ALTO XML (Tesseract or ABBYY)<br/>→ plaintext + per-word confidence CSV</i>"]
-        B4["📝 Normalized Plaintext<br/><b>✅ normalize_text.py</b><br/><i>Orthographic normalization:<br/>ſ/s, ij/j, cz/č, w/v, ß/ss</i>"]
+        B4["📝 Normalized Plaintext<br/><b>✅ normalize_text.py</b><br/><i>Orthographic normalization +<br/>abbreviation expansion (17 patterns)<br/>→ expansion_log for Layer 2 provenance</i>"]
         B1 --> B2
         B2 --> B3
         B3 --> B4
@@ -43,30 +43,32 @@ flowchart TD
     %% ===== STAGE 4: MINE =====
     subgraph S4["<b>STAGE 4: MINE</b><br/><i>CIC_annotation Pipeline (adapted)</i>"]
         direction TB
-        D0["📥 BIOES Input<br/><i>cas_to_bioes.py<br/>One token per line</i>"]
-        D1["Layer 1: Rules<br/><i>annotate_by_rule.py<br/>Trie + regex patterns</i>"]
-        D2["Layer 2: Abbreviations<br/><i>annotate_by_abbreviations.py<br/>Dictionary lookup</i>"]
-        D3["Layer 3: Match<br/><i>annotate_by_match.py<br/>Trie + PREPOST gap prediction</i>"]
-        D4["Layer 4: CRF<br/><i>annotate_by_crfsuite.py<br/>sklearn-crfsuite, ±6 window</i>"]
-        D5["Layer 5: Structure<br/><i>annotate_chapter/title/lemma.py<br/>Structural regex</i>"]
-        D6["🔀 Merge + Post-process<br/><i>merge_annotations.py<br/>First-method-wins priority<br/>+ mark_source provenance</i>"]
-        D0 --> D1 --> D2 --> D3 --> D4 --> D5 --> D6
+        D0["📥 BIOES Input<br/><i>cas_to_bioes.py<br/>Multi-type: BIB, PAT, REF, AN, ...</i>"]
+        DL["<b>Layers 1–5</b> (each reads input ZIP independently)<br/><i>1. Rules · 2. Abbreviations · 3. Match<br/>4. CRF · 5. Structure<br/>Each writes to own output dir</i>"]
+        D6["🔀 Merge + Post-process<br/><i>merge_annotations.py<br/>First-method-wins priority<br/>(L1 > L2 > L3 > L4 > L5)<br/>+ mark_source provenance</i>"]
+        D0 --> DL --> D6
     end
 
     %% ===== STAGE 4b: EPISTEMOLOGICAL CLASSIFICATION =====
     subgraph S4b["<b>Epistemological Classification</b>"]
         direction TB
-        E1["✅ FACTUAL<br/><i>≥2 methods agree<br/>CRF conf. ≥ 0.85</i>"]
-        E2["🔍 INTERPRETIVE<br/><i>CRF alone<br/>conf. 0.70–0.85</i>"]
-        E3["👤 DEFERRED<br/><i>Methods disagree<br/>conf. < 0.70<br/>or theological judgment</i>"]
+        E1["✅ FACTUAL<br/><i>≥2 methods agree (consensus)<br/>OR unambiguous pattern ≥ 0.85</i>"]
+        E2["🔍 INTERPRETIVE<br/><i>Single method<br/>conf. 0.70–0.85</i>"]
+        E3["👤 DEFERRED<br/><i>Methods disagree on type<br/>conf. < 0.70<br/>or theological judgment</i>"]
     end
 
     %% ===== STAGE 5: REPRESENT =====
     subgraph S5["<b>STAGE 5: REPRESENT</b>"]
         direction TB
+        F0["✅ <b>build_corpus_json.py</b><br/><i>Pipeline output → structured JSON<br/>with detection provenance +<br/>consensus tracking</i>"]
+        F0B["✅ <b>Corpus Browser</b><br/><i>docs/prototype/index.html<br/>Dashboard, search, filters,<br/>consensus visualization</i>"]
         F1["📊 Citation Index<br/><i>Cross-reference database<br/>CSV / JSON</i>"]
         F2["🕸️ Network Graphs<br/><i>Co-citation analysis<br/>D3.js visualisation</i>"]
         F3["🧊 GNORM 3D Vis<br/><i>ariannapavone.com/gnorm/<br/>Input format TBD</i>"]
+        F0 --> F0B
+        F0B --- F1
+        F0B --- F2
+        F0B --- F3
     end
 
     %% ===== STAGE 6: REFINE =====
@@ -88,12 +90,15 @@ flowchart TD
 
     %% ===== CONNECTIONS BETWEEN STAGES =====
     S1 -->|"TIFF / JPEG2000"| S2
-    S2 -->|"plaintext"| S3
+    S2 -->|"normalized plaintext<br/>+ expansion_log"| S3
     S3 -->|"UIMA CAS XMI"| S4
     D6 --> S4b
     S4b -->|"annotated + classified"| S5
     S5 -->|"CSV / JSON"| S6
     S6 -->|"refined datasets"| S7
+
+    %% ===== PROTOTYPE SHORTCUT =====
+    S2 -. "current prototype path<br/>(rule-based detection<br/>in build_corpus_json.py)" .-> S5
 
     %% ===== INCEpTION ROUNDTRIP =====
     S4 -. "bioes_to_cas.py<br/>→ back to INCEpTION<br/>for expert review" .-> S3
