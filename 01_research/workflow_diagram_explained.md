@@ -4,7 +4,7 @@
 **Original prepared for:** Marcello Costa, Arianna Pavone, and the Palermo team  
 **This version:** Annotated for non-technical readers (colleagues, students, grant evaluators, librarians)  
 **Framework:** Based on Marcello's data processing pipeline (Fry 2007)  
-**Date:** 13 February 2026
+**Date:** 13 February 2026 (created) | 14 February 2026 (updated: test counts, Stage 5 Visualization, materials status)
 
 > 🎓 **What is this document?**
 >
@@ -136,8 +136,11 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 **Current state:**
 - ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
 - ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
-- ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion)
-- ✅ 78 tests passing across both extraction and OCR modules
+- ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion) and abbreviation expansion with provenance logging
+- ✅ `cas_to_bioes.py` converts INCEpTION CAS XMI exports → BIOES-tagged sequences for CRF training (multi-type support)
+- ✅ `zero_shot_crf_experiment.py` provides cross-domain CRF transfer experiment framework
+- ✅ `build_corpus_json.py` generates Corpus Browser data with detection provenance and epistemic classification
+- ✅ 414 tests passing across 11 suites (see `PROGRESS.md` for authoritative count per suite)
 - Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
 - No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 - ⚠️ **Important:** `normalize_text.py` outputs pre-annotated plaintext (XML-like `<ref>` and `<chapter>` tags), NOT BIOES sequences. The BIOES conversion happens later: normalized text → INCEpTION (human annotation) → `cas_to_bioes.py` → pipeline. This human annotation loop is the bridge between Stage 2 (Parse) and Stage 4 (Mine).
@@ -307,20 +310,37 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 **Question:** How do we initially visualise what the pipeline has found?
 
 ```
-[Annotated output]
-        ↓
-[Citation index / cross-reference database]
-        ↓
-[Basic visualisations: frequency tables, citation networks]
+                 CURRENT PROTOTYPE PATH          FUTURE FULL-PIPELINE PATH
+                 ─────────────────────          ─────────────────────────
+[data/normalized/*.txt]              [Annotated output (from Stage 4 layers)]
+  (Stage 2 output)                      (BIOES + mark_source provenance)
+        ↓                                        ↓
+        └──────────┐               ┌─────────────┘
+                   ▼               ▼
+            [build_corpus_json.py]
+              ↓ (converts → structured JSON with
+              ↓  detection provenance and consensus tracking)
+            [docs/prototype/data/corpus.json]
+              ↓
+            [Corpus Browser — docs/prototype/index.html]
+              ↓ (interactive web-based exploration)
+            [Citation index / cross-reference database]
+              ↓
+            [Basic visualisations: frequency tables, citation networks]
 ```
 
+> **Note:** The current prototype reads directly from Stage 2 normalized text and applies its own rule-based detection. When the full CIC_annotation pipeline (Stage 4) is operational, `build_corpus_json.py` will consume its annotated output instead — the `crf_entities` parameter is already implemented for this.
+
 **Current state:**
+- ✅ **`build_corpus_json.py`** bridges the gap between the normalization pipeline output and the web prototype. It reads normalized text files from `data/normalized/`, applies enhanced rule-based reference detection (82 patterns: 58 biblical, 18 patristic/classical, 4 reformation, 2 confessional), and produces `docs/prototype/data/corpus.json`
+- ✅ **Corpus Browser** (`docs/prototype/index.html`) provides an interactive three-column interface with dashboard, full-text search, entity/epistemic filtering, reference highlighting, and contextual detail panels
+- ✅ **Epistemic classification** is applied at build time: each reference is tagged `FACTUAL`, `INTERPRETIVE`, or `DEFERRED` based on pattern quality and detection method(s)
+- ✅ **Detection provenance** is tracked per reference: every annotation records which method(s) detected it (currently rule-based; CRF when integrated)
 - CIC_annotation produces a `LegalReferences.csv` cross-reference index (on Zenodo)
 - GNORM has a 3D visualisation component (mentioned in ITSERR docs, not yet seen)
 - Arianna demonstrated the GNORM prototype web interface at ariannapavone.com/gnorm/
-- We have no visualisation infrastructure set up yet
 
-**Planned initial representations:**
+**Planned representations (beyond Corpus Browser):**
 - Citation frequency tables (which sources does Stöckel cite most?)
 - Co-citation analysis (which sources appear together?)
 - Simple network graphs (D3.js or similar)
@@ -329,11 +349,18 @@ INCEpTION (manual annotation) → export ZIP (UIMA CAS XMI)
 
 > 🎓 **Stage 5 in plain language: Making the results visible**
 >
-> Once the pipeline has found all the references, we need to display them in a way humans can actually understand and explore. Raw data in a spreadsheet isn't very illuminating. So we build:
+> Once the pipeline has found all the references, we need to display them in a way humans can actually understand and explore. Raw data in a spreadsheet isn't very illuminating.
 >
-> - **Frequency tables** — "Stöckel cites Romans 45 times, the Psalms 38 times, Augustine 27 times..." This immediately tells scholars something about how his theology was constructed.
-> - **Network graphs** — visual maps showing which sources are cited together. If Stöckel always cites Augustine and Paul in the same passages, that's a pattern worth investigating.
-> - **A searchable database** — so a scholar can type "Romans 3:28" and instantly see every passage across all of Stöckel's works where that verse appears.
+> We've built a **Corpus Browser** — an interactive web application where you can:
+>
+> - **See a dashboard** with statistics: how many references of each type, which chapters are densest, overall confidence levels
+> - **Search the full text** and filter by entity type (biblical, patristic, confessional, etc.) or by epistemic status (FACTUAL, INTERPRETIVE, DEFERRED)
+> - **Click on any reference** to see its details: what it is, how it was detected, how confident the system is
+>
+> Beyond the Corpus Browser, we plan:
+> - **Frequency tables** — "Stöckel cites Romans 45 times, the Psalms 38 times, Augustine 27 times..."
+> - **Network graphs** — visual maps showing which sources are cited together
+> - **A searchable database** — so a scholar can type "Romans 3:28" and instantly see every passage
 >
 > The Italian team also has a 3D visualisation tool that we haven't explored yet.
 
@@ -411,17 +438,24 @@ Confidence Extraction — extract_alto.py
     │ (confidence scores CSV)               ✅ BUILT
     ▼
 Normalization — normalize_text.py
-    │ (normalized plaintext)                ✅ BUILT
+    │ (normalized plaintext + expansion_log) ✅ BUILT
     ▼
 INCEpTION (manual annotation for training data)
     │ (UIMA CAS XMI)
     ▼
 CIC_annotation Pipeline (adapted)
-    │ Rules → Abbreviations → Match → CRF → Structure → Merge
-    │ (annotated output with source tracking)
+    │ Parallel: Rules · Abbreviations (← expansion_log) · Match · CRF · Structure
+    │ → Merge (first-method-wins) → annotated output with source tracking
     ▼
 Epistemological Classification
     │ FACTUAL / INTERPRETIVE / DEFERRED
+    ▼
+build_corpus_json.py (Stage 5 bridge)                 ✅ BUILT
+    │ (normalized text → structured JSON with
+    │  detection provenance and consensus tracking)
+    ▼
+Corpus Browser — docs/prototype/index.html             ✅ BUILT
+    │ (interactive exploration with epistemic filters)
     ▼
 Cross-Reference Index + Citation Database
     │ (CSV / JSON)
@@ -434,7 +468,7 @@ Researchers, Libraries, RESILIENCE Network
 
 > 🎓 **The whole thing in one story:**
 >
-> Old books sit in Slovak libraries → they've already been photographed → a computer reads the photographs and turns them into text → we clean up the text and fix old spelling → human experts sit down and manually highlight references in a sample of pages → those highlighted samples become the "answer key" → the six-layer pipeline learns from the answer key and processes all the remaining pages → each annotation gets an honesty label (sure / less sure / ask a human) → the results get organised into searchable databases and visual maps → scholars explore them on a website.
+> Old books sit in Slovak libraries → they've already been photographed → a computer reads the photographs and turns them into text → we clean up the text and fix old spelling → human experts sit down and manually highlight references in a sample of pages → those highlighted samples become the "answer key" → the six-layer pipeline learns from the answer key and processes all the remaining pages → each annotation gets an honesty label (sure / less sure / ask a human) → the results get organised into a Corpus Browser and searchable databases → scholars explore them on a website.
 >
 > That's it. Everything else is details about *how* each step works. But this is the arc.
 
@@ -444,17 +478,19 @@ Researchers, Libraries, RESILIENCE Network
 
 | Item | Status | Format |
 |------|--------|--------|
-| Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — extraction pipeline ready (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`); need to run on sample pages | Plaintext (.txt) |
-| Preliminary abbreviation list | 🔧 TO COMPILE from Stöckel corpus conventions | CSV or Markdown table |
+| Stöckel sample texts (57pp) | ✅ COMPLETE — 12 normalized files in `data/normalized/`, ~18,900 words | Plaintext (.txt) |
+| Preliminary abbreviation list | 🔧 PARTIALLY DONE — `normalize_text.py` contains 17 abbreviation patterns with `expansion_log` provenance. Broader dictionary still needed | Python dict + CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
 | Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |
 | Entity type schema proposal | ✅ DRAFT — in Stage 3 above; needs validation against samples | Table |
-| Zero-shot test | 🔧 NOT STARTED — blocked on sample text preparation | — |
+| Zero-shot test script | ✅ READY — `zero_shot_crf_experiment.py` with 56 tests; awaiting CRF model | Python |
+| Corpus Browser (prototype) | ✅ LIVE — `docs/prototype/index.html` with dashboard, search, consensus visualization | HTML/JS |
+| JSON build bridge | ✅ BUILT — `build_corpus_json.py` converts pipeline → `corpus.json` with multi-method support | Python |
 
 > 🎓 **Where are we right now?**
 >
-> The tools for reading and cleaning the text (Stages 1–2) are built and tested. The category definitions (Stage 3) are drafted but need validation against real samples. The pipeline itself (Stage 4) is installed but trained on the wrong domain — it knows Canon law, not Protestant theology. The very next step is to run a "zero-shot test" — feeding Stöckel's text through the existing Canon law pipeline *without any retraining* to see what happens. That will tell us exactly where the adaptation work needs to focus.
+> The tools for reading and cleaning the text (Stages 1–2) are built and tested — 57 pages of Stöckel's *Annotationes* have been processed into 12 normalized text files. The category definitions (Stage 3) are drafted but need validation against real samples. The pipeline itself (Stage 4) is installed but trained on the wrong domain — it knows Canon law, not Protestant theology. A **zero-shot test script** is ready to run once the CRF model is available — feeding Stöckel's text through the existing Canon law pipeline *without any retraining* to see what happens. Meanwhile, the **Corpus Browser** (Stage 5) is already live, showing 31 detected references across 5 entity types using rule-based detection.
 
 ---
 

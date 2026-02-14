@@ -346,7 +346,7 @@
 - Added `expansion_log` to NormalizationStats for abbreviation provenance tracking (Stage 4 Layer 2 readiness)
 - Fixed XML tag pollution in zero_shot_crf_experiment.py (strip_ref_tags before tokenisation)
 - Fixed `expansion_log` to store actual case-preserved and backreference-resolved expansions (not canonical form)
-- **Total tests: 393 across 10 test files (all passing)**
+- **Total tests: 414 across 11 test suites (all passing)**
 
 ---
 

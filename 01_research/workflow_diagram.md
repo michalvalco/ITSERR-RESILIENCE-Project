@@ -102,7 +102,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
 - ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
 - ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion) and abbreviation expansion with provenance logging
-- ✅ 393+ tests passing across pipeline and agent modules (see `PROGRESS.md` for authoritative count per suite)
+- ✅ 414 tests passing across 11 suites (see `PROGRESS.md` for authoritative count per suite)
 - Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
 - No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 - ⚠️ **Important:** `normalize_text.py` outputs pre-annotated plaintext (XML-like `<ref>` and `<chapter>` tags), NOT BIOES sequences. The BIOES conversion happens later: normalized text → INCEpTION (human annotation) → `cas_to_bioes.py` → pipeline. This human annotation loop is the bridge between Stage 2 (Parse) and Stage 4 (Mine).
@@ -420,7 +420,7 @@ Researchers, Libraries, RESILIENCE Network
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
 | Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |
 | Entity type schema proposal | ✅ DRAFT — in Stage 3 above; needs validation against samples | Table |
-| Zero-shot test script | ✅ READY — `zero_shot_crf_experiment.py` with 49 tests; awaiting CRF model | Python |
+| Zero-shot test script | ✅ READY — `zero_shot_crf_experiment.py` with 56 tests; awaiting CRF model | Python |
 | Corpus Browser (prototype) | ✅ LIVE — `docs/prototype/index.html` with dashboard, search, consensus visualization | HTML/JS |
 | JSON build bridge | ✅ BUILT — `build_corpus_json.py` converts pipeline → `corpus.json` with multi-method support | Python |
 
