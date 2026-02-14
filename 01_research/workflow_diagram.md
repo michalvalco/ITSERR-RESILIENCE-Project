@@ -102,7 +102,7 @@ We want to adapt the GNORM/CIC_annotation pipeline — originally built for dete
 - ✅ `ocr_processor.py` supports `--format {txt,alto,both}` — Tesseract produces ALTO XML and/or plaintext in one step
 - ✅ `extract_alto.py` parses ALTO XML, extracts text + confidence scores (per-word `WC` attribute) into companion CSV
 - ✅ `normalize_text.py` handles orthographic normalization (long-s, ligatures, v/u confusion) and abbreviation expansion with provenance logging
-- ✅ 389 tests passing across all pipeline and agent modules
+- ✅ 393 tests passing across all pipeline and agent modules
 - Some DIKDA materials have existing ABBYY FineReader OCR output (ALTO XML) — `extract_alto.py` handles these directly without re-running OCR
 - No testing has been done yet on how OCR error rates on 16th-century print affect downstream GNORM annotation accuracy
 - ⚠️ **Important:** `normalize_text.py` outputs pre-annotated plaintext (XML-like `<ref>` and `<chapter>` tags), NOT BIOES sequences. The BIOES conversion happens later: normalized text → INCEpTION (human annotation) → `cas_to_bioes.py` → pipeline. This human annotation loop is the bridge between Stage 2 (Parse) and Stage 4 (Mine).
@@ -212,7 +212,7 @@ This means Layer 2 does not need to re-scan already-expanded text to find abbrev
 | Layer | Current (CIC) | Needed (Protestant) | Effort |
 |-------|---------------|---------------------|--------|
 | Rules | Legal citation regex patterns | Biblical/patristic/confessional regex patterns | Medium — requires domain knowledge |
-| Abbreviations | Canon law abbreviation dictionary | Protestant theological abbreviation dictionary | Medium — partially addressed: `normalize_text.py` already expands 15 theological abbreviation patterns (Tironian et, christological, ecclesiastical) and logs each expansion with offset and pattern in `expansion_log`. Layer 2 can consume this log directly. Remaining work: compile a broader dictionary covering less common abbreviations not handled by Stage 2 normalization |
+| Abbreviations | Canon law abbreviation dictionary | Protestant theological abbreviation dictionary | Medium — partially addressed: `normalize_text.py` already expands 17 abbreviation patterns (Tironian et, christological, ecclesiastical, que-enclitic, etc.) and logs each expansion with offset and pattern in `expansion_log`. Layer 2 can consume this log directly. Remaining work: compile a broader dictionary covering less common abbreviations not handled by Stage 2 normalization |
 | Match model | Trained on CIC patterns | Retrain on Protestant patterns | Low — once training data exists |
 | CRF | Trained on CIC annotations | Retrain; possibly add character-level features | Medium-High — core technical work |
 | Structural | CIC document structure | 16th-c. printed book structure (chapters, marginalia) | Medium |
@@ -380,7 +380,7 @@ Researchers, Libraries, RESILIENCE Network
 | Item | Status | Format |
 |------|--------|--------|
 | Stöckel sample texts (20–30pp) | 🔧 TO PREPARE — extraction pipeline ready (`ocr_processor.py` → `extract_alto.py` → `normalize_text.py`); need to run on sample pages | Plaintext (.txt) |
-| Preliminary abbreviation list | 🔧 PARTIALLY DONE — `normalize_text.py` contains 15 abbreviation patterns (Tironian et, christological, ecclesiastical) with `expansion_log` provenance. Broader dictionary (less common abbreviations) still needed | Python dict + CSV or Markdown table |
+| Preliminary abbreviation list | 🔧 PARTIALLY DONE — `normalize_text.py` contains 17 abbreviation patterns (Tironian et, christological, ecclesiastical, que-enclitic, etc.) with `expansion_log` provenance. Broader dictionary (less common abbreviations) still needed | Python dict + CSV or Markdown table |
 | This workflow document | ✅ DRAFT — ready for Miro transfer | Markdown |
 | CIC_annotation code analysis | ✅ COMPLETE (567-line Deep Dive report) | Markdown |
 | Pipeline technical reference | ✅ COMPLETE (quick-lookup reference card, 230 lines) | Markdown |

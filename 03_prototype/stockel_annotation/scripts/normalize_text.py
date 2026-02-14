@@ -226,14 +226,21 @@ def expand_abbreviations(text: str, stats: NormalizationStats) -> str:
         return repl
 
     for pattern, expansion in ABBREVIATIONS.items():
-        # Log each match before substitution so offsets refer to the input text.
-        # This structured log enables downstream provenance tracking (e.g. Stage 4
-        # Layer 2 can record "detected via abbreviation dictionary" without
-        # re-scanning the already-expanded text).
+        repl_fn = case_preserving_repl(expansion)
+
+        # Log each match before substitution so offsets refer to the text at
+        # this iteration.  NOTE: for patterns processed after earlier ones have
+        # already modified `text`, these offsets refer to the intermediate
+        # (partially-expanded) text, not the original input.  This is a known
+        # limitation — a full solution would require tracking cumulative offset
+        # adjustments across pattern passes.
+        #
+        # The `expanded` field stores the actual case-preserved (and
+        # backreference-resolved) replacement text, not the canonical form.
         for m in re.finditer(pattern, text, re.IGNORECASE):
             stats.expansion_log.append({
                 "original": m.group(0),
-                "expanded": expansion,
+                "expanded": repl_fn(m),
                 "offset": m.start(),
                 "pattern": pattern,
             })
@@ -245,7 +252,7 @@ def expand_abbreviations(text: str, stats: NormalizationStats) -> str:
         else:
             stats.abbreviations_expanded += matches
 
-        text = re.sub(pattern, case_preserving_repl(expansion), text, flags=re.IGNORECASE)
+        text = re.sub(pattern, repl_fn, text, flags=re.IGNORECASE)
 
     return text
 

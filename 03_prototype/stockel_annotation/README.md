@@ -138,7 +138,7 @@ Features: hyphenation handling, namespace auto-detection, encoding fallback (UTF
 
 | Test Suite | Tests | File |
 |------------|-------|------|
-| Text normalizer | 117 | `tests/test_normalize_text.py` |
+| Text normalizer | 121 | `tests/test_normalize_text.py` |
 | ALTO parser | 55 | `tests/test_extract_alto.py` |
 | Zero-shot CRF experiment | 56 | `tests/test_zero_shot_crf.py` |
 | CAS → BIOES converter | 48 | `tests/test_cas_to_bioes.py` |
@@ -148,7 +148,7 @@ Features: hyphenation handling, namespace auto-detection, encoding fallback (UTF
 | Memory streams | 17 | `tests/test_streams.py` |
 | Reflection | 14 | `tests/test_reflection.py` |
 | Epistemic classifier | 13 | `tests/test_epistemic.py` |
-| **Total** | **389** | |
+| **Total** | **393** | |
 
 ---
 
